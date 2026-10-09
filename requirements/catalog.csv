@@ -1,0 +1,473 @@
+﻿id,sheet,row,category,command,alias,ui_path,description,scope,scope_reason,status
+ACAD-0002,AutoCAD,2,Dibujo,LINE,L,,Dibuja segmentos de línea recta,2d,,pending
+ACAD-0003,AutoCAD,3,Dibujo,PLINE,PL,,"Polilínea 2D con segmentos rectos y arcos, con grosor opcional",2d,,pending
+ACAD-0004,AutoCAD,4,Dibujo,3DPOLY,3P,,"Polilínea 3D con vértices en X,Y,Z",2d_with_z,Conservar vértices XYZ sin modelado de sólidos.,pending
+ACAD-0005,AutoCAD,5,Dibujo,XLINE,XL,,Línea infinita en ambas direcciones (construcción),2d,,pending
+ACAD-0006,AutoCAD,6,Dibujo,RAY,,,Línea semi-infinita desde un punto,2d,,pending
+ACAD-0007,AutoCAD,7,Dibujo,CIRCLE,C,,"Círculo por centro-radio, 2P, 3P, TTR o TTT",2d,,pending
+ACAD-0008,AutoCAD,8,Dibujo,ARC,A,,"Arco por 3 puntos, centro, ángulo, longitud de cuerda, etc.",2d,,pending
+ACAD-0009,AutoCAD,9,Dibujo,ELLIPSE,EL,,Elipse o arco elíptico,2d,,pending
+ACAD-0010,AutoCAD,10,Dibujo,RECTANG,REC,,"Rectángulo (polilínea cerrada) con chaflán, empalme o grosor",2d,,pending
+ACAD-0011,AutoCAD,11,Dibujo,POLYGON,POL,,Polígono regular inscrito o circunscrito,2d,,pending
+ACAD-0012,AutoCAD,12,Dibujo,SPLINE,SPL,,Curva NURBS por puntos de ajuste o vértices de control,2d,,pending
+ACAD-0013,AutoCAD,13,Dibujo,DONUT,DO,,Anillo o círculo relleno,2d,,pending
+ACAD-0014,AutoCAD,14,Dibujo,POINT,PO,,Crea un objeto punto,2d,,pending
+ACAD-0015,AutoCAD,15,Dibujo,PTYPE,DDPTYPE,,Define estilo y tamaño de los objetos punto,2d,,pending
+ACAD-0016,AutoCAD,16,Dibujo,MLINE,ML,,Líneas múltiples paralelas según estilo,2d,,pending
+ACAD-0017,AutoCAD,17,Dibujo,SKETCH,SK,,Dibujo a mano alzada,2d,,pending
+ACAD-0018,AutoCAD,18,Dibujo,REVCLOUD,REVC,,Nube de revisión para marcar áreas,2d,,pending
+ACAD-0019,AutoCAD,19,Dibujo,WIPEOUT,,,Máscara que oculta objetos detrás,2d,,pending
+ACAD-0020,AutoCAD,20,Dibujo,REGION,REG,,Convierte lazos cerrados en regiones (áreas 2D),2d,,pending
+ACAD-0021,AutoCAD,21,Dibujo,BOUNDARY,BO,,Crea polilínea o región a partir de un área cerrada,2d,,pending
+ACAD-0022,AutoCAD,22,Dibujo,HATCH,H,,Sombreado/patrón sobre áreas cerradas o puntos internos,2d,,pending
+ACAD-0023,AutoCAD,23,Dibujo,GRADIENT,GD,,Relleno con degradado,2d,,pending
+ACAD-0024,AutoCAD,24,Dibujo,HATCHEDIT,HE,,Edita un sombreado existente,2d,,pending
+ACAD-0025,AutoCAD,25,Dibujo,SOLID,SO,,Relleno sólido 2D de 3 o 4 esquinas,2d,,pending
+ACAD-0026,AutoCAD,26,Dibujo,TRACE,,,Línea con ancho (heredada),2d,,pending
+ACAD-0027,AutoCAD,27,Dibujo,DIVIDE,DIV,,Coloca puntos o bloques a intervalos iguales (por número de segmentos),2d,,pending
+ACAD-0028,AutoCAD,28,Dibujo,MEASURE,ME,,Coloca puntos o bloques a distancia fija,2d,,pending
+ACAD-0029,AutoCAD,29,Dibujo,TEXT,DT,,Texto de una línea,2d,,pending
+ACAD-0030,AutoCAD,30,Dibujo,MTEXT,"MT, T",,Texto multilínea con editor en contexto,2d,,pending
+ACAD-0031,AutoCAD,31,Dibujo,TABLE,TB,,Inserta una tabla,2d,,pending
+ACAD-0032,AutoCAD,32,Dibujo,FIELD,FIELD,,"Texto vinculado a datos dinámicos (área, fecha, propiedades)",2d,,pending
+ACAD-0033,AutoCAD,33,Dibujo,LEADER,,,Línea de referencia con anotación,2d,,pending
+ACAD-0034,AutoCAD,34,Dibujo,QLEADER,LE,,Directriz rápida,2d,,pending
+ACAD-0035,AutoCAD,35,Dibujo,MLEADER,MLD,,Directriz múltiple con texto o bloque,2d,,pending
+ACAD-0036,AutoCAD,36,Dibujo,HELIX,,,Hélice 2D/3D,excluded_3d,Herramienta de geometría/navegación 3D fuera del producto 2D.,pending
+ACAD-0037,AutoCAD,37,Modificación,MOVE,M,,Desplaza objetos,2d,,pending
+ACAD-0038,AutoCAD,38,Modificación,COPY,"CO, CP",,Copia objetos,2d,,pending
+ACAD-0039,AutoCAD,39,Modificación,ROTATE,RO,,Gira objetos alrededor de un punto base,2d,,pending
+ACAD-0040,AutoCAD,40,Modificación,SCALE,SC,,Cambia el tamaño proporcionalmente,2d,,pending
+ACAD-0041,AutoCAD,41,Modificación,MIRROR,MI,,Refleja objetos respecto a un eje,2d,,pending
+ACAD-0042,AutoCAD,42,Modificación,OFFSET,O,,Crea copias paralelas o concéntricas,2d,,pending
+ACAD-0043,AutoCAD,43,Modificación,TRIM,TR,,Recorta objetos contra aristas de corte,2d,,pending
+ACAD-0044,AutoCAD,44,Modificación,EXTEND,EX,,Alarga objetos hasta aristas límite,2d,,pending
+ACAD-0045,AutoCAD,45,Modificación,FILLET,F,,Empalma dos objetos con un arco de radio dado,2d,,pending
+ACAD-0046,AutoCAD,46,Modificación,CHAMFER,CHA,,Achaflana la unión de dos objetos,2d,,pending
+ACAD-0047,AutoCAD,47,Modificación,STRETCH,S,,Estira objetos con una ventana de captura,2d,,pending
+ACAD-0048,AutoCAD,48,Modificación,LENGTHEN,LEN,,"Cambia la longitud de líneas, arcos y polilíneas abiertas",2d,,pending
+ACAD-0049,AutoCAD,49,Modificación,BREAK,BR,,Rompe un objeto en dos o borra un tramo,2d,,pending
+ACAD-0050,AutoCAD,50,Modificación,BREAKATPOINT,,,Divide un objeto en un punto sin borrar tramo,2d,,pending
+ACAD-0051,AutoCAD,51,Modificación,JOIN,J,,Une objetos colineales o consecutivos en uno solo,2d,,pending
+ACAD-0052,AutoCAD,52,Modificación,EXPLODE,X,,"Descompone polilíneas, bloques, regiones y cotas",2d,,pending
+ACAD-0053,AutoCAD,53,Modificación,ERASE,E,,Borra objetos,2d,,pending
+ACAD-0054,AutoCAD,54,Modificación,ARRAY,AR,,"Matriz rectangular, polar o por trayectoria",2d,,pending
+ACAD-0055,AutoCAD,55,Modificación,ARRAYRECT,,,Matriz rectangular asociativa,2d,,pending
+ACAD-0056,AutoCAD,56,Modificación,ARRAYPOLAR,,,Matriz polar asociativa,2d,,pending
+ACAD-0057,AutoCAD,57,Modificación,ARRAYPATH,,,Matriz a lo largo de una trayectoria,2d,,pending
+ACAD-0058,AutoCAD,58,Modificación,ARRAYEDIT,,,Edita matrices asociativas,2d,,pending
+ACAD-0059,AutoCAD,59,Modificación,ALIGN,AL,,Alinea objetos con puntos de origen y destino (2D/3D),2d,,pending
+ACAD-0060,AutoCAD,60,Modificación,PEDIT,PE,,"Edita polilíneas: unir, curvar, ajustar, grosor, cerrar",2d,,pending
+ACAD-0061,AutoCAD,61,Modificación,SPLINEDIT,SPE,,Edita splines,2d,,pending
+ACAD-0062,AutoCAD,62,Modificación,MLEDIT,,,Edita líneas múltiples,2d,,pending
+ACAD-0063,AutoCAD,63,Modificación,MATCHPROP,MA,,Copia propiedades de un objeto a otros,2d,,pending
+ACAD-0064,AutoCAD,64,Modificación,CHANGE,-CH,,Cambia propiedades y puntos de objetos por línea de comandos,2d,,pending
+ACAD-0065,AutoCAD,65,Modificación,CHPROP,,,"Cambia color, capa, tipo de línea, grosor",2d,,pending
+ACAD-0066,AutoCAD,66,Modificación,OVERKILL,,,"Elimina objetos duplicados y superpuestos, une colineales",2d,,pending
+ACAD-0067,AutoCAD,67,Modificación,BLEND,,,Spline de transición suave entre dos curvas,2d,,pending
+ACAD-0068,AutoCAD,68,Modificación,REVERSE,,,"Invierte la dirección de líneas, polilíneas, splines",2d,,pending
+ACAD-0069,AutoCAD,69,Modificación,SCALETEXT,,,Cambia escala de textos sin moverlos,2d,,pending
+ACAD-0070,AutoCAD,70,Modificación,JUSTIFYTEXT,,,Cambia el punto de justificación de textos,2d,,pending
+ACAD-0071,AutoCAD,71,Modificación,TEXTEDIT,ED,,"Edita texto, atributos y cotas",2d,,pending
+ACAD-0072,AutoCAD,72,Modificación,SPELL,SP,,Revisa ortografía,2d,,pending
+ACAD-0073,AutoCAD,73,Modificación,FIND,,,Busca y reemplaza texto,2d,,pending
+ACAD-0074,AutoCAD,74,Modificación,TXTEXP,,,Explota texto a geometría,2d,,pending
+ACAD-0075,AutoCAD,75,Modificación,TCOUNT,,,Numera objetos de texto secuencialmente,2d,,pending
+ACAD-0076,AutoCAD,76,Modificación,UNDO,U,,Deshace operaciones,2d,,pending
+ACAD-0077,AutoCAD,77,Modificación,REDO,,,Rehace la última operación deshecha,2d,,pending
+ACAD-0078,AutoCAD,78,Modificación,OOPS,,,Recupera los últimos objetos borrados,2d,,pending
+ACAD-0079,AutoCAD,79,Modificación,GROUP,G,,Agrupa objetos,2d,,pending
+ACAD-0080,AutoCAD,80,Modificación,UNGROUP,,,Disuelve grupos,2d,,pending
+ACAD-0081,AutoCAD,81,Modificación,DRAWORDER,DR,,Cambia el orden de visualización (frente/atrás),2d,,pending
+ACAD-0082,AutoCAD,82,Modificación,TEXTTOFRONT,,,Pasa textos al frente,2d,,pending
+ACAD-0083,AutoCAD,83,Modificación,HATCHTOBACK,,,Envía sombreados atrás,2d,,pending
+ACAD-0084,AutoCAD,84,Modificación,FLATTEN,,,Convierte coordenada Z a 0 (Express Tools),2d,,pending
+ACAD-0085,AutoCAD,85,Modificación,CONVERTPLINE,,,Convierte polilíneas antiguas a ligeras,2d,,pending
+ACAD-0086,AutoCAD,86,"Selección, consulta y propiedades",SELECT,,,Crea un conjunto de selección,2d,,pending
+ACAD-0087,AutoCAD,87,"Selección, consulta y propiedades",SELECTALL,CTRL+A,,Selecciona todos los objetos,2d,,pending
+ACAD-0088,AutoCAD,88,"Selección, consulta y propiedades",SELECTSIMILAR,,,Selecciona objetos con propiedades parecidas,2d,,pending
+ACAD-0089,AutoCAD,89,"Selección, consulta y propiedades",QSELECT,,,Selección rápida por propiedad y valor,2d,,pending
+ACAD-0090,AutoCAD,90,"Selección, consulta y propiedades",FILTER,FI,,Selección avanzada por múltiples criterios,2d,,pending
+ACAD-0091,AutoCAD,91,"Selección, consulta y propiedades",PROPERTIES,"PR, CH, MO, CTRL+1",,Paleta de propiedades,2d,,pending
+ACAD-0092,AutoCAD,92,"Selección, consulta y propiedades",QUICKPROP,,,Propiedades rápidas al seleccionar,2d,,pending
+ACAD-0093,AutoCAD,93,"Selección, consulta y propiedades",LIST,LI,,Lista datos geométricos y de propiedades del objeto,2d,,pending
+ACAD-0094,AutoCAD,94,"Selección, consulta y propiedades",ID,,,Muestra las coordenadas de un punto,2d,,pending
+ACAD-0095,AutoCAD,95,"Selección, consulta y propiedades",DIST,DI,,Distancia y ángulo entre dos puntos,2d,,pending
+ACAD-0096,AutoCAD,96,"Selección, consulta y propiedades",AREA,AA,,Calcula área y perímetro,2d,,pending
+ACAD-0097,AutoCAD,97,"Selección, consulta y propiedades",MEASUREGEOM,MEA,,"Mide distancia, radio, ángulo, área o volumen",2d,,pending
+ACAD-0098,AutoCAD,98,"Selección, consulta y propiedades",MASSPROP,,,Propiedades físicas de regiones y sólidos,2d,,pending
+ACAD-0099,AutoCAD,99,"Selección, consulta y propiedades",CAL,,,Calculadora geométrica (admite 'CAL transparente),2d,,pending
+ACAD-0100,AutoCAD,100,"Selección, consulta y propiedades",QUICKCALC,QC,,Calculadora de bolsillo,2d,,pending
+ACAD-0101,AutoCAD,101,"Selección, consulta y propiedades",DBLIST,,,Lista la base de datos del dibujo,2d,,pending
+ACAD-0102,AutoCAD,102,"Selección, consulta y propiedades",STATUS,,,"Estado del dibujo: límites, memoria, modos",2d,,pending
+ACAD-0103,AutoCAD,103,"Selección, consulta y propiedades",TIME,,,Tiempos de dibujo y edición,2d,,pending
+ACAD-0104,AutoCAD,104,"Selección, consulta y propiedades",DWGPROPS,,,"Propiedades del archivo (título, autor, personalizadas)",2d,,pending
+ACAD-0105,AutoCAD,105,"Selección, consulta y propiedades",SETVAR,SET,,Consulta o cambia variables del sistema,2d,,pending
+ACAD-0106,AutoCAD,106,"Selección, consulta y propiedades",UPDATEFIELD,,,Actualiza campos,2d,,pending
+ACAD-0107,AutoCAD,107,Capas,LAYER,LA,,Administrador de propiedades de capa,2d,,pending
+ACAD-0108,AutoCAD,108,Capas,LAYERP,,,Revierte al estado anterior de capas,2d,,pending
+ACAD-0109,AutoCAD,109,Capas,LAYERPMODE,,,Activa o desactiva el seguimiento de cambios de capa,2d,,pending
+ACAD-0110,AutoCAD,110,Capas,LAYISO,,,Aísla las capas de los objetos seleccionados,2d,,pending
+ACAD-0111,AutoCAD,111,Capas,LAYUNISO,,,Restaura las capas tras LAYISO,2d,,pending
+ACAD-0112,AutoCAD,112,Capas,LAYOFF,,,Apaga la capa del objeto seleccionado,2d,,pending
+ACAD-0113,AutoCAD,113,Capas,LAYON,,,Enciende todas las capas,2d,,pending
+ACAD-0114,AutoCAD,114,Capas,LAYFRZ,,,Congela la capa del objeto seleccionado,2d,,pending
+ACAD-0115,AutoCAD,115,Capas,LAYTHW,,,Descongela todas las capas,2d,,pending
+ACAD-0116,AutoCAD,116,Capas,LAYLCK,,,Bloquea la capa del objeto seleccionado,2d,,pending
+ACAD-0117,AutoCAD,117,Capas,LAYULK,,,Desbloquea la capa del objeto seleccionado,2d,,pending
+ACAD-0118,AutoCAD,118,Capas,LAYDEL,,,Elimina capa con todos sus objetos,2d,,pending
+ACAD-0119,AutoCAD,119,Capas,LAYMRG,,,Fusiona capas,2d,,pending
+ACAD-0120,AutoCAD,120,Capas,LAYWALK,,,Recorre capas y muestra los objetos de cada una,2d,,pending
+ACAD-0121,AutoCAD,121,Capas,LAYMCUR,,,Hace actual la capa del objeto seleccionado,2d,,pending
+ACAD-0122,AutoCAD,122,Capas,LAYCUR,,,Cambia objetos a la capa actual,2d,,pending
+ACAD-0123,AutoCAD,123,Capas,LAYMATCH,,,Cambia objetos a la capa de otro objeto,2d,,pending
+ACAD-0124,AutoCAD,124,Capas,LAYTRANS,,,Convierte capas a otro estándar,2d,,pending
+ACAD-0125,AutoCAD,125,Capas,LAYERSTATE,LAS,,Guarda y restaura estados de capa,2d,,pending
+ACAD-0126,AutoCAD,126,Capas,LAYVPI,,,Aísla capas en la ventana gráfica actual,2d,,pending
+ACAD-0127,AutoCAD,127,Capas,COLOR,COL,,Color actual,2d,,pending
+ACAD-0128,AutoCAD,128,Capas,LINETYPE,LT,,Administrador de tipos de línea,2d,,pending
+ACAD-0129,AutoCAD,129,Capas,LTSCALE,LTS,,Escala global de tipo de línea,2d,,pending
+ACAD-0130,AutoCAD,130,Capas,CELTSCALE,,,Escala del tipo de línea de objetos nuevos,2d,,pending
+ACAD-0131,AutoCAD,131,Capas,LWEIGHT,LW,,Define grosores de línea,2d,,pending
+ACAD-0132,AutoCAD,132,Capas,TRANSPARENCY,,,Transparencia de objetos o capas,2d,,pending
+ACAD-0133,AutoCAD,133,Visualización y navegación,ZOOM,Z,,"Amplía o reduce la vista (Ventana, Extensión, Todo, Previo, Escala…)",2d,,pending
+ACAD-0134,AutoCAD,134,Visualización y navegación,PAN,P,,Desplaza la vista,2d,,pending
+ACAD-0135,AutoCAD,135,Visualización y navegación,REGEN,RE,,Regenera el dibujo actual,2d,,pending
+ACAD-0136,AutoCAD,136,Visualización y navegación,REGENALL,REA,,Regenera todas las ventanas,2d,,pending
+ACAD-0137,AutoCAD,137,Visualización y navegación,REDRAW,R,,Refresca la ventana actual,2d,,pending
+ACAD-0138,AutoCAD,138,Visualización y navegación,REDRAWALL,,,Refresca todas las ventanas,2d,,pending
+ACAD-0139,AutoCAD,139,Visualización y navegación,REGENAUTO,,,Control de regeneración automática,2d,,pending
+ACAD-0140,AutoCAD,140,Visualización y navegación,VIEW,V,,Guarda y restaura vistas con nombre,2d,,pending
+ACAD-0141,AutoCAD,141,Visualización y navegación,VIEWRES,,,Resolución de arcos y círculos en pantalla,2d,,pending
+ACAD-0142,AutoCAD,142,Visualización y navegación,VPORTS,VP,,Ventanas gráficas en espacio modelo,2d,,pending
+ACAD-0143,AutoCAD,143,Visualización y navegación,NAVBAR,,,Barra de navegación,2d,,pending
+ACAD-0144,AutoCAD,144,Visualización y navegación,NAVSWHEEL,,,Rueda de navegación,2d,,pending
+ACAD-0145,AutoCAD,145,Visualización y navegación,VSCURRENT,,,"Estilo visual actual (2D, sombreado, alámbrico)",2d,,pending
+ACAD-0146,AutoCAD,146,Visualización y navegación,VISUALSTYLES,,,Administra estilos visuales,2d,,pending
+ACAD-0147,AutoCAD,147,Visualización y navegación,SHADEMODE,SHA,,Modo de sombreado,2d,,pending
+ACAD-0148,AutoCAD,148,Visualización y navegación,HIDE,HI,,Oculta líneas ocultas,2d,,pending
+ACAD-0149,AutoCAD,149,Visualización y navegación,3DORBIT,3DO,,Órbita libre 3D,excluded_3d,Herramienta de geometría/navegación 3D fuera del producto 2D.,pending
+ACAD-0150,AutoCAD,150,Visualización y navegación,3DFORBIT,,,Órbita con rueda libre,excluded_3d,Herramienta de geometría/navegación 3D fuera del producto 2D.,pending
+ACAD-0151,AutoCAD,151,Visualización y navegación,3DCORBIT,,,Órbita continua,excluded_3d,Herramienta de geometría/navegación 3D fuera del producto 2D.,pending
+ACAD-0152,AutoCAD,152,Visualización y navegación,DVIEW,DV,,Vista dinámica / perspectiva,2d,,pending
+ACAD-0153,AutoCAD,153,Visualización y navegación,VPOINT,VP,,Define punto de vista 3D,2d,,pending
+ACAD-0154,AutoCAD,154,Visualización y navegación,PLAN,,,Vista en planta del SCP actual,2d,,pending
+ACAD-0155,AutoCAD,155,Visualización y navegación,CAMERA,,,Crea cámara,2d,,pending
+ACAD-0156,AutoCAD,156,Visualización y navegación,WALK / FLY,,,Recorrido o vuelo 3D,excluded_3d,Herramienta de geometría/navegación 3D fuera del producto 2D.,pending
+ACAD-0157,AutoCAD,157,Visualización y navegación,SHOWMOTION,,,Animaciones de vista,2d,,pending
+ACAD-0158,AutoCAD,158,Visualización y navegación,STEERINGWHEELS,,,Ruedas de navegación,2d,,pending
+ACAD-0159,AutoCAD,159,Visualización y navegación,CLEANSCREENON,,,Limpia pantalla (CTRL+0),2d,,pending
+ACAD-0160,AutoCAD,160,Visualización y navegación,CLEANSCREENOFF,,,Restaura la interfaz,2d,,pending
+ACAD-0161,AutoCAD,161,UCS / Coordenadas,UCS,,,Define o gestiona el sistema de coordenadas de usuario,2d,,pending
+ACAD-0162,AutoCAD,162,UCS / Coordenadas,UCSMAN,UC,,Gestor de SCP con nombre,2d,,pending
+ACAD-0163,AutoCAD,163,UCS / Coordenadas,UCSICON,,,Controla el icono de coordenadas,2d,,pending
+ACAD-0164,AutoCAD,164,UCS / Coordenadas,PLAN,,,Vista en planta del SCP,2d,,pending
+ACAD-0165,AutoCAD,165,UCS / Coordenadas,ID,,,Lectura de coordenadas,2d,,pending
+ACAD-0166,AutoCAD,166,UCS / Coordenadas,UNITS,UN,,Define unidades y precisión,2d,,pending
+ACAD-0167,AutoCAD,167,UCS / Coordenadas,DWGUNITS,,,Unidades de dibujo y escala de inserción,2d,,pending
+ACAD-0168,AutoCAD,168,UCS / Coordenadas,GEOGRAPHICLOCATION,,,Asigna ubicación geográfica (lat/long),2d,,pending
+ACAD-0169,AutoCAD,169,UCS / Coordenadas,GEOMAP,,,Mapa base en línea,2d,,pending
+ACAD-0170,AutoCAD,170,UCS / Coordenadas,GEOMARKPOSITION,,,Marca posición geográfica en el dibujo,2d,,pending
+ACAD-0171,AutoCAD,171,UCS / Coordenadas,GEOLOCATEME,,,Ubica según posición del equipo,2d,,pending
+ACAD-0172,AutoCAD,172,UCS / Coordenadas,GEOMAPIMAGE,,,Captura imagen del mapa base y la inserta,2d,,pending
+ACAD-0173,AutoCAD,173,UCS / Coordenadas,GEOMAPIMAGEEXPORT,,,Exporta mapa base como imagen,2d,,pending
+ACAD-0174,AutoCAD,174,UCS / Coordenadas,LATLONG,,,Ubicación lat/long,2d,,pending
+ACAD-0175,AutoCAD,175,UCS / Coordenadas,LIMITS,,,Define límites del dibujo,2d,,pending
+ACAD-0176,AutoCAD,176,Cotas y anotación,DIMLINEAR,DLI,,Cota lineal horizontal o vertical,2d,,pending
+ACAD-0177,AutoCAD,177,Cotas y anotación,DIMALIGNED,DAL,,Cota alineada con el objeto,2d,,pending
+ACAD-0178,AutoCAD,178,Cotas y anotación,DIMANGULAR,DAN,,Cota angular,2d,,pending
+ACAD-0179,AutoCAD,179,Cotas y anotación,DIMRADIUS,DRA,,Cota de radio,2d,,pending
+ACAD-0180,AutoCAD,180,Cotas y anotación,DIMDIAMETER,DDI,,Cota de diámetro,2d,,pending
+ACAD-0181,AutoCAD,181,Cotas y anotación,DIMARC,DAR,,Cota de longitud de arco,2d,,pending
+ACAD-0182,AutoCAD,182,Cotas y anotación,DIMORDINATE,DOR,,Cota de coordenada,2d,,pending
+ACAD-0183,AutoCAD,183,Cotas y anotación,DIMBASELINE,DBA,,Cotas desde línea base común,2d,,pending
+ACAD-0184,AutoCAD,184,Cotas y anotación,DIMCONTINUE,DCO,,Cotas continuas en cadena,2d,,pending
+ACAD-0185,AutoCAD,185,Cotas y anotación,DIMJOGGED,DJO,,Cota de radio con quiebre,2d,,pending
+ACAD-0186,AutoCAD,186,Cotas y anotación,DIMCENTER,DCE,,Marca de centro,2d,,pending
+ACAD-0187,AutoCAD,187,Cotas y anotación,DIM,,,Modo cotas interactivo,2d,,pending
+ACAD-0188,AutoCAD,188,Cotas y anotación,QDIM,,,Acotación rápida,2d,,pending
+ACAD-0189,AutoCAD,189,Cotas y anotación,DIMEDIT,DED,,Edita texto y extensiones de cotas,2d,,pending
+ACAD-0190,AutoCAD,190,Cotas y anotación,DIMTEDIT,,,Mueve o gira texto de cota,2d,,pending
+ACAD-0191,AutoCAD,191,Cotas y anotación,DIMSTYLE,D,,Administrador de estilos de cota,2d,,pending
+ACAD-0192,AutoCAD,192,Cotas y anotación,DIMBREAK,,,Rompe líneas de cota donde se cruzan,2d,,pending
+ACAD-0193,AutoCAD,193,Cotas y anotación,DIMSPACE,,,Ajusta separación de cotas,2d,,pending
+ACAD-0194,AutoCAD,194,Cotas y anotación,DIMINSPECT,,,Etiqueta de inspección,2d,,pending
+ACAD-0195,AutoCAD,195,Cotas y anotación,DIMREASSOC,,,Reasocia cotas a objetos,2d,,pending
+ACAD-0196,AutoCAD,196,Cotas y anotación,DIMDISASSOCIATE,,,Disocia cotas,2d,,pending
+ACAD-0197,AutoCAD,197,Cotas y anotación,DIMOVERRIDE,,,Ajusta variables de cota por objeto,2d,,pending
+ACAD-0198,AutoCAD,198,Cotas y anotación,DIMUPDATE,,,Actualiza cotas al estilo actual,2d,,pending
+ACAD-0199,AutoCAD,199,Cotas y anotación,DIMTOLERANCE,,,Cota con tolerancia,2d,,pending
+ACAD-0200,AutoCAD,200,Cotas y anotación,TOLERANCE,TOL,,Tolerancias geométricas,2d,,pending
+ACAD-0201,AutoCAD,201,Cotas y anotación,MLEADERSTYLE,MLS,,Estilo de directriz múltiple,2d,,pending
+ACAD-0202,AutoCAD,202,Cotas y anotación,MLEADEREDIT,,,Añade/elimina directrices,2d,,pending
+ACAD-0203,AutoCAD,203,Cotas y anotación,MLEADERALIGN,,,Alinea directrices,2d,,pending
+ACAD-0204,AutoCAD,204,Cotas y anotación,MLEADERCOLLECT,,,Agrupa directrices,2d,,pending
+ACAD-0205,AutoCAD,205,Cotas y anotación,TEXTSTYLE,ST,,Estilos de texto,2d,,pending
+ACAD-0206,AutoCAD,206,Cotas y anotación,MLSTYLE,,,Estilos de línea múltiple,2d,,pending
+ACAD-0207,AutoCAD,207,Cotas y anotación,TABLESTYLE,TS,,Estilos de tabla,2d,,pending
+ACAD-0208,AutoCAD,208,Cotas y anotación,TABLEEXPORT,,,Exporta tabla a CSV,2d,,pending
+ACAD-0209,AutoCAD,209,Cotas y anotación,TABLEDIT,,,Edita celda de tabla,2d,,pending
+ACAD-0210,AutoCAD,210,Cotas y anotación,ANNOTATIONSCALE,,,Escala de anotación actual,2d,,pending
+ACAD-0211,AutoCAD,211,Cotas y anotación,ANNORESET,,,Restablece posición de escalas de anotación,2d,,pending
+ACAD-0212,AutoCAD,212,Cotas y anotación,ANNOALLVISIBLE,,,Muestra todas las escalas,2d,,pending
+ACAD-0213,AutoCAD,213,Cotas y anotación,OBJECTSCALE,,,Escalas anotativas de un objeto,2d,,pending
+ACAD-0214,AutoCAD,214,"Bloques, atributos y referencias",BLOCK,B,,Define un bloque,2d,,pending
+ACAD-0215,AutoCAD,215,"Bloques, atributos y referencias",WBLOCK,W,,Escribe un bloque en archivo DWG,2d,,pending
+ACAD-0216,AutoCAD,216,"Bloques, atributos y referencias",INSERT,I,,Inserta bloque o dibujo,2d,,pending
+ACAD-0217,AutoCAD,217,"Bloques, atributos y referencias",-INSERT,-I,,Inserta bloque por línea de comandos,2d,,pending
+ACAD-0218,AutoCAD,218,"Bloques, atributos y referencias",BEDIT,BE,,Editor de bloques,2d,,pending
+ACAD-0219,AutoCAD,219,"Bloques, atributos y referencias",BCLOSE,,,Cierra el editor de bloques,2d,,pending
+ACAD-0220,AutoCAD,220,"Bloques, atributos y referencias",BATTMAN,,,Administrador de atributos,2d,,pending
+ACAD-0221,AutoCAD,221,"Bloques, atributos y referencias",ATTDEF,ATT,,Define atributos,2d,,pending
+ACAD-0222,AutoCAD,222,"Bloques, atributos y referencias",ATTEDIT,-ATTEDIT,,Edita atributos,2d,,pending
+ACAD-0223,AutoCAD,223,"Bloques, atributos y referencias",EATTEDIT,,,Editor de atributos mejorado,2d,,pending
+ACAD-0224,AutoCAD,224,"Bloques, atributos y referencias",ATTSYNC,,,Sincroniza atributos con la definición,2d,,pending
+ACAD-0225,AutoCAD,225,"Bloques, atributos y referencias",ATTDISP,,,Visibilidad de atributos,2d,,pending
+ACAD-0226,AutoCAD,226,"Bloques, atributos y referencias",ATTIPEDIT,,,Edita texto de atributos en contexto,2d,,pending
+ACAD-0227,AutoCAD,227,"Bloques, atributos y referencias",BCOUNT,,,Cuenta bloques,2d,,pending
+ACAD-0228,AutoCAD,228,"Bloques, atributos y referencias",BASE,,,Punto de inserción base del dibujo,2d,,pending
+ACAD-0229,AutoCAD,229,"Bloques, atributos y referencias",BLOCKICON,,,Genera iconos de bloque,2d,,pending
+ACAD-0230,AutoCAD,230,"Bloques, atributos y referencias",BLOCKSPALETTE,,,Paleta de bloques,2d,,pending
+ACAD-0231,AutoCAD,231,"Bloques, atributos y referencias",BCONSTRUCTION,,,Geometría de construcción en bloque,2d,,pending
+ACAD-0232,AutoCAD,232,"Bloques, atributos y referencias",BPARAMETER,,,Parámetros en bloque dinámico,2d,,pending
+ACAD-0233,AutoCAD,233,"Bloques, atributos y referencias",BACTION,,,Acciones en bloque dinámico,2d,,pending
+ACAD-0234,AutoCAD,234,"Bloques, atributos y referencias",XREF,XR,,Administra referencias externas,2d,,pending
+ACAD-0235,AutoCAD,235,"Bloques, atributos y referencias",XATTACH,XA,,Adjunta DWG externo,2d,,pending
+ACAD-0236,AutoCAD,236,"Bloques, atributos y referencias",XBIND,XB,,Incorpora xref al dibujo,2d,,pending
+ACAD-0237,AutoCAD,237,"Bloques, atributos y referencias",XCLIP,XC,,Recorta una referencia,2d,,pending
+ACAD-0238,AutoCAD,238,"Bloques, atributos y referencias",XOPEN,,,Abre xref para edición,2d,,pending
+ACAD-0239,AutoCAD,239,"Bloques, atributos y referencias",REFEDIT,,,Edita referencia o bloque en contexto,2d,,pending
+ACAD-0240,AutoCAD,240,"Bloques, atributos y referencias",REFCLOSE,,,Cierra edición en contexto,2d,,pending
+ACAD-0241,AutoCAD,241,"Bloques, atributos y referencias",REFSET,,,Añade o quita objetos del conjunto de edición,2d,,pending
+ACAD-0242,AutoCAD,242,"Bloques, atributos y referencias",EXTERNALREFERENCES,ER,,Paleta de referencias externas,2d,,pending
+ACAD-0243,AutoCAD,243,"Bloques, atributos y referencias",IMAGE,IM,,Administrador de imágenes,2d,,pending
+ACAD-0244,AutoCAD,244,"Bloques, atributos y referencias",IMAGEATTACH,IAT,,Adjunta imagen raster,2d,,pending
+ACAD-0245,AutoCAD,245,"Bloques, atributos y referencias",IMAGECLIP,,,Recorta imagen,2d,,pending
+ACAD-0246,AutoCAD,246,"Bloques, atributos y referencias",IMAGEADJUST,,,"Brillo, contraste y desvanecimiento",2d,,pending
+ACAD-0247,AutoCAD,247,"Bloques, atributos y referencias",IMAGEFRAME,,,Marco de imagen,2d,,pending
+ACAD-0248,AutoCAD,248,"Bloques, atributos y referencias",IMAGEQUALITY,,,Calidad de la imagen,2d,,pending
+ACAD-0249,AutoCAD,249,"Bloques, atributos y referencias",PDFATTACH,,,Adjunta PDF como referencia,2d,,pending
+ACAD-0250,AutoCAD,250,"Bloques, atributos y referencias",PDFCLIP,,,Recorta PDF adjunto,2d,,pending
+ACAD-0251,AutoCAD,251,"Bloques, atributos y referencias",PDFLAYERS,,,Capas del PDF adjunto,2d,,pending
+ACAD-0252,AutoCAD,252,"Bloques, atributos y referencias",PDFIMPORT,,,Convierte geometría PDF a objetos DWG,2d,,pending
+ACAD-0253,AutoCAD,253,"Bloques, atributos y referencias",DWFATTACH,,,Adjunta DWF,2d,,pending
+ACAD-0254,AutoCAD,254,"Bloques, atributos y referencias",DGNATTACH,,,Adjunta DGN,2d,,pending
+ACAD-0255,AutoCAD,255,"Bloques, atributos y referencias",DGNIMPORT / DGNEXPORT,,,Importa/exporta DGN,2d,,pending
+ACAD-0256,AutoCAD,256,"Bloques, atributos y referencias",OLE,,,Insertar objetos OLE,2d,,pending
+ACAD-0257,AutoCAD,257,"Bloques, atributos y referencias",DATAEXTRACTION,DX,,Extrae datos a tablas o archivos,2d,,pending
+ACAD-0258,AutoCAD,258,"Bloques, atributos y referencias",DATALINK,,,Vincula datos externos (Excel),2d,,pending
+ACAD-0259,AutoCAD,259,"Bloques, atributos y referencias",DATALINKUPDATE,,,Actualiza vínculos de datos,2d,,pending
+ACAD-0260,AutoCAD,260,"Bloques, atributos y referencias",ATTACH,,,Adjunta contenido externo,2d,,pending
+ACAD-0261,AutoCAD,261,"Archivo, impresión y publicación",NEW,CTRL+N,,Nuevo dibujo,2d,,pending
+ACAD-0262,AutoCAD,262,"Archivo, impresión y publicación",OPEN,CTRL+O,,Abre un dibujo,2d,,pending
+ACAD-0263,AutoCAD,263,"Archivo, impresión y publicación",QSAVE,CTRL+S,,Guarda,2d,,pending
+ACAD-0264,AutoCAD,264,"Archivo, impresión y publicación",SAVE,,,Guarda con nombre actual,2d,,pending
+ACAD-0265,AutoCAD,265,"Archivo, impresión y publicación",SAVEAS,,,Guarda con otro nombre o formato,2d,,pending
+ACAD-0266,AutoCAD,266,"Archivo, impresión y publicación",SAVEALL,,,Guarda todos los dibujos abiertos,2d,,pending
+ACAD-0267,AutoCAD,267,"Archivo, impresión y publicación",CLOSE,,,Cierra dibujo actual,2d,,pending
+ACAD-0268,AutoCAD,268,"Archivo, impresión y publicación",CLOSEALL,,,Cierra todos,2d,,pending
+ACAD-0269,AutoCAD,269,"Archivo, impresión y publicación",QUIT,EXIT,,Sale del programa,2d,,pending
+ACAD-0270,AutoCAD,270,"Archivo, impresión y publicación",RECOVER,,,Recupera dibujo dañado,2d,,pending
+ACAD-0271,AutoCAD,271,"Archivo, impresión y publicación",RECOVERALL,,,Recupera dibujo y referencias,2d,,pending
+ACAD-0272,AutoCAD,272,"Archivo, impresión y publicación",AUDIT,,,Revisa y corrige errores de la base de datos,2d,,pending
+ACAD-0273,AutoCAD,273,"Archivo, impresión y publicación",PURGE,PU,,"Elimina elementos sin usar (capas, bloques, estilos…)",2d,,pending
+ACAD-0274,AutoCAD,274,"Archivo, impresión y publicación",DRAWINGRECOVERY,,,Administrador de recuperación,2d,,pending
+ACAD-0275,AutoCAD,275,"Archivo, impresión y publicación",DRAWINGUTILITIES,,,Utilidades del dibujo,2d,,pending
+ACAD-0276,AutoCAD,276,"Archivo, impresión y publicación",PLOT,"PRINT, CTRL+P",,Traza o imprime,2d,,pending
+ACAD-0277,AutoCAD,277,"Archivo, impresión y publicación",-PLOT,,,Traza por línea de comandos,2d,,pending
+ACAD-0278,AutoCAD,278,"Archivo, impresión y publicación",PREVIEW,PRE,,Vista previa de trazado,2d,,pending
+ACAD-0279,AutoCAD,279,"Archivo, impresión y publicación",PAGESETUP,,,Configuración de página,2d,,pending
+ACAD-0280,AutoCAD,280,"Archivo, impresión y publicación",PLOTSTYLE,,,Estilo de trazado actual,2d,,pending
+ACAD-0281,AutoCAD,281,"Archivo, impresión y publicación",STYLESMANAGER,,,Carpeta de estilos de trazado (CTB/STB),2d,,pending
+ACAD-0282,AutoCAD,282,"Archivo, impresión y publicación",PLOTTERMANAGER,,,Administrador de trazadores,2d,,pending
+ACAD-0283,AutoCAD,283,"Archivo, impresión y publicación",PUBLISH,,,Publica varias hojas en lote (PDF/DWF),2d,,pending
+ACAD-0284,AutoCAD,284,"Archivo, impresión y publicación",EXPORTPDF,,,Exporta a PDF,2d,,pending
+ACAD-0285,AutoCAD,285,"Archivo, impresión y publicación",EXPORT,EXP,,"Exporta a otros formatos (DWF, DXF, WMF, STL…)",2d,,pending
+ACAD-0286,AutoCAD,286,"Archivo, impresión y publicación",IMPORT,IMP,,"Importa archivos (WMF, SAT, 3DS…)",2d,,pending
+ACAD-0287,AutoCAD,287,"Archivo, impresión y publicación",DXFOUT/DXFIN,,,Exporta o importa DXF,2d,,pending
+ACAD-0288,AutoCAD,288,"Archivo, impresión y publicación",EXPORTLAYOUT,,,Exporta presentación a modelo,2d,,pending
+ACAD-0289,AutoCAD,289,"Archivo, impresión y publicación",LAYOUT,LO,,Gestiona presentaciones,2d,,pending
+ACAD-0290,AutoCAD,290,"Archivo, impresión y publicación",LAYOUTWIZARD,,,Asistente de presentaciones,2d,,pending
+ACAD-0291,AutoCAD,291,"Archivo, impresión y publicación",MVIEW,MV,,Crea ventanas gráficas en presentación,2d,,pending
+ACAD-0292,AutoCAD,292,"Archivo, impresión y publicación",MSPACE,MS,,Pasa al espacio modelo desde una ventana,2d,,pending
+ACAD-0293,AutoCAD,293,"Archivo, impresión y publicación",PSPACE,PS,,Vuelve al espacio papel,2d,,pending
+ACAD-0294,AutoCAD,294,"Archivo, impresión y publicación",VPCLIP,,,Recorta ventana gráfica,2d,,pending
+ACAD-0295,AutoCAD,295,"Archivo, impresión y publicación",VPMAX / VPMIN,,,Maximiza o restaura ventana,2d,,pending
+ACAD-0296,AutoCAD,296,"Archivo, impresión y publicación",SHEETSET,SSM,,Administrador de juegos de planos,2d,,pending
+ACAD-0297,AutoCAD,297,"Archivo, impresión y publicación",ETRANSMIT,,,Prepara paquete de archivos,2d,,pending
+ACAD-0298,AutoCAD,298,"Archivo, impresión y publicación",ARCHIVE,,,Archiva juego de planos,2d,,pending
+ACAD-0299,AutoCAD,299,"Archivo, impresión y publicación",3DPRINT,,,Envía a impresión 3D,excluded_3d,Herramienta de geometría/navegación 3D fuera del producto 2D.,pending
+ACAD-0300,AutoCAD,300,"Archivo, impresión y publicación",SENDMAIL,,,Envía por correo,2d,,pending
+ACAD-0301,AutoCAD,301,"Archivo, impresión y publicación",BROWSER,,,Abre navegador,2d,,pending
+ACAD-0302,AutoCAD,302,"Archivo, impresión y publicación",SHARE,,,Comparte dibujo,2d,,pending
+ACAD-0303,AutoCAD,303,"Archivo, impresión y publicación",CLOUD,,,Acceso a nube,2d,,pending
+ACAD-0304,AutoCAD,304,Ayudas de dibujo y configuración,OSNAP,OS,,Refencias a objetos permanentes,2d,,pending
+ACAD-0305,AutoCAD,305,Ayudas de dibujo y configuración,DSETTINGS,"DS, SE",,"Parámetros de dibujo (osnap, polar, snap, dyn)",2d,,pending
+ACAD-0306,AutoCAD,306,Ayudas de dibujo y configuración,SNAP,SN,,Forzado de cursor,2d,,pending
+ACAD-0307,AutoCAD,307,Ayudas de dibujo y configuración,GRID,,,Rejilla visible,2d,,pending
+ACAD-0308,AutoCAD,308,Ayudas de dibujo y configuración,ORTHO,,,Modo ortogonal (F8),2d,,pending
+ACAD-0309,AutoCAD,309,Ayudas de dibujo y configuración,POLAR,,,Rastreo polar (F10),2d,,pending
+ACAD-0310,AutoCAD,310,Ayudas de dibujo y configuración,OTRACK,,,Rastreo de referencia a objetos (F11),2d,,pending
+ACAD-0311,AutoCAD,311,Ayudas de dibujo y configuración,DYNMODE,,,Entrada dinámica (F12),2d,,pending
+ACAD-0312,AutoCAD,312,Ayudas de dibujo y configuración,SELECTIONCYCLING,,,Alternar objetos superpuestos,2d,,pending
+ACAD-0313,AutoCAD,313,Ayudas de dibujo y configuración,GRIPS,,,Pinzamientos,2d,,pending
+ACAD-0314,AutoCAD,314,Ayudas de dibujo y configuración,OPTIONS,OP,,Opciones del programa,2d,,pending
+ACAD-0315,AutoCAD,315,Ayudas de dibujo y configuración,CUI,,,Interfaz de usuario personalizada,2d,,pending
+ACAD-0316,AutoCAD,316,Ayudas de dibujo y configuración,CUILOAD / CUIUNLOAD,,,Carga/descarga archivos de personalización,2d,,pending
+ACAD-0317,AutoCAD,317,Ayudas de dibujo y configuración,CUIIMPORT / CUIEXPORT,,,Importa/exporta personalizaciones,2d,,pending
+ACAD-0318,AutoCAD,318,Ayudas de dibujo y configuración,RIBBON / RIBBONCLOSE,,,Cinta de opciones,2d,,pending
+ACAD-0319,AutoCAD,319,Ayudas de dibujo y configuración,MENUBAR,,,Barra de menús,2d,,pending
+ACAD-0320,AutoCAD,320,Ayudas de dibujo y configuración,TOOLPALETTES,TP,,Paletas de herramientas,2d,,pending
+ACAD-0321,AutoCAD,321,Ayudas de dibujo y configuración,DESIGNCENTER,DC,,Centro de diseño,2d,,pending
+ACAD-0322,AutoCAD,322,Ayudas de dibujo y configuración,SHEETSETHIDE,,,Cierra gestor de planos,2d,,pending
+ACAD-0323,AutoCAD,323,Ayudas de dibujo y configuración,MARKUP,,,Importa marcas,2d,,pending
+ACAD-0324,AutoCAD,324,Ayudas de dibujo y configuración,QNEW,,,Nuevo rápido con plantilla,2d,,pending
+ACAD-0325,AutoCAD,325,Ayudas de dibujo y configuración,ALIASEDIT,PGP,,Edita alias de comandos,2d,,pending
+ACAD-0326,AutoCAD,326,Ayudas de dibujo y configuración,CMDLINE,CTRL+9,,Muestra línea de comandos,2d,,pending
+ACAD-0327,AutoCAD,327,Ayudas de dibujo y configuración,COMMANDLINEHIDE,,,Oculta línea de comandos,2d,,pending
+ACAD-0328,AutoCAD,328,Ayudas de dibujo y configuración,TEXTSCR,F2,,Ventana de texto,2d,,pending
+ACAD-0329,AutoCAD,329,Ayudas de dibujo y configuración,GRAPHSCR,,,Vuelve a ventana gráfica,2d,,pending
+ACAD-0330,AutoCAD,330,Ayudas de dibujo y configuración,INPUTSEARCHOPTIONS,,,Opciones de búsqueda de entrada,2d,,pending
+ACAD-0331,AutoCAD,331,Ayudas de dibujo y configuración,COMMANDS,,,Lista todos los comandos disponibles,2d,,pending
+ACAD-0332,AutoCAD,332,Ayudas de dibujo y configuración,HELP,F1,,Ayuda,2d,,pending
+ACAD-0333,AutoCAD,333,Ayudas de dibujo y configuración,ABOUT,,,Información de versión,2d,,pending
+ACAD-0334,AutoCAD,334,Ayudas de dibujo y configuración,INFO,,,Información del producto,2d,,pending
+ACAD-0335,AutoCAD,335,Programación y automatización,APPLOAD,AP,,"Carga aplicaciones (LISP, ARX, DLL), Startup Suite",2d,,pending
+ACAD-0336,AutoCAD,336,Programación y automatización,VLISP,VLIDE,,Editor de Visual LISP,2d,,pending
+ACAD-0337,AutoCAD,337,Programación y automatización,LOAD,,,Carga archivos de forma (SHX),2d,,pending
+ACAD-0338,AutoCAD,338,Programación y automatización,SCRIPT,SCR,,Ejecuta un archivo .scr,2d,,pending
+ACAD-0339,AutoCAD,339,Programación y automatización,RUN / SCRIPT,,,Ejecución por lotes,2d,,pending
+ACAD-0340,AutoCAD,340,Programación y automatización,ACTRECORD,,,Graba macro de acciones,2d,,pending
+ACAD-0341,AutoCAD,341,Programación y automatización,ACTSTOP,,,Detiene grabación,2d,,pending
+ACAD-0342,AutoCAD,342,Programación y automatización,ACTUSERINPUT,,,Pausa para entrada del usuario,2d,,pending
+ACAD-0343,AutoCAD,343,Programación y automatización,ACTBASE,,,Punto base de acción,2d,,pending
+ACAD-0344,AutoCAD,344,Programación y automatización,ACTMANAGER,,,Administrador de macros,2d,,pending
+ACAD-0345,AutoCAD,345,Programación y automatización,NETLOAD,,,Carga ensamblados .NET,2d,,pending
+ACAD-0346,AutoCAD,346,Programación y automatización,ARX,,,Carga o descarga aplicaciones ARX,2d,,pending
+ACAD-0347,AutoCAD,347,Programación y automatización,VBARUN / VBAIDE,,,Ejecuta macros VBA / abre el editor,2d,,pending
+ACAD-0348,AutoCAD,348,Programación y automatización,VBALOAD,,,Carga proyecto VBA,2d,,pending
+ACAD-0349,AutoCAD,349,Programación y automatización,RECORDER,,,Grabadora de acciones,2d,,pending
+ACAD-0350,AutoCAD,350,Programación y automatización,DESIGNFEED,,,Panel de actividad,2d,,pending
+ACAD-0351,AutoCAD,351,Programación y automatización,FONTALT,,,Fuente alterna,2d,,pending
+ACAD-0352,AutoCAD,352,Programación y automatización,FONTMAP,,,Asigna fuentes,2d,,pending
+ACAD-0353,AutoCAD,353,Programación y automatización,STARTUP,,,Control del inicio,2d,,pending
+ACAD-0354,AutoCAD,354,Sólidos 3D,BOX,,,Caja 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0355,AutoCAD,355,Sólidos 3D,SPHERE,,,Esfera,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0356,AutoCAD,356,Sólidos 3D,CYLINDER,CYL,,Cilindro,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0357,AutoCAD,357,Sólidos 3D,CONE,,,Cono,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0358,AutoCAD,358,Sólidos 3D,WEDGE,WE,,Cuña,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0359,AutoCAD,359,Sólidos 3D,TORUS,TOR,,Toro,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0360,AutoCAD,360,Sólidos 3D,PYRAMID,PYR,,Pirámide,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0361,AutoCAD,361,Sólidos 3D,POLYSOLID,,,Polisólido,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0362,AutoCAD,362,Sólidos 3D,EXTRUDE,EXT,,Extruye perfiles a sólidos o superficies,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0363,AutoCAD,363,Sólidos 3D,REVOLVE,REV,,Revoluciona perfil,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0364,AutoCAD,364,Sólidos 3D,SWEEP,,,Barrido a lo largo de trayectoria,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0365,AutoCAD,365,Sólidos 3D,LOFT,,,Solevación entre secciones,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0366,AutoCAD,366,Sólidos 3D,PRESSPULL,PRESS,,Empuja/tira de áreas cerradas,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0367,AutoCAD,367,Sólidos 3D,UNION,UNI,,Une sólidos o regiones,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0368,AutoCAD,368,Sólidos 3D,SUBTRACT,SU,,Resta sólidos o regiones,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0369,AutoCAD,369,Sólidos 3D,INTERSECT,IN,,Intersección de sólidos,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0370,AutoCAD,370,Sólidos 3D,SLICE,SL,,Corta sólido con plano,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0371,AutoCAD,371,Sólidos 3D,SECTION,SEC,,Sección transversal como región,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0372,AutoCAD,372,Sólidos 3D,SECTIONPLANE,SPLANE,,Plano de sección,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0373,AutoCAD,373,Sólidos 3D,LIVESECTION,,,Sección en vivo,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0374,AutoCAD,374,Sólidos 3D,THICKEN,,,Convierte superficie en sólido,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0375,AutoCAD,375,Sólidos 3D,INTERFERE,INF,,Verifica interferencias,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0376,AutoCAD,376,Sólidos 3D,SOLIDEDIT,,,"Edita caras, aristas y cuerpos",excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0377,AutoCAD,377,Sólidos 3D,FILLETEDGE,,,Empalme de aristas,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0378,AutoCAD,378,Sólidos 3D,CHAMFEREDGE,,,Chaflán de aristas,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0379,AutoCAD,379,Sólidos 3D,SHELL,,,Vaciado de sólido,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0380,AutoCAD,380,Sólidos 3D,3DMOVE,3M,,Desplaza en 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0381,AutoCAD,381,Sólidos 3D,3DROTATE,,,Gira en 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0382,AutoCAD,382,Sólidos 3D,3DSCALE,,,Escala en 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0383,AutoCAD,383,Sólidos 3D,3DALIGN,3AL,,Alinea en 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0384,AutoCAD,384,Sólidos 3D,3DMIRROR,,,Refleja en 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0385,AutoCAD,385,Sólidos 3D,3DARRAY,3A,,Matriz 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0386,AutoCAD,386,Sólidos 3D,3DFACE,3F,,Cara 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0387,AutoCAD,387,Sólidos 3D,3DMESH,,,Malla poligonal,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0388,AutoCAD,388,Sólidos 3D,FLATSHOT,,,Proyección plana 2D de modelo 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0389,AutoCAD,389,Sólidos 3D,SOLVIEW / SOLDRAW / SOLPROF,,,Vistas y perfiles de sólidos en presentación,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0390,AutoCAD,390,Sólidos 3D,VIEWBASE,,,Vista base de modelo 3D,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0391,AutoCAD,391,Sólidos 3D,CONVTOSOLID,,,Convierte a sólido,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0392,AutoCAD,392,Sólidos 3D,CONVTOSURFACE,,,Convierte a superficie,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0393,AutoCAD,393,Sólidos 3D,CONVTOMESH,,,Convierte a malla,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0394,AutoCAD,394,Sólidos 3D,MESH,,,Primitivas de malla,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0395,AutoCAD,395,Sólidos 3D,MESHSMOOTH,,,Suaviza malla,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0396,AutoCAD,396,Sólidos 3D,MESHREFINE,,,Refina malla,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0397,AutoCAD,397,Sólidos 3D,MESHEXTRUDE,,,Extruye caras de malla,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0398,AutoCAD,398,Sólidos 3D,SURFBLEND,,,Mezcla superficies,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0399,AutoCAD,399,Sólidos 3D,SURFPATCH,,,Parche de superficie,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0400,AutoCAD,400,Sólidos 3D,SURFOFFSET,,,Desfase de superficie,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0401,AutoCAD,401,Sólidos 3D,SURFEXTEND,,,Extiende superficie,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0402,AutoCAD,402,Sólidos 3D,SURFSCULPT,,,Esculpe sólido con superficies,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0403,AutoCAD,403,Sólidos 3D,PLANESURF,,,Superficie plana,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0404,AutoCAD,404,Sólidos 3D,NETWORKSURF,,,Superficie de red,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0405,AutoCAD,405,Sólidos 3D,RENDER,RR,,Renderizado fotorrealista,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0406,AutoCAD,406,Sólidos 3D,MATERIALS,,,Paleta de materiales,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0407,AutoCAD,407,Sólidos 3D,LIGHT,,,Luces,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0408,AutoCAD,408,Sólidos 3D,SUNPROPERTIES,,,Propiedades del sol,excluded_3d,"Exclusión explícita de sólidos, superficies y herramientas 3D; no se elimina la fila.",pending
+ACAD-0409,AutoCAD,409,Sólidos 3D,SKETCH,,,Mano alzada,2d,,pending
+ACAD-0410,AutoCAD,410,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDATTACH,,,Adjunta nube de puntos (RCP/RCS),2d,,pending
+ACAD-0411,AutoCAD,411,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDINDEX,,,Indexa nube de puntos (escaneo LiDAR/ReCap),2d,,pending
+ACAD-0412,AutoCAD,412,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDCLIP,,,Recorta nube de puntos,2d,,pending
+ACAD-0413,AutoCAD,413,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDCROP,,,Recorta nube por área o caja,2d,,pending
+ACAD-0414,AutoCAD,414,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDOSNAP,,,Referencias a puntos de la nube,2d,,pending
+ACAD-0415,AutoCAD,415,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDMANAGER,,,Administra nubes de puntos,2d,,pending
+ACAD-0416,AutoCAD,416,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDDENSITY,,,Densidad de visualización de nube,2d,,pending
+ACAD-0417,AutoCAD,417,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDVISIBILITY,,,Visibilidad de la nube,2d,,pending
+ACAD-0418,AutoCAD,418,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDAUTOUPDATE,,,Actualización automática,2d,,pending
+ACAD-0419,AutoCAD,419,Nube de puntos y datos geoespaciales (CAD base),POINTCLOUDEXTRACT,,,Extrae geometría de la nube,2d,,pending
+ACAD-0420,AutoCAD,420,Nube de puntos y datos geoespaciales (CAD base),ATTACHURL,,,Adjunta hipervínculo,2d,,pending
+ACAD-0421,AutoCAD,421,Nube de puntos y datos geoespaciales (CAD base),HYPERLINK,,,Vincula objetos a archivos o URL,2d,,pending
+ACAD-0422,AutoCAD,422,Nube de puntos y datos geoespaciales (CAD base),GEOGRAPHICLOCATION,,,Ubicación geográfica del dibujo,2d,,pending
+ACAD-0423,AutoCAD,423,Nube de puntos y datos geoespaciales (CAD base),MAPCONNECT,,,Conecta a servicios de mapa/capas GIS (Map 3D),2d,,pending
+CIV-0002,Civil 3D geoespacial,2,Sistemas de coordenadas,MAPCSASSIGN,,Map 3D / Civil 3D > Mapa > Sistema de coordenadas,"Asigna un sistema de coordenadas (EPSG, UTM, etc.) al dibujo",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0003,Civil 3D geoespacial,3,Sistemas de coordenadas,MAPCSLIBRARY,,Map 3D > Administrador de CS,Biblioteca de sistemas de coordenadas y datums,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0004,Civil 3D geoespacial,4,Sistemas de coordenadas,—,,Cinta > Geolocalización > Establecer ubicación,Define ubicación geográfica y vincula con mapa en línea,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0005,Civil 3D geoespacial,5,Sistemas de coordenadas,GEOGRAPHICLOCATION,,Cinta > Geolocalización,Establece ubicación geográfica (lat/long) y sistema asociado,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0006,Civil 3D geoespacial,6,Sistemas de coordenadas,GEOMAP,,Cinta > Geolocalización > Mapa en línea,"Muestra mapa base (aéreo, carretera, híbrido)",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0007,Civil 3D geoespacial,7,Sistemas de coordenadas,GEOMARKPOSITION,,Cinta > Geolocalización,Coloca un marcador geográfico,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0008,Civil 3D geoespacial,8,Sistemas de coordenadas,—,,Cinta > Home > Settings > Drawing Settings > Zone,"Configura zona, datum y transformación del dibujo",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0009,Civil 3D geoespacial,9,Sistemas de coordenadas,—,,Prospector / Settings > Transformation,Parámetros de transformación local ↔ geodésico,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0010,Civil 3D geoespacial,10,Sistemas de coordenadas,MAPINSERT,,Map 3D / Civil 3D > Mapa > Insertar (equivale a INSERT con transformación),"Inserta un DWG en el dibujo actual transformando sus coordenadas cuando los sistemas de coordenadas son distintos (ej. UTM 16N a otra zona o a coordenadas locales); a diferencia de INSERT, respeta la ubicación geográfica real",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0011,Civil 3D geoespacial,11,Importación/exportación GIS,MAPIINSERT,,Map 3D / Civil 3D > Mapa > Insertar imagen,"Inserta imágenes raster georreferenciadas (GeoTIFF, ortofotos, MDE) ubicándolas por sus coordenadas reales",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0012,Civil 3D geoespacial,12,Importación/exportación GIS,EXPORTTOAUTOCAD,,Cinta > Output > Export to AutoCAD,"Convierte objetos de Civil 3D (superficies, alineamientos, puntos COGO) a entidades AutoCAD simples para entregar a quien no usa Civil 3D",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0013,Civil 3D geoespacial,13,Sistemas de coordenadas,MAPWSPACE,,Map 3D > Espacio de trabajo,"Cambia al espacio de trabajo de Map 3D con paneles de capas GIS, tareas y mapa",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0014,Civil 3D geoespacial,14,Importación/exportación GIS,MAPIMPORT,,Map 3D > Importar,"Importa SHP, GDB, DXF, GeoTIFF, KML, etc. a objetos CAD o Civil 3D",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0015,Civil 3D geoespacial,15,Importación/exportación GIS,MAPEXPORT,,Map 3D > Exportar,"Exporta a SHP, GDB, KML, DXF u otros formatos GIS",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0016,Civil 3D geoespacial,16,Importación/exportación GIS,MAPCONNECT,,Map 3D > Conectar a datos,"Conecta a fuentes de datos (FDO): SHP, WMS, bases SQL",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0017,Civil 3D geoespacial,17,Importación/exportación GIS,—,,Cinta > Insert > Map > Create Map from Feature,Importa datos geoespaciales como entidades,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0018,Civil 3D geoespacial,18,Importación/exportación GIS,MAPCLEAN,,Map 3D > Limpieza de dibujo,"Limpia geometría: elimina duplicados, cierra huecos, corrige intersecciones",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0019,Civil 3D geoespacial,19,Importación/exportación GIS,—,,Cinta > Output > Export to KML,Exporta a Google Earth,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0020,Civil 3D geoespacial,20,Importación/exportación GIS,—,,Cinta > Output > Export to LandXML,Exporta superficies y alineamientos,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0021,Civil 3D geoespacial,21,Importación/exportación GIS,—,,Cinta > Insert > Import > LandXML,Importa datos LandXML,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0022,Civil 3D geoespacial,22,Puntos COGO,—,,Cinta > Home > Create Ground Data > Points,"Crea puntos con N, E, Z, descripción desde archivos o manualmente",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0023,Civil 3D geoespacial,23,Puntos COGO,—,,Cinta > Home > Create Ground Data > Points > Import Points,"Importa archivos PNEZD, CSV, TXT",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0024,Civil 3D geoespacial,24,Puntos COGO,—,,Prospector > Points > Point Groups,"Agrupa puntos por criterio (código, elevación)",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0025,Civil 3D geoespacial,25,Puntos COGO,—,,Prospector > Points > Edit/Export,Edita y exporta puntos topográficos,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0026,Civil 3D geoespacial,26,Puntos COGO,—,,Settings > Description Key Sets,Asigna estilos/etiquetas por código de campo,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0027,Civil 3D geoespacial,27,Superficies / Modelos digitales de terreno,—,,Cinta > Home > Create Ground Data > Surfaces,"Crea superficie TIN, grid, volumen o desde nube de puntos/LiDAR",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0028,Civil 3D geoespacial,28,Superficies / Modelos digitales de terreno,—,,Prospector > Surfaces > Definition > Point Files / Contours / Breaklines / Boundaries,"Define la superficie con puntos, curvas de nivel y líneas de ruptura",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0029,Civil 3D geoespacial,29,Superficies / Modelos digitales de terreno,—,,Cinta > Modify > Surface,"Edita superficie: agregar/eliminar líneas TIN, suavizar, simplificar",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0030,Civil 3D geoespacial,30,Superficies / Modelos digitales de terreno,—,,Cinta > Analyze > Surface Analysis,"Análisis: pendientes, elevación, cuencas, rangos",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0031,Civil 3D geoespacial,31,Superficies / Modelos digitales de terreno,—,,Cinta > Home > Create Design > Create Surface Volume,Calcula volúmenes por diferencia entre superficies,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0032,Civil 3D geoespacial,32,Superficies / Modelos digitales de terreno,—,,Cinta > Analyze > Volumes Dashboard,Panel de volúmenes de corte/relleno,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0033,Civil 3D geoespacial,33,Superficies / Modelos digitales de terreno,—,,Surface > Contours / Extract Objects,Genera y extrae curvas de nivel como polilíneas,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0034,Civil 3D geoespacial,34,Superficies / Modelos digitales de terreno,—,,Surface > Add Breaklines,Líneas de quiebre para mejorar el modelo,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0035,Civil 3D geoespacial,35,Superficies / Modelos digitales de terreno,—,,Surface > Watershed / Catchments,Delimita cuencas y escurrimientos,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0036,Civil 3D geoespacial,36,Topografía (Survey),—,,Toolspace > Survey,"Base de datos topográfica: puntos de control, redes y figuras",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0037,Civil 3D geoespacial,37,Topografía (Survey),—,,Survey > Import Survey Data,"Importa datos de estación total (FBK, RAW, etc.)",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0038,Civil 3D geoespacial,38,Topografía (Survey),—,,Survey > Networks / Figures,"Redes y figuras (líneas de rotura, bordes)",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0039,Civil 3D geoespacial,39,Topografía (Survey),—,,Survey > Traverse Editor,"Editor de poligonales y ajuste (brújula, tránsito)",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0040,Civil 3D geoespacial,40,Topografía (Survey),—,,Survey > Least Squares,Ajuste por mínimos cuadrados de la red,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0041,Civil 3D geoespacial,41,Alineamientos y geometría,—,,Cinta > Home > Create Design > Alignment,"Alineamientos por geometría, polilínea o diseño",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0042,Civil 3D geoespacial,42,Alineamientos y geometría,—,,Cinta > Home > Create Design > Profile,Perfiles de terreno y de rasante,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0043,Civil 3D geoespacial,43,Alineamientos y geometría,—,,Cinta > Home > Create Design > Feature Line,Línea característica con elevaciones,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0044,Civil 3D geoespacial,44,Parcelas y predios,—,,Cinta > Home > Create Design > Parcel,Define parcelas y lotes con áreas y linderos,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0045,Civil 3D geoespacial,45,Parcelas y predios,—,,Parcel > Create Parcel from Objects,Convierte polilíneas a parcelas,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0046,Civil 3D geoespacial,46,Parcelas y predios,—,,Annotate > Add Labels > Parcel,"Etiquetas de área, rumbo, distancia",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0047,Civil 3D geoespacial,47,Etiquetas geodésicas,—,,Cinta > Annotate > Add Labels,"Etiquetas de coordenadas, rumbo/azimut, distancia, curvas",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0048,Civil 3D geoespacial,48,Etiquetas geodésicas,—,,Annotate > Add Tables,"Tablas de puntos, líneas, curvas, áreas",geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0049,Civil 3D geoespacial,49,Nubes de puntos y LiDAR,POINTCLOUDATTACH,,Insert > Point Cloud,Adjunta nubes de puntos (RCP/RCS) para extraer superficies,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0050,Civil 3D geoespacial,50,Nubes de puntos y LiDAR,—,,Surface > Create from Point Cloud,Genera superficie TIN desde nube LiDAR,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending
+CIV-0051,Civil 3D geoespacial,51,Cuadrículas y sección,—,,Sample Lines / Section Views,Secciones transversales desde superficies,geospatial_2d_z,"GIS, topografía o terreno: implementación por etapas, sin sólidos.",pending

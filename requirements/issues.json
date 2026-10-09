@@ -1,0 +1,12 @@
+{
+  "repository": "aavaladez/open-cad-2d",
+  "issues": {
+    "bootstrap": "https://github.com/aavaladez/open-cad-2d/issues/1",
+    "engine": "https://github.com/aavaladez/open-cad-2d/issues/2",
+    "commands_ui": "https://github.com/aavaladez/open-cad-2d/issues/3",
+    "lisp": "https://github.com/aavaladez/open-cad-2d/issues/4",
+    "interop": "https://github.com/aavaladez/open-cad-2d/issues/5",
+    "packaging_plot": "https://github.com/aavaladez/open-cad-2d/issues/6",
+    "geospatial": "https://github.com/aavaladez/open-cad-2d/issues/7"
+  }
+}

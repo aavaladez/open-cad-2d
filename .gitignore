@@ -1,0 +1,11 @@
+.cache/
+.venv/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.spec
+!packaging/opencad.spec
+.coverage
+startup-error.log
+

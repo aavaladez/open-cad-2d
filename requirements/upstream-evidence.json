@@ -1,0 +1,3404 @@
+[
+  {
+    "repository": "qcad/qcad",
+    "sha": "4c830eb4d80285ca64b1f2c2dc0987f729344126",
+    "commit": "2026-10-07 RDocumentInterface: unexport objects removed by non-undoable transactions",
+    "evidence": [
+      {
+        "path": "README.md",
+        "sha256": "99389ea79303a7ea3fe7a94f343d881f8de6125450733e4c2a5f52acab3969dc",
+        "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/README.md"
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "3c42599d788ef10030b9eab8743d6c0ac342078e93e00106f5fcd9ede853f0ff",
+        "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/CMakeLists.txt"
+      },
+      {
+        "path": "LICENSE.txt",
+        "sha256": "b8ee884838f39d9b6b2a04497fea413b157a132f724580555a3dab45b7db84da",
+        "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/LICENSE.txt"
+      },
+      {
+        "path": "CMakeInclude.txt",
+        "sha256": "e7e48ffe8f85c44b8e175bbc87519475cd1d61365011578dd2e45653ec5aaf15",
+        "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/CMakeInclude.txt"
+      }
+    ],
+    "commands": {
+      "BLOCKADD": [
+        {
+          "path": "scripts/Block/AddBlock/AddBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/AddBlock/AddBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BA": [
+        {
+          "path": "scripts/Block/AddBlock/AddBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/AddBlock/AddBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKCREATE": [
+        {
+          "path": "scripts/Block/CreateBlock/CreateBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/CreateBlock/CreateBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BC": [
+        {
+          "path": "scripts/Block/CreateBlock/CreateBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/CreateBlock/CreateBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKDESELECT": [
+        {
+          "path": "scripts/Block/DeselectBlockReferences/DeselectBlockReferencesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/DeselectBlockReferences/DeselectBlockReferencesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DESELECTBLOCK": [
+        {
+          "path": "scripts/Block/DeselectBlockReferences/DeselectBlockReferencesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/DeselectBlockReferences/DeselectBlockReferencesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BX": [
+        {
+          "path": "scripts/Block/DeselectBlockReferences/DeselectBlockReferencesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/DeselectBlockReferences/DeselectBlockReferencesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKEDIT": [
+        {
+          "path": "scripts/Block/EditBlock/EditBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/EditBlock/EditBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BE": [
+        {
+          "path": "scripts/Block/EditBlock/EditBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/EditBlock/EditBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKEDITFROMREFERENCE": [
+        {
+          "path": "scripts/Block/EditFromReference/EditFromReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/EditFromReference/EditFromReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BD": [
+        {
+          "path": "scripts/Block/EditFromReference/EditFromReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/EditFromReference/EditFromReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EDITMAIN": [
+        {
+          "path": "scripts/Block/EditMainDrawing/EditMainDrawingInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/EditMainDrawing/EditMainDrawingInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EM": [
+        {
+          "path": "scripts/Block/EditMainDrawing/EditMainDrawingInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/EditMainDrawing/EditMainDrawingInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKHIDEALL": [
+        {
+          "path": "scripts/Block/HideAllBlocks/HideAllBlocksInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/HideAllBlocks/HideAllBlocksInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKINSERT": [
+        {
+          "path": "scripts/Block/InsertBlock/InsertBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/InsertBlock/InsertBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MINSERT": [
+        {
+          "path": "scripts/Block/InsertBlock/InsertBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/InsertBlock/InsertBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INSERT": [
+        {
+          "path": "scripts/Block/InsertBlock/InsertBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/InsertBlock/InsertBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BI": [
+        {
+          "path": "scripts/Block/InsertBlock/InsertBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/InsertBlock/InsertBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKREMOVE": [
+        {
+          "path": "scripts/Block/RemoveBlock/RemoveBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/RemoveBlock/RemoveBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BR": [
+        {
+          "path": "scripts/Block/RemoveBlock/RemoveBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/RemoveBlock/RemoveBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKRENAME": [
+        {
+          "path": "scripts/Block/RenameBlock/RenameBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/RenameBlock/RenameBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BN": [
+        {
+          "path": "scripts/Block/RenameBlock/RenameBlockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/RenameBlock/RenameBlockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKSELECT": [
+        {
+          "path": "scripts/Block/SelectBlockReferences/SelectBlockReferencesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/SelectBlockReferences/SelectBlockReferencesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTBLOCK": [
+        {
+          "path": "scripts/Block/SelectBlockReferences/SelectBlockReferencesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/SelectBlockReferences/SelectBlockReferencesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BK": [
+        {
+          "path": "scripts/Block/SelectBlockReferences/SelectBlockReferencesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/SelectBlockReferences/SelectBlockReferencesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKSHOWALL": [
+        {
+          "path": "scripts/Block/ShowAllBlocks/ShowAllBlocksInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/ShowAllBlocks/ShowAllBlocksInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BS": [
+        {
+          "path": "scripts/Block/ShowAllBlocks/ShowAllBlocksInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/ShowAllBlocks/ShowAllBlocksInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BLOCKTOGGLEVISIBILITY": [
+        {
+          "path": "scripts/Block/ToggleBlockVisibility/ToggleBlockVisibilityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/ToggleBlockVisibility/ToggleBlockVisibilityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BV": [
+        {
+          "path": "scripts/Block/ToggleBlockVisibility/ToggleBlockVisibilityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Block/ToggleBlockVisibility/ToggleBlockVisibilityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARC2": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PA/Arc2PAInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PA/Arc2PAInit.js",
+          "pro_marker": false
+        }
+      ],
+      "A2": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PA/Arc2PAInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PA/Arc2PAInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCHEIGHT": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PH/Arc2PHInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PH/Arc2PHInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AH": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PH/Arc2PHInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PH/Arc2PHInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCLENGTH": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PL/Arc2PLInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PL/Arc2PLInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AL": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PL/Arc2PLInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PL/Arc2PLInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCRADIUS": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PR/Arc2PRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PR/Arc2PRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AD": [
+        {
+          "path": "scripts/Draw/Arc/Arc2PR/Arc2PRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc2PR/Arc2PRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARC3": [
+        {
+          "path": "scripts/Draw/Arc/Arc3P/Arc3PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc3P/Arc3PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "A3": [
+        {
+          "path": "scripts/Draw/Arc/Arc3P/Arc3PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/Arc3P/Arc3PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCCONCENTRIC": [
+        {
+          "path": "scripts/Draw/Arc/ArcConcentric/ArcConcentricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcConcentric/ArcConcentricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AC": [
+        {
+          "path": "scripts/Draw/Arc/ArcConcentric/ArcConcentricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcConcentric/ArcConcentricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCCONCENTRICTHROUGH": [
+        {
+          "path": "scripts/Draw/Arc/ArcConcentricThrough/ArcConcentricThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcConcentricThrough/ArcConcentricThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AG": [
+        {
+          "path": "scripts/Draw/Arc/ArcConcentricThrough/ArcConcentricThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcConcentricThrough/ArcConcentricThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCC": [
+        {
+          "path": "scripts/Draw/Arc/ArcCPA/ArcCPAInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcCPA/ArcCPAInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AR": [
+        {
+          "path": "scripts/Draw/Arc/ArcCPA/ArcCPAInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcCPA/ArcCPAInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCTANGENTIAL": [
+        {
+          "path": "scripts/Draw/Arc/ArcTangential/ArcTangentialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcTangential/ArcTangentialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AN": [
+        {
+          "path": "scripts/Draw/Arc/ArcTangential/ArcTangentialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcTangential/ArcTangentialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ARCTANGENTPOINTRADIUS": [
+        {
+          "path": "scripts/Draw/Arc/ArcTPR/ArcTPRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcTPR/ArcTPRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AT": [
+        {
+          "path": "scripts/Draw/Arc/ArcTPR/ArcTPRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Arc/ArcTPR/ArcTPRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLE2P": [
+        {
+          "path": "scripts/Draw/Circle/Circle2P/Circle2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2P/Circle2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "C2": [
+        {
+          "path": "scripts/Draw/Circle/Circle2P/Circle2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2P/Circle2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLERADIUS": [
+        {
+          "path": "scripts/Draw/Circle/Circle2PR/Circle2PRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2PR/Circle2PRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CD": [
+        {
+          "path": "scripts/Draw/Circle/Circle2PR/Circle2PRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2PR/Circle2PRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLETANGENT2": [
+        {
+          "path": "scripts/Draw/Circle/Circle2TP/Circle2TPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2TP/Circle2TPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CT2": [
+        {
+          "path": "scripts/Draw/Circle/Circle2TP/Circle2TPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2TP/Circle2TPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLETANGENT2RADIUS": [
+        {
+          "path": "scripts/Draw/Circle/Circle2TR/Circle2TRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2TR/Circle2TRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CTR": [
+        {
+          "path": "scripts/Draw/Circle/Circle2TR/Circle2TRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle2TR/Circle2TRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLE3P": [
+        {
+          "path": "scripts/Draw/Circle/Circle3P/Circle3PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle3P/Circle3PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "C3": [
+        {
+          "path": "scripts/Draw/Circle/Circle3P/Circle3PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle3P/Circle3PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLETANGENT3": [
+        {
+          "path": "scripts/Draw/Circle/Circle3T/Circle3TInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle3T/Circle3TInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CT3": [
+        {
+          "path": "scripts/Draw/Circle/Circle3T/Circle3TInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/Circle3T/Circle3TInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLEDIAMETER": [
+        {
+          "path": "scripts/Draw/Circle/CircleCD/CircleCDInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCD/CircleCDInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CA": [
+        {
+          "path": "scripts/Draw/Circle/CircleCD/CircleCDInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCD/CircleCDInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLECONCENTRIC": [
+        {
+          "path": "scripts/Draw/Circle/CircleConcentric/CircleConcentricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleConcentric/CircleConcentricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CC": [
+        {
+          "path": "scripts/Draw/Circle/CircleConcentric/CircleConcentricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleConcentric/CircleConcentricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLECONCENTRICTHROUGH": [
+        {
+          "path": "scripts/Draw/Circle/CircleConcentricThrough/CircleConcentricThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleConcentricThrough/CircleConcentricThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CG": [
+        {
+          "path": "scripts/Draw/Circle/CircleConcentricThrough/CircleConcentricThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleConcentricThrough/CircleConcentricThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLE": [
+        {
+          "path": "scripts/Draw/Circle/CircleCP/CircleCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCP/CircleCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CI": [
+        {
+          "path": "scripts/Draw/Circle/CircleCP/CircleCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCP/CircleCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLECR": [
+        {
+          "path": "scripts/Draw/Circle/CircleCR/CircleCRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCR/CircleCRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CR": [
+        {
+          "path": "scripts/Draw/Circle/CircleCR/CircleCRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCR/CircleCRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLETANGENT2P": [
+        {
+          "path": "scripts/Draw/Circle/CircleT2P/CircleT2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleT2P/CircleT2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CT1": [
+        {
+          "path": "scripts/Draw/Circle/CircleT2P/CircleT2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleT2P/CircleT2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLETANGENTPOINTRADIUS": [
+        {
+          "path": "scripts/Draw/Circle/CircleTPR/CircleTPRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleTPR/CircleTPRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CTP": [
+        {
+          "path": "scripts/Draw/Circle/CircleTPR/CircleTPRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleTPR/CircleTPRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMALIGNED": [
+        {
+          "path": "scripts/Draw/Dimension/DimAligned/DimAlignedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAligned/DimAlignedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DA": [
+        {
+          "path": "scripts/Draw/Dimension/DimAligned/DimAlignedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAligned/DimAlignedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMANGULAR": [
+        {
+          "path": "scripts/Draw/Dimension/DimAngular/DimAngularInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAngular/DimAngularInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DN": [
+        {
+          "path": "scripts/Draw/Dimension/DimAngular/DimAngularInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAngular/DimAngularInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMDIA": [
+        {
+          "path": "scripts/Draw/Dimension/DimDiametric/DimDiametricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimDiametric/DimDiametricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMDIAMETRIC": [
+        {
+          "path": "scripts/Draw/Dimension/DimDiametric/DimDiametricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimDiametric/DimDiametricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DD": [
+        {
+          "path": "scripts/Draw/Dimension/DimDiametric/DimDiametricInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimDiametric/DimDiametricInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMHOR": [
+        {
+          "path": "scripts/Draw/Dimension/DimHorizontal/DimHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimHorizontal/DimHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMHORIZONTAL": [
+        {
+          "path": "scripts/Draw/Dimension/DimHorizontal/DimHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimHorizontal/DimHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DH": [
+        {
+          "path": "scripts/Draw/Dimension/DimHorizontal/DimHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimHorizontal/DimHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMORDINATE": [
+        {
+          "path": "scripts/Draw/Dimension/DimOrdinate/DimOrdinateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimOrdinate/DimOrdinateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DO": [
+        {
+          "path": "scripts/Draw/Dimension/DimOrdinate/DimOrdinateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimOrdinate/DimOrdinateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMRAD": [
+        {
+          "path": "scripts/Draw/Dimension/DimRadial/DimRadialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRadial/DimRadialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMRADIAL": [
+        {
+          "path": "scripts/Draw/Dimension/DimRadial/DimRadialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRadial/DimRadialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DR": [
+        {
+          "path": "scripts/Draw/Dimension/DimRadial/DimRadialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRadial/DimRadialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMREGEN": [
+        {
+          "path": "scripts/Draw/Dimension/DimRegen/DimRegenInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRegen/DimRegenInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DS": [
+        {
+          "path": "scripts/Draw/Dimension/DimRegen/DimRegenInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRegen/DimRegenInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMLINEAR": [
+        {
+          "path": "scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMROTATED": [
+        {
+          "path": "scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DL": [
+        {
+          "path": "scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMVER": [
+        {
+          "path": "scripts/Draw/Dimension/DimVertical/DimVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimVertical/DimVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMVERTICAL": [
+        {
+          "path": "scripts/Draw/Dimension/DimVertical/DimVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimVertical/DimVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DV": [
+        {
+          "path": "scripts/Draw/Dimension/DimVertical/DimVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimVertical/DimVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LEADER": [
+        {
+          "path": "scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIMLEA": [
+        {
+          "path": "scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DE": [
+        {
+          "path": "scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LD": [
+        {
+          "path": "scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/Leader/LeaderInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSEARC": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseArcCPPA/EllipseArcCPPAInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseArcCPPA/EllipseArcCPPAInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EA": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseArcCPPA/EllipseArcCPPAInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseArcCPPA/EllipseArcCPPAInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSE": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseCPP/EllipseCPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseCPP/EllipseCPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EP": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseCPP/EllipseCPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseCPP/EllipseCPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSEDIAMETERS": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseDD/EllipseDDInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseDD/EllipseDDInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ED": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseDD/EllipseDDInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseDD/EllipseDDInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSEOFFSET": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseOffset/EllipseOffsetInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseOffset/EllipseOffsetInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EC": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseOffset/EllipseOffsetInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseOffset/EllipseOffsetInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSEOFFSETTHROUGH": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseOffsetThrough/EllipseOffsetThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseOffsetThrough/EllipseOffsetThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EG": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseOffsetThrough/EllipseOffsetThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseOffsetThrough/EllipseOffsetThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSERADII": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseRR/EllipseRRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseRR/EllipseRRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EI": [
+        {
+          "path": "scripts/Draw/Ellipse/EllipseRR/EllipseRRInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseRR/EllipseRRInit.js",
+          "pro_marker": false
+        }
+      ],
+      "HATCH": [
+        {
+          "path": "scripts/Draw/Hatch/HatchFromSelection/HatchFromSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Hatch/HatchFromSelection/HatchFromSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "HA": [
+        {
+          "path": "scripts/Draw/Hatch/HatchFromSelection/HatchFromSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Hatch/HatchFromSelection/HatchFromSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INSERTBITMAP": [
+        {
+          "path": "scripts/Draw/Image/ImageInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Image/ImageInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BITMAP": [
+        {
+          "path": "scripts/Draw/Image/ImageInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Image/ImageInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IM": [
+        {
+          "path": "scripts/Draw/Image/ImageInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Image/ImageInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINE": [
+        {
+          "path": "scripts/Draw/Line/Line2P/Line2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LN": [
+        {
+          "path": "scripts/Draw/Line/Line2P/Line2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LI": [
+        {
+          "path": "scripts/Draw/Line/Line2P/Line2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "L": [
+        {
+          "path": "scripts/Draw/Line/Line2P/Line2PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEANGLE": [
+        {
+          "path": "scripts/Draw/Line/LineAngle/LineAngleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineAngle/LineAngleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LA": [
+        {
+          "path": "scripts/Draw/Line/LineAngle/LineAngleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineAngle/LineAngleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEBISECTOR": [
+        {
+          "path": "scripts/Draw/Line/LineBisector/LineBisectorInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineBisector/LineBisectorInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BISECTOR": [
+        {
+          "path": "scripts/Draw/Line/LineBisector/LineBisectorInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineBisector/LineBisectorInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LB": [
+        {
+          "path": "scripts/Draw/Line/LineBisector/LineBisectorInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineBisector/LineBisectorInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEFREE": [
+        {
+          "path": "scripts/Draw/Line/LineFreehand/LineFreehandInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineFreehand/LineFreehandInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FREEHAND": [
+        {
+          "path": "scripts/Draw/Line/LineFreehand/LineFreehandInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineFreehand/LineFreehandInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LF": [
+        {
+          "path": "scripts/Draw/Line/LineFreehand/LineFreehandInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineFreehand/LineFreehandInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEHORIZONTAL": [
+        {
+          "path": "scripts/Draw/Line/LineHorizontal/LineHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineHorizontal/LineHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LH": [
+        {
+          "path": "scripts/Draw/Line/LineHorizontal/LineHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineHorizontal/LineHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEORTHOGONAL": [
+        {
+          "path": "scripts/Draw/Line/LineOrthogonal/LineOrthogonalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineOrthogonal/LineOrthogonalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LO": [
+        {
+          "path": "scripts/Draw/Line/LineOrthogonal/LineOrthogonalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineOrthogonal/LineOrthogonalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEORTHOGONALTANGENT": [
+        {
+          "path": "scripts/Draw/Line/LineOrthogonalTangent/LineOrthogonalTangentInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineOrthogonalTangent/LineOrthogonalTangentInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ORTHOTANGENT": [
+        {
+          "path": "scripts/Draw/Line/LineOrthogonalTangent/LineOrthogonalTangentInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineOrthogonalTangent/LineOrthogonalTangentInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEPARALLEL": [
+        {
+          "path": "scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEOFFSET": [
+        {
+          "path": "scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PARALLEL": [
+        {
+          "path": "scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PAR": [
+        {
+          "path": "scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LP": [
+        {
+          "path": "scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PA": [
+        {
+          "path": "scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallel/LineParallelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEPARALLELTHROUGH": [
+        {
+          "path": "scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEOFFSETTHROUGH": [
+        {
+          "path": "scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PARALLELTHROUGH": [
+        {
+          "path": "scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LG": [
+        {
+          "path": "scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineParallelThrough/LineParallelThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINERELATIVEANGLE": [
+        {
+          "path": "scripts/Draw/Line/LineRelativeAngle/LineRelativeAngleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineRelativeAngle/LineRelativeAngleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LR": [
+        {
+          "path": "scripts/Draw/Line/LineRelativeAngle/LineRelativeAngleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineRelativeAngle/LineRelativeAngleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINETANGENT": [
+        {
+          "path": "scripts/Draw/Line/LineTangent1/LineTangent1Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineTangent1/LineTangent1Init.js",
+          "pro_marker": false
+        }
+      ],
+      "TANGENT": [
+        {
+          "path": "scripts/Draw/Line/LineTangent1/LineTangent1Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineTangent1/LineTangent1Init.js",
+          "pro_marker": false
+        }
+      ],
+      "LT1": [
+        {
+          "path": "scripts/Draw/Line/LineTangent1/LineTangent1Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineTangent1/LineTangent1Init.js",
+          "pro_marker": false
+        }
+      ],
+      "LINETANGENT2": [
+        {
+          "path": "scripts/Draw/Line/LineTangent2/LineTangent2Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineTangent2/LineTangent2Init.js",
+          "pro_marker": false
+        }
+      ],
+      "TANGENT2": [
+        {
+          "path": "scripts/Draw/Line/LineTangent2/LineTangent2Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineTangent2/LineTangent2Init.js",
+          "pro_marker": false
+        }
+      ],
+      "LT2": [
+        {
+          "path": "scripts/Draw/Line/LineTangent2/LineTangent2Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineTangent2/LineTangent2Init.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEVERTICAL": [
+        {
+          "path": "scripts/Draw/Line/LineVertical/LineVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineVertical/LineVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LV": [
+        {
+          "path": "scripts/Draw/Line/LineVertical/LineVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/LineVertical/LineVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "POINT": [
+        {
+          "path": "scripts/Draw/Point/Point1P/Point1PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Point/Point1P/Point1PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PO": [
+        {
+          "path": "scripts/Draw/Point/Point1P/Point1PInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Point/Point1P/Point1PInit.js",
+          "pro_marker": false
+        }
+      ],
+      "POLYLINE": [
+        {
+          "path": "scripts/Draw/Polyline/DrawPolyline/DrawPolylineInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Polyline/DrawPolyline/DrawPolylineInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PL": [
+        {
+          "path": "scripts/Draw/Polyline/DrawPolyline/DrawPolylineInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Polyline/DrawPolyline/DrawPolylineInit.js",
+          "pro_marker": false
+        }
+      ],
+      "POLYGONCS": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonAFCP/ShapePolygonAFCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonAFCP/ShapePolygonAFCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PG3": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonAFCP/ShapePolygonAFCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonAFCP/ShapePolygonAFCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "POLYGONSS": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonAFPP/ShapePolygonAFPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonAFPP/ShapePolygonAFPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PG4": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonAFPP/ShapePolygonAFPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonAFPP/ShapePolygonAFPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEPOLYGON": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "POLYGON": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PG1": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINEPOLYGON2": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonPP/ShapePolygonPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonPP/ShapePolygonPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "POLYGON2": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonPP/ShapePolygonPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonPP/ShapePolygonPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PG2": [
+        {
+          "path": "scripts/Draw/Shape/ShapePolygonPP/ShapePolygonPPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonPP/ShapePolygonPPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RECTANGLE": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINERECTANGLE": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RECT": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RE": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RECTANGLESIZE": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectangleSize/ShapeRectangleSizeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectangleSize/ShapeRectangleSizeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LINERECTANGLESIZE": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectangleSize/ShapeRectangleSizeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectangleSize/ShapeRectangleSizeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RS": [
+        {
+          "path": "scripts/Draw/Shape/ShapeRectangleSize/ShapeRectangleSizeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapeRectangleSize/ShapeRectangleSizeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SPLINE": [
+        {
+          "path": "scripts/Draw/Spline/SplineControlPoints/SplineControlPointsInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Spline/SplineControlPoints/SplineControlPointsInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SP": [
+        {
+          "path": "scripts/Draw/Spline/SplineControlPoints/SplineControlPointsInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Spline/SplineControlPoints/SplineControlPointsInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TEXT": [
+        {
+          "path": "scripts/Draw/Text/TextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Text/TextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TE": [
+        {
+          "path": "scripts/Draw/Text/TextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Text/TextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CONVERTUNIT": [
+        {
+          "path": "scripts/Edit/ConvertUnit/ConvertUnitInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/ConvertUnit/ConvertUnitInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CU": [
+        {
+          "path": "scripts/Edit/ConvertUnit/ConvertUnitInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/ConvertUnit/ConvertUnitInit.js",
+          "pro_marker": false
+        }
+      ],
+      "COPY": [
+        {
+          "path": "scripts/Edit/Copy/CopyInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Copy/CopyInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CP": [
+        {
+          "path": "scripts/Edit/Copy/CopyInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Copy/CopyInit.js",
+          "pro_marker": false
+        }
+      ],
+      "COPYWITHREFERENCE": [
+        {
+          "path": "scripts/Edit/CopyWithReference/CopyWithReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/CopyWithReference/CopyWithReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RC": [
+        {
+          "path": "scripts/Edit/CopyWithReference/CopyWithReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/CopyWithReference/CopyWithReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CUT": [
+        {
+          "path": "scripts/Edit/Cut/CutInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Cut/CutInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CUTWITHREFERENCE": [
+        {
+          "path": "scripts/Edit/CutWithReference/CutWithReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/CutWithReference/CutWithReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RT": [
+        {
+          "path": "scripts/Edit/CutWithReference/CutWithReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/CutWithReference/CutWithReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DELETE": [
+        {
+          "path": "scripts/Edit/Delete/DeleteInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Delete/DeleteInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ER": [
+        {
+          "path": "scripts/Edit/Delete/DeleteInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Delete/DeleteInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DUPLICATE": [
+        {
+          "path": "scripts/Edit/Duplicate/DuplicateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Duplicate/DuplicateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DP": [
+        {
+          "path": "scripts/Edit/Duplicate/DuplicateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Duplicate/DuplicateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ESCAPE": [
+        {
+          "path": "scripts/Edit/Esc/EscInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Esc/EscInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PASTE": [
+        {
+          "path": "scripts/Edit/Paste/PasteInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Paste/PasteInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PS": [
+        {
+          "path": "scripts/Edit/Paste/PasteInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Paste/PasteInit.js",
+          "pro_marker": false
+        }
+      ],
+      "REDO": [
+        {
+          "path": "scripts/Edit/Redo/RedoInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Redo/RedoInit.js",
+          "pro_marker": false
+        }
+      ],
+      "UU": [
+        {
+          "path": "scripts/Edit/Redo/RedoInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Redo/RedoInit.js",
+          "pro_marker": false
+        }
+      ],
+      "UNDO": [
+        {
+          "path": "scripts/Edit/Undo/UndoInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Undo/UndoInit.js",
+          "pro_marker": false
+        }
+      ],
+      "OOPS": [
+        {
+          "path": "scripts/Edit/Undo/UndoInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Undo/UndoInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CLOSE": [
+        {
+          "path": "scripts/File/CloseFile/CloseFileInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/CloseFile/CloseFileInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IMPORT": [
+        {
+          "path": "scripts/File/ImportFile/ImportFileInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/ImportFile/ImportFileInit.js",
+          "pro_marker": false
+        }
+      ],
+      "NEW": [
+        {
+          "path": "scripts/File/NewFile/NewFileInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/NewFile/NewFileInit.js",
+          "pro_marker": false
+        }
+      ],
+      "OPEN": [
+        {
+          "path": "scripts/File/OpenFile/OpenFileInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/OpenFile/OpenFileInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PDF": [
+        {
+          "path": "scripts/File/PdfExport/PdfExportInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/PdfExport/PdfExportInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PRINT": [
+        {
+          "path": "scripts/File/Print/PrintInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/Print/PrintInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PRINTVIEW": [
+        {
+          "path": "scripts/File/PrintCurrentView/PrintCurrentViewInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/PrintCurrentView/PrintCurrentViewInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PRINTPREVIEW": [
+        {
+          "path": "scripts/File/PrintPreview/PrintPreviewInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/PrintPreview/PrintPreviewInit.js",
+          "pro_marker": false
+        }
+      ],
+      "QUIT": [
+        {
+          "path": "scripts/File/Quit/QuitInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/Quit/QuitInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EXIT": [
+        {
+          "path": "scripts/File/Quit/QuitInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/Quit/QuitInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SAVE": [
+        {
+          "path": "scripts/File/Save/SaveInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/Save/SaveInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SAVEAS": [
+        {
+          "path": "scripts/File/SaveAs/SaveAsInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/SaveAs/SaveAsInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFOANGLE": [
+        {
+          "path": "scripts/Information/InfoAngle/InfoAngleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoAngle/InfoAngleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IA": [
+        {
+          "path": "scripts/Information/InfoAngle/InfoAngleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoAngle/InfoAngleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ACEAREA": [
+        {
+          "path": "scripts/Information/InfoArcCircleArea/InfoArcCircleAreaInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoArcCircleArea/InfoArcCircleAreaInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IC": [
+        {
+          "path": "scripts/Information/InfoArcCircleArea/InfoArcCircleAreaInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoArcCircleArea/InfoArcCircleAreaInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFOAREA": [
+        {
+          "path": "scripts/Information/InfoArea/InfoAreaInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoArea/InfoAreaInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IR": [
+        {
+          "path": "scripts/Information/InfoArea/InfoAreaInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoArea/InfoAreaInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFODISTEE": [
+        {
+          "path": "scripts/Information/InfoDistanceEE/InfoDistanceEEInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoDistanceEE/InfoDistanceEEInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IN": [
+        {
+          "path": "scripts/Information/InfoDistanceEE/InfoDistanceEEInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoDistanceEE/InfoDistanceEEInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFODISTEP": [
+        {
+          "path": "scripts/Information/InfoDistanceEP/InfoDistanceEPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoDistanceEP/InfoDistanceEPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IE": [
+        {
+          "path": "scripts/Information/InfoDistanceEP/InfoDistanceEPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoDistanceEP/InfoDistanceEPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFODIST": [
+        {
+          "path": "scripts/Information/InfoDistancePP/InfoDistancePPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoDistancePP/InfoDistancePPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IP": [
+        {
+          "path": "scripts/Information/InfoDistancePP/InfoDistancePPInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoDistancePP/InfoDistancePPInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFOPOS": [
+        {
+          "path": "scripts/Information/InfoPosition/InfoPositionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPosition/InfoPositionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IO": [
+        {
+          "path": "scripts/Information/InfoPosition/InfoPositionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPosition/InfoPositionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFOPOSPOL": [
+        {
+          "path": "scripts/Information/InfoPositionPol/InfoPositionPolInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPositionPol/InfoPositionPolInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IL": [
+        {
+          "path": "scripts/Information/InfoPositionPol/InfoPositionPolInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPositionPol/InfoPositionPolInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFOPOSPOLREL": [
+        {
+          "path": "scripts/Information/InfoPositionPolRel/InfoPositionPolRelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPositionPolRel/InfoPositionPolRelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IT": [
+        {
+          "path": "scripts/Information/InfoPositionPolRel/InfoPositionPolRelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPositionPolRel/InfoPositionPolRelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INFOPOSREL": [
+        {
+          "path": "scripts/Information/InfoPositionRel/InfoPositionRelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPositionRel/InfoPositionRelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "IV": [
+        {
+          "path": "scripts/Information/InfoPositionRel/InfoPositionRelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Information/InfoPositionRel/InfoPositionRelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERADD": [
+        {
+          "path": "scripts/Layer/AddLayer/AddLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/AddLayer/AddLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ADDLAYER": [
+        {
+          "path": "scripts/Layer/AddLayer/AddLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/AddLayer/AddLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YA": [
+        {
+          "path": "scripts/Layer/AddLayer/AddLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/AddLayer/AddLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERDESELECT": [
+        {
+          "path": "scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DESELECTLAYER": [
+        {
+          "path": "scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "Y-": [
+        {
+          "path": "scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YD": [
+        {
+          "path": "scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/DeselectLayer/DeselectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYEREDIT": [
+        {
+          "path": "scripts/Layer/EditLayer/EditLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/EditLayer/EditLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YE": [
+        {
+          "path": "scripts/Layer/EditLayer/EditLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/EditLayer/EditLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERHIDEALL": [
+        {
+          "path": "scripts/Layer/HideAllLayers/HideAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/HideAllLayers/HideAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YH": [
+        {
+          "path": "scripts/Layer/HideAllLayers/HideAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/HideAllLayers/HideAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERLOCKALL": [
+        {
+          "path": "scripts/Layer/LockAllLayers/LockAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/LockAllLayers/LockAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YK": [
+        {
+          "path": "scripts/Layer/LockAllLayers/LockAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/LockAllLayers/LockAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERDELETE": [
+        {
+          "path": "scripts/Layer/RemoveLayer/RemoveLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/RemoveLayer/RemoveLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YR": [
+        {
+          "path": "scripts/Layer/RemoveLayer/RemoveLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/RemoveLayer/RemoveLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERSELECT": [
+        {
+          "path": "scripts/Layer/SelectLayer/SelectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/SelectLayer/SelectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTLAYER": [
+        {
+          "path": "scripts/Layer/SelectLayer/SelectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/SelectLayer/SelectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YC": [
+        {
+          "path": "scripts/Layer/SelectLayer/SelectLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/SelectLayer/SelectLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERSHOWACTIVE": [
+        {
+          "path": "scripts/Layer/ShowActiveLayer/ShowActiveLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ShowActiveLayer/ShowActiveLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YO": [
+        {
+          "path": "scripts/Layer/ShowActiveLayer/ShowActiveLayerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ShowActiveLayer/ShowActiveLayerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERSHOWALL": [
+        {
+          "path": "scripts/Layer/ShowAllLayers/ShowAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ShowAllLayers/ShowAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YS": [
+        {
+          "path": "scripts/Layer/ShowAllLayers/ShowAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ShowAllLayers/ShowAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERTOGGLELOCK": [
+        {
+          "path": "scripts/Layer/ToggleLayerLock/ToggleLayerLockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ToggleLayerLock/ToggleLayerLockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YL": [
+        {
+          "path": "scripts/Layer/ToggleLayerLock/ToggleLayerLockInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ToggleLayerLock/ToggleLayerLockInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERTOGGLEVISIBILITY": [
+        {
+          "path": "scripts/Layer/ToggleLayerVisibility/ToggleLayerVisibilityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ToggleLayerVisibility/ToggleLayerVisibilityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YV": [
+        {
+          "path": "scripts/Layer/ToggleLayerVisibility/ToggleLayerVisibilityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/ToggleLayerVisibility/ToggleLayerVisibilityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LAYERUNLOCKALL": [
+        {
+          "path": "scripts/Layer/UnlockAllLayers/UnlockAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/UnlockAllLayers/UnlockAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "YN": [
+        {
+          "path": "scripts/Layer/UnlockAllLayers/UnlockAllLayersInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Layer/UnlockAllLayers/UnlockAllLayersInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EXDOVETAIL": [
+        {
+          "path": "scripts/Misc/Examples/DrawExamples/ExLineDove/ExLineDoveInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/Examples/DrawExamples/ExLineDove/ExLineDoveInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FLEXPAINTER": [
+        {
+          "path": "scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainterInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainterInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FP": [
+        {
+          "path": "scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainterInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainterInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RUNSCRIPT": [
+        {
+          "path": "scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RSCRIPT": [
+        {
+          "path": "scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XSCRIPT": [
+        {
+          "path": "scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RSC": [
+        {
+          "path": "scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XSC": [
+        {
+          "path": "scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDevelopment/RunScript/RunScriptInit.js",
+          "pro_marker": false
+        }
+      ],
+      "COUNTER": [
+        {
+          "path": "scripts/Misc/MiscDraw/Counter/CounterInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/Counter/CounterInit.js",
+          "pro_marker": false
+        }
+      ],
+      "C12": [
+        {
+          "path": "scripts/Misc/MiscDraw/Counter/CounterInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/Counter/CounterInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CROSS": [
+        {
+          "path": "scripts/Misc/MiscDraw/Cross/CrossInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/Cross/CrossInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CS": [
+        {
+          "path": "scripts/Misc/MiscDraw/Cross/CrossInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/Cross/CrossInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FMS_LANES": [
+        {
+          "path": "scripts/Misc/MiscDraw/DrawFmsLanes/DrawFmsLanesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/DrawFmsLanes/DrawFmsLanesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PF": [
+        {
+          "path": "scripts/Misc/MiscDraw/DrawFmsLanes/DrawFmsLanesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/DrawFmsLanes/DrawFmsLanesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LEADERFROMTEXT": [
+        {
+          "path": "scripts/Misc/MiscDraw/LeaderFromText/LeaderFromTextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/LeaderFromText/LeaderFromTextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LFTXT": [
+        {
+          "path": "scripts/Misc/MiscDraw/LeaderFromText/LeaderFromTextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/LeaderFromText/LeaderFromTextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BOXJOINT": [
+        {
+          "path": "scripts/Misc/MiscDraw/LineBoxJoint/LineBoxJointInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/LineBoxJoint/LineBoxJointInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BXJ": [
+        {
+          "path": "scripts/Misc/MiscDraw/LineBoxJoint/LineBoxJointInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/LineBoxJoint/LineBoxJointInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DOVETAIL": [
+        {
+          "path": "scripts/Misc/MiscDraw/LineDove/LineDoveInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/LineDove/LineDoveInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PBREAKSYMBOL": [
+        {
+          "path": "scripts/Misc/MiscDraw/PolylineBreakSymbol/PolylineBreakSymbolInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/PolylineBreakSymbol/PolylineBreakSymbolInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PBRKSYM": [
+        {
+          "path": "scripts/Misc/MiscDraw/PolylineBreakSymbol/PolylineBreakSymbolInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/PolylineBreakSymbol/PolylineBreakSymbolInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TEXTALIGNEDLEADER": [
+        {
+          "path": "scripts/Misc/MiscDraw/TextAlignedLeader/TextAlignedLeaderInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/TextAlignedLeader/TextAlignedLeaderInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TAL": [
+        {
+          "path": "scripts/Misc/MiscDraw/TextAlignedLeader/TextAlignedLeaderInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/TextAlignedLeader/TextAlignedLeaderInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TEXTALONG": [
+        {
+          "path": "scripts/Misc/MiscDraw/TextAlong/TextAlongInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/TextAlong/TextAlongInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TG": [
+        {
+          "path": "scripts/Misc/MiscDraw/TextAlong/TextAlongInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/TextAlong/TextAlongInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XLINEHORIZONTAL": [
+        {
+          "path": "scripts/Misc/MiscDraw/XLineHorizontal/XLineHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/XLineHorizontal/XLineHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XH": [
+        {
+          "path": "scripts/Misc/MiscDraw/XLineHorizontal/XLineHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/XLineHorizontal/XLineHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XLINEVERTICAL": [
+        {
+          "path": "scripts/Misc/MiscDraw/XLineVertical/XLineVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/XLineVertical/XLineVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XV": [
+        {
+          "path": "scripts/Misc/MiscDraw/XLineVertical/XLineVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscDraw/XLineVertical/XLineVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ADDCENTROID": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoAddCustomCentroid/InfoAddCustomCentroidInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoAddCustomCentroid/InfoAddCustomCentroidInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ADDC": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoAddCustomCentroid/InfoAddCustomCentroidInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoAddCustomCentroid/InfoAddCustomCentroidInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ACENTROID": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoAreaCentroid/InfoAreaCentroidInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoAreaCentroid/InfoAreaCentroidInit.js",
+          "pro_marker": false
+        }
+      ],
+      "GETAC": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoAreaCentroid/InfoAreaCentroidInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoAreaCentroid/InfoAreaCentroidInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CENTROIDLISTENER": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoCentroidsListener/InfoCentroidsListenerInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoCentroidsListener/InfoCentroidsListenerInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SUMCENTROID": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoSumCentroidsWeighted/InfoSumCentroidsWeightedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoSumCentroidsWeighted/InfoSumCentroidsWeightedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SUMC": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoSumCentroidsWeighted/InfoSumCentroidsWeightedInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoSumCentroidsWeighted/InfoSumCentroidsWeightedInit.js",
+          "pro_marker": false
+        }
+      ],
+      "WCENTROID": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoWireCentroid/InfoWireCentroidInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoWireCentroid/InfoWireCentroidInit.js",
+          "pro_marker": false
+        }
+      ],
+      "GETWC": [
+        {
+          "path": "scripts/Misc/MiscInformation/InfoCentroids/InfoWireCentroid/InfoWireCentroidInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscInformation/InfoCentroids/InfoWireCentroid/InfoWireCentroidInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BATCH2PDF": [
+        {
+          "path": "scripts/Misc/MiscIO/Batch2Pdf/Batch2PdfInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscIO/Batch2Pdf/Batch2PdfInit.js",
+          "pro_marker": false
+        }
+      ],
+      "B2PDF": [
+        {
+          "path": "scripts/Misc/MiscIO/Batch2Pdf/Batch2PdfInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscIO/Batch2Pdf/Batch2PdfInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DRAWCSV": [
+        {
+          "path": "scripts/Misc/MiscIO/DrawFromCSV/DrawFromCSVInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscIO/DrawFromCSV/DrawFromCSVInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DCSV": [
+        {
+          "path": "scripts/Misc/MiscIO/DrawFromCSV/DrawFromCSVInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Misc/MiscIO/DrawFromCSV/DrawFromCSVInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AUTOTRIM": [
+        {
+          "path": "scripts/Modify/AutoTrim/AutoTrimInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/AutoTrim/AutoTrimInit.js",
+          "pro_marker": false
+        }
+      ],
+      "AX": [
+        {
+          "path": "scripts/Modify/AutoTrim/AutoTrimInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/AutoTrim/AutoTrimInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BEVEL": [
+        {
+          "path": "scripts/Modify/Bevel/BevelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Bevel/BevelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CHAMFER": [
+        {
+          "path": "scripts/Modify/Bevel/BevelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Bevel/BevelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "CH": [
+        {
+          "path": "scripts/Modify/Bevel/BevelInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Bevel/BevelInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BREAK": [
+        {
+          "path": "scripts/Modify/BreakOut/BreakOutInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOut/BreakOutInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BREAKOUT": [
+        {
+          "path": "scripts/Modify/BreakOut/BreakOutInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOut/BreakOutInit.js",
+          "pro_marker": false
+        }
+      ],
+      "D2": [
+        {
+          "path": "scripts/Modify/BreakOut/BreakOutInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOut/BreakOutInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BREAKOUTGAP": [
+        {
+          "path": "scripts/Modify/BreakOutGap/BreakOutGapInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOutGap/BreakOutGapInit.js",
+          "pro_marker": false
+        }
+      ],
+      "D3": [
+        {
+          "path": "scripts/Modify/BreakOutGap/BreakOutGapInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOutGap/BreakOutGapInit.js",
+          "pro_marker": false
+        }
+      ],
+      "BRK": [
+        {
+          "path": "scripts/Modify/BreakOutManual/BreakOutManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOutManual/BreakOutManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "B2": [
+        {
+          "path": "scripts/Modify/BreakOutManual/BreakOutManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/BreakOutManual/BreakOutManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DIVIDE": [
+        {
+          "path": "scripts/Modify/Divide/DivideInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Divide/DivideInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DI": [
+        {
+          "path": "scripts/Modify/Divide/DivideInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Divide/DivideInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TOBACK": [
+        {
+          "path": "scripts/Modify/DrawOrder/ToBack/ToBackInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/DrawOrder/ToBack/ToBackInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MB": [
+        {
+          "path": "scripts/Modify/DrawOrder/ToBack/ToBackInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/DrawOrder/ToBack/ToBackInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TOFRONT": [
+        {
+          "path": "scripts/Modify/DrawOrder/ToFront/ToFrontInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/DrawOrder/ToFront/ToFrontInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MF": [
+        {
+          "path": "scripts/Modify/DrawOrder/ToFront/ToFrontInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/DrawOrder/ToFront/ToFrontInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EDITHATCH": [
+        {
+          "path": "scripts/Modify/EditHatch/EditHatchInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/EditHatch/EditHatchInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MODIFYHATCH": [
+        {
+          "path": "scripts/Modify/EditHatch/EditHatchInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/EditHatch/EditHatchInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MH": [
+        {
+          "path": "scripts/Modify/EditHatch/EditHatchInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/EditHatch/EditHatchInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EDITTEXT": [
+        {
+          "path": "scripts/Modify/EditText/EditTextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/EditText/EditTextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MODIFYTEXT": [
+        {
+          "path": "scripts/Modify/EditText/EditTextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/EditText/EditTextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MT": [
+        {
+          "path": "scripts/Modify/EditText/EditTextInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/EditText/EditTextInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EXPLODE": [
+        {
+          "path": "scripts/Modify/Explode/ExplodeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Explode/ExplodeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XP": [
+        {
+          "path": "scripts/Modify/Explode/ExplodeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Explode/ExplodeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FLIPHORIZONTALLY": [
+        {
+          "path": "scripts/Modify/FlipHorizontal/FlipHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/FlipHorizontal/FlipHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FH": [
+        {
+          "path": "scripts/Modify/FlipHorizontal/FlipHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/FlipHorizontal/FlipHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FLIPVERTICALLY": [
+        {
+          "path": "scripts/Modify/FlipVertical/FlipVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/FlipVertical/FlipVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "FV": [
+        {
+          "path": "scripts/Modify/FlipVertical/FlipVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/FlipVertical/FlipVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LENGTHEN": [
+        {
+          "path": "scripts/Modify/Lengthen/LengthenInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Lengthen/LengthenInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SHORTEN": [
+        {
+          "path": "scripts/Modify/Lengthen/LengthenInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Lengthen/LengthenInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TRIMAMOUNT": [
+        {
+          "path": "scripts/Modify/Lengthen/LengthenInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Lengthen/LengthenInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LE": [
+        {
+          "path": "scripts/Modify/Lengthen/LengthenInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Lengthen/LengthenInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MIRROR": [
+        {
+          "path": "scripts/Modify/Mirror/MirrorInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Mirror/MirrorInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MI": [
+        {
+          "path": "scripts/Modify/Mirror/MirrorInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Mirror/MirrorInit.js",
+          "pro_marker": false
+        }
+      ],
+      "OFFSET": [
+        {
+          "path": "scripts/Modify/Offset/OffsetInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Offset/OffsetInit.js",
+          "pro_marker": false
+        }
+      ],
+      "OF": [
+        {
+          "path": "scripts/Modify/Offset/OffsetInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Offset/OffsetInit.js",
+          "pro_marker": false
+        }
+      ],
+      "OFFSETTHROUGH": [
+        {
+          "path": "scripts/Modify/OffsetThrough/OffsetThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/OffsetThrough/OffsetThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "OH": [
+        {
+          "path": "scripts/Modify/OffsetThrough/OffsetThroughInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/OffsetThrough/OffsetThroughInit.js",
+          "pro_marker": false
+        }
+      ],
+      "REVERSE": [
+        {
+          "path": "scripts/Modify/Reverse/ReverseInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Reverse/ReverseInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RV": [
+        {
+          "path": "scripts/Modify/Reverse/ReverseInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Reverse/ReverseInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ROTATE": [
+        {
+          "path": "scripts/Modify/Rotate/RotateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Rotate/RotateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RO": [
+        {
+          "path": "scripts/Modify/Rotate/RotateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Rotate/RotateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ROTATE2": [
+        {
+          "path": "scripts/Modify/Rotate2/Rotate2Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Rotate2/Rotate2Init.js",
+          "pro_marker": false
+        }
+      ],
+      "R2": [
+        {
+          "path": "scripts/Modify/Rotate2/Rotate2Init.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Rotate2/Rotate2Init.js",
+          "pro_marker": false
+        }
+      ],
+      "ROUND": [
+        {
+          "path": "scripts/Modify/Round/RoundInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Round/RoundInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RN": [
+        {
+          "path": "scripts/Modify/Round/RoundInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Round/RoundInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SCALE": [
+        {
+          "path": "scripts/Modify/Scale/ScaleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Scale/ScaleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SZ": [
+        {
+          "path": "scripts/Modify/Scale/ScaleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Scale/ScaleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "STRETCH": [
+        {
+          "path": "scripts/Modify/Stretch/StretchInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Stretch/StretchInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SS": [
+        {
+          "path": "scripts/Modify/Stretch/StretchInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Stretch/StretchInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MOVE": [
+        {
+          "path": "scripts/Modify/Translate/TranslateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Translate/TranslateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MV": [
+        {
+          "path": "scripts/Modify/Translate/TranslateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Translate/TranslateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MOVEROTATE": [
+        {
+          "path": "scripts/Modify/TranslateRotate/TranslateRotateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/TranslateRotate/TranslateRotateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "MR": [
+        {
+          "path": "scripts/Modify/TranslateRotate/TranslateRotateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/TranslateRotate/TranslateRotateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TRIM": [
+        {
+          "path": "scripts/Modify/Trim/TrimInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Trim/TrimInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EXTEND": [
+        {
+          "path": "scripts/Modify/Trim/TrimInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Trim/TrimInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RM": [
+        {
+          "path": "scripts/Modify/Trim/TrimInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Trim/TrimInit.js",
+          "pro_marker": false
+        }
+      ],
+      "XT": [
+        {
+          "path": "scripts/Modify/Trim/TrimInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Trim/TrimInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TRIM2": [
+        {
+          "path": "scripts/Modify/TrimBoth/TrimBothInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/TrimBoth/TrimBothInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EXTEND2": [
+        {
+          "path": "scripts/Modify/TrimBoth/TrimBothInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/TrimBoth/TrimBothInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TM": [
+        {
+          "path": "scripts/Modify/TrimBoth/TrimBothInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/TrimBoth/TrimBothInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ISOMETRIC": [
+        {
+          "path": "scripts/Projection/IsometricProjection/IsoProject/IsoProjectInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Projection/IsometricProjection/IsoProject/IsoProjectInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PJ": [
+        {
+          "path": "scripts/Projection/IsometricProjection/IsoProject/IsoProjectInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Projection/IsometricProjection/IsoProject/IsoProjectInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RESET": [
+        {
+          "path": "scripts/Reset/ResetInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Reset/ResetInit.js",
+          "pro_marker": false
+        }
+      ],
+      "QQ": [
+        {
+          "path": "scripts/Reset/ResetInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Reset/ResetInit.js",
+          "pro_marker": false
+        }
+      ],
+      "DESELECTALL": [
+        {
+          "path": "scripts/Select/DeselectAll/DeselectAllInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/DeselectAll/DeselectAllInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TN": [
+        {
+          "path": "scripts/Select/DeselectAll/DeselectAllInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/DeselectAll/DeselectAllInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTINVERT": [
+        {
+          "path": "scripts/Select/InvertSelection/InvertSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/InvertSelection/InvertSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "INVERTSELECTION": [
+        {
+          "path": "scripts/Select/InvertSelection/InvertSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/InvertSelection/InvertSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TI": [
+        {
+          "path": "scripts/Select/InvertSelection/InvertSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/InvertSelection/InvertSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTALL": [
+        {
+          "path": "scripts/Select/SelectAll/SelectAllInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectAll/SelectAllInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TA": [
+        {
+          "path": "scripts/Select/SelectAll/SelectAllInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectAll/SelectAllInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTCONTOUR": [
+        {
+          "path": "scripts/Select/SelectContour/SelectContourInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectContour/SelectContourInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TC": [
+        {
+          "path": "scripts/Select/SelectContour/SelectContourInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectContour/SelectContourInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTINTERSECTED": [
+        {
+          "path": "scripts/Select/SelectIntersectedEntities/SelectIntersectedEntitiesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectIntersectedEntities/SelectIntersectedEntitiesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TX": [
+        {
+          "path": "scripts/Select/SelectIntersectedEntities/SelectIntersectedEntitiesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectIntersectedEntities/SelectIntersectedEntitiesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "UX": [
+        {
+          "path": "scripts/Select/SelectIntersectedEntities/SelectIntersectedEntitiesInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectIntersectedEntities/SelectIntersectedEntitiesInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTLAYERBYENTITY": [
+        {
+          "path": "scripts/Select/SelectLayerByEntity/SelectLayerByEntityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectLayerByEntity/SelectLayerByEntityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TL": [
+        {
+          "path": "scripts/Select/SelectLayerByEntity/SelectLayerByEntityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectLayerByEntity/SelectLayerByEntityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTRECTANGLE": [
+        {
+          "path": "scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SELECTWINDOW": [
+        {
+          "path": "scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TR": [
+        {
+          "path": "scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "TW": [
+        {
+          "path": "scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectRectangle/SelectRectangleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "LOCKRELATIVEZERO": [
+        {
+          "path": "scripts/Snap/LockRelativeZero/LockRelativeZeroInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/LockRelativeZero/LockRelativeZeroInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RL": [
+        {
+          "path": "scripts/Snap/LockRelativeZero/LockRelativeZeroInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/LockRelativeZero/LockRelativeZeroInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RESTRICTANGLELENGTH": [
+        {
+          "path": "scripts/Snap/RestrictAngleLength/RestrictAngleLengthInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictAngleLength/RestrictAngleLengthInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EL": [
+        {
+          "path": "scripts/Snap/RestrictAngleLength/RestrictAngleLengthInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictAngleLength/RestrictAngleLengthInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RESTRICTHORIZONTAL": [
+        {
+          "path": "scripts/Snap/RestrictHorizontal/RestrictHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictHorizontal/RestrictHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EH": [
+        {
+          "path": "scripts/Snap/RestrictHorizontal/RestrictHorizontalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictHorizontal/RestrictHorizontalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RESTRICTOFF": [
+        {
+          "path": "scripts/Snap/RestrictOff/RestrictOffInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictOff/RestrictOffInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EN": [
+        {
+          "path": "scripts/Snap/RestrictOff/RestrictOffInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictOff/RestrictOffInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RESTRICTORTHOGONAL": [
+        {
+          "path": "scripts/Snap/RestrictOrthogonal/RestrictOrthogonalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictOrthogonal/RestrictOrthogonalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EO": [
+        {
+          "path": "scripts/Snap/RestrictOrthogonal/RestrictOrthogonalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictOrthogonal/RestrictOrthogonalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RESTRICTVERTICAL": [
+        {
+          "path": "scripts/Snap/RestrictVertical/RestrictVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictVertical/RestrictVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "EV": [
+        {
+          "path": "scripts/Snap/RestrictVertical/RestrictVerticalInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/RestrictVertical/RestrictVerticalInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SETRELATIVEZERO": [
+        {
+          "path": "scripts/Snap/SetRelativeZero/SetRelativeZeroInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SetRelativeZero/SetRelativeZeroInit.js",
+          "pro_marker": false
+        }
+      ],
+      "RZ": [
+        {
+          "path": "scripts/Snap/SetRelativeZero/SetRelativeZeroInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SetRelativeZero/SetRelativeZeroInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPAUTO": [
+        {
+          "path": "scripts/Snap/SnapAuto/SnapAutoInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapAuto/SnapAutoInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SA": [
+        {
+          "path": "scripts/Snap/SnapAuto/SnapAutoInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapAuto/SnapAutoInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPCENTER": [
+        {
+          "path": "scripts/Snap/SnapCenter/SnapCenterInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapCenter/SnapCenterInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SC": [
+        {
+          "path": "scripts/Snap/SnapCenter/SnapCenterInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapCenter/SnapCenterInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPCOORDINATE": [
+        {
+          "path": "scripts/Snap/SnapCoordinate/SnapCoordinateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapCoordinate/SnapCoordinateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SX": [
+        {
+          "path": "scripts/Snap/SnapCoordinate/SnapCoordinateInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapCoordinate/SnapCoordinateInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPPOLAR": [
+        {
+          "path": "scripts/Snap/SnapCoordinatePolar/SnapCoordinatePolarInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapCoordinatePolar/SnapCoordinatePolarInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SO": [
+        {
+          "path": "scripts/Snap/SnapCoordinatePolar/SnapCoordinatePolarInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapCoordinatePolar/SnapCoordinatePolarInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPDISTANCE": [
+        {
+          "path": "scripts/Snap/SnapDistance/SnapDistanceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapDistance/SnapDistanceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SD": [
+        {
+          "path": "scripts/Snap/SnapDistance/SnapDistanceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapDistance/SnapDistanceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPDISTANCEMANUAL": [
+        {
+          "path": "scripts/Snap/SnapDistanceManual/SnapDistanceManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapDistanceManual/SnapDistanceManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SH": [
+        {
+          "path": "scripts/Snap/SnapDistanceManual/SnapDistanceManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapDistanceManual/SnapDistanceManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPEND": [
+        {
+          "path": "scripts/Snap/SnapEnd/SnapEndInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapEnd/SnapEndInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SE": [
+        {
+          "path": "scripts/Snap/SnapEnd/SnapEndInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapEnd/SnapEndInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPFREE": [
+        {
+          "path": "scripts/Snap/SnapFree/SnapFreeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapFree/SnapFreeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SF": [
+        {
+          "path": "scripts/Snap/SnapFree/SnapFreeInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapFree/SnapFreeInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPGRID": [
+        {
+          "path": "scripts/Snap/SnapGrid/SnapGridInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapGrid/SnapGridInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SG": [
+        {
+          "path": "scripts/Snap/SnapGrid/SnapGridInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapGrid/SnapGridInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPINTERSECTION": [
+        {
+          "path": "scripts/Snap/SnapIntersection/SnapIntersectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapIntersection/SnapIntersectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SI": [
+        {
+          "path": "scripts/Snap/SnapIntersection/SnapIntersectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapIntersection/SnapIntersectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPINTERSECTIONMANUAL": [
+        {
+          "path": "scripts/Snap/SnapIntersectionManual/SnapIntersectionManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapIntersectionManual/SnapIntersectionManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SY": [
+        {
+          "path": "scripts/Snap/SnapIntersectionManual/SnapIntersectionManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapIntersectionManual/SnapIntersectionManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPMIDDLE": [
+        {
+          "path": "scripts/Snap/SnapMiddle/SnapMiddleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapMiddle/SnapMiddleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SM": [
+        {
+          "path": "scripts/Snap/SnapMiddle/SnapMiddleInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapMiddle/SnapMiddleInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPMIDDLEMANUAL": [
+        {
+          "path": "scripts/Snap/SnapMiddleManual/SnapMiddleManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapMiddleManual/SnapMiddleManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SN": [
+        {
+          "path": "scripts/Snap/SnapMiddleManual/SnapMiddleManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapMiddleManual/SnapMiddleManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPONENTITY": [
+        {
+          "path": "scripts/Snap/SnapOnEntity/SnapOnEntityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapOnEntity/SnapOnEntityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ST": [
+        {
+          "path": "scripts/Snap/SnapOnEntity/SnapOnEntityInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapOnEntity/SnapOnEntityInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPPERPENDICULAR": [
+        {
+          "path": "scripts/Snap/SnapPerpendicular/SnapPerpendicularInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapPerpendicular/SnapPerpendicularInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SU": [
+        {
+          "path": "scripts/Snap/SnapPerpendicular/SnapPerpendicularInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapPerpendicular/SnapPerpendicularInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPREFERENCE": [
+        {
+          "path": "scripts/Snap/SnapReference/SnapReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapReference/SnapReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SR": [
+        {
+          "path": "scripts/Snap/SnapReference/SnapReferenceInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapReference/SnapReferenceInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPSELECTION": [
+        {
+          "path": "scripts/Snap/SnapSelection/SnapSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapSelection/SnapSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SK": [
+        {
+          "path": "scripts/Snap/SnapSelection/SnapSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapSelection/SnapSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SNAPTANGENTIAL": [
+        {
+          "path": "scripts/Snap/SnapTangential/SnapTangentialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapTangential/SnapTangentialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "SB": [
+        {
+          "path": "scripts/Snap/SnapTangential/SnapTangentialInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapTangential/SnapTangentialInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PX": [
+        {
+          "path": "scripts/Snap/SnapXManual/SnapXManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapXManual/SnapXManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "PY": [
+        {
+          "path": "scripts/Snap/SnapYManual/SnapYManualInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Snap/SnapYManual/SnapYManualInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMAUTO": [
+        {
+          "path": "scripts/View/Zoom/AutoZoom/AutoZoomInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/AutoZoom/AutoZoomInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZA": [
+        {
+          "path": "scripts/View/Zoom/AutoZoom/AutoZoomInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/AutoZoom/AutoZoomInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMPAN": [
+        {
+          "path": "scripts/View/Zoom/PanZoom/PanZoomInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/PanZoom/PanZoomInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZP": [
+        {
+          "path": "scripts/View/Zoom/PanZoom/PanZoomInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/PanZoom/PanZoomInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMPREVIOUS": [
+        {
+          "path": "scripts/View/Zoom/PreviousView/PreviousViewInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/PreviousView/PreviousViewInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZV": [
+        {
+          "path": "scripts/View/Zoom/PreviousView/PreviousViewInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/PreviousView/PreviousViewInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMWINDOW": [
+        {
+          "path": "scripts/View/Zoom/WindowZoom/WindowZoomInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/WindowZoom/WindowZoomInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZW": [
+        {
+          "path": "scripts/View/Zoom/WindowZoom/WindowZoomInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/WindowZoom/WindowZoomInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMIN": [
+        {
+          "path": "scripts/View/Zoom/ZoomIn/ZoomInInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/ZoomIn/ZoomInInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMOUT": [
+        {
+          "path": "scripts/View/Zoom/ZoomOut/ZoomOutInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/ZoomOut/ZoomOutInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZOOMSELECTION": [
+        {
+          "path": "scripts/View/Zoom/ZoomToSelection/ZoomToSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/ZoomToSelection/ZoomToSelectionInit.js",
+          "pro_marker": false
+        }
+      ],
+      "ZS": [
+        {
+          "path": "scripts/View/Zoom/ZoomToSelection/ZoomToSelectionInit.js",
+          "url": "https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/View/Zoom/ZoomToSelection/ZoomToSelectionInit.js",
+          "pro_marker": false
+        }
+      ]
+    },
+    "build_executed": false
+  },
+  {
+    "repository": "LibreCAD/LibreCAD_3",
+    "sha": "f972953aa3295543550a90f4c6ed1c4609124c59",
+    "commit": "2026-09-21 Merge pull request #444 from dxli/fix/unmasked-ui-tests",
+    "evidence": [
+      {
+        "path": "README.md",
+        "sha256": "3a5f7c0345a53024870791eb115f4adf37ce14e962192fba4140a6b24915cd5d",
+        "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/README.md"
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "43eecfa97d30509d5b73468da10f249597450973dbc246aac3cf6323eec2cb8a",
+        "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/CMakeLists.txt"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "a8745a6ab7c04613695577f49449b0d3b7ca8b3815121d07b66347a75936a6f2",
+        "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/LICENSE"
+      },
+      {
+        "path": "lckernel/LICENSE",
+        "sha256": "98842a23e4b5cd8dd69670ddd47df8c6972ffd3e7d7c2daa26d08063356aba6c",
+        "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lckernel/LICENSE"
+      },
+      {
+        "path": "persistence/LICENSE",
+        "sha256": "1c29659170d65fc1ba73d70c6bd819c2c078977d2178a43679579a0fb7852966",
+        "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/persistence/LICENSE"
+      }
+    ],
+    "commands": {
+      "AREA": [
+        {
+          "path": "lcUILua/actions/areaoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/areaoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "COPY": [
+        {
+          "path": "lcUILua/actions/copyoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/copyoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "MOVE": [
+        {
+          "path": "lcUILua/actions/moveoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/moveoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "PASTE": [
+        {
+          "path": "lcUILua/actions/pasteoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/pasteoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "REMOVE": [
+        {
+          "path": "lcUILua/actions/removeoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/removeoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "ROTATE": [
+        {
+          "path": "lcUILua/actions/rotateoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/rotateoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "SCALE": [
+        {
+          "path": "lcUILua/actions/scaleoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/scaleoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "TRIM": [
+        {
+          "path": "lcUILua/actions/trimoperation.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/trimoperation.lua",
+          "pro_marker": false
+        }
+      ],
+      "ARC": [
+        {
+          "path": "lcUILua/createActions/arcoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/arcoperations.lua",
+          "pro_marker": false
+        },
+        {
+          "path": "lcUILua/createActions/ellipseoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/ellipseoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "CIRCLE": [
+        {
+          "path": "lcUILua/createActions/circleoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/circleoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "DIMALIGNED": [
+        {
+          "path": "lcUILua/createActions/dimalignedoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimalignedoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "DIMANGULAR": [
+        {
+          "path": "lcUILua/createActions/dimangularoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimangularoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "DIMDIAMETRIC": [
+        {
+          "path": "lcUILua/createActions/dimdiametricoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimdiametricoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "DIMLINEAR": [
+        {
+          "path": "lcUILua/createActions/dimlinearoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimlinearoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "DIMORDINATE": [
+        {
+          "path": "lcUILua/createActions/dimordinateoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimordinateoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "DIMRADIAL": [
+        {
+          "path": "lcUILua/createActions/dimradialoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimradialoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "ELLIPSE": [
+        {
+          "path": "lcUILua/createActions/ellipseoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/ellipseoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "LINE": [
+        {
+          "path": "lcUILua/createActions/lineoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/lineoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "POLYLINE": [
+        {
+          "path": "lcUILua/createActions/lwpolylineoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/lwpolylineoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "MTEXT": [
+        {
+          "path": "lcUILua/createActions/mtextoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/mtextoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "POINT": [
+        {
+          "path": "lcUILua/createActions/pointoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/pointoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "SPLINE": [
+        {
+          "path": "lcUILua/createActions/splineoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/splineoperations.lua",
+          "pro_marker": false
+        }
+      ],
+      "TEXT": [
+        {
+          "path": "lcUILua/createActions/textoperations.lua",
+          "url": "https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/textoperations.lua",
+          "pro_marker": false
+        }
+      ]
+    },
+    "build_executed": false
+  }
+]
