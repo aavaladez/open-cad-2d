@@ -23,6 +23,8 @@ if(OPENCAD_BUILD_QCAD)
         PATCH_COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/apply_qcad_patch.py" "${OPENCAD_QCAD_SOURCE}"
         CMAKE_ARGS -DBUILD_QT6=ON -DCMAKE_BUILD_TYPE=Release
                    "-DCMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}"
+        BUILD_BYPRODUCTS "${OPENCAD_QCAD_SOURCE}/release/qcadcore.lib"
+                         "${OPENCAD_QCAD_SOURCE}/release/qcadcore.dll"
         INSTALL_COMMAND "")
     if(WIN32)
     add_library(qcad-audited-core SHARED IMPORTED)
