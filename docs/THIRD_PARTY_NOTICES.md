@@ -14,6 +14,10 @@ Fuente original OPEN CAD: GPL-3.0-or-later, texto en LICENSE.
 | PyInstaller | GPL con excepción para bundling | Herramienta de construcción |
 
 Los textos disponibles se recogen en `packaging/licenses` y en el portable.
+La metadata de los wheels declara LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only,
+aunque sus dist-info sólo aportan un aviso comercial alternativo. Se añade el
+[texto LGPL de PySide v6.10.3](https://github.com/pyside/pyside-setup/blob/v6.10.3/LICENSES/LGPL-3.0-only.txt)
+y GPL en `packaging/licenses/qt-for-python`; no se usa la alternativa comercial.
 Qt/PySide permanecen bibliotecas dinámicas reemplazables del directorio `_internal`;
 no imponer restricciones de ingeniería inversa que contradigan LGPL. Fuentes de
 dependencias en sus repositorios/distribuciones oficiales. Antes de release público
