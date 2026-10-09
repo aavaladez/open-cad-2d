@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "actual": {
+    "document_adapter": false,
+    "origin": "qcad",
+    "passed": true,
+    "result": {
+      "circle_length": 18.84955592153876,
+      "circle_radius": 3,
+      "circle_z": 9,
+      "line_end_z": 7,
+      "line_length": 5,
+      "line_start_z": 7
+    },
+    "version": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "comparison": {
+    "passed": true,
+    "differences": [],
+    "atol": 1e-09,
+    "baseline_origin": "analytic",
+    "baseline_version": "1",
+    "actual_version": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  }
+}

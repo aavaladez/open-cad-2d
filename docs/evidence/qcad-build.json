@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-09",
+  "qcad_sha": "4c830eb4d80285ca64b1f2c2dc0987f729344126",
+  "patch_sha256": "b1d01a8354e0d82eaacd6a9a8c94e4d65fbfb74de69af7ab3bd85fc4185e2384",
+  "platform": "Windows 11 10.0.26300 x64",
+  "msvc": "19.50.35728",
+  "qt": "6.10.3 msvc2022_64",
+  "cmake": "4.1.3",
+  "ninja": "1.13.0",
+  "build_exit_code": 0,
+  "ctest_suites_passed": 2,
+  "qcad_exe_sha256": "db1823aece8aed3ca5dc433b025c30659c844f44c65e69291e769aabb1585b83",
+  "ui_runtime_verified": false,
+  "document_adapter": false,
+  "dwg": false,
+  "additional_ecmascript_sources": [
+    {
+      "name": "qcadjsapi",
+      "sha": "cf0043cb1129766777908722d85f73d67857919c",
+      "license_evidence": "RScriptHandlerJs.cpp",
+      "license_sha256": "ed78120a2618b7a2d775183f290c10529ad8dcfcd5352268af486175bb7b6263",
+      "built": false
+    },
+    {
+      "name": "qtjsapi",
+      "sha": "03f619f0e337e33d60bca59057814364758636a9",
+      "license_evidence": "LICENSE.txt",
+      "license_sha256": "173a1c4a7b8cf70b27a666821220a3d2fc053f1518a45a4bfeb39912a6dbab60",
+      "built": false
+    }
+  ]
+}

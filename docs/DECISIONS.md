@@ -13,3 +13,10 @@
 
 Las decisiones de implementación son revisables con resultados. Ninguna añade
 gastos, disminuye protecciones o modifica los requisitos por preferencia del agente.
+# ADR-009 — Spike nativo comprobado y parche mínimo
+
+2026-10-09: Qt 6.10.3/MSVC aislados, cuatro flags -L de QCAD sustituidos por
+target_link_directories entrecomillado; pin y aplicación idempotente verificados.
+Build CE y fixture geométrico C++ aprobados. QCAD Qt6 requiere qcadjsapi/qtjsapi
+adicionales para ECMAScript; auditados, sin integrar. El build no acredita comandos
+ni adaptador documental. Mantener M1 parcial y PR independiente sobre M0.

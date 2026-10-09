@@ -1,0 +1,33 @@
+--- a/src/3rdparty/spatialindexnavel/CMakeLists.txt
++++ b/src/3rdparty/spatialindexnavel/CMakeLists.txt
+@@ -79,12 +79,12 @@
+     set_target_properties(spatialindexnavel PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../release)
+     set_target_properties(spatialindexnavel PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../release)
+     set_target_properties(spatialindexnavel PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../release)
+-    target_link_libraries(spatialindexnavel PUBLIC -L${CMAKE_CURRENT_SOURCE_DIR}/../../../release)
++    target_link_directories(spatialindexnavel PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/../../../release")
+ else()
+     set_target_properties(spatialindexnavel PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../debug)
+     set_target_properties(spatialindexnavel PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../debug)
+     set_target_properties(spatialindexnavel PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../debug)
+-    target_link_libraries(spatialindexnavel PUBLIC -L${CMAKE_CURRENT_SOURCE_DIR}/../../../debug)
++    target_link_directories(spatialindexnavel PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/../../../debug")
+ endif()
+ 
+ target_include_directories(spatialindexnavel PUBLIC
+--- a/src/3rdparty/opennurbs/zlib/CMakeLists.txt
++++ b/src/3rdparty/opennurbs/zlib/CMakeLists.txt
+@@ -48,11 +48,11 @@
+ if (CMAKE_BUILD_TYPE STREQUAL "Release")
+     set_target_properties(zlib PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../../release)
+     set_target_properties(zlib PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../../release)
+-    target_link_libraries(zlib PUBLIC -L${CMAKE_CURRENT_SOURCE_DIR}/../../../../release)
++    target_link_directories(zlib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/../../../../release")
+ else()
+     set_target_properties(zlib PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../../debug)
+     set_target_properties(zlib PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../../debug)
+-    target_link_libraries(zlib PUBLIC -L${CMAKE_CURRENT_SOURCE_DIR}/../../../../debug)
++    target_link_directories(zlib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/../../../../debug")
+ endif()
+ 
+ install( TARGETS zlib DESTINATION "lib")

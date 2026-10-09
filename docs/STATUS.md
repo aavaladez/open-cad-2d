@@ -6,7 +6,8 @@ compatibilidad completa con AutoCAD, AutoLISP, DXF o DWG.
 ## Entregado
 
 - Auditoría de QCAD CE y LibreCAD 3 con commits y evidencia de fuente fijados.
-  Selección provisional de QCAD CE; integración y compilación nativa pendientes.
+  Selección provisional de QCAD CE; build nativo local posteriormente aprobado,
+  integración del documento pendiente (native/M1.md).
 - Excel íntegro, SHA-256 y 472 filas preservadas, catálogo JSON/CSV y matriz por
   entrada. 12 parciales, 399 pendientes y 61 exclusiones 3D. Cero comandos completos.
 - Gobierno técnico, CMake, CI, Issues 1–7 y seis Agent Skills con helpers,
@@ -34,13 +35,15 @@ PySide6/Qt 6.10.3, ezdxf 1.4.3 y PyInstaller 6.16.0.
 | LSP y DXF helpers | Ejecutados; resultado del mismo backend, comparación externa false | evidence/lsp.json, interop.json |
 | Regeneración Excel/matriz | 472 filas y clasificación reproducida | catalog.json, coverage.json y tests/catalog |
 | CI remota commit 4ce542f | Windows/Linux/macOS y portable aprobados (4/4 jobs) | evidence/ci-4ce542f.json |
+| QCAD CE C++/Qt6 | Build local aprobado; línea/círculo/Z contra baseline analítico | evidence/qcad-build.json, qcad-geometry.json |
+| CTest nativo | 2/2 suites: regresión Python + geometría QCAD | evidence/ctest-native.txt |
 
 Avisos de deprecación de pyparsing en ezdxf no son fallos. El primer portable
 falló por ICU de Poppler recogida del PATH; `packaging/opencad.spec` excluye esas
 dos DLL ajenas. Qt usa ICU de Windows System32; reconstrucción y smoke posteriores
 aprobados. No se modificaron protecciones ni bibliotecas del sistema.
 
-No ejecutadas: compilación QCAD/LibreCAD, comparación con motor externo, AutoCAD,
+No ejecutadas: compilación LibreCAD, comparación de comandos/DXF con motor externo, AutoCAD,
 instalar/desinstalar Inno, equipo Windows limpio, DPI/accesibilidad manual,
 Linux/macOS locales. La primera CI remota aprobó Windows/macOS y falló Ubuntu por
 falta de libEGL.so.1, antes de ejecutar QtTest. Añadidos libegl1/libopengl0 al runner,
@@ -53,9 +56,10 @@ desde esa ejecución; esto no acredita instalación limpia ni paridad de funcion
 Issue #2 / M1: toolchain C++/Qt6 aislado y build CE del commit auditado, seguido
 de adaptador documental/transacciones y corpus DXF. La búsqueda inicial de PATH
 no encontró compilador; una inspección posterior con vswhere identifica Visual
-Studio Build Tools 2026 y componente VC x64 instalado. Falta acreditar su build
-con un SDK Qt de desarrollo; los wheels PySide no sustituyen esa validación.
-No extender el motor temporal como base definitiva.
+Studio Build Tools 2026 y componente VC x64 instalado. El spike posterior
+instaló Qt 6.10.3 aislado y aprobó build
+CE y geometría C++. M1 sigue parcial: faltan documento/transacción/undo/DXF y
+handlers ECMAScript Qt6. No extender el motor temporal como base definitiva.
 
 La entrega local incluye avisos/licencias; antes de una release de distribución
 final faltan SBOM completo, fuentes correspondientes, pruebas en instalación limpia

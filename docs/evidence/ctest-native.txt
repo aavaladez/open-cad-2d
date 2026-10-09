@@ -1,0 +1,74 @@
+Start testing: Oct 09 14:46 Hora estándar central (México)
+----------------------------------------------------------
+1/2 Testing: prototype-regression
+1/2 Test: prototype-regression
+Command: "C:/Python314/python.exe" "C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/tools/cad_workflow.py" "regress" "--report" "C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/build/native/regression.json"
+Directory: C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD
+"prototype-regression" start time: Oct 09 14:46 Hora estándar central (México)
+Output:
+----------------------------------------------------------
+test_all_rows_hash_notes_and_scope (test_catalog.Catalog.test_all_rows_hash_notes_and_scope) ... ok
+test_every_source_row_preserved_exactly (test_catalog.Catalog.test_every_source_row_preserved_exactly) ... ok
+test_alias_atomic_config (test_commands.Commands.test_alias_atomic_config) ... ok
+test_circle_invalid_and_valid (test_commands.Commands.test_circle_invalid_and_valid) ... ok
+test_dist_analytic (test_commands.Commands.test_dist_analytic) ... ok
+test_invalid_chain_atomic (test_commands.Commands.test_invalid_chain_atomic) ... ok
+test_layer_visibility_undo (test_commands.Commands.test_layer_visibility_undo) ... ok
+test_line_alias_chain_z_undo (test_commands.Commands.test_line_alias_chain_z_undo) ... ok
+test_move_erase_layer_lock (test_commands.Commands.test_move_erase_layer_lock) ... ok
+test_nonfinite_and_unknown (test_commands.Commands.test_nonfinite_and_unknown) ... ok
+test_corrupt_and_dwg (test_interop.Interop.test_corrupt_and_dwg) ... ok
+test_geometry_layers_z (test_interop.Interop.test_geometry_layers_z) ... C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\python\ezdxf\query.py:444: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  query_args = EntityQueryParser.parseString(query, parseAll=True)
+C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\python\pyparsing\util.py:466: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+  return fn(self, *args, **kwargs)
+ok
+test_unsupported_entities_no_source_mutation (test_interop.Interop.test_unsupported_entities_no_source_mutation) ... ok
+test_xdata_and_ocs_rejected (test_interop.Interop.test_xdata_and_ocs_rejected) ... ok
+test_arithmetic_lists_and_condition (test_lisp.Lisp.test_arithmetic_lists_and_condition) ... ok
+test_blocked_capabilities (test_lisp.Lisp.test_blocked_capabilities) ... ok
+test_malformed_depth_and_recursion (test_lisp.Lisp.test_malformed_depth_and_recursion) ... ok
+test_original_rectangle_and_c_command (test_lisp.Lisp.test_original_rectangle_and_c_command) ... ok
+test_rollback_model_and_runtime (test_lisp.Lisp.test_rollback_model_and_runtime) ... ok
+test_size_limit (test_lisp.Lisp.test_size_limit) ... ok
+test_keyboard_console (test_ui.UI.test_keyboard_console) ... ok
+test_mouse_line_escape (test_ui.UI.test_mouse_line_escape) ... ok
+test_screen_world_and_snap (test_ui.UI.test_screen_world_and_snap) ... ok
+test_selection_properties_error_no_mutation (test_ui.UI.test_selection_properties_error_no_mutation) ... ok
+test_comparison_tolerance_detects_real_difference (test_workflow.Workflow.test_comparison_tolerance_detects_real_difference) ... ok
+test_existing_contract_not_overwritten (test_workflow.Workflow.test_existing_contract_not_overwritten) ... [Errno 17] File exists: 'C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\test-temp\\tmpt73c_iak\\case.json'
+ok
+test_missing_fields_and_bool_numeric_difference (test_workflow.Workflow.test_missing_fields_and_bool_numeric_difference) ... ok
+test_no_self_generated_baseline_or_nonfinite (test_workflow.Workflow.test_no_self_generated_baseline_or_nonfinite) ... ok
+test_six_helper_entrypoints (test_workflow.Workflow.test_six_helper_entrypoints) ... ok
+test_spec_real_row_unknown_and_excluded (test_workflow.Workflow.test_spec_real_row_unknown_and_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.791s
+
+OK
+
+<end of output>
+Test time =   1.65 sec
+----------------------------------------------------------
+Test Passed.
+"prototype-regression" end time: Oct 09 14:46 Hora estándar central (México)
+"prototype-regression" time elapsed: 00:00:01
+----------------------------------------------------------
+
+2/2 Testing: qcad-geometry
+2/2 Test: qcad-geometry
+Command: "C:/Python314/python.exe" "C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/tools/check_qcad_geometry.py" "--binary" "C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/build/native/qcad-geometry-smoke.exe" "--source" "C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/.cache/upstream/qcad" "--qt" "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\qt\6.10.3\msvc2022_64" "--report" "C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/build/native/geometry-report.json"
+Directory: C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/build/native
+"qcad-geometry" start time: Oct 09 14:46 Hora estándar central (México)
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.59 sec
+----------------------------------------------------------
+Test Passed.
+"qcad-geometry" end time: Oct 09 14:46 Hora estándar central (México)
+"qcad-geometry" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 09 14:46 Hora estándar central (México)
