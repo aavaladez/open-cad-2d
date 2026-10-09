@@ -13,7 +13,8 @@
 
 Las decisiones de implementación son revisables con resultados. Ninguna añade
 gastos, disminuye protecciones o modifica los requisitos por preferencia del agente.
-# ADR-009 — Spike nativo comprobado y parche mínimo
+
+## ADR-009 — Spike nativo comprobado y parche mínimo
 
 2026-10-09: Qt 6.10.3/MSVC aislados, cuatro flags -L de QCAD sustituidos por
 target_link_directories entrecomillado; pin y aplicación idempotente verificados.
