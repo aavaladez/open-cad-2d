@@ -1,0 +1,57 @@
+name: OPEN CAD verification
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  prototype:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Qt system libraries on Linux
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libopengl0
+      - run: python -m pip install -e .
+      - run: python tools/import_requirements.py
+      - run: python tools/generate_matrix.py
+      - run: git diff --exit-code -- requirements docs/COMMAND_MATRIX.md
+      - run: python .agents/skills/cad-regression-testing/scripts/regress.py --report build/regression.json
+      - run: python .agents/skills/cad-ui-reconstruction/scripts/check_ui.py --output build/smoke
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-${{ matrix.os }}
+          path: build/
+  windows-portable:
+    needs: prototype
+    runs-on: windows-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e . pyinstaller==6.16.0
+      - run: python tools/build_portable.py
+      - shell: pwsh
+        run: |
+          $portable = Start-Process -FilePath "$pwd/dist/OPEN-CAD-2D/OPEN-CAD-2D.exe" -ArgumentList @('--smoke-test', 'build/frozen-smoke') -WindowStyle Hidden -Wait -PassThru
+          if ($portable.ExitCode -ne 0) { throw "Portable smoke failed: $($portable.ExitCode)" }
+          if (-not (Test-Path build/frozen-smoke/smoke.json)) { throw 'Missing smoke evidence' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OPEN-CAD-2D-Windows-prototype
+          path: dist/OPEN-CAD-2D/

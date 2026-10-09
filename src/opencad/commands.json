@@ -1,0 +1,10 @@
+{
+  "LINE": {"aliases": ["L"], "variant": "dos puntos o cadena de puntos XYZ"},
+  "CIRCLE": {"aliases": ["C"], "variant": "centro XYZ y radio"},
+  "MOVE": {"aliases": ["M"], "variant": "IDs y vector XYZ"},
+  "ERASE": {"aliases": ["E"], "variant": "IDs"},
+  "LAYER": {"aliases": ["LA"], "variant": "NEW, SET, LOCK, UNLOCK, ON, OFF"},
+  "UNDO": {"aliases": ["U"], "variant": "una transacción"},
+  "REDO": {"aliases": [], "variant": "una transacción"},
+  "DIST": {"aliases": ["DI"], "variant": "distancia XY y XYZ entre dos puntos"}
+}

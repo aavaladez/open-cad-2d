@@ -1,0 +1,33 @@
+{
+  "id": 37987669951,
+  "sha": "4ce542fefadcacf6f2c20cc9d76482c13cbb29cf",
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/37987669951",
+  "jobs": [
+    {
+      "id": 114013592466,
+      "name": "prototype (windows-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114013592722,
+      "name": "prototype (macos-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114013592741,
+      "name": "prototype (ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 114014072389,
+      "name": "windows-portable",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

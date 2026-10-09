@@ -1,0 +1,94 @@
+{
+  "origin": "opencad",
+  "version": "0.1.0.dev0",
+  "source_sha256": "389b9d93881bacf8d3b2a7bc058348a77a8ffb70faac40853df234eb56504177",
+  "result": {
+    "entities": [
+      {
+        "id": 1,
+        "start": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 120.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 2,
+        "start": {
+          "x": 120.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 120.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 3,
+        "start": {
+          "x": 120.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 4,
+        "start": {
+          "x": 0.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 5,
+        "center": {
+          "x": 60.0,
+          "y": 40.0,
+          "z": 2.0
+        },
+        "radius": 18.0,
+        "layer": "0",
+        "type": "Circle"
+      }
+    ],
+    "layers": {
+      "0": {
+        "name": "0",
+        "color": "#d6e2ec",
+        "visible": true,
+        "locked": false
+      }
+    },
+    "current_layer": "0",
+    "units": 0
+  },
+  "output": [
+    "Marco creado"
+  ],
+  "external_comparison": false
+}

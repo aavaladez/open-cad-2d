@@ -1,0 +1,20 @@
+{
+  "requirement_id": "ACAD-0002",
+  "command": "LINE",
+  "status": "prototype_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "evidence": [
+    {"origin": "public_documentation", "url": "https://help.autodesk.com/cloudhelp/2026/ENU/AutoCAD-Core/files/GUID-57CDDB6C-B12B-46CE-B9C5-22EFC17258FF.htm", "retrieved": "2026-10-09"},
+    {"origin": "analytic", "description": "Segmento entre (0,0,7) y (3,4,7): longitud XY=5; Z se conserva."}
+  ],
+  "implemented": ["cadena de puntos completos XYZ", "alias L", "transacción de cadena completa", "rechazo de longitud cero y valores no finitos"],
+  "pending": ["Close", "Undo interactivo", "coordenadas relativas/polares", "continuación desde último punto", "OSNAP/ORTHO", "equivalencia de historial interactivo"],
+  "cases": [
+    {"input": "L 0,0,7 3,4,7 8,4,9", "expected": "2 LINE; vértice final (8,4,9)", "test": "test_commands.Commands.test_line_alias_chain_z_undo"},
+    {"input": "LINE 0,0 3,4 3,4", "expected": "error y documento sin cambio", "test": "test_commands.Commands.test_invalid_chain_atomic"},
+    {"input": "primer click, Escape", "expected": "sin entidad ni anchor", "test": "test_ui.UI.test_mouse_line_escape"}
+  ],
+  "external_comparison": "not_run",
+  "issue": "https://github.com/aavaladez/open-cad-2d/issues/3",
+  "version": "0.1.0.dev0"
+}
