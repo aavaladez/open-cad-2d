@@ -1,8 +1,9 @@
 # Auditoría tecnológica
 
 2026-10-09. Repositorios públicos descargados de GitHub con clone superficial.
-Lectura de fuentes local y navegación pública; ninguna de las dos bases se compiló
-en esta sesión. SHA, fechas, hashes de licencias/build y registros de acciones en
+La selección inicial se basó en lectura de fuentes local y navegación pública,
+antes de compilar las bases. El spike posterior [M1](../native/M1.md) compiló QCAD
+y probó geometría; LibreCAD 3 no compilado. SHA, fechas, hashes y registros en
 `requirements/upstream-evidence.json`; reproducción con `tools/audit_upstream.py`.
 
 | Dimensión | QCAD Community | LibreCAD 3 |
@@ -23,6 +24,8 @@ no de un benchmark ejecutado. LibreCAD 3 tiene cambios recientes y pruebas de
 persistencia: no se descarta como abandonado. QCAD tiene mayor evidencia de
 alcance funcional disponible, por eso se selecciona para el primer spike de motor.
 La elección es revisable si build CE, corpus DXF o extensibilidad no pasan aceptación.
+QCAD Qt6 requiere también qcadjsapi/qtjsapi para el handler ECMAScript; el build
+principal y prueba geométrica no acreditan su UI ni los 453 registros de comandos.
 
 ## Evidencia primaria
 

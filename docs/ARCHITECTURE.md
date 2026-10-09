@@ -17,7 +17,8 @@ profesional por su cuenta. Extensiones abiertas con manifest/versiones API.
 No comprometer ABI de plugins o formato propio antes del primer adaptador probado.
 RPluginInterface es un punto de extensión real de QCAD; su uso por OPEN CAD aún pendiente.
 Qt 6 es objetivo actual de ambas bases auditadas. CMake raíz ofrece build del
-checkout CE fijado y CTest del prototipo. Compilación C++ no ejecutada localmente.
+checkout CE fijado y CTest del prototipo. El spike posterior M1 compiló QCAD
+localmente y probó geometría/Z en C++; el adaptador documental sigue pendiente.
 
 ## Prototipo temporal verificable
 

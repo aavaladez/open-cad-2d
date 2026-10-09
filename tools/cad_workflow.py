@@ -5,6 +5,7 @@ import json
 import math
 import os
 import platform
+import re
 import subprocess
 import sys
 from dataclasses import asdict
@@ -80,6 +81,7 @@ def environment():
     env = dict(os.environ)
     env["PYTHONPATH"] = os.pathsep.join([str(ROOT/"src"),DEPS,str(ROOT/"tools")])
     env["QT_QPA_PLATFORM"] = "offscreen"
+    env["PYTHONIOENCODING"] = "utf-8"
     env["XDG_CACHE_HOME"] = str(ROOT/".cache")
     return env
 
@@ -118,9 +120,14 @@ def main(argv=None):
         elif args.mode == "regress":
             command = [sys.executable,"-m","unittest","discover","-s","tests","-p",args.pattern,"-v"]
             run = subprocess.run(command,cwd=ROOT,env=environment(),capture_output=True,text=True,encoding="utf-8",errors="replace")
-            write(args.report,{"command":command,"platform":platform.platform(),"python":platform.python_version(),"exit_code":run.returncode,"passed":run.returncode==0,"stdout":run.stdout,"stderr":run.stderr})
+            counts = re.findall(r"^Ran (\d+) tests? in ",run.stderr,re.MULTILINE)
+            tests_run = int(counts[-1]) if counts else 0
+            exit_code = run.returncode or (0 if tests_run else 1)
+            write(args.report,{"command":command,"platform":platform.platform(),"python":platform.python_version(),"exit_code":exit_code,"process_exit_code":run.returncode,"tests_run":tests_run,"passed":exit_code==0,"stdout":run.stdout,"stderr":run.stderr})
             print(run.stderr)
-            return run.returncode
+            if not tests_run:
+                print("No se ejecutaron pruebas; regresión no acreditada.",file=sys.stderr)
+            return exit_code
         elif args.mode == "ui":
             return subprocess.run([sys.executable,str(ROOT/"launch.py"),"--smoke-test",str(args.output.resolve())],cwd=ROOT,env=environment()).returncode
         else:

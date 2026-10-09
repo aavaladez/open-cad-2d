@@ -1,0 +1,13 @@
+{
+  "origin": "analytic",
+  "version": "1",
+  "evidence": "Longitud euclidiana sqrt(3^2+4^2)=5; perímetro de círculo 2*pi*3; coordenadas Z de entrada 7 y 9. Fixture original independiente.",
+  "result": {
+    "line_length": 5,
+    "line_start_z": 7,
+    "line_end_z": 7,
+    "circle_z": 9,
+    "circle_radius": 3,
+    "circle_length": 18.84955592153876
+  }
+}

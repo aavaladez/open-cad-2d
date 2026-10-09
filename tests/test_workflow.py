@@ -62,3 +62,14 @@ class Workflow(unittest.TestCase):
             run = subprocess.run([sys.executable,str(p),"--help"],capture_output=True,text=True)
             self.assertEqual(run.returncode,0,run.stderr)
             self.assertIn("usage:",run.stdout)
+
+    def test_empty_regression_is_not_approved(self):
+        with tempfile.TemporaryDirectory(dir=self.tmp_root) as temp:
+            report = Path(temp)/"regression.json"
+            result = main(["regress","--pattern","__no_regression_cases_472__.py",
+                           "--report",str(report)])
+            self.assertNotEqual(result,0)
+            evidence = json.loads(report.read_text(encoding="utf-8"))
+            self.assertFalse(evidence["passed"])
+            self.assertEqual(evidence["tests_run"],0)
+            self.assertEqual(evidence["exit_code"],evidence["process_exit_code"] or 1)
