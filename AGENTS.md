@@ -32,6 +32,32 @@ sustancial del alcance, riesgo legal/de seguridad, gastos o destrucción importa
 catálogo; `tools`: generación/validación; `tests`: aceptación y regresión;
 `docs`: gobierno; `packaging`: distribución. No versionar .cache, SDKs o binarios.
 
+## Primera auditoría integral obligatoria — decisión del director, 2026-10-09
+
+Esta regla prevalece sobre autorizaciones anteriores de continuar automáticamente.
+Continuar autónomamente el roadmap hasta comprobar funcionalmente estos seis puntos:
+QCAD sobre documentos reales con transacciones/edición persistente; UI con Ribbon,
+capas, propiedades y consola; comandos esenciales de dibujo/modificación/selección/
+acotación; carga LSP y comandos personalizados; DXF abrir/editar/guardar/reabrir con
+conservación de entidades/geometría/atributos; instalación Windows y pruebas funcionales.
+No se exige completar las 472 entradas. Código existente, tests internos, un smoke
+geométrico o un portable por sí solos no acreditan estos puntos.
+
+Al comprobar los seis: detener nuevas funcionalidades, congelar candidata identificada
+por commit/build, ejecutar regresión/compatibilidad y primera auditoría integral.
+Auditar arquitectura, código, UI, rendimiento, estabilidad, AutoLISP, DXF, deuda,
+licencias, dependencias y seguridad; registrar defectos, severidad, correcciones y
+evidencias reproducibles. Sólo correcciones y tareas de auditoría durante la congelación.
+PAUSAR y presentar informe al director. La siguiente fase exige resolver todos los
+defectos bloqueantes Y aprobación explícita del usuario; ningún JSON, test, PR o
+agente puede concederla. No fusionar/publicar una release por cumplir el gate.
+
+Leer `docs/AUDIT_GATE.md` y usar `cad-audit-gate` al revisar avance, preparar una
+candidata o cerrar una iteración. Si una regresión invalida evidencia después de la
+congelación, mantener la detención y corregir; no volver a desarrollar funciones.
+Reutilizar las seis skills existentes. Examinar código, instrucciones, permisos y
+dependencias de herramientas nuevas; no instalar procedencia desconocida sin revisión.
+
 ## Skills especializadas
 
 Leer el SKILL.md correspondiente en `.agents/skills/` antes de usarlo:
@@ -44,8 +70,9 @@ Leer el SKILL.md correspondiente en `.agents/skills/` antes de usarlo:
 | autolisp-compatibility | Ampliar parser, evaluador, carga LSP o puente de comandos |
 | cad-file-interop | Cambiar DXF/DWG/GIS y verificar atributos |
 | cad-regression-testing | Cerrar cambios, corregir geometría/IO/LSP o preparar PR/build |
+| cad-audit-gate | Revisar los seis criterios, recopilar evidencia, congelar candidata y auditar antes de pedir aprobación de la siguiente fase |
 
 El pipeline genera contratos, ejecuta pruebas y compara resultados; no inventa
 implementaciones ni acredita compatibilidad externa por autorreferencia. Los scripts
-respetan archivos existentes. Mantener las seis skills versionadas para descubrimiento
+respetan archivos existentes. Mantener las siete skills versionadas para descubrimiento
 en futuras sesiones; esta sesión puede leerlas directamente.

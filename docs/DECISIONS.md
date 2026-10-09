@@ -21,3 +21,18 @@ target_link_directories entrecomillado; pin y aplicación idempotente verificado
 Build CE y fixture geométrico C++ aprobados. QCAD Qt6 requiere qcadjsapi/qtjsapi
 adicionales para ECMAScript; auditados, sin integrar. El build no acredita comandos
 ni adaptador documental. Mantener M1 parcial y PR independiente sobre M0.
+
+## ADR-010 — Primera auditoría integral y detención obligatoria
+
+2026-10-09, decisión explícita del director. A1 requiere seis demostraciones
+funcionales: QCAD documental/persistente, UI, comandos esenciales/acotación,
+LSP/comandos propios, ciclo DXF conservador e instalación Windows probada.
+No exige completar el catálogo de 472 entradas. Reutilizar las seis skills y
+añadir cad-audit-gate. Criterios/evidencias en AUDIT_GATE.md.
+
+Al cumplir los seis: detener funciones nuevas y congelar candidata; regresión,
+compatibilidad y auditoría de arquitectura/código/UI/rendimiento/estabilidad/LSP/
+DXF/deuda/licencias/dependencias/seguridad. Registrar severidad y correcciones,
+resolver bloqueantes, generar informe y PAUSAR. Ninguna aprobación técnica
+automática sustituye aprobación del usuario para la siguiente fase. Regla
+prioritaria sobre instrucciones previas de continuar después del punto de control.

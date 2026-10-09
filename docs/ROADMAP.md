@@ -28,3 +28,17 @@ aceptación verificable. Priorizar corrección y conservación sobre cantidad de
 
 Roles de las skills: reverse-engineering → command-cloner o UI/LSP/interop →
 regression-testing. No se crea un nuevo repositorio ni se reinicia el proyecto.
+
+## Punto de control A1 — primera auditoría integral obligatoria
+
+Decisión del director 2026-10-09, prioritaria sobre continuidad automática.
+Mantener M1→M2→M3 y los subconjuntos necesarios de M4/M5/M6/M7 para verificar los
+seis criterios de [AUDIT_GATE.md](AUDIT_GATE.md). Adelantar instalación Windows
+funcional desde M7; presentaciones/plot avanzados, DWG y M8 siguen en el roadmap,
+pero no condicionan A1. No esperar a completar las 472 entradas.
+
+Al verificarse los seis criterios: detener funciones nuevas, congelar candidata,
+regresión y compatibilidad, auditoría integral y registro de defectos/correcciones.
+Mantener la congelación durante correcciones y repetir pruebas afectadas. PAUSAR
+con informe reproducible. La siguiente fase requiere cero defectos bloqueantes
+y aprobación explícita del director. Una regresión no elimina la congelación.

@@ -1,0 +1,14 @@
+{
+  "policy": "A1-2026-10-09",
+  "candidate": null,
+  "criteria": {
+    "qcad_documents": {"status": "pending", "cases": {}, "gap": "Core geométrico probado; documento autoritativo integrado pendiente"},
+    "functional_ui": {"status": "partial", "cases": {}, "gap": "Prototipo funcional; propiedades editables y conexión QCAD pendientes"},
+    "essential_commands": {"status": "partial", "cases": {}, "gap": "Faltan selección avanzada, modificación y acotación en backend QCAD"},
+    "autolisp": {"status": "partial", "cases": {}, "gap": "Subconjunto LSP probado en prototipo; integración QCAD pendiente"},
+    "dxf_cycle": {"status": "partial", "cases": {}, "gap": "Subconjunto ezdxf; ciclo real QCAD y lector independiente pendientes"},
+    "windows_installation": {"status": "pending", "cases": {}, "gap": "Portable probado; instalación funcional aún no verificada"}
+  },
+  "findings": [],
+  "audit_areas": {}
+}

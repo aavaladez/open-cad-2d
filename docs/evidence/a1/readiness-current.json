@@ -1,0 +1,106 @@
+{
+  "policy": "A1-2026-10-09",
+  "revision": "db35fe87c8b69f5f40e38f52e67daf9f37198d25",
+  "candidate": null,
+  "verified_count": 0,
+  "entry_verified": false,
+  "freeze_record_exists": false,
+  "state": "development",
+  "new_features_allowed": true,
+  "next_phase_authorized": false,
+  "approval_required": true,
+  "criteria": {
+    "qcad_documents": {
+      "verified": false,
+      "errors": [
+        "Sin candidata instalada identificada",
+        "Criterio pendiente o parcial",
+        "Sin prueba funcional: open_real_document",
+        "Sin prueba funcional: edit_transaction_undo_redo",
+        "Sin prueba funcional: persist_restart"
+      ],
+      "evidence": [],
+      "gap": "Core geométrico probado; documento autoritativo integrado pendiente"
+    },
+    "functional_ui": {
+      "verified": false,
+      "errors": [
+        "Sin candidata instalada identificada",
+        "Criterio pendiente o parcial",
+        "Sin prueba funcional: ribbon_console",
+        "Sin prueba funcional: layers_properties",
+        "Sin prueba funcional: selection_cancel"
+      ],
+      "evidence": [],
+      "gap": "Prototipo funcional; propiedades editables y conexión QCAD pendientes"
+    },
+    "essential_commands": {
+      "verified": false,
+      "errors": [
+        "Sin candidata instalada identificada",
+        "Criterio pendiente o parcial",
+        "Sin prueba funcional: draw",
+        "Sin prueba funcional: modify",
+        "Sin prueba funcional: select",
+        "Sin prueba funcional: dimension",
+        "Sin prueba funcional: undo_cancel"
+      ],
+      "evidence": [],
+      "gap": "Faltan selección avanzada, modificación y acotación en backend QCAD"
+    },
+    "autolisp": {
+      "verified": false,
+      "errors": [
+        "Sin candidata instalada identificada",
+        "Criterio pendiente o parcial",
+        "Sin prueba funcional: load_lsp",
+        "Sin prueba funcional: custom_command",
+        "Sin prueba funcional: error_rollback"
+      ],
+      "evidence": [],
+      "gap": "Subconjunto LSP probado en prototipo; integración QCAD pendiente"
+    },
+    "dxf_cycle": {
+      "verified": false,
+      "errors": [
+        "Sin candidata instalada identificada",
+        "Criterio pendiente o parcial",
+        "Sin prueba funcional: open_edit_save_reopen",
+        "Sin prueba funcional: attributes_z_units",
+        "Sin prueba funcional: independent_reader",
+        "Sin prueba funcional: reject_loss"
+      ],
+      "evidence": [],
+      "gap": "Subconjunto ezdxf; ciclo real QCAD y lector independiente pendientes"
+    },
+    "windows_installation": {
+      "verified": false,
+      "errors": [
+        "Sin candidata instalada identificada",
+        "Criterio pendiente o parcial",
+        "Sin prueba funcional: install",
+        "Sin prueba funcional: installed_functional_workflow",
+        "Sin prueba funcional: uninstall"
+      ],
+      "evidence": [],
+      "gap": "Portable probado; instalación funcional aún no verificada"
+    }
+  },
+  "audit_areas": {
+    "architecture": "not_reviewed",
+    "code": "not_reviewed",
+    "ui": "not_reviewed",
+    "performance": "not_reviewed",
+    "stability": "not_reviewed",
+    "autolisp": "not_reviewed",
+    "dxf": "not_reviewed",
+    "technical_debt": "not_reviewed",
+    "licenses": "not_reviewed",
+    "dependencies": "not_reviewed",
+    "security": "not_reviewed"
+  },
+  "findings": [],
+  "blocking_findings": [],
+  "resolution_errors": {},
+  "limitation": "Hashes y metadatos no autentican una observación; revisar artefactos y reproducir flujos. No es una aprobación humana."
+}

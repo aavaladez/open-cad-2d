@@ -55,9 +55,9 @@ class Workflow(unittest.TestCase):
             self.assertEqual(main(["spec","--id","ACAD-0002","--output",str(p)]),2)
             self.assertEqual(p.read_bytes(),before)
 
-    def test_six_helper_entrypoints(self):
+    def test_specialized_helper_entrypoints(self):
         paths = list((ROOT/".agents/skills").glob("*/scripts/*.py"))
-        self.assertEqual(len(paths),6)
+        self.assertEqual(len(paths),7)
         for p in paths:
             run = subprocess.run([sys.executable,str(p),"--help"],capture_output=True,text=True)
             self.assertEqual(run.returncode,0,run.stderr)

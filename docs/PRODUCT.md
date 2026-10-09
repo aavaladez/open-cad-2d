@@ -36,3 +36,11 @@ Declarar por separado prueba local, equivalencia analítica y lectura por motor 
 
 El prototipo 0.1 valida flujos básicos. No acredita capacidad CAD profesional,
 fidelidad completa de AutoCAD, Civil 3D, DWG, interoperabilidad general ni AutoLISP completo.
+
+## Primera auditoría integral
+
+Aplicar el punto de control obligatorio A1 de [AUDIT_GATE.md](AUDIT_GATE.md): motor
+QCAD documental/persistente, UI funcional, comandos esenciales con acotación,
+LSP con comandos propios, DXF conservador y Windows instalado/probado. No requiere
+472 comandos completos. Verificados los seis, congelar y detener funciones nuevas;
+auditar integralmente, corregir bloqueantes y PAUSAR para aprobación del director.

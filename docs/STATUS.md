@@ -3,6 +3,21 @@
 M0 preparado para revisión. No hay declaración de paridad profesional ni de
 compatibilidad completa con AutoCAD, AutoLISP, DXF o DWG.
 
+## Regla permanente A1 y estado de entrada
+
+Decisión del director incorporada: continuar hasta seis pruebas funcionales de
+aplicación, después detener funciones nuevas, congelar candidata, auditar y PAUSAR
+para aprobación explícita de la siguiente fase. No exige completar 472 requisitos.
+Ver AUDIT_GATE.md, ADR-010 y requirements/audit-gate.json.
+
+Entrada actual **0/6 acreditados integralmente**: QCAD documental y Windows
+instalado pendientes; UI, comandos, LSP y DXF parciales. Esto no invalida pruebas
+locales del prototipo/core; no las convierte en aceptación de aplicación instalada.
+Seis skills revisadas y reutilizadas; cad-audit-gate añadida, validación estructural
+aprobada. Regresión tras integración del controlador: 41/41 tests aprobados en
+Python 3.14 y 3.12; diez tests nuevos verifican estados/rechazos con artefactos sintéticos,
+sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/a1/.
+
 ## Entregado
 
 - Auditoría de QCAD CE y LibreCAD 3 con commits y evidencia de fuente fijados.
