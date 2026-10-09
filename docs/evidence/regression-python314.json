@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.4",
+  "exit_code": 0,
+  "passed": true,
+  "stdout": "",
+  "stderr": "test_all_rows_hash_notes_and_scope (test_catalog.Catalog.test_all_rows_hash_notes_and_scope) ... ok\ntest_every_source_row_preserved_exactly (test_catalog.Catalog.test_every_source_row_preserved_exactly) ... ok\ntest_alias_atomic_config (test_commands.Commands.test_alias_atomic_config) ... ok\ntest_circle_invalid_and_valid (test_commands.Commands.test_circle_invalid_and_valid) ... ok\ntest_dist_analytic (test_commands.Commands.test_dist_analytic) ... ok\ntest_invalid_chain_atomic (test_commands.Commands.test_invalid_chain_atomic) ... ok\ntest_layer_visibility_undo (test_commands.Commands.test_layer_visibility_undo) ... ok\ntest_line_alias_chain_z_undo (test_commands.Commands.test_line_alias_chain_z_undo) ... ok\ntest_move_erase_layer_lock (test_commands.Commands.test_move_erase_layer_lock) ... ok\ntest_nonfinite_and_unknown (test_commands.Commands.test_nonfinite_and_unknown) ... ok\ntest_corrupt_and_dwg (test_interop.Interop.test_corrupt_and_dwg) ... ok\ntest_geometry_layers_z (test_interop.Interop.test_geometry_layers_z) ... C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\.cache\\python\\ezdxf\\query.py:444: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'\n  query_args = EntityQueryParser.parseString(query, parseAll=True)\nC:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\.cache\\python\\pyparsing\\util.py:466: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'\n  return fn(self, *args, **kwargs)\nok\ntest_unsupported_entities_no_source_mutation (test_interop.Interop.test_unsupported_entities_no_source_mutation) ... ok\ntest_xdata_and_ocs_rejected (test_interop.Interop.test_xdata_and_ocs_rejected) ... ok\ntest_arithmetic_lists_and_condition (test_lisp.Lisp.test_arithmetic_lists_and_condition) ... ok\ntest_blocked_capabilities (test_lisp.Lisp.test_blocked_capabilities) ... ok\ntest_malformed_depth_and_recursion (test_lisp.Lisp.test_malformed_depth_and_recursion) ... ok\ntest_original_rectangle_and_c_command (test_lisp.Lisp.test_original_rectangle_and_c_command) ... ok\ntest_rollback_model_and_runtime (test_lisp.Lisp.test_rollback_model_and_runtime) ... ok\ntest_size_limit (test_lisp.Lisp.test_size_limit) ... ok\ntest_keyboard_console (test_ui.UI.test_keyboard_console) ... ok\ntest_mouse_line_escape (test_ui.UI.test_mouse_line_escape) ... ok\ntest_screen_world_and_snap (test_ui.UI.test_screen_world_and_snap) ... ok\ntest_selection_properties_error_no_mutation (test_ui.UI.test_selection_properties_error_no_mutation) ... ok\ntest_comparison_tolerance_detects_real_difference (test_workflow.Workflow.test_comparison_tolerance_detects_real_difference) ... ok\ntest_existing_contract_not_overwritten (test_workflow.Workflow.test_existing_contract_not_overwritten) ... [Errno 17] File exists: 'C:\\\\Users\\\\Equipo 1\\\\Documents\\\\ChatGPT\\\\OPENCAD\\\\build\\\\test-temp\\\\tmp62d33qqb\\\\case.json'\nok\ntest_missing_fields_and_bool_numeric_difference (test_workflow.Workflow.test_missing_fields_and_bool_numeric_difference) ... ok\ntest_no_self_generated_baseline_or_nonfinite (test_workflow.Workflow.test_no_self_generated_baseline_or_nonfinite) ... ok\ntest_six_helper_entrypoints (test_workflow.Workflow.test_six_helper_entrypoints) ... ok\ntest_spec_real_row_unknown_and_excluded (test_workflow.Workflow.test_spec_real_row_unknown_and_excluded) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 1.261s\n\nOK\n"
+}

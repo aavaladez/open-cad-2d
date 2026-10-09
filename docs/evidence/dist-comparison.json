@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "differences": [],
+  "atol": 1e-09,
+  "baseline_origin": "analytic",
+  "baseline_version": "Euclidean-geometry-1",
+  "actual_version": "0.1.0.dev0"
+}

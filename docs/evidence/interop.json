@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "backend": "ezdxf",
+  "version": "1.4.3",
+  "external_comparison": false,
+  "source_sha256": "ac368edfda9d571473e7d9f54709d782783c8de7756fc364715df0e0de74878b",
+  "result": {
+    "entities": [
+      {
+        "id": 1,
+        "start": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 120.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 2,
+        "start": {
+          "x": 120.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 120.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 3,
+        "start": {
+          "x": 120.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 4,
+        "start": {
+          "x": 0.0,
+          "y": 80.0,
+          "z": 2.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "layer": "0",
+        "type": "Line"
+      },
+      {
+        "id": 5,
+        "center": {
+          "x": 60.0,
+          "y": 40.0,
+          "z": 2.0
+        },
+        "radius": 18.0,
+        "layer": "0",
+        "type": "Circle"
+      }
+    ],
+    "layers": {
+      "0": {
+        "name": "0",
+        "color": "#d6e2ec",
+        "visible": true,
+        "locked": false
+      }
+    },
+    "current_layer": "0",
+    "units": 0
+  }
+}
