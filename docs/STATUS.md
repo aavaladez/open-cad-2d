@@ -41,8 +41,10 @@ aprobados. No se modificaron protecciones ni bibliotecas del sistema.
 
 No ejecutadas: compilación QCAD/LibreCAD, comparación con motor externo, AutoCAD,
 instalar/desinstalar Inno, equipo Windows limpio, DPI/accesibilidad manual,
-Linux/macOS locales y CI remota antes de publicar. Los workflows son configuración,
-no evidencia de ejecución. Consultar checks del PR para estado remoto.
+Linux/macOS locales. La primera CI remota aprobó Windows/macOS y falló Ubuntu por
+falta de libEGL.so.1, antes de ejecutar QtTest. Se añaden libegl1/libopengl0 al runner;
+la nueva ejecución debe acreditar la corrección. Consultar checks del PR para
+estado remoto; no se sustituye el fallo por una omisión de tests.
 
 ## Siguiente prioridad
 
