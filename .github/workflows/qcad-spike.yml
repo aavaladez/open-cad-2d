@@ -28,7 +28,9 @@ jobs:
       - run: python -m aqt install-qt windows desktop 6.10.3 win64_msvc2022_64 --outputdir .cache/qt --archives qtbase qtdeclarative qtsvg qttools
       - name: Build audited source and test geometry
         shell: pwsh
-        run: ./tools/build_qcad.ps1 *> build-native.log
+        run: |
+          try { ./tools/build_qcad.ps1 *> build-native.log }
+          finally { Get-Content -LiteralPath build-native.log }
       - run: ctest --test-dir build/native --output-on-failure
       - uses: actions/upload-artifact@v4
         if: always()
