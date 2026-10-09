@@ -27,4 +27,3 @@ aceptación verificable. Priorizar corrección y conservación sobre cantidad de
 
 Roles de las skills: reverse-engineering → command-cloner o UI/LSP/interop →
 regression-testing. No se crea un nuevo repositorio ni se reinicia el proyecto.
-

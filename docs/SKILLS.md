@@ -18,4 +18,3 @@ Validación estructural con quick_validate.py de skill-creator; resultados en ST
 Las skills facilitan trabajo autónomo: contrato/evidencia → implementación →
 pruebas → matriz/Issue/PR. No descargan código propietario, no amplían permisos,
 no inventan observaciones y no ejecutan publicaciones fuera del alcance autorizado.
-

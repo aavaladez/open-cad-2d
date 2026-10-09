@@ -15,4 +15,3 @@ Antes de release, registrar ejecución real en Windows 10/11 limpio:
 - Accesibilidad, recuperación tras cierre inesperado y grandes dibujos (pendientes).
 
 Estas verificaciones no están aprobadas por haber pasado el modo offscreen.
-

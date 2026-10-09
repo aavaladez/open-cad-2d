@@ -174,4 +174,3 @@ class LispRuntime:
         if name == "=" and len(values) == 2:
             return True if values[0] == values[1] else None
         raise ValueError("Función AutoLISP no implementada: " + name)
-

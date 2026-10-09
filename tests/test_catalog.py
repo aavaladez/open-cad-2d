@@ -33,4 +33,3 @@ class Catalog(unittest.TestCase):
                 continue
             for row in sheet["rows"][1:]:
                 self.assertEqual(indexed[(sheet["name"],row["row"])]["source_cells"],row["cells"])
-

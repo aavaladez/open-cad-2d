@@ -21,4 +21,3 @@ propietario; no incorporado. LibreCAD 3 tiene opción experimental de lectura ab
 desactivada por defecto; no se probó. Evaluar biblioteca abierta con licencia/corpus,
 conservación de objetos proxy y advertencias por versión. Escritura independiente
 requiere pruebas propias, no se deduce de lectura.
-

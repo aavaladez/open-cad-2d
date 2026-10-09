@@ -96,4 +96,3 @@ class CommandBus:
     @staticmethod
     def ids(value):
         return [int(v) for v in str(value).split(",")]
-

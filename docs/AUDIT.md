@@ -49,4 +49,3 @@ licencias de fonts, iconos/documentación (CC-BY-3.0) y dependencias. OPEN CAD u
 recursos originales y no distribuye esos iconos. Auditar SBOM de cada build antes
 de versión pública. La revisión identifica condiciones técnicas, no una autorización
 para incorporar código con licencia distinta o un plugin comercial.
-

@@ -36,4 +36,3 @@ Declarar por separado prueba local, equivalencia analítica y lectura por motor 
 
 El prototipo 0.1 valida flujos básicos. No acredita capacidad CAD profesional,
 fidelidad completa de AutoCAD, Civil 3D, DWG, interoperabilidad general ni AutoLISP completo.
-

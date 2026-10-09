@@ -52,4 +52,3 @@ class Lisp(unittest.TestCase):
     def test_size_limit(self):
         with self.assertRaises(ValueError):
             parse(" "*100001)
-

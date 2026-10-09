@@ -71,4 +71,3 @@ class Interop(unittest.TestCase):
                 load_dxf(p)
             with self.assertRaises(ValueError):
                 save_dxf(Document(),Path(tmp)/"bad.dwg")
-

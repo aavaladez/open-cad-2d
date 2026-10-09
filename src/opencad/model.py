@@ -134,4 +134,3 @@ class Document:
         if self._redo:
             self._undo.append(self.snapshot())
             self.restore(self._redo.pop())
-

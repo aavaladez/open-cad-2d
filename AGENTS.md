@@ -49,4 +49,3 @@ El pipeline genera contratos, ejecuta pruebas y compara resultados; no inventa
 implementaciones ni acredita compatibilidad externa por autorreferencia. Los scripts
 respetan archivos existentes. Mantener las seis skills versionadas para descubrimiento
 en futuras sesiones; esta sesión puede leerlas directamente.
-

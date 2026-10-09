@@ -34,4 +34,3 @@ nuevas capacidades a través de aliases. Pruebas de recursión, sintaxis, rollba
 rechazo de capacidades en tests/test_lisp.py.
 
 No se ha ejecutado este corpus en AutoCAD. Compatibilidad externa pendiente.
-

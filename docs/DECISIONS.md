@@ -13,4 +13,3 @@
 
 Las decisiones de implementación son revisables con resultados. Ninguna añade
 gastos, disminuye protecciones o modifica los requisitos por preferencia del agente.
-

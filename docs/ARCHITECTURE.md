@@ -46,4 +46,3 @@ de tamaño, profundidad y pasos; rollback completo en fallo. No constituye un
 aislamiento del sistema operativo. Nuevas capacidades deben diseñarse explícitamente.
 Compatibilidad .NET/ARX/VBA del Excel necesita contratos equivalentes y auditoría
 antes de decidir qué APIs abiertas pueden implementarla; no prometer carga binaria Autodesk.
-

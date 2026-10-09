@@ -74,4 +74,3 @@ class Commands(unittest.TestCase):
             with self.assertRaises((ValueError,KeyError)):
                 self.bus.execute_text(text)
         self.assertFalse(self.doc.entities)
-

@@ -62,4 +62,3 @@ class Workflow(unittest.TestCase):
             run = subprocess.run([sys.executable,str(p),"--help"],capture_output=True,text=True)
             self.assertEqual(run.returncode,0,run.stderr)
             self.assertIn("usage:",run.stdout)
-
