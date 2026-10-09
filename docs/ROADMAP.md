@@ -17,7 +17,8 @@ aceptación verificable. Priorizar corrección y conservación sobre cantidad de
 
 ## Próxima iteración prioritaria
 
-1. Validar PR inicial/CI y resolver fallos por plataforma.
+1. Revisar PR inicial: CI del prototipo aprobada en las tres plataformas y portable
+   Windows arrancado en el runner. Mantener M0 sin comandos completos acreditados.
 2. Continuar M1: toolchain aislado y build CE local ya aprobados, con smoke C++
    de geometría/Z. Acreditar documento/transacciones/DXF, SBOM y build remoto.
 3. Completar contratos de LINE y CIRCLE, incluyendo variantes ausentes, y llevar

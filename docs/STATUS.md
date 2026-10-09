@@ -35,8 +35,15 @@ PySide6/Qt 6.10.3, ezdxf 1.4.3 y PyInstaller 6.16.0.
 | LSP y DXF helpers | Ejecutados; resultado del mismo backend, comparación externa false | evidence/lsp.json, interop.json |
 | Regeneración Excel/matriz | 472 filas y clasificación reproducida | catalog.json, coverage.json y tests/catalog |
 | CI remota commit 4ce542f | Windows/Linux/macOS y portable aprobados (4/4 jobs) | evidence/ci-4ce542f.json |
+| CI remota commit e50e1ab | Repetición tras corrección CMake: prototipo y portable aprobados (4/4 jobs) | evidence/ci-e50e1ab.json |
 | QCAD CE C++/Qt6 | Build local aprobado; línea/círculo/Z contra baseline analítico | evidence/qcad-build.json, qcad-geometry.json |
 | CTest nativo | 2/2 suites: regresión Python + geometría QCAD | evidence/ctest-native.txt |
+| Regresión actual Python 3.14/3.12 | 31/31 por runtime; suite vacía rechazada | evidence/regression-python314-current.json, regression-python312-current.json |
+
+El runner actual registra número de pruebas y código real del subproceso; una
+suite vacía no obtiene aceptación incluso cuando unittest devuelve cero (Python
+3.12). Añadida prueba negativa y salida UTF-8 explícita para los subprocesos.
+CTest local volvió a aprobar 2/2 suites después del cambio (31 pruebas Python).
 
 Avisos de deprecación de pyparsing en ezdxf no son fallos. El primer portable
 falló por ICU de Poppler recogida del PATH; `packaging/opencad.spec` excluye esas
