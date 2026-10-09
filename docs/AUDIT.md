@@ -1,5 +1,10 @@
 # Auditoría tecnológica
 
+Esta auditoría de selección tecnológica no sustituye la primera auditoría integral
+A1 ordenada por el director el 2026-10-09. Aplicar AUDIT_GATE.md: verificar los seis
+requisitos funcionales, congelar candidata, detener funciones nuevas, auditar y
+PAUSAR hasta resolver bloqueantes y obtener aprobación humana de la siguiente fase.
+
 2026-10-09. Repositorios públicos descargados de GitHub con clone superficial.
 La selección inicial se basó en lectura de fuentes local y navegación pública,
 antes de compilar las bases. El spike posterior [M1](../native/M1.md) compiló QCAD

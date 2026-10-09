@@ -47,3 +47,12 @@ de tamaño, profundidad y pasos; rollback completo en fallo. No constituye un
 aislamiento del sistema operativo. Nuevas capacidades deben diseñarse explícitamente.
 Compatibilidad .NET/ARX/VBA del Excel necesita contratos equivalentes y auditoría
 antes de decidir qué APIs abiertas pueden implementarla; no prometer carga binaria Autodesk.
+
+## Control de entrada a auditoría A1
+
+La candidata debe demostrar un único documento autoritativo QCAD compartido por
+UI, comandos, AutoLISP y DXF; un test del core aislado no acredita integración.
+Vincular evidencias funcionales al mismo commit/binario instalado, fixtures y
+versiones. Aplicar [AUDIT_GATE.md](AUDIT_GATE.md). Al verificar sus seis puntos,
+congelar candidata y limitar cambios a auditoría/correcciones. La siguiente fase
+necesita ausencia de bloqueantes y aprobación explícita del director.

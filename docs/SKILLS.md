@@ -1,6 +1,6 @@
 # Skills especializadas
 
-Seis skills en `.agents/skills/`, con frontmatter, procedimientos, helper por
+Seis skills CAD originales en `.agents/skills/`, con frontmatter, procedimientos, helper por
 skill y criterios de aceptación. Ruteo en AGENTS.md. El inicializador se niega a
 sobrescribir skills existentes. No se modificó configuración global de Codex.
 
@@ -21,3 +21,12 @@ difieren; no basta con comprobar que el subproceso devolvió cero.
 Las skills facilitan trabajo autónomo: contrato/evidencia → implementación →
 pruebas → matriz/Issue/PR. No descargan código propietario, no amplían permisos,
 no inventan observaciones y no ejecutan publicaciones fuera del alcance autorizado.
+
+## cad-audit-gate y revisión de las seis skills
+
+Revisadas las seis SKILL.md el 2026-10-09; se conservan sus procedimientos y
+helpers, reutilizándolos para A1 según AUDIT_GATE.md. Añadida cad-audit-gate con
+helper de evidencias, reporte y congelación persistente; tests negativos del
+controlador en test_audit_gate.py. El test de entrypoints comprende siete helpers.
+No instaladas herramientas adicionales. Un test sintético del gate no acredita
+que el producto alcance sus seis criterios.

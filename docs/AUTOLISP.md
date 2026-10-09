@@ -1,5 +1,10 @@
 # AutoLISP: alcance real
 
+La entrada A1 exige carga LSP y comandos personalizados ejecutados sobre el mismo
+documento QCAD de la candidata, con errores/rollback funcionalmente verificados.
+Los tests del subconjunto temporal no acreditan este criterio. Aplicar AUDIT_GATE.md
+y detener funciones nuevas al verificar los seis puntos del director.
+
 Runtime original en `src/opencad/lisp.py`. Archivos .LSP UTF-8/UTF-8-BOM mediante
 diálogo y API LispRuntime.load. Evaluación desde la consola; comandos `C:nombre`
 definidos por DEFUN invocables desde el CommandBus.

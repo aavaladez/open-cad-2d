@@ -1,5 +1,10 @@
 # Interoperabilidad
 
+Para A1, demostrar abrir/editar/guardar/reabrir DXF en la candidata, conservación
+semántica del corpus y contraste con segundo motor, según AUDIT_GATE.md. El
+roundtrip ezdxf→ezdxf temporal no acredita integración QCAD ni ausencia general
+de pérdidas. Verificados los seis criterios, congelar y PAUSAR tras la auditoría.
+
 DXF del prototipo: ezdxf 1.4.3, exportación R2010. Subconjunto de entidades LINE
 XYZ y CIRCLE centro XYZ en plano XY, capa actual, capas visibles/bloqueadas/color RGB
 e INSUNITS. Guardado temporal y sustitución final. Sin requisito de AutoCAD instalado.
