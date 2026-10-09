@@ -23,8 +23,8 @@ python -m venv .venv
 ```
 
 Linux/macOS: usar `.venv/bin/python`. Las pruebas Qt usan offscreen. Los resultados
-locales acreditan Windows; la CI define tres plataformas y su ejecución se informa
-por separado. `cmake -S . -B build/cmake` y `ctest --test-dir build/cmake
+locales acreditan Windows; la [CI del commit 4ce542f](https://github.com/aavaladez/open-cad-2d/actions/runs/37987669951)
+aprobó Windows, Linux, macOS y el portable Windows. `cmake -S . -B build/cmake` y `ctest --test-dir build/cmake
 --output-on-failure` integran la regresión, sin compilar el motor C++ por defecto.
 
 Consola de ejemplo: `LINE 0,0,2 100,0,2`, `CIRCLE 50,30,2 10`, `DIST 0,0,0 3,4,12`.

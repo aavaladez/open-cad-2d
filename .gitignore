@@ -8,3 +8,4 @@ __pycache__/
 !packaging/opencad.spec
 .coverage
 startup-error.log
+aqtinstall.log
