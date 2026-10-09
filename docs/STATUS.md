@@ -39,6 +39,8 @@ PySide6/Qt 6.10.3, ezdxf 1.4.3 y PyInstaller 6.16.0.
 | QCAD CE C++/Qt6 | Build local aprobado; línea/círculo/Z contra baseline analítico | evidence/qcad-build.json, qcad-geometry.json |
 | CTest nativo | 2/2 suites: regresión Python + geometría QCAD | evidence/ctest-native.txt |
 | Regresión actual Python 3.14/3.12 | 31/31 por runtime; suite vacía rechazada | evidence/regression-python314-current.json, regression-python312-current.json |
+| CI actual commit 9a33372 | 31 pruebas en Windows/Linux/macOS y portable: 4/4 jobs aprobados | evidence/ci-9a33372.json |
+| CI nativa commit 9a33372 | En ejecución al registrar evidencia; sin aceptación remota todavía | evidence/native-ci-pending.json |
 
 El runner actual registra número de pruebas y código real del subproceso; una
 suite vacía no obtiene aceptación incluso cuando unittest devuelve cero (Python
