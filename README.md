@@ -4,8 +4,9 @@ CAD 2D abierto, gratuito y orientado a trabajo profesional. Esta entrega es un
 prototipo verificable; la paridad con AutoCAD es el objetivo del roadmap.
 Fuente original GPL-3.0-or-later. No requiere licencia de AutoCAD.
 
-La auditoría selecciona QCAD Community para el próximo spike C++/Qt6. El prototipo
-actual usa Python/Qt6 y un modelo propio temporal: QCAD aún no está integrado.
+La auditoría selecciona QCAD Community. El modo experimental `--qcad` conecta la
+UI Python/Qt6 con un documento C++ QCAD autoritativo, comprobado localmente.
+El modo predeterminado conserva el prototipo temporal. [Adaptador](native/ADAPTER.md).
 LibreCAD 3 permanece como alternativa evaluada. [Auditoría](docs/AUDIT.md).
 
 ![Prototipo Qt6](docs/evidence/prototype.png)
@@ -45,8 +46,8 @@ excluidos por alcance 3D. Ningún comando del Excel se declara terminado.
 [arquitectura](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md),
 [decisiones](docs/DECISIONS.md), [AutoLISP](docs/AUTOLISP.md).
 
-Las seis Agent Skills versionadas en `.agents/skills/` guían investigación funcional,
-comandos, UI, AutoLISP, formatos y regresión. [AGENTS.md](AGENTS.md) define el ruteo;
+Las siete Agent Skills versionadas en `.agents/skills/` guían investigación funcional,
+comandos, UI, AutoLISP, formatos, regresión y auditoría. [AGENTS.md](AGENTS.md) define el ruteo;
 [SKILLS.md](docs/SKILLS.md) describe el pipeline y sus límites. Los contratos se
 generan pendientes y nunca sobrescriben trabajo existente. Usar documentación
 pública y comparaciones independientes; no copiar código ni recursos propietarios.

@@ -7,7 +7,7 @@ add_test(NAME prototype-regression COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURR
 set_tests_properties(prototype-regression PROPERTIES WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
     ENVIRONMENT "PYTHONPATH=${CMAKE_CURRENT_SOURCE_DIR}/src;QT_QPA_PLATFORM=offscreen")
 
-option(OPENCAD_BUILD_QCAD "Build the audited upstream QCAD CE (adapter remains pending)" OFF)
+option(OPENCAD_BUILD_QCAD "Build audited QCAD CE and experimental document adapter" OFF)
 set(OPENCAD_QCAD_SOURCE "" CACHE PATH "Existing audited QCAD checkout")
 if(OPENCAD_BUILD_QCAD)
     enable_language(CXX)
@@ -67,6 +67,18 @@ if(OPENCAD_BUILD_QCAD)
     target_link_libraries(qcad-document-smoke PRIVATE qcad-audited-core
         qcad-audited-entity qcad-audited-operations qcad-audited-dxf Qt6::Widgets)
     add_dependencies(qcad-document-smoke qcad-ce)
+    add_executable(opencad-qcad-engine native/adapter/server.cpp native/adapter/session.cpp)
+    target_compile_features(opencad-qcad-engine PRIVATE cxx_std_17)
+    get_target_property(OPENCAD_QCAD_INCLUDES qcad-document-smoke INCLUDE_DIRECTORIES)
+    target_include_directories(opencad-qcad-engine PRIVATE ${OPENCAD_QCAD_INCLUDES} native/adapter)
+    target_compile_definitions(opencad-qcad-engine PRIVATE QCAD_DLL)
+    target_link_libraries(opencad-qcad-engine PRIVATE qcad-audited-core
+        qcad-audited-entity qcad-audited-operations qcad-audited-dxf Qt6::Widgets)
+    add_dependencies(opencad-qcad-engine qcad-ce)
+    add_test(NAME qcad-application COMMAND "${Python3_EXECUTABLE}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_application.py"
+        --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
+        --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/application-acceptance")
     add_test(NAME qcad-document COMMAND "${Python3_EXECUTABLE}"
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_document.py"
         --binary "$<TARGET_FILE:qcad-document-smoke>" --source "${OPENCAD_QCAD_SOURCE}"

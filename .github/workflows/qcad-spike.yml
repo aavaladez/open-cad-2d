@@ -40,5 +40,6 @@ jobs:
             build-native.log
             build/native/geometry-report.json
             build/native/document-acceptance/
+            build/native/application-acceptance/
             build/native/regression.json
             build/native/Testing/Temporary/LastTest.log

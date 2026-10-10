@@ -14,7 +14,7 @@ definidos por DEFUN invocables desde el CommandBus.
 | quote, setq, defun, if, progn | Subconjunto implementado; tests locales |
 | +, -, *, /, = | Aritmética básica; sin promoción/rangos exactos AutoLISP |
 | list, car, cdr, cons, length | Listas propias; sin dotted pairs |
-| command, princ | Bridge acotado al prototipo, salida de texto almacenada |
+| command, princ | Bridge acotado; prototipo y adaptador QCAD experimental probados, salida almacenada |
 | entget, entmod, entmake, ssget, getpoint, getvar/setvar | Pendiente |
 | load desde código LISP, archivos/red, reactors, DCL, Visual LISP/vlax/COM | No implementado |
 | FAS, VLX, ARX, .NET, VBA | No compatible; no cargar binarios propietarios |
@@ -39,3 +39,12 @@ nuevas capacidades a través de aliases. Pruebas de recursión, sintaxis, rollba
 rechazo de capacidades en tests/test_lisp.py.
 
 No se ha ejecutado este corpus en AutoCAD. Compatibilidad externa pendiente.
+
+## Integración documental QCAD experimental
+
+--qcad conserva el intérprete y usa QcadCommandBus/QcadDocument. La rutina original
+se carga desde el botón UI y MARCO se ejecuta desde consola sobre el mismo documento
+C++. Staging nativo permite descartar errores sin perder redo previo. Comprobados
+también crear capa/dibujar/bloquear en un único LSP, undo integral y resultado
+numérico de C:NEGATIVE sin traducción accidental a ID. Evidencias y límites en
+native/ADAPTER.md. No se acredita AutoLISP completo ni criterio A1 instalado.

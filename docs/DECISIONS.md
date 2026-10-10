@@ -54,3 +54,18 @@ Usar QStringLiteral en texto de operaciones para evitar resolución al overload 
 Compilar fixture y upstream en Release para coincidir en runtime. Declarar todos
 los productos importados y dependencias de los parches; repetir el build incremental
 upstream para no comprobar un plugin antiguo después de editar fuentes.
+
+## ADR-012 — UI existente sobre documento QCAD autoritativo
+
+2026-10-09: conservar UI/CommandBus/LSP y conectar un proceso C++ QCAD por pipes.
+La integración funcional local prueba que las ediciones provienen del documento
+nativo; las dataclasses Python son vistas descartables, no un segundo motor.
+Staging clona objetos QCAD y confirma una sola RTransaction por comando/script;
+rollback conserva historial redo y estado de capas. Las comprobaciones funcionales
+usan geometría analítica, QtTest y rutinas LSP originales.
+
+Proceso local con dispatch explícito, sin red ni plugins descubiertos. Pin/protocolo
+verificados; fallo del motor explícito sin fallback. DXF UI deshabilitado hasta
+validación conservadora. Uso Windows de desarrollo, sin autosave ni instalación;
+O(N), timeout y límites de mensajes documentados en native/ADAPTER.md. Revisar
+rendimiento/recuperación antes de A1. Continúa aceptación parcial y cero completos.

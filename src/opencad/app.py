@@ -130,15 +130,21 @@ class Canvas(QWidget):
 
 
 class MainWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self, document=None):
         super().__init__()
-        self.doc = Document()
-        self.bus = CommandBus(self.doc)
+        self.doc = document if document is not None else Document()
+        if document is not None:
+            from .qcad_backend import QcadCommandBus
+            self.bus = QcadCommandBus(self.doc)
+        else:
+            self.bus = CommandBus(self.doc)
         self.lisp = LispRuntime(self.bus)
         self.selected = set()
         self.mode = None
         self.anchor = None
         self.setWindowTitle("OPEN CAD 2D · Prototipo 0.1")
+        if document is not None:
+            self.setWindowTitle("OPEN CAD 2D · QCAD integrado experimental")
         self.resize(1360, 860)
         self.setStyleSheet("""
 QMainWindow,QWidget {background:#252f3b;color:#e1e8ef;font-family:'Arial';font-size:12px;}
@@ -171,6 +177,10 @@ QDockWidget::title {padding:7px;background:#344353;}
         row = QHBoxLayout(files)
         for label, action in [("Abrir DXF",self.open_file),("Guardar DXF",self.save_file),("Cargar LSP",self.load_lsp),("Alias JSON",self.load_aliases)]:
             b = QPushButton(label)
+            if document is not None and label in ("Abrir DXF","Guardar DXF"):
+                b.setText(label+" · pendiente")
+                b.setEnabled(False)
+                b.setToolTip("DXF aún no disponible en este modo experimental")
             b.clicked.connect(action)
             row.addWidget(b)
         row.addStretch()
@@ -222,7 +232,10 @@ QDockWidget::title {padding:7px;background:#344353;}
             a.triggered.connect(action)
             self.addAction(a)
         self.refresh()
-        self.history.appendPlainText("OPEN CAD 2D · LINE/CIRCLE y operaciones básicas. DXF limitado a LINE/CIRCLE.\nLSP: subconjunto documentado. Escape cancela herramienta; rueda amplía.")
+        capabilities = ("Documento QCAD experimental. LINE/CIRCLE y operaciones básicas. DXF pendiente."
+                        if document is not None else
+                        "OPEN CAD 2D · LINE/CIRCLE y operaciones básicas. DXF limitado a LINE/CIRCLE.")
+        self.history.appendPlainText(capabilities+"\nLSP: subconjunto documentado. Escape cancela herramienta; rueda amplía.")
 
     def dock(self,title,widget,area):
         d = QDockWidget(title,self)
@@ -256,7 +269,7 @@ QDockWidget::title {padding:7px;background:#344353;}
             self.history.appendPlainText("> " + text + ("\n"+str(result) if result is not None else ""))
             self.refresh()
             return True
-        except (ValueError,KeyError,TypeError,ArithmeticError) as e:
+        except (ValueError,KeyError,TypeError,ArithmeticError,RuntimeError) as e:
             self.history.appendPlainText("Error: " + str(e))
             return False
 
@@ -325,6 +338,8 @@ QDockWidget::title {padding:7px;background:#344353;}
         path,_ = QFileDialog.getOpenFileName(self,"Abrir DXF",filter="DXF (*.dxf)")
         if path:
             try:
+                if not isinstance(self.doc,Document):
+                    raise ValueError('Apertura DXF aún no disponible en este modo experimental')
                 new = load_dxf(path)
                 # Keep a replacement undoable to prevent discarding the current drawing.
                 with self.doc.transaction():
@@ -339,6 +354,8 @@ QDockWidget::title {padding:7px;background:#344353;}
         path,_ = QFileDialog.getSaveFileName(self,"Guardar DXF",filter="DXF (*.dxf)")
         if path:
             try:
+                if not isinstance(self.doc,Document):
+                    raise ValueError('Guardado DXF aún no disponible en este modo experimental')
                 save_dxf(self.doc,path if Path(path).suffix else path+".dxf")
                 self.history.appendPlainText("Guardado: " + path)
             except Exception as e:
@@ -362,10 +379,16 @@ QDockWidget::title {padding:7px;background:#344353;}
             except Exception as e:
                 self.dialog_error("Alias",e)
 
+    def closeEvent(self,event):
+        if not isinstance(self.doc,Document):
+            self.doc.close()
+        super().closeEvent(event)
+
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke-test", type=Path)
+    parser.add_argument("--qcad",action='store_true',help='Adaptador QCAD experimental compilado en este proyecto')
     args = parser.parse_args()
     app = QApplication.instance() or QApplication(sys.argv[:1])
     if not QFontDatabase.families():
@@ -376,7 +399,15 @@ def main():
             if font.is_file() and QFontDatabase.addApplicationFont(str(font)) >= 0:
                 app.setFont(QFont("Arial" if sys.platform=="win32" else "DejaVu Sans",10))
                 break
-    window = MainWindow()
+    if args.qcad:
+        if args.smoke_test:
+            parser.error('Usar el fixture funcional QCAD; el smoke temporal no acredita ese backend')
+        from .qcad_backend import QcadDocument
+        root=Path(__file__).resolve().parents[2]
+        doc=QcadDocument(root/'build/native/opencad-qcad-engine.exe',root/'.cache/upstream/qcad',root/'.cache/qt/6.10.3/msvc2022_64')
+        window=MainWindow(doc)
+    else:
+        window = MainWindow()
     if args.smoke_test:
         window.lisp.run('(command "LINE" \'(0 0 2) \'(120 0 2) \'(120 80 2) \'(0 80 2) \'(0 0 2)) (command "CIRCLE" \'(60 40 2) 18)')
         window.refresh()
