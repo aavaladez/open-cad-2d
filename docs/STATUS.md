@@ -20,6 +20,14 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- Ciclo DXF integrado experimental: R2000/R2010 en documento QCAD candidato,
+  edición/guardado/reapertura, contraste ezdxf y sustitución atómica tras validación.
+  CLAYER y OFF corregidos tras reproducir pérdidas. Writer final híbrido CE/ezdxf
+  R2010 para corregir diccionarios estándar de salida; límites en native/DXF_APPLICATION.md.
+  24 comprobaciones DXF por runtime, 28 de aplicación, 46/46 tests por runtime,
+  CTest 5/5. Tabla de trazabilidad y matriz actualizadas: 11 qcad_partial, un
+  prototype_partial, 399 pendientes, 61 exclusiones. Cero completos; A1 0/6.
+
 - Adaptador experimental: UI existente y AutoLISP editan un RDocument QCAD
   autoritativo, transacciones con staging C++, rollback conservando redo y bloqueo
   de capas. 26 comprobaciones funcionales por runtime (Python 3.12/3.14), regresión
@@ -106,8 +114,10 @@ han integrado; la UI original no depende de ellos. No ampliar el motor temporal.
 Prioridad: ciclo DXF conservador del documento autoritativo; luego comandos/cotas,
 recuperación y distribución/instalación Windows para entrada A1.
 
-CI del PR documental #12/c528c72: 8 checks prototipo/portable aprobados; native
-run 38013268736 todavía en ejecución al consultar. No atribuirle éxito sin resultado.
+CI del PR documental #12/c528c72: prototipo/portable y native run 38013268736
+aprobados. PR #13/4697e5e: 8 checks prototipo/portable aprobados; native run
+38014407702 todavía en ejecución al consultar. CI del ciclo DXF posterior pendiente.
+No atribuir pruebas del prototipo portable a un despliegue QCAD instalado.
 
 La entrega local incluye avisos/licencias; antes de una release de distribución
 final faltan SBOM completo, fuentes correspondientes, pruebas en instalación limpia

@@ -5,7 +5,7 @@
     "qcad_documents": {
       "status": "partial",
       "cases": {},
-      "gap": "Documento QCAD autoritativo UI/bus/LSP probado; persistencia integrada y recuperación pendientes"
+      "gap": "Documento autoritativo UI/LSP/DXF transaccional comprobado en subconjunto; recuperación y candidata instalada pendientes"
     },
     "functional_ui": {
       "status": "partial",
@@ -25,7 +25,7 @@
     "dxf_cycle": {
       "status": "partial",
       "cases": {},
-      "gap": "Fixture QCAD y lector independiente probado; ciclo conservador desde aplicación pendiente"
+      "gap": "Ciclo QCAD candidato/UI R2000-R2010 LINE/CIRCLE y lector independiente comprobados; corpus amplio, metadatos y candidata instalada pendientes"
     },
     "windows_installation": {
       "status": "pending",

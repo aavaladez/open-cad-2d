@@ -18,7 +18,7 @@
         "C": "L",
         "D": "Dibuja segmentos de línea recta"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Draw/Line/Line2P/Line2PInit.js",
@@ -34,8 +34,8 @@
         }
       ],
       "implemented_variant": "dos puntos/cadena XYZ; faltan opciones Close/Undo interactivas y coordenadas relativas",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_line_alias_chain_z_undo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -160,7 +160,7 @@
         "C": "C",
         "D": "Círculo por centro-radio, 2P, 3P, TTR o TTT"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Draw/Circle/CircleCP/CircleCPInit.js",
@@ -176,8 +176,8 @@
         }
       ],
       "implemented_variant": "centro/radio; faltan 2P, 3P, TTR y TTT",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_circle_invalid_and_valid",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_circle_invalid_and_valid; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -1041,7 +1041,7 @@
         "C": "M",
         "D": "Desplaza objetos"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Modify/Translate/TranslateInit.js",
@@ -1057,8 +1057,8 @@
         }
       ],
       "implemented_variant": "IDs/vector XYZ; falta selección CAD y punto base",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_move_erase_layer_lock",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_move_erase_layer_lock; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -1565,12 +1565,12 @@
         "C": "E",
         "D": "Borra objetos"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
       "implemented_variant": "IDs; falta selección completa CAD",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_move_erase_layer_lock",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_move_erase_layer_lock; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -2169,7 +2169,7 @@
         "C": "U",
         "D": "Deshace operaciones"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Edit/Undo/UndoInit.js",
@@ -2179,8 +2179,8 @@
       ],
       "librecad3_evidence": [],
       "implemented_variant": "una transacción; faltan Mark/Back/grupos y opciones",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_line_alias_chain_z_undo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -2201,7 +2201,7 @@
         "C": "",
         "D": "Rehace la última operación deshecha"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Edit/Redo/RedoInit.js",
@@ -2211,8 +2211,8 @@
       ],
       "librecad3_evidence": [],
       "implemented_variant": "una transacción",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_line_alias_chain_z_undo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -3005,12 +3005,12 @@
         "C": "LA",
         "D": "Administrador de propiedades de capa"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
       "implemented_variant": "NEW/SET/LOCK/UNLOCK/ON/OFF; faltan estilos/filtros/estados",
-      "implementation": "src/opencad",
-      "tests": "test_commands.Commands.test_layer_visibility_undo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_commands.Commands.test_layer_visibility_undo; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -7095,7 +7095,7 @@
         "C": "CTRL+O",
         "D": "Abre un dibujo"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/File/OpenFile/OpenFileInit.js",
@@ -7105,8 +7105,8 @@
       ],
       "librecad3_evidence": [],
       "implemented_variant": "diálogo DXF LINE/CIRCLE; DWG y demás entidades ausentes",
-      "implementation": "src/opencad",
-      "tests": "test_interop.Interop.test_geometry_layers_z",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_interop.Interop.test_geometry_layers_z; tools/check_qcad_dxf.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/5"
     },
@@ -7185,7 +7185,7 @@
         "C": "",
         "D": "Guarda con otro nombre o formato"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/File/SaveAs/SaveAsInit.js",
@@ -7195,8 +7195,8 @@
       ],
       "librecad3_evidence": [],
       "implemented_variant": "diálogo DXF LINE/CIRCLE R2010; otros formatos ausentes",
-      "implementation": "src/opencad",
-      "tests": "test_interop.Interop.test_geometry_layers_z",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_interop.Interop.test_geometry_layers_z; tools/check_qcad_dxf.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/5"
     },
@@ -9029,12 +9029,12 @@
         "C": "AP",
         "D": "Carga aplicaciones (LISP, ARX, DLL), Startup Suite"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
       "implemented_variant": "diálogo carga LSP UTF-8; faltan startup suites y otros módulos",
-      "implementation": "src/opencad",
-      "tests": "test_lisp.Lisp.test_original_rectangle_and_c_command",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_lisp.Lisp.test_original_rectangle_and_c_command; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/4"
     },
@@ -9081,12 +9081,12 @@
         "C": "",
         "D": "Carga archivos de forma (SHX)"
       },
-      "status": "prototype_partial",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
       "implemented_variant": "API LispRuntime.load y diálogo; función LISP load aún ausente",
-      "implementation": "src/opencad",
-      "tests": "test_lisp.Lisp.test_original_rectangle_and_c_command",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "test_lisp.Lisp.test_original_rectangle_and_c_command; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/4"
     },

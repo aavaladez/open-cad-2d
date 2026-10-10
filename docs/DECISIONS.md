@@ -69,3 +69,18 @@ verificados; fallo del motor explícito sin fallback. DXF UI deshabilitado hasta
 validación conservadora. Uso Windows de desarrollo, sin autosave ni instalación;
 O(N), timeout y límites de mensajes documentados en native/ADAPTER.md. Revisar
 rendimiento/recuperación antes de A1. Continúa aceptación parcial y cero completos.
+
+## ADR-013 — DXF conservador y writer híbrido comprobado
+
+2026-10-09: preflight ezdxf y proceso QCAD candidato impiden descartar dibujo
+activo tras error. Sustituir sólo después de contrastar importación y exportación;
+confirmación UI explícita del reemplazo/historial. Guardar temporal en el filesystem
+del destino, contrastar inventario y reemplazar atómicamente. Conservar undo/redo.
+
+Reproducidas pérdidas CLAYER/OFF; parches GPL mínimos al pin. La salida CE aislada
+también necesita reparación de owners en diccionarios estándar. Admitir sólo las
+reparaciones estructurales identificadas en salida propia, contrastar semántica y
+escribir R2010 canónico ezdxf con auditoría sin reparaciones. Nunca reparar entradas
+silenciosamente ni proclamar writer CE globalmente corregido. Los defaults/handles
+se regeneran; no admitir metadatos personalizados detectados. Documentar deuda,
+dos backends y límites en DXF_APPLICATION.md antes de ampliar corpus/formato.

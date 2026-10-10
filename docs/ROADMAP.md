@@ -36,6 +36,11 @@ el documento, guardado/reapertura sin pérdidas del subconjunto admitido. Despu�
 propiedades editables/selección/comandos esenciales y acotación, recuperación y
 empaquetado/instalación funcional. Mantener variantes del Excel trazables y parciales.
 
+Ciclo DXF posterior comprobado en fixtures R2000/R2010 y UI, limitado a LINE/CIRCLE,
+con writer híbrido documentado. Siguiente prioridad M3/M4: propiedades editables,
+selección y acotación; mantener ampliación de corpus/entidades y recuperación antes
+de preparar instalador A1. La CI nativa limpia sigue necesaria en cada PR.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

@@ -177,10 +177,6 @@ QDockWidget::title {padding:7px;background:#344353;}
         row = QHBoxLayout(files)
         for label, action in [("Abrir DXF",self.open_file),("Guardar DXF",self.save_file),("Cargar LSP",self.load_lsp),("Alias JSON",self.load_aliases)]:
             b = QPushButton(label)
-            if document is not None and label in ("Abrir DXF","Guardar DXF"):
-                b.setText(label+" · pendiente")
-                b.setEnabled(False)
-                b.setToolTip("DXF aún no disponible en este modo experimental")
             b.clicked.connect(action)
             row.addWidget(b)
         row.addStretch()
@@ -232,7 +228,7 @@ QDockWidget::title {padding:7px;background:#344353;}
             a.triggered.connect(action)
             self.addAction(a)
         self.refresh()
-        capabilities = ("Documento QCAD experimental. LINE/CIRCLE y operaciones básicas. DXF pendiente."
+        capabilities = ("Documento QCAD experimental. LINE/CIRCLE y operaciones básicas. DXF R2000/R2010 limitado; guardado R2010."
                         if document is not None else
                         "OPEN CAD 2D · LINE/CIRCLE y operaciones básicas. DXF limitado a LINE/CIRCLE.")
         self.history.appendPlainText(capabilities+"\nLSP: subconjunto documentado. Escape cancela herramienta; rueda amplía.")
@@ -339,11 +335,20 @@ QDockWidget::title {padding:7px;background:#344353;}
         if path:
             try:
                 if not isinstance(self.doc,Document):
-                    raise ValueError('Apertura DXF aún no disponible en este modo experimental')
-                new = load_dxf(path)
-                # Keep a replacement undoable to prevent discarding the current drawing.
-                with self.doc.transaction():
-                    self.doc.restore(new.snapshot())
+                    answer=QMessageBox.question(self,"Abrir DXF experimental",
+                        "Sólo LINE/CIRCLE, capas y unidades del subconjunto documentado. "
+                        "Tablas estándar y handles se regeneran al guardar. "
+                        "Abrir sustituye el dibujo activo y su historial. ¿Continuar?",
+                        QMessageBox.StandardButton.Yes|QMessageBox.StandardButton.No,QMessageBox.StandardButton.No)
+                    if answer!=QMessageBox.StandardButton.Yes:
+                        return
+                    self.doc.open_dxf(path)
+                    self.selected.clear()
+                else:
+                    new = load_dxf(path)
+                    # Keep a replacement undoable in the temporary model.
+                    with self.doc.transaction():
+                        self.doc.restore(new.snapshot())
                 self.cancel()
                 self.refresh()
                 self.canvas.fit()
@@ -355,8 +360,10 @@ QDockWidget::title {padding:7px;background:#344353;}
         if path:
             try:
                 if not isinstance(self.doc,Document):
-                    raise ValueError('Guardado DXF aún no disponible en este modo experimental')
-                save_dxf(self.doc,path if Path(path).suffix else path+".dxf")
+                    self.doc.save_dxf(path if Path(path).suffix else path+".dxf")
+                    self.history.appendPlainText("DXF R2010 verificado: LINE/CIRCLE, capas y unidades; tablas estándar regeneradas.")
+                else:
+                    save_dxf(self.doc,path if Path(path).suffix else path+".dxf")
                 self.history.appendPlainText("Guardado: " + path)
             except Exception as e:
                 self.dialog_error("Guardar DXF",e)

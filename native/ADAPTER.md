@@ -61,3 +61,8 @@ de leer; el cliente limita solicitudes a 1 MB, sin afirmar sandbox de sistema.
 
 Esta evidencia es application_integration_partial, installed=false, no una candidata
 A1: 0/6 criterios acreditados integralmente. Continuar roadmap sin congelar todavía.
+
+Actualización posterior: DXF UI habilitado para el subconjunto validado; ver
+DXF_APPLICATION.md. El helper de aplicación añade ERASE/undo y verifica la indicación
+del alcance DXF (28 comprobaciones actuales). Los reportes anteriores de 26 se
+conservan como antecedentes, sin atribuirles el nuevo ciclo ni writer híbrido.

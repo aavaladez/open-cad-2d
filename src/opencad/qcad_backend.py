@@ -15,6 +15,7 @@ PIN = '4c830eb4d80285ca64b1f2c2dc0987f729344126'
 class QcadDocument:
     def __init__(self, binary, source, qt):
         binary, source, qt = (Path(p).resolve() for p in (binary,source,qt))
+        self.backend_paths = (binary,source,qt)
         if not binary.is_file():
             raise ValueError('Compilar el adaptador QCAD antes de abrir este modo')
         env = dict(os.environ)
@@ -123,6 +124,14 @@ class QcadDocument:
 
     def redo(self):
         return self.request('redo')
+
+    def open_dxf(self,path):
+        from .qcad_interop import open_document
+        open_document(self,path)
+
+    def save_dxf(self,path):
+        from .qcad_interop import save_document
+        save_document(self,path)
 
     def close(self):
         if getattr(self,'process',None) is not None:

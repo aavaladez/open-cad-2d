@@ -1,0 +1,13 @@
+diff --git a/src/io/dxf/RDxfImporter.cpp b/src/io/dxf/RDxfImporter.cpp
+--- a/src/io/dxf/RDxfImporter.cpp
++++ b/src/io/dxf/RDxfImporter.cpp
+@@ -260,7 +260,7 @@
+                     document,
+                     layerName,
+-                    // only support one flag for visibility for CE:
+-                    frozen || off,
++                    // Keep OFF and FROZEN distinct for conservative editing:
++                    frozen,
+                     false,
+                     color,
+                     linetypeId,

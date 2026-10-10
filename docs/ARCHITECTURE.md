@@ -48,7 +48,10 @@ el único RDocument autoritativo. El bus/LSP intercambia JSON mediante pipes; Py
 sólo conserva vistas descartables para canvas/selección/propiedades. Cada comando o
 LSP confirma una transacción QCAD; staging de objetos QCAD permite rollback sin
 perder redo. No existe sincronización entre dos documentos editables divergentes.
-LINE/CIRCLE/MOVE/ERASE/capas probados; DXF UI y despliegue nativo aún pendientes.
+LINE/CIRCLE/MOVE/ERASE/capas probados; ciclo DXF UI posterior experimental probado;
+despliegue nativo pendiente. Abrir valida en otro proceso y sustituye el candidato
+sólo tras contraste independiente; guardar valida temporal CE y canonicaliza R2010
+con ezdxf antes de os.replace. Ver native/DXF_APPLICATION.md y sus límites explícitos.
 No comprometer ABI de extensiones. Ver native/ADAPTER.md para límites/performance.
 
 ## Seguridad del intérprete

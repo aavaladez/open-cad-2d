@@ -1,0 +1,220 @@
+{
+  "kind": "application_integration_partial",
+  "installed": false,
+  "qcad_integrated": true,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "identity": {
+    "engine": "qcad",
+    "protocol": 1,
+    "revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "checks": {
+    "R2000_open": true,
+    "R2000_edited_z": true,
+    "R2000_analytic_move": true,
+    "R2000_independent_reader": true,
+    "R2000_save_preserves_undo_redo": true,
+    "R2000_reopened": true,
+    "R2000_source_unchanged": true,
+    "R2010_open": true,
+    "R2010_edited_z": true,
+    "R2010_analytic_move": true,
+    "R2010_independent_reader": true,
+    "R2010_save_preserves_undo_redo": true,
+    "R2010_reopened": true,
+    "R2010_source_unchanged": true,
+    "unsupported_rejected": true,
+    "failed_open_preserves_document": true,
+    "created_layer_saved": true,
+    "layer_flags_saved": true,
+    "layer_flags_reopened": true,
+    "ui_open_cancel": true,
+    "ui_open": true,
+    "ui_edit_save": true,
+    "ui_reopen": true,
+    "screenshot": true
+  },
+  "passed": true,
+  "independent_reader": "ezdxf",
+  "independent_reader_version": "1.4.3",
+  "fixtures": [
+    {
+      "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\dxf-application\\R2000-source.dxf",
+      "sha256": "98e15c4da842e66881f2409391bff238622965b4838751817ac3e06414e78bd0"
+    },
+    {
+      "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\dxf-application\\R2000-edited.dxf",
+      "sha256": "9adb23bbd1d27ba002dabaf0d2390bc4f174144e986ecc23f08b81ec83ef8fa0"
+    },
+    {
+      "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\dxf-application\\R2010-source.dxf",
+      "sha256": "e27dce54754a5cfa9bff3400475815f62a08d25b6b5ddfcf395e53e3155fecd7"
+    },
+    {
+      "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\dxf-application\\R2010-edited.dxf",
+      "sha256": "4b3f3e5f84aad4b56201b000668fc9fc691a833bb05bfdf4dba5841fc96de643"
+    }
+  ],
+  "export_pipeline": {
+    "native_audit_repairs": [
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle in root DICTIONARY(#C)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARY(#D)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARY(#1A)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARY(#17)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARY(#19)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of ACDBDICTIONARYWDFLT(#E)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARY(#38)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARY(#39)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of ACDBPLACEHOLDER(#F)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of MLINESTYLE(#18)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of LAYOUT(#1E)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of LAYOUT(#26)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of LAYOUT(#22)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARYVAR(#3B)."
+      },
+      {
+        "code": 202,
+        "message": "Fixed invalid owner handle of DICTIONARYVAR(#3A)."
+      },
+      {
+        "code": 202,
+        "message": "Removed invalid key ColorSettings/BackgroundColor in DICTIONARY(#39)."
+      }
+    ],
+    "native_geometry_attributes_verified": true,
+    "final_writer": "ezdxf R2010",
+    "ezdxf_version": "1.4.3"
+  },
+  "engine_sha256": "a002f4fc14df6474aca524231af604b6c757de3e492dd3f29f09ea54ee53f04e",
+  "observed": {
+    "current_layer": "SURVEY",
+    "entities": [
+      {
+        "center": [
+          10,
+          20,
+          9
+        ],
+        "color_index": 256,
+        "id": 12,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 3,
+        "type": "CIRCLE"
+      },
+      {
+        "center": [
+          40,
+          30,
+          11
+        ],
+        "color_index": 256,
+        "id": 13,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 5,
+        "type": "CIRCLE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          3,
+          4,
+          7
+        ],
+        "id": 14,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "type": "LINE"
+      }
+    ],
+    "layers": [
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "0",
+        "visible": true
+      },
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "Defpoints",
+        "visible": true
+      },
+      {
+        "color": "#00ff00",
+        "color_index": 3,
+        "display_color": "#00ff00",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "SURVEY",
+        "visible": true
+      }
+    ],
+    "units": 4
+  }
+}
