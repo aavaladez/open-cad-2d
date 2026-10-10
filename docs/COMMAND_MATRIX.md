@@ -4,7 +4,9 @@ Generada desde el Excel original; cada fila conserva ID, hoja y fila.
 
 SHA-256: `7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0`. Total: 472 entradas.
 
-Estados: {'prototype_partial': 12, 'pending': 399, 'excluded': 61}. Ningún comando del Excel terminado; variantes del prototipo comprobadas por pruebas locales.
+Estados: {'qcad_partial': 11, 'pending': 399, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
+
+qcad_partial acredita sólo las variantes/documento y casos descritos en [TRACEABILITY.md](TRACEABILITY.md); no equivale a paridad de opciones ni a aceptación A1.
 
 Fuente encontrada = registro textual exacto del comando, sin ejecución ni equivalencia de opciones. Ausencia de coincidencia no prueba ausencia funcional. QCAD usa nombres/alias diferentes (p. ej. circlecr). Comparación completa pendiente de adaptar contratos por fila.
 
@@ -12,12 +14,12 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 
 | ID | Hoja: fila | Categoría | Comando | Alcance | QCAD fuente | LC3 fuente | Estado | Test |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ACAD-0002 | AutoCAD: 2 | Dibujo | LINE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/lineoperations.lua) | prototype_partial | test_commands.Commands.test_line_alias_chain_z_undo |
+| ACAD-0002 | AutoCAD: 2 | Dibujo | LINE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/lineoperations.lua) | qcad_partial | test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py |
 | ACAD-0003 | AutoCAD: 3 | Dibujo | PLINE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0004 | AutoCAD: 4 | Dibujo | 3DPOLY | 2d_with_z | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0005 | AutoCAD: 5 | Dibujo | XLINE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0006 | AutoCAD: 6 | Dibujo | RAY | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0007 | AutoCAD: 7 | Dibujo | CIRCLE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCP/CircleCPInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/circleoperations.lua) | prototype_partial | test_commands.Commands.test_circle_invalid_and_valid |
+| ACAD-0007 | AutoCAD: 7 | Dibujo | CIRCLE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCP/CircleCPInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/circleoperations.lua) | qcad_partial | test_commands.Commands.test_circle_invalid_and_valid; tools/check_qcad_application.py |
 | ACAD-0008 | AutoCAD: 8 | Dibujo | ARC | 2d | sin coincidencia | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/arcoperations.lua) | pending | pendiente |
 | ACAD-0009 | AutoCAD: 9 | Dibujo | ELLIPSE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseCPP/EllipseCPPInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/ellipseoperations.lua) | pending | pendiente |
 | ACAD-0010 | AutoCAD: 10 | Dibujo | RECTANG | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
@@ -47,7 +49,7 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0034 | AutoCAD: 34 | Dibujo | QLEADER | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0035 | AutoCAD: 35 | Dibujo | MLEADER | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0036 | AutoCAD: 36 | Dibujo | HELIX | excluded_3d | sin coincidencia | sin coincidencia | excluded | pendiente |
-| ACAD-0037 | AutoCAD: 37 | Modificación | MOVE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Translate/TranslateInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/moveoperation.lua) | prototype_partial | test_commands.Commands.test_move_erase_layer_lock |
+| ACAD-0037 | AutoCAD: 37 | Modificación | MOVE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Translate/TranslateInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/moveoperation.lua) | qcad_partial | test_commands.Commands.test_move_erase_layer_lock; tools/check_qcad_application.py |
 | ACAD-0038 | AutoCAD: 38 | Modificación | COPY | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Copy/CopyInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/copyoperation.lua) | pending | pendiente |
 | ACAD-0039 | AutoCAD: 39 | Modificación | ROTATE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Rotate/RotateInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/rotateoperation.lua) | pending | pendiente |
 | ACAD-0040 | AutoCAD: 40 | Modificación | SCALE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Scale/ScaleInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/actions/scaleoperation.lua) | pending | pendiente |
@@ -63,7 +65,7 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0050 | AutoCAD: 50 | Modificación | BREAKATPOINT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0051 | AutoCAD: 51 | Modificación | JOIN | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0052 | AutoCAD: 52 | Modificación | EXPLODE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Modify/Explode/ExplodeInit.js) | sin coincidencia | pending | pendiente |
-| ACAD-0053 | AutoCAD: 53 | Modificación | ERASE | 2d | sin coincidencia | sin coincidencia | prototype_partial | test_commands.Commands.test_move_erase_layer_lock |
+| ACAD-0053 | AutoCAD: 53 | Modificación | ERASE | 2d | sin coincidencia | sin coincidencia | qcad_partial | test_commands.Commands.test_move_erase_layer_lock; tools/check_qcad_application.py |
 | ACAD-0054 | AutoCAD: 54 | Modificación | ARRAY | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0055 | AutoCAD: 55 | Modificación | ARRAYRECT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0056 | AutoCAD: 56 | Modificación | ARRAYPOLAR | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
@@ -86,8 +88,8 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0073 | AutoCAD: 73 | Modificación | FIND | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0074 | AutoCAD: 74 | Modificación | TXTEXP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0075 | AutoCAD: 75 | Modificación | TCOUNT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0076 | AutoCAD: 76 | Modificación | UNDO | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Undo/UndoInit.js) | sin coincidencia | prototype_partial | test_commands.Commands.test_line_alias_chain_z_undo |
-| ACAD-0077 | AutoCAD: 77 | Modificación | REDO | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Redo/RedoInit.js) | sin coincidencia | prototype_partial | test_commands.Commands.test_line_alias_chain_z_undo |
+| ACAD-0076 | AutoCAD: 76 | Modificación | UNDO | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Undo/UndoInit.js) | sin coincidencia | qcad_partial | test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py |
+| ACAD-0077 | AutoCAD: 77 | Modificación | REDO | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Redo/RedoInit.js) | sin coincidencia | qcad_partial | test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py |
 | ACAD-0078 | AutoCAD: 78 | Modificación | OOPS | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Edit/Undo/UndoInit.js) | sin coincidencia | pending | pendiente |
 | ACAD-0079 | AutoCAD: 79 | Modificación | GROUP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0080 | AutoCAD: 80 | Modificación | UNGROUP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
@@ -117,7 +119,7 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0104 | AutoCAD: 104 | Selección, consulta y propiedades | DWGPROPS | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0105 | AutoCAD: 105 | Selección, consulta y propiedades | SETVAR | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0106 | AutoCAD: 106 | Selección, consulta y propiedades | UPDATEFIELD | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0107 | AutoCAD: 107 | Capas | LAYER | 2d | sin coincidencia | sin coincidencia | prototype_partial | test_commands.Commands.test_layer_visibility_undo |
+| ACAD-0107 | AutoCAD: 107 | Capas | LAYER | 2d | sin coincidencia | sin coincidencia | qcad_partial | test_commands.Commands.test_layer_visibility_undo; tools/check_qcad_application.py |
 | ACAD-0108 | AutoCAD: 108 | Capas | LAYERP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0109 | AutoCAD: 109 | Capas | LAYERPMODE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0110 | AutoCAD: 110 | Capas | LAYISO | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
@@ -272,10 +274,10 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0259 | AutoCAD: 259 | Bloques, atributos y referencias | DATALINKUPDATE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0260 | AutoCAD: 260 | Bloques, atributos y referencias | ATTACH | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0261 | AutoCAD: 261 | Archivo, impresión y publicación | NEW | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/NewFile/NewFileInit.js) | sin coincidencia | pending | pendiente |
-| ACAD-0262 | AutoCAD: 262 | Archivo, impresión y publicación | OPEN | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/OpenFile/OpenFileInit.js) | sin coincidencia | prototype_partial | test_interop.Interop.test_geometry_layers_z |
+| ACAD-0262 | AutoCAD: 262 | Archivo, impresión y publicación | OPEN | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/OpenFile/OpenFileInit.js) | sin coincidencia | qcad_partial | test_interop.Interop.test_geometry_layers_z; tools/check_qcad_dxf.py |
 | ACAD-0263 | AutoCAD: 263 | Archivo, impresión y publicación | QSAVE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0264 | AutoCAD: 264 | Archivo, impresión y publicación | SAVE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/Save/SaveInit.js) | sin coincidencia | pending | pendiente |
-| ACAD-0265 | AutoCAD: 265 | Archivo, impresión y publicación | SAVEAS | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/SaveAs/SaveAsInit.js) | sin coincidencia | prototype_partial | test_interop.Interop.test_geometry_layers_z |
+| ACAD-0265 | AutoCAD: 265 | Archivo, impresión y publicación | SAVEAS | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/SaveAs/SaveAsInit.js) | sin coincidencia | qcad_partial | test_interop.Interop.test_geometry_layers_z; tools/check_qcad_dxf.py |
 | ACAD-0266 | AutoCAD: 266 | Archivo, impresión y publicación | SAVEALL | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0267 | AutoCAD: 267 | Archivo, impresión y publicación | CLOSE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/File/CloseFile/CloseFileInit.js) | sin coincidencia | pending | pendiente |
 | ACAD-0268 | AutoCAD: 268 | Archivo, impresión y publicación | CLOSEALL | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
@@ -345,9 +347,9 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0332 | AutoCAD: 332 | Ayudas de dibujo y configuración | HELP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0333 | AutoCAD: 333 | Ayudas de dibujo y configuración | ABOUT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0334 | AutoCAD: 334 | Ayudas de dibujo y configuración | INFO | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0335 | AutoCAD: 335 | Programación y automatización | APPLOAD | 2d | sin coincidencia | sin coincidencia | prototype_partial | test_lisp.Lisp.test_original_rectangle_and_c_command |
+| ACAD-0335 | AutoCAD: 335 | Programación y automatización | APPLOAD | 2d | sin coincidencia | sin coincidencia | qcad_partial | test_lisp.Lisp.test_original_rectangle_and_c_command; tools/check_qcad_application.py |
 | ACAD-0336 | AutoCAD: 336 | Programación y automatización | VLISP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0337 | AutoCAD: 337 | Programación y automatización | LOAD | 2d | sin coincidencia | sin coincidencia | prototype_partial | test_lisp.Lisp.test_original_rectangle_and_c_command |
+| ACAD-0337 | AutoCAD: 337 | Programación y automatización | LOAD | 2d | sin coincidencia | sin coincidencia | qcad_partial | test_lisp.Lisp.test_original_rectangle_and_c_command; tools/check_qcad_application.py |
 | ACAD-0338 | AutoCAD: 338 | Programación y automatización | SCRIPT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0339 | AutoCAD: 339 | Programación y automatización | RUN / SCRIPT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0340 | AutoCAD: 340 | Programación y automatización | ACTRECORD | 2d | sin coincidencia | sin coincidencia | pending | pendiente |

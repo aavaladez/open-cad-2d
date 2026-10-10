@@ -121,6 +121,10 @@ QJsonObject CadSession::snapshot() {
     for (auto id : entities.keys()) {
         auto e=entities[id];
         QJsonObject item{{"id",id},{"layer",entityLayers[id]}};
+        item["color_index"]=e->getColor().getColorIndex();
+        item["linetype"]=document().getLinetypeName(e->getLinetypeId());
+        item["lineweight"]=int(e->getLineweight());
+        item["ltscale"]=e->getLinetypeScale();
         auto line=e.dynamicCast<RLineEntity>(); auto circle=e.dynamicCast<RCircleEntity>();
         if (line) {
             item["type"]="LINE"; item["start"]=xyz(line->getStartPoint()); item["end"]=xyz(line->getEndPoint());
@@ -133,6 +137,9 @@ QJsonObject CadSession::snapshot() {
         auto layer=layers[name];
         const auto color=layer->getColor();
         layerList.append(QJsonObject{{"name",name},{"color",color.name()},
+            {"color_index",color.getColorIndex()},{"frozen",layer->isFrozen()},
+            {"linetype",document().getLinetypeName(layer->getLinetypeId())},
+            {"lineweight",int(layer->getLineweight())},
             {"display_color",color.getColorIndex()==7 ? QStringLiteral("#d6e2ec") : color.name()},
             {"visible",!layer->isOff() && !layer->isFrozen()},{"locked",layer->isLocked()}});
     }
@@ -160,12 +167,21 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             auto e=temporary->getDocument().queryEntity(id);
             require(e->getType()==RS::EntityLine || e->getType()==RS::EntityCircle,"Unsupported DXF entity");
         }
+        if (input.contains("current_layer")) {
+            QString name=input["current_layer"].toString();
+            auto& imported=temporary->getDocument();
+            require(imported.getLayerId(name)!=RObject::INVALID_ID,"Unknown imported current layer");
+            imported.setCurrentLayer(name);
+        }
         interface.swap(temporary); refresh();
     } else if (action=="save") {
         require(!editing,"Cannot export during a transaction");
         QString path=input["path"].toString();
         require(!path.isEmpty() && !path.contains("://") && !QFileInfo::exists(path),"New local output required");
-        require(interface->exportFile(path),"DXF export failed");
+        auto fileName=document().getFileName();
+        bool success=interface->exportFile(path,QString(),false);
+        document().setFileName(fileName);
+        require(success,"DXF export failed");
     } else {
         require(editing,"Edit requires transaction");
         if (action=="line" || action=="circle") {
@@ -200,7 +216,8 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             require(!name.isEmpty() && !name.contains(QRegularExpression("[<>/\\\\\":;?*|=]")),"Invalid layer name");
             if (mode=="NEW") {
                 require(!layers.contains(name),"Layer already exists");
-                layers[name].reset(new RLayer(&document(),name,false,false,RColor(QStringLiteral("#d6e2ec"))));
+                layers[name].reset(new RLayer(&document(),name,false,false,RColor(QStringLiteral("#d6e2ec")),
+                    document().getLinetypeId(QStringLiteral("CONTINUOUS")),RLineweight::WeightByLwDefault));
                 dirtyLayers.insert(name);
             } else {
                 require(layers.contains(name),"Unknown layer");

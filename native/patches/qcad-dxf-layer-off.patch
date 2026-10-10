@@ -1,0 +1,23 @@
+diff --git a/src/io/dxf/RDxfExporter.cpp b/src/io/dxf/RDxfExporter.cpp
+--- a/src/io/dxf/RDxfExporter.cpp
++++ b/src/io/dxf/RDxfExporter.cpp
+@@ -603,10 +603,5 @@
+ void RDxfExporter::writeLayer(const RLayer& l) {
+     qDebug() << "RDxfExporter::writeLayer: " << l.getName();
+ 
+-    int colorSign = 1;
+-    if (l.isOff()) {
+-        colorSign = -1;
+-    }
+-
+     QSharedPointer<RLinetype> lt = document->queryLinetype(l.getLinetypeId());
+     if (lt.isNull()) {
+@@ -619,7 +614,7 @@
+         DL_LayerData((const char*)RDxfExporter::escapeUnicode(l.getName()),
+                      l.isFrozen() + (l.isLocked()<<2), l.isOff()),
+         DL_Attributes(std::string(""),
+-                      colorSign * RDxfServices::colorToNumber(l.getColor(), dxfColors),
++                      RDxfServices::colorToNumber(l.getColor(), dxfColors),
+                       RDxfServices::colorToNumber24(l.getColor()),
+                       RDxfServices::widthToNumber(l.getLineweight()),
+                       (const char*)RDxfExporter::escapeUnicode(lt->getName())));

@@ -34,6 +34,9 @@ def main():
         ids=bus.execute('L','0,0,7','3,4,7','6,4,7')
         checks['native_ids']=all(i>=0 and i in doc.entities for i in ids)
         checks['chain_z']=len(ids)==2 and all(e.end.z==7 for e in doc.entities.values())
+        bus.execute('ERASE',','.join(str(i) for i in ids))
+        checks['erase_native']=not doc.entities
+        bus.execute('UNDO'); checks['erase_undo']=len(doc.entities)==2
         bus.execute('UNDO'); checks['chain_single_undo']=not doc.entities
         lsp.run('(defun C:NEGATIVE () (- 2))')
         checks['custom_numeric_result']=bus.execute('NEGATIVE')==-2
@@ -88,7 +91,7 @@ def main():
         QTest.keyClick(window.entry,Qt.Key.Key_Return); app.processEvents()
         checks['console_edits_qcad']=len(doc.entities)==6 and any(getattr(e,'center',None)==Point(200,40,9) for e in doc.entities.values())
         buttons={b.text():b for b in window.ribbon.findChildren(QPushButton)}
-        checks['pending_dxf_explicit']=not buttons['Abrir DXF · pendiente'].isEnabled() and 'DXF pendiente' in window.history.toPlainText()
+        checks['dxf_subset_explicit']=buttons['Abrir DXF'].isEnabled() and 'DXF R2000/R2010 limitado' in window.history.toPlainText()
         QTest.mouseClick(buttons['Línea'],Qt.MouseButton.LeftButton)
         QTest.mouseClick(window.canvas,Qt.MouseButton.LeftButton,pos=QPoint(100,100))
         QTest.keyClick(window.canvas,Qt.Key.Key_Escape)

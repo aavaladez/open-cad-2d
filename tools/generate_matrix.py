@@ -19,6 +19,7 @@ PROTOTYPE = {
     "OPEN": ("diálogo DXF LINE/CIRCLE; DWG y demás entidades ausentes", "test_interop.Interop.test_geometry_layers_z"),
     "SAVEAS": ("diálogo DXF LINE/CIRCLE R2010; otros formatos ausentes", "test_interop.Interop.test_geometry_layers_z"),
 }
+NATIVE = {'LINE','CIRCLE','MOVE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS'}
 
 
 def main():
@@ -40,9 +41,11 @@ def main():
                 "interop" if r["category"]=="Archivo, impresión y publicación" else "commands_ui")
         row = dict(r)
         row.update(qcad_evidence=q,librecad3_evidence=l,
-                   status="excluded" if r["scope"]=="excluded_3d" else ("prototype_partial" if variant else "pending"),
-                   implemented_variant=variant,implementation="src/opencad" if variant else "",
-                   tests=test,version="0.1.0.dev0" if variant else "",issue=issues[work])
+                   status="excluded" if r["scope"]=="excluded_3d" else ("qcad_partial" if r['command'] in NATIVE else "prototype_partial" if variant else "pending"),
+                   implemented_variant=variant,implementation=("src/opencad; native/adapter" if r['command'] in NATIVE else "src/opencad") if variant else "",
+                   tests=(test+"; tools/check_qcad_dxf.py" if r['command'] in ('OPEN','SAVEAS') else
+                          test+"; tools/check_qcad_application.py" if r['command'] in NATIVE else test),
+                   version="0.1.0.dev0" if variant else "",issue=issues[work])
         rows.append(row)
     (ROOT/"requirements/coverage.json").write_text(json.dumps({"source_sha256":catalog["sha256"],"rows":rows},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     with (ROOT/"requirements/coverage.csv").open("w",encoding="utf-8-sig",newline="") as f:
@@ -54,7 +57,8 @@ def main():
     counts = Counter(r["status"] for r in rows)
     text = "# Matriz de comandos\n\nGenerada desde el Excel original; cada fila conserva ID, hoja y fila.\n\n"
     text += f"SHA-256: `{catalog['sha256']}`. Total: {len(rows)} entradas.\n\n"
-    text += f"Estados: {dict(counts)}. Ningún comando del Excel terminado; variantes del prototipo comprobadas por pruebas locales.\n\n"
+    text += f"Estados: {dict(counts)}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.\n\n"
+    text += "qcad_partial acredita sólo las variantes/documento y casos descritos en [TRACEABILITY.md](TRACEABILITY.md); no equivale a paridad de opciones ni a aceptación A1.\n\n"
     text += "Fuente encontrada = registro textual exacto del comando, sin ejecución ni equivalencia de opciones. Ausencia de coincidencia no prueba ausencia funcional. QCAD usa nombres/alias diferentes (p. ej. circlecr). Comparación completa pendiente de adaptar contratos por fila.\n\n"
     text += "Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, test y enlaces de fuente: [coverage.csv](../requirements/coverage.csv) y [coverage.json](../requirements/coverage.json). Datos originales: [catalog.json](../requirements/catalog.json).\n\n"
     text += "| ID | Hoja: fila | Categoría | Comando | Alcance | QCAD fuente | LC3 fuente | Estado | Test |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"

@@ -28,7 +28,7 @@ sustancial del alcance, riesgo legal/de seguridad, gastos o destrucción importa
 
 ## Organización
 
-`src/opencad`: prototipo; `native`: futura integración C++/Qt; `requirements`:
+`src/opencad`: UI/bus/LSP y prototipo temporal; `native`: integración C++/Qt experimental; `requirements`:
 catálogo; `tools`: generación/validación; `tests`: aceptación y regresión;
 `docs`: gobierno; `packaging`: distribución. No versionar .cache, SDKs o binarios.
 
@@ -76,3 +76,13 @@ El pipeline genera contratos, ejecuta pruebas y compara resultados; no inventa
 implementaciones ni acredita compatibilidad externa por autorreferencia. Los scripts
 respetan archivos existentes. Mantener las siete skills versionadas para descubrimiento
 en futuras sesiones; esta sesión puede leerlas directamente.
+
+## Integración actual
+
+El modo --qcad usa un documento C++ QCAD autoritativo; las dataclasses Python son
+vistas descartables. No editar el modelo temporal para ampliar el motor profesional.
+Leer native/ADAPTER.md y native/DXF_APPLICATION.md al cambiar el puente/archivos.
+DXF usa preflight, documento candidato y writer híbrido CE/ezdxf con límites
+explícitos; no prometer conservación general de metadatos. Reproducir fixtures de
+aplicación además de la regresión Python. Mantener docs/TRACEABILITY.md y regenerar
+matriz con tools/generate_matrix.py; qcad_partial no significa comando terminado.

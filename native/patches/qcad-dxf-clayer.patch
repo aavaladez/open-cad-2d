@@ -1,0 +1,28 @@
+diff --git a/src/core/RDxfServices.cpp b/src/core/RDxfServices.cpp
+--- a/src/core/RDxfServices.cpp
++++ b/src/core/RDxfServices.cpp
+@@ -1482,8 +1482,8 @@
+         return 40;
+     case RS::CHAMFERD:
+         return 40;
+-//    case RS::CLAYER:
+-//        return 8;
++    case RS::CLAYER:
++        return 8;
+ //    case RS::CMATERIAL:
+ //        return 347;
+     case RS::CMLJUST:
+diff --git a/src/io/dxf/RDxfExporter.cpp b/src/io/dxf/RDxfExporter.cpp
+--- a/src/io/dxf/RDxfExporter.cpp
++++ b/src/io/dxf/RDxfExporter.cpp
+@@ -487,7 +487,9 @@
+         }
+ 
+         // skip undefined variables:
+-        QVariant value = document->getKnownVariable(var);
++        QVariant value = var==RS::CLAYER
++            ? QVariant(document->getLayerName(document->getCurrentLayerId()))
++            : document->getKnownVariable(var);
+         if (!value.isValid()) {
+             continue;
+         }

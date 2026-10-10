@@ -42,3 +42,17 @@ propietario; no incorporado. LibreCAD 3 tiene opción experimental de lectura ab
 desactivada por defecto; no se probó. Evaluar biblioteca abierta con licencia/corpus,
 conservación de objetos proxy y advertencias por versión. Escritura independiente
 requiere pruebas propias, no se deduce de lectura.
+
+## Ciclo de aplicación posterior
+
+--qcad ya conecta Abrir/Guardar DXF con el documento autoritativo. Importación
+candidata, preflight independiente, conservación XYZ/capas/flags/CLAYER/INSUNITS y
+guardado atómico comprobados en fixtures R2000/R2010 propios. CLAYER y OFF perdidos
+en CE fueron reproducidos y corregidos con parches mínimos fijados.
+
+Salida final R2010 híbrida QCAD/ezdxf: el writer CE crea referencias de diccionario
+inválidas. Se contrastan primero sus entidades/atributos y se reconstruyen defaults
+mediante ezdxf; el archivo final debe pasar audit sin reparaciones y reabrir en QCAD.
+Reportar native_audit_repairs; entrada con reparación siempre rechazada. Ver
+native/DXF_APPLICATION.md y docs/TRACEABILITY.md para alcance, deuda y pruebas.
+No es interoperabilidad general ni aceptación instalada A1.

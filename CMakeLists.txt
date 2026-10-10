@@ -34,7 +34,10 @@ if(OPENCAD_BUILD_QCAD)
     ExternalProject_Add_StepDependencies(qcad-ce patch
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/apply_qcad_patch.py"
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-msvc-link-paths.patch"
-        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-z.patch")
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-z.patch"
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-clayer.patch"
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-layer-off.patch"
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-off-import.patch")
     if(WIN32)
     add_library(qcad-audited-core SHARED IMPORTED)
     set_target_properties(qcad-audited-core PROPERTIES
@@ -79,6 +82,10 @@ if(OPENCAD_BUILD_QCAD)
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_application.py"
         --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
         --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/application-acceptance")
+    add_test(NAME qcad-dxf-application COMMAND "${Python3_EXECUTABLE}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_dxf.py"
+        --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
+        --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/dxf-application")
     add_test(NAME qcad-document COMMAND "${Python3_EXECUTABLE}"
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_document.py"
         --binary "$<TARGET_FILE:qcad-document-smoke>" --source "${OPENCAD_QCAD_SOURCE}"

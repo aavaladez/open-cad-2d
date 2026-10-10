@@ -13,7 +13,8 @@ def main():
     if actual != PIN:
         raise SystemExit('Re-auditar upstream antes de cambiar el pin.')
     command = ['git','-C',str(source),'apply']
-    for name in ('qcad-msvc-link-paths.patch','qcad-dxf-z.patch'):
+    for name in ('qcad-msvc-link-paths.patch','qcad-dxf-z.patch','qcad-dxf-clayer.patch',
+                 'qcad-dxf-layer-off.patch','qcad-dxf-off-import.patch'):
         patch = ROOT / 'native/patches' / name
         if subprocess.run(command+['--reverse','--check',str(patch)],capture_output=True).returncode == 0:
             print('Reviewed QCAD patch already applied: '+name)
