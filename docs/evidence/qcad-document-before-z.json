@@ -1,0 +1,254 @@
+{
+  "kind": "dependency_functional",
+  "application_integrated": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "qcad_revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126",
+  "ezdxf_version": "1.4.3",
+  "command": [
+    "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\qcad-document-smoke.exe",
+    "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\document-acceptance\\run-lxz9vfve\\original.dxf",
+    "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\document-acceptance\\run-lxz9vfve\\edited.dxf"
+  ],
+  "exit_code": 0,
+  "binary_sha256": "12e3658ce00085f24280b16c496a6e8b5340175aa1ccedd82e61214e1a087c95",
+  "input_sha256": "07638e63c816a0d4b60c0ec30b043867a56fae2b38d776c466329c2385eb0d1a",
+  "fixture_directory": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\native\\document-acceptance\\run-lxz9vfve",
+  "passed": false,
+  "checks": {
+    "add_count": true,
+    "add_transaction": true,
+    "export": true,
+    "import": true,
+    "input_count": true,
+    "modify_transaction": true,
+    "redo_add": true,
+    "redo_modify": true,
+    "reopen": true,
+    "reopened_count": true,
+    "undo_add": true,
+    "undo_modify": true,
+    "input_unchanged": true,
+    "units": true,
+    "layer_color": true,
+    "entity_attributes": false
+  },
+  "comparisons": {
+    "import": {
+      "passed": false,
+      "differences": [
+        "result[0].center[2]",
+        "result[1].end[2]",
+        "result[1].start[2]"
+      ],
+      "atol": 1e-09,
+      "baseline_origin": "analytic",
+      "baseline_version": "fixture-1",
+      "actual_version": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+    },
+    "edited": {
+      "passed": false,
+      "differences": [
+        "result[0].center[2]",
+        "result[2].end[2]",
+        "result[2].start[2]"
+      ],
+      "atol": 1e-09,
+      "baseline_origin": "analytic",
+      "baseline_version": "fixture-1",
+      "actual_version": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+    },
+    "reopened": {
+      "passed": false,
+      "differences": [
+        "result[0].center[2]",
+        "result[1].end[2]",
+        "result[1].start[2]",
+        "result[2].end[2]",
+        "result[2].start[2]"
+      ],
+      "atol": 1e-09,
+      "baseline_origin": "analytic",
+      "baseline_version": "fixture-1",
+      "actual_version": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+    },
+    "independent_reader": {
+      "passed": false,
+      "differences": [
+        "result[0].center[2]",
+        "result[2].end[2]",
+        "result[2].start[2]"
+      ],
+      "atol": 1e-09,
+      "baseline_origin": "analytic",
+      "baseline_version": "fixture-1",
+      "actual_version": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+    }
+  },
+  "native": {
+    "after": [
+      {
+        "end": [
+          3,
+          4,
+          0
+        ],
+        "layer": "Survey",
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "center": [
+          10,
+          20,
+          0
+        ],
+        "layer": "Survey",
+        "radius": 3,
+        "type": "CIRCLE"
+      },
+      {
+        "end": [
+          13,
+          6,
+          5
+        ],
+        "layer": "Survey",
+        "start": [
+          10,
+          2,
+          5
+        ],
+        "type": "LINE"
+      }
+    ],
+    "application_integrated": false,
+    "before": [
+      {
+        "end": [
+          3,
+          4,
+          0
+        ],
+        "layer": "Survey",
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "center": [
+          10,
+          20,
+          0
+        ],
+        "layer": "Survey",
+        "radius": 3,
+        "type": "CIRCLE"
+      }
+    ],
+    "checks": {
+      "add_count": true,
+      "add_transaction": true,
+      "export": true,
+      "import": true,
+      "input_count": true,
+      "modify_transaction": true,
+      "redo_add": true,
+      "redo_modify": true,
+      "reopen": true,
+      "reopened_count": true,
+      "undo_add": true,
+      "undo_modify": true
+    },
+    "engine": "qcad",
+    "kind": "dependency_functional",
+    "passed": true,
+    "reopened": [
+      {
+        "end": [
+          13,
+          6,
+          0
+        ],
+        "layer": "Survey",
+        "start": [
+          10,
+          2,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "end": [
+          3,
+          4,
+          0
+        ],
+        "layer": "Survey",
+        "start": [
+          0,
+          0,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "center": [
+          10,
+          20,
+          0
+        ],
+        "layer": "Survey",
+        "radius": 3,
+        "type": "CIRCLE"
+      }
+    ]
+  },
+  "independent_inventory": [
+    {
+      "type": "LINE",
+      "layer": "Survey",
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "end": [
+        3.0,
+        4.0,
+        0.0
+      ]
+    },
+    {
+      "type": "CIRCLE",
+      "layer": "Survey",
+      "center": [
+        10.0,
+        20.0,
+        0.0
+      ],
+      "radius": 3.0
+    },
+    {
+      "type": "LINE",
+      "layer": "Survey",
+      "start": [
+        10.0,
+        2.0,
+        5.0
+      ],
+      "end": [
+        13.0,
+        6.0,
+        5.0
+      ]
+    }
+  ],
+  "output_sha256": "431b0b3e116fda0938a600b8175d90ae0b06985e9cef8ae55fe475f83865d39e"
+}

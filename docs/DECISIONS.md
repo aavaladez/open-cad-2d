@@ -36,3 +36,21 @@ DXF/deuda/licencias/dependencias/seguridad. Registrar severidad y correcciones,
 resolver bloqueantes, generar informe y PAUSAR. Ninguna aprobación técnica
 automática sustituye aprobación del usuario para la siguiente fase. Regla
 prioritaria sobre instrucciones previas de continuar después del punto de control.
+
+## ADR-011 — Documento QCAD probado antes del adaptador de aplicación
+
+2026-10-09: fixture original RDocument/RDocumentInterface y plugin DXF CE con
+registro explícito, sin descubrimiento/carga de plugins comerciales. Documento
+real DXF R2000 producido por ezdxf, edición transaccional y contraste independiente
+de salida. Mantener QCAD como documento autoritativo; no ampliar el motor temporal.
+
+La prueba reprodujo pérdida de Z en importación LINE/CIRCLE y exportación CIRCLE.
+Parche GPL original de cuatro líneas, pin y git apply --check/reverse --check.
+Aceptación local del subconjunto aprobada; no acredita DXF general, OCS arbitrario
+ni A1. RDocumentInterface posee/destruye RDocument; éste posee storage/index.
+Usar QStringLiteral en texto de operaciones para evitar resolución al overload bool
+(la llamada con literal char* eligió atributos actuales y desactivó undo).
+
+Compilar fixture y upstream en Release para coincidir en runtime. Declarar todos
+los productos importados y dependencias de los parches; repetir el build incremental
+upstream para no comprobar un plugin antiguo después de editar fuentes.

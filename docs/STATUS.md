@@ -20,9 +20,17 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- M1 documental: fixture QCAD CE real con importación DXF R2000, añadir/mover,
+  undo/redo, guardar/reabrir y lector independiente ezdxf. Pérdida Z de LINE/CIRCLE
+  reproducida y corregida mediante parche acotado. Build local y CTest 3/3 aprobados
+  (41 tests Python + geometría + documento); native/DOCUMENT.md y evidence/qcad-document*.
+  No acredita UI/LSP integrada ni instalador; A1 permanece 0/6.
+- Gobierno A1 publicado en PR #11, listo para revisión, 8/8 checks aprobados.
+  Issue #10 mantiene los seis criterios. No se ha fusionado ni autorizado otra fase.
+
 - Auditoría de QCAD CE y LibreCAD 3 con commits y evidencia de fuente fijados.
   Selección provisional de QCAD CE; build nativo local posteriormente aprobado,
-  integración del documento pendiente (native/M1.md).
+  fixture documental comprobado; integración en la aplicación pendiente (native/M1.md).
 - Excel íntegro, SHA-256 y 472 filas preservadas, catálogo JSON/CSV y matriz por
   entrada. 12 parciales, 399 pendientes y 61 exclusiones 3D. Cero comandos completos.
 - Gobierno técnico, CMake, CI, Issues 1–7 y seis Agent Skills con helpers,
@@ -67,7 +75,7 @@ falló por ICU de Poppler recogida del PATH; `packaging/opencad.spec` excluye es
 dos DLL ajenas. Qt usa ICU de Windows System32; reconstrucción y smoke posteriores
 aprobados. No se modificaron protecciones ni bibliotecas del sistema.
 
-No ejecutadas: compilación LibreCAD, comparación de comandos/DXF con motor externo, AutoCAD,
+No ejecutadas: compilación LibreCAD, comparación de comandos con motor externo, AutoCAD,
 instalar/desinstalar Inno, equipo Windows limpio, DPI/accesibilidad manual,
 Linux/macOS locales. La primera CI remota aprobó Windows/macOS y falló Ubuntu por
 falta de libEGL.so.1, antes de ejecutar QtTest. Añadidos libegl1/libopengl0 al runner,
@@ -82,8 +90,9 @@ de adaptador documental/transacciones y corpus DXF. La búsqueda inicial de PATH
 no encontró compilador; una inspección posterior con vswhere identifica Visual
 Studio Build Tools 2026 y componente VC x64 instalado. El spike posterior
 instaló Qt 6.10.3 aislado y aprobó build
-CE y geometría C++. M1 sigue parcial: faltan documento/transacción/undo/DXF y
-handlers ECMAScript Qt6. No extender el motor temporal como base definitiva.
+CE y geometría C++. El fixture documental posterior valida transacciones/undo/DXF
+del subconjunto con segundo lector. M1 sigue parcial: faltan adaptador integrado,
+corpus conservador y handlers ECMAScript Qt6. No extender el motor temporal como base definitiva.
 
 La entrega local incluye avisos/licencias; antes de una release de distribución
 final faltan SBOM completo, fuentes correspondientes, pruebas en instalación limpia

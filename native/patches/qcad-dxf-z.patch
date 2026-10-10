@@ -1,0 +1,35 @@
+diff --git a/src/io/dxf/RDxfImporter.cpp b/src/io/dxf/RDxfImporter.cpp
+--- a/src/io/dxf/RDxfImporter.cpp
++++ b/src/io/dxf/RDxfImporter.cpp
+@@ -549,8 +549,8 @@
+ 
+ void RDxfImporter::addLine(const DL_LineData& data) {
+-    RVector v1(data.x1, data.y1);
+-    RVector v2(data.x2, data.y2);
++    RVector v1(data.x1, data.y1, data.z1);
++    RVector v2(data.x2, data.y2, data.z2);
+     QSharedPointer<RLineEntity> entity(
+         new RLineEntity(document, RLineData(v1, v2))
+     );
+     importEntity(entity);
+@@ -609,7 +609,7 @@
+ 
+ void RDxfImporter::addCircle(const DL_CircleData& data) {
+-    RVector v(data.cx, data.cy);
++    RVector v(data.cx, data.cy, data.cz);
+     QSharedPointer<RCircleEntity> entity(
+         new RCircleEntity(document,
+             RCircleData(v, data.radius)
+         )
+diff --git a/src/io/dxf/RDxfExporter.cpp b/src/io/dxf/RDxfExporter.cpp
+--- a/src/io/dxf/RDxfExporter.cpp
++++ b/src/io/dxf/RDxfExporter.cpp
+@@ -820,7 +820,7 @@
+         *dw,
+         DL_CircleData(c.getCenter().x,
+                       c.getCenter().y,
+-                      0.0,
++                      c.getCenter().z,
+                       c.getRadius()),
+         attributes);
+ }
