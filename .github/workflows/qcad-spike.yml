@@ -26,7 +26,7 @@ jobs:
           git -C .cache/upstream/qcad fetch --depth 1 origin 4c830eb4d80285ca64b1f2c2dc0987f729344126
           git -C .cache/upstream/qcad checkout --detach FETCH_HEAD
       - run: python -m aqt install-qt windows desktop 6.10.3 win64_msvc2022_64 --outputdir .cache/qt --archives qtbase qtdeclarative qtsvg qttools
-      - name: Build audited source and test geometry
+      - name: Build audited source and test geometry/document/DXF
         shell: pwsh
         run: |
           try { ./tools/build_qcad.ps1 *> build-native.log }
@@ -39,5 +39,6 @@ jobs:
           path: |
             build-native.log
             build/native/geometry-report.json
+            build/native/document-acceptance/
             build/native/regression.json
             build/native/Testing/Temporary/LastTest.log

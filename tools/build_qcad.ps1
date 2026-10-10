@@ -23,10 +23,10 @@ foreach ($cadPath in @($cadRoot,$cadQt,$cadSource,$cadCMake,$cadNinja,$cadVCVars
 }
 $cadScript = Join-Path $cadBuild 'build-qcad.cmd'
 $cadLines = @('@echo off', "call `"$cadVCVars`"", 'if errorlevel 1 exit /b %ERRORLEVEL%',
-    "`"$cadCMake`" -S `"$cadRoot`" -B `"$cadBuild`" -G Ninja -DCMAKE_MAKE_PROGRAM=`"$cadNinja`" -DOPENCAD_BUILD_QCAD=ON -DOPENCAD_QCAD_SOURCE=`"$cadSource`" -DCMAKE_PREFIX_PATH=`"$cadQt`"",
+    "`"$cadCMake`" -S `"$cadRoot`" -B `"$cadBuild`" -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=`"$cadNinja`" -DOPENCAD_BUILD_QCAD=ON -DOPENCAD_QCAD_SOURCE=`"$cadSource`" -DCMAKE_PREFIX_PATH=`"$cadQt`"",
     'if errorlevel 1 exit /b %ERRORLEVEL%')
 if (-not $ConfigureOnly) {
-    $cadLines += "`"$cadCMake`" --build `"$cadBuild`" --target qcad-geometry-smoke --parallel 4"
+    $cadLines += "`"$cadCMake`" --build `"$cadBuild`" --target qcad-geometry-smoke qcad-document-smoke --parallel 4"
 }
 $cadLines += 'exit /b %ERRORLEVEL%'
 Set-Content -LiteralPath $cadScript -Value $cadLines -Encoding ascii
@@ -35,4 +35,6 @@ if ($LASTEXITCODE -ne 0) { throw "QCAD build/configure falló: $LASTEXITCODE" }
 if (-not $ConfigureOnly) {
     & python (Join-Path $cadRoot 'tools/check_qcad_geometry.py') --binary (Join-Path $cadBuild 'qcad-geometry-smoke.exe') --source $cadSource --qt $cadQt --report (Join-Path $cadBuild 'geometry-report.json')
     if ($LASTEXITCODE -ne 0) { throw 'QCAD geometry acceptance failed.' }
+    & python (Join-Path $cadRoot 'tools/check_qcad_document.py') --binary (Join-Path $cadBuild 'qcad-document-smoke.exe') --source $cadSource --qt $cadQt --output (Join-Path $cadBuild 'document-acceptance')
+    if ($LASTEXITCODE -ne 0) { throw 'QCAD document/DXF acceptance failed.' }
 }
