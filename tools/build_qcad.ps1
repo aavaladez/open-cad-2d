@@ -26,7 +26,7 @@ $cadLines = @('@echo off', "call `"$cadVCVars`"", 'if errorlevel 1 exit /b %ERRO
     "`"$cadCMake`" -S `"$cadRoot`" -B `"$cadBuild`" -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=`"$cadNinja`" -DOPENCAD_BUILD_QCAD=ON -DOPENCAD_QCAD_SOURCE=`"$cadSource`" -DCMAKE_PREFIX_PATH=`"$cadQt`"",
     'if errorlevel 1 exit /b %ERRORLEVEL%')
 if (-not $ConfigureOnly) {
-    $cadLines += "`"$cadCMake`" --build `"$cadBuild`" --target qcad-geometry-smoke qcad-document-smoke --parallel 4"
+    $cadLines += "`"$cadCMake`" --build `"$cadBuild`" --target qcad-geometry-smoke qcad-document-smoke opencad-qcad-engine --parallel 4"
 }
 $cadLines += 'exit /b %ERRORLEVEL%'
 Set-Content -LiteralPath $cadScript -Value $cadLines -Encoding ascii

@@ -18,7 +18,8 @@ No comprometer ABI de plugins o formato propio antes del primer adaptador probad
 RPluginInterface es un punto de extensión real de QCAD; su uso por OPEN CAD aún pendiente.
 Qt 6 es objetivo actual de ambas bases auditadas. CMake raíz ofrece build del
 checkout CE fijado y CTest del prototipo. El spike posterior M1 compiló QCAD
-localmente y probó geometría/Z en C++; el adaptador documental sigue pendiente.
+localmente y probó geometría/Z y documentos; el adaptador de aplicación experimental
+posterior se describe en native/ADAPTER.md y ADR-012.
 
 ## Prototipo temporal verificable
 
@@ -40,7 +41,17 @@ undo y semántica LSP. Mantener casos analíticos como contrato independiente.
 Reemplazar el backend del prototipo o portar su UI a C++ según el spike real;
 no asumir que importar QCAD a Python es directo ni introducir dos documentos divergentes.
 
-## Seguridad y extensibilidad
+## Adaptador experimental comprobado
+
+La UI Python/Qt existente puede arrancar con --qcad. Un proceso C++ local posee
+el único RDocument autoritativo. El bus/LSP intercambia JSON mediante pipes; Python
+sólo conserva vistas descartables para canvas/selección/propiedades. Cada comando o
+LSP confirma una transacción QCAD; staging de objetos QCAD permite rollback sin
+perder redo. No existe sincronización entre dos documentos editables divergentes.
+LINE/CIRCLE/MOVE/ERASE/capas probados; DXF UI y despliegue nativo aún pendientes.
+No comprometer ABI de extensiones. Ver native/ADAPTER.md para límites/performance.
+
+## Seguridad del intérprete
 
 LSP sin eval/exec, shell, red, COM o I/O desde el código interpretado. Límites
 de tamaño, profundidad y pasos; rollback completo en fallo. No constituye un

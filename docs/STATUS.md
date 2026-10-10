@@ -10,8 +10,8 @@ aplicación, después detener funciones nuevas, congelar candidata, auditar y PA
 para aprobación explícita de la siguiente fase. No exige completar 472 requisitos.
 Ver AUDIT_GATE.md, ADR-010 y requirements/audit-gate.json.
 
-Entrada actual **0/6 acreditados integralmente**: QCAD documental y Windows
-instalado pendientes; UI, comandos, LSP y DXF parciales. Esto no invalida pruebas
+Entrada actual **0/6 acreditados integralmente**: QCAD documental, UI, comandos,
+LSP y DXF parciales; Windows instalado pendiente. Esto no invalida pruebas
 locales del prototipo/core; no las convierte en aceptación de aplicación instalada.
 Seis skills revisadas y reutilizadas; cad-audit-gate añadida, validación estructural
 aprobada. Regresión tras integración del controlador: 41/41 tests aprobados en
@@ -19,6 +19,13 @@ Python 3.14 y 3.12; diez tests nuevos verifican estados/rechazos con artefactos 
 sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/a1/.
 
 ## Entregado
+
+- Adaptador experimental: UI existente y AutoLISP editan un RDocument QCAD
+  autoritativo, transacciones con staging C++, rollback conservando redo y bloqueo
+  de capas. 26 comprobaciones funcionales por runtime (Python 3.12/3.14), regresión
+  41/41 por runtime y CTest 4/4 aprobados. native/ADAPTER.md y evidence/qcad-application*.
+  DXF UI deshabilitado, propiedades de lectura y despliegue nativo pendientes.
+  No acredita los seis criterios A1 ni comandos completos del Excel.
 
 - M1 documental: fixture QCAD CE real con importación DXF R2000, añadir/mover,
   undo/redo, guardar/reabrir y lector independiente ezdxf. Pérdida Z de LINE/CIRCLE
@@ -30,7 +37,8 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 - Auditoría de QCAD CE y LibreCAD 3 con commits y evidencia de fuente fijados.
   Selección provisional de QCAD CE; build nativo local posteriormente aprobado,
-  fixture documental comprobado; integración en la aplicación pendiente (native/M1.md).
+  fixture documental comprobado; integración experimental de aplicación comprobada
+  (native/M1.md, native/ADAPTER.md).
 - Excel íntegro, SHA-256 y 472 filas preservadas, catálogo JSON/CSV y matriz por
   entrada. 12 parciales, 399 pendientes y 61 exclusiones 3D. Cero comandos completos.
 - Gobierno técnico, CMake, CI, Issues 1–7 y seis Agent Skills con helpers,
@@ -91,8 +99,15 @@ no encontró compilador; una inspección posterior con vswhere identifica Visual
 Studio Build Tools 2026 y componente VC x64 instalado. El spike posterior
 instaló Qt 6.10.3 aislado y aprobó build
 CE y geometría C++. El fixture documental posterior valida transacciones/undo/DXF
-del subconjunto con segundo lector. M1 sigue parcial: faltan adaptador integrado,
-corpus conservador y handlers ECMAScript Qt6. No extender el motor temporal como base definitiva.
+del subconjunto con segundo lector. El adaptador posterior conecta UI/bus/LSP al
+documento QCAD. M1/M2 siguen parciales: falta corpus conservador de aplicación,
+propiedades editables y variantes. Los handlers ECMAScript Qt6 de upstream no se
+han integrado; la UI original no depende de ellos. No ampliar el motor temporal.
+Prioridad: ciclo DXF conservador del documento autoritativo; luego comandos/cotas,
+recuperación y distribución/instalación Windows para entrada A1.
+
+CI del PR documental #12/c528c72: 8 checks prototipo/portable aprobados; native
+run 38013268736 todavía en ejecución al consultar. No atribuirle éxito sin resultado.
 
 La entrega local incluye avisos/licencias; antes de una release de distribución
 final faltan SBOM completo, fuentes correspondientes, pruebas en instalación limpia

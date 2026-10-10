@@ -29,6 +29,13 @@ aceptación verificable. Priorizar corrección y conservación sobre cantidad de
 Roles de las skills: reverse-engineering → command-cloner o UI/LSP/interop →
 regression-testing. No se crea un nuevo repositorio ni se reinicia el proyecto.
 
+Avance posterior M1/M2: documento QCAD y adaptador experimental UI/bus/LSP
+probados; native/DOCUMENT.md y native/ADAPTER.md. Siguiente PR: importación DXF
+temporal con preflight conservador y contraste independiente antes de reemplazar
+el documento, guardado/reapertura sin pérdidas del subconjunto admitido. Después,
+propiedades editables/selección/comandos esenciales y acotación, recuperación y
+empaquetado/instalación funcional. Mantener variantes del Excel trazables y parciales.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.
