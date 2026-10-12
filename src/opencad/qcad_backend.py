@@ -119,6 +119,12 @@ class QcadDocument:
     def layer(self,mode,name):
         return self.request('layer',mode=mode,name=name)
 
+    def select(self,mode,a,b=None,tolerance=1):
+        args=dict(mode=mode,a=self.xyz(a))
+        if mode=='point': args['tolerance']=tolerance
+        else: args['b']=self.xyz(b)
+        return set(self.request('select',**args))
+
     def undo(self):
         return self.request('undo')
 
@@ -149,6 +155,10 @@ class QcadDocument:
 
 
 class QcadCommandBus(CommandBus):
+    def edit_properties(self,ids,changes):
+        with self.document.transaction():
+            self.document.request('properties',ids=sorted(ids),changes=changes)
+
     def execute(self,name,*args):
         canonical = self.aliases.get(name.upper().removeprefix('_'),name.upper().removeprefix('_'))
         if canonical == 'LAYER':

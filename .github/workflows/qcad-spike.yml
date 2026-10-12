@@ -4,7 +4,7 @@ on:
   push:
     branches: ['codex/qcad-build-spike']
   pull_request:
-    paths: ['native/**', 'CMakeLists.txt', 'tools/*qcad*', 'tests/fixtures/qcad-geometry-baseline.json', '.github/workflows/qcad-spike.yml']
+    paths: ['native/**', 'src/opencad/**', 'examples/**', 'tests/**', 'CMakeLists.txt', 'tools/*qcad*', 'tools/cad_workflow.py', '.github/workflows/qcad-spike.yml']
 permissions:
   contents: read
 jobs:
@@ -42,5 +42,6 @@ jobs:
             build/native/document-acceptance/
             build/native/application-acceptance/
             build/native/dxf-application/
+            build/native/editing-acceptance/
             build/native/regression.json
             build/native/Testing/Temporary/LastTest.log

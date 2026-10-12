@@ -84,3 +84,13 @@ escribir R2010 canónico ezdxf con auditoría sin reparaciones. Nunca reparar en
 silenciosamente ni proclamar writer CE globalmente corregido. Los defaults/handles
 se regeneran; no admitir metadatos personalizados detectados. Documentar deuda,
 dos backends y límites en DXF_APPLICATION.md antes de ampliar corpus/formato.
+
+## ADR-014 — Propiedades y selección en el adaptador existente
+
+2026-10-12: consultar selección con formas QCAD proyectadas en XY; conservar XYZ
+autoritativo. Editar propiedades mediante clones/staging, validando todas las entidades
+antes de reemplazar objetos y confirmar una transacción. UI sólo presenta valores y
+mantiene IDs de selección; sin segundo motor. Aplicación explícita y undo/redo.
+Crear Defpoints al inicializar dibujos nuevos evita diferencias con exportación CE.
+Native/EDITING.md registra contratos, límites y pruebas; no añadir comandos fuera
+de las prioridades A1 ni declarar paridad/criterios completos por evidencia parcial.

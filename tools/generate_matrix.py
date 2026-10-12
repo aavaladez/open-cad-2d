@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPE = {
     "LINE": ("dos puntos/cadena XYZ; faltan opciones Close/Undo interactivas y coordenadas relativas", "test_commands.Commands.test_line_alias_chain_z_undo"),
     "CIRCLE": ("centro/radio; faltan 2P, 3P, TTR y TTT", "test_commands.Commands.test_circle_invalid_and_valid"),
-    "MOVE": ("IDs/vector XYZ; falta selección CAD y punto base", "test_commands.Commands.test_move_erase_layer_lock"),
+    "MOVE": ("IDs/vector XYZ y selección UI/punto base-destino; faltan opciones completas", "test_commands.Commands.test_move_erase_layer_lock"),
     "ERASE": ("IDs; falta selección completa CAD", "test_commands.Commands.test_move_erase_layer_lock"),
     "LAYER": ("NEW/SET/LOCK/UNLOCK/ON/OFF; faltan estilos/filtros/estados", "test_commands.Commands.test_layer_visibility_undo"),
     "UNDO": ("una transacción; faltan Mark/Back/grupos y opciones", "test_commands.Commands.test_line_alias_chain_z_undo"),
@@ -18,8 +18,10 @@ PROTOTYPE = {
     "LOAD": ("API LispRuntime.load y diálogo; función LISP load aún ausente", "test_lisp.Lisp.test_original_rectangle_and_c_command"),
     "OPEN": ("diálogo DXF LINE/CIRCLE; DWG y demás entidades ausentes", "test_interop.Interop.test_geometry_layers_z"),
     "SAVEAS": ("diálogo DXF LINE/CIRCLE R2010; otros formatos ausentes", "test_interop.Interop.test_geometry_layers_z"),
+    "SELECT": ("selección UI individual/ventana/cruce XY, acumulación/Shift; sin filtros ni selección por consola", "tools/check_qcad_editing.py"),
+    "PROPERTIES": ("panel LINE extremos XYZ/CIRCLE centro-radio/capa común; otros atributos y tipos pendientes", "tools/check_qcad_editing.py"),
 }
-NATIVE = {'LINE','CIRCLE','MOVE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS'}
+NATIVE = {'LINE','CIRCLE','MOVE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
 
 
 def main():

@@ -5,7 +5,7 @@ import os
 import sys
 from pathlib import Path
 from math import hypot
-from PySide6.QtCore import Qt, QPointF, Signal
+from PySide6.QtCore import Qt, QPointF, QRectF, Signal
 from PySide6.QtGui import QColor, QPainter, QPen, QKeySequence, QAction, QFontDatabase, QFont
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
     QHBoxLayout, QTabWidget, QPushButton, QLabel, QDockWidget, QPlainTextEdit,
@@ -14,6 +14,7 @@ from .model import Document, Point, Line, Circle
 from .commands import CommandBus
 from .lisp import LispRuntime
 from .interop import load_dxf, save_dxf
+from .properties import PropertiesPanel
 
 
 class Canvas(QWidget):
@@ -29,6 +30,8 @@ class Canvas(QWidget):
         self.grid = True
         self.snap = False
         self.cursor = None
+        self.selection_start = None
+        self.selection_end = None
         self.setMouseTracking(True)
         self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
         self.setMinimumSize(600, 320)
@@ -46,14 +49,30 @@ class Canvas(QWidget):
     def mousePressEvent(self, event):
         self.setFocus()
         if event.button() == Qt.MouseButton.LeftButton:
-            self.clicked.emit(self.world(event.position()))
+            if self.window.mode is None and hasattr(self.window.doc,'select'):
+                self.selection_start=event.position(); self.selection_end=None
+                self.selection_modifiers=event.modifiers()
+            else:
+                self.clicked.emit(self.world(event.position()))
         elif event.button() == Qt.MouseButton.RightButton:
             self.cancelled.emit()
 
     def mouseMoveEvent(self, event):
+        if self.selection_start is not None: self.selection_end=event.position()
         self.cursor = self.world(event.position())
         self.moved.emit(self.cursor)
         self.update()
+
+    def mouseReleaseEvent(self,event):
+        if event.button()==Qt.MouseButton.LeftButton and self.selection_start is not None:
+            start,end=self.selection_start,event.position()
+            self.selection_start=self.selection_end=None
+            if (end-start).manhattanLength()<4:
+                self.window.on_point(self.world(end),self.selection_modifiers)
+            else:
+                mode='window' if end.x()>start.x() else 'crossing'
+                self.window.select_region(mode,self.world(start),self.world(end),self.selection_modifiers)
+            self.update()
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
@@ -114,6 +133,12 @@ class Canvas(QWidget):
                 p.drawEllipse(self.screen(self.window.anchor),r,r)
             else:
                 p.drawLine(self.screen(self.window.anchor),self.screen(self.cursor))
+        if self.selection_start is not None and self.selection_end is not None:
+            crossing=self.selection_end.x()<self.selection_start.x()
+            color=QColor('#79daab' if crossing else '#53c7ff')
+            p.setPen(QPen(color,1,Qt.PenStyle.DashLine if crossing else Qt.PenStyle.SolidLine))
+            color.setAlpha(35); p.setBrush(color)
+            p.drawRect(QRectF(self.selection_start,self.selection_end).normalized()); p.setBrush(Qt.BrushStyle.NoBrush)
         p.setPen(QPen(QColor("#8fe4ae"),2))
         origin = self.screen(Point(0,0))
         p.drawLine(origin,origin+QPointF(45,0))
@@ -171,6 +196,8 @@ QDockWidget::title {padding:7px;background:#344353;}
             b = QPushButton(label)
             b.clicked.connect(action)
             row.addWidget(b)
+        if document is not None:
+            move=QPushButton('Mover selección'); move.clicked.connect(self.start_move); row.addWidget(move)
         row.addStretch()
         self.ribbon.addTab(home,"Inicio")
         files = QWidget()
@@ -211,8 +238,7 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.layers = QListWidget()
         self.layers.currentTextChanged.connect(self.set_layer)
         self.dock("Capas",self.layers,Qt.DockWidgetArea.RightDockWidgetArea)
-        self.properties = QPlainTextEdit()
-        self.properties.setReadOnly(True)
+        self.properties = PropertiesPanel(self)
         self.dock("Propiedades",self.properties,Qt.DockWidgetArea.RightDockWidgetArea)
         self.coords = QLabel("X 0.000   Y 0.000   Z 0.000")
         self.statusBar().addWidget(self.coords,1)
@@ -253,6 +279,7 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.layers.blockSignals(False)
         info = [repr(self.doc.entities[i]) for i in sorted(self.selected)]
         self.properties.setPlainText("\n".join(info) if info else f"{len(self.doc.entities)} entidades\nCapa actual: {self.doc.current_layer}\nSeleccione una entidad para consultar sus atributos.")
+        self.properties.refresh()
         self.canvas.update()
 
     def set_layer(self,name):
@@ -291,22 +318,47 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.canvas.update()
 
     def cancel(self):
+        if self.mode is None: self.selected.clear(); self.refresh()
         self.mode,self.anchor = None,None
+        self.canvas.selection_start=self.canvas.selection_end=None
         self.canvas.update()
 
-    def on_point(self,p):
+    def start_move(self):
+        if self.selected:
+            self.start('MOVE')
+            self.history.appendPlainText('MOVE: punto base y destino de la selección')
+
+    def merge_selection(self,ids,modifiers):
+        if modifiers & Qt.KeyboardModifier.ShiftModifier: self.selected.difference_update(ids)
+        elif modifiers & Qt.KeyboardModifier.ControlModifier: self.selected.symmetric_difference_update(ids)
+        else: self.selected.update(ids)
+        self.refresh()
+
+    def select_region(self,mode,a,b,modifiers=Qt.KeyboardModifier.NoModifier):
+        try: self.merge_selection(self.doc.select(mode,a,b),modifiers)
+        except (ValueError,RuntimeError) as error: self.history.appendPlainText('Error de selección: '+str(error))
+
+    def on_point(self,p,modifiers=Qt.KeyboardModifier.NoModifier):
         if self.mode:
             if self.anchor is None:
                 self.anchor = p
             else:
                 a = self.anchor
-                if self.mode == "LINE":
+                if self.mode == 'MOVE':
+                    ids=','.join(str(i) for i in sorted(self.selected))
+                    if self.execute(f'MOVE {ids} {p.x-a.x},{p.y-a.y},{p.z-a.z}'):
+                        self.mode,self.anchor=None,None
+                elif self.mode == "LINE":
                     if self.execute(f"LINE {a.x},{a.y},{a.z} {p.x},{p.y},{p.z}"):
                         self.anchor = p
                 else:
                     if self.execute(f"CIRCLE {a.x},{a.y},{a.z} {hypot(p.x-a.x,p.y-a.y)}"):
                         self.cancel()
             self.canvas.update()
+            return
+        if hasattr(self.doc,'select'):
+            try: self.merge_selection(self.doc.select('point',p,tolerance=8/self.canvas.scale),modifiers)
+            except (ValueError,RuntimeError) as error: self.history.appendPlainText('Error de selección: '+str(error))
             return
         nearest, distance = None,8/self.canvas.scale
         for e in self.doc.entities.values():

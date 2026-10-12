@@ -10,12 +10,12 @@
     "functional_ui": {
       "status": "partial",
       "cases": {},
-      "gap": "Ribbon/consola/capas/propiedades de lectura sobre QCAD probados; edición de propiedades, DPI y accesibilidad pendientes"
+      "gap": "Ribbon/consola/capas/propiedades LINE-CIRCLE editables y selección QCAD comprobados; integración restante, DPI/accesibilidad y candidata instalada pendientes"
     },
     "essential_commands": {
       "status": "partial",
       "cases": {},
-      "gap": "Faltan selección avanzada, modificación y acotación en backend QCAD"
+      "gap": "Selección XY/ventana/cruce y edición básica comprobadas; faltan ARC/PLINE, modificación y acotación requeridas"
     },
     "autolisp": {
       "status": "partial",

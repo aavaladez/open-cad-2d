@@ -41,6 +41,12 @@ con writer híbrido documentado. Siguiente prioridad M3/M4: propiedades editable
 selección y acotación; mantener ampliación de corpus/entidades y recuperación antes
 de preparar instalador A1. La CI nativa limpia sigue necesaria en cada PR.
 
+2026-10-12: CI de #13/#14 comprobada; propiedades/selección integradas y verificadas
+en el subconjunto LINE/CIRCLE, con persistencia. Siguiente módulo A1: geometría y
+modificación esenciales/acotación, con ampliación conjunta de representaciones UI
+y conservación DXF. Instalación Windows en runner limpio sigue obligatoria; no
+sustituirla por pruebas del portable temporal. Evidencia de desarrollo aún parcial.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

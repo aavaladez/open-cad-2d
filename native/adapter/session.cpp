@@ -21,6 +21,8 @@
 #include "RLineEntity.h"
 #include "RCircleEntity.h"
 #include "ROperation.h"
+#include "RAddObjectOperation.h"
+#include "RBox.h"
 #include "RDxfImporterFactory.h"
 #include "RDxfExporterFactory.h"
 
@@ -38,7 +40,16 @@ RVector point(const QJsonValue& v) {
 }
 QJsonArray xyz(const RVector& p) { return {p.x,p.y,p.z}; }
 std::unique_ptr<RDocumentInterface> emptyDocument() {
-    return std::make_unique<RDocumentInterface>(*new RDocument(*new RMemoryStorage(),*new RSpatialIndexSimple()));
+    auto result=std::make_unique<RDocumentInterface>(*new RDocument(*new RMemoryStorage(),*new RSpatialIndexSimple()));
+    auto& doc=result->getDocument();
+    // CE always exports Defpoints. Make that standard layer explicit from the
+    // start, so a fresh document and its saved inventory describe the same data.
+    QSharedPointer<RLayer> layer(new RLayer(&doc,QStringLiteral("Defpoints"),false,false,RColor(Qt::white),
+        doc.getLinetypeId(QStringLiteral("CONTINUOUS")),RLineweight::WeightByLwDefault));
+    auto transaction=result->applyOperation(new RAddObjectOperation(layer,QStringLiteral("Default layer"),false,false));
+    require(!transaction.isFailed(),"Default layer initialization failed");
+    result->flushTransactions();
+    return result;
 }
 
 // Staged objects use QCAD shapes. One low-level transaction confirms the entire
@@ -151,6 +162,32 @@ QJsonObject CadSession::request(const QJsonObject& input) {
     if (action=="hello") value=QJsonObject{{"protocol",1},{"engine","qcad"},
         {"revision","4c830eb4d80285ca64b1f2c2dc0987f729344126"}};
     else if (action=="snapshot") {}
+    else if (action=="select") {
+        require(!editing,"Selection during staging is not supported");
+        QString mode=input["mode"].toString();
+        require(mode=="point" || mode=="window" || mode=="crossing","Unknown selection mode");
+        auto a=point(input["a"]).get2D();
+        RBox box;
+        double best=0; int nearest=-1;
+        if (mode=="point") { best=number(input["tolerance"]); require(best>0,"Positive tolerance required"); }
+        else { box=RBox(a,point(input["b"]).get2D()); require(box.getWidth()>0 && box.getHeight()>0,"Selection area required"); }
+        QJsonArray selected;
+        for (int id : entities.keys()) {
+            auto e=entities[id]; auto layer=layers[entityLayers[id]];
+            if (layer->isOff() || layer->isFrozen()) continue;
+            // Picking is evaluated in displayed XY; source XYZ remains untouched.
+            QSharedPointer<RShape> shape;
+            if (auto line=e.dynamicCast<RLineEntity>())
+                shape.reset(new RLine(line->getStartPoint().get2D(),line->getEndPoint().get2D()));
+            else { auto circle=e.dynamicCast<RCircleEntity>(); shape.reset(new RCircle(circle->getCenter().get2D(),circle->getRadius())); }
+            if (mode=="point") {
+                double distance=shape->getDistanceTo(a);
+                if (distance<best) { best=distance; nearest=id; }
+            } else if (box.contains(shape->getBoundingBox()) || mode=="crossing" && box.intersectsWith(*shape)) selected.append(id);
+        }
+        if (mode=="point" && nearest>=0) selected.append(nearest);
+        value=selected;
+    }
     else if (action=="begin") begin();
     else if (action=="rollback") { require(editing,"No transaction"); editing=false; refresh(); }
     else if (action=="commit") value=commit();
@@ -197,6 +234,32 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             e->setColor(RColor(RColor::ByLayer)); e->setLinetypeId(document().getLinetypeId("BYLAYER"));
             e->setBlockId(document().getCurrentBlockId());
             int id=virtualId--; entities[id]=e; entityLayers[id]=currentLayer; dirtyEntities.insert(id); value=id;
+        } else if (action=="properties") {
+            require(input["ids"].isArray() && !input["ids"].toArray().isEmpty(),"Selection required");
+            require(input["changes"].isObject() && !input["changes"].toObject().isEmpty(),"Property changes required");
+            auto changes=input["changes"].toObject();
+            QMap<int,QSharedPointer<REntity>> replacements;
+            for (auto v : input["ids"].toArray()) {
+                double n=number(v); int id=v.toInt(); require(n==id && entities.contains(id),"Unknown entity ID");
+                writable(entityLayers[id]);
+                auto e=entities[id]->cloneToEntity();
+                auto line=e.dynamicCast<RLineEntity>(); auto circle=e.dynamicCast<RCircleEntity>();
+                for (auto key : changes.keys()) {
+                    if (key=="layer") writable(changes[key].toString());
+                    else if (line && key=="start") line->setStartPoint(point(changes[key]));
+                    else if (line && key=="end") line->setEndPoint(point(changes[key]));
+                    else if (circle && key=="center") circle->getData().setCenter(point(changes[key]));
+                    else if (circle && key=="radius") { double r=number(changes[key]); require(r>0,"Positive radius required"); circle->setRadius(r); }
+                    else throw std::runtime_error("Property not supported for this entity");
+                }
+                if (line) require(!line->getStartPoint().equalsFuzzy(line->getEndPoint()),"Zero length line");
+                replacements[id]=e;
+            }
+            // Validate the complete selection before replacing any staged object.
+            for (int id : replacements.keys()) {
+                entities[id]=replacements[id]; dirtyEntities.insert(id);
+                if (changes.contains("layer")) entityLayers[id]=changes["layer"].toString();
+            }
         } else if (action=="move" || action=="erase") {
             require(input["ids"].isArray() && !input["ids"].toArray().isEmpty(),"Selection required");
             QSet<int> ids;

@@ -11,7 +11,8 @@ El modo predeterminado conserva el prototipo temporal. [Adaptador](native/ADAPTE
 El modo QCAD experimental ya abre/edita/guarda/reabre DXF R2000/R2010 limitado a
 LINE/CIRCLE, capas y unidades; el guardado R2010 usa un flujo QCAD/ezdxf comprobado.
 Ver [alcance y reproducción](native/DXF_APPLICATION.md). No es DXF general ni una
-aplicación instalada A1; propiedades editables, cotas y distribución nativa pendientes.
+aplicación instalada A1; cotas y distribución nativa pendientes. Propiedades de
+LINE/CIRCLE y selección por ventana/cruce verificadas en [EDITING](native/EDITING.md).
 LibreCAD 3 permanece como alternativa evaluada. [Auditoría](docs/AUDIT.md).
 
 ![Prototipo Qt6](docs/evidence/prototype.png)
@@ -45,7 +46,7 @@ de compilación/instalación. [Pruebas Windows](docs/WINDOWS_TESTS.md).
 
 ## Catálogo y desarrollo autónomo
 
-El Excel original contiene 472 requisitos: 12 parciales, 399 pendientes y 61
+El Excel original contiene 472 requisitos: 14 parciales, 397 pendientes y 61
 excluidos por alcance 3D. Ningún comando del Excel se declara terminado.
 [Matriz por fila](docs/COMMAND_MATRIX.md), [estado y evidencias](docs/STATUS.md),
 [arquitectura](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md),

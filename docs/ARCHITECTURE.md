@@ -54,6 +54,12 @@ sólo tras contraste independiente; guardar valida temporal CE y canonicaliza R2
 con ezdxf antes de os.replace. Ver native/DXF_APPLICATION.md y sus límites explícitos.
 No comprometer ABI de extensiones. Ver native/ADAPTER.md para límites/performance.
 
+Propiedades y selección posteriores: CadSession recibe consultas geométricas XY
+sin modificar XYZ ni historial; QcadCommandBus.edit_properties confirma clones
+validados como lote. PropertiesPanel presenta valores, recoge campos cambiados y
+actualiza desde QCAD tras undo/redo. No admite edición autoritativa de las dataclasses.
+Detalles y límites en native/EDITING.md.
+
 ## Seguridad del intérprete
 
 LSP sin eval/exec, shell, red, COM o I/O desde el código interpretado. Límites

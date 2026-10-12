@@ -1,0 +1,10 @@
+{
+  "requirement_id": "ACAD-0086", "command": "SELECT", "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variants": ["UI pick XY", "window containment", "crossing curve intersection", "accumulate", "Shift remove", "Ctrl toggle", "Escape clear"],
+  "pending": ["command-line SELECT", "filters", "fence/lasso", "additional entity types"],
+  "implementation": ["native/adapter/session.cpp", "src/opencad/app.py"],
+  "cases": ["window_contains", "crossing_intersects", "circle_interior_not_curve", "ui_window_drag", "ui_crossing_drag", "ui_shift_remove", "ui_escape_clears"],
+  "test": "tools/check_qcad_editing.py", "issue": 3,
+  "evidence": ["native/EDITING.md", "docs/evidence/qcad-editing-python314.json", "docs/evidence/qcad-editing-python312.json"]
+}
