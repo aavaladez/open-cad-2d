@@ -8,8 +8,7 @@
     "leaders",
     "advanced options",
     "styles",
-    "associative source references",
-    "LSP COMMAND bridge"
+    "associative source references"
   ],
   "cases": [
     "radial_measure_label_z",
@@ -28,5 +27,7 @@
     "src/opencad/app.py",
     "src/opencad/properties.py"
   ],
-  "issue": 3
+  "issue": 3,
+  "lsp_variant": "COMMAND complete arguments, bounded runtime; bridge IDs are not ENAMEs",
+  "lsp_test": "tools/check_qcad_lisp_essential.py"
 }

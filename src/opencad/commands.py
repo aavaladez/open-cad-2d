@@ -15,6 +15,8 @@ def point(value):
 
 
 class CommandBus:
+    lisp_commands=frozenset({'LINE','CIRCLE','MOVE','ERASE','LAYER','DIST'})
+
     def __init__(self, document, aliases=None):
         self.document = document
         self.definitions = json.loads(Path(__file__).with_name("commands.json").read_text(encoding="utf-8"))

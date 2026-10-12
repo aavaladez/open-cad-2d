@@ -70,3 +70,7 @@ Fuentes públicas consultadas 2026-10-12 (el código del pin prevalece):
 [LWPOLYLINE DXF](https://help.autodesk.com/cloudhelp/2015/ENU/AutoCAD-DXF/files/GUID-748FC305-F3F2-4F74-825A-61F04D757A50.htm),
 [QCAD RPolylineData](https://qcad.org/doc/qcad/latest/developer/class_r_polyline_data.html),
 [ezdxf LWPolyline](https://ezdxf.readthedocs.io/en/stable/dxfentities/lwpolyline.html).
+
+Actualización LSP posterior: COMMAND ARC/PLINE habilitado para estas entradas
+completas con allowlist nativa explícita; plan_a1.lsp y LISP_ESSENTIAL.md. Variantes
+geométricas restantes y prompts/selección ENAME siguen pendientes. No A1 instalada.

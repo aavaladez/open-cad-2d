@@ -157,3 +157,14 @@ R2000 Qt6 pierde texto codepage: transcodificar temporal ezdxf→R2010 UTF8 tras
 preflight y equivalencia, retener ruta/original. Canonicalizar hex Unicode CE para
 lector ezdxf; no admitir formato rico. DIMENSIONS.md registra hallazgos y límites.
 No hay asociación paramétrica ni estilos avanzados; parcial, sin entrada A1 instalada.
+
+## ADR-019 — Allowlist LSP por backend real
+
+2026-10-12: registrar en cada bus una allowlist explícita e inmutable de comandos
+transaccionales no interactivos. El runtime intersecta esa lista con definiciones
+del bus y valida después de resolver aliases; no autorizar nombres sólo por catálogo.
+QCAD permite sus capacidades ya comprobadas, prototipo sólo las suyas. Mantener
+COMMAND NIL, límites de ejecución y rollback de geometría/runtime/redo. Archivo
+propio plan_a1.lsp aporta creación/dibujo/cotas y modificación como lotes analíticos.
+No implementar API de ENAME ni capacidades externas por este cambio; no paridad
+AutoLISP completa ni gate A1 aprobado por tests parciales de desarrollo.

@@ -6,14 +6,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPE = {
-    "ARC": ("3 puntos planares/centro-radio-ángulos; faltan cuerda/dirección/otras opciones y LSP", "tools/check_qcad_curves.py"),
-    "PLINE": ("entidad nativa recta abierta/cerrada con Z; faltan arcos/anchuras/Undo de vértice y LSP", "tools/check_qcad_curves.py"),
-    "TRIM": ("LINE contra límites finitos LINE/CIRCLE/ARC/PLINE, divide tramo interior y conserva Z; otras opciones/tipos/LSP pendientes", "tools/check_qcad_cutting.py"),
-    "EXTEND": ("LINE hasta límite finito más cercano del extremo elegido, Z prolongada; otras opciones/tipos/LSP pendientes", "tools/check_qcad_cutting.py"),
-    "OFFSET": ("distancia/lado XY LINE/CIRCLE/ARC conservando Z y fuente; PLINE/Through/Multiple/Erase/Layer/LSP pendientes", "tools/check_qcad_cutting.py"),
-    "DIMLINEAR": ("extremos/posición/dirección XY, XYZ planar, entidad cota editable y DXF; estilos/otras opciones/asociación/LSP pendientes", "tools/check_qcad_dimensions.py"),
-    "DIMALIGNED": ("extremos/posición planar, medida nativa, texto/propiedades/undo/DXF; estilos/opciones/asociación/LSP pendientes", "tools/check_qcad_dimensions.py"),
-    "DIMRADIUS": ("centro/chord o curva/pick nativo, etiqueta R y texto, undo/DXF; estilos/líder/opciones/asociación/LSP pendientes", "tools/check_qcad_dimensions.py"),
+    "ARC": ("3 puntos planares/centro-radio-ángulos y COMMAND LSP; faltan cuerda/dirección/otras opciones", "tools/check_qcad_curves.py; tools/check_qcad_lisp_essential.py"),
+    "PLINE": ("entidad nativa recta abierta/cerrada con Z y COMMAND LSP; faltan arcos/anchuras/Undo de vértice", "tools/check_qcad_curves.py; tools/check_qcad_lisp_essential.py"),
+    "TRIM": ("LINE contra límites finitos, división/XYZ y COMMAND LSP; otras opciones/tipos pendientes", "tools/check_qcad_cutting.py; tools/check_qcad_lisp_essential.py"),
+    "EXTEND": ("LINE hasta límite finito próximo, XYZ y COMMAND LSP; otras opciones/tipos pendientes", "tools/check_qcad_cutting.py; tools/check_qcad_lisp_essential.py"),
+    "OFFSET": ("distancia/lado LINE/CIRCLE/ARC con Z y COMMAND LSP; PLINE/Through/Multiple/Erase/Layer pendientes", "tools/check_qcad_cutting.py; tools/check_qcad_lisp_essential.py"),
+    "DIMLINEAR": ("extremos/posición/dirección, XYZ/cota editable/DXF/COMMAND LSP; estilos/opciones/asociación pendientes", "tools/check_qcad_dimensions.py; tools/check_qcad_lisp_essential.py"),
+    "DIMALIGNED": ("extremos/posición, medida/texto/undo/DXF/COMMAND LSP; estilos/opciones/asociación pendientes", "tools/check_qcad_dimensions.py; tools/check_qcad_lisp_essential.py"),
+    "DIMRADIUS": ("centro/chord o curva/pick, etiqueta/texto/undo/DXF/COMMAND LSP; estilos/líder/opciones/asociación pendientes", "tools/check_qcad_dimensions.py; tools/check_qcad_lisp_essential.py"),
     "LINE": ("dos puntos/cadena XYZ; faltan opciones Close/Undo interactivas y coordenadas relativas", "test_commands.Commands.test_line_alias_chain_z_undo"),
     "CIRCLE": ("centro/radio; faltan 2P, 3P, TTR y TTT", "test_commands.Commands.test_circle_invalid_and_valid"),
     "MOVE": ("IDs/vector XYZ y selección UI/punto base-destino; faltan opciones completas", "test_commands.Commands.test_move_erase_layer_lock"),

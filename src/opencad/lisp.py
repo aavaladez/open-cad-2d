@@ -53,6 +53,7 @@ class LispRuntime:
 
     def __init__(self, bus):
         self.bus = bus
+        self.allowed_commands=frozenset(bus.lisp_commands) & frozenset(bus.definitions)
         bus.lisp = self
         self.globals = {"NIL": None, "T": True}
         self.functions = {}

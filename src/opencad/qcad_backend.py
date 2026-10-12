@@ -165,6 +165,11 @@ class QcadDocument:
 
 
 class QcadCommandBus(CommandBus):
+    # Only implemented non-interactive, transactional commands. No file dialogs,
+    # history mutation, process execution, or arbitrary registry expansion in LSP.
+    lisp_commands=CommandBus.lisp_commands | frozenset({'ARC','PLINE','COPY','ROTATE','SCALE',
+        'TRIM','EXTEND','OFFSET','DIMLINEAR','DIMALIGNED','DIMRADIUS'})
+
     def __init__(self,document,aliases=None):
         super().__init__(document)
         for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC'),('ARC','A'),('PLINE','PL'),('TRIM','TR'),('EXTEND','EX'),('OFFSET','O')]:

@@ -66,3 +66,7 @@ Fuentes públicas consultadas 2026-10-12:
 [EXTEND](https://help.autodesk.com/cloudhelp/2020/ENU/AutoCAD-Core/files/GUID-89DD7B0F-F4F1-410D-9A3A-5847CA5F8744.htm),
 [OFFSET](https://help.autodesk.com/cloudhelp/2021/ENU/AutoCAD-Core/files/GUID-C0E4246D-C420-42BD-A6FC-8B1852EFD005.htm).
 API exacta contrastada en src/core/math/RShape.cpp, RLine/RArc/RCircle del pin QCAD.
+
+Actualización posterior: COMMAND TRIM/EXTEND/OFFSET habilitado en LSP para estos
+argumentos completos y IDs del bridge; corpus analítico cad_ajustar y LISP_ESSENTIAL.md.
+No ENAME ni flujo de prompts/opciones completo; no convertir parciales en completos.

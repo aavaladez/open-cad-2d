@@ -54,3 +54,9 @@ requirements/specs, dimensions.cpp/CadSession y qcad_dimensions_io.py; UI/bus
 existentes. check_qcad_dimensions.py58 casos: medida, tipos, propiedades/transformación,
 Qt, UTF8, R2000/R2010, datos/cachés, undo/redo y rechazo sin mutación. native/DIMENSIONS.md
 y evidence/qcad-dimensions*. Matriz24 parciales, sin asociaciones automáticas/completos.
+
+Los mismos IDs de ARC/PLINE/COPY/ROTATE/SCALE/TRIM/EXTEND/OFFSET/DIMLINEAR/
+DIMALIGNED/DIMRADIUS añaden prueba de COMMAND LSP sobre su subconjunto real en
+check_qcad_lisp_essential.py34 casos, plan_a1.lsp y native/LISP_ESSENTIAL.md.
+Carga APPLOAD/LOAD y comando propio conservan traza previa y amplían corpus. No
+añadir filas/estados completos; variantes de prompts/selección ENAME pendientes.

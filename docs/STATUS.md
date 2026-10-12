@@ -20,6 +20,15 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- Consolidación LSP de capacidades existentes: allowlist nativa explícita para
+  ARC/PLINE, transformaciones, TRIM/EXTEND/OFFSET y las tres cotas. COMMAND NIL,
+  aliases sin ampliación de permisos; límite/rollback/historial conservados.
+  plan_a1.lsp propio define PLANO_A1 y cad_ajustar, probados desde carga/UI/consola
+  y sobre geometría QCAD/DXF.34 comprobaciones por runtime,53 tests y CTest11/11.
+  native/LISP_ESSENTIAL.md y evidence/qcad-lisp-essential*. Matriz sigue24 parciales,
+  cero completos. Archivos/historial/COM/shell/ssget/entget no habilitados.
+  A1 sigue0/6: recuperación y Windows instalado/entorno limpio pendientes.
+
 - Acotación QCAD nativa: DIMLINEAR/DIMALIGNED/DIMRADIUS como DIMENSION en documento,
   medidas analíticas, puntos XYZ planares, propiedades/texto/<>/UTF8, Ribbon/consola,
   selección y transformaciones con undo/redo. Renderizador básico CE GPL y writer

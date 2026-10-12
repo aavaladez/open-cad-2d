@@ -20,7 +20,7 @@
     "autolisp": {
       "status": "partial",
       "cases": {},
-      "gap": "LSP y comandos personalizados comprobados sobre QCAD; corpus/variantes y candidata instalada pendientes"
+      "gap": "LSP propio de dibujo/cotas/modificación y comandos personalizados comprobados sobre QCAD; prompts/variantes/corpus y candidata instalada pendientes"
     },
     "dxf_cycle": {
       "status": "partial",

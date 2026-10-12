@@ -1,0 +1,982 @@
+{
+  "kind": "application_integration_partial",
+  "installed": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.4",
+  "qt": "6.10.3",
+  "checks": {
+    "lsp_definitions_load_without_drawing": true,
+    "custom_command_result": true,
+    "lsp_native_entity_types": true,
+    "lsp_polyline_native_vertices": true,
+    "lsp_arc_analytic": true,
+    "lsp_dimensions_analytic": true,
+    "lsp_layer_dimension_lock_batch": true,
+    "lsp_layer_dimension_batch_undo": true,
+    "lsp_drawing_batch_single_undo": true,
+    "lsp_drawing_batch_redo": true,
+    "lsp_geometry_dimensions_dxf": true,
+    "lsp_modify_result": true,
+    "lsp_trim_extend_rotate_scale_xyz": true,
+    "lsp_offset_xyz": true,
+    "lsp_copy_xyz": true,
+    "lsp_modify_boundaries_unchanged": true,
+    "lsp_modify_single_undo": true,
+    "lsp_partial_error_rejected": true,
+    "lsp_partial_full_rollback": true,
+    "lsp_redo_after_failed_batch": true,
+    "undefined_file_alias_config_blocked": true,
+    "alias_file_blocked": true,
+    "alias_history_blocked": true,
+    "process_blocked": true,
+    "network_com_blocked": true,
+    "lsp_allowed_alias_nil": true,
+    "lsp_allowed_alias_undo": true,
+    "lsp_locked_batch_atomic": true,
+    "ui_custom_file_loaded": true,
+    "ui_custom_command_creates_all_types": true,
+    "ui_lsp_single_undo": true,
+    "ui_lsp_redo": true,
+    "ui_lsp_dxf_reopened": true,
+    "lsp_source_unchanged": true
+  },
+  "passed": true,
+  "identity": {
+    "engine": "qcad",
+    "protocol": 1,
+    "revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "engine_sha256": "aee54e06d2b85271eaa021b21bad5cf1dee1382cb949d3317a99ba8fa8623a02",
+  "lsp_sha256": "16447df343f9e323776e43fa74bfe3710e6abd7d66d7cfd50610c2571de92440",
+  "observed": {
+    "current_layer": "0",
+    "entities": [
+      {
+        "angle": 0,
+        "color_index": 256,
+        "dimension_type": "DIMLINEAR",
+        "end": [
+          40,
+          0,
+          7
+        ],
+        "id": 11,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "position": [
+          0,
+          -10,
+          7
+        ],
+        "render": {
+          "label": "40",
+          "measurement": 40,
+          "shapes": [
+            {
+              "end": [
+                40,
+                -10,
+                0
+              ],
+              "start": [
+                0,
+                -10,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  0,
+                  -10,
+                  0
+                ],
+                [
+                  2.5,
+                  -9.58371534222716,
+                  0
+                ],
+                [
+                  2.5,
+                  -10.416284657772842,
+                  0
+                ]
+              ]
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  40,
+                  -10,
+                  0
+                ],
+                [
+                  37.5,
+                  -10.41628465777284,
+                  0
+                ],
+                [
+                  37.5,
+                  -9.58371534222716,
+                  0
+                ]
+              ]
+            },
+            {
+              "end": [
+                -2.296212748401287e-16,
+                -11.25,
+                0
+              ],
+              "start": [
+                -1.1481063742006435e-16,
+                -0.625,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "end": [
+                40,
+                -11.25,
+                0
+              ],
+              "start": [
+                40,
+                -0.625,
+                0
+              ],
+              "type": "LINE"
+            }
+          ],
+          "text_angle": 0,
+          "text_height": 2.5,
+          "text_position": [
+            20,
+            -8.125,
+            7
+          ]
+        },
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "text": "",
+        "type": "DIMENSION"
+      },
+      {
+        "angle": 0,
+        "color_index": 256,
+        "dimension_type": "DIMLINEAR",
+        "end": [
+          40,
+          0,
+          7
+        ],
+        "id": 12,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "position": [
+          0,
+          -10,
+          7
+        ],
+        "render": {
+          "label": "40",
+          "measurement": 40,
+          "shapes": [
+            {
+              "end": [
+                40,
+                -10,
+                0
+              ],
+              "start": [
+                0,
+                -10,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  0,
+                  -10,
+                  0
+                ],
+                [
+                  2.5,
+                  -9.58371534222716,
+                  0
+                ],
+                [
+                  2.5,
+                  -10.416284657772842,
+                  0
+                ]
+              ]
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  40,
+                  -10,
+                  0
+                ],
+                [
+                  37.5,
+                  -10.41628465777284,
+                  0
+                ],
+                [
+                  37.5,
+                  -9.58371534222716,
+                  0
+                ]
+              ]
+            },
+            {
+              "end": [
+                -2.296212748401287e-16,
+                -11.25,
+                0
+              ],
+              "start": [
+                -1.1481063742006435e-16,
+                -0.625,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "end": [
+                40,
+                -11.25,
+                0
+              ],
+              "start": [
+                40,
+                -0.625,
+                0
+              ],
+              "type": "LINE"
+            }
+          ],
+          "text_angle": 0,
+          "text_height": 2.5,
+          "text_position": [
+            20,
+            -8.125,
+            7
+          ]
+        },
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "text": "",
+        "type": "DIMENSION"
+      },
+      {
+        "center": [
+          59.999999999999964,
+          1.776356839400245e-14,
+          7
+        ],
+        "color_index": 256,
+        "end_angle": 180,
+        "id": 13,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 10.000000000000036,
+        "start_angle": 0,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          59.999999999999964,
+          1.776356839400245e-14,
+          7
+        ],
+        "color_index": 256,
+        "end_angle": 180,
+        "id": 14,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 10.000000000000036,
+        "start_angle": 0,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          80,
+          20,
+          7
+        ],
+        "color_index": 256,
+        "id": 15,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 10,
+        "type": "CIRCLE"
+      },
+      {
+        "center": [
+          80,
+          20,
+          7
+        ],
+        "color_index": 256,
+        "id": 16,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 10,
+        "type": "CIRCLE"
+      },
+      {
+        "chord": [
+          90,
+          20,
+          7
+        ],
+        "color_index": 256,
+        "dimension_type": "DIMRADIUS",
+        "id": 17,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "position": [
+          80,
+          20,
+          7
+        ],
+        "render": {
+          "label": "R10",
+          "measurement": 10,
+          "shapes": [
+            {
+              "end": [
+                100.0576923076923,
+                20,
+                0
+              ],
+              "start": [
+                80,
+                20,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  90,
+                  20,
+                  0
+                ],
+                [
+                  92.5,
+                  20.41628465777284,
+                  0
+                ],
+                [
+                  92.5,
+                  19.58371534222716,
+                  0
+                ]
+              ]
+            }
+          ],
+          "text_angle": 0,
+          "text_height": 2.5,
+          "text_position": [
+            96.27884615384616,
+            21.875,
+            7
+          ]
+        },
+        "text": "",
+        "type": "DIMENSION"
+      },
+      {
+        "chord": [
+          90,
+          20,
+          7
+        ],
+        "color_index": 256,
+        "dimension_type": "DIMRADIUS",
+        "id": 18,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "position": [
+          80,
+          20,
+          7
+        ],
+        "render": {
+          "label": "R10",
+          "measurement": 10,
+          "shapes": [
+            {
+              "end": [
+                100.0576923076923,
+                20,
+                0
+              ],
+              "start": [
+                80,
+                20,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  90,
+                  20,
+                  0
+                ],
+                [
+                  92.5,
+                  20.41628465777284,
+                  0
+                ],
+                [
+                  92.5,
+                  19.58371534222716,
+                  0
+                ]
+              ]
+            }
+          ],
+          "text_angle": 0,
+          "text_height": 2.5,
+          "text_position": [
+            96.27884615384616,
+            21.875,
+            7
+          ]
+        },
+        "text": "",
+        "type": "DIMENSION"
+      },
+      {
+        "closed": true,
+        "color_index": 256,
+        "id": 19,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            0,
+            0,
+            7
+          ],
+          [
+            40,
+            0,
+            7
+          ],
+          [
+            40,
+            30,
+            7
+          ],
+          [
+            0,
+            30,
+            7
+          ]
+        ]
+      },
+      {
+        "closed": true,
+        "color_index": 256,
+        "id": 20,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            0,
+            0,
+            7
+          ],
+          [
+            40,
+            0,
+            7
+          ],
+          [
+            40,
+            30,
+            7
+          ],
+          [
+            0,
+            30,
+            7
+          ]
+        ]
+      },
+      {
+        "color_index": 256,
+        "dimension_type": "DIMALIGNED",
+        "end": [
+          40,
+          30,
+          7
+        ],
+        "id": 21,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "position": [
+          -10,
+          10,
+          7
+        ],
+        "render": {
+          "label": "50",
+          "measurement": 50,
+          "shapes": [
+            {
+              "end": [
+                -9.149999999999999,
+                12.200000000000003,
+                0
+              ],
+              "start": [
+                -0.3749999999999999,
+                0.5000000000000001,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "end": [
+                30.85,
+                42.2,
+                0
+              ],
+              "start": [
+                39.625,
+                30.5,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "end": [
+                31.6,
+                41.2,
+                0
+              ],
+              "start": [
+                -8.399999999999999,
+                11.200000000000003,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  -8.399999999999999,
+                  11.200000000000003,
+                  0
+                ],
+                [
+                  -6.649770794663702,
+                  13.033027726218275,
+                  0
+                ],
+                [
+                  -6.150229205336294,
+                  12.36697227378173,
+                  0
+                ]
+              ]
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  31.6,
+                  41.2,
+                  0
+                ],
+                [
+                  29.849770794663705,
+                  39.366972273781734,
+                  0
+                ],
+                [
+                  29.350229205336298,
+                  40.03302772621828,
+                  0
+                ]
+              ]
+            }
+          ],
+          "text_angle": 36.86989764584401,
+          "text_height": 2.5,
+          "text_position": [
+            10.475000000000001,
+            27.700000000000003,
+            7
+          ]
+        },
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "text": "",
+        "type": "DIMENSION"
+      },
+      {
+        "color_index": 256,
+        "dimension_type": "DIMALIGNED",
+        "end": [
+          40,
+          30,
+          7
+        ],
+        "id": 22,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "position": [
+          -10,
+          10,
+          7
+        ],
+        "render": {
+          "label": "50",
+          "measurement": 50,
+          "shapes": [
+            {
+              "end": [
+                -9.149999999999999,
+                12.200000000000003,
+                0
+              ],
+              "start": [
+                -0.3749999999999999,
+                0.5000000000000001,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "end": [
+                30.85,
+                42.2,
+                0
+              ],
+              "start": [
+                39.625,
+                30.5,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "end": [
+                31.6,
+                41.2,
+                0
+              ],
+              "start": [
+                -8.399999999999999,
+                11.200000000000003,
+                0
+              ],
+              "type": "LINE"
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  -8.399999999999999,
+                  11.200000000000003,
+                  0
+                ],
+                [
+                  -6.649770794663702,
+                  13.033027726218275,
+                  0
+                ],
+                [
+                  -6.150229205336294,
+                  12.36697227378173,
+                  0
+                ]
+              ]
+            },
+            {
+              "type": "SOLID",
+              "vertices": [
+                [
+                  31.6,
+                  41.2,
+                  0
+                ],
+                [
+                  29.849770794663705,
+                  39.366972273781734,
+                  0
+                ],
+                [
+                  29.350229205336298,
+                  40.03302772621828,
+                  0
+                ]
+              ]
+            }
+          ],
+          "text_angle": 36.86989764584401,
+          "text_height": 2.5,
+          "text_position": [
+            10.475000000000001,
+            27.700000000000003,
+            7
+          ]
+        },
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "text": "",
+        "type": "DIMENSION"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          1.2246467991473533e-15,
+          20,
+          17
+        ],
+        "id": 23,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          2,
+          17
+        ],
+        "id": 24,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          1.2246467991473532e-16,
+          2,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          5,
+          20
+        ],
+        "id": 25,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          5,
+          10
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          5,
+          99
+        ],
+        "id": 26,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          10,
+          -5,
+          99
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          150,
+          0,
+          7
+        ],
+        "id": 27,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          120,
+          0,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          150,
+          0,
+          7
+        ],
+        "id": 28,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          120,
+          0,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          6,
+          5,
+          99
+        ],
+        "id": 29,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          6,
+          -5,
+          99
+        ],
+        "type": "LINE"
+      }
+    ],
+    "layers": [
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": 25,
+        "locked": false,
+        "name": "0",
+        "visible": true
+      },
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "Defpoints",
+        "visible": true
+      }
+    ],
+    "units": 0
+  },
+  "commands": [
+    "ARC",
+    "CIRCLE",
+    "COPY",
+    "DIMALIGNED",
+    "DIMLINEAR",
+    "DIMRADIUS",
+    "DIST",
+    "ERASE",
+    "EXTEND",
+    "LAYER",
+    "LINE",
+    "MOVE",
+    "OFFSET",
+    "PLINE",
+    "ROTATE",
+    "SCALE",
+    "TRIM"
+  ],
+  "source_sha256": {
+    "src/opencad/lisp.py": "538e9c40470aae77a45f0fbb1c3e0a0c24804f9e84ef0921ac5388c885cb3ca9",
+    "src/opencad/commands.py": "5b091cb5b21c2df8204b3889280cc1b5979944947ff7080148a0ebaef48dcecd",
+    "src/opencad/qcad_backend.py": "9f6bb9075dbb5a202ebb4a95a4a9dea57c8af2740951af562771fe28d2cdfe22",
+    "tools/check_qcad_lisp_essential.py": "5ff0799008cd9f25c24bafa554dc405f86245b178c1056288e62956f9d98d13f"
+  },
+  "limits": [
+    "complete arguments only",
+    "bridge IDs not ENAMEs",
+    "no ssget/entget",
+    "no AutoCAD comparison",
+    "not installed"
+  ]
+}

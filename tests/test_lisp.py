@@ -42,6 +42,19 @@ class Lisp(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.lisp.run(code)
 
+    def test_new_native_commands_not_announced_by_temporary_backend(self):
+        for command in ('ARC','PLINE','COPY','ROTATE','SCALE','TRIM','EXTEND','OFFSET','DIMLINEAR','DIMALIGNED','DIMRADIUS'):
+            with self.subTest(command=command),self.assertRaises(ValueError):
+                self.lisp.run('(command "'+command+'")')
+        self.assertFalse(self.doc.entities)
+
+    def test_command_returns_nil_and_alias_cannot_expand_capabilities(self):
+        self.assertIsNone(self.lisp.run('(command "LINE" \'(0 0) \'(3 4))'))
+        self.bus.set_aliases({'REWIND':'UNDO'})
+        before=self.doc.snapshot()
+        with self.assertRaises(ValueError): self.lisp.run('(command "REWIND")')
+        self.assertEqual(before,self.doc.snapshot())
+
     def test_malformed_depth_and_recursion(self):
         for code in ("(list 1", ")", "("*100 + "0" + ")"*100):
             with self.assertRaises(ValueError):
