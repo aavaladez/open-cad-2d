@@ -66,3 +66,8 @@ Actualización posterior: DXF UI habilitado para el subconjunto validado; ver
 DXF_APPLICATION.md. El helper de aplicación añade ERASE/undo y verifica la indicación
 del alcance DXF (28 comprobaciones actuales). Los reportes anteriores de 26 se
 conservan como antecedentes, sin atribuirles el nuevo ciclo ni writer híbrido.
+
+Actualización ARC/PLINE: el adaptador añade RArcEntity/RPolylineEntity, selección
+geométrica, propiedades y transformaciones de estos tipos. Python sólo proyecta
+vistas inmutables qcad_views.py. Geometría y DXF conjunto descritos en CURVES.md;
+sin ampliar el prototipo ni anunciar variantes ausentes. Despliegue nativo pendiente.

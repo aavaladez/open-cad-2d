@@ -20,6 +20,22 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- ARC/PLINE sobre QCAD: ARC por tres puntos o centro/radio/ángulos, PLINE recta
+  abierta/cerrada como una entidad nativa, selección exacta XY, propiedades y
+  transformaciones, transacciones/undo/redo. Conservación de ARC Z y elevación
+  LWPOLYLINE R2000/R2010; bulges/anchuras/PLINEGEN rechazados sin perder el activo.
+  69 comprobaciones funcionales por runtime Python 3.12/3.14, 48 tests de regresión
+  por runtime y CTest 8/8. native/CURVES.md y evidence/qcad-curves*. Captura revisada.
+  18 qcad_partial, un prototype_partial, 392 pendientes, 61 exclusiones; cero completos.
+  A1 sigue 0/6, candidata null, sin congelación. Restan TRIM/EXTEND/OFFSET, cotas,
+  recuperación y aplicación Windows instalada en entorno limpio. Variantes ARC/PLINE
+  y COMMAND LSP de estos comandos pendientes explícitamente.
+
+- CI remota comprobada en los heads exactos de #13–#16: general y Windows-native
+  success. Cadena de bases preservada, todos abiertos/sin fusionar; #15/#16 pasan
+  de borrador a listos para revisión. La nueva entrega ARC/PLINE depende de #16;
+  no promoverla hasta verificar sus propios checks. No publicar release por CI verde.
+
 - COPY/ROTATE/SCALE en QCAD: clones validados, transacción por selección, originales
   intactos/nuevos IDs, aliases, conservación Z, undo/redo, bloqueos y rechazos.
   23 comprobaciones funcionales por runtime y CTest 7/7. native/TRANSFORMS.md y

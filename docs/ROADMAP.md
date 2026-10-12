@@ -52,6 +52,15 @@ prioridad de dibujo ARC/PLINE y acotación, con representaciones/conservación c
 TRIM/EXTEND/OFFSET y pruebas de instalación siguen pendientes para A1. No iniciar
 módulos GIS/presentaciones avanzadas ni otros comandos antes del punto de control.
 
+ARC/PLINE posteriores integrados con selección, propiedades, transformaciones y
+DXF para el subconjunto recto/planar documentado. PR #13–#16 tienen CI general y
+nativa aprobada; sus dependencias se conservan. Siguiente secuencia A1: TRIM/EXTEND
+con límites geométricos/selección, OFFSET con lado/distancia verificados, acotación
+lineal/alineada/radio en documento y DXF, consolidación LSP/recuperación, después
+empaquetado nativo/instalación/desinstalación en Windows limpio. No ampliar catálogo.
+Las variantes faltantes se registran sin bloquear desarrollo de capacidades A1;
+ninguna se declara completa ni ningún criterio A1 se acredita con evidencia parcial.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

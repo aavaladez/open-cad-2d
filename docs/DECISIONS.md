@@ -103,3 +103,21 @@ resultados antes del commit. Nuevas entidades mediante API pública, sin modific
 IDs protegidos. Registro de comandos sólo en QcadCommandBus; el prototipo temporal
 y la lista COMMAND LSP no anuncian funciones ausentes. TRANSFORMS.md registra variantes
 pendientes y baseline analítico; no atribuir equivalencia 3D ni opciones completas.
+
+## ADR-016 — ARC y PLINE nativas y conservación conjunta
+
+2026-10-12: RArc::createFrom3Points y RArcData para geometría de arco; una
+RPolylineEntity por PLINE recta abierta/cerrada, Z planar. No extender el motor
+temporal. Proyecciones inmutables en qcad_views.py, selección con formas nativas,
+transformaciones del adaptador, edición validada de geometría/capa. ARC horario
+se canonicaliza a DXF antihorario conservando lugar geométrico, no recorrido.
+PLINE interactiva confirma todo el lote o lo descarta al cancelar. Vértices antes
+de elevación explícita en propiedades; rechazar bulges/anchuras todavía ausentes.
+
+Corregir ARC Z/LWPOLYLINE elevación en .cpp del pin, sin cambiar tamaño ABI del
+importador. Experimento inicial de cabecera provocó fallo en consumidor inline
+obsoleto y se descartó; fixture documental y CTest repetidos después. QCAD activa
+PLINEGEN al construir datos: desactivar explícitamente en el subconjunto validado.
+Sólo ampliar DXF cuando entidades/atributos y writer CE/final contrastan. Mantener
+writer híbrido y sus límites. CURVES.md registra fuentes, contratos y evidencias.
+No cerrar ARC/PLINE completos: variantes del Excel todavía pendientes, A1 0/6.

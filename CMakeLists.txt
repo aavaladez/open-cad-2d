@@ -37,7 +37,8 @@ if(OPENCAD_BUILD_QCAD)
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-z.patch"
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-clayer.patch"
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-layer-off.patch"
-        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-off-import.patch")
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-off-import.patch"
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-arc-polyline-z.patch")
     if(WIN32)
     add_library(qcad-audited-core SHARED IMPORTED)
     set_target_properties(qcad-audited-core PROPERTIES
@@ -94,6 +95,10 @@ if(OPENCAD_BUILD_QCAD)
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_transforms.py"
         --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
         --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/transforms-acceptance")
+    add_test(NAME qcad-curves COMMAND "${Python3_EXECUTABLE}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_curves.py"
+        --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
+        --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/curves-acceptance")
     add_test(NAME qcad-document COMMAND "${Python3_EXECUTABLE}"
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_document.py"
         --binary "$<TARGET_FILE:qcad-document-smoke>" --source "${OPENCAD_QCAD_SOURCE}"

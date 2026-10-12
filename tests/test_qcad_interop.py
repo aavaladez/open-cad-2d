@@ -45,6 +45,29 @@ class NativeInteropBoundaries(unittest.TestCase):
         with self.assertRaises(ValueError): equivalent(baseline,{'entities':[{'start':[0,0,0],'end':[3,4,0]}]})
         with self.assertRaises(ValueError): equivalent(baseline,{'entities':[]})
 
+    def test_arc_and_straight_polyline_inventory_and_rejection(self):
+        d=self.drawing(); d.modelspace().add_arc((0,0,7),5,350,30)
+        pl=d.modelspace().add_lwpolyline([(0,0),(3,0),(3,4)],format='xy',close=True,dxfattribs={'elevation':9})
+        d.saveas(self.path); inventory=inspect_dxf(self.path)
+        arc=next(e for e in inventory['entities'] if e['type']=='ARC')
+        self.assertEqual((arc['center'],arc['start_angle'],arc['end_angle']),([0,0,7],350,30))
+        poly=next(e for e in inventory['entities'] if e['type']=='LWPOLYLINE')
+        self.assertEqual(poly['vertices'],[[0,0,9],[3,0,9],[3,4,9]])
+        self.assertTrue(poly['closed'])
+        for key,value in [('const_width',2),('flags',129)]:
+            pl.dxf.set(key,value); d.saveas(self.path); before=self.path.read_bytes()
+            with self.assertRaises(ValueError): inspect_dxf(self.path)
+            self.assertEqual(before,self.path.read_bytes()); pl.dxf.discard(key)
+        pl.set_points([(0,0,1),(3,0,0),(3,4,0)],format='xyb'); d.saveas(self.path)
+        with self.assertRaises(ValueError): inspect_dxf(self.path)
+
+    def test_degenerate_arc_and_polyline_rejected(self):
+        for create in [lambda m:m.add_arc((0,0,0),5,0,360),
+                lambda m:m.add_lwpolyline([(0,0),(0,0),(1,1)],format='xy'),
+                lambda m:m.add_lwpolyline([(0,0),(1,1)],format='xy',close=True)]:
+            d=ezdxf.new('R2010'); create(d.modelspace()); d.saveas(self.path)
+            with self.assertRaises(ValueError): inspect_dxf(self.path)
+
     def test_failed_native_export_preserves_existing_destination(self):
         self.path.write_bytes(b'original destination')
         class Document:

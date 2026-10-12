@@ -56,13 +56,13 @@
         "C": "PL",
         "D": "Polilínea 2D con segmentos rectos y arcos, con grosor opcional"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "entidad nativa recta abierta/cerrada con Z; faltan arcos/anchuras/Undo de vértice y LSP",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_curves.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -198,7 +198,7 @@
         "C": "A",
         "D": "Arco por 3 puntos, centro, ángulo, longitud de cuerda, etc."
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [
         {
@@ -212,10 +212,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "3 puntos planares/centro-radio-ángulos; faltan cuerda/dirección/otras opciones y LSP",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_curves.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -2586,9 +2586,9 @@
       "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "panel LINE extremos XYZ/CIRCLE centro-radio/capa común; otros atributos y tipos pendientes",
+      "implemented_variant": "panel LINE/CIRCLE/ARC/PLINE geometría/capa común; otros atributos y tipos pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_editing.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_editing.py; tools/check_qcad_curves.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },

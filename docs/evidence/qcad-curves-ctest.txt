@@ -1,0 +1,21 @@
+Test project C:/Users/Equipo 1/Documents/ChatGPT/OPENCAD/build/native
+    Start 1: prototype-regression
+1/8 Test #1: prototype-regression .............   Passed    3.11 sec
+    Start 2: qcad-application
+2/8 Test #2: qcad-application .................   Passed    1.12 sec
+    Start 3: qcad-dxf-application
+3/8 Test #3: qcad-dxf-application .............   Passed    6.96 sec
+    Start 4: qcad-editing
+4/8 Test #4: qcad-editing .....................   Passed    2.26 sec
+    Start 5: qcad-transforms
+5/8 Test #5: qcad-transforms ..................   Passed    2.16 sec
+    Start 6: qcad-curves
+6/8 Test #6: qcad-curves ......................   Passed    5.38 sec
+    Start 7: qcad-document
+7/8 Test #7: qcad-document ....................   Passed    1.32 sec
+    Start 8: qcad-geometry
+8/8 Test #8: qcad-geometry ....................   Passed    0.60 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =  22.92 sec

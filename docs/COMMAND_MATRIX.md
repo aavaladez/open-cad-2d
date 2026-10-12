@@ -4,7 +4,7 @@ Generada desde el Excel original; cada fila conserva ID, hoja y fila.
 
 SHA-256: `7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0`. Total: 472 entradas.
 
-Estados: {'qcad_partial': 16, 'pending': 394, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
+Estados: {'qcad_partial': 18, 'pending': 392, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
 
 qcad_partial acredita sólo las variantes/documento y casos descritos en [TRACEABILITY.md](TRACEABILITY.md); no equivale a paridad de opciones ni a aceptación A1.
 
@@ -15,12 +15,12 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ID | Hoja: fila | Categoría | Comando | Alcance | QCAD fuente | LC3 fuente | Estado | Test |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ACAD-0002 | AutoCAD: 2 | Dibujo | LINE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Line/Line2P/Line2PInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/lineoperations.lua) | qcad_partial | test_commands.Commands.test_line_alias_chain_z_undo; tools/check_qcad_application.py |
-| ACAD-0003 | AutoCAD: 3 | Dibujo | PLINE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
+| ACAD-0003 | AutoCAD: 3 | Dibujo | PLINE | 2d | sin coincidencia | sin coincidencia | qcad_partial | tools/check_qcad_curves.py; tools/check_qcad_application.py |
 | ACAD-0004 | AutoCAD: 4 | Dibujo | 3DPOLY | 2d_with_z | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0005 | AutoCAD: 5 | Dibujo | XLINE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0006 | AutoCAD: 6 | Dibujo | RAY | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0007 | AutoCAD: 7 | Dibujo | CIRCLE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Circle/CircleCP/CircleCPInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/circleoperations.lua) | qcad_partial | test_commands.Commands.test_circle_invalid_and_valid; tools/check_qcad_application.py |
-| ACAD-0008 | AutoCAD: 8 | Dibujo | ARC | 2d | sin coincidencia | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/arcoperations.lua) | pending | pendiente |
+| ACAD-0008 | AutoCAD: 8 | Dibujo | ARC | 2d | sin coincidencia | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/arcoperations.lua) | qcad_partial | tools/check_qcad_curves.py; tools/check_qcad_application.py |
 | ACAD-0009 | AutoCAD: 9 | Dibujo | ELLIPSE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Ellipse/EllipseCPP/EllipseCPPInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/ellipseoperations.lua) | pending | pendiente |
 | ACAD-0010 | AutoCAD: 10 | Dibujo | RECTANG | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0011 | AutoCAD: 11 | Dibujo | POLYGON | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Shape/ShapePolygonCP/ShapePolygonCPInit.js) | sin coincidencia | pending | pendiente |
@@ -103,7 +103,7 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0088 | AutoCAD: 88 | Selección, consulta y propiedades | SELECTSIMILAR | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0089 | AutoCAD: 89 | Selección, consulta y propiedades | QSELECT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0090 | AutoCAD: 90 | Selección, consulta y propiedades | FILTER | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0091 | AutoCAD: 91 | Selección, consulta y propiedades | PROPERTIES | 2d | sin coincidencia | sin coincidencia | qcad_partial | tools/check_qcad_editing.py; tools/check_qcad_application.py |
+| ACAD-0091 | AutoCAD: 91 | Selección, consulta y propiedades | PROPERTIES | 2d | sin coincidencia | sin coincidencia | qcad_partial | tools/check_qcad_editing.py; tools/check_qcad_curves.py; tools/check_qcad_application.py |
 | ACAD-0092 | AutoCAD: 92 | Selección, consulta y propiedades | QUICKPROP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0093 | AutoCAD: 93 | Selección, consulta y propiedades | LIST | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0094 | AutoCAD: 94 | Selección, consulta y propiedades | ID | 2d | sin coincidencia | sin coincidencia | pending | pendiente |

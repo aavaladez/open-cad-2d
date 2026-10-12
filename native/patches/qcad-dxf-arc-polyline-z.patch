@@ -1,0 +1,31 @@
+diff --git a/src/io/dxf/RDxfImporter.cpp b/src/io/dxf/RDxfImporter.cpp
+--- a/src/io/dxf/RDxfImporter.cpp
++++ b/src/io/dxf/RDxfImporter.cpp
+@@ -577,3 +577,3 @@
+ void RDxfImporter::addArc(const DL_ArcData& data) {
+-    RVector v(data.cx, data.cy);
++    RVector v(data.cx, data.cy, data.cz);
+     QSharedPointer<RArcEntity> entity(
+@@ -626,4 +626,4 @@
+ void RDxfImporter::addVertex(const DL_VertexData& data) {
+-    RVector v(data.x, data.y);
++    RVector v(data.x, data.y, polyline.countVertices()>0 ? polyline.getVertexAt(0).z : getExtrusion()->getElevation());
+     polyline.appendVertex(v, data.bulge);
+ }
+diff --git a/src/io/dxf/RDxfExporter.cpp b/src/io/dxf/RDxfExporter.cpp
+--- a/src/io/dxf/RDxfExporter.cpp
++++ b/src/io/dxf/RDxfExporter.cpp
+@@ -839,4 +839,4 @@
+         DL_ArcData(a.getCenter().x,
+                    a.getCenter().y,
+-                   0.0,
++                   a.getCenter().z,
+                    a.getRadius(),
+@@ -898,4 +898,7 @@
+                 );
+ 
++    // R2000 uses LWPOLYLINE: Z belongs to header group 38, not vertices.
++    if (dxf.getVersion()==DL_Codes::AC1015 && count>0)
++        dw->dxfReal(38, pl.getVertexAt(0).z);
+     for (int i=0; i<pl.countVertices(); i++) {
+         RVector v = pl.getVertexAt(i);
