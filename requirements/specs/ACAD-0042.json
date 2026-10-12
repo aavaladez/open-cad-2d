@@ -1,9 +1,41 @@
 {
-  "requirement_id": "ACAD-0042", "command": "OFFSET", "status": "qcad_partial",
+  "requirement_id": "ACAD-0042",
+  "command": "OFFSET",
+  "status": "qcad_partial",
   "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
   "variant": "LINE/CIRCLE/ARC distance and XY side; source layer; native QCAD offset shapes",
-  "pending": ["PLINE and joins", "Through", "Multiple", "Erase", "Layer", "OSNAP", "LSP COMMAND bridge"],
-  "cases": ["offset_line_above_xyz", "offset_line_below_xyz", "offset_circle_inside_xy_not_z", "offset_circle_outside", "offset_arc_inside_angles_xyz", "offset_arc_outside", "offset_radius_zero", "offset_side_on_line", "offset_source_intact", "offset_single_undo", "ui_offset_side", "ui_offset_escape_atomic", "cutting_dxf_reopened"],
-  "baseline": "native/CUTTING.md", "test": "tools/check_qcad_cutting.py",
-  "implementation": ["native/adapter/geometry_ops.cpp", "native/adapter/session.cpp", "src/opencad/qcad_backend.py", "src/opencad/app.py"], "issue": 3
+  "pending": [
+    "PLINE and joins",
+    "Through",
+    "Multiple",
+    "Erase",
+    "Layer",
+    "OSNAP"
+  ],
+  "cases": [
+    "offset_line_above_xyz",
+    "offset_line_below_xyz",
+    "offset_circle_inside_xy_not_z",
+    "offset_circle_outside",
+    "offset_arc_inside_angles_xyz",
+    "offset_arc_outside",
+    "offset_radius_zero",
+    "offset_side_on_line",
+    "offset_source_intact",
+    "offset_single_undo",
+    "ui_offset_side",
+    "ui_offset_escape_atomic",
+    "cutting_dxf_reopened"
+  ],
+  "baseline": "native/CUTTING.md",
+  "test": "tools/check_qcad_cutting.py",
+  "implementation": [
+    "native/adapter/geometry_ops.cpp",
+    "native/adapter/session.cpp",
+    "src/opencad/qcad_backend.py",
+    "src/opencad/app.py"
+  ],
+  "issue": 3,
+  "lsp_variant": "COMMAND complete arguments, bounded runtime; bridge IDs are not ENAMEs",
+  "lsp_test": "tools/check_qcad_lisp_essential.py"
 }

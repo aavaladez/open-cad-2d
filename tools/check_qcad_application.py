@@ -121,7 +121,7 @@ def main():
                                for name in ('core','entity','operations')},
             'dxf_dll_sha256':hashlib.sha256((args.source/'plugins/qcaddxf.dll').read_bytes()).hexdigest(),
             'identity':doc.request('hello'),'observed':doc._view,
-            'limits':'LINE/CIRCLE/MOVE/ERASE/layers and bounded LSP; DXF UI and installer pending'}
+            'limits':'This checker covers LINE/CIRCLE/MOVE/ERASE/layers and bounded LSP; other native types have dedicated suites; installed A1 pending'}
         write(args.output/'report.json',report)
         print(json.dumps({'passed':report['passed'],'checks':checks}))
         return 0 if report['passed'] else 1

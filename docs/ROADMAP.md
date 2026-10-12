@@ -72,6 +72,11 @@ de estilos. Siguiente módulo A1: consolidar programas LSP sobre comandos existe
 recuperación, paquete QCAD/Qt nativo e instalación/ejecución/desinstalación limpia.
 Probar la misma candidata en los seis criterios antes de congelar y auditar.
 
+Bridge LSP posterior sobre capacidades esenciales consolidadas y corpus propio
+comprobados. Próximo trabajo A1: recuperación tras fallo/cierre, paquete nativo
+QCAD/Qt y validación install/run/reopen/uninstall en Windows limpio. Los requisitos
+restantes del catálogo no son prioridad antes del punto de control y auditoría.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

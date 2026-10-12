@@ -59,9 +59,9 @@
       "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "entidad nativa recta abierta/cerrada con Z; faltan arcos/anchuras/Undo de vértice y LSP",
+      "implemented_variant": "entidad nativa recta abierta/cerrada con Z y COMMAND LSP; faltan arcos/anchuras/Undo de vértice",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_curves.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_curves.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -212,9 +212,9 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "3 puntos planares/centro-radio-ángulos; faltan cuerda/dirección/otras opciones y LSP",
+      "implemented_variant": "3 puntos planares/centro-radio-ángulos y COMMAND LSP; faltan cuerda/dirección/otras opciones",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_curves.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_curves.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -1234,9 +1234,9 @@
         }
       ],
       "librecad3_evidence": [],
-      "implemented_variant": "distancia/lado XY LINE/CIRCLE/ARC conservando Z y fuente; PLINE/Through/Multiple/Erase/Layer/LSP pendientes",
+      "implemented_variant": "distancia/lado LINE/CIRCLE/ARC con Z y COMMAND LSP; PLINE/Through/Multiple/Erase/Layer pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -1272,9 +1272,9 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "LINE contra límites finitos LINE/CIRCLE/ARC/PLINE, divide tramo interior y conserva Z; otras opciones/tipos/LSP pendientes",
+      "implemented_variant": "LINE contra límites finitos, división/XYZ y COMMAND LSP; otras opciones/tipos pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -1304,9 +1304,9 @@
         }
       ],
       "librecad3_evidence": [],
-      "implemented_variant": "LINE hasta límite finito más cercano del extremo elegido, Z prolongada; otras opciones/tipos/LSP pendientes",
+      "implemented_variant": "LINE hasta límite finito próximo, XYZ y COMMAND LSP; otras opciones/tipos pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -4814,9 +4814,9 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "extremos/posición/dirección XY, XYZ planar, entidad cota editable y DXF; estilos/otras opciones/asociación/LSP pendientes",
+      "implemented_variant": "extremos/posición/dirección, XYZ/cota editable/DXF/COMMAND LSP; estilos/opciones/asociación pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -4852,9 +4852,9 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "extremos/posición planar, medida nativa, texto/propiedades/undo/DXF; estilos/opciones/asociación/LSP pendientes",
+      "implemented_variant": "extremos/posición, medida/texto/undo/DXF/COMMAND LSP; estilos/opciones/asociación pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
@@ -4916,9 +4916,9 @@
       "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "centro/chord o curva/pick nativo, etiqueta R y texto, undo/DXF; estilos/líder/opciones/asociación/LSP pendientes",
+      "implemented_variant": "centro/chord o curva/pick, etiqueta/texto/undo/DXF/COMMAND LSP; estilos/líder/opciones/asociación pendientes",
       "implementation": "src/opencad; native/adapter",
-      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_application.py",
+      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_lisp_essential.py; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },

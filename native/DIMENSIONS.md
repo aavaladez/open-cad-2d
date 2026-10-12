@@ -98,3 +98,7 @@ Fuentes públicas consultadas2026-10-12:
 [DIMENSION/blocks](https://ezdxf.readthedocs.io/en/stable/dxfentities/dimension.html).
 API real RDimStyleProxyBasic, RDim*Data/Entity y RDxfImporter/Exporter del pin;
 encoding.py de ezdxf1.4.3 contrastada localmente. No copiar recursos Autodesk.
+
+Actualización LSP posterior: COMMAND de las tres cotas habilitado con argumentos
+completos y allowlist nativa. Corpus plan_a1.lsp, carga/consola/undo/DXF en
+LISP_ESSENTIAL.md. Estilos/asociaciones/prompts y aceptación instalada pendientes.

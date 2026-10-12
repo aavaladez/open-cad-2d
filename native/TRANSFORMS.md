@@ -44,3 +44,7 @@ Referencia pública para los contratos de base/ángulo/factor:
 [ROTATE/SCALE](https://help.autodesk.com/cloudhelp/2025/ENU/AutoCAD-DidYouKnow/files/GUID-D988658E-0A92-4353-B614-6C30CF6281A2.htm).
 Los resultados son analíticos y del motor QCAD; no corpus ejecutado en AutoCAD.
 Continúa evidencia de desarrollo parcial, sin instalación ni aceptación A1.
+
+Actualización posterior: COMMAND COPY/ROTATE/SCALE habilitado en LSP con entradas
+completas y IDs del bridge. cad_ajustar en LISP_ESSENTIAL.md verifica el lote y
+rollback/historial; Reference/Copy/Array/prompts y selección ENAME siguen pendientes.

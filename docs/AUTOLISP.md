@@ -24,6 +24,12 @@ Todo el script corresponde a una transacción undoable; en fallo revierte geomet
 variables, funciones y salida. COMMAND sólo permite LINE/CIRCLE/MOVE/ERASE/LAYER/DIST.
 Sin eval/exec de Python, shell ni llamadas de red.
 
+Actualización QCAD: el bus nativo permite también ARC/PLINE/COPY/ROTATE/SCALE/
+TRIM/EXTEND/OFFSET/DIMLINEAR/DIMALIGNED/DIMRADIUS, sólo entradas completas de sus
+subconjuntos comprobados. El bus temporal conserva la lista anterior. Allowlist
+explícita y separada de aliases/definiciones configurables; no abre capacidades de
+archivos/historial/sistema. COMMAND retorna NIL. Ver native/LISP_ESSENTIAL.md.
+
 ## Diferencias declaradas
 
 DEFUN crea entorno local por llamada. SETQ dentro de función no modifica globals
@@ -48,3 +54,8 @@ C++. Staging nativo permite descartar errores sin perder redo previo. Comprobado
 también crear capa/dibujar/bloquear en un único LSP, undo integral y resultado
 numérico de C:NEGATIVE sin traducción accidental a ID. Evidencias y límites en
 native/ADAPTER.md. No se acredita AutoLISP completo ni criterio A1 instalado.
+
+Corpus nuevo propio plan_a1.lsp: PLANO_A1 desde consola, geometría/cotas nativas,
+una transacción/undo, cad_ajustar de objetos conocidos y DXF.34 comprobaciones por
+runtime,53 tests de regresión y CTest11/11. IDs del bridge no son ENAME; ssget/entget,
+prompts y variantes completas siguen pendientes. No comparación AutoCAD ni instalación.

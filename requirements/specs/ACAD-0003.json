@@ -1,9 +1,45 @@
 {
-  "requirement_id": "ACAD-0003", "command": "PLINE", "status": "qcad_partial",
+  "requirement_id": "ACAD-0003",
+  "command": "PLINE",
+  "status": "qcad_partial",
   "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
   "variant": "straight planar XYZ vertices; open/closed; one native RPolylineEntity",
-  "pending": ["arc segments and bulges", "constant and variable widths", "vertex Undo", "continuation options", "relative coordinates", "OSNAP", "LSP COMMAND bridge"],
-  "cases": ["pline_one_native_entity", "pline_closed_flag", "pline_closing_edge_pick", "pline_crossing_segment", "pline_window_containment", "pline_nonplanar_atomic", "pline_properties", "pline_vertices_elevation_order", "pline_invalid_vertices_atomic", "ribbon_pline_open", "ribbon_pline_close", "pline_escape_atomic", "unsupported_bulge_active_unchanged", "unsupported_width_active_unchanged", "R2000_edit_save_reopen", "R2010_edit_save_reopen"],
-  "baseline": "native/CURVES.md", "test": "tools/check_qcad_curves.py",
-  "implementation": ["native/adapter/session.cpp", "src/opencad/qcad_backend.py", "src/opencad/qcad_views.py", "src/opencad/app.py", "src/opencad/qcad_interop.py"], "issue": 3
+  "pending": [
+    "arc segments and bulges",
+    "constant and variable widths",
+    "vertex Undo",
+    "continuation options",
+    "relative coordinates",
+    "OSNAP"
+  ],
+  "cases": [
+    "pline_one_native_entity",
+    "pline_closed_flag",
+    "pline_closing_edge_pick",
+    "pline_crossing_segment",
+    "pline_window_containment",
+    "pline_nonplanar_atomic",
+    "pline_properties",
+    "pline_vertices_elevation_order",
+    "pline_invalid_vertices_atomic",
+    "ribbon_pline_open",
+    "ribbon_pline_close",
+    "pline_escape_atomic",
+    "unsupported_bulge_active_unchanged",
+    "unsupported_width_active_unchanged",
+    "R2000_edit_save_reopen",
+    "R2010_edit_save_reopen"
+  ],
+  "baseline": "native/CURVES.md",
+  "test": "tools/check_qcad_curves.py",
+  "implementation": [
+    "native/adapter/session.cpp",
+    "src/opencad/qcad_backend.py",
+    "src/opencad/qcad_views.py",
+    "src/opencad/app.py",
+    "src/opencad/qcad_interop.py"
+  ],
+  "issue": 3,
+  "lsp_variant": "COMMAND complete arguments, bounded runtime; bridge IDs are not ENAMEs",
+  "lsp_test": "tools/check_qcad_lisp_essential.py"
 }

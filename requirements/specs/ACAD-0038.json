@@ -1,9 +1,34 @@
 {
-  "requirement_id": "ACAD-0038", "command": "COPY", "status": "qcad_partial",
+  "requirement_id": "ACAD-0038",
+  "command": "COPY",
+  "status": "qcad_partial",
   "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
   "variant": "IDs and XYZ displacement, LINE/CIRCLE; one transaction",
-  "pending": ["Multiple", "Array", "interactive COPY", "LSP COMMAND bridge", "other entities"],
-  "cases": ["copy_new_ids", "copy_line_xyz", "copy_circle_xyz", "copy_original_untouched", "copy_single_undo", "copy_redo", "unknown_id_atomic", "COPY_locked", "console_copy", "transforms_dxf_reopened"],
-  "baseline": "native/TRANSFORMS.md", "test": "tools/check_qcad_transforms.py",
-  "implementation": ["native/adapter/session.cpp", "src/opencad/qcad_backend.py"], "issue": 3
+  "pending": [
+    "Multiple",
+    "Array",
+    "interactive COPY",
+    "other entities"
+  ],
+  "cases": [
+    "copy_new_ids",
+    "copy_line_xyz",
+    "copy_circle_xyz",
+    "copy_original_untouched",
+    "copy_single_undo",
+    "copy_redo",
+    "unknown_id_atomic",
+    "COPY_locked",
+    "console_copy",
+    "transforms_dxf_reopened"
+  ],
+  "baseline": "native/TRANSFORMS.md",
+  "test": "tools/check_qcad_transforms.py",
+  "implementation": [
+    "native/adapter/session.cpp",
+    "src/opencad/qcad_backend.py"
+  ],
+  "issue": 3,
+  "lsp_variant": "COMMAND complete arguments, bounded runtime; bridge IDs are not ENAMEs",
+  "lsp_test": "tools/check_qcad_lisp_essential.py"
 }
