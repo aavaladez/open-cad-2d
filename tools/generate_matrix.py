@@ -6,6 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPE = {
+    "ARC": ("3 puntos planares/centro-radio-ángulos; faltan cuerda/dirección/otras opciones y LSP", "tools/check_qcad_curves.py"),
+    "PLINE": ("entidad nativa recta abierta/cerrada con Z; faltan arcos/anchuras/Undo de vértice y LSP", "tools/check_qcad_curves.py"),
     "LINE": ("dos puntos/cadena XYZ; faltan opciones Close/Undo interactivas y coordenadas relativas", "test_commands.Commands.test_line_alias_chain_z_undo"),
     "CIRCLE": ("centro/radio; faltan 2P, 3P, TTR y TTT", "test_commands.Commands.test_circle_invalid_and_valid"),
     "MOVE": ("IDs/vector XYZ y selección UI/punto base-destino; faltan opciones completas", "test_commands.Commands.test_move_erase_layer_lock"),
@@ -22,9 +24,9 @@ PROTOTYPE = {
     "OPEN": ("diálogo DXF LINE/CIRCLE; DWG y demás entidades ausentes", "test_interop.Interop.test_geometry_layers_z"),
     "SAVEAS": ("diálogo DXF LINE/CIRCLE R2010; otros formatos ausentes", "test_interop.Interop.test_geometry_layers_z"),
     "SELECT": ("selección UI individual/ventana/cruce XY, acumulación/Shift; sin filtros ni selección por consola", "tools/check_qcad_editing.py"),
-    "PROPERTIES": ("panel LINE extremos XYZ/CIRCLE centro-radio/capa común; otros atributos y tipos pendientes", "tools/check_qcad_editing.py"),
+    "PROPERTIES": ("panel LINE/CIRCLE/ARC/PLINE geometría/capa común; otros atributos y tipos pendientes", "tools/check_qcad_editing.py; tools/check_qcad_curves.py"),
 }
-NATIVE = {'LINE','CIRCLE','MOVE','COPY','ROTATE','SCALE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
+NATIVE = {'LINE','CIRCLE','ARC','PLINE','MOVE','COPY','ROTATE','SCALE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
 
 
 def main():

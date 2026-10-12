@@ -66,6 +66,13 @@ capas nuevas/flags, UI abrir/cancelar/editar/guardar/reabrir y PNG inspeccionado
 general 28 comprobaciones, CTest 5/5. Evidencias en docs/evidence/qcad-dxf*.
 
 No instalada, sin AutoCAD ni lector externo adicional. A1 permanece 0/6.
+
+Actualización ARC/PLINE: admitir ARC centro XYZ/ángulos y LWPOLYLINE recta abierta/
+cerrada/elevación, extrusión estándar y mismos atributos BYLAYER. Conservación
+extendida mediante parche .cpp y fixtures R2000/R2010; rechazo de anchuras/bulges,
+PLINEGEN, POLYLINE heredada/3D. Ver CURVES.md y check_qcad_curves.py (69 casos).
+El writer final híbrido y las limitaciones de metadatos siguen vigentes. Textos/cotas
+no están soportados todavía. Los resultados previos LINE/CIRCLE son antecedentes.
 Fuentes públicas: [API QCAD](https://qcad.org/doc/qcad/latest/developer/class_r_document_interface.html),
 [capas ezdxf](https://ezdxf.readthedocs.io/en/stable/tables/layer_table_entry.html),
 [atributos gráficos](https://ezdxf.readthedocs.io/en/stable/tutorials/common_graphical_attributes.html).

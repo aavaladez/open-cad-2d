@@ -1,6 +1,7 @@
 """Original property panel, editing only through the authoritative command bus."""
 from PySide6.QtWidgets import QWidget,QVBoxLayout,QFormLayout,QLineEdit,QComboBox,QPushButton,QPlainTextEdit
 from .model import Line,Circle
+from .qcad_views import Arc,Polyline
 from .commands import point
 
 
@@ -10,7 +11,9 @@ class PropertiesPanel(QWidget):
         layout=QVBoxLayout(self); self.summary=QPlainTextEdit(); self.summary.setReadOnly(True)
         self.summary.setMaximumHeight(90); layout.addWidget(self.summary)
         form=QFormLayout(); layout.addLayout(form); self.fields={}
-        for key,label in [('start','Inicio XYZ'),('end','Fin XYZ'),('center','Centro XYZ'),('radius','Radio')]:
+        for key,label in [('start','Inicio XYZ'),('end','Fin XYZ'),('center','Centro XYZ'),('radius','Radio'),
+                ('start_angle','Ángulo inicial °'),('end_angle','Ángulo final °'),
+                ('vertices','Vértices XYZ; XYZ'),('elevation','Elevación'),('closed','Cerrada true/false')]:
             edit=QLineEdit(); edit.setObjectName('property_'+key); form.addRow(label,edit); self.fields[key]=edit
         self.layer=QComboBox(); self.layer.setObjectName('property_layer'); form.addRow('Capa',self.layer)
         self.apply=QPushButton('Aplicar propiedades'); self.apply.clicked.connect(self.submit); layout.addWidget(self.apply)
@@ -30,9 +33,16 @@ class PropertiesPanel(QWidget):
             field.clear(); field.setEnabled(False)
         if len(selected)==1:
             e=selected[0]
-            values={'start':e.start,'end':e.end} if isinstance(e,Line) else {'center':e.center,'radius':e.radius}
+            if isinstance(e,Line): values={'start':e.start,'end':e.end}
+            elif isinstance(e,Polyline): values={'vertices':e.vertices,'elevation':e.vertices[0].z,'closed':e.closed}
+            else:
+                values={'center':e.center,'radius':e.radius}
+                if isinstance(e,Arc): values.update(start_angle=e.start_angle,end_angle=e.end_angle)
             for key,value in values.items():
-                text=','.join(format(v,'.17g') for v in (value.x,value.y,value.z)) if key!='radius' else format(value,'.17g')
+                if key in ('start','end','center'): text=','.join(format(v,'.17g') for v in (value.x,value.y,value.z))
+                elif key=='vertices': text='; '.join(','.join(format(v,'.17g') for v in (p.x,p.y,p.z)) for p in value)
+                elif key=='closed': text=str(value).lower()
+                else: text=format(value,'.17g')
                 self.fields[key].setText(text); self.fields[key].setEnabled(enabled); self.original[key]=text
         self.layer.setEnabled(enabled); self.apply.setEnabled(enabled)
 
@@ -41,8 +51,14 @@ class PropertiesPanel(QWidget):
             changes={}
             for key,field in self.fields.items():
                 if field.isEnabled() and field.text()!=self.original[key]:
-                    value=float(field.text()) if key=='radius' else point(field.text())
-                    changes[key]=value if key=='radius' else [value.x,value.y,value.z]
+                    if key in ('radius','start_angle','end_angle','elevation'): changes[key]=float(field.text())
+                    elif key=='closed':
+                        if field.text().strip().lower() not in ('true','false'): raise ValueError('Cerrada: true o false requerido')
+                        changes[key]=field.text().strip().lower()=='true'
+                    elif key=='vertices':
+                        changes[key]=[[p.x,p.y,p.z] for p in map(point,field.text().split(';'))]
+                    else:
+                        p=point(field.text()); changes[key]=[p.x,p.y,p.z]
             if self.layer.currentText()!=self.original['layer']:
                 changes['layer']=self.layer.currentText()
             if changes:

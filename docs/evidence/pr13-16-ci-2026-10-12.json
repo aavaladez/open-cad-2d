@@ -1,0 +1,114 @@
+{
+  "checked": "2026-10-12",
+  "kind": "remote_ci_dependency_review",
+  "repository": "aavaladez/open-cad-2d",
+  "dependency_chain_verified": true,
+  "promoted_to_review_only": true,
+  "merged": false,
+  "pull_requests": [
+    {
+      "number": 13,
+      "url": "https://github.com/aavaladez/open-cad-2d/pull/13",
+      "head": "codex/qcad-application-adapter",
+      "head_sha": "4697e5eff6b28d97aae07cbd5819ee0fc24de562",
+      "base": "codex/qcad-document-dxf",
+      "base_sha": "c528c72e88c8ac79d8dc7777c8dbca2a8ae23b43",
+      "draft": false,
+      "merged": false,
+      "workflows": [
+        {
+          "id": 38014407702,
+          "name": "QCAD CE native spike",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38014407702"
+        },
+        {
+          "id": 38014407807,
+          "name": "OPEN CAD verification",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38014407807"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "url": "https://github.com/aavaladez/open-cad-2d/pull/14",
+      "head": "codex/qcad-conservative-dxf",
+      "head_sha": "ff5f5528bf607bcc0da6877256378a2c4f499e5e",
+      "base": "codex/qcad-application-adapter",
+      "base_sha": "4697e5eff6b28d97aae07cbd5819ee0fc24de562",
+      "draft": false,
+      "merged": false,
+      "workflows": [
+        {
+          "id": 38015692655,
+          "name": "QCAD CE native spike",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38015692655"
+        },
+        {
+          "id": 38015692620,
+          "name": "OPEN CAD verification",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38015692620"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "url": "https://github.com/aavaladez/open-cad-2d/pull/15",
+      "head": "codex/qcad-properties-selection",
+      "head_sha": "8d3a7eefcfa9d639462f885065176d8783b4b3ed",
+      "base": "codex/qcad-conservative-dxf",
+      "base_sha": "ff5f5528bf607bcc0da6877256378a2c4f499e5e",
+      "draft": false,
+      "merged": false,
+      "workflows": [
+        {
+          "id": 38266420863,
+          "name": "OPEN CAD verification",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38266420863"
+        },
+        {
+          "id": 38266420898,
+          "name": "QCAD CE native spike",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38266420898"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "url": "https://github.com/aavaladez/open-cad-2d/pull/16",
+      "head": "codex/qcad-transforms",
+      "head_sha": "cb1725cd0d39cd19578c5f0a2027d2075997a974",
+      "base": "codex/qcad-properties-selection",
+      "base_sha": "8d3a7eefcfa9d639462f885065176d8783b4b3ed",
+      "draft": false,
+      "merged": false,
+      "workflows": [
+        {
+          "id": 38267811160,
+          "name": "OPEN CAD verification",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38267811160"
+        },
+        {
+          "id": 38267811178,
+          "name": "QCAD CE native spike",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38267811178"
+        }
+      ]
+    }
+  ]
+}

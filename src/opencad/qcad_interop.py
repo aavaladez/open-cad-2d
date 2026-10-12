@@ -84,7 +84,7 @@ def inspect_dxf(path,generated=False,audit_log=None):
     items=[]
     for e in d.modelspace():
         require(not e.xdata and not e.has_extension_dict,'Metadatos de entidad pendientes')
-        require(e.dxftype() in ('LINE','CIRCLE'),'Entidad DXF fuera del subconjunto: '+e.dxftype())
+        require(e.dxftype() in ('LINE','CIRCLE','ARC','LWPOLYLINE'),'Entidad DXF fuera del subconjunto: '+e.dxftype())
         require(e.dxf.layer.upper() in layers,'Entidad con capa ausente')
         require(e.dxf.color==256 and not e.dxf.hasattr('true_color') and e.dxf.linetype.upper()=='BYLAYER'
                 and e.dxf.lineweight==-1 and e.dxf.ltscale==1,'Atributos de entidad fuera del subconjunto')
@@ -95,9 +95,25 @@ def inspect_dxf(path,generated=False,audit_log=None):
         if e.dxftype()=='LINE':
             item.update(start=list(e.dxf.start),end=list(e.dxf.end))
             require(e.dxf.start.distance(e.dxf.end)>1e-9,'Línea degenerada fuera del subconjunto')
-        else:
+        elif e.dxftype() in ('CIRCLE','ARC'):
             item.update(center=list(e.dxf.center),radius=e.dxf.radius)
             require(e.dxf.radius>0,'Radio inválido')
+            if e.dxftype()=='ARC':
+                start,end=e.dxf.start_angle,e.dxf.end_angle
+                require(math.isfinite(start) and math.isfinite(end) and abs((end-start)%360)>1e-9,
+                        'Arco degenerado/completo fuera del subconjunto')
+                item.update(start_angle=start%360,end_angle=end%360)
+        else:
+            vs=list(e.get_points('xyseb'))
+            require(e.dxf.flags & ~1==0 and e.dxf.get('const_width',0)==0 and
+                    all(s==0 and t==0 and b==0 for x,y,s,t,b in vs),
+                    'PLINE con anchura, bulge o PLINEGEN pendiente')
+            closed=bool(e.closed); elevation=e.dxf.elevation
+            require(len(vs)>=(3 if closed else 2) and math.isfinite(elevation),'PLINE degenerada')
+            item.update(vertices=[[x,y,elevation] for x,y,s,t,b in vs],closed=closed)
+            require(all(math.isfinite(v) for p in item['vertices'] for v in p),'Vértice no finito')
+            pairs=list(zip(vs,vs[1:]))+([(vs[-1],vs[0])] if closed else [])
+            require(all(math.hypot(a[0]-b[0],a[1]-b[1])>1e-9 for a,b in pairs),'Segmento PLINE degenerado')
         require(all(math.isfinite(v) for key in ('start','end','center','radius') if key in item
                     for v in (item[key] if isinstance(item[key],list) else [item[key]])),'Geometría no finita')
         items.append(item)
@@ -161,7 +177,13 @@ def validated_export(document,path,expected):
         attrs=dict(layer=item['layer'],color=item['color_index'],linetype=item['linetype'],
             lineweight=item['lineweight'],ltscale=item['ltscale'])
         if item['type']=='LINE': drawing.modelspace().add_line(item['start'],item['end'],dxfattribs=attrs)
-        else: drawing.modelspace().add_circle(item['center'],item['radius'],dxfattribs=attrs)
+        elif item['type']=='CIRCLE': drawing.modelspace().add_circle(item['center'],item['radius'],dxfattribs=attrs)
+        elif item['type']=='ARC': drawing.modelspace().add_arc(item['center'],item['radius'],
+            item['start_angle'],item['end_angle'],dxfattribs=attrs)
+        elif item['type']=='LWPOLYLINE': drawing.modelspace().add_lwpolyline(
+            [p[:2] for p in item['vertices']],format='xy',close=item['closed'],
+            dxfattribs=attrs|{'elevation':item['vertices'][0][2]})
+        else: raise ValueError('Entidad sin writer validado: '+item['type'])
     drawing.saveas(path)
     equivalent(expected,inspect_dxf(path))
     document.last_dxf_validation=dict(native_audit_repairs=native_audit,

@@ -1,0 +1,388 @@
+{
+  "kind": "application_integration_partial",
+  "installed": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.4",
+  "qt": "6.10.3",
+  "ezdxf": "1.4.3",
+  "checks": {
+    "arc_three_points_analytic": true,
+    "arc_clockwise_same_geometric_locus": true,
+    "arc_center_wraparound": true,
+    "arc_pick_xy_z_preserved": true,
+    "arc_missing_half_not_selected": true,
+    "arc_crossing_exact": true,
+    "arc_window_exact": true,
+    "pline_one_native_entity": true,
+    "pline_closed_flag": true,
+    "pline_pick_xy": true,
+    "pline_closing_edge_pick": true,
+    "pline_crossing_segment": true,
+    "pline_window_containment": true,
+    "curve_copy_new_ids": true,
+    "arc_copy_xyz": true,
+    "pline_copy_xyz": true,
+    "curve_copy_single_undo": true,
+    "arc_rotate_angles_z": true,
+    "pline_rotate_xyz": true,
+    "curve_rotate_single_undo": true,
+    "arc_scale_xy_z": true,
+    "pline_scale_xy_z": true,
+    "curve_scale_single_undo": true,
+    "arc_collinear_atomic": true,
+    "arc_nonplanar_atomic": true,
+    "arc_full_circle_atomic": true,
+    "arc_invalid_radius_atomic": true,
+    "pline_zero_segment_atomic": true,
+    "pline_nonplanar_atomic": true,
+    "pline_closed_too_few_atomic": true,
+    "curve_redo_after_errors": true,
+    "arc_properties": true,
+    "arc_properties_undo": true,
+    "pline_properties": true,
+    "pline_properties_undo": true,
+    "pline_vertices_elevation_order": true,
+    "pline_vertices_undo": true,
+    "pline_invalid_vertices_atomic": true,
+    "arc_invalid_angles_atomic": true,
+    "mixed_properties_atomic": true,
+    "arc_locked_atomic": true,
+    "pline_locked_atomic": true,
+    "curve_properties_locked": true,
+    "R2000_native_import_elevation": true,
+    "R2000_edit_save_reopen": true,
+    "R2000_original_unchanged": true,
+    "R2010_native_import_elevation": true,
+    "R2010_edit_save_reopen": true,
+    "R2010_original_unchanged": true,
+    "unsupported_bulge_active_unchanged": true,
+    "unsupported_bulge_input_unchanged": true,
+    "unsupported_width_active_unchanged": true,
+    "unsupported_width_input_unchanged": true,
+    "unsupported_plinegen_active_unchanged": true,
+    "unsupported_plinegen_input_unchanged": true,
+    "ribbon_arc_escape_atomic": true,
+    "ribbon_arc_three_clicks": true,
+    "pline_preview_not_committed": true,
+    "pline_escape_atomic": true,
+    "ribbon_pline_close": true,
+    "ribbon_pline_single_undo": true,
+    "ribbon_pline_redo": true,
+    "panel_pline_elevation": true,
+    "console_arc": true,
+    "panel_arc_radius": true,
+    "ribbon_pline_open": true,
+    "pline_console_c_closes_not_circle": true,
+    "pline_canvas_enter_finishes": true,
+    "ui_curves_persist_reopened": true
+  },
+  "passed": true,
+  "identity": {
+    "engine": "qcad",
+    "protocol": 1,
+    "revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "engine_sha256": "6187e6f744f577389c2a998f3f2365233698a0262406f879316173ff6f830607",
+  "native_dependencies": {
+    "qcadcore.dll": "0b49bef27c9a55ee2818a4abca80ada4695892b6b915e8127a9a5944e3b8dc45",
+    "qcadentity.dll": "2dec7e80a33ee53cc22fad56932d299ecdaa6a2281f57a36450e213ae4e9b292",
+    "qcadgrid.dll": "a549b7fb6e11c83a14ae4101bea36bad4318edf8e9f729822c093b5eac5a2e29",
+    "qcadgui.dll": "bf81397826005d3f6f11eb498474214a7458b68cf945a327ed1f2c3c59b58cfc",
+    "qcadoperations.dll": "0e505e334ea8737f963766dfa7a96d30b18f926000b5479c6269f37ca9a9989c",
+    "qcadsnap.dll": "ae15f279a90a6a39bd5d6d5e83980d9d8e6f8d3876e600b1cf195555fbcb7c41",
+    "qcadspatialindex.dll": "d3e267298f7a4ecc7dbcc6e38ba32d78014cb1c0c8de10fd14028d133b50f0a7",
+    "qcadstemmer.dll": "b4ccd6f2cb98f7e9432085cb9e69ddf55247f7bb956ee901b71f4f6cbbdd5a0f",
+    "qcaddxf.dll": "b5a1402bf91fc78a68538cfba558daee37c8c207adaeb20b2383df1a643d67c9"
+  },
+  "source_sha256": {
+    "native/adapter/session.cpp": "2261b85a0a955f5f2b2abeb94b239a6c6bb33aee1878467918ab2829faf05265",
+    "tools/check_qcad_curves.py": "847a7bc73e786ae8b0df25d890a58e5ee96ba897131a15afc8061cbc42effb7b",
+    "src/opencad/app.py": "edfa706989cda9a5978d344dc766ad5b961063708bd179fe4bcc0957aa8a5379",
+    "src/opencad/commands.py": "cef6fb7e56d9c7853f849adf5252bb38bb3ca1f8e25cd2869681f1ad81575066",
+    "src/opencad/interop.py": "b63d805c10b68dce3004cd8f8e7a1df28fb25bd3c28a88ce856ef6336e6fbdab",
+    "src/opencad/lisp.py": "237e3ed2f8da4f4bdc6e5ec90bf33e9b44d5ff828214ca55f038db05c6813795",
+    "src/opencad/model.py": "496a20a39a9f554d4c6a9891b1106533383b782c17ebd477857edc1bcdc707bb",
+    "src/opencad/properties.py": "37d6616a0369b363f41a546c0d5309ca54e6bb2e4a919fddd5b95564e4d229bd",
+    "src/opencad/qcad_backend.py": "7c7a09912e2a77f06a44739ac4997c53482ba385367550bbf3119aed15ab69de",
+    "src/opencad/qcad_interop.py": "923e330ba8f0b986b7084a9a501b36b45d796d28fb886fb78f9014d2b97f4b7e",
+    "src/opencad/qcad_views.py": "dd76798dc14b9482bf0307e17bbc884448b8d7e43e022a07cece057d3d43a277",
+    "src/opencad/__init__.py": "b61c45076e5d79074d4aaf232262e50a80ba9206cafe7feb1b490d7e40db42d0",
+    "native/patches/qcad-dxf-arc-polyline-z.patch": "10dd33543ca1a106d0ead8fa65639932421736bc17ed2faaf1479fd6f0ead4e7",
+    "native/patches/qcad-dxf-clayer.patch": "21ac3ebade0d48960dec6917d227f5085ceedc16fb717fd171498718dea7804f",
+    "native/patches/qcad-dxf-layer-off.patch": "39f08621a128b00d5e6c517634a88b99fdef7292c71a00299ca343f05658cc8a",
+    "native/patches/qcad-dxf-off-import.patch": "00370aa772ff7fb29373800eb6056f9b63ff3b497796b7bbd2da793431c68d9a",
+    "native/patches/qcad-dxf-z.patch": "b033a6b201e86191d03092bf90a53dad82a085b9e990f881b16f76af9c2888e9",
+    "native/patches/qcad-msvc-link-paths.patch": "b1d01a8354e0d82eaacd6a9a8c94e4d65fbfb74de69af7ab3bd85fc4185e2384"
+  },
+  "fixtures": {
+    "R2000-curves.dxf": "868df19006b579c12f049da3a4891d3740daf10c029de68f843e96d9c5631b37",
+    "R2010-curves.dxf": "1f23ddbf9bb75e5491f3274b75741e1e92f4e4582c3ba2bc26e9cf60e2fbf2a3"
+  },
+  "observed": {
+    "current_layer": "SURVEY",
+    "entities": [
+      {
+        "center": [
+          -1.776356839400254e-15,
+          20.000000000000007,
+          0
+        ],
+        "color_index": 256,
+        "end_angle": 180,
+        "id": 12,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 4.999999999999998,
+        "start_angle": 0,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          2,
+          3,
+          12
+        ],
+        "color_index": 256,
+        "end_angle": 180,
+        "id": 13,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 5,
+        "start_angle": 0,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          22,
+          3,
+          16
+        ],
+        "color_index": 256,
+        "end_angle": 30,
+        "id": 14,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 4,
+        "start_angle": 350,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          35,
+          25,
+          17
+        ],
+        "color_index": 256,
+        "end_angle": 160,
+        "id": 15,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 9,
+        "start_angle": 20,
+        "type": "ARC"
+      },
+      {
+        "closed": false,
+        "color_index": 256,
+        "id": 16,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            30,
+            20,
+            0
+          ],
+          [
+            30,
+            30,
+            0
+          ]
+        ]
+      },
+      {
+        "closed": false,
+        "color_index": 256,
+        "id": 17,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            32,
+            3,
+            18
+          ],
+          [
+            42,
+            3,
+            18
+          ],
+          [
+            42,
+            13,
+            18
+          ]
+        ]
+      },
+      {
+        "closed": false,
+        "color_index": 256,
+        "id": 18,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            35,
+            20,
+            0
+          ],
+          [
+            35,
+            30,
+            0
+          ]
+        ]
+      },
+      {
+        "closed": true,
+        "color_index": 256,
+        "id": 19,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            10,
+            20,
+            19
+          ],
+          [
+            20,
+            20,
+            19
+          ],
+          [
+            20,
+            30,
+            19
+          ]
+        ]
+      },
+      {
+        "closed": true,
+        "color_index": 256,
+        "id": 20,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            40,
+            20,
+            0
+          ],
+          [
+            45,
+            20,
+            0
+          ],
+          [
+            45,
+            30,
+            0
+          ]
+        ]
+      },
+      {
+        "closed": true,
+        "color_index": 256,
+        "id": 21,
+        "layer": "SURVEY",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            52,
+            3,
+            20
+          ],
+          [
+            62,
+            3,
+            20
+          ],
+          [
+            62,
+            13,
+            20
+          ]
+        ]
+      }
+    ],
+    "layers": [
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "0",
+        "visible": true
+      },
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "Defpoints",
+        "visible": true
+      },
+      {
+        "color": "#00ff00",
+        "color_index": 3,
+        "display_color": "#00ff00",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "SURVEY",
+        "visible": true
+      }
+    ],
+    "units": 4
+  },
+  "limitations": [
+    "straight zero-width PLINE only",
+    "other ARC options pending",
+    "no AutoCAD execution",
+    "not installed"
+  ]
+}

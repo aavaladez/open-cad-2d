@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from contextlib import contextmanager
 from pathlib import Path
 from .model import Point, Line, Circle, Layer
+from .qcad_views import Arc,Polyline
 from .commands import CommandBus,point
 
 PIN = '4c830eb4d80285ca64b1f2c2dc0987f729344126'
@@ -66,6 +67,10 @@ class QcadDocument:
                 result[i] = Line(i,Point(*item['start']),Point(*item['end']),layer)
             elif item['type']=='CIRCLE':
                 result[i] = Circle(i,Point(*item['center']),item['radius'],layer)
+            elif item['type']=='ARC':
+                result[i] = Arc(i,Point(*item['center']),item['radius'],item['start_angle'],item['end_angle'],layer)
+            elif item['type']=='LWPOLYLINE':
+                result[i] = Polyline(i,tuple(Point(*p) for p in item['vertices']),item['closed'],layer)
             else:
                 raise ValueError('Entidad no representable por la UI actual')
         return result
@@ -157,7 +162,7 @@ class QcadDocument:
 class QcadCommandBus(CommandBus):
     def __init__(self,document,aliases=None):
         super().__init__(document)
-        for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC')]:
+        for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC'),('ARC','A'),('PLINE','PL')]:
             self.definitions[name]={'aliases':[alias],'variant':'native subset'}; self.aliases[alias]=name
         if aliases is not None: self.set_aliases(aliases)
 
@@ -167,7 +172,21 @@ class QcadCommandBus(CommandBus):
 
     def execute(self,name,*args):
         canonical = self.aliases.get(name.upper().removeprefix('_'),name.upper().removeprefix('_'))
-        if canonical in ('COPY','ROTATE','SCALE'):
+        if canonical=='ARC':
+            if len(args)==3:
+                arguments=dict(points=[self.document.xyz(point(p)) for p in args])
+            elif len(args)==5 and str(args[0]).upper()=='CENTER':
+                arguments=dict(center=self.document.xyz(point(args[1])),radius=float(args[2]),
+                    start_angle=float(args[3]),end_angle=float(args[4]))
+            else: raise ValueError('ARC punto-inicial punto-intermedio punto-final | ARC CENTER centro radio grados-inicio grados-fin')
+            with self.document.transaction(): result=self.document.request('arc',**arguments)
+        elif canonical=='PLINE':
+            closed=bool(args and str(args[-1]).upper() in ('C','CLOSE'))
+            points=args[:-1] if closed else args
+            if len(points)<(3 if closed else 2): raise ValueError('PLINE punto punto [punto ...] [CLOSE]')
+            with self.document.transaction():
+                result=self.document.request('pline',vertices=[self.document.xyz(point(p)) for p in points],closed=closed)
+        elif canonical in ('COPY','ROTATE','SCALE'):
             required=2 if canonical=='COPY' else 3
             if len(args)!=required: raise ValueError(canonical+' IDs y vector, o IDs punto-base valor')
             arguments=dict(ids=self.ids(args[0]))
@@ -181,7 +200,7 @@ class QcadCommandBus(CommandBus):
                 result = self.document.layer(str(args[0]).upper(),str(args[1]))
         else:
             result = super().execute(name,*args)
-        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY'):
+        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY','ARC','PLINE'):
             def translate(value):
                 if type(value) is int: return self.document.id_map.get(value,value)
                 if isinstance(value,list): return [translate(v) for v in value]

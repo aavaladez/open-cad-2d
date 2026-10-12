@@ -60,6 +60,13 @@ validados como lote. PropertiesPanel presenta valores, recoge campos cambiados y
 actualiza desde QCAD tras undo/redo. No admite edición autoritativa de las dataclasses.
 Detalles y límites en native/EDITING.md.
 
+ARC/PLINE posteriores: RArcEntity y RPolylineEntity autoritativas; qcad_views.py
+contiene vistas inmutables adicionales, sin ampliar operaciones del modelo temporal.
+La UI junta puntos PLINE sin mutar el documento y confirma un solo comando al
+finalizar. Selección, propiedades, transformaciones y DXF usan los mismos tipos
+nativos; preflight/writer rechazan bulges/anchuras aún sin representación completa.
+Ángulos ARC DXF canonicalizados; elevación PLINE uniforme. Ver native/CURVES.md.
+
 ## Seguridad del intérprete
 
 LSP sin eval/exec, shell, red, COM o I/O desde el código interpretado. Límites

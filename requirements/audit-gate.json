@@ -10,12 +10,12 @@
     "functional_ui": {
       "status": "partial",
       "cases": {},
-      "gap": "Ribbon/consola/capas/propiedades LINE-CIRCLE editables y selección QCAD comprobados; integración restante, DPI/accesibilidad y candidata instalada pendientes"
+      "gap": "Ribbon/consola/capas/propiedades LINE-CIRCLE-ARC-PLINE y selección QCAD comprobados parcialmente; integración restante, DPI/accesibilidad y candidata instalada pendientes"
     },
     "essential_commands": {
       "status": "partial",
       "cases": {},
-      "gap": "Selección XY/ventana/cruce y edición básica comprobadas; faltan ARC/PLINE, modificación y acotación requeridas"
+      "gap": "ARC/PLINE recta, selección y transformaciones QCAD parciales comprobados; faltan TRIM/EXTEND/OFFSET y acotación requeridas"
     },
     "autolisp": {
       "status": "partial",
@@ -25,7 +25,7 @@
     "dxf_cycle": {
       "status": "partial",
       "cases": {},
-      "gap": "Ciclo QCAD candidato/UI R2000-R2010 LINE/CIRCLE y lector independiente comprobados; corpus amplio, metadatos y candidata instalada pendientes"
+      "gap": "Ciclo QCAD candidato/UI R2000-R2010 LINE/CIRCLE/ARC/PLINE recta y contraste independiente comprobados; cotas/textos, corpus amplio y candidata instalada pendientes"
     },
     "windows_installation": {
       "status": "pending",
