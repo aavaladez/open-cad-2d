@@ -137,3 +137,23 @@ no positivo rechazado. Nuevas IDs desde constructores públicos, fuente/capa int
 Límites bloqueados son consultables sin edición; objetivo bloqueado se rechaza.
 CUTTING.md documenta contratos/pending y baselines independientes. No ampliar
 el modelo temporal, sin equivalencia de todas las variantes ni aceptación A1.
+
+## ADR-018 — Cotas nativas y cachés gráficos contrastados
+
+2026-10-12: RDimRotated/Aligned/RadialEntity y RDimStyleProxyBasic GPL de CE;
+documento autoritativo, datos XYZ/medida, propiedades/undo y rendering común a UI/DXF.
+Separar datos dimensionales de su cache gráfico. Inicializar también propiedades
+de clases base. Excluir coordenadas derivadas automáticas de etiqueta del diff
+RTransaction para que undo/redo no convierta su posición en manual por efectos
+de setters CE. Prueba reproduce fallo y compara render/medida/historial tras corregir.
+
+Writer CE no tiene bloques obligatorios: retener datos de definición en inspección
+independiente mediante placeholders sólo en memoria, registrados, nunca salida.
+Writer final agrega DIMENSION/*D con formas/etiqueta nativas y audit sin reparaciones.
+Preflight sólo admite el preset, contenidos acotados y cache coincidente con el
+render candidato; no descartar anotaciones/cache personalizados detectados.
+Parche Z en QCAD/dxflib sin ABI nueva, licencia GPL2-or-later compatible conGPL3.
+R2000 Qt6 pierde texto codepage: transcodificar temporal ezdxf→R2010 UTF8 tras
+preflight y equivalencia, retener ruta/original. Canonicalizar hex Unicode CE para
+lector ezdxf; no admitir formato rico. DIMENSIONS.md registra hallazgos y límites.
+No hay asociación paramétrica ni estilos avanzados; parcial, sin entrada A1 instalada.

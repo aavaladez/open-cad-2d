@@ -20,6 +20,22 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- Acotación QCAD nativa: DIMLINEAR/DIMALIGNED/DIMRADIUS como DIMENSION en documento,
+  medidas analíticas, puntos XYZ planares, propiedades/texto/<>/UTF8, Ribbon/consola,
+  selección y transformaciones con undo/redo. Renderizador básico CE GPL y writer
+  híbrido de bloques gráficos válidos; cotejo de cachés antes de apertura para impedir
+  pérdida de anotaciones modificadas. R2000 legado se normaliza a UTF8 sólo tras
+  preflight/contraste, original intacto. native/DIMENSIONS.md declara límites.
+  58 comprobaciones por runtime Python3.12/3.14, regresión51/51 y CTest10/10.
+  24 qcad_partial, un prototype_partial,386 pendientes y61 exclusiones; cero completos.
+  Sin asociación paramétrica de cotas con fuente ni variantes completas; estilos
+  avanzados/glyphs/DPI pendientes. A1 sigue0/6: consolidación/recuperación e
+  instalación limpia sobre la misma candidata pendientes, sin congelación.
+
+- CI general/nativa de #17 y #18 comprobada success en sus commits exactos;
+  ambos listos para revisión, sin fusionar. Acotación nueva se apila sobre #18
+  y queda en borrador hasta verificar su propia CI. Cadena #13–#18 preservada.
+
 - TRIM/EXTEND/OFFSET nativos: objetivos LINE y límites finitos LINE/CIRCLE/ARC/
   PLINE recta para recorte/alargamiento; división de tramo interior, selección del
   extremo e intersección más próxima, Z interpolada/prolongada. OFFSET distancia/lado

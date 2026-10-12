@@ -1,0 +1,32 @@
+{
+  "requirement_id": "ACAD-0179",
+  "command": "DIMRADIUS",
+  "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variant": "center/chord or CIRCLE/ARC source and native projection",
+  "pending": [
+    "leaders",
+    "advanced options",
+    "styles",
+    "associative source references",
+    "LSP COMMAND bridge"
+  ],
+  "cases": [
+    "radial_measure_label_z",
+    "radial_edit_recomputed_label",
+    "radial_source_native_projection",
+    "ribbon_radius_native_source",
+    "R2010_dimension_z_edit_save_reopen"
+  ],
+  "baseline": "native/DIMENSIONS.md",
+  "test": "tools/check_qcad_dimensions.py",
+  "implementation": [
+    "native/adapter/dimensions.cpp",
+    "native/adapter/session.cpp",
+    "src/opencad/qcad_backend.py",
+    "src/opencad/qcad_dimensions_io.py",
+    "src/opencad/app.py",
+    "src/opencad/properties.py"
+  ],
+  "issue": 3
+}

@@ -4,7 +4,7 @@ Generada desde el Excel original; cada fila conserva ID, hoja y fila.
 
 SHA-256: `7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0`. Total: 472 entradas.
 
-Estados: {'qcad_partial': 21, 'pending': 389, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
+Estados: {'qcad_partial': 24, 'pending': 386, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
 
 qcad_partial acredita sólo las variantes/documento y casos descritos en [TRACEABILITY.md](TRACEABILITY.md); no equivale a paridad de opciones ni a aceptación A1.
 
@@ -188,10 +188,10 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0173 | AutoCAD: 173 | UCS / Coordenadas | GEOMAPIMAGEEXPORT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0174 | AutoCAD: 174 | UCS / Coordenadas | LATLONG | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0175 | AutoCAD: 175 | UCS / Coordenadas | LIMITS | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0176 | AutoCAD: 176 | Cotas y anotación | DIMLINEAR | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRotated/DimRotatedInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimlinearoperations.lua) | pending | pendiente |
-| ACAD-0177 | AutoCAD: 177 | Cotas y anotación | DIMALIGNED | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAligned/DimAlignedInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimalignedoperations.lua) | pending | pendiente |
+| ACAD-0176 | AutoCAD: 176 | Cotas y anotación | DIMLINEAR | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimRotated/DimRotatedInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimlinearoperations.lua) | qcad_partial | tools/check_qcad_dimensions.py; tools/check_qcad_application.py |
+| ACAD-0177 | AutoCAD: 177 | Cotas y anotación | DIMALIGNED | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAligned/DimAlignedInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimalignedoperations.lua) | qcad_partial | tools/check_qcad_dimensions.py; tools/check_qcad_application.py |
 | ACAD-0178 | AutoCAD: 178 | Cotas y anotación | DIMANGULAR | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimAngular/DimAngularInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimangularoperations.lua) | pending | pendiente |
-| ACAD-0179 | AutoCAD: 179 | Cotas y anotación | DIMRADIUS | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
+| ACAD-0179 | AutoCAD: 179 | Cotas y anotación | DIMRADIUS | 2d | sin coincidencia | sin coincidencia | qcad_partial | tools/check_qcad_dimensions.py; tools/check_qcad_application.py |
 | ACAD-0180 | AutoCAD: 180 | Cotas y anotación | DIMDIAMETER | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0181 | AutoCAD: 181 | Cotas y anotación | DIMARC | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0182 | AutoCAD: 182 | Cotas y anotación | DIMORDINATE | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Draw/Dimension/DimOrdinate/DimOrdinateInit.js) | [registro](https://github.com/LibreCAD/LibreCAD_3/blob/f972953aa3295543550a90f4c6ed1c4609124c59/lcUILua/createActions/dimordinateoperations.lua) | pending | pendiente |

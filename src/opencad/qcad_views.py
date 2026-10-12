@@ -19,3 +19,17 @@ class Polyline:
     vertices: tuple[Point, ...]
     closed: bool
     layer: str = '0'
+
+
+@dataclass(frozen=True)
+class Dimension:
+    id: int
+    kind: str
+    position: Point
+    text: str
+    start: Point | None
+    end: Point | None
+    chord: Point | None
+    angle: float | None
+    render: dict
+    layer: str = '0'

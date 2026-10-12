@@ -68,6 +68,37 @@ class NativeInteropBoundaries(unittest.TestCase):
             d=ezdxf.new('R2010'); create(d.modelspace()); d.saveas(self.path)
             with self.assertRaises(ValueError): inspect_dxf(self.path)
 
+    def test_dimension_graphics_and_styles_are_not_silently_accepted(self):
+        from opencad.qcad_dimensions_io import add_dimension,apply_preset,dimension_record
+        item=dict(type='DIMENSION',dimension_type='DIMALIGNED',position=[0,5,7],start=[0,0,7],end=[3,4,7],text='',layer='0')
+        render=dict(shapes=[dict(type='LINE',start=[0,5,0],end=[3,9,0])],label='5',text_position=[1,7,7],text_height=2.5,text_angle=53.13010235415598,measurement=5)
+        d=ezdxf.new('R2010'); apply_preset(d); add_dimension(d,item,render); d.saveas(self.path)
+        observed=inspect_dxf(self.path)['entities'][0]
+        self.assertEqual(observed['start'],[0,0,7]); self.assertEqual(observed['end'],[3,4,7])
+        dim=next(iter(d.modelspace()))
+        dim.dxf.dimtype|=128
+        with self.assertRaises(ValueError): dimension_record(dim)
+        dim.dxf.dimtype&=~128
+        d.dimstyles.get('Standard').dxf.dimtxt=4; d.saveas(self.path)
+        with self.assertRaises(ValueError): inspect_dxf(self.path)
+
+    def test_dimension_render_cache_tampering_is_observable(self):
+        from opencad.qcad_dimensions_io import add_dimension,apply_preset,caches_from_file
+        item=dict(dimension_type='DIMRADIUS',position=[0,0,7],chord=[3,0,7],text='',layer='0')
+        render=dict(shapes=[dict(type='LINE',start=[0,0,0],end=[3,0,0])],label='R3',text_position=[4,1,7],text_height=2.5,text_angle=0,measurement=3)
+        d=ezdxf.new('R2010'); apply_preset(d); add_dimension(d,item,render); d.saveas(self.path)
+        baseline=caches_from_file(self.path); block=d.blocks.get(next(iter(d.modelspace())).dxf.geometry)
+        next(e for e in block if e.dxftype()=='TEXT').dxf.text='User annotation'; d.saveas(self.path)
+        with self.assertRaises(ValueError): equivalent(baseline,caches_from_file(self.path))
+
+    def test_dimension_unicode_hex_case_without_accepting_rich_text(self):
+        from opencad.qcad_dimensions_io import unicode_text,dimension_record
+        self.assertEqual(unicode_text(r'Tramo \U+00e1'), 'Tramo á')
+        self.assertEqual(unicode_text(r'Tramo \U+00E1'), 'Tramo á')
+        d=ezdxf.new('R2010'); dim=d.modelspace().new_entity('DIMENSION',dxfattribs=dict(
+            dimtype=1,defpoint=(0,6,7),defpoint2=(0,0,7),defpoint3=(3,4,7),text=r'\S1^2;'))
+        with self.assertRaises(ValueError): dimension_record(dim)
+
     def test_failed_native_export_preserves_existing_destination(self):
         self.path.write_bytes(b'original destination')
         class Document:

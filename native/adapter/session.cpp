@@ -1,5 +1,6 @@
 #include "session.h"
 #include "geometry_ops.h"
+#include "dimensions.h"
 #include <QJsonArray>
 #include <QFileInfo>
 #include <QRegularExpression>
@@ -23,6 +24,10 @@
 #include "RCircleEntity.h"
 #include "RArcEntity.h"
 #include "RPolylineEntity.h"
+#include "RDimAlignedEntity.h"
+#include "RDimRotatedEntity.h"
+#include "RDimRadialEntity.h"
+#include "RDimStyleProxyBasic.h"
 #include "ROperation.h"
 #include "RAddObjectOperation.h"
 #include "RBox.h"
@@ -45,7 +50,7 @@ QJsonArray xyz(const RVector& p) { return {p.x,p.y,p.z}; }
 bool finitePoint(const RVector& p) { return std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z); }
 bool supported(const QSharedPointer<REntity>& e) {
     return e->getType()==RS::EntityLine || e->getType()==RS::EntityCircle ||
-        e->getType()==RS::EntityArc || e->getType()==RS::EntityPolyline;
+        e->getType()==RS::EntityArc || e->getType()==RS::EntityPolyline || CadDimensions::supported(e);
 }
 QList<RVector> vertices(const QJsonValue& value) {
     require(value.isArray(),"Vertex array required");
@@ -73,7 +78,8 @@ void validGeometry(const QSharedPointer<REntity>& e) {
             if (i+1<vs.size() || data.isClosed()) require(
                 vs[i].get2D().getDistanceTo(vs[(i+1)%vs.size()].get2D())>1e-9,"Degenerate polyline segment");
         }
-    } else throw std::runtime_error("Unsupported geometry");
+    } else if (CadDimensions::supported(e)) CadDimensions::validate(e);
+    else throw std::runtime_error("Unsupported geometry");
 }
 std::unique_ptr<RDocumentInterface> emptyDocument() {
     auto result=std::make_unique<RDocumentInterface>(*new RDocument(*new RMemoryStorage(),*new RSpatialIndexSimple()));
@@ -108,7 +114,8 @@ public:
             if (entities.contains(id)) {
                 auto entity = entities[id];
                 entity->setLayerId(doc.getLayerId(entityLayers[id]));
-                transaction.addObject(entity,false);
+                if (CadDimensions::supported(entity)) transaction.addObject(entity,false,false,CadDimensions::transactionProperties(entity));
+                else transaction.addObject(entity,false);
             } else if (id>=0) transaction.deleteObject(doc.queryEntity(id));
         }
         doc.setCurrentLayer(currentLayer,&transaction);
@@ -124,6 +131,9 @@ CadSession::CadSession() {
     RDocumentVariables::init(); RDimStyle::init(); RLayer::init(); RLayerState::init();
     RLayout::init(); RLinetype::init(); RBlock::init(); RUcs::init(); RView::init();
     RLineEntity::init(); RCircleEntity::init(); RArcEntity::init(); RPolylineEntity::init();
+    RDimensionEntity::init(); RDimLinearEntity::init();
+    RDimAlignedEntity::init(); RDimRotatedEntity::init(); RDimRadialEntity::init();
+    RDimStyle::setDimStyleProxy(new RDimStyleProxyBasic());
     RDxfImporterFactory::registerFileImporter(); RDxfExporterFactory::registerFileExporter();
     interface = emptyDocument(); refresh();
 }
@@ -185,6 +195,8 @@ QJsonObject CadSession::snapshot() {
         } else if (auto poly=e.dynamicCast<RPolylineEntity>()) {
             QJsonArray vs; for (const auto& p : poly->getData().getVertices()) vs.append(xyz(p));
             item["type"]="LWPOLYLINE"; item["vertices"]=vs; item["closed"]=poly->getData().isClosed();
+        } else if (CadDimensions::supported(e)) {
+            const auto dim=CadDimensions::snapshot(e); for (auto key : dim.keys()) item[key]=dim[key];
         } else throw std::runtime_error("Unsupported snapshot geometry");
         list.append(item);
     }
@@ -220,11 +232,16 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             auto e=entities[id]; auto layer=layers[entityLayers[id]];
             if (layer->isOff() || layer->isFrozen()) continue;
             // Picking is evaluated in displayed XY; source XYZ remains untouched.
-            auto shape=CadGeometry::projected(e);
+            auto parts=CadDimensions::supported(e) ? CadDimensions::shapes(e) : QList<QSharedPointer<RShape>>{CadGeometry::projected(e)};
+            RBox bounds; for (const auto& part : parts) bounds.growToInclude(part->getBoundingBox());
             if (mode=="point") {
-                double distance=shape->getDistanceTo(a);
+                double distance=INFINITY; for (const auto& part : parts) distance=(std::min)(distance,part->getDistanceTo(a));
                 if (distance<best) { best=distance; nearest=id; }
-            } else if (box.contains(shape->getBoundingBox()) || mode=="crossing" && box.intersectsWith(*shape)) selected.append(id);
+            } else {
+                bool hit=box.contains(bounds);
+                if (mode=="crossing") for (const auto& part : parts) hit=hit || box.intersectsWith(*part);
+                if (hit) selected.append(id);
+            }
         }
         if (mode=="point" && nearest>=0) selected.append(nearest);
         value=selected;
@@ -251,6 +268,11 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             require(imported.getLayerId(name)!=RObject::INVALID_ID,"Unknown imported current layer");
             imported.setCurrentLayer(name);
         }
+        if (input.contains("original_path")) {
+            QString original=input["original_path"].toString();
+            require(QFileInfo(original).isFile() && !original.contains("://"),"Existing original local DXF path required");
+            temporary->getDocument().setFileName(original);
+        }
         interface.swap(temporary); refresh();
     } else if (action=="save") {
         require(!editing,"Cannot export during a transaction");
@@ -262,7 +284,7 @@ QJsonObject CadSession::request(const QJsonObject& input) {
         require(success,"DXF export failed");
     } else {
         require(editing,"Edit requires transaction");
-        if (action=="line" || action=="circle" || action=="arc" || action=="pline") {
+        if (action=="line" || action=="circle" || action=="arc" || action=="pline" || action=="dimension") {
             writable(currentLayer);
             QSharedPointer<REntity> e;
             if (action=="line") {
@@ -283,11 +305,23 @@ QJsonObject CadSession::request(const QJsonObject& input) {
                     if (arc.isReversed()) { double start=arc.getStartAngle(); arc.setStartAngle(arc.getEndAngle()); arc.setEndAngle(start); arc.setReversed(false); }
                 } else arc=RArc(point(input["center"]),number(input["radius"]),angle(input["start_angle"]),angle(input["end_angle"]),false);
                 e.reset(new RArcEntity(&document(),RArcData(arc)));
-            } else {
+            } else if (action=="pline") {
                 require(input["closed"].isBool(),"Boolean closure required");
                 RPolyline poly; poly.setVertices(vertices(input["vertices"])); poly.setClosed(input["closed"].toBool());
                 RPolylineData data(poly); data.setPolylineGen(false);
                 e.reset(new RPolylineEntity(&document(),data));
+            } else {
+                auto parameters=input;
+                if (input.contains("source")) {
+                    double n=number(input["source"]); int source=input["source"].toInt();
+                    require(n==source && entities.contains(source),"Unknown dimension source");
+                    auto c=entities[source].dynamicCast<RCircleEntity>(); auto a=entities[source].dynamicCast<RArcEntity>();
+                    require(c || a,"DIMRADIUS source must be CIRCLE/ARC");
+                    auto center=c ? c->getCenter() : a->getCenter();
+                    auto chord=CadGeometry::projected(entities[source])->getClosestPointOnShape(point(input["picked"]).get2D()); chord.z=center.z;
+                    require(chord.isValid(),"Invalid radius pick"); parameters["position"]=xyz(center); parameters["chord"]=xyz(chord);
+                }
+                e=CadDimensions::create(document(),parameters);
             }
             validGeometry(e);
             e->setColor(RColor(RColor::ByLayer)); e->setLinetypeId(document().getLinetypeId("BYLAYER"));
@@ -347,6 +381,7 @@ QJsonObject CadSession::request(const QJsonObject& input) {
                     else if (auto c=transformed[id].dynamicCast<RCircleEntity>()) clone.reset(new RCircleEntity(&document(),c->getData()));
                     else if (auto a=transformed[id].dynamicCast<RArcEntity>()) clone.reset(new RArcEntity(&document(),a->getData()));
                     else if (auto p=transformed[id].dynamicCast<RPolylineEntity>()) clone.reset(new RPolylineEntity(&document(),p->getData()));
+                    else if (CadDimensions::supported(transformed[id])) clone=CadDimensions::freshCopy(document(),transformed[id]);
                     else throw std::runtime_error("Unsupported copy geometry");
                     int target=virtualId--; entities[target]=clone; entityLayers[target]=entityLayers[id]; dirtyEntities.insert(target); newIds.append(target);
                 } else { entities[id]=transformed[id]; dirtyEntities.insert(id); }
@@ -380,6 +415,7 @@ QJsonObject CadSession::request(const QJsonObject& input) {
                     else if (poly && key=="vertices") poly->getData().setVertices(vertices(changes[key]));
                     else if (poly && key=="elevation") poly->getData().setElevation(number(changes[key]));
                     else if (poly && key=="closed") { require(changes[key].isBool(),"Boolean closure required"); poly->setClosed(changes[key].toBool()); }
+                    else if (CadDimensions::edit(e,key,changes[key])) {}
                     else throw std::runtime_error("Property not supported for this entity");
                 }
                 validGeometry(e);

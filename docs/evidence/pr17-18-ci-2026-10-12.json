@@ -1,0 +1,56 @@
+{
+  "checked": "2026-10-12",
+  "dependency_chain_verified": true,
+  "kind": "remote_ci_dependency_review",
+  "review_only": true,
+  "pull_requests": [
+    {
+      "number": 17,
+      "url": "https://github.com/aavaladez/open-cad-2d/pull/17",
+      "base": "codex/qcad-transforms",
+      "base_sha": "cb1725cd0d39cd19578c5f0a2027d2075997a974",
+      "head": "codex/qcad-arcs-polylines",
+      "head_sha": "3176a16ac8ffc72257d4d7bb25ccdc7aa6bee57f",
+      "draft": false,
+      "merged": false,
+      "runs": [
+        {
+          "id": 38271101477,
+          "name": "OPEN CAD verification",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38271101477"
+        },
+        {
+          "id": 38271101559,
+          "name": "QCAD CE native spike",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38271101559"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "url": "https://github.com/aavaladez/open-cad-2d/pull/18",
+      "base": "codex/qcad-arcs-polylines",
+      "base_sha": "3176a16ac8ffc72257d4d7bb25ccdc7aa6bee57f",
+      "head": "codex/qcad-trim-extend-offset",
+      "head_sha": "f497601c127317197f3c9234e44db6f5d2f8ff67",
+      "draft": false,
+      "merged": false,
+      "runs": [
+        {
+          "id": 38272471456,
+          "name": "OPEN CAD verification",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38272471456"
+        },
+        {
+          "id": 38272471490,
+          "name": "QCAD CE native spike",
+          "conclusion": "success",
+          "url": "https://github.com/aavaladez/open-cad-2d/actions/runs/38272471490"
+        }
+      ]
+    }
+  ]
+}

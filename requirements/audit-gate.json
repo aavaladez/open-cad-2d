@@ -15,7 +15,7 @@
     "essential_commands": {
       "status": "partial",
       "cases": {},
-      "gap": "ARC/PLINE recta, selección, transformaciones y TRIM/EXTEND/OFFSET QCAD parciales comprobados; acotación e integración/candidata instalada pendientes"
+      "gap": "Dibujo/modificación/selección y acotación QCAD parciales comprobados; consolidación, variantes/corpus y candidata Windows instalada pendientes"
     },
     "autolisp": {
       "status": "partial",
@@ -25,7 +25,7 @@
     "dxf_cycle": {
       "status": "partial",
       "cases": {},
-      "gap": "Ciclo QCAD candidato/UI R2000-R2010 LINE/CIRCLE/ARC/PLINE recta y contraste independiente comprobados; cotas/textos, corpus amplio y candidata instalada pendientes"
+      "gap": "Ciclo candidato/UI LINE/CIRCLE/ARC/PLINE recta/cotas Standard contrastado, incluida conservación UTF8; texto libre/corpus amplio y candidata instalada pendientes"
     },
     "windows_installation": {
       "status": "pending",

@@ -5,9 +5,10 @@ import subprocess
 import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import contextmanager
+from copy import deepcopy
 from pathlib import Path
 from .model import Point, Line, Circle, Layer
-from .qcad_views import Arc,Polyline
+from .qcad_views import Arc,Polyline,Dimension
 from .commands import CommandBus,point
 
 PIN = '4c830eb4d80285ca64b1f2c2dc0987f729344126'
@@ -71,6 +72,10 @@ class QcadDocument:
                 result[i] = Arc(i,Point(*item['center']),item['radius'],item['start_angle'],item['end_angle'],layer)
             elif item['type']=='LWPOLYLINE':
                 result[i] = Polyline(i,tuple(Point(*p) for p in item['vertices']),item['closed'],layer)
+            elif item['type']=='DIMENSION':
+                result[i] = Dimension(i,item['dimension_type'],Point(*item['position']),item['text'],
+                    Point(*item['start']) if 'start' in item else None,Point(*item['end']) if 'end' in item else None,
+                    Point(*item['chord']) if 'chord' in item else None,item.get('angle'),deepcopy(item['render']),layer)
             else:
                 raise ValueError('Entidad no representable por la UI actual')
         return result
@@ -164,6 +169,8 @@ class QcadCommandBus(CommandBus):
         super().__init__(document)
         for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC'),('ARC','A'),('PLINE','PL'),('TRIM','TR'),('EXTEND','EX'),('OFFSET','O')]:
             self.definitions[name]={'aliases':[alias],'variant':'native subset'}; self.aliases[alias]=name
+        for name,alias in [('DIMLINEAR','DLI'),('DIMALIGNED','DAL'),('DIMRADIUS','DRA')]:
+            self.definitions[name]={'aliases':[alias],'variant':'native subset'}; self.aliases[alias]=name
         if aliases is not None: self.set_aliases(aliases)
 
     def edit_properties(self,ids,changes):
@@ -172,7 +179,18 @@ class QcadCommandBus(CommandBus):
 
     def execute(self,name,*args):
         canonical = self.aliases.get(name.upper().removeprefix('_'),name.upper().removeprefix('_'))
-        if canonical in ('TRIM','EXTEND'):
+        if canonical in ('DIMLINEAR','DIMALIGNED','DIMRADIUS'):
+            if canonical=='DIMRADIUS':
+                if len(args)==3 and str(args[0]).upper()=='ENTITY':
+                    arguments=dict(source=int(args[1]),picked=self.document.xyz(point(args[2])))
+                elif len(args)==2: arguments=dict(position=self.document.xyz(point(args[0])),chord=self.document.xyz(point(args[1])))
+                else: raise ValueError('DIMRADIUS centro punto-de-radio | DIMRADIUS ENTITY id punto')
+            else:
+                if len(args) not in ((3,4) if canonical=='DIMLINEAR' else (3,)): raise ValueError(canonical+' inicio fin posición [grados]')
+                arguments=dict(start=self.document.xyz(point(args[0])),end=self.document.xyz(point(args[1])),position=self.document.xyz(point(args[2])))
+                if canonical=='DIMLINEAR': arguments['angle']=float(args[3]) if len(args)==4 else 0
+            with self.document.transaction(): result=self.document.request('dimension',mode=canonical,**arguments)
+        elif canonical in ('TRIM','EXTEND'):
             if len(args) not in (3,4): raise ValueError(canonical+' límites-IDs objetivo-ID punto [tolerancia-pick]')
             targets=self.ids(args[1])
             if len(targets)!=1: raise ValueError('Un objetivo por operación TRIM/EXTEND')
@@ -213,7 +231,7 @@ class QcadCommandBus(CommandBus):
                 result = self.document.layer(str(args[0]).upper(),str(args[1]))
         else:
             result = super().execute(name,*args)
-        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY','ARC','PLINE','TRIM','EXTEND','OFFSET'):
+        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY','ARC','PLINE','TRIM','EXTEND','OFFSET','DIMLINEAR','DIMALIGNED','DIMRADIUS'):
             def translate(value):
                 if type(value) is int: return self.document.id_map.get(value,value)
                 if isinstance(value,list): return [translate(v) for v in value]

@@ -38,7 +38,8 @@ if(OPENCAD_BUILD_QCAD)
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-clayer.patch"
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-layer-off.patch"
         "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-off-import.patch"
-        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-arc-polyline-z.patch")
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-arc-polyline-z.patch"
+        "${CMAKE_CURRENT_SOURCE_DIR}/native/patches/qcad-dxf-dimension-z.patch")
     if(WIN32)
     add_library(qcad-audited-core SHARED IMPORTED)
     set_target_properties(qcad-audited-core PROPERTIES
@@ -71,7 +72,7 @@ if(OPENCAD_BUILD_QCAD)
     target_link_libraries(qcad-document-smoke PRIVATE qcad-audited-core
         qcad-audited-entity qcad-audited-operations qcad-audited-dxf Qt6::Widgets)
     add_dependencies(qcad-document-smoke qcad-ce)
-    add_executable(opencad-qcad-engine native/adapter/server.cpp native/adapter/session.cpp native/adapter/geometry_ops.cpp)
+    add_executable(opencad-qcad-engine native/adapter/server.cpp native/adapter/session.cpp native/adapter/geometry_ops.cpp native/adapter/dimensions.cpp)
     target_compile_features(opencad-qcad-engine PRIVATE cxx_std_17)
     get_target_property(OPENCAD_QCAD_INCLUDES qcad-document-smoke INCLUDE_DIRECTORIES)
     target_include_directories(opencad-qcad-engine PRIVATE ${OPENCAD_QCAD_INCLUDES} native/adapter)
@@ -103,6 +104,10 @@ if(OPENCAD_BUILD_QCAD)
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_cutting.py"
         --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
         --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/cutting-acceptance")
+    add_test(NAME qcad-dimensions COMMAND "${Python3_EXECUTABLE}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_dimensions.py"
+        --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
+        --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/dimensions-acceptance")
     add_test(NAME qcad-document COMMAND "${Python3_EXECUTABLE}"
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_document.py"
         --binary "$<TARGET_FILE:qcad-document-smoke>" --source "${OPENCAD_QCAD_SOURCE}"

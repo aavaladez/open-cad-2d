@@ -9,6 +9,8 @@ import os
 import tempfile
 from pathlib import Path
 import ezdxf
+from .qcad_dimensions_io import (dimension_record,prepare_generated_dimensions,validate_dimension_blocks,
+    add_dimension,apply_preset,caches_from_file,caches_from_view)
 
 
 def require(condition,message):
@@ -25,6 +27,7 @@ def inspect_dxf(path,generated=False,audit_log=None):
     require(path.suffix.lower()=='.dxf','Sólo DXF; DWG pendiente')
     require(path.is_file() and path.stat().st_size<=20_000_000,'DXF local de hasta 20 MB requerido')
     d=ezdxf.readfile(path)
+    if generated: prepare_generated_dimensions(d,audit_log)
     audit=d.audit()
     if audit_log is not None:
         audit_log.extend(dict(code=int(f.code),message=f.message) for f in audit.fixes)
@@ -36,9 +39,11 @@ def inspect_dxf(path,generated=False,audit_log=None):
     require(d.dxfversion in ('AC1015','AC1024'),'DXF R2000/R2010 requerido en esta etapa')
     require(all(layout.name=='Model' or layout.name in ('Layout1','Layout2') and not list(layout)
                 for layout in d.layouts),'Presentaciones personalizadas/con contenido no admitidas')
+    dimension_blocks={e.dxf.geometry.upper() for e in d.modelspace() if e.dxftype()=='DIMENSION'} if generated else validate_dimension_blocks(d)
     for b in d.blocks:
         require((b.name.upper()=='*MODEL_SPACE' or b.name.upper().startswith('*PAPER_SPACE')) and
-                (b.name.upper()=='*MODEL_SPACE' or not list(b)), 'Bloques fuera del subconjunto')
+                (b.name.upper()=='*MODEL_SPACE' or not list(b)) or b.name.upper() in dimension_blocks,
+                'Bloques fuera del subconjunto')
     for e in d.entitydb.values():
         if e.is_alive and not generated:
             require(not e.xdata and not e.has_extension_dict,'XDATA/diccionarios de extensión fuera del subconjunto')
@@ -83,12 +88,12 @@ def inspect_dxf(path,generated=False,audit_log=None):
             linetype='CONTINUOUS',lineweight=layer.dxf.lineweight)
     items=[]
     for e in d.modelspace():
-        require(not e.xdata and not e.has_extension_dict,'Metadatos de entidad pendientes')
-        require(e.dxftype() in ('LINE','CIRCLE','ARC','LWPOLYLINE'),'Entidad DXF fuera del subconjunto: '+e.dxftype())
+        require((not e.xdata or generated and e.dxftype()=='DIMENSION') and not e.has_extension_dict,'Metadatos de entidad pendientes')
+        require(e.dxftype() in ('LINE','CIRCLE','ARC','LWPOLYLINE','DIMENSION'),'Entidad DXF fuera del subconjunto: '+e.dxftype())
         require(e.dxf.layer.upper() in layers,'Entidad con capa ausente')
         require(e.dxf.color==256 and not e.dxf.hasattr('true_color') and e.dxf.linetype.upper()=='BYLAYER'
                 and e.dxf.lineweight==-1 and e.dxf.ltscale==1,'Atributos de entidad fuera del subconjunto')
-        require(tuple(e.dxf.get('extrusion',(0,0,1)))==(0,0,1) and e.dxf.get('thickness',0)==0,
+        require(tuple(e.dxf.get('extrusion',(0,0,1)))==(0,0,1) and (e.dxftype()=='DIMENSION' or e.dxf.get('thickness',0)==0),
                 'OCS/espesor fuera del subconjunto')
         require(e.dxf.get('invisible',0)==0 and not e.dxf.hasattr('transparency'),'Visibilidad/transparencia fuera del subconjunto')
         item=dict(type=e.dxftype(),layer=e.dxf.layer.upper(),color_index=256,linetype='BYLAYER',lineweight=-1,ltscale=1.0)
@@ -103,6 +108,7 @@ def inspect_dxf(path,generated=False,audit_log=None):
                 require(math.isfinite(start) and math.isfinite(end) and abs((end-start)%360)>1e-9,
                         'Arco degenerado/completo fuera del subconjunto')
                 item.update(start_angle=start%360,end_angle=end%360)
+        elif e.dxftype()=='DIMENSION': item.update(dimension_record(e))
         else:
             vs=list(e.get_points('xyseb'))
             require(e.dxf.flags & ~1==0 and e.dxf.get('const_width',0)==0 and
@@ -125,7 +131,7 @@ def inspect_dxf(path,generated=False,audit_log=None):
 def native_inventory(view):
     items=[]
     for e in view['entities']:
-        item={k:v for k,v in e.items() if k!='id'}
+        item={k:v for k,v in e.items() if k not in ('id','render')}
         item['layer']=item['layer'].upper(); item['linetype']=item['linetype'].upper()
         items.append(item)
     layers={}
@@ -164,6 +170,7 @@ def validated_export(document,path,expected):
     native_audit=[]
     equivalent(expected,inspect_dxf(path,generated=True,audit_log=native_audit))
     drawing=ezdxf.new('R2010'); drawing.units=expected['units']
+    apply_preset(drawing)
     for layer in list(drawing.layers):
         if layer.dxf.name.upper() not in expected['layers']: drawing.layers.remove(layer.dxf.name)
     for name,layer in expected['layers'].items():
@@ -183,9 +190,14 @@ def validated_export(document,path,expected):
         elif item['type']=='LWPOLYLINE': drawing.modelspace().add_lwpolyline(
             [p[:2] for p in item['vertices']],format='xy',close=item['closed'],
             dxfattribs=attrs|{'elevation':item['vertices'][0][2]})
+        elif item['type']=='DIMENSION':
+            source=next(e for e in document._view['entities'] if e['type']=='DIMENSION' and
+                {k:v for k,v in e.items() if k not in ('id','render','layer','linetype')}=={k:v for k,v in item.items() if k not in ('layer','linetype')})
+            add_dimension(drawing,item,source['render'])
         else: raise ValueError('Entidad sin writer validado: '+item['type'])
     drawing.saveas(path)
     equivalent(expected,inspect_dxf(path))
+    equivalent(ordered(caches_from_view(document._view)),ordered(caches_from_file(path)))
     document.last_dxf_validation=dict(native_audit_repairs=native_audit,
         native_geometry_attributes_verified=True,final_writer='ezdxf R2010',ezdxf_version=ezdxf.__version__)
 
@@ -196,11 +208,23 @@ def open_document(document,path):
     from .qcad_backend import QcadDocument
     candidate=QcadDocument(*document.backend_paths)
     try:
-        candidate.request('load',path=str(Path(path).resolve()),current_layer=original['current_layer'])
+        # The Qt6 CE importer treats char* text as UTF8 even for legacy codepages.
+        # Transcode the already-preflighted subset to a private R2010 input; verify
+        # semantic equivalence first. Original bytes and drawing remain untouched.
+        source=ezdxf.readfile(path)
+        normalized=source.dxfversion=='AC1015'
+        if normalized:
+            with tempfile.TemporaryDirectory(prefix='opencad-input-',dir=os.environ.get('OPENCAD_SCRATCH')) as folder:
+                native_input=Path(folder)/'utf8.dxf'; source.dxfversion='AC1024'; source.saveas(native_input)
+                equivalent(original,inspect_dxf(native_input))
+                candidate.request('load',path=str(native_input.resolve()),original_path=str(Path(path).resolve()),current_layer=original['current_layer'])
+        else: candidate.request('load',path=str(Path(path).resolve()),current_layer=original['current_layer'])
         equivalent(original,native_inventory(candidate._view))
+        equivalent(ordered(caches_from_file(path)),ordered(caches_from_view(candidate._view)))
         with tempfile.TemporaryDirectory(prefix='opencad-dxf-',dir=os.environ.get('OPENCAD_SCRATCH')) as folder:
             output=Path(folder)/'verification.dxf'
             validated_export(candidate,output,original)
+        candidate.last_dxf_validation['input_normalization']='ezdxf R2000 codepage to R2010 UTF8' if normalized else 'none'
         # Swap only after import and independently inspected export both agree.
         # The active document object stays stable for UI/bus/LSP references.
         for name in ('process','reader','log','_view'):

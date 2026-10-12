@@ -4799,7 +4799,7 @@
         "C": "DLI",
         "D": "Cota lineal horizontal o vertical"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Draw/Dimension/DimRotated/DimRotatedInit.js",
@@ -4814,10 +4814,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "extremos/posición/dirección XY, XYZ planar, entidad cota editable y DXF; estilos/otras opciones/asociación/LSP pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -4837,7 +4837,7 @@
         "C": "DAL",
         "D": "Cota alineada con el objeto"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Draw/Dimension/DimAligned/DimAlignedInit.js",
@@ -4852,10 +4852,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "extremos/posición planar, medida nativa, texto/propiedades/undo/DXF; estilos/opciones/asociación/LSP pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -4913,13 +4913,13 @@
         "C": "DRA",
         "D": "Cota de radio"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "centro/chord o curva/pick nativo, etiqueta R y texto, undo/DXF; estilos/líder/opciones/asociación/LSP pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_dimensions.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
