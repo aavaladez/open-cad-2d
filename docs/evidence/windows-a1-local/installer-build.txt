@@ -1,0 +1,919 @@
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.7.3
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\inno-reviewed\compiler\ISPPBuiltins.iss
+Parsing [Setup] section, line 8
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Creating output directory: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\installer
+Reading file (LicenseFile)
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+   Reading file: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\inno-reviewed\compiler\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Reading file: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\inno-reviewed\compiler\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 25
+Parsing [Files] section, line 23
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\OPEN-CAD-2D.exe
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-console-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-datetime-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-debug-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-fibers-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-fibers-l1-1-1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-file-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-file-l1-2-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-file-l2-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-handle-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-heap-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-localization-l1-2-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-memory-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-profile-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-string-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-synch-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-synch-l1-2-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-timezone-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-util-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-conio-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-convert-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-environment-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-heap-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-locale-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-math-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-private-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-process-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-string-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-time-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-utility-l1-1-0.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\base_library.zip
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\build-identity.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libcrypto-3-x64.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libffi-8.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libssl-3-x64.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\MSVCP140.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\MSVCP140_1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\MSVCP140_2.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\opennurbs.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\pyexpat.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\pyside6.abi3.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\python3.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\python312.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\qcadcore.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\qcadentity.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Concurrent.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Core.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Gui.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Network.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6OpenGL.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Pdf.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6PrintSupport.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Qml.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6QmlMeta.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6QmlModels.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6QmlWorkerScript.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Quick.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Svg.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Test.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6VirtualKeyboard.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Widgets.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\select.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\shiboken6.abi3.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ucrtbase.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\unicodedata.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\VCRUNTIME140.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\VCRUNTIME140_1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_asyncio.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_bz2.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_ctypes.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_decimal.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_elementtree.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_hashlib.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_lzma.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_multiprocessing.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_overlapped.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_queue.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_socket.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_ssl.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_uuid.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_wmi.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\charset_normalizer\cd.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\charset_normalizer\md.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\examples\plan_a1.lsp
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\examples\rectangle.lsp
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\bezier3p.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\bezier4p.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\bspline.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\construct.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\mapbox_earcut.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\matrix44.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\np_support.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\vector.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\fontTools\misc\bezierTools.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\fontTools\varLib\iup.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\OPEN-CAD-GPL-3.0.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\opennurbs.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\Python-3.12.14-LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\QCAD-LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\spatialindex.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\stemmer.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\altgraph-0.17.5.dist-info\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\ezdxf-1.4.3.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\fonttools-4.66.1.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\fonttools-4.66.1.dist-info\licenses\LICENSE.external
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\fft\pocketfft\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\linalg\lapack_lite\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\ma\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\distributions\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\mt19937\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\pcg64\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\philox\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\sfc64\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\splitmix64\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\include\numpy\libdivide\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\common\pythoncapi-compat\COPYING
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\highway\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\npysort\x86-simd-sort\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\umath\svml\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\packaging-26.3.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\packaging-26.3.dist-info\licenses\LICENSE.APACHE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\packaging-26.3.dist-info\licenses\LICENSE.BSD
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pefile-2023.2.7.dist-info\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyinstaller-6.16.0.dist-info\licenses\COPYING.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyinstaller_hooks_contrib-2026.8.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyparsing-3.3.3.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyside6-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyside6_addons-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyside6_essentials-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pywin32_ctypes-0.2.3.dist-info\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-for-python\GPL-3.0.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-for-python\LGPL-3.0-only.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.cdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.source.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.spdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.cdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.source.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.spdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.cdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.source.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.spdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.cdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.source.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.spdx
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.spdx.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\setuptools-84.0.0.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\shiboken6-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\typing_extensions-4.16.0.dist-info\licenses\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\builder.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\etree.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\objectify.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\sax.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\_elementpath.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\html\diff.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\html\_difflib.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\rng\iso-schematron.rng
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\RNG2Schtrn.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\XSD2Schtrn.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_abstract_expand.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_dsdl_include.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_message.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_skeleton_for_xslt1.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_svrl_for_xslt1.xsl
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\readme.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\opencad-qcad-engine.exe
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt.conf
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\dimensions.cpp
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\dimensions.h
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\geometry_ops.cpp
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\geometry_ops.h
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\server.cpp
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\session.cpp
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\session.h
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-arc-polyline-z.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-clayer.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-dimension-z.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-layer-off.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-off-import.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-z.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-msvc-link-paths.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\plugins\qcaddxf.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Concurrent.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Core.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Gui.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Network.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6PrintSupport.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Qml.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Svg.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Widgets.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\plugins\platforms\qoffscreen.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\msvcp140.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\msvcp140_1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\msvcp140_2.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\opennurbs.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\qcadcore.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\qcadentity.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\qcadoperations.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\vcruntime140.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\vcruntime140_1.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\fft\_pocketfft_umath.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\linalg\_umath_linalg.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\bit_generator.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\mtrand.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_bounded_integers.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_common.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_generator.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_mt19937.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_pcg64.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_philox.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_sfc64.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\_core\_multiarray_tests.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\_core\_multiarray_umath.cp312-win_amd64.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\DELVEWHEEL
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\entry_points.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\INSTALLER
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\METADATA
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\RECORD
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\WHEEL
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\fft\pocketfft\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\linalg\lapack_lite\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\ma\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\distributions\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\mt19937\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\pcg64\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\philox\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\sfc64\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\splitmix64\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\include\numpy\libdivide\LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\common\pythoncapi-compat\COPYING
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\highway\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\multiarray\dragon4_LICENSE.txt
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\npysort\x86-simd-sort\LICENSE.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\umath\svml\LICENSE
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy.libs\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy.libs\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\opencad\commands.json
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\opengl32sw.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtCore.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtGui.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtNetwork.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtTest.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtWidgets.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\generic\qtuiotouchplugin.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\iconengines\qsvgicon.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qgif.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qicns.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qico.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qjpeg.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qpdf.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qsvg.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qtga.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qtiff.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qwbmp.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qwebp.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\networkinformation\qnetworklistmanager.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforminputcontexts\qtvirtualkeyboardplugin.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qdirect2d.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qminimal.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qoffscreen.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qwindows.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\styles\qmodernwindowsstyle.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\tls\qcertonlybackend.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\tls\qopensslbackend.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\tls\qschannelbackend.dll
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ar.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_bg.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ca.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_cs.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_da.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_de.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_en.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_es.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_fa.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_fi.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_fr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_gd.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_he.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_hr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_hu.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_it.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ja.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ka.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ko.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_lg.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_lv.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_nl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_nn.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_pl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_pt_BR.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ru.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_sk.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_sv.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_tr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_uk.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_zh_CN.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_zh_TW.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ar.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_bg.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ca.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_cs.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_da.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_de.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_en.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_es.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_fa.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_fi.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_fr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_gd.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_gl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_he.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ar.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_bg.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ca.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_cs.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_da.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_de.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_en.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_es.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_fr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_gl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_hr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_hu.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_it.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ja.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ka.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ko.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_nl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_nn.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_pl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_pt_BR.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ru.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_sk.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_sl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_sv.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_tr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_uk.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_zh_CN.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_zh_TW.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_hr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_hu.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_it.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ja.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ka.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ko.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_lg.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_lt.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_lv.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_nl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_nn.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_pl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_pt_BR.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_pt_PT.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ru.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_sk.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_sl.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_sv.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_tr.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_uk.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_zh_CN.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_zh_TW.qm
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\shiboken6\Shiboken.pyd
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\OPEN-CAD-additions.zip
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\open-cad-base.zip
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\OPEN-CAD-local-changes.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\QCAD-local-changes.patch
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\qcad-reviewed.zip
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\SOURCES.md
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\app.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\commands.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\interop.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\lisp.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\model.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\packaged_checks.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\properties.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_backend.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_dimensions_io.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_interop.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_views.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\recovery.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\runtime_paths.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\__init__.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\apply_qcad_patch.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\audit_gate.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\audit_upstream.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\build_portable.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\build_qcad.ps1
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\cad_workflow.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_application.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_curves.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_cutting.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_dimensions.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_document.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_dxf.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_editing.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_geometry.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_lisp_essential.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_recovery.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_transforms.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\create_project_skills.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\generate_matrix.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\import_requirements.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\package_qcad_windows.py
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\prepare_inno.ps1
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\verify_windows_install.ps1
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\audit_gate.cpython-312.pyc
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\audit_gate.cpython-314.pyc
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\cad_workflow.cpython-312.pyc
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\cad_workflow.cpython-314.pyc
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\import_requirements.cpython-312.pyc
+   Reading version info: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\import_requirements.cpython-314.pyc
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\OPEN-CAD-2D.exe
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-console-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-datetime-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-debug-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-errorhandling-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-fibers-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-fibers-l1-1-1.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-file-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-file-l1-2-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-file-l2-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-handle-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-heap-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-interlocked-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-libraryloader-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-localization-l1-2-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-memory-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-namedpipe-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-processenvironment-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-processthreads-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-processthreads-l1-1-1.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-profile-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-string-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-synch-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-synch-l1-2-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-sysinfo-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-sysinfo-l1-2-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-timezone-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-core-util-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-conio-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-convert-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-environment-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-filesystem-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-heap-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-locale-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-math-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-private-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-process-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-runtime-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-stdio-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-string-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-time-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\api-ms-win-crt-utility-l1-1-0.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\base_library.zip
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\build-identity.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libcrypto-3-x64.dll   (3.6.4.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libffi-8.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\libssl-3-x64.dll   (3.6.4.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll   (14.40.33810.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\MSVCP140.dll   (14.44.35211.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\MSVCP140_1.dll   (14.44.35211.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\MSVCP140_2.dll   (14.44.35211.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\opennurbs.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\pyexpat.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\pyside6.abi3.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\python3.dll   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\python312.dll   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\qcadcore.dll   (3.33.1.3)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\qcadentity.dll   (3.33.1.3)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Concurrent.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Core.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Gui.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Network.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6OpenGL.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Pdf.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6PrintSupport.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Qml.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6QmlMeta.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6QmlModels.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6QmlWorkerScript.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Quick.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Svg.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Test.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6VirtualKeyboard.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\Qt6Widgets.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\select.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\shiboken6.abi3.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ucrtbase.dll   (10.0.26100.4654)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\unicodedata.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\VCRUNTIME140.dll   (14.44.35211.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\VCRUNTIME140_1.dll   (14.44.35211.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_asyncio.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_bz2.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_ctypes.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_decimal.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_elementtree.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_hashlib.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_lzma.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_multiprocessing.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_overlapped.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_queue.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_socket.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_ssl.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_uuid.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\_wmi.pyd   (3.12.14150.1013)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\charset_normalizer\cd.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\charset_normalizer\md.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\examples\plan_a1.lsp
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\examples\rectangle.lsp
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\bezier3p.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\bezier4p.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\bspline.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\construct.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\mapbox_earcut.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\matrix44.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\np_support.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\ezdxf\acc\vector.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\fontTools\misc\bezierTools.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\fontTools\varLib\iup.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\OPEN-CAD-GPL-3.0.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\opennurbs.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\Python-3.12.14-LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\QCAD-LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\spatialindex.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\stemmer.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\altgraph-0.17.5.dist-info\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\ezdxf-1.4.3.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\fonttools-4.66.1.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\fonttools-4.66.1.dist-info\licenses\LICENSE.external
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\fft\pocketfft\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\linalg\lapack_lite\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\ma\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\distributions\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\mt19937\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\pcg64\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\philox\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\sfc64\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\random\src\splitmix64\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\include\numpy\libdivide\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\common\pythoncapi-compat\COPYING
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\highway\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\npysort\x86-simd-sort\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\numpy-2.5.3.dist-info\licenses\numpy\_core\src\umath\svml\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\packaging-26.3.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\packaging-26.3.dist-info\licenses\LICENSE.APACHE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\packaging-26.3.dist-info\licenses\LICENSE.BSD
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pefile-2023.2.7.dist-info\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyinstaller-6.16.0.dist-info\licenses\COPYING.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyinstaller_hooks_contrib-2026.8.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyparsing-3.3.3.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyside6-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyside6_addons-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pyside6_essentials-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\pywin32_ctypes-0.2.3.dist-info\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-for-python\GPL-3.0.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-for-python\LGPL-3.0-only.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.cdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.source.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtbase-6.10.3.spdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.cdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.source.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtdeclarative-6.10.3.spdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.cdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.source.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qtsvg-6.10.3.spdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.cdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.source.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.spdx
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\qt-sdk-sbom\qttools-6.10.3.spdx.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\setuptools-84.0.0.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\shiboken6-6.10.3.dist-info\licenses\LicenseRef-Qt-Commercial.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\licenses\typing_extensions-4.16.0.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\builder.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\etree.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\objectify.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\sax.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\_elementpath.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\html\diff.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\html\_difflib.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\rng\iso-schematron.rng
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\RNG2Schtrn.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\XSD2Schtrn.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_abstract_expand.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_dsdl_include.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_message.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_skeleton_for_xslt1.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_svrl_for_xslt1.xsl
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\readme.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\opencad-qcad-engine.exe
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt.conf
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\dimensions.cpp
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\dimensions.h
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\geometry_ops.cpp
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\geometry_ops.h
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\server.cpp
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\session.cpp
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\adapter\session.h
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-arc-polyline-z.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-clayer.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-dimension-z.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-layer-off.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-off-import.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-dxf-z.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\patches\qcad-msvc-link-paths.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\plugins\qcaddxf.dll   (3.33.1.3)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Concurrent.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Core.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Gui.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Network.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6PrintSupport.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Qml.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Svg.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\bin\Qt6Widgets.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\qt\plugins\platforms\qoffscreen.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\msvcp140.dll   (14.50.35719.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\msvcp140_1.dll   (14.50.35719.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\msvcp140_2.dll   (14.50.35719.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\opennurbs.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\qcadcore.dll   (3.33.1.3)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\qcadentity.dll   (3.33.1.3)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\qcadoperations.dll   (3.33.1.3)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\vcruntime140.dll   (14.50.35719.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\native\release\vcruntime140_1.dll   (14.50.35719.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\fft\_pocketfft_umath.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\linalg\_umath_linalg.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\bit_generator.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\mtrand.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_bounded_integers.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_common.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_generator.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_mt19937.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_pcg64.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_philox.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\random\_sfc64.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\_core\_multiarray_tests.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy\_core\_multiarray_umath.cp312-win_amd64.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\DELVEWHEEL
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\entry_points.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\INSTALLER
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\METADATA
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\RECORD
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\WHEEL
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\fft\pocketfft\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\linalg\lapack_lite\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\ma\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\distributions\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\mt19937\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\pcg64\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\philox\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\sfc64\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\random\src\splitmix64\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\include\numpy\libdivide\LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\common\pythoncapi-compat\COPYING
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\highway\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\multiarray\dragon4_LICENSE.txt
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\npysort\x86-simd-sort\LICENSE.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy-2.5.3.dist-info\licenses\numpy\_core\src\umath\svml\LICENSE
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy.libs\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\numpy.libs\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll   (14.40.33810.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\opencad\commands.json
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\opengl32sw.dll
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtCore.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtGui.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtNetwork.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtTest.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\QtWidgets.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\generic\qtuiotouchplugin.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\iconengines\qsvgicon.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qgif.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qicns.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qico.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qjpeg.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qpdf.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qsvg.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qtga.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qtiff.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qwbmp.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\imageformats\qwebp.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\networkinformation\qnetworklistmanager.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforminputcontexts\qtvirtualkeyboardplugin.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qdirect2d.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qminimal.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qoffscreen.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\platforms\qwindows.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\styles\qmodernwindowsstyle.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\tls\qcertonlybackend.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\tls\qopensslbackend.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\plugins\tls\qschannelbackend.dll   (6.10.3.0)
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ar.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_bg.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ca.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_cs.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_da.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_de.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_en.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_es.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_fa.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_fi.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_fr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_gd.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_he.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_hr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_hu.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_it.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ja.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ka.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ko.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_lg.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_lv.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_nl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_nn.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_pl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_pt_BR.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_ru.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_sk.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_sv.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_tr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_uk.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_zh_CN.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qtbase_zh_TW.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ar.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_bg.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ca.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_cs.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_da.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_de.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_en.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_es.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_fa.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_fi.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_fr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_gd.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_gl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_he.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ar.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_bg.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ca.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_cs.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_da.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_de.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_en.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_es.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_fr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_gl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_hr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_hu.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_it.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ja.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ka.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ko.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_nl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_nn.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_pl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_pt_BR.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_ru.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_sk.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_sl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_sv.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_tr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_uk.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_zh_CN.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_help_zh_TW.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_hr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_hu.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_it.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ja.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ka.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ko.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_lg.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_lt.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_lv.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_nl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_nn.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_pl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_pt_BR.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_pt_PT.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_ru.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_sk.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_sl.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_sv.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_tr.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_uk.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_zh_CN.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\PySide6\translations\qt_zh_TW.qm
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\shiboken6\Shiboken.pyd
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\OPEN-CAD-additions.zip
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\open-cad-base.zip
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\OPEN-CAD-local-changes.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\QCAD-local-changes.patch
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\qcad-reviewed.zip
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\sources\SOURCES.md
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\app.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\commands.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\interop.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\lisp.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\model.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\packaged_checks.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\properties.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_backend.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_dimensions_io.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_interop.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\qcad_views.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\recovery.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\runtime_paths.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\src\opencad\__init__.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\apply_qcad_patch.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\audit_gate.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\audit_upstream.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\build_portable.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\build_qcad.ps1
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\cad_workflow.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_application.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_curves.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_cutting.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_dimensions.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_document.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_dxf.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_editing.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_geometry.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_lisp_essential.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_recovery.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\check_qcad_transforms.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\create_project_skills.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\generate_matrix.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\import_requirements.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\package_qcad_windows.py
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\prepare_inno.ps1
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\verify_windows_install.ps1
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\audit_gate.cpython-312.pyc
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\audit_gate.cpython-314.pyc
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\cad_workflow.cpython-312.pyc
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\cad_workflow.cpython-314.pyc
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\import_requirements.cpython-312.pyc
+   Compressing: C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\dist\OPEN-CAD-2D-Native\_internal\tools\__pycache__\import_requirements.cpython-314.pyc
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+
+Successful compile (57.157 sec). Resulting Setup program filename is:
+C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\build\windows-package-v4\installer\OPEN-CAD-2D-QCAD-A1-Setup.exe

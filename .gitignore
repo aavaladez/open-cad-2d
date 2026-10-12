@@ -6,6 +6,7 @@ __pycache__/
 *.py[cod]
 *.spec
 !packaging/opencad.spec
+!packaging/opencad-native.spec
 .coverage
 startup-error.log
 aqtinstall.log

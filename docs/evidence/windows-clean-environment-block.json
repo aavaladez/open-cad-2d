@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-12",
+  "kind": "environment_access_block",
+  "clean_windows_verified": false,
+  "host": "development Windows11 with Python, MSVC and Qt SDK",
+  "probes": {
+    "Get-Command ISCC.exe,makensis.exe,WindowsSandbox.exe": "not found before private compiler preparation",
+    "Get-Item $env:WINDIR/System32/WindowsSandbox.exe": "not found",
+    "Get-Command Get-VM,Get-VMHost": "not found",
+    "Get-Command VBoxManage.exe,vmrun.exe": "not found",
+    "connected_execution_hosts": "Local only; no accessible independent Windows image"
+  },
+  "scope": "These probes do not assert that no VM exists anywhere; no supported clean Windows environment is accessible to this task.",
+  "required_resource": "Independent Windows10/11 VM or machine with identified clean image, no Python/Qt/QCAD/MSVC installed and ordinary user desktop access",
+  "procedure": "docs/WINDOWS_A1_INSTALLATION.md",
+  "approval": "No next-phase approval inferred. No freeze while A1 incomplete."
+}

@@ -23,6 +23,10 @@ class QcadDocument:
         env = dict(os.environ)
         env['PATH'] = os.pathsep.join([str(source/'release'),str(source/'plugins'),str(qt/'bin'),env.get('PATH','')])
         env['QT_QPA_PLATFORM'] = 'offscreen'
+        # A frozen PySide parent sets its own Qt plugin paths. The native child
+        # uses the separately bundled SDK runtime and must never inherit them.
+        env['QT_PLUGIN_PATH']=str(qt/'plugins')
+        env['QT_QPA_PLATFORM_PLUGIN_PATH']=str(qt/'plugins/platforms')
         self.log = tempfile.TemporaryFile()
         self.reader = ThreadPoolExecutor(max_workers=1,thread_name_prefix='qcad-response')
         self.process = subprocess.Popen([str(binary)],stdin=subprocess.PIPE,stdout=subprocess.PIPE,

@@ -181,3 +181,16 @@ Ruta original informativa; guardar copia explícita. Reutilizar el writer conser
 sin convertir vistas Python en motor editable. No atribuirlo a RECOVER del Excel.
 Caducidad entre sesiones y tolerancia a apagado brusco quedan sin acreditar.
 Pruebas: native/RECOVERY.md, tests/test_recovery.py y check_qcad_recovery.py.
+
+## ADR-021 — paquete Windows nativo y bloqueo de validación independiente
+
+2026-10-12: reutilizar build #21; UI PyInstaller, dependencias PE nativas y Qt SDK
+separado; preservar plugins/qcaddxf. Inno6.7.3 oficial, hash publicado, Authenticode
+válido y licencia revisada; compilador privado en caché. Recetas previas conservadas.
+Sin fallback temporal ante motor ausente. Nueve helpers reutilizados desde instalado,
+con fuentes/recursos de evidencia. Copias Git archive más parches/adiciones; no
+recorrer carpetas del usuario. Licencias/fuentes de todas las dependencias pendientes
+de revisión antes de redistribución pública. PATH restringido no demuestra Windows
+limpio. Sin imagen independiente accesible: seis criterios parciales/candidate null,
+procedimiento pendiente documentado. No habilitar virtualización/cambiar protección.
+CI publica evidencias, no binarios/release ni autorización de fase siguiente.

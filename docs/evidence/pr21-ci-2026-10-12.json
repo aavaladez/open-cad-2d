@@ -1,0 +1,11 @@
+{
+  "pr": 21,
+  "head_sha": "b222cf2c67e749fc1287225147edce074a2b179a",
+  "base": "codex/qcad-lisp-essential",
+  "base_sha": "da10bc15046dd0b3558617f21a5d8184e9021815",
+  "general": {"run": 38301272546, "conclusion": "success"},
+  "native": {"run": 38301272572, "conclusion": "success"},
+  "ready_after_success": true,
+  "merged": false,
+  "date": "2026-10-12"
+}

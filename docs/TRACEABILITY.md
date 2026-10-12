@@ -67,3 +67,11 @@ transaction_active → QcadDocument._confirmed_view → RecoveryStore → restor
 intacto, restauración Qt/QCAD, LSP reiniciado, DXF) y cinco límites test_recovery.py.
 native/RECOVERY.md y evidence/qcad-recovery*. No reparar DXF arbitrarios ni acreditar
 RECOVER por esta función. CI #19/#20 success exacthead: evidence/pr19-20-ci-2026-10-12.json.
+
+Distribución A1 desde PR21: runtime_paths/backend_paths, entorno hijo QCAD,
+opencad-native.spec → package_qcad_windows → opencad-native.iss → verify_windows_install.
+342 comprobaciones de nueve helpers existentes desde instalado y58 tests Python;
+instalar/ejecutar/desinstalar exit0 y dibujo conservado. evidence/windows-a1-local/.
+audit-gate.json referencia development_evidence de cada criterio, sin verified.
+WINDOWS_A1_INSTALLATION.md registra recurso/procedimiento pendiente para Windows
+limpio y commit estable. No aumenta catálogo/cobertura ni congela candidata.

@@ -5,34 +5,106 @@
     "qcad_documents": {
       "status": "partial",
       "cases": {},
-      "gap": "Documento UI/LSP/DXF transaccional y recuperación del estado confirmado comprobados en subconjunto; candidata instalada pendiente"
+      "gap": "Paquete instalado probado en host de desarrollo; falta candidata de commit estable e instalación/observación funcional en Windows limpio independiente. Ver docs/WINDOWS_A1_INSTALLATION.md.",
+      "development_evidence": [
+        {
+          "path": "docs/evidence/windows-a1-local/application.json",
+          "sha256": "ca16ca44fb1ce925de9570cec6526e201d1e393b3c2ecfcce0661341ed2f8393"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/dxf.json",
+          "sha256": "08079e0b6f5c0b4800067f5419f817f738df0e7c0fc15aac1e453d686d9dc64b"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/recovery.json",
+          "sha256": "d148f4d4b197773480a3e7f61078972e6cf4f050a2473afed5c0b46fca929e90"
+        }
+      ]
     },
     "functional_ui": {
       "status": "partial",
       "cases": {},
-      "gap": "Ribbon/consola/capas/propiedades LINE-CIRCLE-ARC-PLINE y selección QCAD comprobados parcialmente; integración restante, DPI/accesibilidad y candidata instalada pendientes"
+      "gap": "Paquete instalado probado en host de desarrollo; falta candidata de commit estable e instalación/observación funcional en Windows limpio independiente. Ver docs/WINDOWS_A1_INSTALLATION.md.",
+      "development_evidence": [
+        {
+          "path": "docs/evidence/windows-a1-local/application.json",
+          "sha256": "ca16ca44fb1ce925de9570cec6526e201d1e393b3c2ecfcce0661341ed2f8393"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/editing.json",
+          "sha256": "e7c5ae5be6cf05914d81c1c5a7f397918d74e1ca107c1d362964127ec5b297e9"
+        }
+      ]
     },
     "essential_commands": {
       "status": "partial",
       "cases": {},
-      "gap": "Dibujo/modificación/selección y acotación QCAD parciales comprobados; consolidación, variantes/corpus y candidata Windows instalada pendientes"
+      "gap": "Paquete instalado probado en host de desarrollo; falta candidata de commit estable e instalación/observación funcional en Windows limpio independiente. Ver docs/WINDOWS_A1_INSTALLATION.md.",
+      "development_evidence": [
+        {
+          "path": "docs/evidence/windows-a1-local/curves.json",
+          "sha256": "8c0ffa993d21a9c5f6c18d2a0c2c978dc8c2e0aa559d83ee50ac3a5c71e93ea8"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/cutting.json",
+          "sha256": "b860a324b6b8dd0bb17a6e81757385df9eda66464909c85a3a09e628ecb4d458"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/transforms.json",
+          "sha256": "20002c06b969b83bbe2065fd76971b9380c3d553935110317f85a29f0ad184b0"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/dimensions.json",
+          "sha256": "add0ce0558a776247705fdbe6f86bb32c937907a1c7e8fdb3c5bb3468ad9f220"
+        }
+      ]
     },
     "autolisp": {
       "status": "partial",
       "cases": {},
-      "gap": "LSP propio de dibujo/cotas/modificación y comandos personalizados comprobados sobre QCAD; prompts/variantes/corpus y candidata instalada pendientes"
+      "gap": "Paquete instalado probado en host de desarrollo; falta candidata de commit estable e instalación/observación funcional en Windows limpio independiente. Ver docs/WINDOWS_A1_INSTALLATION.md.",
+      "development_evidence": [
+        {
+          "path": "docs/evidence/windows-a1-local/lisp_essential.json",
+          "sha256": "2c5f8cb3920914c6b711f6d6da393a35a5f66fbd3ad8fca0e2eaaae7fc375f9c"
+        }
+      ]
     },
     "dxf_cycle": {
       "status": "partial",
       "cases": {},
-      "gap": "Ciclo candidato/UI LINE/CIRCLE/ARC/PLINE recta/cotas Standard contrastado, incluida conservación UTF8; texto libre/corpus amplio y candidata instalada pendientes"
+      "gap": "Paquete instalado probado en host de desarrollo; falta candidata de commit estable e instalación/observación funcional en Windows limpio independiente. Ver docs/WINDOWS_A1_INSTALLATION.md.",
+      "development_evidence": [
+        {
+          "path": "docs/evidence/windows-a1-local/dxf.json",
+          "sha256": "08079e0b6f5c0b4800067f5419f817f738df0e7c0fc15aac1e453d686d9dc64b"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/dimensions.json",
+          "sha256": "add0ce0558a776247705fdbe6f86bb32c937907a1c7e8fdb3c5bb3468ad9f220"
+        }
+      ]
     },
     "windows_installation": {
-      "status": "pending",
+      "status": "partial",
       "cases": {},
-      "gap": "Portable probado; instalación funcional aún no verificada"
+      "gap": "Paquete instalado probado en host de desarrollo; falta candidata de commit estable e instalación/observación funcional en Windows limpio independiente. Ver docs/WINDOWS_A1_INSTALLATION.md.",
+      "development_evidence": [
+        {
+          "path": "docs/evidence/windows-a1-local/installation.json",
+          "sha256": "a797f3480b9cf7510621ce3a1aa9e5480352410a707deab62d2558cb2e44110d"
+        },
+        {
+          "path": "docs/evidence/windows-a1-local/packaged-report.json",
+          "sha256": "2f3d85eb37d43cbdbed4d295319b075622f8d2ff98d8993ac2b04a407d5c8f74"
+        }
+      ]
     }
   },
   "findings": [],
-  "audit_areas": {}
+  "audit_areas": {},
+  "environment_block": {
+    "path": "docs/evidence/windows-clean-environment-block.json",
+    "sha256": "fcfb77dfefa90d814b86a160cb18c5df858db0e33c11f9be1b3fb38845eaab3d"
+  }
 }

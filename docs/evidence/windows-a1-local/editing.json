@@ -1,0 +1,150 @@
+{
+  "kind": "application_integration_partial",
+  "installed": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "checks": {
+    "point_projected_xy": true,
+    "window_contains": true,
+    "crossing_intersects": true,
+    "window_excludes_partial": true,
+    "circle_interior_not_curve": true,
+    "native_endpoint_edited": true,
+    "property_undo": true,
+    "mixed_invalid_atomic": true,
+    "redo_after_rejected_property": true,
+    "circle_properties": true,
+    "invalid_radius_atomic": true,
+    "zero_line_atomic": true,
+    "destination_locked": true,
+    "batch_layer": true,
+    "batch_layer_single_undo": true,
+    "source_locked": true,
+    "ui_pick": true,
+    "ui_property_edit": true,
+    "ui_property_undo_sync": true,
+    "ui_property_redo_sync": true,
+    "ui_accumulate": true,
+    "ui_shift_remove": true,
+    "ui_escape_clears": true,
+    "ui_window_drag": true,
+    "ui_move_selection": true,
+    "move_selection_undo": true,
+    "move_cancel_no_edit": true,
+    "ui_crossing_drag": true,
+    "properties_dxf_reopened": true,
+    "screenshot": true
+  },
+  "passed": true,
+  "identity": {
+    "engine": "qcad",
+    "protocol": 1,
+    "revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "engine_sha256": "305bef6ee2fcc8ab0aec60ae5482160c70e75c30c59021b10987b9fdece18e8c",
+  "observed": {
+    "current_layer": "0",
+    "entities": [
+      {
+        "center": [
+          22,
+          2,
+          11
+        ],
+        "color_index": 256,
+        "id": 13,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 6,
+        "type": "CIRCLE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          14,
+          6,
+          9
+        ],
+        "id": 14,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          40,
+          40,
+          4
+        ],
+        "id": 15,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          30,
+          30,
+          4
+        ],
+        "type": "LINE"
+      }
+    ],
+    "layers": [
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": 25,
+        "locked": false,
+        "name": "0",
+        "visible": true
+      },
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "Defpoints",
+        "visible": true
+      },
+      {
+        "color": "#d6e2ec",
+        "color_index": -1,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "EDITED",
+        "visible": true
+      },
+      {
+        "color": "#d6e2ec",
+        "color_index": -1,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": true,
+        "name": "LOCKED",
+        "visible": true
+      }
+    ],
+    "transaction_active": false,
+    "units": 0
+  }
+}
