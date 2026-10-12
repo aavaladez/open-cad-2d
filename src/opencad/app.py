@@ -5,7 +5,7 @@ import os
 import sys
 from pathlib import Path
 from math import hypot
-from PySide6.QtCore import Qt, QPointF, QRectF, Signal
+from PySide6.QtCore import Qt, QPointF, QRectF, Signal,QTimer
 from PySide6.QtGui import QColor, QPainter, QPen, QKeySequence, QAction, QFontDatabase, QFont
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
     QHBoxLayout, QTabWidget, QPushButton, QLabel, QDockWidget, QPlainTextEdit,
@@ -184,7 +184,7 @@ class Canvas(QWidget):
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, document=None):
+    def __init__(self, document=None,recovery_root=None):
         super().__init__()
         self.doc = document if document is not None else Document()
         if document is not None:
@@ -200,6 +200,12 @@ class MainWindow(QMainWindow):
         self.boundary_selection = set()
         self.offset_target = None
         self.offset_distance = None
+        self.recovery_store=None; self.recovery_pending=None; self.recovery_signature=None
+        if document is not None:
+            from .recovery import RecoveryStore,default_root
+            self.recovery_store=RecoveryStore(recovery_root or default_root())
+            self.recovery_timer=QTimer(self); self.recovery_timer.setSingleShot(True)
+            self.recovery_timer.setInterval(1500); self.recovery_timer.timeout.connect(self.flush_recovery)
         self.setWindowTitle("OPEN CAD 2D · Prototipo 0.1")
         if document is not None:
             self.setWindowTitle("OPEN CAD 2D · QCAD integrado experimental")
@@ -254,6 +260,8 @@ QDockWidget::title {padding:7px;background:#344353;}
             b = QPushButton(label)
             b.clicked.connect(action)
             row.addWidget(b)
+        if document is not None:
+            restore=QPushButton('Restaurar respaldo'); restore.clicked.connect(self.restore_recovery); row.addWidget(restore)
         row.addStretch()
         self.ribbon.addTab(files,"Archivo y extensiones")
         if document is not None: self.ribbon.addTab(curves,'Curvas 2D')
@@ -333,6 +341,37 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.properties.setPlainText("\n".join(info) if info else f"{len(self.doc.entities)} entidades\nCapa actual: {self.doc.current_layer}\nSeleccione una entidad para consultar sus atributos.")
         self.properties.refresh()
         self.canvas.update()
+        if self.recovery_store is not None and self.doc._confirmed_view is not None:
+            from .qcad_interop import native_inventory
+            signature=json.dumps(native_inventory(self.doc._confirmed_view),sort_keys=True)
+            if signature!=self.recovery_signature:
+                self.recovery_signature=signature; self.recovery_timer.start()
+
+    def flush_recovery(self):
+        if self.recovery_store is None:return
+        try:self.recovery_pending=self.recovery_store.checkpoint(self.doc)
+        except (ValueError,RuntimeError,OSError,TypeError) as error:
+            self.history.appendPlainText('No se pudo crear respaldo de recuperación: '+str(error))
+
+    def restore_recovery(self):
+        try:
+            if self.doc.process.poll() is not None and self.doc._confirmed_view is not None:
+                # Native process failure leaves the last acknowledged state in
+                # memory. Preserve it before replacing the process/document.
+                metadata=self.recovery_store.checkpoint(self.doc)
+            else:
+                path,_=QFileDialog.getOpenFileName(self,'Respaldo QCAD',str(self.recovery_store.root),'Respaldo (*.json)')
+                if not path:return
+                metadata=Path(path)
+            answer=QMessageBox.question(self,'Restaurar documento',
+                'Restaurar sólo el documento confirmado del respaldo. Sustituye el dibujo activo; reinicia undo/redo, selección y sesión LSP. '
+                'La última operación sin confirmación puede faltar. El original no se sobrescribe. ¿Continuar?',
+                QMessageBox.StandardButton.Yes|QMessageBox.StandardButton.No,QMessageBox.StandardButton.No)
+            if answer!=QMessageBox.StandardButton.Yes:return
+            self.recovery_store.restore(self.doc,metadata)
+            self.lisp=LispRuntime(self.bus); self.selected.clear(); self.cancel(); self.refresh(); self.canvas.fit()
+            self.history.appendPlainText('Documento recuperado en QCAD; historial/selección/LSP reiniciados. Vuelva a cargar sus rutinas y guarde una copia.')
+        except (ValueError,RuntimeError,OSError,TypeError,KeyError) as error:self.dialog_error('Recuperación',error)
 
     def set_layer(self,name):
         if name:
@@ -561,6 +600,7 @@ QDockWidget::title {padding:7px;background:#344353;}
 
     def closeEvent(self,event):
         if not isinstance(self.doc,Document):
+            self.recovery_timer.stop(); self.flush_recovery()
             self.doc.close()
         super().closeEvent(event)
 

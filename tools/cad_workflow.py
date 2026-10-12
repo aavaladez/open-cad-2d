@@ -12,6 +12,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+os.environ.setdefault('OPENCAD_RECOVERY_DIR',str(ROOT/'build/test-recovery'))
 DEPS = os.environ.get("OPENCAD_DEPS_DIR",str(ROOT/".cache/python"))
 sys.path[:0] = [str(ROOT/"src"), DEPS]
 

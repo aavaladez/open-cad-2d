@@ -168,3 +168,16 @@ COMMAND NIL, límites de ejecución y rollback de geometría/runtime/redo. Archi
 propio plan_a1.lsp aporta creación/dibujo/cotas y modificación como lotes analíticos.
 No implementar API de ENAME ni capacidades externas por este cambio; no paridad
 AutoLISP completa ni gate A1 aprobado por tests parciales de desarrollo.
+
+## ADR-020 — recuperación confirmada sin motor alternativo
+
+2026-10-12: QCAD declara estado transaccional; conservar último snapshot reconocido
+separado de staging. Un proceso fallido no permite continuar edición ni mostrar
+cambios sin confirmar. Recuperar desde un DXF privado validado y hash hacia otro
+documento QCAD candidato. Publicación atómica del manifest, dos generaciones propias
+por sesión; conservar sesiones anteriores sin borrar archivos desconocidos.
+La UI explica reinicio de historial/selección/LSP y pide confirmación al reemplazar.
+Ruta original informativa; guardar copia explícita. Reutilizar el writer conservador
+sin convertir vistas Python en motor editable. No atribuirlo a RECOVER del Excel.
+Caducidad entre sesiones y tolerancia a apagado brusco quedan sin acreditar.
+Pruebas: native/RECOVERY.md, tests/test_recovery.py y check_qcad_recovery.py.

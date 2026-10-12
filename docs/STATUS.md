@@ -20,6 +20,15 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- Recuperación privada del último estado QCAD confirmado, separada de staging.
+  Manifest/hash/publicación atómica y dos generaciones por sesión; candidato QCAD
+  con confirmación/reinicio de historial, selección y LSP. Original intacto.
+  21 comprobaciones por runtime Python3.12/3.14, 58 tests y CTest12/12; captura
+  inspeccionada. native/RECOVERY.md y evidence/qcad-recovery*. CI general/nativa
+  #19/#20 aprobada en heads exactos; listos para revisión sin merge. Cadena
+  #13–#20 conservada. A1 sigue0/6: aplicación nativa empaquetada/instalada y
+  Windows limpio sobre una misma candidata pendientes.
+
 - Consolidación LSP de capacidades existentes: allowlist nativa explícita para
   ARC/PLINE, transformaciones, TRIM/EXTEND/OFFSET y las tres cotas. COMMAND NIL,
   aliases sin ampliación de permisos; límite/rollback/historial conservados.

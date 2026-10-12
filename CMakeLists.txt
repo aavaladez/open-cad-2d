@@ -112,6 +112,10 @@ if(OPENCAD_BUILD_QCAD)
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_lisp_essential.py"
         --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
         --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/lisp-essential-acceptance")
+    add_test(NAME qcad-recovery COMMAND "${Python3_EXECUTABLE}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_recovery.py"
+        --binary "$<TARGET_FILE:opencad-qcad-engine>" --source "${OPENCAD_QCAD_SOURCE}"
+        --qt "${CMAKE_PREFIX_PATH}" --output "${CMAKE_CURRENT_BINARY_DIR}/recovery-acceptance")
     add_test(NAME qcad-document COMMAND "${Python3_EXECUTABLE}"
         "${CMAKE_CURRENT_SOURCE_DIR}/tools/check_qcad_document.py"
         --binary "$<TARGET_FILE:qcad-document-smoke>" --source "${OPENCAD_QCAD_SOURCE}"

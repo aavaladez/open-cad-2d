@@ -210,7 +210,7 @@ QJsonObject CadSession::snapshot() {
             {"display_color",color.getColorIndex()==7 ? QStringLiteral("#d6e2ec") : color.name()},
             {"visible",!layer->isOff() && !layer->isFrozen()},{"locked",layer->isLocked()}});
     }
-    return {{"entities",list},{"layers",layerList},{"current_layer",currentLayer},{"units",int(document().getUnit())}};
+    return {{"entities",list},{"layers",layerList},{"current_layer",currentLayer},{"units",int(document().getUnit())},{"transaction_active",editing}};
 }
 QJsonObject CadSession::request(const QJsonObject& input) {
     const QString action=input["action"].toString();

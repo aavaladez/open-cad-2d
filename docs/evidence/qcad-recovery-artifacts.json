@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-12",
+  "kind": "development_evidence",
+  "installed": false,
+  "base_revision": "da10bc15046dd0b3558617f21a5d8184e9021815",
+  "checks_per_runtime": 21,
+  "unittest_per_runtime": 58,
+  "ctest_suites": 12,
+  "artifacts": [
+    {
+      "path": "docs/evidence/qcad-recovery.json",
+      "sha256": "b521fb27c4357b7f3ff1bcea8b1b5a6fa44d29d1aed0bf8f436996ea79d9f803"
+    },
+    {
+      "path": "docs/evidence/qcad-recovery-python312.json",
+      "sha256": "0fc533aed55c544e04d6e3994b24644e807acaa622aff45c73dd37f15464908e"
+    },
+    {
+      "path": "docs/evidence/qcad-recovery.png",
+      "sha256": "08023647cd60988fb581e63c29f2638e63c3d71b2cebc6feb1c542e48af5708e"
+    },
+    {
+      "path": "docs/evidence/qcad-recovery-regression.json",
+      "sha256": "6e94de7bca3a94e3e6221e853523abb47b9953b5f4609e6f044472acd79d1f0c"
+    },
+    {
+      "path": "docs/evidence/qcad-recovery-regression-python312.txt",
+      "sha256": "1a5e155830863c2a7254ffe8654f5e8c79b65eb2ee4532afb911a40d4151d59e"
+    },
+    {
+      "path": "docs/evidence/qcad-recovery-ctest.txt",
+      "sha256": "4c5ebebe6430ec8e762998fa0e7b7afb43714a4088d1653a53deae06ca398deb"
+    }
+  ],
+  "limits": [
+    "A1 not verified",
+    "Windows clean installation pending",
+    "no power-loss guarantee",
+    "prior sessions retained"
+  ]
+}
