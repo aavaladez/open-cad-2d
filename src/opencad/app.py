@@ -9,7 +9,7 @@ from PySide6.QtCore import Qt, QPointF, QRectF, Signal
 from PySide6.QtGui import QColor, QPainter, QPen, QKeySequence, QAction, QFontDatabase, QFont
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
     QHBoxLayout, QTabWidget, QPushButton, QLabel, QDockWidget, QPlainTextEdit,
-    QLineEdit, QListWidget, QFormLayout, QFileDialog, QMessageBox)
+    QLineEdit, QListWidget, QFormLayout, QFileDialog, QMessageBox,QInputDialog)
 from .model import Document, Point, Line, Circle
 from .qcad_views import Arc,Polyline
 from .commands import CommandBus
@@ -182,6 +182,9 @@ class MainWindow(QMainWindow):
         self.mode = None
         self.anchor = None
         self.pending_points = []
+        self.boundary_selection = set()
+        self.offset_target = None
+        self.offset_distance = None
         self.setWindowTitle("OPEN CAD 2D · Prototipo 0.1")
         if document is not None:
             self.setWindowTitle("OPEN CAD 2D · QCAD integrado experimental")
@@ -218,6 +221,10 @@ QDockWidget::title {padding:7px;background:#344353;}
                     ('Finalizar polilínea',lambda:self.finish_polyline(False)),('Cerrar polilínea',lambda:self.finish_polyline(True))]:
                 button=QPushButton(label); button.clicked.connect(action); curve_row.addWidget(button)
             curve_row.addStretch()
+            modify=QWidget(); modify_row=QHBoxLayout(modify)
+            for label,action in [('Recortar',lambda:self.start_cut('TRIM')),('Alargar',lambda:self.start_cut('EXTEND')),('Desfase',self.start_offset)]:
+                button=QPushButton(label); button.clicked.connect(action); modify_row.addWidget(button)
+            modify_row.addStretch()
         row.addStretch()
         self.ribbon.addTab(home,"Inicio")
         files = QWidget()
@@ -229,6 +236,7 @@ QDockWidget::title {padding:7px;background:#344353;}
         row.addStretch()
         self.ribbon.addTab(files,"Archivo y extensiones")
         if document is not None: self.ribbon.addTab(curves,'Curvas 2D')
+        if document is not None: self.ribbon.addTab(modify,'Modificar 2D')
         layout.addWidget(self.ribbon)
         self.drawing_tabs = QTabWidget()
         self.drawing_tabs.addTab(self.canvas,"Dibujo1 · Modelo")
@@ -337,6 +345,7 @@ QDockWidget::title {padding:7px;background:#344353;}
     def start(self,mode):
         self.mode,self.anchor = mode,None
         self.pending_points=[]
+        self.boundary_selection=set(); self.offset_target=None
         self.history.appendPlainText(mode + ": indique primer punto o centro. Escape cancela.")
         if mode=='PLINE': self.history.appendPlainText('PLINE recta: puntos sucesivos; Finalizar/Enter confirma, Cierra con CLOSE. Escape descarta el lote.')
         if mode=='ARC': self.history.appendPlainText('ARC: punto inicial, intermedio y final, en ese orden.')
@@ -347,6 +356,7 @@ QDockWidget::title {padding:7px;background:#344353;}
         if self.mode is None: self.selected.clear(); self.refresh()
         self.mode,self.anchor = None,None
         self.pending_points=[]
+        self.boundary_selection=set(); self.offset_target=None
         self.canvas.selection_start=self.canvas.selection_end=None
         self.canvas.update()
 
@@ -360,6 +370,19 @@ QDockWidget::title {padding:7px;background:#344353;}
         coordinates=' '.join(f'{p.x},{p.y},{p.z}' for p in self.pending_points)
         if self.execute('PLINE '+coordinates+(' CLOSE' if closed else '')): self.cancel()
 
+    def start_cut(self,mode):
+        if not self.selected:
+            self.history.appendPlainText(mode+': seleccione las aristas límite y vuelva a pulsar la herramienta'); return
+        boundaries=set(self.selected); self.start(mode); self.boundary_selection=boundaries
+        self.history.appendPlainText(mode+': pulse la porción de LINE a retirar o el extremo a alargar. Límites finitos en XY; Escape termina.')
+
+    def start_offset(self):
+        distance,accepted=QInputDialog.getDouble(self,'Desfase','Distancia positiva',1,0,1e12,6)
+        if not accepted: return
+        if distance<=0: self.history.appendPlainText('OFFSET: distancia positiva requerida'); return
+        self.start('OFFSET'); self.offset_distance=distance
+        self.history.appendPlainText('OFFSET: pulse LINE/CIRCLE/ARC y después un punto del lado. Escape cancela.')
+
     def merge_selection(self,ids,modifiers):
         if modifiers & Qt.KeyboardModifier.ShiftModifier: self.selected.difference_update(ids)
         elif modifiers & Qt.KeyboardModifier.ControlModifier: self.selected.symmetric_difference_update(ids)
@@ -372,6 +395,22 @@ QDockWidget::title {padding:7px;background:#344353;}
 
     def on_point(self,p,modifiers=Qt.KeyboardModifier.NoModifier):
         if self.mode:
+            if self.mode in ('TRIM','EXTEND','OFFSET'):
+                try:
+                    tolerance=8/self.canvas.scale
+                    if self.mode=='OFFSET' and self.offset_target is not None:
+                        if self.execute(f'OFFSET {self.offset_target} {self.offset_distance} {p.x},{p.y},{p.z}'): self.cancel()
+                    else:
+                        targets=self.doc.select('point',p,tolerance=tolerance)-self.boundary_selection
+                        if not targets: raise ValueError('No hay un objetivo válido en el punto')
+                        target=min(targets)
+                        if self.mode=='OFFSET':
+                            self.offset_target=target; self.history.appendPlainText('OFFSET: indique el lado de la copia')
+                        else:
+                            ids=','.join(str(i) for i in sorted(self.boundary_selection))
+                            self.execute(f'{self.mode} {ids} {target} {p.x},{p.y},{p.z} {tolerance}')
+                except (ValueError,RuntimeError) as error: self.history.appendPlainText('Error: '+str(error))
+                return
             if self.mode in ('ARC','PLINE'):
                 self.pending_points.append(p); self.anchor=p
                 if self.mode=='ARC' and len(self.pending_points)==3:

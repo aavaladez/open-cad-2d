@@ -1,0 +1,524 @@
+{
+  "kind": "application_integration_partial",
+  "installed": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "qt": "6.10.3",
+  "checks": {
+    "trim_endpoint_analytic_z": true,
+    "boundary_unmodified": true,
+    "trim_single_undo": true,
+    "trim_redo": true,
+    "trim_start_analytic_z": true,
+    "trim_circle_middle_split": true,
+    "trim_split_single_undo": true,
+    "trim_split_redo": true,
+    "trim_polyline_finite_edges": true,
+    "trim_arc_native_roots": true,
+    "trim_arc_z_interpolated": true,
+    "arc_support_circle_not_boundary": true,
+    "finite_boundary_no_imaginary_trim": true,
+    "trim_pick_on_boundary_ambiguous": true,
+    "trim_off_target_pick": true,
+    "self_boundary_rejected": true,
+    "extend_nearest_boundary_xyz": true,
+    "extend_single_undo": true,
+    "extend_redo": true,
+    "extend_start_xyz": true,
+    "extend_midpoint_ambiguous": true,
+    "extend_wrong_direction": true,
+    "extend_finite_boundary_no_imaginary_edge": true,
+    "extend_circle_nearest_root": true,
+    "extend_arc_native_root_z": true,
+    "extend_polyline_nearest_finite_edge": true,
+    "offset_line_above_xyz": true,
+    "offset_source_intact": true,
+    "offset_single_undo": true,
+    "offset_redo": true,
+    "offset_line_below_xyz": true,
+    "offset_circle_inside_xy_not_z": true,
+    "offset_circle_outside": true,
+    "offset_arc_inside_angles_xyz": true,
+    "offset_arc_outside": true,
+    "offset_radius_zero": true,
+    "offset_radius_negative": true,
+    "offset_side_on_line": true,
+    "offset_side_on_arc_support": true,
+    "offset_nonpositive": true,
+    "offset_polyline_explicit_pending": true,
+    "trim_arc_target_explicit_pending": true,
+    "redo_survives_cutting_errors": true,
+    "locked_boundary_read_only": true,
+    "locked_boundary_target_undo": true,
+    "trim_locked": true,
+    "extend_locked": true,
+    "offset_locked": true,
+    "ui_trim_escape_atomic": true,
+    "ui_trim_selected_boundary": true,
+    "ui_extend_selected_boundary": true,
+    "ui_offset_escape_atomic": true,
+    "ui_offset_side": true,
+    "console_trim": true,
+    "cutting_dxf_reopened": true
+  },
+  "passed": true,
+  "identity": {
+    "engine": "qcad",
+    "protocol": 1,
+    "revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "engine_sha256": "cf8581aec093573790706524b504d86f6e59769cec63f2c996d06aa137c00c70",
+  "observed": {
+    "current_layer": "0",
+    "entities": [
+      {
+        "center": [
+          10,
+          10,
+          30
+        ],
+        "color_index": 256,
+        "id": 12,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 2,
+        "type": "CIRCLE"
+      },
+      {
+        "center": [
+          10,
+          10,
+          50
+        ],
+        "color_index": 256,
+        "end_angle": 180,
+        "id": 13,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 2,
+        "start_angle": 0,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          30,
+          20,
+          9
+        ],
+        "color_index": 256,
+        "id": 14,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 5,
+        "type": "CIRCLE"
+      },
+      {
+        "center": [
+          5,
+          0,
+          30
+        ],
+        "color_index": 256,
+        "end_angle": 180,
+        "id": 15,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 2,
+        "start_angle": 0,
+        "type": "ARC"
+      },
+      {
+        "center": [
+          5,
+          0,
+          50
+        ],
+        "color_index": 256,
+        "id": 16,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 2,
+        "type": "CIRCLE"
+      },
+      {
+        "center": [
+          50,
+          20,
+          11
+        ],
+        "color_index": 256,
+        "end_angle": 30,
+        "id": 17,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 5,
+        "start_angle": 350,
+        "type": "ARC"
+      },
+      {
+        "closed": false,
+        "color_index": 256,
+        "id": 18,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            2,
+            -3,
+            20
+          ],
+          [
+            2,
+            3,
+            20
+          ],
+          [
+            8,
+            3,
+            20
+          ],
+          [
+            8,
+            -3,
+            20
+          ]
+        ]
+      },
+      {
+        "closed": false,
+        "color_index": 256,
+        "id": 19,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "type": "LWPOLYLINE",
+        "vertices": [
+          [
+            8,
+            9,
+            50
+          ],
+          [
+            8,
+            11,
+            50
+          ],
+          [
+            12,
+            11,
+            50
+          ],
+          [
+            12,
+            9,
+            50
+          ]
+        ]
+      },
+      {
+        "color_index": 256,
+        "end": [
+          -3,
+          11,
+          0
+        ],
+        "id": 20,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          -3,
+          9,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          -1,
+          14
+        ],
+        "id": 21,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          -1,
+          4
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          1,
+          14
+        ],
+        "id": 22,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          1,
+          4
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          20,
+          17
+        ],
+        "id": 23,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          20,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          10,
+          22,
+          17
+        ],
+        "id": 24,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          1.2246467991473532e-16,
+          22,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          12,
+          11,
+          0
+        ],
+        "id": 25,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          12,
+          9,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          4,
+          11,
+          11
+        ],
+        "id": 26,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          11,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          6,
+          0,
+          13
+        ],
+        "id": 27,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          0,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          6,
+          5,
+          0
+        ],
+        "id": 28,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          6,
+          3,
+          0
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          6,
+          5,
+          99
+        ],
+        "id": 29,
+        "layer": "LIMITS",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          6,
+          -5,
+          99
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          8,
+          10,
+          15
+        ],
+        "id": 30,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          0,
+          10,
+          7
+        ],
+        "type": "LINE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          8,
+          11,
+          80
+        ],
+        "id": 31,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          8,
+          9,
+          80
+        ],
+        "type": "LINE"
+      }
+    ],
+    "layers": [
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": 25,
+        "locked": false,
+        "name": "0",
+        "visible": true
+      },
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "Defpoints",
+        "visible": true
+      },
+      {
+        "color": "#d6e2ec",
+        "color_index": -1,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": true,
+        "name": "LIMITS",
+        "visible": true
+      }
+    ],
+    "units": 0
+  },
+  "source_sha256": {
+    "native/adapter/geometry_ops.cpp": "adbc91426f687cba34ea6f537899170ffaf9206af5f3b7d623dae47ce3ded82e",
+    "native/adapter/geometry_ops.h": "d2b526eb56dd8055d3663adcef822cd8ee2a216f6ed97373d6277cccdd2b4253",
+    "native/adapter/server.cpp": "8141c24b9b9b66295c16829396f6c1e63210c0ccad1323d43f9df714c082b9ec",
+    "native/adapter/session.cpp": "04bf31bb2098b1753a816be7226f149a9c950cd0a916792c5300a547dd80217a",
+    "native/adapter/session.h": "004cada2c396235b634eea3329eaf7b2ccf13366204a4e6065806c2393ccc7f5",
+    "src/opencad/app.py": "45bd2fc1c1025efc05ca4467a0459c852fcc7255b8feee3574d632d555809666",
+    "src/opencad/commands.py": "cef6fb7e56d9c7853f849adf5252bb38bb3ca1f8e25cd2869681f1ad81575066",
+    "src/opencad/interop.py": "b63d805c10b68dce3004cd8f8e7a1df28fb25bd3c28a88ce856ef6336e6fbdab",
+    "src/opencad/lisp.py": "237e3ed2f8da4f4bdc6e5ec90bf33e9b44d5ff828214ca55f038db05c6813795",
+    "src/opencad/model.py": "496a20a39a9f554d4c6a9891b1106533383b782c17ebd477857edc1bcdc707bb",
+    "src/opencad/properties.py": "37d6616a0369b363f41a546c0d5309ca54e6bb2e4a919fddd5b95564e4d229bd",
+    "src/opencad/qcad_backend.py": "1d0dab9e9867d5f1ae5c0a2bebb1991a29c7cb34288a75a849372f10336da612",
+    "src/opencad/qcad_interop.py": "923e330ba8f0b986b7084a9a501b36b45d796d28fb886fb78f9014d2b97f4b7e",
+    "src/opencad/qcad_views.py": "dd76798dc14b9482bf0307e17bbc884448b8d7e43e022a07cece057d3d43a277",
+    "src/opencad/__init__.py": "b61c45076e5d79074d4aaf232262e50a80ba9206cafe7feb1b490d7e40db42d0",
+    "tools/check_qcad_cutting.py": "5c9975b023bc6cd58d294a10ed1a2c4e3d8386f2e23532881267cd5595ff607c"
+  },
+  "limitations": [
+    "LINE targets for TRIM/EXTEND",
+    "OFFSET LINE/CIRCLE/ARC only",
+    "no AutoCAD execution",
+    "not installed"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "requirement_id": "ACAD-0044", "command": "EXTEND", "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variant": "LINE target picked endpoint half; nearest intersection beyond it, finite native boundaries; XYZ extrapolation",
+  "pending": ["ARC/PLINE targets", "imaginary edges", "Project", "Quick", "fence/crossing tool flow", "multiple targets", "Shift", "OSNAP", "LSP COMMAND bridge"],
+  "cases": ["extend_nearest_boundary_xyz", "extend_start_xyz", "extend_single_undo", "extend_redo", "extend_midpoint_ambiguous", "extend_wrong_direction", "extend_finite_boundary_no_imaginary_edge", "extend_circle_nearest_root", "extend_locked", "ui_extend_selected_boundary", "cutting_dxf_reopened"],
+  "baseline": "native/CUTTING.md", "test": "tools/check_qcad_cutting.py",
+  "implementation": ["native/adapter/geometry_ops.cpp", "native/adapter/session.cpp", "src/opencad/qcad_backend.py", "src/opencad/app.py"], "issue": 3
+}

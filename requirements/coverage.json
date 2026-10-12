@@ -1225,7 +1225,7 @@
         "C": "O",
         "D": "Crea copias paralelas o concéntricas"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Modify/Offset/OffsetInit.js",
@@ -1234,10 +1234,10 @@
         }
       ],
       "librecad3_evidence": [],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "distancia/lado XY LINE/CIRCLE/ARC conservando Z y fuente; PLINE/Through/Multiple/Erase/Layer/LSP pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -1257,7 +1257,7 @@
         "C": "TR",
         "D": "Recorta objetos contra aristas de corte"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Modify/Trim/TrimInit.js",
@@ -1272,10 +1272,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "LINE contra límites finitos LINE/CIRCLE/ARC/PLINE, divide tramo interior y conserva Z; otras opciones/tipos/LSP pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -1295,7 +1295,7 @@
         "C": "EX",
         "D": "Alarga objetos hasta aristas límite"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Modify/Trim/TrimInit.js",
@@ -1304,10 +1304,10 @@
         }
       ],
       "librecad3_evidence": [],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "LINE hasta límite finito más cercano del extremo elegido, Z prolongada; otras opciones/tipos/LSP pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_cutting.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {

@@ -1,7 +1,7 @@
 # Trazabilidad de la integración parcial
 
 Catálogo: SHA-256 del Excel en COMMAND_MATRIX.md; ninguna fila eliminada ni completa.
-18 variantes qcad_partial, una prototype_partial (DIST), 392 pendientes, 61 exclusiones.
+21 variantes qcad_partial, una prototype_partial (DIST), 389 pendientes, 61 exclusiones.
 Las pruebas funcionales complementan los tests temporales; las variantes ausentes
 siguen en coverage.json. Versiones/hashes de binario y DLL en los reportes, no una
 candidata instalada A1. Los reportes históricos no se atribuyen a cambios posteriores.
@@ -43,3 +43,8 @@ check_qcad_curves.py: 69 casos analíticos/Qt/DXF (Python 3.12/3.14); CURVES.md
 define variantes ausentes. evidence/qcad-curves*. Matriz 18 qcad_partial; sin completos.
 COPY/ROTATE/SCALE/MOVE/SELECT/PROPERTIES se amplían a estos tipos mediante los
 mismos módulos; Z, selección de arco y errores comprobados sin sustituir motor.
+
+TRIM ACAD-0043, EXTEND ACAD-0044 y OFFSET ACAD-0042: contratos en requirements/specs;
+geometry_ops.cpp y CadSession, QcadCommandBus y herramientas Ribbon sobre selección
+nativa. check_qcad_cutting.py 55 casos; native/CUTTING.md define baselines/opciones
+pendientes. evidence/qcad-cutting*. Matriz 21 qcad_partial; cero completos/A1 0/6.

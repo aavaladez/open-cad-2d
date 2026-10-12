@@ -20,6 +20,16 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- TRIM/EXTEND/OFFSET nativos: objetivos LINE y límites finitos LINE/CIRCLE/ARC/
+  PLINE recta para recorte/alargamiento; división de tramo interior, selección del
+  extremo e intersección más próxima, Z interpolada/prolongada. OFFSET distancia/lado
+  para LINE/CIRCLE/ARC, fuente intacta y Z conservada. Mismo bus, UI y transacciones;
+  pruebas de bloqueo, límites consultables bloqueados, ambigüedades, error/redo y DXF.
+  55 comprobaciones por runtime, regresión 48/48 y CTest 9/9. native/CUTTING.md,
+  contratos ACAD-0042/43/44 y evidence/qcad-cutting*. Matriz: 21 qcad_partial,
+  un prototype_partial, 389 pendientes, 61 exclusiones, cero completos. Cotas,
+  consolidación LSP/recuperación y Windows instalado siguen pendientes; A1 0/6.
+
 - ARC/PLINE sobre QCAD: ARC por tres puntos o centro/radio/ángulos, PLINE recta
   abierta/cerrada como una entidad nativa, selección exacta XY, propiedades y
   transformaciones, transacciones/undo/redo. Conservación de ARC Z y elevación
