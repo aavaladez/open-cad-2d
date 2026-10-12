@@ -46,5 +46,6 @@ jobs:
             build/native/transforms-acceptance/
             build/native/curves-acceptance/
             build/native/cutting-acceptance/
+            build/native/dimensions-acceptance/
             build/native/regression.json
             build/native/Testing/Temporary/LastTest.log

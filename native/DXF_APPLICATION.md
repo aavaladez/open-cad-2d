@@ -73,6 +73,15 @@ extendida mediante parche .cpp y fixtures R2000/R2010; rechazo de anchuras/bulge
 PLINEGEN, POLYLINE heredada/3D. Ver CURVES.md y check_qcad_curves.py (69 casos).
 El writer final híbrido y las limitaciones de metadatos siguen vigentes. Textos/cotas
 no están soportados todavía. Los resultados previos LINE/CIRCLE son antecedentes.
+
+Actualización dimensional: DIMLINEAR/DIMALIGNED/DIMRADIUS con puntos XYZ planares,
+preset Standard/texto simple y bloques gráficos exclusivos *D de LINE/SOLID/TEXT.
+El cache debe coincidir con el render CE candidato; contenidos personalizados se
+rechazan. CE omite caches obligatorios: placeholders de inspección en memoria,
+datos contrastados y bloques completos en writer final; audit final sin reparaciones.
+No ampliar reparación de entrada. R2000 se normaliza a UTF8 temporal con equivalencia
+e input_normalization registrada. Ver DIMENSIONS.md. TEXT libre, estilos/asociación
+avanzada y compatibilidad general siguen pendientes; sin instalación/A1 acreditada.
 Fuentes públicas: [API QCAD](https://qcad.org/doc/qcad/latest/developer/class_r_document_interface.html),
 [capas ezdxf](https://ezdxf.readthedocs.io/en/stable/tables/layer_table_entry.html),
 [atributos gráficos](https://ezdxf.readthedocs.io/en/stable/tutorials/common_graphical_attributes.html).

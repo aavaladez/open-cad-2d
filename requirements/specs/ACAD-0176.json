@@ -1,0 +1,32 @@
+{
+  "requirement_id": "ACAD-0176",
+  "command": "DIMLINEAR",
+  "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variant": "horizontal/vertical or explicit XY angle, planar XYZ",
+  "pending": [
+    "advanced options",
+    "styles",
+    "associative source references",
+    "LSP COMMAND bridge"
+  ],
+  "cases": [
+    "horizontal_measure",
+    "vertical_measure",
+    "dimension_angle_property_measure",
+    "ribbon_horizontal_dimension",
+    "ribbon_vertical_dimension",
+    "R2000_dimension_z_edit_save_reopen"
+  ],
+  "baseline": "native/DIMENSIONS.md",
+  "test": "tools/check_qcad_dimensions.py",
+  "implementation": [
+    "native/adapter/dimensions.cpp",
+    "native/adapter/session.cpp",
+    "src/opencad/qcad_backend.py",
+    "src/opencad/qcad_dimensions_io.py",
+    "src/opencad/app.py",
+    "src/opencad/properties.py"
+  ],
+  "issue": 3
+}

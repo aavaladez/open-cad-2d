@@ -66,6 +66,12 @@ en UI/Qt y DXF. Mantener sus variantes avanzadas pendientes. Próxima prioridad 
 acotación lineal/alineada/radio nativa editable y persistente; consolidar LSP y
 recuperación, preparar paquete nativo e instalador y pruebas funcionales limpias.
 
+Cotas posteriores DIMLINEAR/DIMALIGNED/DIMRADIUS integradas con propiedades,
+historial, Z y DXF para preset Standard acotado; no asociación paramétrica ni paridad
+de estilos. Siguiente módulo A1: consolidar programas LSP sobre comandos existentes,
+recuperación, paquete QCAD/Qt nativo e instalación/ejecución/desinstalación limpia.
+Probar la misma candidata en los seis criterios antes de congelar y auditar.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

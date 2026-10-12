@@ -11,7 +11,7 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
     QHBoxLayout, QTabWidget, QPushButton, QLabel, QDockWidget, QPlainTextEdit,
     QLineEdit, QListWidget, QFormLayout, QFileDialog, QMessageBox,QInputDialog)
 from .model import Document, Point, Line, Circle
-from .qcad_views import Arc,Polyline
+from .qcad_views import Arc,Polyline,Dimension
 from .commands import CommandBus
 from .lisp import LispRuntime
 from .interop import load_dxf, save_dxf
@@ -95,6 +95,11 @@ class Canvas(QWidget):
         for e in self.window.doc.entities.values():
             if not self.window.doc.layers[e.layer].visible:
                 continue
+            if isinstance(e,Dimension):
+                points.append(e.position)
+                for shape in e.render['shapes']:
+                    points.extend(Point(*p) for p in (shape['vertices'] if shape['type']=='SOLID' else [shape['start'],shape['end']]))
+                points.append(Point(*e.render['text_position'])); continue
             points += ([e.start,e.end] if isinstance(e,Line) else list(e.vertices) if isinstance(e,Polyline) else
                        [Point(e.center.x-e.radius,e.center.y-e.radius), Point(e.center.x+e.radius,e.center.y+e.radius)])
         if points:
@@ -127,6 +132,16 @@ class Canvas(QWidget):
             p.setPen(QPen(QColor("#53c7ff" if e.id in self.window.selected else layer.color), 2))
             if isinstance(e,Line):
                 p.drawLine(self.screen(e.start),self.screen(e.end))
+            elif isinstance(e,Dimension):
+                for shape in e.render['shapes']:
+                    if shape['type']=='LINE': p.drawLine(self.screen(Point(*shape['start'])),self.screen(Point(*shape['end'])))
+                    else:
+                        from PySide6.QtGui import QPolygonF
+                        p.setBrush(p.pen().color()); p.drawPolygon(QPolygonF([self.screen(Point(*v)) for v in shape['vertices']])); p.setBrush(Qt.BrushStyle.NoBrush)
+                p.save(); p.translate(self.screen(Point(*e.render['text_position']))); p.rotate(-e.render['text_angle'])
+                font=p.font(); font.setPixelSize(max(1,min(1000,round(e.render['text_height']*self.scale)))); p.setFont(font)
+                metrics=p.fontMetrics(); p.drawText(QPointF(-metrics.horizontalAdvance(e.render['label'])/2,
+                    (metrics.ascent()-metrics.descent())/2),e.render['label']); p.restore()
             elif isinstance(e,Arc):
                 rect=QRectF(self.screen(Point(e.center.x-e.radius,e.center.y+e.radius)),
                     self.screen(Point(e.center.x+e.radius,e.center.y-e.radius)))
@@ -225,6 +240,12 @@ QDockWidget::title {padding:7px;background:#344353;}
             for label,action in [('Recortar',lambda:self.start_cut('TRIM')),('Alargar',lambda:self.start_cut('EXTEND')),('Desfase',self.start_offset)]:
                 button=QPushButton(label); button.clicked.connect(action); modify_row.addWidget(button)
             modify_row.addStretch()
+            dimensions=QWidget(); dim_row=QHBoxLayout(dimensions)
+            for label,action in [('Cota horizontal',lambda:self.start_dimension('DIMLINEAR',0)),
+                    ('Cota vertical',lambda:self.start_dimension('DIMLINEAR',90)),
+                    ('Cota alineada',lambda:self.start_dimension('DIMALIGNED')),('Cota radio',lambda:self.start_dimension('DIMRADIUS'))]:
+                button=QPushButton(label); button.clicked.connect(action); dim_row.addWidget(button)
+            dim_row.addStretch()
         row.addStretch()
         self.ribbon.addTab(home,"Inicio")
         files = QWidget()
@@ -237,6 +258,7 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.ribbon.addTab(files,"Archivo y extensiones")
         if document is not None: self.ribbon.addTab(curves,'Curvas 2D')
         if document is not None: self.ribbon.addTab(modify,'Modificar 2D')
+        if document is not None: self.ribbon.addTab(dimensions,'Acotar 2D')
         layout.addWidget(self.ribbon)
         self.drawing_tabs = QTabWidget()
         self.drawing_tabs.addTab(self.canvas,"Dibujo1 · Modelo")
@@ -283,7 +305,7 @@ QDockWidget::title {padding:7px;background:#344353;}
             a.triggered.connect(action)
             self.addAction(a)
         self.refresh()
-        capabilities = ("Documento QCAD experimental. LINE/CIRCLE/ARC y PLINE recta. DXF R2000/R2010 limitado; guardado R2010."
+        capabilities = ("Documento QCAD experimental. LINE/CIRCLE/ARC, PLINE recta y cotas Standard. DXF R2000/R2010 limitado; guardado R2010."
                         if document is not None else
                         "OPEN CAD 2D · LINE/CIRCLE y operaciones básicas. DXF limitado a LINE/CIRCLE.")
         self.history.appendPlainText(capabilities+"\nLSP: subconjunto documentado. Escape cancela herramienta; rueda amplía.")
@@ -306,7 +328,8 @@ QDockWidget::title {padding:7px;background:#344353;}
             self.layers.addItem(name)
         self.layers.setCurrentRow(list(self.doc.layers).index(self.doc.current_layer))
         self.layers.blockSignals(False)
-        info = [repr(self.doc.entities[i]) for i in sorted(self.selected)]
+        info = [f'{e.kind} · ID {e.id} · medida {e.render["measurement"]:.12g} · capa {e.layer}' if isinstance(e,Dimension) else repr(e)
+                for e in (self.doc.entities[i] for i in sorted(self.selected))]
         self.properties.setPlainText("\n".join(info) if info else f"{len(self.doc.entities)} entidades\nCapa actual: {self.doc.current_layer}\nSeleccione una entidad para consultar sus atributos.")
         self.properties.refresh()
         self.canvas.update()
@@ -330,6 +353,8 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.entry.clear()
         if self.mode=='PLINE' and text.upper() in ('','C','CLOSE'):
             self.finish_polyline(bool(text))
+        elif text.upper() in ('DIMLINEAR','DLI','DIMALIGNED','DAL','DIMRADIUS','DRA') and self.bus.aliases.get(text.upper(),text.upper()) in self.bus.definitions:
+            self.start_dimension(self.bus.aliases.get(text.upper(),text.upper()))
         elif text.upper() in ("LINE","L","CIRCLE","C","ARC","A","PLINE","PL") and self.bus.aliases.get(text.upper(),text.upper()) in self.bus.definitions:
             self.start(self.bus.aliases.get(text.upper(),text.upper()))
         elif text.startswith("("):
@@ -383,6 +408,10 @@ QDockWidget::title {padding:7px;background:#344353;}
         self.start('OFFSET'); self.offset_distance=distance
         self.history.appendPlainText('OFFSET: pulse LINE/CIRCLE/ARC y después un punto del lado. Escape cancela.')
 
+    def start_dimension(self,mode,angle=0):
+        self.start(mode); self.dimension_angle=angle
+        self.history.appendPlainText('Cota: '+('pulse CIRCLE/ARC para definir el radio' if mode=='DIMRADIUS' else 'dos extremos y posición de la línea de cota'))
+
     def merge_selection(self,ids,modifiers):
         if modifiers & Qt.KeyboardModifier.ShiftModifier: self.selected.difference_update(ids)
         elif modifiers & Qt.KeyboardModifier.ControlModifier: self.selected.symmetric_difference_update(ids)
@@ -395,6 +424,20 @@ QDockWidget::title {padding:7px;background:#344353;}
 
     def on_point(self,p,modifiers=Qt.KeyboardModifier.NoModifier):
         if self.mode:
+            if self.mode in ('DIMLINEAR','DIMALIGNED','DIMRADIUS'):
+                if self.mode=='DIMRADIUS':
+                    try:
+                        targets=self.doc.select('point',p,tolerance=8/self.canvas.scale)
+                        if not targets: raise ValueError('Seleccione un CIRCLE/ARC')
+                        if self.execute(f'DIMRADIUS ENTITY {min(targets)} {p.x},{p.y},{p.z}'): self.cancel()
+                    except (ValueError,RuntimeError) as error: self.history.appendPlainText('Error: '+str(error))
+                else:
+                    self.pending_points.append(p); self.anchor=p
+                    if len(self.pending_points)==3:
+                        coordinates=' '.join(f'{v.x},{v.y},{v.z}' for v in self.pending_points)
+                        if self.execute(self.mode+' '+coordinates+(f' {self.dimension_angle}' if self.mode=='DIMLINEAR' else '')): self.cancel()
+                        else: self.pending_points=[]; self.anchor=None
+                self.canvas.update(); return
             if self.mode in ('TRIM','EXTEND','OFFSET'):
                 try:
                     tolerance=8/self.canvas.scale
@@ -466,8 +509,8 @@ QDockWidget::title {padding:7px;background:#344353;}
             try:
                 if not isinstance(self.doc,Document):
                     answer=QMessageBox.question(self,"Abrir DXF experimental",
-                        "LINE/CIRCLE/ARC y PLINE recta sin anchura, capas y unidades del subconjunto documentado. "
-                        "Tablas estándar y handles se regeneran al guardar. "
+                        "LINE/CIRCLE/ARC, PLINE recta sin anchura y cotas Standard, capas y unidades del subconjunto documentado. "
+                        "Tablas estándar, handles y gráficos de cotas verificados se regeneran al guardar. "
                         "Abrir sustituye el dibujo activo y su historial. ¿Continuar?",
                         QMessageBox.StandardButton.Yes|QMessageBox.StandardButton.No,QMessageBox.StandardButton.No)
                     if answer!=QMessageBox.StandardButton.Yes:
@@ -491,7 +534,7 @@ QDockWidget::title {padding:7px;background:#344353;}
             try:
                 if not isinstance(self.doc,Document):
                     self.doc.save_dxf(path if Path(path).suffix else path+".dxf")
-                    self.history.appendPlainText("DXF R2010 verificado: LINE/CIRCLE/ARC y PLINE recta, capas y unidades; tablas estándar regeneradas.")
+                    self.history.appendPlainText("DXF R2010 verificado: LINE/CIRCLE/ARC, PLINE recta y cotas Standard, capas y unidades; tablas/gráficos estándar regenerados.")
                 else:
                     save_dxf(self.doc,path if Path(path).suffix else path+".dxf")
                 self.history.appendPlainText("Guardado: " + path)

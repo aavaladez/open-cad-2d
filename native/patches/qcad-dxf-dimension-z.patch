@@ -1,0 +1,164 @@
+diff --git a/src/io/dxf/RDxfImporter.cpp b/src/io/dxf/RDxfImporter.cpp
+--- a/src/io/dxf/RDxfImporter.cpp
++++ b/src/io/dxf/RDxfImporter.cpp
+@@ -1008,8 +1008,8 @@
+ 
+ 
+ RDimensionData RDxfImporter::convDimensionData(const DL_DimensionData& data) {
+-    RVector defP(data.dpx, data.dpy);
+-    RVector midP(data.mpx, data.mpy);
++    RVector defP(data.dpx, data.dpy, data.dpz);
++    RVector midP(data.mpx, data.mpy, data.mpz);
+     RS::VAlign valign;
+     RS::HAlign halign;
+     RS::TextLineSpacingStyle lss;
+@@ -1101,8 +1101,8 @@
+ void RDxfImporter::addDimAlign(const DL_DimensionData& data, const DL_DimAlignedData& edata) {
+     RDimensionData dimData = convDimensionData(data);
+ 
+-    RVector ext1(edata.epx1, edata.epy1);
+-    RVector ext2(edata.epx2, edata.epy2);
++    RVector ext1(edata.epx1, edata.epy1, edata.epz1);
++    RVector ext2(edata.epx2, edata.epy2, edata.epz2);
+ 
+     RDimAlignedData d(dimData, ext1, ext2);
+ 
+@@ -1114,8 +1114,8 @@
+                                 const DL_DimLinearData& edata) {
+     RDimensionData dimData = convDimensionData(data);
+ 
+-    RVector dxt1(edata.dpx1, edata.dpy1);
+-    RVector dxt2(edata.dpx2, edata.dpy2);
++    RVector dxt1(edata.dpx1, edata.dpy1, edata.dpz1);
++    RVector dxt2(edata.dpx2, edata.dpy2, edata.dpz2);
+ 
+     RDimRotatedData d(dimData, dxt1, dxt2, RMath::deg2rad(edata.angle));
+ 
+@@ -1126,7 +1126,7 @@
+ void RDxfImporter::addDimRadial(const DL_DimensionData& data,
+                                 const DL_DimRadialData& edata) {
+     RDimensionData dimData = convDimensionData(data);
+-    RVector dp(edata.dpx, edata.dpy);
++    RVector dp(edata.dpx, edata.dpy, edata.dpz);
+ 
+     RDimRadialData d(dimData, dp);
+ 
+diff --git a/src/io/dxf/RDxfExporter.cpp b/src/io/dxf/RDxfExporter.cpp
+--- a/src/io/dxf/RDxfExporter.cpp
++++ b/src/io/dxf/RDxfExporter.cpp
+@@ -1229,10 +1229,10 @@
+ 
+     DL_DimensionData dimData(d.getDefinitionPoint().x,
+                              d.getDefinitionPoint().y,
+-                             0.0,
++                             d.getDefinitionPoint().z,
+                              d.getTextPosition().x,
+                              d.getTextPosition().y,
+-                             0.0,
++                             d.getTextPosition().z,
+                              dimType,
+                              attachmentPoint,
+                              d.getLineSpacingStyle(),
+@@ -1252,10 +1252,10 @@
+ 
+         DL_DimAlignedData dimAlignedData(dim->getExtensionPoint1().x,
+                                          dim->getExtensionPoint1().y,
+-                                         0.0,
++                                         dim->getExtensionPoint1().z,
+                                          dim->getExtensionPoint2().x,
+                                          dim->getExtensionPoint2().y,
+-                                         0.0);
++                                         dim->getExtensionPoint2().z);
+ 
+         dxf.writeDimAligned(*dw, dimData, dimAlignedData, attributes);
+         }
+@@ -1265,11 +1265,11 @@
+ 
+         DL_DimLinearData dimLinearData(dim->getExtensionPoint1().x,
+                                        dim->getExtensionPoint1().y,
+-                                       0.0,
++                                       dim->getExtensionPoint1().z,
+                                        dim->getExtensionPoint2().x,
+                                        dim->getExtensionPoint2().y,
+-                                       0.0,
++                                       dim->getExtensionPoint2().z,
+                                        dim->getRotation(),
+                                        0.0 // TODO: dl->getOblique()
+                                        );
+ 
+@@ -1281,7 +1281,7 @@
+ 
+         DL_DimRadialData dimRadialData(dim->getChordPoint().x,
+                                        dim->getChordPoint().y,
+-                                       0.0,
++                                       dim->getChordPoint().z,
+                                        0.0 // TODO: dr->getLeader()
+                                        );
+ 
+diff --git a/src/3rdparty/dxflib/src/dl_dxf.cpp b/src/3rdparty/dxflib/src/dl_dxf.cpp
+--- a/src/3rdparty/dxflib/src/dl_dxf.cpp
++++ b/src/3rdparty/dxflib/src/dl_dxf.cpp
+@@ -3037,7 +3037,7 @@
+ 
+     dw.dxfReal(11, data.mpx);
+     dw.dxfReal(21, data.mpy);
+-    dw.dxfReal(31, 0.0);
++    dw.dxfReal(31, data.mpz);
+ 
+     dw.dxfInt(70, data.type);
+     if (version>DL_VERSION_R12) {
+@@ -3060,11 +3060,11 @@
+ 
+     dw.dxfReal(13, edata.epx1);
+     dw.dxfReal(23, edata.epy1);
+-    dw.dxfReal(33, 0.0);
++    dw.dxfReal(33, edata.epz1);
+ 
+     dw.dxfReal(14, edata.epx2);
+     dw.dxfReal(24, edata.epy2);
+-    dw.dxfReal(34, 0.0);
++    dw.dxfReal(34, edata.epz2);
+ 
+     writeDimStyleOverrides(dw, data);
+ }
+@@ -3100,7 +3100,7 @@
+ 
+     dw.dxfReal(11, data.mpx);
+     dw.dxfReal(21, data.mpy);
+-    dw.dxfReal(31, 0.0);
++    dw.dxfReal(31, data.mpz);
+ 
+     dw.dxfInt(70, data.type);
+     if (version>DL_VERSION_R12) {
+@@ -3123,11 +3123,11 @@
+ 
+     dw.dxfReal(13, edata.dpx1);
+     dw.dxfReal(23, edata.dpy1);
+-    dw.dxfReal(33, 0.0);
++    dw.dxfReal(33, edata.dpz1);
+ 
+     dw.dxfReal(14, edata.dpx2);
+     dw.dxfReal(24, edata.dpy2);
+-    dw.dxfReal(34, 0.0);
++    dw.dxfReal(34, edata.dpz2);
+ 
+     dw.dxfReal(50, edata.angle/(2.0*M_PI)*360.0);
+ 
+@@ -3169,7 +3169,7 @@
+ 
+     dw.dxfReal(11, data.mpx);
+     dw.dxfReal(21, data.mpy);
+-    dw.dxfReal(31, 0.0);
++    dw.dxfReal(31, data.mpz);
+ 
+     dw.dxfInt(70, data.type);
+     if (version>DL_VERSION_R12) {
+@@ -3192,7 +3192,7 @@
+ 
+     dw.dxfReal(15, edata.dpx);
+     dw.dxfReal(25, edata.dpy);
+-    dw.dxfReal(35, 0.0);
++    dw.dxfReal(35, edata.dpz);
+ 
+     dw.dxfReal(40, edata.leader);
+ 

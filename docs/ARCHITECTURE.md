@@ -67,6 +67,12 @@ finalizar. Selección, propiedades, transformaciones y DXF usan los mismos tipos
 nativos; preflight/writer rechazan bulges/anchuras aún sin representación completa.
 Ángulos ARC DXF canonicalizados; elevación PLINE uniforme. Ver native/CURVES.md.
 
+Cotas posteriores: dimensions.cpp usa entidades RDim* y proxy básico CE; vistas
+Dimension contienen datos separados de render derivado. Qt dibuja formas y etiquetas;
+qcad_dimensions_io.py valida preset/caché y produce bloques *D. Undo conserva sólo
+datos autoritativos de etiqueta automática. R2000 preflighted se transcodifica en
+temporal a UTF8 para lectura CE Qt6, contrastando antes de abrir. DIMENSIONS.md.
+
 ## Seguridad del intérprete
 
 LSP sin eval/exec, shell, red, COM o I/O desde el código interpretado. Límites
