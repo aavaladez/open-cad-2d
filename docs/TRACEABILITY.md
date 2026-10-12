@@ -60,3 +60,10 @@ DIMALIGNED/DIMRADIUS añaden prueba de COMMAND LSP sobre su subconjunto real en
 check_qcad_lisp_essential.py34 casos, plan_a1.lsp y native/LISP_ESSENTIAL.md.
 Carga APPLOAD/LOAD y comando propio conservan traza previa y amplían corpus. No
 añadir filas/estados completos; variantes de prompts/selección ENAME pendientes.
+
+Recuperación de estabilidad, sin nuevo comando del catálogo: CadSession.snapshot
+transaction_active → QcadDocument._confirmed_view → RecoveryStore → restore_recovery.
+21 comprobaciones check_qcad_recovery.py (staging, caída sólo del hijo, original
+intacto, restauración Qt/QCAD, LSP reiniciado, DXF) y cinco límites test_recovery.py.
+native/RECOVERY.md y evidence/qcad-recovery*. No reparar DXF arbitrarios ni acreditar
+RECOVER por esta función. CI #19/#20 success exacthead: evidence/pr19-20-ci-2026-10-12.json.

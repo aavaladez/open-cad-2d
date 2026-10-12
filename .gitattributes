@@ -6,3 +6,4 @@
 *.xlsx binary
 *.patch text eol=lf
 *.cpp text eol=lf
+docs/evidence/qcad-recovery* -text

@@ -90,3 +90,9 @@ regresión y compatibilidad, auditoría integral y registro de defectos/correcci
 Mantener la congelación durante correcciones y repetir pruebas afectadas. PAUSAR
 con informe reproducible. La siguiente fase requiere cero defectos bloqueantes
 y aprobación explícita del director. Una regresión no elimina la congelación.
+
+2026-10-12, recuperación posterior: copias privadas del documento confirmado y
+restauración QCAD con historia/LSP reiniciados, comprobadas durante caída del hijo.
+native/RECOVERY.md. No ampliar comandos secundarios: siguiente entrega es paquete
+nativo Windows, dependencias/fuentes/licencias y pruebas de instalar/usar/desinstalar
+en entorno limpio identificado. A1 sigue parcial y sin candidata congelada.

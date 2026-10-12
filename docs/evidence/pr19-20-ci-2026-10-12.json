@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-12",
+  "repository": "aavaladez/open-cad-2d",
+  "prs": [
+    {
+      "pr": 19,
+      "head": "94b3e560bb25634f4a5061c2317feafa60f51790",
+      "base": "codex/qcad-trim-extend-offset",
+      "base_sha": "f497601c127317197f3c9234e44db6f5d2f8ff67",
+      "runs": [
+        {
+          "id": 38279276112,
+          "name": "QCAD CE native spike",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 19,
+          "jobs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38279276112/jobs",
+          "logs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38279276112/logs",
+          "workflow_id": 380020901
+        },
+        {
+          "id": 38279276195,
+          "name": "OPEN CAD verification",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 37,
+          "jobs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38279276195/jobs",
+          "logs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38279276195/logs",
+          "workflow_id": 380007054
+        }
+      ],
+      "ready_after_checks": true,
+      "merged": false
+    },
+    {
+      "pr": 20,
+      "head": "da10bc15046dd0b3558617f21a5d8184e9021815",
+      "base": "codex/qcad-dimensions",
+      "base_sha": "94b3e560bb25634f4a5061c2317feafa60f51790",
+      "runs": [
+        {
+          "id": 38281397740,
+          "name": "QCAD CE native spike",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 20,
+          "jobs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38281397740/jobs",
+          "logs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38281397740/logs",
+          "workflow_id": 380020901
+        },
+        {
+          "id": 38281397821,
+          "name": "OPEN CAD verification",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 40,
+          "jobs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38281397821/jobs",
+          "logs_url": "https://api.github.com/repos/aavaladez/open-cad-2d/actions/runs/38281397821/logs",
+          "workflow_id": 380007054
+        }
+      ],
+      "ready_after_checks": true,
+      "merged": false
+    }
+  ]
+}

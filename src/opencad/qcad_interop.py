@@ -169,6 +169,14 @@ def validated_export(document,path,expected):
     # before rebuilding default tables with ezdxf; no user geometry is invented.
     native_audit=[]
     equivalent(expected,inspect_dxf(path,generated=True,audit_log=native_audit))
+    write_snapshot(document._view,path)
+    document.last_dxf_validation=dict(native_audit_repairs=native_audit,
+        native_geometry_attributes_verified=True,final_writer='ezdxf R2010',ezdxf_version=ezdxf.__version__)
+
+
+def write_snapshot(view,path):
+    """Serialize an acknowledged native view, never an editable Python model."""
+    expected=native_inventory(view)
     drawing=ezdxf.new('R2010'); drawing.units=expected['units']
     apply_preset(drawing)
     for layer in list(drawing.layers):
@@ -191,15 +199,13 @@ def validated_export(document,path,expected):
             [p[:2] for p in item['vertices']],format='xy',close=item['closed'],
             dxfattribs=attrs|{'elevation':item['vertices'][0][2]})
         elif item['type']=='DIMENSION':
-            source=next(e for e in document._view['entities'] if e['type']=='DIMENSION' and
+            source=next(e for e in view['entities'] if e['type']=='DIMENSION' and
                 {k:v for k,v in e.items() if k not in ('id','render','layer','linetype')}=={k:v for k,v in item.items() if k not in ('layer','linetype')})
             add_dimension(drawing,item,source['render'])
         else: raise ValueError('Entidad sin writer validado: '+item['type'])
     drawing.saveas(path)
     equivalent(expected,inspect_dxf(path))
-    equivalent(ordered(caches_from_view(document._view)),ordered(caches_from_file(path)))
-    document.last_dxf_validation=dict(native_audit_repairs=native_audit,
-        native_geometry_attributes_verified=True,final_writer='ezdxf R2010',ezdxf_version=ezdxf.__version__)
+    equivalent(ordered(caches_from_view(view)),ordered(caches_from_file(path)))
 
 
 def open_document(document,path):
@@ -227,7 +233,7 @@ def open_document(document,path):
         candidate.last_dxf_validation['input_normalization']='ezdxf R2000 codepage to R2010 UTF8' if normalized else 'none'
         # Swap only after import and independently inspected export both agree.
         # The active document object stays stable for UI/bus/LSP references.
-        for name in ('process','reader','log','_view'):
+        for name in ('process','reader','log','_view','_confirmed_view'):
             previous=getattr(document,name); setattr(document,name,getattr(candidate,name)); setattr(candidate,name,previous)
         document.id_map={}
         document.last_dxf_validation=candidate.last_dxf_validation

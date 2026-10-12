@@ -30,17 +30,22 @@ class QcadDocument:
             creationflags=subprocess.CREATE_NO_WINDOW if os.name=='nt' else 0)
         self._depth = 0
         self._view = None
+        self._confirmed_view=None
+        self.file_path=None
         self.id_map = {}
         try:
             identity = self.request('hello')
             if identity != dict(protocol=1,engine='qcad',revision=PIN):
                 raise ValueError('Backend o protocolo QCAD no auditado')
+            if self._confirmed_view is None:
+                raise ValueError('Backend sin estado transaccional confirmado; recompilar el adaptador actual')
         except Exception:
             self.close()
             raise
 
     def request(self, action, **arguments):
         if self.process.poll() is not None:
+            if self._confirmed_view is not None:self._view=deepcopy(self._confirmed_view)
             raise RuntimeError('El proceso QCAD terminó; no se puede continuar editando')
         payload = json.dumps(dict(action=action,**arguments),allow_nan=False)
         if len(payload.encode('utf-8')) > 1_000_000:
@@ -53,10 +58,13 @@ class QcadDocument:
             data = json.loads(response)
         except Exception:
             self.close()
+            if self._confirmed_view is not None:self._view=deepcopy(self._confirmed_view)
             raise
         if data.get('ok') is not True:
             raise ValueError(data.get('error','QCAD rechazó la operación'))
         self._view = data['document']
+        if self._view.get('transaction_active') is False:
+            self._confirmed_view=deepcopy(self._view)
         return data.get('value')
 
     @property
@@ -144,10 +152,12 @@ class QcadDocument:
     def open_dxf(self,path):
         from .qcad_interop import open_document
         open_document(self,path)
+        self.file_path=str(Path(path).resolve())
 
     def save_dxf(self,path):
         from .qcad_interop import save_document
         save_document(self,path)
+        self.file_path=str(Path(path).resolve())
 
     def close(self):
         if getattr(self,'process',None) is not None:
