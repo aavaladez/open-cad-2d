@@ -46,7 +46,7 @@ de compilación/instalación. [Pruebas Windows](docs/WINDOWS_TESTS.md).
 
 ## Catálogo y desarrollo autónomo
 
-El Excel original contiene 472 requisitos: 14 parciales, 397 pendientes y 61
+El Excel original contiene 472 requisitos: 17 parciales, 394 pendientes y 61
 excluidos por alcance 3D. Ningún comando del Excel se declara terminado.
 [Matriz por fila](docs/COMMAND_MATRIX.md), [estado y evidencias](docs/STATUS.md),
 [arquitectura](docs/ARCHITECTURE.md), [roadmap](docs/ROADMAP.md),

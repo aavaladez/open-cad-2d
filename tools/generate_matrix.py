@@ -9,6 +9,9 @@ PROTOTYPE = {
     "LINE": ("dos puntos/cadena XYZ; faltan opciones Close/Undo interactivas y coordenadas relativas", "test_commands.Commands.test_line_alias_chain_z_undo"),
     "CIRCLE": ("centro/radio; faltan 2P, 3P, TTR y TTT", "test_commands.Commands.test_circle_invalid_and_valid"),
     "MOVE": ("IDs/vector XYZ y selección UI/punto base-destino; faltan opciones completas", "test_commands.Commands.test_move_erase_layer_lock"),
+    "COPY": ("IDs y desplazamiento XYZ; faltan Multiple/Array y flujo interactivo", "tools/check_qcad_transforms.py"),
+    "ROTATE": ("IDs, base y grados en XY preservando Z; faltan Reference/Copy/interactivo", "tools/check_qcad_transforms.py"),
+    "SCALE": ("IDs, base y factor positivo XY preservando Z; faltan Reference/Copy/interactivo", "tools/check_qcad_transforms.py"),
     "ERASE": ("IDs; falta selección completa CAD", "test_commands.Commands.test_move_erase_layer_lock"),
     "LAYER": ("NEW/SET/LOCK/UNLOCK/ON/OFF; faltan estilos/filtros/estados", "test_commands.Commands.test_layer_visibility_undo"),
     "UNDO": ("una transacción; faltan Mark/Back/grupos y opciones", "test_commands.Commands.test_line_alias_chain_z_undo"),
@@ -21,7 +24,7 @@ PROTOTYPE = {
     "SELECT": ("selección UI individual/ventana/cruce XY, acumulación/Shift; sin filtros ni selección por consola", "tools/check_qcad_editing.py"),
     "PROPERTIES": ("panel LINE extremos XYZ/CIRCLE centro-radio/capa común; otros atributos y tipos pendientes", "tools/check_qcad_editing.py"),
 }
-NATIVE = {'LINE','CIRCLE','MOVE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
+NATIVE = {'LINE','CIRCLE','MOVE','COPY','ROTATE','SCALE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
 
 
 def main():

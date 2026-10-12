@@ -1079,7 +1079,7 @@
         "C": "CO, CP",
         "D": "Copia objetos"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Edit/Copy/CopyInit.js",
@@ -1094,10 +1094,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "IDs y desplazamiento XYZ; faltan Multiple/Array y flujo interactivo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_transforms.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -1117,7 +1117,7 @@
         "C": "RO",
         "D": "Gira objetos alrededor de un punto base"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Modify/Rotate/RotateInit.js",
@@ -1132,10 +1132,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "IDs, base y grados en XY preservando Z; faltan Reference/Copy/interactivo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_transforms.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -1155,7 +1155,7 @@
         "C": "SC",
         "D": "Cambia el tamaño proporcionalmente"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [
         {
           "path": "scripts/Modify/Scale/ScaleInit.js",
@@ -1170,10 +1170,10 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "IDs, base y factor positivo XY preservando Z; faltan Reference/Copy/interactivo",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_transforms.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {

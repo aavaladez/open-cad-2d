@@ -94,3 +94,12 @@ mantiene IDs de selección; sin segundo motor. Aplicación explícita y undo/red
 Crear Defpoints al inicializar dibujos nuevos evita diferencias con exportación CE.
 Native/EDITING.md registra contratos, límites y pruebas; no añadir comandos fuera
 de las prioridades A1 ni declarar paridad/criterios completos por evidencia parcial.
+
+## ADR-015 — Transformaciones 2D con Z conservada
+
+2026-10-12: COPY por desplazamiento XYZ y ROTATE/SCALE en XY con Z sin escalar/girar,
+según alcance 2D del producto. Usar primitivas QCAD sobre clones y validar todos los
+resultados antes del commit. Nuevas entidades mediante API pública, sin modificar
+IDs protegidos. Registro de comandos sólo en QcadCommandBus; el prototipo temporal
+y la lista COMMAND LSP no anuncian funciones ausentes. TRANSFORMS.md registra variantes
+pendientes y baseline analítico; no atribuir equivalencia 3D ni opciones completas.

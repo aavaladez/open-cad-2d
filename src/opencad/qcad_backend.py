@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from contextlib import contextmanager
 from pathlib import Path
 from .model import Point, Line, Circle, Layer
-from .commands import CommandBus
+from .commands import CommandBus,point
 
 PIN = '4c830eb4d80285ca64b1f2c2dc0987f729344126'
 
@@ -155,20 +155,33 @@ class QcadDocument:
 
 
 class QcadCommandBus(CommandBus):
+    def __init__(self,document,aliases=None):
+        super().__init__(document)
+        for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC')]:
+            self.definitions[name]={'aliases':[alias],'variant':'native subset'}; self.aliases[alias]=name
+        if aliases is not None: self.set_aliases(aliases)
+
     def edit_properties(self,ids,changes):
         with self.document.transaction():
             self.document.request('properties',ids=sorted(ids),changes=changes)
 
     def execute(self,name,*args):
         canonical = self.aliases.get(name.upper().removeprefix('_'),name.upper().removeprefix('_'))
-        if canonical == 'LAYER':
+        if canonical in ('COPY','ROTATE','SCALE'):
+            required=2 if canonical=='COPY' else 3
+            if len(args)!=required: raise ValueError(canonical+' IDs y vector, o IDs punto-base valor')
+            arguments=dict(ids=self.ids(args[0]))
+            if canonical=='COPY': arguments['delta']=self.document.xyz(point(args[1]))
+            else: arguments.update(base=self.document.xyz(point(args[1])),amount=float(args[2]))
+            with self.document.transaction(): result=self.document.request(canonical.lower(),**arguments)
+        elif canonical == 'LAYER':
             if len(args)!=2:
                 raise ValueError('LAYER opción nombre')
             with self.document.transaction():
                 result = self.document.layer(str(args[0]).upper(),str(args[1]))
         else:
             result = super().execute(name,*args)
-        if self.document._depth==0 and canonical in ('LINE','CIRCLE'):
+        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY'):
             def translate(value):
                 if type(value) is int: return self.document.id_map.get(value,value)
                 if isinstance(value,list): return [translate(v) for v in value]
