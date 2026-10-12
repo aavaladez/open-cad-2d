@@ -1,0 +1,10 @@
+{
+  "requirement_id": "ACAD-0091", "command": "PROPERTIES", "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variants": ["LINE start/end XYZ", "CIRCLE center/radius", "common layer for mixed selection", "atomic batch", "undo/redo"],
+  "pending": ["color/linetype/lineweight editors", "other entity types", "full properties palette parity"],
+  "implementation": ["native/adapter/session.cpp", "src/opencad/properties.py", "src/opencad/qcad_backend.py"],
+  "cases": ["native_endpoint_edited", "circle_properties", "mixed_invalid_atomic", "zero_line_atomic", "source_locked", "destination_locked", "ui_property_edit", "ui_property_undo_sync", "properties_dxf_reopened"],
+  "test": "tools/check_qcad_editing.py", "issue": 3,
+  "evidence": ["native/EDITING.md", "docs/evidence/qcad-editing-python314.json", "docs/evidence/qcad-editing-python312.json"]
+}

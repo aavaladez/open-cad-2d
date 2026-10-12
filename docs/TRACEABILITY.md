@@ -25,3 +25,9 @@ Evidencias actuales docs/evidence/qcad-dxf*; antecedentes qcad-application*/qcad
 
 Seguimiento: Issues #2/#3/#4/#5 y gate #10. PR #12 documental, #13 adaptador;
 siguiente cambio DXF apilado sobre #13. No merge/release automático.
+
+Actualización 2026-10-12: ACAD-0086 SELECT y ACAD-0091 PROPERTIES pasan a qcad_partial,
+con contratos en requirements/specs y 30 comprobaciones en check_qcad_editing.py.
+MOVE incorpora selección/punto base-destino y cancelación; los requisitos siguen
+parciales. Matriz actual: 13 qcad_partial, un prototype_partial, 397 pendientes y
+61 exclusiones. Reportes nuevos qcad-editing*, conservando todos los antecedentes.

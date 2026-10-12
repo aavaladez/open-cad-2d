@@ -1,4 +1,4 @@
-# Estado verificable — 2026-10-09
+# Estado verificable — 2026-10-12
 
 M0 preparado para revisión. No hay declaración de paridad profesional ni de
 compatibilidad completa con AutoCAD, AutoLISP, DXF o DWG.
@@ -19,6 +19,14 @@ Python 3.14 y 3.12; diez tests nuevos verifican estados/rechazos con artefactos 
 sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/a1/.
 
 ## Entregado
+
+- Propiedades editables y selección sobre QCAD: LINE XYZ, CIRCLE centro/radio, capa
+  común de selección mixta, edición atómica y sincronización con undo/redo. Selección
+  nativa XY, ventana/cruce, acumulación/Shift y MOVE UI con base/destino/cancelación.
+  30 comprobaciones por runtime Python 3.12/3.14, regresión 46/46 y CTest 6/6,
+  incluidos LSP/DXF existentes. native/EDITING.md y evidence/qcad-editing*.
+  Criterios A1 siguen parciales: acotación/comandos, recuperación e instalación
+  limpia pendientes. Sin congelación ni autorización de fase siguiente.
 
 - Ciclo DXF integrado experimental: R2000/R2010 en documento QCAD candidato,
   edición/guardado/reapertura, contraste ezdxf y sustitución atómica tras validación.
@@ -114,9 +122,9 @@ han integrado; la UI original no depende de ellos. No ampliar el motor temporal.
 Prioridad: ciclo DXF conservador del documento autoritativo; luego comandos/cotas,
 recuperación y distribución/instalación Windows para entrada A1.
 
-CI del PR documental #12/c528c72: prototipo/portable y native run 38013268736
-aprobados. PR #13/4697e5e: 8 checks prototipo/portable aprobados; native run
-38014407702 todavía en ejecución al consultar. CI del ciclo DXF posterior pendiente.
+CI verificada 2026-10-12: PR #13/4697e5e (runs 38014407702/38014407807) y
+PR #14/ff5f552 (38015692655/38015692620) aprobados; heads/dependencias intactos.
+Ambos listos para revisión, sin merge. CI del cambio posterior de edición pendiente.
 No atribuir pruebas del prototipo portable a un despliegue QCAD instalado.
 
 La entrega local incluye avisos/licencias; antes de una release de distribución

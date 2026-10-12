@@ -1056,7 +1056,7 @@
           "pro_marker": false
         }
       ],
-      "implemented_variant": "IDs/vector XYZ; falta selección CAD y punto base",
+      "implemented_variant": "IDs/vector XYZ y selección UI/punto base-destino; faltan opciones completas",
       "implementation": "src/opencad; native/adapter",
       "tests": "test_commands.Commands.test_move_erase_layer_lock; tools/check_qcad_application.py",
       "version": "0.1.0.dev0",
@@ -2447,13 +2447,13 @@
         "C": "",
         "D": "Crea un conjunto de selección"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "selección UI individual/ventana/cruce XY, acumulación/Shift; sin filtros ni selección por consola",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_editing.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {
@@ -2583,13 +2583,13 @@
         "C": "PR, CH, MO, CTRL+1",
         "D": "Paleta de propiedades"
       },
-      "status": "pending",
+      "status": "qcad_partial",
       "qcad_evidence": [],
       "librecad3_evidence": [],
-      "implemented_variant": "",
-      "implementation": "",
-      "tests": "",
-      "version": "",
+      "implemented_variant": "panel LINE extremos XYZ/CIRCLE centro-radio/capa común; otros atributos y tipos pendientes",
+      "implementation": "src/opencad; native/adapter",
+      "tests": "tools/check_qcad_editing.py; tools/check_qcad_application.py",
+      "version": "0.1.0.dev0",
       "issue": "https://github.com/aavaladez/open-cad-2d/issues/3"
     },
     {

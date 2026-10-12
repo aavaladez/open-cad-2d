@@ -4,7 +4,7 @@ Generada desde el Excel original; cada fila conserva ID, hoja y fila.
 
 SHA-256: `7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0`. Total: 472 entradas.
 
-Estados: {'qcad_partial': 11, 'pending': 399, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
+Estados: {'qcad_partial': 13, 'pending': 397, 'excluded': 61, 'prototype_partial': 1}. Ningún comando del Excel terminado; variantes parciales comprobadas localmente, incluido backend QCAD donde se indica.
 
 qcad_partial acredita sólo las variantes/documento y casos descritos en [TRACEABILITY.md](TRACEABILITY.md); no equivale a paridad de opciones ni a aceptación A1.
 
@@ -98,12 +98,12 @@ Detalle íntegro de descripciones, aliases, rutas, alcance, implementación, tes
 | ACAD-0083 | AutoCAD: 83 | Modificación | HATCHTOBACK | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0084 | AutoCAD: 84 | Modificación | FLATTEN | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0085 | AutoCAD: 85 | Modificación | CONVERTPLINE | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0086 | AutoCAD: 86 | Selección, consulta y propiedades | SELECT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
+| ACAD-0086 | AutoCAD: 86 | Selección, consulta y propiedades | SELECT | 2d | sin coincidencia | sin coincidencia | qcad_partial | tools/check_qcad_editing.py; tools/check_qcad_application.py |
 | ACAD-0087 | AutoCAD: 87 | Selección, consulta y propiedades | SELECTALL | 2d | [registro](https://github.com/qcad/qcad/blob/4c830eb4d80285ca64b1f2c2dc0987f729344126/scripts/Select/SelectAll/SelectAllInit.js) | sin coincidencia | pending | pendiente |
 | ACAD-0088 | AutoCAD: 88 | Selección, consulta y propiedades | SELECTSIMILAR | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0089 | AutoCAD: 89 | Selección, consulta y propiedades | QSELECT | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0090 | AutoCAD: 90 | Selección, consulta y propiedades | FILTER | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
-| ACAD-0091 | AutoCAD: 91 | Selección, consulta y propiedades | PROPERTIES | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
+| ACAD-0091 | AutoCAD: 91 | Selección, consulta y propiedades | PROPERTIES | 2d | sin coincidencia | sin coincidencia | qcad_partial | tools/check_qcad_editing.py; tools/check_qcad_application.py |
 | ACAD-0092 | AutoCAD: 92 | Selección, consulta y propiedades | QUICKPROP | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0093 | AutoCAD: 93 | Selección, consulta y propiedades | LIST | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
 | ACAD-0094 | AutoCAD: 94 | Selección, consulta y propiedades | ID | 2d | sin coincidencia | sin coincidencia | pending | pendiente |
