@@ -89,3 +89,10 @@ Vincular evidencias funcionales al mismo commit/binario instalado, fixtures y
 versiones. Aplicar [AUDIT_GATE.md](AUDIT_GATE.md). Al verificar sus seis puntos,
 congelar candidata y limitar cambios a auditoría/correcciones. La siguiente fase
 necesita ausencia de bloqueantes y aprobación explícita del director.
+
+Distribución experimental: runtime_paths selecciona rutas explícitas del checkout
+o `_internal/native` del paquete. El hijo usa Qt SDK/plugins propios; PySide mantiene
+su runtime. build-identity identifica el paquete nativo incluso si falta el motor:
+fallar con evidencia de startup, no abrir el motor temporal como sustituto.
+packaged_checks ejecuta sólo fixtures propios empaquetados; no carga scripts externos.
+No acredita Windows limpio; distribución/aceptación en WINDOWS_A1_INSTALLATION.md.

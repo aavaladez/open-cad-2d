@@ -96,3 +96,9 @@ restauración QCAD con historia/LSP reiniciados, comprobadas durante caída del 
 native/RECOVERY.md. No ampliar comandos secundarios: siguiente entrega es paquete
 nativo Windows, dependencias/fuentes/licencias y pruebas de instalar/usar/desinstalar
 en entorno limpio identificado. A1 sigue parcial y sin candidata congelada.
+
+2026-10-12, paquete posterior: instalador compilado y aplicación instalada probada
+en el desarrollador (342 comprobaciones, desinstalación/original intacto). Detener
+ampliaciones: resolver acceso Windows limpio independiente, revisar distribución
+y construir/reproducir desde commit estable. WINDOWS_A1_INSTALLATION.md describe
+exactamente la aceptación pendiente. Ningún criterio integral ni freeze acreditado.

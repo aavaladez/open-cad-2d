@@ -609,7 +609,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke-test", type=Path)
     parser.add_argument("--qcad",action='store_true',help='Adaptador QCAD experimental compilado en este proyecto')
+    parser.add_argument('--acceptance-check',type=Path,help='Regresión del paquete; no acredita un entorno limpio')
     args = parser.parse_args()
+    if args.acceptance_check:
+        from .packaged_checks import run
+        return run(args.acceptance_check)
     app = QApplication.instance() or QApplication(sys.argv[:1])
     if not QFontDatabase.families():
         # Offscreen Windows may not enumerate system fonts. Load an existing OS
@@ -619,12 +623,12 @@ def main():
             if font.is_file() and QFontDatabase.addApplicationFont(str(font)) >= 0:
                 app.setFont(QFont("Arial" if sys.platform=="win32" else "DejaVu Sans",10))
                 break
-    if args.qcad:
+    if args.qcad or getattr(sys,'frozen',False) and (Path(sys._MEIPASS)/'build-identity.json').is_file():
         if args.smoke_test:
             parser.error('Usar el fixture funcional QCAD; el smoke temporal no acredita ese backend')
         from .qcad_backend import QcadDocument
-        root=Path(__file__).resolve().parents[2]
-        doc=QcadDocument(root/'build/native/opencad-qcad-engine.exe',root/'.cache/upstream/qcad',root/'.cache/qt/6.10.3/msvc2022_64')
+        from .runtime_paths import backend_paths
+        doc=QcadDocument(*backend_paths())
         window=MainWindow(doc)
     else:
         window = MainWindow()

@@ -1,0 +1,111 @@
+{
+  "kind": "development_installed_evidence",
+  "clean_windows_verified": false,
+  "date": "2026-10-12",
+  "installer_path": "build/windows-package-v4/installer/OPEN-CAD-2D-QCAD-A1-Setup.exe",
+  "installer_sha256": "72009a810dd8df0af40a1f98a3b29a90a5cd7d0f08581dbdb02521f82bde52ca",
+  "checks_by_suite": {
+    "application": 28,
+    "dxf": 24,
+    "editing": 30,
+    "transforms": 23,
+    "curves": 69,
+    "cutting": 55,
+    "dimensions": 58,
+    "lisp_essential": 34,
+    "recovery": 21
+  },
+  "checks_total": 342,
+  "artifacts": [
+    {
+      "path": "docs/evidence/windows-a1-local/application.json",
+      "sha256": "ca16ca44fb1ce925de9570cec6526e201d1e393b3c2ecfcce0661341ed2f8393"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/application-qcad-application.png",
+      "sha256": "a3fa72dd1d6163ae9c24a11a63d27950a667cd0561827c9ee64343016f2ca9dd"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/dxf.json",
+      "sha256": "08079e0b6f5c0b4800067f5419f817f738df0e7c0fc15aac1e453d686d9dc64b"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/dxf-qcad-dxf.png",
+      "sha256": "c9f35e3202031d2cc719c8a5e528abe7463b452e0944e6bc9867996db0d7727d"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/editing.json",
+      "sha256": "e7c5ae5be6cf05914d81c1c5a7f397918d74e1ca107c1d362964127ec5b297e9"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/editing-qcad-editing.png",
+      "sha256": "4490280c339df5490071ec9d760f9450b848f3f64af52f89822487fb15b81ecb"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/transforms.json",
+      "sha256": "20002c06b969b83bbe2065fd76971b9380c3d553935110317f85a29f0ad184b0"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/curves.json",
+      "sha256": "8c0ffa993d21a9c5f6c18d2a0c2c978dc8c2e0aa559d83ee50ac3a5c71e93ea8"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/curves-curves.png",
+      "sha256": "167767db2b5be51c24e0520a1ffc0a45afd02285cdaea1ce88da47f7a52c2398"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/cutting.json",
+      "sha256": "b860a324b6b8dd0bb17a6e81757385df9eda66464909c85a3a09e628ecb4d458"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/cutting-cutting.png",
+      "sha256": "661e917421b81fe3b43c424e24666559a2c99ee8537ab19ee432893657d23906"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/dimensions.json",
+      "sha256": "add0ce0558a776247705fdbe6f86bb32c937907a1c7e8fdb3c5bb3468ad9f220"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/dimensions-dimensions.png",
+      "sha256": "3e395e2b4fc1258cf1208a553d3e2ead47afa67abcd0e3ff10afaf80f95d3d47"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/lisp_essential.json",
+      "sha256": "2c5f8cb3920914c6b711f6d6da393a35a5f66fbd3ad8fca0e2eaaae7fc375f9c"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/lisp_essential-lisp-essential.png",
+      "sha256": "79336a5cf371a6f9a3bf99c0a1f1d486e58a63965cb14b9ac93aee48a3ac4343"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/recovery.json",
+      "sha256": "d148f4d4b197773480a3e7f61078972e6cf4f050a2473afed5c0b46fca929e90"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/recovery-recovery.png",
+      "sha256": "08023647cd60988fb581e63c29f2638e63c3d71b2cebc6feb1c542e48af5708e"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/installation.json",
+      "sha256": "a797f3480b9cf7510621ce3a1aa9e5480352410a707deab62d2558cb2e44110d"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/packaged-report.json",
+      "sha256": "2f3d85eb37d43cbdbed4d295319b075622f8d2ff98d8993ac2b04a407d5c8f74"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/install.txt",
+      "sha256": "5e629909e531b6a4dbd542adfcd9823432d1c4f3a0b9955238a7d453e5d453f6"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/regression.json",
+      "sha256": "f94e4faba25efe73e74081678983918be5949816e48f370532e8980fc5e13292"
+    },
+    {
+      "path": "docs/evidence/windows-a1-local/installer-build.txt",
+      "sha256": "b0f9c1d570c5803182b4f91abba54816e4cc9b666a966832c36cf89add97b7e6"
+    }
+  ],
+  "source_snapshot": "included sources, base PR21 plus working-tree patches/additions; not a frozen candidate",
+  "blocked_procedure": "docs/WINDOWS_A1_INSTALLATION.md"
+}

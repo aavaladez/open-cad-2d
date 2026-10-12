@@ -1,0 +1,23 @@
+{
+  "kind": "packaged_functional_regression",
+  "clean_environment_verified": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "application_sha256": "ae224424478eadb3d45549ae047433b3f96344bcbfdbfd8f0f8cb0dc46747b38",
+  "engine_sha256": "305bef6ee2fcc8ab0aec60ae5482160c70e75c30c59021b10987b9fdece18e8c",
+  "results": {
+    "application": true,
+    "dxf": true,
+    "editing": true,
+    "transforms": true,
+    "curves": true,
+    "cutting": true,
+    "dimensions": true,
+    "lisp_essential": true,
+    "recovery": true
+  },
+  "passed": true,
+  "limits": [
+    "offscreen with deterministic dialogs",
+    "environment independence requires separate verification"
+  ]
+}

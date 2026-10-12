@@ -4,7 +4,7 @@ on:
   push:
     branches: ['codex/qcad-build-spike']
   pull_request:
-    paths: ['native/**', 'src/opencad/**', 'examples/**', 'tests/**', 'CMakeLists.txt', 'tools/*qcad*', 'tools/cad_workflow.py', '.github/workflows/qcad-spike.yml']
+    paths: ['native/**', 'src/opencad/**', 'examples/**', 'tests/**', 'packaging/**', 'CMakeLists.txt', 'tools/*qcad*', 'tools/prepare_inno.ps1', 'tools/verify_windows_install.ps1', 'tools/cad_workflow.py', '.github/workflows/qcad-spike.yml']
 permissions:
   contents: read
 jobs:
@@ -32,6 +32,22 @@ jobs:
           try { ./tools/build_qcad.ps1 *> build-native.log }
           finally { Get-Content -LiteralPath build-native.log }
       - run: ctest --test-dir build/native --output-on-failure
+      - name: Package existing native build and compile installer
+        shell: pwsh
+        run: |
+          python -m pip install pyinstaller==6.16.0 pefile==2023.2.7
+          $cadVsWhere=Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio/Installer/vswhere.exe'
+          $cadVs=& $cadVsWhere -latest -products '*' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+          $cadCrt=Get-ChildItem (Join-Path $cadVs 'VC/Redist/MSVC/*/x64/Microsoft.VC*.CRT') -Directory | Sort-Object FullName -Descending | Select-Object -First 1 -ExpandProperty FullName
+          python tools/package_qcad_windows.py --crt $cadCrt
+          if ($LASTEXITCODE -ne 0) {throw 'Package build failed'}
+          $cadCompiler=./tools/prepare_inno.ps1
+          & $cadCompiler ('/DPackageDir='+$PWD+'/build/windows-package/dist/OPEN-CAD-2D-Native') ('/DOutputPath='+$PWD+'/build/windows-package/installer') packaging/windows/opencad-native.iss
+          if ($LASTEXITCODE -ne 0) {throw 'Installer compile failed'}
+      - name: Installed integrated regression on build runner (not clean Windows)
+        shell: pwsh
+        run: |
+          ./tools/verify_windows_install.ps1 -Installer ./build/windows-package/installer/OPEN-CAD-2D-QCAD-A1-Setup.exe -Output ($PWD.Path+'/build/installed-evidence')
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -51,3 +67,6 @@ jobs:
             build/native/recovery-acceptance/
             build/native/regression.json
             build/native/Testing/Temporary/LastTest.log
+            build/installed-evidence/
+            build/windows-package/build-identity.json
+          # Binary redistribution awaits corresponding-source/license review.

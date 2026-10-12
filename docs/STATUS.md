@@ -20,6 +20,20 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- Distribución Windows QCAD experimental desde #21: paquete/instalador compilados
+  reutilizando el motor; bibliotecas nativas/Qt separadas, sin fallback temporal.
+  Instalación/342 comprobaciones integradas/desinstalación exit0 en el host de
+  desarrollo, PATH restringido a System32; dibujo conservado. Nueve helpers existentes,
+  sin ampliar catálogo. Regresión Python3.12:58/58. evidence/windows-a1-local/.
+  Dos faltantes de recursos comprobados al probar el paquete fueron corregidos.
+  Fuentes QCAD/OPEN CAD incluidas; licencias/fuentes del binario completo pendientes
+  de revisión antes de redistribución pública. CI #21 general/nativa success, listo
+  para revisión sin merge; nuevo paquete apilado sobre #21 con CI propia pendiente.
+  **A1 continúa0/6**, candidate null: Windows limpio independiente inaccesible.
+  audit-gate.json referencia pruebas parciales reales para cada criterio.
+  Procedimiento pendiente: WINDOWS_A1_INSTALLATION.md; bloqueo en
+  evidence/windows-clean-environment-block.json. Sin freeze, release ni nueva fase.
+
 - Recuperación privada del último estado QCAD confirmado, separada de staging.
   Manifest/hash/publicación atómica y dos generaciones por sesión; candidato QCAD
   con confirmación/reinicio de historial, selección y LSP. Original intacto.

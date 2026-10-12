@@ -27,3 +27,13 @@ correspondientes que exijan las licencias. Portable inicial experimental, sin fi
 QCAD y LibreCAD3 sólo auditados y no incluidos en el portable; consultar AUDIT.md
 antes de redistribuir una build nativa. No se incorpora ningún recurso de Autodesk.
 Fuentes del sistema se usan para render local sin copiarse en la entrega.
+
+Paquete A1 experimental posterior: QCAD CE/dxflib GPL2-or-later/GPL3-or-later,
+openNURBS con licencia permisiva propia/zlib, libspatialindex MIT y stemmer BSD2
+incluidos desde el build auditado. Sus textos y fuentes QCAD (pin más cambios) se
+adjuntan junto con fuentes OPEN CAD y SBOM Qt SDK. Inno6.7.3 tiene licencia permisiva
+revisada en su tag oficial; compilador/firmante Pyrsys B.V. verificados. Microsoft
+CRT proviene del directorio redistribuible del toolchain, sin instalador del runtime
+que modifique el sistema. La revisión completa de dependencias binarios/fuentes
+correspondientes sigue pendiente antes de distribución pública; la CI no publica
+el instalador. No inferir cumplimiento total de licencias por este inventario parcial.

@@ -20,3 +20,9 @@ Antes de release, registrar ejecución real en Windows 10/11 limpio:
 - Accesibilidad, recuperación tras cierre inesperado y grandes dibujos (pendientes).
 
 Estas verificaciones no están aprobadas por haber pasado el modo offscreen.
+
+2026-10-12: instalador nativo ejecutado en host de desarrollo Windows11; instalación,
+342 comprobaciones de nueve suites instaladas (incluyen edición/LSP/DXF/recuperación)
+y desinstalación exit0; dibujo externo intacto. PATH reducido a System32. Esto no
+acredita entorno limpio, DPI/foco/observación independiente en escritorio real.
+Procedimiento pendiente en WINDOWS_A1_INSTALLATION.md y evidencias windows-a1-local/.
