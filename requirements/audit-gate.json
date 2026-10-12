@@ -15,7 +15,7 @@
     "essential_commands": {
       "status": "partial",
       "cases": {},
-      "gap": "ARC/PLINE recta, selección y transformaciones QCAD parciales comprobados; faltan TRIM/EXTEND/OFFSET y acotación requeridas"
+      "gap": "ARC/PLINE recta, selección, transformaciones y TRIM/EXTEND/OFFSET QCAD parciales comprobados; acotación e integración/candidata instalada pendientes"
     },
     "autolisp": {
       "status": "partial",

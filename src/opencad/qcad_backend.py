@@ -162,7 +162,7 @@ class QcadDocument:
 class QcadCommandBus(CommandBus):
     def __init__(self,document,aliases=None):
         super().__init__(document)
-        for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC'),('ARC','A'),('PLINE','PL')]:
+        for name,alias in [('COPY','CO'),('ROTATE','RO'),('SCALE','SC'),('ARC','A'),('PLINE','PL'),('TRIM','TR'),('EXTEND','EX'),('OFFSET','O')]:
             self.definitions[name]={'aliases':[alias],'variant':'native subset'}; self.aliases[alias]=name
         if aliases is not None: self.set_aliases(aliases)
 
@@ -172,7 +172,20 @@ class QcadCommandBus(CommandBus):
 
     def execute(self,name,*args):
         canonical = self.aliases.get(name.upper().removeprefix('_'),name.upper().removeprefix('_'))
-        if canonical=='ARC':
+        if canonical in ('TRIM','EXTEND'):
+            if len(args) not in (3,4): raise ValueError(canonical+' límites-IDs objetivo-ID punto [tolerancia-pick]')
+            targets=self.ids(args[1])
+            if len(targets)!=1: raise ValueError('Un objetivo por operación TRIM/EXTEND')
+            with self.document.transaction():
+                result=self.document.request(canonical.lower(),boundaries=self.ids(args[0]),id=targets[0],
+                    picked=self.document.xyz(point(args[2])),tolerance=float(args[3]) if len(args)==4 else 1e-6)
+        elif canonical=='OFFSET':
+            if len(args)!=3: raise ValueError('OFFSET ID distancia punto-del-lado')
+            targets=self.ids(args[0])
+            if len(targets)!=1: raise ValueError('Un objetivo por OFFSET')
+            with self.document.transaction():
+                result=self.document.request('offset',id=targets[0],distance=float(args[1]),side=self.document.xyz(point(args[2])))
+        elif canonical=='ARC':
             if len(args)==3:
                 arguments=dict(points=[self.document.xyz(point(p)) for p in args])
             elif len(args)==5 and str(args[0]).upper()=='CENTER':
@@ -200,7 +213,7 @@ class QcadCommandBus(CommandBus):
                 result = self.document.layer(str(args[0]).upper(),str(args[1]))
         else:
             result = super().execute(name,*args)
-        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY','ARC','PLINE'):
+        if self.document._depth==0 and canonical in ('LINE','CIRCLE','COPY','ARC','PLINE','TRIM','EXTEND','OFFSET'):
             def translate(value):
                 if type(value) is int: return self.document.id_map.get(value,value)
                 if isinstance(value,list): return [translate(v) for v in value]

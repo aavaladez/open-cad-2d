@@ -1,4 +1,5 @@
 #include "session.h"
+#include "geometry_ops.h"
 #include <QJsonArray>
 #include <QFileInfo>
 #include <QRegularExpression>
@@ -219,15 +220,7 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             auto e=entities[id]; auto layer=layers[entityLayers[id]];
             if (layer->isOff() || layer->isFrozen()) continue;
             // Picking is evaluated in displayed XY; source XYZ remains untouched.
-            QSharedPointer<RShape> shape;
-            if (auto line=e.dynamicCast<RLineEntity>())
-                shape.reset(new RLine(line->getStartPoint().get2D(),line->getEndPoint().get2D()));
-            else if (auto c=e.dynamicCast<RCircleEntity>()) shape.reset(new RCircle(c->getCenter().get2D(),c->getRadius()));
-            else if (auto arc=e.dynamicCast<RArcEntity>()) shape.reset(new RArc(arc->getCenter().get2D(),arc->getRadius(),
-                arc->getStartAngle(),arc->getEndAngle(),arc->isReversed()));
-            else if (auto poly=e.dynamicCast<RPolylineEntity>()) {
-                auto flattened=poly->getPolylineShape(); flattened.setZ(0); shape.reset(new RPolyline(flattened));
-            } else throw std::runtime_error("Unsupported selection geometry");
+            auto shape=CadGeometry::projected(e);
             if (mode=="point") {
                 double distance=shape->getDistanceTo(a);
                 if (distance<best) { best=distance; nearest=id; }
@@ -300,6 +293,32 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             e->setColor(RColor(RColor::ByLayer)); e->setLinetypeId(document().getLinetypeId("BYLAYER"));
             e->setBlockId(document().getCurrentBlockId());
             int id=virtualId--; entities[id]=e; entityLayers[id]=currentLayer; dirtyEntities.insert(id); value=id;
+        } else if (action=="trim" || action=="extend" || action=="offset") {
+            double n=number(input["id"]); int id=input["id"].toInt();
+            require(n==id && entities.contains(id),"Unknown target entity"); writable(entityLayers[id]);
+            if (action=="offset") {
+                auto created=CadGeometry::offset(entities[id],number(input["distance"]),point(input["side"]));
+                validGeometry(created); int target=virtualId--; entities[target]=created;
+                entityLayers[target]=entityLayers[id]; dirtyEntities.insert(target); value=target;
+            } else {
+                require(input["boundaries"].isArray() && !input["boundaries"].toArray().isEmpty(),"Boundary selection required");
+                QList<QSharedPointer<REntity>> boundaries;
+                for (const auto& v : input["boundaries"].toArray()) {
+                    double n=number(v); int boundary=v.toInt();
+                    require(n==boundary && boundary!=id && entities.contains(boundary),"Unknown or self boundary"); boundaries.append(entities[boundary]);
+                }
+                double tolerance=number(input["tolerance"]); require(tolerance>0,"Positive pick tolerance required");
+                auto retained=CadGeometry::cutLine(entities[id],boundaries,point(input["picked"]),tolerance,action=="extend");
+                for (const auto& e : retained) validGeometry(e);
+                QJsonArray ids{id};
+                entities[id]=retained.first(); dirtyEntities.insert(id);
+                if (retained.size()==2) {
+                    auto line=retained.last().dynamicCast<RLineEntity>();
+                    QSharedPointer<REntity> copy(new RLineEntity(&document(),line->getData()));
+                    int target=virtualId--; entities[target]=copy; entityLayers[target]=entityLayers[id]; dirtyEntities.insert(target); ids.append(target);
+                }
+                value=ids;
+            }
         } else if (action=="copy" || action=="rotate" || action=="scale") {
             require(input["ids"].isArray() && !input["ids"].toArray().isEmpty(),"Selection required");
             QSet<int> ids;

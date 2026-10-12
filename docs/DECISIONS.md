@@ -121,3 +121,19 @@ PLINEGEN al construir datos: desactivar explícitamente en el subconjunto valida
 Sólo ampliar DXF cuando entidades/atributos y writer CE/final contrastan. Mantener
 writer híbrido y sus límites. CURVES.md registra fuentes, contratos y evidencias.
 No cerrar ARC/PLINE completos: variantes del Excel todavía pendientes, A1 0/6.
+
+## ADR-017 — Límites finitos, selección y precisión separada
+
+2026-10-12: extraer operaciones geométricas del adaptador a geometry_ops.cpp,
+con formas QCAD públicas compartidas con selección. TRIM retira intervalo LINE
+seleccionado entre cortes finitos, conserva ambas piezas si es interior y confirma
+un lote; EXTEND elige límite más cercano más allá del extremo indicado. Proyección
+XY e interpolación/extrapolación Z de la LINE original; no usar Z del límite como
+Z resultante. Separar tolerancia de pick (píxeles/UI) de precisión de intersección
+1e-9. Rechazar picks ambiguos y variantes ausentes; no inventar límites infinitos.
+
+OFFSET usa getOffsetShapes LINE/CIRCLE/ARC y restaura Z retenida; lado XY, radio
+no positivo rechazado. Nuevas IDs desde constructores públicos, fuente/capa intacta.
+Límites bloqueados son consultables sin edición; objetivo bloqueado se rechaza.
+CUTTING.md documenta contratos/pending y baselines independientes. No ampliar
+el modelo temporal, sin equivalencia de todas las variantes ni aceptación A1.

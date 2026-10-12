@@ -61,6 +61,11 @@ empaquetado nativo/instalación/desinstalación en Windows limpio. No ampliar ca
 Las variantes faltantes se registran sin bloquear desarrollo de capacidades A1;
 ninguna se declara completa ni ningún criterio A1 se acredita con evidencia parcial.
 
+TRIM/EXTEND LINE con límites finitos y OFFSET LINE/CIRCLE/ARC posteriores verificados
+en UI/Qt y DXF. Mantener sus variantes avanzadas pendientes. Próxima prioridad A1:
+acotación lineal/alineada/radio nativa editable y persistente; consolidar LSP y
+recuperación, preparar paquete nativo e instalador y pruebas funcionales limpias.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

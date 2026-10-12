@@ -1,0 +1,9 @@
+{
+  "requirement_id": "ACAD-0043", "command": "TRIM", "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variant": "LINE target, finite LINE/CIRCLE/ARC/straight PLINE boundaries; remove picked interval and preserve XYZ interpolation",
+  "pending": ["ARC/CIRCLE/PLINE targets", "imaginary edges", "Project", "Quick", "fence/crossing tool flow", "multiple targets", "Shift", "OSNAP", "LSP COMMAND bridge"],
+  "cases": ["trim_endpoint_analytic_z", "trim_start_analytic_z", "trim_circle_middle_split", "trim_split_single_undo", "trim_polyline_finite_edges", "trim_arc_native_roots", "arc_support_circle_not_boundary", "trim_pick_on_boundary_ambiguous", "locked_boundary_read_only", "redo_survives_cutting_errors", "ui_trim_selected_boundary", "ui_trim_escape_atomic", "cutting_dxf_reopened"],
+  "baseline": "native/CUTTING.md", "test": "tools/check_qcad_cutting.py",
+  "implementation": ["native/adapter/geometry_ops.cpp", "native/adapter/session.cpp", "src/opencad/qcad_backend.py", "src/opencad/app.py"], "issue": 3
+}

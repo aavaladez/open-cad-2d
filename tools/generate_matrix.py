@@ -8,6 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPE = {
     "ARC": ("3 puntos planares/centro-radio-ángulos; faltan cuerda/dirección/otras opciones y LSP", "tools/check_qcad_curves.py"),
     "PLINE": ("entidad nativa recta abierta/cerrada con Z; faltan arcos/anchuras/Undo de vértice y LSP", "tools/check_qcad_curves.py"),
+    "TRIM": ("LINE contra límites finitos LINE/CIRCLE/ARC/PLINE, divide tramo interior y conserva Z; otras opciones/tipos/LSP pendientes", "tools/check_qcad_cutting.py"),
+    "EXTEND": ("LINE hasta límite finito más cercano del extremo elegido, Z prolongada; otras opciones/tipos/LSP pendientes", "tools/check_qcad_cutting.py"),
+    "OFFSET": ("distancia/lado XY LINE/CIRCLE/ARC conservando Z y fuente; PLINE/Through/Multiple/Erase/Layer/LSP pendientes", "tools/check_qcad_cutting.py"),
     "LINE": ("dos puntos/cadena XYZ; faltan opciones Close/Undo interactivas y coordenadas relativas", "test_commands.Commands.test_line_alias_chain_z_undo"),
     "CIRCLE": ("centro/radio; faltan 2P, 3P, TTR y TTT", "test_commands.Commands.test_circle_invalid_and_valid"),
     "MOVE": ("IDs/vector XYZ y selección UI/punto base-destino; faltan opciones completas", "test_commands.Commands.test_move_erase_layer_lock"),
@@ -26,7 +29,7 @@ PROTOTYPE = {
     "SELECT": ("selección UI individual/ventana/cruce XY, acumulación/Shift; sin filtros ni selección por consola", "tools/check_qcad_editing.py"),
     "PROPERTIES": ("panel LINE/CIRCLE/ARC/PLINE geometría/capa común; otros atributos y tipos pendientes", "tools/check_qcad_editing.py; tools/check_qcad_curves.py"),
 }
-NATIVE = {'LINE','CIRCLE','ARC','PLINE','MOVE','COPY','ROTATE','SCALE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
+NATIVE = {'LINE','CIRCLE','ARC','PLINE','TRIM','EXTEND','OFFSET','MOVE','COPY','ROTATE','SCALE','ERASE','LAYER','UNDO','REDO','APPLOAD','LOAD','OPEN','SAVEAS','SELECT','PROPERTIES'}
 
 
 def main():
