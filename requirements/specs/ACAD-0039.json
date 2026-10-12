@@ -1,0 +1,9 @@
+{
+  "requirement_id": "ACAD-0039", "command": "ROTATE", "status": "qcad_partial",
+  "source_sha256": "7fa08654ca249eac3f04b6a900af491e19baaa105ed5bb93503943f8230bf8b0",
+  "variant": "IDs, base XYZ and degrees; counterclockwise XY, unchanged Z",
+  "pending": ["Reference", "Copy", "interactive ROTATE", "LSP COMMAND bridge", "other entities"],
+  "cases": ["rotate_line_xy_z", "rotate_circle_xy_z", "rotate_single_undo", "rotate_redo", "ROTATE_locked", "transforms_dxf_reopened"],
+  "baseline": "native/TRANSFORMS.md", "test": "tools/check_qcad_transforms.py",
+  "implementation": ["native/adapter/session.cpp", "src/opencad/qcad_backend.py"], "issue": 3
+}

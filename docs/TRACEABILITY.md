@@ -31,3 +31,8 @@ con contratos en requirements/specs y 30 comprobaciones en check_qcad_editing.py
 MOVE incorpora selección/punto base-destino y cancelación; los requisitos siguen
 parciales. Matriz actual: 13 qcad_partial, un prototype_partial, 397 pendientes y
 61 exclusiones. Reportes nuevos qcad-editing*, conservando todos los antecedentes.
+
+Módulo posterior: ACAD-0038 COPY, ACAD-0039 ROTATE, ACAD-0040 SCALE, implementados
+en CadSession/QcadCommandBus; check_qcad_transforms.py (23 casos) y TRANSFORMS.md.
+Matriz actual: 16 qcad_partial, un prototype_partial, 394 pendientes, 61 exclusiones.
+Pruebas exactas de variantes/errores/undo y DXF; opciones restantes siguen pendientes.

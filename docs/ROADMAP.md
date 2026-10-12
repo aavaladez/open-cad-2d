@@ -47,6 +47,11 @@ modificación esenciales/acotación, con ampliación conjunta de representacione
 y conservación DXF. Instalación Windows en runner limpio sigue obligatoria; no
 sustituirla por pruebas del portable temporal. Evidencia de desarrollo aún parcial.
 
+COPY/ROTATE/SCALE posteriores verificados para LINE/CIRCLE en QCAD y DXF. Mantener
+prioridad de dibujo ARC/PLINE y acotación, con representaciones/conservación conjunta;
+TRIM/EXTEND/OFFSET y pruebas de instalación siguen pendientes para A1. No iniciar
+módulos GIS/presentaciones avanzadas ni otros comandos antes del punto de control.
+
 ## Punto de control A1 — primera auditoría integral obligatoria
 
 Decisión del director 2026-10-09, prioritaria sobre continuidad automática.

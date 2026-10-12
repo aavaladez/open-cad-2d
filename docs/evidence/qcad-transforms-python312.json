@@ -1,0 +1,101 @@
+{
+  "kind": "application_integration_partial",
+  "installed": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "checks": {
+    "copy_new_ids": true,
+    "copy_line_xyz": true,
+    "copy_circle_xyz": true,
+    "copy_original_untouched": true,
+    "copy_single_undo": true,
+    "copy_redo": true,
+    "rotate_line_xy_z": true,
+    "rotate_circle_xy_z": true,
+    "rotate_single_undo": true,
+    "rotate_redo": true,
+    "scale_line_xy_z": true,
+    "scale_circle_xy_z": true,
+    "scale_single_undo": true,
+    "scale_zero_atomic": true,
+    "unknown_id_atomic": true,
+    "scale_overflow_atomic": true,
+    "redo_after_errors": true,
+    "COPY_locked": true,
+    "ROTATE_locked": true,
+    "SCALE_locked": true,
+    "console_copy": true,
+    "console_copy_undo": true,
+    "transforms_dxf_reopened": true
+  },
+  "passed": true,
+  "engine_sha256": "8efb487d33427fd2a8a62eb9f8ed255d3c56890bfddd99e4db970761fdafebfc",
+  "identity": {
+    "engine": "qcad",
+    "protocol": 1,
+    "revision": "4c830eb4d80285ca64b1f2c2dc0987f729344126"
+  },
+  "observed": {
+    "current_layer": "0",
+    "entities": [
+      {
+        "center": [
+          19,
+          38,
+          9
+        ],
+        "color_index": 256,
+        "id": 11,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "radius": 6,
+        "type": "CIRCLE"
+      },
+      {
+        "color_index": 256,
+        "end": [
+          5,
+          6,
+          9
+        ],
+        "id": 12,
+        "layer": "0",
+        "linetype": "ByLayer",
+        "lineweight": -1,
+        "ltscale": 1,
+        "start": [
+          -1,
+          -2,
+          7
+        ],
+        "type": "LINE"
+      }
+    ],
+    "layers": [
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": 25,
+        "locked": false,
+        "name": "0",
+        "visible": true
+      },
+      {
+        "color": "#ffffff",
+        "color_index": 7,
+        "display_color": "#d6e2ec",
+        "frozen": false,
+        "linetype": "Continuous",
+        "lineweight": -3,
+        "locked": false,
+        "name": "Defpoints",
+        "visible": true
+      }
+    ],
+    "units": 0
+  }
+}

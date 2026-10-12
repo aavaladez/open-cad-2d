@@ -39,6 +39,14 @@ RVector point(const QJsonValue& v) {
     auto a = v.toArray(); return {number(a[0]),number(a[1]),number(a[2])};
 }
 QJsonArray xyz(const RVector& p) { return {p.x,p.y,p.z}; }
+bool finitePoint(const RVector& p) { return std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z); }
+void validGeometry(const QSharedPointer<REntity>& e) {
+    if (auto line=e.dynamicCast<RLineEntity>())
+        require(finitePoint(line->getStartPoint()) && finitePoint(line->getEndPoint()) &&
+            !line->getStartPoint().equalsFuzzy(line->getEndPoint()),"Invalid transformed line");
+    else { auto c=e.dynamicCast<RCircleEntity>(); require(c && finitePoint(c->getCenter()) &&
+        std::isfinite(c->getRadius()) && c->getRadius()>0,"Invalid transformed circle"); }
+}
 std::unique_ptr<RDocumentInterface> emptyDocument() {
     auto result=std::make_unique<RDocumentInterface>(*new RDocument(*new RMemoryStorage(),*new RSpatialIndexSimple()));
     auto& doc=result->getDocument();
@@ -115,6 +123,7 @@ void CadSession::writable(const QString& name) {
 }
 QJsonObject CadSession::commit() {
     require(editing,"No active transaction");
+    for (int id : dirtyEntities) if (entities.contains(id)) validGeometry(entities[id]);
     QJsonObject ids;
     if (!dirtyEntities.isEmpty() || !dirtyLayers.isEmpty() ||
         currentLayer!=document().queryLayer(document().getCurrentLayerId())->getName()) {
@@ -234,6 +243,36 @@ QJsonObject CadSession::request(const QJsonObject& input) {
             e->setColor(RColor(RColor::ByLayer)); e->setLinetypeId(document().getLinetypeId("BYLAYER"));
             e->setBlockId(document().getCurrentBlockId());
             int id=virtualId--; entities[id]=e; entityLayers[id]=currentLayer; dirtyEntities.insert(id); value=id;
+        } else if (action=="copy" || action=="rotate" || action=="scale") {
+            require(input["ids"].isArray() && !input["ids"].toArray().isEmpty(),"Selection required");
+            QSet<int> ids;
+            for (auto v : input["ids"].toArray()) {
+                double n=number(v); int id=v.toInt(); require(n==id && entities.contains(id),"Unknown entity ID");
+                ids.insert(id); writable(entityLayers[id]);
+            }
+            RVector base,delta; double amount=0;
+            if (action=="copy") delta=point(input["delta"]);
+            else { base=point(input["base"]); amount=number(input["amount"]); }
+            if (action=="scale") require(amount>0,"Positive scale required");
+            QMap<int,QSharedPointer<REntity>> transformed;
+            for (int id : ids) {
+                auto clone=entities[id]->cloneToEntity(); bool ok=false;
+                if (action=="copy") ok=clone->move(delta);
+                else if (action=="rotate") ok=clone->rotate(RMath::deg2rad(amount),base);
+                else ok=clone->scale(RVector(amount,amount,1),base);
+                require(ok,"QCAD transform failed"); validGeometry(clone); transformed[id]=clone;
+            }
+            QJsonArray newIds;
+            for (int id : transformed.keys()) {
+                if (action=="copy") {
+                    QSharedPointer<REntity> clone;
+                    if (auto line=transformed[id].dynamicCast<RLineEntity>())
+                        clone.reset(new RLineEntity(&document(),line->getData()));
+                    else { auto circle=transformed[id].dynamicCast<RCircleEntity>(); clone.reset(new RCircleEntity(&document(),circle->getData())); }
+                    int target=virtualId--; entities[target]=clone; entityLayers[target]=entityLayers[id]; dirtyEntities.insert(target); newIds.append(target);
+                } else { entities[id]=transformed[id]; dirtyEntities.insert(id); }
+            }
+            if (action=="copy") value=newIds;
         } else if (action=="properties") {
             require(input["ids"].isArray() && !input["ids"].toArray().isEmpty(),"Selection required");
             require(input["changes"].isObject() && !input["changes"].toObject().isEmpty(),"Property changes required");

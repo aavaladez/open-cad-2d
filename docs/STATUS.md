@@ -20,6 +20,13 @@ sin acreditar funcionalidades CAD. Reportes de entrada y regresión en evidence/
 
 ## Entregado
 
+- COPY/ROTATE/SCALE en QCAD: clones validados, transacción por selección, originales
+  intactos/nuevos IDs, aliases, conservación Z, undo/redo, bloqueos y rechazos.
+  23 comprobaciones funcionales por runtime y CTest 7/7. native/TRANSFORMS.md y
+  evidence/qcad-transforms*. Sólo variantes LINE/CIRCLE; sin Reference/Array ni
+  puente LSP para estos tres comandos. Matriz: 16 qcad_partial, un prototype_partial,
+  394 pendientes y 61 exclusiones. Cero completos; A1 continúa 0/6.
+
 - Propiedades editables y selección sobre QCAD: LINE XYZ, CIRCLE centro/radio, capa
   común de selección mixta, edición atómica y sincronización con undo/redo. Selección
   nativa XY, ventana/cruce, acumulación/Shift y MOVE UI con base/destino/cancelación.
@@ -124,7 +131,9 @@ recuperación y distribución/instalación Windows para entrada A1.
 
 CI verificada 2026-10-12: PR #13/4697e5e (runs 38014407702/38014407807) y
 PR #14/ff5f552 (38015692655/38015692620) aprobados; heads/dependencias intactos.
-Ambos listos para revisión, sin merge. CI del cambio posterior de edición pendiente.
+Ambos listos para revisión, sin merge. PR #15/8d3a7ee: verificación del prototipo y
+portable run 38266420863 aprobada; nativo run 38266420898 todavía en ejecución al
+consultar. CI del módulo posterior de transformaciones pendiente.
 No atribuir pruebas del prototipo portable a un despliegue QCAD instalado.
 
 La entrega local incluye avisos/licencias; antes de una release de distribución

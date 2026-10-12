@@ -43,5 +43,6 @@ jobs:
             build/native/application-acceptance/
             build/native/dxf-application/
             build/native/editing-acceptance/
+            build/native/transforms-acceptance/
             build/native/regression.json
             build/native/Testing/Temporary/LastTest.log
