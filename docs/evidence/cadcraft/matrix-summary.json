@@ -1,0 +1,13 @@
+{
+  "cadcraft_status": {
+    "Parcialmente implementado": 24,
+    "Declarado en documentación, sin prueba": 211,
+    "No implementado": 176,
+    "No aplicable al alcance CAD 2D": 61
+  },
+  "opencad_status": {
+    "Parcialmente implementado": 25,
+    "No implementado": 386,
+    "No aplicable al alcance CAD 2D": 61
+  }
+}

@@ -1,0 +1,1799 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.4",
+  "ezdxf": "1.4.3",
+  "qcad_binary_sha256": "305bef6ee2fcc8ab0aec60ae5482160c70e75c30c59021b10987b9fdece18e8c",
+  "cli_sha256": "913ac0222178994501487e619153e4dcb7107877f1069baaf33e30dcb80c59c1",
+  "tolerance": 1e-09,
+  "results": [
+    {
+      "case": "draw-line-circle-xy",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.08210910000002514,
+      "detail": {
+        "types": [
+          "CIRCLE",
+          "LINE"
+        ]
+      }
+    },
+    {
+      "case": "draw-line-circle-xy",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.013779999999997017,
+      "detail": {
+        "types": [
+          "LINE",
+          "CIRCLE"
+        ]
+      }
+    },
+    {
+      "case": "selection-properties-move-undo-redo",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.06773769999995238,
+      "detail": {
+        "selected": [
+          11,
+          12
+        ],
+        "start": [
+          1.0,
+          2.0,
+          0.0
+        ],
+        "end": [
+          4.0,
+          6.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case": "selection-properties-move-undo-redo",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.01470570000014959,
+      "detail": {
+        "selected": {
+          "blockEditor": null,
+          "blocks": [],
+          "counts": {
+            "Circle": 1,
+            "Line": 1
+          },
+          "currentLayer": "0",
+          "dimStyles": [
+            "Standard"
+          ],
+          "dirty": false,
+          "entities": [
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "a": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "b": {
+                  "x": 3.0,
+                  "y": 4.0,
+                  "z": 0.0
+                },
+                "type": "line"
+              },
+              "handle": "100",
+              "layer": "0",
+              "transparency": "ByLayer",
+              "type": "Line"
+            },
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "center": {
+                  "x": 10.0,
+                  "y": 10.0,
+                  "z": 0.0
+                },
+                "radius": 2.0,
+                "type": "circle"
+              },
+              "handle": "101",
+              "layer": "0",
+              "transparency": "ByLayer",
+              "type": "Circle"
+            }
+          ],
+          "entityCount": 2,
+          "extents": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              12.0,
+              12.0
+            ]
+          ],
+          "layers": [
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "0",
+              "on": true
+            },
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "Defpoints",
+              "on": true
+            }
+          ],
+          "layouts": [
+            "Layout1",
+            "Layout2"
+          ],
+          "linetypes": [
+            "ByBlock",
+            "ByLayer",
+            "Continuous"
+          ],
+          "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\.cache\\cadcraft-audit\\probe-complete\\draw-cc.dxf",
+          "selection": [
+            "100",
+            "101"
+          ],
+          "skipped": {
+            "count": 0,
+            "sections": {}
+          },
+          "space": "Model",
+          "textStyles": [
+            "Standard"
+          ],
+          "title": "draw-cc.dxf",
+          "undo": [
+            "Circle",
+            "Line"
+          ],
+          "view": {
+            "center": [
+              6.0,
+              4.5
+            ],
+            "height": 10.0
+          }
+        },
+        "start": [
+          1.0,
+          2.0,
+          0.0
+        ],
+        "end": [
+          4.0,
+          6.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case": "three-dimensions-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.08489420000000791,
+      "detail": {
+        "measurements": [
+          10.0,
+          30.0,
+          50.0
+        ]
+      }
+    },
+    {
+      "case": "three-dimensions-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.015861500000028173,
+      "detail": {
+        "measurements": [
+          10.0,
+          30.0,
+          50.0
+        ]
+      }
+    },
+    {
+      "case": "appload-custom-command-xyz",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.08179040000004534,
+      "detail": {
+        "start": [
+          100.0,
+          0.0,
+          7.0
+        ],
+        "end": [
+          103.0,
+          4.0,
+          9.0
+        ]
+      }
+    },
+    {
+      "case": "appload-custom-command-xyz",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.016126700000086203,
+      "detail": {
+        "start": [
+          100.0,
+          0.0,
+          0.0
+        ],
+        "end": [
+          103.0,
+          4.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case": "dxf-cycle-xyz-basic",
+      "engine": "qcad",
+      "outcome": "failed",
+      "seconds": 1.8954866999999922,
+      "detail": {
+        "equal_inventory": false,
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "CIRCLE": 1,
+            "LINE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              7,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "dxf-cycle-xyz-basic",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.019953100000066115,
+      "detail": {
+        "equal_inventory": false,
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "dxf-cycle-complex",
+      "engine": "qcad",
+      "outcome": "error",
+      "seconds": 0.011798800000178744,
+      "detail": {
+        "error": "Presentaciones personalizadas/con contenido no admitidas"
+      }
+    },
+    {
+      "case": "dxf-cycle-complex",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.020451399999956266,
+      "detail": {
+        "equal_inventory": false,
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1,
+            "INSERT": 1,
+            "TEXT": 1,
+            "LWPOLYLINE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [
+            [
+              "ámbito XYZ",
+              [
+                5.0,
+                5.0,
+                4.0
+              ]
+            ]
+          ],
+          "inserts": [
+            [
+              "OwnBlock",
+              [
+                20.0,
+                20.0,
+                3.0
+              ]
+            ]
+          ],
+          "xdata": [
+            [
+              [
+                1000,
+                "own-audit"
+              ],
+              [
+                1040,
+                1.25
+              ]
+            ]
+          ],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1",
+            "OwnSheet"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1,
+            "INSERT": 1,
+            "TEXT": 1,
+            "LWPOLYLINE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [
+            [
+              "ámbito XYZ",
+              [
+                5.0,
+                5.0,
+                4.0
+              ]
+            ]
+          ],
+          "inserts": [
+            [
+              "OwnBlock",
+              [
+                20.0,
+                20.0,
+                3.0
+              ]
+            ]
+          ],
+          "xdata": [
+            [
+              [
+                1000,
+                "own-audit"
+              ],
+              [
+                1040,
+                1.25
+              ]
+            ]
+          ],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1",
+            "OwnSheet"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "move-xyz-delta",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 1.0195318999999472,
+      "detail": {
+        "after": {
+          "types": {
+            "CIRCLE": 1,
+            "LINE": 1
+          },
+          "lines": [
+            [
+              [
+                1.0,
+                2.0,
+                10.0
+              ],
+              [
+                4.0,
+                6.0,
+                12.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                11.0,
+                12.0,
+                14.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              7,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "move-xyz-delta",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.01999149999983274,
+      "detail": {
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                1.0,
+                2.0,
+                7.0
+              ],
+              [
+                4.0,
+                6.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                11.0,
+                12.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "malformed-reject-active-preserved",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.0058950000000095315,
+      "detail": {
+        "rejected": "DXFStructureError: missing ENDSEC tag.",
+        "active_preserved": true
+      }
+    },
+    {
+      "case": "malformed-reject-active-preserved",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.000915100000156599,
+      "detail": {
+        "error": "malformed input accepted",
+        "active_preserved": false,
+        "before": {
+          "blockEditor": null,
+          "blocks": [],
+          "counts": {
+            "Circle": 1,
+            "Line": 1
+          },
+          "currentLayer": "Survey",
+          "dimStyles": [
+            "Standard"
+          ],
+          "dirty": false,
+          "entities": [
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "a": {
+                  "x": 1.0,
+                  "y": 2.0,
+                  "z": 7.0
+                },
+                "b": {
+                  "x": 4.0,
+                  "y": 6.0,
+                  "z": 9.0
+                },
+                "type": "line"
+              },
+              "handle": "30",
+              "layer": "Survey",
+              "transparency": "ByLayer",
+              "type": "Line"
+            },
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "center": {
+                  "x": 11.0,
+                  "y": 12.0,
+                  "z": 11.0
+                },
+                "radius": 2.0,
+                "type": "circle"
+              },
+              "handle": "31",
+              "layer": "Survey",
+              "transparency": "ByLayer",
+              "type": "Circle"
+            }
+          ],
+          "entityCount": 2,
+          "extents": [
+            [
+              1.0,
+              2.0
+            ],
+            [
+              13.0,
+              14.0
+            ]
+          ],
+          "layers": [
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "0",
+              "on": true
+            },
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "Defpoints",
+              "on": true
+            },
+            {
+              "color": "18,52,86",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "Survey",
+              "on": true
+            }
+          ],
+          "layouts": [
+            "Layout1"
+          ],
+          "linetypes": [
+            "ByBlock",
+            "ByLayer",
+            "Continuous"
+          ],
+          "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\.cache\\cadcraft-audit\\probe-complete\\zmove-cc.dxf",
+          "selection": [
+            "30",
+            "31"
+          ],
+          "skipped": {
+            "count": 0,
+            "sections": {}
+          },
+          "space": "Model",
+          "textStyles": [
+            "Standard"
+          ],
+          "title": "zmove-cc.dxf",
+          "undo": [
+            "Move"
+          ],
+          "view": {
+            "center": [
+              6.0,
+              6.0
+            ],
+            "height": 13.200000000000001
+          }
+        },
+        "after": {
+          "blockEditor": null,
+          "blocks": [],
+          "counts": {
+            "Line": 1
+          },
+          "currentLayer": "0",
+          "dimStyles": [
+            "Standard"
+          ],
+          "dirty": false,
+          "entities": [
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "a": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "b": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "type": "line"
+              },
+              "handle": "100",
+              "layer": "0",
+              "transparency": "ByLayer",
+              "type": "Line"
+            }
+          ],
+          "entityCount": 1,
+          "extents": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "layers": [
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "0",
+              "on": true
+            },
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "Defpoints",
+              "on": true
+            }
+          ],
+          "layouts": [
+            "Layout1"
+          ],
+          "linetypes": [
+            "ByBlock",
+            "ByLayer",
+            "Continuous"
+          ],
+          "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\.cache\\cadcraft-audit\\probe-complete\\malformed.dxf",
+          "selection": [],
+          "skipped": {
+            "count": 0,
+            "sections": {}
+          },
+          "space": "Model",
+          "textStyles": [
+            "Standard"
+          ],
+          "title": "malformed.dxf",
+          "undo": [],
+          "view": {
+            "center": [
+              0.0,
+              0.0
+            ],
+            "height": 1e-06
+          }
+        }
+      }
+    },
+    {
+      "case": "open-query-10000",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 6.3055746,
+      "detail": {
+        "entities": 10002
+      }
+    },
+    {
+      "case": "open-query-10000",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.08615729999996802,
+      "detail": {
+        "query": {
+          "count": 10001,
+          "entities": [],
+          "offset": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "case": "dwg-synthetic-bridge-cycle",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.03470000000015716,
+      "detail": {
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [
+            [
+              "SURVEY",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "0",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "modify-copy-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 1.0457923000001301,
+      "detail": {
+        "expected": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            4,
+            6,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.0,
+              4.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              1.0,
+              2.0,
+              0.0
+            ],
+            [
+              4.0,
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-copy-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.014537700000119003,
+      "detail": {
+        "expected": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            4,
+            6,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.0,
+              4.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              1.0,
+              2.0,
+              0.0
+            ],
+            [
+              4.0,
+              6.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-rotate-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.9983376999998654,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -4,
+            3,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -4.0,
+              3.0000000000000004,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-rotate-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.013765299999931813,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -4,
+            3,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -4.0,
+              3.0000000000000004,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-scale-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.9806596999999329,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            8,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              8.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-scale-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.017904300000054718,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            8,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              8.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-erase-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 1.0136706000000686,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            4,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.0,
+              4.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-erase-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.016908300000068266,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            4,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.0,
+              4.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-trim-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 1.0060934999999063,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.5,
+            2,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              1.5,
+              -10.0,
+              0.0
+            ],
+            [
+              1.5,
+              10.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.5,
+              2.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-trim-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.01711440000008224,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.5,
+            2,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              1.5,
+              -10.0,
+              0.0
+            ],
+            [
+              1.5,
+              10.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.5,
+              2.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-extend-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.9990926999998919,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            8,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              6.0,
+              -10.0,
+              0.0
+            ],
+            [
+              6.0,
+              10.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              8.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-extend-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.0695159000001695,
+      "detail": {
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            8,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              6.0,
+              8.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              6.0,
+              -10.0,
+              0.0
+            ],
+            [
+              6.0,
+              10.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-offset-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.995189400000072,
+      "detail": {
+        "expected": [
+          [
+            -4,
+            3,
+            0
+          ],
+          [
+            -1,
+            7,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              -4.0,
+              3.0,
+              0.0
+            ],
+            [
+              -1.0,
+              7.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.0,
+              4.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "modify-offset-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.016014799999993556,
+      "detail": {
+        "expected": [
+          [
+            -4,
+            3,
+            0
+          ],
+          [
+            -1,
+            7,
+            0
+          ]
+        ],
+        "lines": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.0,
+              4.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              -4.0,
+              3.0,
+              0.0
+            ],
+            [
+              -1.0,
+              7.0,
+              0.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "case": "arc-pline-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.9860298000000967,
+      "detail": {
+        "arc": [
+          5.0,
+          0.0,
+          90.0
+        ],
+        "pline": [
+          [
+            10.0,
+            0.0
+          ],
+          [
+            15.0,
+            0.0
+          ],
+          [
+            15.0,
+            5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "arc-pline-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.02247839999995449,
+      "detail": {
+        "arc": [
+          5.0,
+          0.0,
+          90.0
+        ],
+        "pline": [
+          [
+            10.0,
+            0.0
+          ],
+          [
+            15.0,
+            0.0
+          ],
+          [
+            15.0,
+            5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "failed-lsp-rollback",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.000901900000144451,
+      "detail": {
+        "rejected": true,
+        "before_count": 2,
+        "after_count": 2,
+        "response": {
+          "before": 2,
+          "after": 2
+        }
+      }
+    },
+    {
+      "case": "failed-lsp-rollback",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.0011950999999044143,
+      "detail": {
+        "rejected": true,
+        "before_count": 0,
+        "after_count": 1,
+        "response": {
+          "error": "no function definition: MISSING-FUNCTION",
+          "output": [
+            "Command: LINE",
+            "*Cancel*",
+            "; error: no function definition: MISSING-FUNCTION"
+          ]
+        }
+      }
+    }
+  ]
+}

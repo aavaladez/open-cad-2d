@@ -1,0 +1,184 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.4.3
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+    Updating crates.io index
+    Updating git repository `https://github.com/storytold/craft-libs`
+ Downloading crates ...
+  Downloaded adler2 v2.0.1
+  Downloaded equivalent v1.0.2
+  Downloaded anyhow v1.0.104
+  Downloaded multiversion_no_op v1.0.0
+  Downloaded cfg-if v1.0.5
+  Downloaded byteorder v1.5.0
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded phf_shared v0.11.3
+  Downloaded strict-num v0.1.1
+  Downloaded hash32 v0.3.1
+  Downloaded itoa v1.0.18
+  Downloaded arrayref v0.3.9
+  Downloaded float_next_after v1.0.0
+  Downloaded siphasher v1.0.4
+  Downloaded simd-adler32 v0.3.10
+  Downloaded thiserror v2.0.21
+  Downloaded zmij v1.0.23
+  Downloaded quote v1.0.47
+  Downloaded num-traits v0.2.19
+  Downloaded unicode-bidi v0.3.18
+  Downloaded miniz_oxide v0.9.1
+  Downloaded proc-macro2 v1.0.107
+  Downloaded serde v1.0.229
+  Downloaded png v0.17.16
+  Downloaded nom v7.1.3
+  Downloaded indexmap v2.14.2
+  Downloaded minimal-lexical v0.2.1
+  Downloaded serde_json v1.0.151
+  Downloaded tiny-skia v0.11.4
+  Downloaded zlib-rs v0.6.8
+  Downloaded quick-xml v0.41.0
+  Downloaded lyon_tessellation v1.0.22
+  Downloaded rayon v1.12.0
+  Downloaded libm v0.2.16
+  Downloaded skrifa v0.47.0
+  Downloaded syn v3.0.6
+  Downloaded harfrust v0.12.0
+  Downloaded hashbrown v0.17.1
+  Downloaded memchr v2.8.3
+  Downloaded lyon_path v1.0.19
+  Downloaded heapless v0.8.0
+  Downloaded rayon-core v1.13.0
+  Downloaded miniz_oxide v0.8.9
+  Downloaded euclid v0.22.14
+  Downloaded encoding_rs v0.8.42
+  Downloaded lyon_geom v1.0.19
+  Downloaded log v0.4.34
+  Downloaded flate2 v1.1.10
+  Downloaded tiny-skia-path v0.11.4
+  Downloaded read-fonts v0.41.0
+  Downloaded read-fonts v0.44.0
+  Downloaded serde_derive v1.0.229
+  Downloaded serde_core v1.0.229
+  Downloaded ryu v1.0.23
+  Downloaded rstar v0.12.2
+  Downloaded bytemuck v1.25.2
+  Downloaded bitflags v2.13.2
+  Downloaded arrayvec v0.7.8
+  Downloaded crc32fast v1.5.2
+  Downloaded once_cell v1.21.4
+  Downloaded memmap2 v0.9.11
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded web-time v1.1.0
+  Downloaded unicode-ident v1.0.26
+  Downloaded thiserror-impl v2.0.21
+  Downloaded smallvec v1.16.2
+  Downloaded simdutf8 v0.1.5
+  Downloaded rustversion v1.0.23
+  Downloaded font-types v0.12.6
+  Downloaded phf v0.11.3
+  Downloaded oem_cp v2.1.2
+  Downloaded foldhash v0.2.0
+  Downloaded fdeflate v0.3.7
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded core_detect v1.0.0
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded bitflags v1.3.2
+  Downloaded autocfg v1.5.1
+  Downloaded scopeguard v1.2.0
+  Downloaded either v1.19.0
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded acadrust v0.6.4
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling serde_core v1.0.229
+   Compiling libm v0.2.16
+   Compiling cfg-if v1.0.5
+   Compiling autocfg v1.5.1
+   Compiling simd-adler32 v0.3.10
+   Compiling crossbeam-utils v0.8.23
+   Compiling crc32fast v1.5.2
+   Compiling crossbeam-epoch v0.9.21
+   Compiling serde v1.0.229
+   Compiling once_cell v1.21.4
+   Compiling adler2 v2.0.1
+   Compiling thiserror v2.0.21
+   Compiling rustversion v1.0.23
+   Compiling memchr v2.8.3
+   Compiling crossbeam-deque v0.8.8
+   Compiling miniz_oxide v0.9.1
+   Compiling zmij v1.0.23
+   Compiling rayon-core v1.13.0
+   Compiling itoa v1.0.18
+   Compiling serde_json v1.0.151
+   Compiling bitflags v2.13.2
+   Compiling arrayvec v0.7.8
+   Compiling byteorder v1.5.0
+   Compiling smallvec v1.16.2
+   Compiling flate2 v1.1.10
+   Compiling either v1.19.0
+   Compiling core_detect v1.0.0
+   Compiling scopeguard v1.2.0
+   Compiling multiversion_no_op v1.0.0
+   Compiling siphasher v1.0.4
+   Compiling num-traits v0.2.19
+   Compiling simdutf8 v0.1.5
+   Compiling fdeflate v0.3.7
+   Compiling phf_shared v0.11.3
+   Compiling syn v3.0.6
+   Compiling miniz_oxide v0.8.9
+   Compiling bitflags v1.3.2
+   Compiling log v0.4.34
+   Compiling cadcraft-fonts v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\fonts)
+   Compiling strict-num v0.1.1
+   Compiling arrayref v0.3.9
+   Compiling anyhow v1.0.104
+   Compiling phf v0.11.3
+   Compiling hashbrown v0.17.1
+   Compiling float_next_after v1.0.0
+   Compiling png v0.17.16
+   Compiling minimal-lexical v0.2.1
+   Compiling equivalent v1.0.2
+   Compiling rayon v1.12.0
+   Compiling heapless v0.8.0
+   Compiling euclid v0.22.14
+   Compiling unicode-bidi v0.3.18
+   Compiling indexmap v2.14.2
+   Compiling encoding_rs v0.8.42
+   Compiling nom v7.1.3
+   Compiling oem_cp v2.1.2
+   Compiling hash32 v0.3.1
+   Compiling lyon_geom v1.0.19
+   Compiling foldhash v0.2.0
+   Compiling web-time v1.1.0
+   Compiling stable_deref_trait v1.2.1
+   Compiling ryu v1.0.23
+   Compiling memmap2 v0.9.11
+   Compiling lyon_path v1.0.19
+   Compiling quick-xml v0.41.0
+   Compiling rstar v0.12.2
+   Compiling lyon_tessellation v1.0.22
+   Compiling bytemuck_derive v1.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling serde_derive v1.0.229
+   Compiling acadrust v0.6.4
+   Compiling cadcraft-dxf v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\dxf)
+   Compiling bytemuck v1.25.2
+   Compiling font-types v0.12.6
+   Compiling read-fonts v0.44.0
+   Compiling read-fonts v0.41.0
+   Compiling tiny-skia-path v0.11.4
+   Compiling tiny-skia v0.11.4
+   Compiling cadcraft-geom v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\geom)
+   Compiling cadcraft-color v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\color)
+   Compiling cadcraft-doc v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\doc)
+   Compiling skrifa v0.47.0
+   Compiling harfrust v0.12.0
+   Compiling cadcraft-constraints v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\constraints)
+   Compiling cadcraft-render v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\render)
+   Compiling cadcraft-engine v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\engine)
+   Compiling cadcraft-dwg v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\dwg)
+   Compiling cadcraft-io v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\io)
+   Compiling cadcraft-mcp v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\mcp)
+   Compiling cadcraft-cli v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\apps\cadcraft-cli)
+    Finished `dev` profile [optimized + debuginfo] target(s) in 2m 09s

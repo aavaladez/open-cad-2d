@@ -1,0 +1,900 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.4",
+  "ezdxf": "1.4.3",
+  "qcad_binary_sha256": "305bef6ee2fcc8ab0aec60ae5482160c70e75c30c59021b10987b9fdece18e8c",
+  "cli_sha256": "73cd263f830dc743055a473f60b8fc27e84df3d845ab41abb7e5e973927c27af",
+  "tolerance": 1e-09,
+  "results": [
+    {
+      "case": "draw-line-circle-xy",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.1028180999999222,
+      "detail": {
+        "types": [
+          "CIRCLE",
+          "LINE"
+        ]
+      }
+    },
+    {
+      "case": "draw-line-circle-xy",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.02020419999985279,
+      "detail": {
+        "types": [
+          "LINE",
+          "CIRCLE"
+        ]
+      }
+    },
+    {
+      "case": "selection-properties-move-undo-redo",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.08769550000010895,
+      "detail": {
+        "selected": [
+          11,
+          12
+        ],
+        "start": [
+          1.0,
+          2.0,
+          0.0
+        ],
+        "end": [
+          4.0,
+          6.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case": "selection-properties-move-undo-redo",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.023012999999991735,
+      "detail": {
+        "selected": {
+          "blocks": [],
+          "counts": {
+            "Circle": 1,
+            "Line": 1
+          },
+          "currentLayer": "0",
+          "dimStyles": [
+            "Standard"
+          ],
+          "dirty": false,
+          "entities": [
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "a": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "b": {
+                  "x": 3.0,
+                  "y": 4.0,
+                  "z": 0.0
+                },
+                "type": "line"
+              },
+              "handle": "100",
+              "layer": "0",
+              "transparency": "ByLayer",
+              "type": "Line"
+            },
+            {
+              "color": "ByLayer",
+              "geometry": {
+                "center": {
+                  "x": 10.0,
+                  "y": 10.0,
+                  "z": 0.0
+                },
+                "radius": 2.0,
+                "type": "circle"
+              },
+              "handle": "101",
+              "layer": "0",
+              "transparency": "ByLayer",
+              "type": "Circle"
+            }
+          ],
+          "entityCount": 2,
+          "extents": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              12.0,
+              12.0
+            ]
+          ],
+          "layers": [
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "0",
+              "on": true
+            },
+            {
+              "color": "White",
+              "frozen": false,
+              "linetype": "Continuous",
+              "locked": false,
+              "name": "Defpoints",
+              "on": true
+            }
+          ],
+          "layouts": [
+            "Layout1",
+            "Layout2"
+          ],
+          "linetypes": [
+            "ByBlock",
+            "ByLayer",
+            "Continuous"
+          ],
+          "path": "C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\.cache\\cadcraft-audit\\probe-release-final\\draw-cc.dxf",
+          "selection": [
+            "100",
+            "101"
+          ],
+          "space": "Model",
+          "textStyles": [
+            "Standard"
+          ],
+          "title": "draw-cc.dxf",
+          "undo": [
+            "Circle",
+            "Line"
+          ],
+          "view": {
+            "center": [
+              6.0,
+              4.5
+            ],
+            "height": 10.0
+          }
+        },
+        "start": [
+          1.0,
+          2.0,
+          0.0
+        ],
+        "end": [
+          4.0,
+          6.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "case": "three-dimensions-analytic",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.1045060999999805,
+      "detail": {
+        "measurements": [
+          10.0,
+          30.0,
+          50.0
+        ]
+      }
+    },
+    {
+      "case": "three-dimensions-analytic",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.014565199999879042,
+      "detail": {
+        "measurements": [
+          10.0,
+          30.0,
+          50.0
+        ]
+      }
+    },
+    {
+      "case": "appload-custom-command-xyz",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.08714970000005451,
+      "detail": {
+        "start": [
+          100.0,
+          0.0,
+          7.0
+        ],
+        "end": [
+          103.0,
+          4.0,
+          9.0
+        ]
+      }
+    },
+    {
+      "case": "appload-custom-command-xyz",
+      "engine": "cadcraft",
+      "outcome": "error",
+      "seconds": 0.0008054999998421408,
+      "detail": {
+        "error": "{'content': [{'text': 'unknown command `appload`', 'type': 'text'}], 'isError': True}"
+      }
+    },
+    {
+      "case": "dxf-cycle-xyz-basic",
+      "engine": "qcad",
+      "outcome": "failed",
+      "seconds": 4.255429799999774,
+      "detail": {
+        "equal_inventory": false,
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "CIRCLE": 1,
+            "LINE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "dxf-cycle-xyz-basic",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.05005920000007791,
+      "detail": {
+        "equal_inventory": false,
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "dxf-cycle-complex",
+      "engine": "qcad",
+      "outcome": "error",
+      "seconds": 0.014761599999928876,
+      "detail": {
+        "error": "Presentaciones personalizadas/con contenido no admitidas"
+      }
+    },
+    {
+      "case": "dxf-cycle-complex",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.05521339999995689,
+      "detail": {
+        "equal_inventory": false,
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1,
+            "INSERT": 1,
+            "TEXT": 1,
+            "LWPOLYLINE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [
+            [
+              "ámbito XYZ",
+              [
+                5.0,
+                5.0,
+                4.0
+              ]
+            ]
+          ],
+          "inserts": [
+            [
+              "OwnBlock",
+              [
+                20.0,
+                20.0,
+                3.0
+              ]
+            ]
+          ],
+          "xdata": [
+            [
+              [
+                1000,
+                "own-audit"
+              ],
+              [
+                1040,
+                1.25
+              ]
+            ]
+          ],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1",
+            "OwnSheet"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1,
+            "INSERT": 1,
+            "TEXT": 1,
+            "LWPOLYLINE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [
+            [
+              "ámbito XYZ",
+              [
+                5.0,
+                5.0,
+                4.0
+              ]
+            ]
+          ],
+          "inserts": [
+            [
+              "OwnBlock",
+              [
+                20.0,
+                20.0,
+                3.0
+              ]
+            ]
+          ],
+          "xdata": [
+            [
+              [
+                1000,
+                "own-audit"
+              ],
+              [
+                1040,
+                1.25
+              ]
+            ]
+          ],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1",
+            "OwnSheet"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "move-xyz-delta",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 2.16382550000003,
+      "detail": {
+        "after": {
+          "types": {
+            "CIRCLE": 1,
+            "LINE": 1
+          },
+          "lines": [
+            [
+              [
+                1.0,
+                2.0,
+                10.0
+              ],
+              [
+                4.0,
+                6.0,
+                12.0
+              ],
+              "SURVEY"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                11.0,
+                12.0,
+                14.0
+              ],
+              2.0,
+              "SURVEY"
+            ]
+          ],
+          "layers": [],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "SURVEY",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "move-xyz-delta",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.031662699999969846,
+      "detail": {
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                1.0,
+                2.0,
+                7.0
+              ],
+              [
+                4.0,
+                6.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                11.0,
+                12.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    },
+    {
+      "case": "malformed-reject-active-preserved",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 0.012183900000081849,
+      "detail": {
+        "rejected": "DXFStructureError: missing ENDSEC tag.",
+        "active_preserved": true
+      }
+    },
+    {
+      "case": "malformed-reject-active-preserved",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.0011365999998815823,
+      "detail": {
+        "error": "malformed input accepted"
+      }
+    },
+    {
+      "case": "open-query-10000",
+      "engine": "qcad",
+      "outcome": "passed",
+      "seconds": 9.291769299999942,
+      "detail": {
+        "entities": 10002
+      }
+    },
+    {
+      "case": "open-query-10000",
+      "engine": "cadcraft",
+      "outcome": "passed",
+      "seconds": 0.0922034000000167,
+      "detail": {
+        "query": {
+          "count": 10001,
+          "entities": [],
+          "offset": 0,
+          "returned": 0
+        }
+      }
+    },
+    {
+      "case": "dwg-synthetic-bridge-cycle",
+      "engine": "cadcraft",
+      "outcome": "failed",
+      "seconds": 0.043050999999877604,
+      "detail": {
+        "before": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              3,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "Survey",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        },
+        "after": {
+          "types": {
+            "LINE": 1,
+            "CIRCLE": 1
+          },
+          "lines": [
+            [
+              [
+                0.0,
+                0.0,
+                7.0
+              ],
+              [
+                3.0,
+                4.0,
+                9.0
+              ],
+              "Survey"
+            ]
+          ],
+          "circles": [
+            [
+              [
+                10.0,
+                10.0,
+                11.0
+              ],
+              2.0,
+              "Survey"
+            ]
+          ],
+          "layers": [
+            [
+              "Survey",
+              146,
+              1193046,
+              0
+            ]
+          ],
+          "texts": [],
+          "inserts": [],
+          "xdata": [],
+          "units": 4,
+          "clayer": "0",
+          "layouts": [
+            "Model",
+            "Layout1"
+          ],
+          "audit_errors": 0,
+          "audit_fixes": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.4.3
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+    Finished `test` profile [optimized + debuginfo] target(s) in 0.28s
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_mcp-2c6be6ae571cecfd.exe)
+
+running 10 tests
+test tests::lifecycle_and_tools ... ok
+test tests::errors_are_tool_errors_not_crashes ... ok
+test tests::query_entities_pages_and_windows_by_geometry ... ok
+test tests::bad_tool_calls_are_invalid_params ... ok
+test tests::list_commands_filter_matches_names_not_docs ... ok
+test backend::tests::timeout_reply_says_whether_a_retry_is_safe ... ok
+test tests::agent_draws_a_plate_with_holes ... ok
+test tests::find_text_reads_texts_and_render_shows_one_area ... ok
+test backend::tests::lost_reply_to_a_mutation_is_not_resent ... ok
+test tests::a_lazy_bridge_starts_without_the_app_and_says_how_to_open_it ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.62s
+

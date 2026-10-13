@@ -1,0 +1,514 @@
+{
+  ".gitattributes": {
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "bytes": 8
+  },
+  "a1-report.json": {
+    "sha256": "d1534ce635bddf1c5f41dc0e7243b6678629c8133c543cea9207b93e6b9a8cf0",
+    "bytes": 4422
+  },
+  "a1-report.md": {
+    "sha256": "23294b91e39b79371f10b734f431e17a7a878f0f23d4da9a69f9f5ecd88af8ca",
+    "bytes": 2407
+  },
+  "a1.log": {
+    "sha256": "b633057aaec484c1d40140915a125a43c2e7ec683cd448f57d5165bf002a1f9f",
+    "bytes": 57
+  },
+  "actions.json": {
+    "sha256": "7901ac1344bd9f7b5b1dce177ae82444a38dca126b6880de305f104ea25b2258",
+    "bytes": 50
+  },
+  "benchmark/results.json": {
+    "sha256": "acbca2f2a56f77a907c6a788a43df889372fb763dd2531e94a943601c7382152",
+    "bytes": 4046
+  },
+  "benchmark.py": {
+    "sha256": "db6cd3d880d07865b944983f06a5b37d627b076efd78a7fb9f30400242d45ae3",
+    "bytes": 2273
+  },
+  "build-cli.log": {
+    "sha256": "662b2319c87c9b8fbe0edd032c9a835be440a9ed90c46fa379790260aa79a9c4",
+    "bytes": 7133
+  },
+  "build-gui.log": {
+    "sha256": "12fbc21e0c65e7b969ad8ba52ee54a8df2b8b543f7ba2cb18e69c12c73d37055",
+    "bytes": 8255
+  },
+  "dependencies.py": {
+    "sha256": "7b317b133f87b6427f88c584ae73ba0c5069b5de434b9a5a84d8b096cc6c776b",
+    "bytes": 1336
+  },
+  "dependency-licenses.csv": {
+    "sha256": "45b5c8e8c3d90b1b65343f206e2f5318e70d3f86bbb6e6e7d319d9b830625057",
+    "bytes": 172534
+  },
+  "fixture-hashes.json": {
+    "sha256": "1f48d7380703c14b7f1a07db821922d47e62914f03010205470d1f84a4cab858",
+    "bytes": 6352
+  },
+  "gui-source/results.json": {
+    "sha256": "9d18846ba468f2bd53696b733887234abcc38ae5b9f357f0d3794e77e0a84e98",
+    "bytes": 233
+  },
+  "gui-source/stderr.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "gui-source/stdout.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "gui-source/transcript.json": {
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  "gui-source-host/results.json": {
+    "sha256": "8407506eb590bba97a181c5a18b78a7f8a204a904a375be471d64fbb9218dde5",
+    "bytes": 356
+  },
+  "gui-source-host/screenshot.png": {
+    "sha256": "a5e362826620cc8af30051504f708ef931b88045e29cb516df70fbe77dae46f3",
+    "bytes": 744580
+  },
+  "gui-source-host/stderr.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "gui-source-host/stdout.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "gui-source-host/transcript.json": {
+    "sha256": "db916625e67a63924bbe743a9476ac9bd7decdef24c4e6f480521bd717d65811",
+    "bytes": 196866
+  },
+  "gui-source-host/ui-state.json": {
+    "sha256": "f7d0213879016b97f4fa9f950e6ac32348b9ef9e2a3b2fa0957150744121fa40",
+    "bytes": 4608
+  },
+  "gui_probe.py": {
+    "sha256": "6770dd313b77387b9ec3a7692396bf4d1680fdb300b7945697e5061f323f2ce3",
+    "bytes": 3285
+  },
+  "matrix-summary.json": {
+    "sha256": "86ec4ce19ae72843db3c8b9546dc1d0702b5b0990ba20a62de75879ecbbc2daa",
+    "bytes": 333
+  },
+  "matrix.py": {
+    "sha256": "d4e06b311bca7a3a2c91ccb9f50180706d598551a5fbd67fe6c0d8c0d7549431",
+    "bytes": 10389
+  },
+  "opencad-unittest-deps.txt": {
+    "sha256": "85117efb7a6c4fac3752ccc289d939567f09dfa0d23686225ad870458790cfd4",
+    "bytes": 7921
+  },
+  "opencad-unittest.txt": {
+    "sha256": "11c25e693a80f0fa528235897b75f4ba3eee664296b92fa517e79fef1cef7986",
+    "bytes": 8012
+  },
+  "probe-complete/audit.lsp": {
+    "sha256": "05403fc0ee46b912d3430059a423d53c6ef9a78267c482ee821e3a8caca5f149",
+    "bytes": 60
+  },
+  "probe-complete/complex-baseline.json": {
+    "sha256": "e891c6976ff1f680f3f2ec5d3eb7bf52a97051a460392a46db39527099248d91",
+    "bytes": 1012
+  },
+  "probe-complete/complex-cadcraft-inventory.json": {
+    "sha256": "05f35eb8111c72b75c44687853a138db736e241b87a9c2dc4ab561174ef2da65",
+    "bytes": 1014
+  },
+  "probe-complete/complex-cadcraft.dxf": {
+    "sha256": "8b63c42ae928d45f8cfba9ffc191ef05fdb1d58e355c16a415400680814c48a7",
+    "bytes": 18592
+  },
+  "probe-complete/complex.dxf": {
+    "sha256": "a0497692d0571d0b2e2b303ad7a5b81ca645abc51ae244ac0428d2060c2c84a0",
+    "bytes": 20861
+  },
+  "probe-complete/curves-cc.dxf": {
+    "sha256": "1919b45d902efd326c15d2c6f2192d9d5d38b9a9a7af2e07ff88a109f29b114a",
+    "bytes": 17140
+  },
+  "probe-complete/curves-qcad.dxf": {
+    "sha256": "ac34bbed4dbd2479301add379d75fc87dc8ddfe4ce9b67d733fb0b77068478fe",
+    "bytes": 18830
+  },
+  "probe-complete/dims-cc.dxf": {
+    "sha256": "ed9005bf095d4193ae6b705b3c66b7ef6b5f995d51dcde88523ef649e6659ccc",
+    "bytes": 22532
+  },
+  "probe-complete/dims-qcad.dxf": {
+    "sha256": "74f4b706ccf446e6207080b3464f61bb2473eddc924f9b6d1f653aecd94a5105",
+    "bytes": 23612
+  },
+  "probe-complete/draw-cc.dxf": {
+    "sha256": "6bfad850e9a0c6b15d571f7b2129b294a2504a01adb27943da1db0444d8b76bc",
+    "bytes": 17067
+  },
+  "probe-complete/draw-qcad.dxf": {
+    "sha256": "1141f684316a9d85b41e85dc1c7cfed8f36a447d28ad70116764bbe1c4ac5a79",
+    "bytes": 18585
+  },
+  "probe-complete/from-dwg.dxf": {
+    "sha256": "4b2be101543104874b49a25300cb30da287acda36246d1cc67af9d07fe91c446",
+    "bytes": 15113
+  },
+  "probe-complete/lisp-cc.dxf": {
+    "sha256": "eb2c7ade907caa844fb93c0fd7df4ccab9158ae859f645c470f483cfbb34b280",
+    "bytes": 22670
+  },
+  "probe-complete/lisp-qcad.dxf": {
+    "sha256": "cf4d949d3567951c85780dec7dda62e7c8a24ef49f9ccdb5783801385e42f160",
+    "bytes": 23745
+  },
+  "probe-complete/malformed.dxf": {
+    "sha256": "1b71e046cebdd6be6a7fa1e713045cc7a62cbbaa63ce11701a9464d8f02a6740",
+    "bytes": 52
+  },
+  "probe-complete/mcp-tools.json": {
+    "sha256": "79299a494842c9b30071ffce477c4a95375b13ea60f5e7730b2116aabeb26585",
+    "bytes": 7327
+  },
+  "probe-complete/mcp-transcript.json": {
+    "sha256": "1c3bd7c9e79872d7b50875ea800b255040a4c5d40a96d08322d990abf96363ed",
+    "bytes": 218540
+  },
+  "probe-complete/modify-COPY-cc.dxf": {
+    "sha256": "897001fd9aa6a2cf8f76c811288ec7acfb9faa0a6c6d4a1e19a7bc47f4c10814",
+    "bytes": 17079
+  },
+  "probe-complete/modify-COPY-qcad.dxf": {
+    "sha256": "9f17bc692973e631c56a1e75f8d3de0c5daf828805a78d315645e1286480977a",
+    "bytes": 18783
+  },
+  "probe-complete/modify-ERASE-cc.dxf": {
+    "sha256": "97aab2c337eafe70ff8cc598035dfb31fc4b6e251c262185c79a369f24a78958",
+    "bytes": 16932
+  },
+  "probe-complete/modify-ERASE-qcad.dxf": {
+    "sha256": "8487fbd9bc7198875e5373d59bab69ef2851d35cbcbcf9b346be196b2b1502a7",
+    "bytes": 18651
+  },
+  "probe-complete/modify-EXTEND-cc.dxf": {
+    "sha256": "4ae9968b0a790aeda76b87f2649d024737042063bd79e4cf9a01dc7ee0fd3f15",
+    "bytes": 17071
+  },
+  "probe-complete/modify-EXTEND-qcad.dxf": {
+    "sha256": "baf3cac468d899f02db28625b4df2d50612402dc2169dbf8a6a6fdfdbe23433e",
+    "bytes": 18788
+  },
+  "probe-complete/modify-OFFSET-cc.dxf": {
+    "sha256": "6f6623bb683040b32bd7d349d191d566b4b9b79d4cc790c71df8270c38e976fc",
+    "bytes": 17082
+  },
+  "probe-complete/modify-OFFSET-qcad.dxf": {
+    "sha256": "12eb55aefc3687a441045cc59348b760129a6df821fb013ffed42ee7eda9d590",
+    "bytes": 18787
+  },
+  "probe-complete/modify-ROTATE-cc.dxf": {
+    "sha256": "9f24f74668b35990638e45ef6cff85441f04c9a580323f0eee35ef2e56d6f289",
+    "bytes": 16995
+  },
+  "probe-complete/modify-ROTATE-qcad.dxf": {
+    "sha256": "77d21a6229319ff5efb3b261216a14a1d851fb58b89082d7cb417e4241437c64",
+    "bytes": 18665
+  },
+  "probe-complete/modify-SCALE-cc.dxf": {
+    "sha256": "9a6eb1932f0ed9afcab4271adec87991c6722da2f929640c01132b3c5ed3a8a4",
+    "bytes": 16932
+  },
+  "probe-complete/modify-SCALE-qcad.dxf": {
+    "sha256": "f50fdbacdb5e9ec008e59306f2f8aae58c256ebc21e3960bf7c11ba36a046064",
+    "bytes": 18651
+  },
+  "probe-complete/modify-TRIM-cc.dxf": {
+    "sha256": "376a56493e472b6b8293688f1df4c698785401debc5d2794c1b7182498da6a65",
+    "bytes": 17072
+  },
+  "probe-complete/modify-TRIM-qcad.dxf": {
+    "sha256": "de5a8bf5ac5781c6833790251f2e1a142b563260670b613efe21823a3eae714a",
+    "bytes": 18788
+  },
+  "probe-complete/move-cc.dxf": {
+    "sha256": "85c66ada317f1e4302638fc514ad8725650604d6edc48378dcd146cdf97ce6b9",
+    "bytes": 17067
+  },
+  "probe-complete/move-qcad.dxf": {
+    "sha256": "1a594b5e3e066aa8ccff5b82ae72fed0e3ef353de57e8660ae6cbad890f6588b",
+    "bytes": 18585
+  },
+  "probe-complete/results.json": {
+    "sha256": "6380228df99ff11b025ae7f49f531c7246e0a066bd8ea609aa4fd001a23de1ca",
+    "bytes": 37002
+  },
+  "probe-complete/runtime-commands.json": {
+    "sha256": "6a2111d971f1b08204b3ef133df83f6c0c800cfa59813649882c96f10325d89c",
+    "bytes": 141313
+  },
+  "probe-complete/xyz-basic-baseline.json": {
+    "sha256": "e9efc164828a638525d4adef655e92ee1d78233ef56677a72bede5e5339f8848",
+    "bytes": 622
+  },
+  "probe-complete/xyz-basic-cadcraft-inventory.json": {
+    "sha256": "0ea70ea15e4c5ab00340ccaf85e23e9c69982fd4c1b035f6c4c31663b92539b4",
+    "bytes": 624
+  },
+  "probe-complete/xyz-basic-cadcraft.dxf": {
+    "sha256": "842a081104eba539ff05e026dc003fcc5770796772b8e9eebb57e6abe4d2d98c",
+    "bytes": 16419
+  },
+  "probe-complete/xyz-basic-qcad-inventory.json": {
+    "sha256": "fc6fc34f069e8ea3c9d38540061f14086104371016ae997c0db06c66d5f71203",
+    "bytes": 622
+  },
+  "probe-complete/xyz-basic-qcad.dxf": {
+    "sha256": "f70029f8a8bf4fd332b356d1d3ed1b4f29c627eef294cbfdb31b8e612a5cf639",
+    "bytes": 18772
+  },
+  "probe-complete/xyz-basic.dxf": {
+    "sha256": "34b9b6524ad728bcf731685c089c886895986aa97ba328720382362a5d5edb3f",
+    "bytes": 18742
+  },
+  "probe-complete/zmove-cc.dxf": {
+    "sha256": "b6ad453e3d21004aba5f63b89517fb60633e3fbb7b763de631726cd26bd1b647",
+    "bytes": 16419
+  },
+  "probe-complete/zmove-qcad.dxf": {
+    "sha256": "a9d3ce9f88ff2fe06debcc83ab2e48aa9c4d3e68e21835d8a12ac784145c73c5",
+    "bytes": 18774
+  },
+  "probe-release-final/audit.lsp": {
+    "sha256": "05403fc0ee46b912d3430059a423d53c6ef9a78267c482ee821e3a8caca5f149",
+    "bytes": 60
+  },
+  "probe-release-final/complex-baseline.json": {
+    "sha256": "df4a86d734d44831d4c2568dba92796b7283c7157db5bfd406b231c9c051b40f",
+    "bytes": 1012
+  },
+  "probe-release-final/complex-cadcraft-inventory.json": {
+    "sha256": "6e7f16b548a4b49f058c560af527f65ee85d622d7f728f9cb885abbfec36aff2",
+    "bytes": 1014
+  },
+  "probe-release-final/complex-cadcraft.dxf": {
+    "sha256": "9a463d13b1199ab1f18d27f33c68bf4bb9c435d609a58afa8a709d4b3ef41f47",
+    "bytes": 18593
+  },
+  "probe-release-final/complex.dxf": {
+    "sha256": "18728b473d033800cb73073968d7d7f0f9b98ae2a4538700efcd714f218005d4",
+    "bytes": 20861
+  },
+  "probe-release-final/dims-cc.dxf": {
+    "sha256": "08a0896b23538af29541f423d9178ea52e607d018fa6e94782c4d0c7e1a49872",
+    "bytes": 22472
+  },
+  "probe-release-final/dims-qcad.dxf": {
+    "sha256": "bdcdb76fa0459f745979f105305a6c40b1f171bf798ebe8bfcf302e76f87ee42",
+    "bytes": 23612
+  },
+  "probe-release-final/draw-cc.dxf": {
+    "sha256": "607089fa75069245e0360da2bc84c543bc22ea9bcdcb5703a2114223597d761e",
+    "bytes": 17068
+  },
+  "probe-release-final/draw-qcad.dxf": {
+    "sha256": "5af0b81561600d43a674afb6b43d44bbe989cdaf6b9bd25410cde9a9979773aa",
+    "bytes": 18585
+  },
+  "probe-release-final/from-dwg.dxf": {
+    "sha256": "d10151b6416b74b1a2f6758c6a363e89811a9b36f7eedbaf8a81f0b0ba5ab9e7",
+    "bytes": 15114
+  },
+  "probe-release-final/lisp-qcad.dxf": {
+    "sha256": "b66fecb2d51ba5436416e08801e7087552cea35e170010479b4307d97b0147e7",
+    "bytes": 23745
+  },
+  "probe-release-final/malformed.dxf": {
+    "sha256": "1b71e046cebdd6be6a7fa1e713045cc7a62cbbaa63ce11701a9464d8f02a6740",
+    "bytes": 52
+  },
+  "probe-release-final/mcp-tools.json": {
+    "sha256": "79880c941462dc798c1c383c8a57f2f831eabc04a3d783f91e816e98ebc549e1",
+    "bytes": 5524
+  },
+  "probe-release-final/mcp-transcript.json": {
+    "sha256": "d6e5bc1e7d638390270bc18a4cf62a0e4fbf825921d257bca6f9b5e48b4065fa",
+    "bytes": 176892
+  },
+  "probe-release-final/move-cc.dxf": {
+    "sha256": "33b11dda0c7cf64f6d44dfb6cc104a516dc3680d72c033f030ee0c6cc8350c11",
+    "bytes": 17068
+  },
+  "probe-release-final/move-qcad.dxf": {
+    "sha256": "f2a59b0ba11366b83300799bc7b5b67ed43b4ba603bb19b7c40310691216a460",
+    "bytes": 18585
+  },
+  "probe-release-final/results.json": {
+    "sha256": "f97b2cd461965bff331bdd120784ec2e5bc9f8a9225279b98038f2eecaac7a5a",
+    "bytes": 19380
+  },
+  "probe-release-final/runtime-commands.json": {
+    "sha256": "fdd505b8d4021b72a37bbd6cd777eabb9e9fe80af25ca3d7910b4d53414dad44",
+    "bytes": 131289
+  },
+  "probe-release-final/xyz-basic-baseline.json": {
+    "sha256": "8c4fb2d7366f273a8e0e2a1229dc0f6d294ca8f1d4e203b2aed980df39ca6218",
+    "bytes": 622
+  },
+  "probe-release-final/xyz-basic-cadcraft-inventory.json": {
+    "sha256": "e1f6f18c7025ab3593427f273cbccadd0dcd7c32b64064bd46e15aabf4a7e42c",
+    "bytes": 624
+  },
+  "probe-release-final/xyz-basic-cadcraft.dxf": {
+    "sha256": "55cb7c75622d384c0c7b78f59ab4addc4950f776afd0657f6011b531b7ec3a38",
+    "bytes": 16420
+  },
+  "probe-release-final/xyz-basic-qcad-inventory.json": {
+    "sha256": "42eb7a7984678b3d300c998ed065e7cc7daaeb147fdbff05a1f9d809d6b557f1",
+    "bytes": 552
+  },
+  "probe-release-final/xyz-basic-qcad.dxf": {
+    "sha256": "553993a8d7fb8b640800d658b5dccb7c9c65efda673ba502308bd66b3545dcb3",
+    "bytes": 18772
+  },
+  "probe-release-final/xyz-basic.dxf": {
+    "sha256": "0898f904080feba49c76bd41fe79ef82bcf2a514cace4089cda0fdc964063c2f",
+    "bytes": 18742
+  },
+  "probe-release-final/zmove-cc.dxf": {
+    "sha256": "8b6086c06dbf80158ac8ccb9a457343d5fc652c220e0a6302372347027433939",
+    "bytes": 16420
+  },
+  "probe-release-final/zmove-qcad.dxf": {
+    "sha256": "940a30f8f69b46a9129a61452f3c3501565906ce52a80da724e4d0d34011e10e",
+    "bytes": 18772
+  },
+  "probe.py": {
+    "sha256": "d5a988798a3f4cc3b9f06a93743cafa2ab539b7b76df4565e85884bda561a41d",
+    "bytes": 16061
+  },
+  "qcad/check_qcad_curves/report.json": {
+    "sha256": "e54f82c20dc49dab0f0ce459ae2b3e08eb48a43501de434b045cfc30df8137dd",
+    "bytes": 11976
+  },
+  "qcad/check_qcad_curves.log": {
+    "sha256": "0a7c8c2b41da8c5bb5ad8c8b70c6ddae5523b7678904dc4291f2deb0f6748eae",
+    "bytes": 2285
+  },
+  "qcad/check_qcad_cutting/report.json": {
+    "sha256": "4ec77a5b7b6d502e39402e23cae4a116ceb1a107257191d980d85313a0417875",
+    "bytes": 13065
+  },
+  "qcad/check_qcad_cutting.log": {
+    "sha256": "50553ffb18b9dcb20140cc32514fa520650ad107d65f8d709b55b3a7ae863572",
+    "bytes": 1794
+  },
+  "qcad/check_qcad_dimensions/dimensions.png": {
+    "sha256": "3e395e2b4fc1258cf1208a553d3e2ead47afa67abcd0e3ff10afaf80f95d3d47",
+    "bytes": 89614
+  },
+  "qcad/check_qcad_dimensions/report.json": {
+    "sha256": "74e8e533758379694d3f6bc47ef286b03b24a66b78fbef5fb9b9dc93754aa3d4",
+    "bytes": 30278
+  },
+  "qcad/check_qcad_dimensions.log": {
+    "sha256": "ad8e4840ab579b8dd7a7eea0027168eed28974cc3d3886010c8800be3a518f0f",
+    "bytes": 2194
+  },
+  "qcad/check_qcad_dxf/report.json": {
+    "sha256": "6661b572055e8b9958e39433c008a95b9e65e9a841fef8e7ccf063f1853adee0",
+    "bytes": 5924
+  },
+  "qcad/check_qcad_dxf.log": {
+    "sha256": "cb4cbe74e4105210e42c2a1f443d448b558770493cee158320001e680483f16d",
+    "bytes": 694
+  },
+  "qcad/check_qcad_editing/report.json": {
+    "sha256": "e7c5ae5be6cf05914d81c1c5a7f397918d74e1ca107c1d362964127ec5b297e9",
+    "bytes": 3592
+  },
+  "qcad/check_qcad_editing.log": {
+    "sha256": "d9936f347b34ddbb90d695fb0e99489a1155c0e505af46d34c1c6e8359ddb080",
+    "bytes": 859
+  },
+  "qcad/check_qcad_lisp_essential/report.json": {
+    "sha256": "faa7dfcf2e8268628f9864c493918201490163bcdbd671064891b91a7f94cb15",
+    "bytes": 21872
+  },
+  "qcad/check_qcad_lisp_essential.log": {
+    "sha256": "6c945c85abf1159f6786707274b980296d66d06b42d49b1ecbdf8b7f414a2d4d",
+    "bytes": 1159
+  },
+  "qcad/check_qcad_recovery/report.json": {
+    "sha256": "5819fc82680069f87820d2451b7aa087ce09a6ee508fd7e752e254d912fbfc31",
+    "bytes": 12047
+  },
+  "qcad/check_qcad_recovery.log": {
+    "sha256": "d2b70ab6723a85971ec51e397c0fdba54f4ccac8d43e6dce0ac6c001bf668d56",
+    "bytes": 842
+  },
+  "qcad/check_qcad_transforms/report.json": {
+    "sha256": "20002c06b969b83bbe2065fd76971b9380c3d553935110317f85a29f0ad184b0",
+    "bytes": 2418
+  },
+  "qcad/check_qcad_transforms.log": {
+    "sha256": "097a28b54a31e0e1346e659380f53150669655ca41d528699937d3a2e965add6",
+    "bytes": 620
+  },
+  "qcad/qcad-application/qcad-application.png": {
+    "sha256": "7cf65bdcf3771a9a5ae592f5b912c20234a3e8e4a122368b310958f988756aee",
+    "bytes": 76347
+  },
+  "qcad/qcad-application/report.json": {
+    "sha256": "489c1b485e8be41c80b48a86c8abaa85cd397c37fdf7effdf952e1ab33d1129c",
+    "bytes": 8200
+  },
+  "qcad/qcad-application.log": {
+    "sha256": "d693cd0d36df1b73a59d084cc8f643b19115c07d628fb6917e032ae1a503db5a",
+    "bytes": 819
+  },
+  "README.md": {
+    "sha256": "c01c76cd5b863af917ab5fb92b75213c06cda3dbacef1e719fac6ae1d743d3a8",
+    "bytes": 8022
+  },
+  "release.json": {
+    "sha256": "af7c78c8aa1d818e1d1700294cb05e242645c2cf60f74af5b01ec99eb9ea7e01",
+    "bytes": 79400
+  },
+  "rust-channel.toml": {
+    "sha256": "821ff14e4c4a1cbe1e8915f35aff0a3fbbdf8d293ad48ab8f31e3b0440c581f9",
+    "bytes": 848342
+  },
+  "SHA256SUMS.txt": {
+    "sha256": "2737617b163ecbef496410dbb83cd089ba4e4159d146ba5315f5ed1d9625643e",
+    "bytes": 2539
+  },
+  "source-registry.json": {
+    "sha256": "96f598b0c154f6de8b782ed32f64d05290885d99ab3d5cdda824ddd782d591ef",
+    "bytes": 68972
+  },
+  "summary.json": {
+    "sha256": "cb8f754b2a48bd9828b33f024c93886a78193a881af2dcb010b7640e7821e7fb",
+    "bytes": 1938
+  },
+  "test-core-full.log": {
+    "sha256": "4a0cd541834c593f2ac2fd284fc2a796443485a2a813de78778a302c38e0317c",
+    "bytes": 144691
+  },
+  "test-core-local-temp.log": {
+    "sha256": "42f1ff032833c0934653219f94fc4ede415c55c189c064ce250a4030ee40970f",
+    "bytes": 53755
+  },
+  "test-core.log": {
+    "sha256": "27c1867b4c5a4b60585a481c24a10e9741c259a4072952250e7f562418946300",
+    "bytes": 27845
+  },
+  "test-mcp-host.log": {
+    "sha256": "1cf517fe38a39c6f743e4635e44a34deaa26fe01a81e95ac77d6e0d9c7cf6a6f",
+    "bytes": 1262
+  },
+  "workflows.json": {
+    "sha256": "5f8f7e14ac53c482a2a101e590b965629b77cb22e9f227055e93c1634350813a",
+    "bytes": 2819
+  }
+}

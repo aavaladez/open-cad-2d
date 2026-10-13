@@ -1,0 +1,187 @@
+{
+  "probe-complete/complex-cadcraft.dxf": {
+    "sha256": "8b63c42ae928d45f8cfba9ffc191ef05fdb1d58e355c16a415400680814c48a7",
+    "bytes": 18592,
+    "included": true
+  },
+  "probe-complete/complex.dxf": {
+    "sha256": "a0497692d0571d0b2e2b303ad7a5b81ca645abc51ae244ac0428d2060c2c84a0",
+    "bytes": 20861,
+    "included": true
+  },
+  "probe-complete/curves-cc.dxf": {
+    "sha256": "1919b45d902efd326c15d2c6f2192d9d5d38b9a9a7af2e07ff88a109f29b114a",
+    "bytes": 17140,
+    "included": true
+  },
+  "probe-complete/curves-qcad.dxf": {
+    "sha256": "ac34bbed4dbd2479301add379d75fc87dc8ddfe4ce9b67d733fb0b77068478fe",
+    "bytes": 18830,
+    "included": true
+  },
+  "probe-complete/dims-cc.dxf": {
+    "sha256": "ed9005bf095d4193ae6b705b3c66b7ef6b5f995d51dcde88523ef649e6659ccc",
+    "bytes": 22532,
+    "included": true
+  },
+  "probe-complete/dims-qcad.dxf": {
+    "sha256": "74f4b706ccf446e6207080b3464f61bb2473eddc924f9b6d1f653aecd94a5105",
+    "bytes": 23612,
+    "included": true
+  },
+  "probe-complete/draw-cc.dxf": {
+    "sha256": "6bfad850e9a0c6b15d571f7b2129b294a2504a01adb27943da1db0444d8b76bc",
+    "bytes": 17067,
+    "included": true
+  },
+  "probe-complete/draw-qcad.dxf": {
+    "sha256": "1141f684316a9d85b41e85dc1c7cfed8f36a447d28ad70116764bbe1c4ac5a79",
+    "bytes": 18585,
+    "included": true
+  },
+  "probe-complete/from-dwg.dxf": {
+    "sha256": "4b2be101543104874b49a25300cb30da287acda36246d1cc67af9d07fe91c446",
+    "bytes": 15113,
+    "included": true
+  },
+  "probe-complete/large-10000.dxf": {
+    "sha256": "5b0b4844d9c8f04fac063cf04b1fa2efc964986ca26022ba44078db320c3c68d",
+    "bytes": 1452284,
+    "included": false
+  },
+  "probe-complete/lisp-cc.dxf": {
+    "sha256": "eb2c7ade907caa844fb93c0fd7df4ccab9158ae859f645c470f483cfbb34b280",
+    "bytes": 22670,
+    "included": true
+  },
+  "probe-complete/lisp-qcad.dxf": {
+    "sha256": "cf4d949d3567951c85780dec7dda62e7c8a24ef49f9ccdb5783801385e42f160",
+    "bytes": 23745,
+    "included": true
+  },
+  "probe-complete/malformed.dxf": {
+    "sha256": "1b71e046cebdd6be6a7fa1e713045cc7a62cbbaa63ce11701a9464d8f02a6740",
+    "bytes": 52,
+    "included": true
+  },
+  "probe-complete/modify-COPY-cc.dxf": {
+    "sha256": "897001fd9aa6a2cf8f76c811288ec7acfb9faa0a6c6d4a1e19a7bc47f4c10814",
+    "bytes": 17079,
+    "included": true
+  },
+  "probe-complete/modify-COPY-qcad.dxf": {
+    "sha256": "9f17bc692973e631c56a1e75f8d3de0c5daf828805a78d315645e1286480977a",
+    "bytes": 18783,
+    "included": true
+  },
+  "probe-complete/modify-ERASE-cc.dxf": {
+    "sha256": "97aab2c337eafe70ff8cc598035dfb31fc4b6e251c262185c79a369f24a78958",
+    "bytes": 16932,
+    "included": true
+  },
+  "probe-complete/modify-ERASE-qcad.dxf": {
+    "sha256": "8487fbd9bc7198875e5373d59bab69ef2851d35cbcbcf9b346be196b2b1502a7",
+    "bytes": 18651,
+    "included": true
+  },
+  "probe-complete/modify-EXTEND-cc.dxf": {
+    "sha256": "4ae9968b0a790aeda76b87f2649d024737042063bd79e4cf9a01dc7ee0fd3f15",
+    "bytes": 17071,
+    "included": true
+  },
+  "probe-complete/modify-EXTEND-qcad.dxf": {
+    "sha256": "baf3cac468d899f02db28625b4df2d50612402dc2169dbf8a6a6fdfdbe23433e",
+    "bytes": 18788,
+    "included": true
+  },
+  "probe-complete/modify-OFFSET-cc.dxf": {
+    "sha256": "6f6623bb683040b32bd7d349d191d566b4b9b79d4cc790c71df8270c38e976fc",
+    "bytes": 17082,
+    "included": true
+  },
+  "probe-complete/modify-OFFSET-qcad.dxf": {
+    "sha256": "12eb55aefc3687a441045cc59348b760129a6df821fb013ffed42ee7eda9d590",
+    "bytes": 18787,
+    "included": true
+  },
+  "probe-complete/modify-ROTATE-cc.dxf": {
+    "sha256": "9f24f74668b35990638e45ef6cff85441f04c9a580323f0eee35ef2e56d6f289",
+    "bytes": 16995,
+    "included": true
+  },
+  "probe-complete/modify-ROTATE-qcad.dxf": {
+    "sha256": "77d21a6229319ff5efb3b261216a14a1d851fb58b89082d7cb417e4241437c64",
+    "bytes": 18665,
+    "included": true
+  },
+  "probe-complete/modify-SCALE-cc.dxf": {
+    "sha256": "9a6eb1932f0ed9afcab4271adec87991c6722da2f929640c01132b3c5ed3a8a4",
+    "bytes": 16932,
+    "included": true
+  },
+  "probe-complete/modify-SCALE-qcad.dxf": {
+    "sha256": "f50fdbacdb5e9ec008e59306f2f8aae58c256ebc21e3960bf7c11ba36a046064",
+    "bytes": 18651,
+    "included": true
+  },
+  "probe-complete/modify-TRIM-cc.dxf": {
+    "sha256": "376a56493e472b6b8293688f1df4c698785401debc5d2794c1b7182498da6a65",
+    "bytes": 17072,
+    "included": true
+  },
+  "probe-complete/modify-TRIM-qcad.dxf": {
+    "sha256": "de5a8bf5ac5781c6833790251f2e1a142b563260670b613efe21823a3eae714a",
+    "bytes": 18788,
+    "included": true
+  },
+  "probe-complete/move-cc.dxf": {
+    "sha256": "85c66ada317f1e4302638fc514ad8725650604d6edc48378dcd146cdf97ce6b9",
+    "bytes": 17067,
+    "included": true
+  },
+  "probe-complete/move-qcad.dxf": {
+    "sha256": "1a594b5e3e066aa8ccff5b82ae72fed0e3ef353de57e8660ae6cbad890f6588b",
+    "bytes": 18585,
+    "included": true
+  },
+  "probe-complete/xyz-basic-cadcraft.dxf": {
+    "sha256": "842a081104eba539ff05e026dc003fcc5770796772b8e9eebb57e6abe4d2d98c",
+    "bytes": 16419,
+    "included": true
+  },
+  "probe-complete/xyz-basic-qcad.dxf": {
+    "sha256": "f70029f8a8bf4fd332b356d1d3ed1b4f29c627eef294cbfdb31b8e612a5cf639",
+    "bytes": 18772,
+    "included": true
+  },
+  "probe-complete/xyz-basic.dxf": {
+    "sha256": "34b9b6524ad728bcf731685c089c886895986aa97ba328720382362a5d5edb3f",
+    "bytes": 18742,
+    "included": true
+  },
+  "probe-complete/zmove-cc.dxf": {
+    "sha256": "b6ad453e3d21004aba5f63b89517fb60633e3fbb7b763de631726cd26bd1b647",
+    "bytes": 16419,
+    "included": true
+  },
+  "probe-complete/zmove-qcad.dxf": {
+    "sha256": "a9d3ce9f88ff2fe06debcc83ab2e48aa9c4d3e68e21835d8a12ac784145c73c5",
+    "bytes": 18774,
+    "included": true
+  },
+  "benchmark/1000.dxf": {
+    "sha256": "b9b81baf46d28ad2a1a8583fdadc02dea6c291c55a7c1126b5589f081145e528",
+    "bytes": 151886,
+    "included": false
+  },
+  "benchmark/10000.dxf": {
+    "sha256": "7effb39f8fc77c42826c917e2175f2c3f72418f1a11c916e6e05fabc35335479",
+    "bytes": 1381847,
+    "included": false
+  },
+  "benchmark/100000.dxf": {
+    "sha256": "875829520205f15ba42bbc3c0b33c506f122e6417584311f46971117b5ac2c46",
+    "bytes": 13926362,
+    "included": false
+  }
+}
