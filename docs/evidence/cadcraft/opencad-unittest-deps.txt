@@ -1,0 +1,77 @@
+test_blocking_findings_not_hidden_by_nonblocking_flag (test_audit_gate.AuditGate.test_blocking_findings_not_hidden_by_nonblocking_flag) ... ok
+test_cli_freeze_report_and_no_overwrite (test_audit_gate.AuditGate.test_cli_freeze_report_and_no_overwrite) ... ok
+test_freeze_is_exclusive_and_regression_never_restarts_features (test_audit_gate.AuditGate.test_freeze_is_exclusive_and_regression_never_restarts_features) ... ok
+test_internal_tests_or_flags_cannot_satisfy_entry (test_audit_gate.AuditGate.test_internal_tests_or_flags_cannot_satisfy_entry) ... ok
+test_missing_criterion_or_outside_evidence_rejected (test_audit_gate.AuditGate.test_missing_criterion_or_outside_evidence_rejected) ... ok
+test_portable_is_not_installation_and_same_engine_is_not_independent (test_audit_gate.AuditGate.test_portable_is_not_installation_and_same_engine_is_not_independent) ... ok
+test_resolved_blocker_requires_current_resolution_evidence (test_audit_gate.AuditGate.test_resolved_blocker_requires_current_resolution_evidence) ... ok
+test_six_cases_require_freeze_but_never_grant_approval (test_audit_gate.AuditGate.test_six_cases_require_freeze_but_never_grant_approval) ... ok
+test_stale_revision_and_changed_binary_invalidate_all (test_audit_gate.AuditGate.test_stale_revision_and_changed_binary_invalidate_all) ... ok
+test_tampered_observation_or_failed_checks_rejected (test_audit_gate.AuditGate.test_tampered_observation_or_failed_checks_rejected) ... ok
+test_all_rows_hash_notes_and_scope (test_catalog.Catalog.test_all_rows_hash_notes_and_scope) ... ok
+test_every_source_row_preserved_exactly (test_catalog.Catalog.test_every_source_row_preserved_exactly) ... ok
+test_alias_atomic_config (test_commands.Commands.test_alias_atomic_config) ... ok
+test_circle_invalid_and_valid (test_commands.Commands.test_circle_invalid_and_valid) ... ok
+test_dist_analytic (test_commands.Commands.test_dist_analytic) ... ok
+test_invalid_chain_atomic (test_commands.Commands.test_invalid_chain_atomic) ... ok
+test_layer_visibility_undo (test_commands.Commands.test_layer_visibility_undo) ... ok
+test_line_alias_chain_z_undo (test_commands.Commands.test_line_alias_chain_z_undo) ... ok
+test_move_erase_layer_lock (test_commands.Commands.test_move_erase_layer_lock) ... ok
+test_nonfinite_and_unknown (test_commands.Commands.test_nonfinite_and_unknown) ... ok
+test_corrupt_and_dwg (test_interop.Interop.test_corrupt_and_dwg) ... ok
+test_geometry_layers_z (test_interop.Interop.test_geometry_layers_z) ... C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\python\ezdxf\query.py:444: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  query_args = EntityQueryParser.parseString(query, parseAll=True)
+C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\python\pyparsing\util.py:466: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+  return fn(self, *args, **kwargs)
+ok
+test_unsupported_entities_no_source_mutation (test_interop.Interop.test_unsupported_entities_no_source_mutation) ... ok
+test_xdata_and_ocs_rejected (test_interop.Interop.test_xdata_and_ocs_rejected) ... ok
+test_arithmetic_lists_and_condition (test_lisp.Lisp.test_arithmetic_lists_and_condition) ... ok
+test_blocked_capabilities (test_lisp.Lisp.test_blocked_capabilities) ... ok
+test_command_returns_nil_and_alias_cannot_expand_capabilities (test_lisp.Lisp.test_command_returns_nil_and_alias_cannot_expand_capabilities) ... ok
+test_malformed_depth_and_recursion (test_lisp.Lisp.test_malformed_depth_and_recursion) ... ok
+test_new_native_commands_not_announced_by_temporary_backend (test_lisp.Lisp.test_new_native_commands_not_announced_by_temporary_backend) ... ok
+test_original_rectangle_and_c_command (test_lisp.Lisp.test_original_rectangle_and_c_command) ... ok
+test_rollback_model_and_runtime (test_lisp.Lisp.test_rollback_model_and_runtime) ... ok
+test_size_limit (test_lisp.Lisp.test_size_limit) ... ok
+test_arc_and_straight_polyline_inventory_and_rejection (test_qcad_interop.NativeInteropBoundaries.test_arc_and_straight_polyline_inventory_and_rejection) ... ok
+test_comparison_rejects_lost_z_and_entity_count (test_qcad_interop.NativeInteropBoundaries.test_comparison_rejects_lost_z_and_entity_count) ... ok
+test_degenerate_arc_and_polyline_rejected (test_qcad_interop.NativeInteropBoundaries.test_degenerate_arc_and_polyline_rejected) ... ok
+test_dimension_graphics_and_styles_are_not_silently_accepted (test_qcad_interop.NativeInteropBoundaries.test_dimension_graphics_and_styles_are_not_silently_accepted) ... ok
+test_dimension_render_cache_tampering_is_observable (test_qcad_interop.NativeInteropBoundaries.test_dimension_render_cache_tampering_is_observable) ... ok
+test_dimension_unicode_hex_case_without_accepting_rich_text (test_qcad_interop.NativeInteropBoundaries.test_dimension_unicode_hex_case_without_accepting_rich_text) ... ok
+test_failed_native_export_preserves_existing_destination (test_qcad_interop.NativeInteropBoundaries.test_failed_native_export_preserves_existing_destination) ... ok
+test_mismatch_before_replace_preserves_existing_destination (test_qcad_interop.NativeInteropBoundaries.test_mismatch_before_replace_preserves_existing_destination) ... ok
+test_unsupported_metadata_never_changes_input (test_qcad_interop.NativeInteropBoundaries.test_unsupported_metadata_never_changes_input) ... ok
+test_xyz_indexed_color_and_case_semantics (test_qcad_interop.NativeInteropBoundaries.test_xyz_indexed_color_and_case_semantics) ... ok
+test_absent_or_unconfirmed_view_never_creates_generation (test_recovery.RecoveryBoundaries.test_absent_or_unconfirmed_view_never_creates_generation) ... ok
+test_changed_dxf_and_oversized_or_foreign_manifest_rejected (test_recovery.RecoveryBoundaries.test_changed_dxf_and_oversized_or_foreign_manifest_rejected) ... ok
+test_failed_manifest_publication_preserves_previous (test_recovery.RecoveryBoundaries.test_failed_manifest_publication_preserves_previous) ... ok
+test_malformed_and_traversing_manifest_rejected (test_recovery.RecoveryBoundaries.test_malformed_and_traversing_manifest_rejected) ... ok
+test_retention_only_removes_own_two_generation_overflow (test_recovery.RecoveryBoundaries.test_retention_only_removes_own_two_generation_overflow) ... ok
+test_keyboard_console (test_ui.UI.test_keyboard_console) ... ok
+test_mouse_line_escape (test_ui.UI.test_mouse_line_escape) ... ok
+test_screen_world_and_snap (test_ui.UI.test_screen_world_and_snap) ... ok
+test_selection_properties_error_no_mutation (test_ui.UI.test_selection_properties_error_no_mutation) ... ok
+test_comparison_tolerance_detects_real_difference (test_workflow.Workflow.test_comparison_tolerance_detects_real_difference) ... ok
+test_empty_regression_is_not_approved (test_workflow.Workflow.test_empty_regression_is_not_approved) ... No se ejecutaron pruebas; regresi�n no acreditada.
+ok
+test_existing_contract_not_overwritten (test_workflow.Workflow.test_existing_contract_not_overwritten) ... [Errno 17] File exists: 'C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\test-temp\\tmpk1xqwr92\\case.json'
+ok
+test_missing_fields_and_bool_numeric_difference (test_workflow.Workflow.test_missing_fields_and_bool_numeric_difference) ... ok
+test_no_self_generated_baseline_or_nonfinite (test_workflow.Workflow.test_no_self_generated_baseline_or_nonfinite) ... ok
+test_spec_real_row_unknown_and_excluded (test_workflow.Workflow.test_spec_real_row_unknown_and_excluded) ... ok
+test_specialized_helper_entrypoints (test_workflow.Workflow.test_specialized_helper_entrypoints) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 4.661s
+
+OK
+A1: 6/6, audit_required; siguiente fase sin autorizaci�n
+No sobrescribir reportes existentes; elegir una nueva salida
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+NO TESTS RAN
+

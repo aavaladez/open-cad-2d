@@ -1,0 +1,2788 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.4.3
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+    Finished `test` profile [optimized + debuginfo] target(s) in 0.69s
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_doc-5223115968809c3a.exe)
+
+running 55 tests
+test array::tests::hostile_params_are_invalid ... ok
+test array::tests::polar_rows_go_outwards ... ok
+test gdt::tests::compose_then_parse ... ok
+test array::tests::rect_items_go_column_row_level ... ok
+test gdt::tests::parses_symbols_compartments_and_lines ... ok
+test gdt::tests::layout_boxes_each_compartment ... ok
+test extents::tests::right_justified_text_is_left_of_alignment_point ... ok
+test extents::tests::right_justified_attdef_is_left_of_alignment_point ... ok
+test extents::tests::centered_and_top_left_text_follow_placement ... ok
+test plotstyle::tests::colour_transforms ... ok
+test extents::tests::multileader_text_is_inside_its_bounds ... ok
+test plotstyle::tests::builtins_are_complete_color_dependent_tables ... ok
+test store::tests::move_next_to_and_sort ... ok
+test plotter::tests::round_trip_and_hostile_values ... ok
+test store::tests::draw_order_moves ... ok
+test plotstyle::tests::named_builtins_and_sanitizing ... ok
+test store::tests::snapshots_are_independent ... ok
+test tables::cellstyle::tests::implied_styles_follow_the_table_style ... ok
+test plotstyle::tests::drawing_tables_shadow_builtins ... ok
+test tables::cellstyle::tests::numbers_format ... ok
+test tables::cellstyle::tests::hostile_values_are_sanitized ... ok
+test library::tests::metric_drawings_draw_iso_scaled_patterns ... ok
+test tables::cellstyle::tests::storing_an_implied_style_keeps_the_style_plain ... ok
+test tables::tablebreak::tests::down_without_repeats_and_manual_heights ... ok
+test tables::tablebreak::tests::breaks_repeat_labels_and_go_right ... ok
+test plotstyle::tests::json_round_trip_with_defaults ... ok
+test tables::tablebreak::tests::unbroken_is_one_part ... ok
+test gdt::tests::hostile_strings_do_not_panic ... ok
+test tests::add_and_extents ... ok
+test tests::attdef_in_block_is_ignored_in_insert_extents ... ok
+test tests::block_entity_on_layer_zero_counts_even_if_layer_zero_is_off_or_missing ... ok
+test tests::entity_serde_roundtrip ... ok
+test tests::hidden_layers_excluded_from_extents ... ok
+test tests::non_blank_text_and_mtext_have_bounds ... ok
+test tests::blank_text_and_mtext_have_no_bounds ... ok
+test tests::block_entity_on_off_or_frozen_layer_is_ignored ... ok
+test tests::new_drawing_has_standard_tables ... ok
+test tests::invisible_dimblock_entity_is_ignored_in_dimension_extents ... ok
+test tests::inserts_of_missing_or_empty_blocks_do_not_stretch_extents ... ok
+test tests::insert_bounds_with_cyclic_block_terminate ... ok
+test tests::space_names_its_tab ... ok
+test tests::rays_and_xlines_do_not_stretch_extents ... ok
+test tests::block_entity_with_invisible_flag_is_ignored_in_insert_extents ... ok
+test tests::block_entity_on_undefined_layer_counts ... ok
+test tests::transform_arc_mirror_keeps_shape ... ok
+test tests::paper_space_entities ... ok
+test tests::visible_attributes_of_a_missing_block_still_count ... ok
+test tables::tablebreak::tests::hostile_break_settings ... ok
+test tests::deep_block_visit_does_not_hide_a_shallow_reference ... ok
+test tests::wide_polyline_extents_follow_the_band ... ok
+test store::tests::push_get_remove ... ok
+test plotstyle::tests::file_format_round_trip ... ok
+test tests::wide_arc_segment_extents_reach_the_outer_edge ... ok
+test store::tests::move_next_to_splits_big_chunks ... ok
+test dynblock::tests::hostile_counts_with_missing_groups_stay_linear ... ok
+
+test result: ok. 55 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\lin_pat_parse.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\lin_pat_parse-84bf40f8d2b539a6.exe)
+
+running 8 tests
+test broken_patterns_are_skipped_with_warnings ... ok
+test broken_linetypes_are_skipped_with_warnings ... ok
+test hatch_patterns_are_read ... ok
+test lowercase_pattern_names_are_upper_cased ... ok
+test simple_and_text_linetypes_are_read ... ok
+test text_rotation_units_and_absolute_angles ... ok
+test hostile_linetype_files_never_panic_and_stay_capped ... ok
+test hostile_pattern_files_never_panic_and_stay_capped ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\sub_segment_alias.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\sub_segment_alias-16b73c5005f5e55e.exe)
+
+running 1 test
+test short_segment_name_matches_the_documented_forms ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_engine-3360e1ec8b4164a4.exe)
+
+running 295 tests
+test cmd::annotate::tests::dimassoc_zero_makes_plain_dimensions ... ok
+test cmd::annotate::tests::interactive_angular_picks_circle ... ok
+test cmd::annotate::tests::moving_the_line_keeps_a_free_continued_origin ... ok
+test cmd::annotate::tests::interactive_dimlinear_select_object_is_associative ... ok
+test cmd::annotate::tests::erase_disassociate_and_reassociate ... ok
+test cmd::annotate::tests::angular_between_lines_follows_rotation ... ok
+test cmd::annotate::tests::linetype_rename_updates_references ... ok
+test cmd::annotate::tests::mtext_rejects_nonpositive_height ... ok
+test cmd::annotate::tests::linear_dimension_follows_line_endpoint ... ok
+test cmd::annotate::tests::dimstyle_rename_updates_block_dimensions ... ok
+test cmd::annotate::tests::dimension_override_text_with_variables ... ok
+test cmd::annotate::tests::dimspace_prompts_for_its_inputs ... ok
+test cmd::annotate::tests::moving_the_object_carries_the_dimension ... ok
+test cmd::annotate::tests::interactive_angular_picks_polyline_segments ... ok
+test cmd::annotate::tests::moving_the_object_keeps_the_ordinate_datum ... ok
+test cmd::array::tests::polar_angles ... ok
+test cmd::annotate::tests::table_interactive ... ok
+test cmd::blocks::attedit::tests::replacement_is_bounded_and_specs_take_lists ... ok
+test cmd::blocks::attribs::tests::attdisp_keywords_map_to_attmode ... ok
+test cmd::annotate::tests::hostile_annotation_params_never_panic ... ok
+test cmd::annotate::tests::dimstyle_commands ... ok
+test cmd::blocks::extract::tests::csv_quotes_separators_quotes_and_line_breaks ... ok
+test cmd::annotate::tests::dimtedit_and_dimspace ... ok
+test cmd::annotate::tests::dimension_overrides ... ok
+test cmd::annotate::tests::radius_and_diameter_follow_circle ... ok
+test cmd::blocks::xref::bind::tests::bound_names ... ok
+test cmd::blocks::insert_file::tests::file_names_become_block_names ... ok
+test cmd::blocks::xref::load::tests::paths_resolve_against_the_host_folder_then_by_name ... ok
+test cmd::blocks::xref::load::tests::prefixes_ignore_case ... ok
+test cmd::annotate::tests::text_style_rename_follows_block_definition_text ... ok
+test cmd::annotate::tests::table_create_edit_merge ... ok
+test cmd::curves::tests::arc_builders ... ok
+test cmd::curves::tests::reverse_polyline_vertices ... ok
+test cmd::curves::tests::tangent_circles ... ok
+test cmd::curves::tests::spline_split_and_reverse ... ok
+test cmd::constraints::tests::bars_settings_and_autoconstrain_json ... ok
+test cmd::constraints::tests::edits_are_resolved_and_erase_purges ... ok
+test cmd::draw2::tests::arc_continue_from_last_line ... ok
+test cmd::constraints::tests::delconstraint_rejects_referenced_dimension ... ok
+test cmd::draw2::tests::circle_ttr_json_and_command_line ... ok
+test cmd::draw2::tests::circle_variants_json_and_command_line ... ok
+test cmd::draw2::tests::divide_and_measure_command_line ... ok
+test cmd::constraints::tests::interactive_prompts ... ok
+test cmd::draw2::tests::arc_command_options ... ok
+test cmd::draw2::tests::ellipse_arc_typed_angles_are_true_angles ... ok
+test cmd::draw2::tests::arc_variants_json ... ok
+test cmd::draw2::tests::divide_and_measure_json ... ok
+test cmd::annotate::tests::setvar_dim_variables_apply_to_new_dimensions ... ok
+test cmd::draw2::tests::circle_ttt_json_and_command_line ... ok
+test cmd::draw2::tests::centermark_and_centerline ... ok
+test cmd::draw2::tests::arc_variants_command_line ... ok
+test cmd::constraints::tests::auto_types_spellings_are_stored_canonically ... ok
+test cmd::draw2::tests::ellipse_axis_and_arc ... ok
+test cmd::draw2::tests::poly3d_json_and_command_line ... ok
+test cmd::draw2::tests::rectang_options_json ... ok
+test cmd::draw2::tests::mline_json_and_command_line ... ok
+test cmd::draw2::tests::rectang_options_command_line ... ok
+test cmd::draw2::tests::revcloud_command_line ... ok
+test cmd::draw2::tests::spline_cv_json_and_command_line ... ok
+test cmd::draw2::tests::wipeout_json_and_command_line ... ok
+test cmd::draw2::tests::helix_json_and_command_line ... ok
+test cmd::draw2::tests::xline_options_command_line ... ok
+test cmd::exchange::tests::attach_share_and_orbit_say_they_are_not_available_yet ... ok
+test cmd::draw2::tests::xline_options_json ... ok
+test cmd::exchange::tests::import_brings_objects_with_their_layers_and_blocks ... ok
+test cmd::draw2::tests::new_draw_commands_survive_garbage_input ... ok
+test cmd::file::pr193_tests::failed_store_keeps_unsaved_changes_and_delivered_save_clears_them ... ok
+test cmd::file::tests::closing_later_inactive_drawing_keeps_active_drawing ... ok
+test cmd::file::tests::closing_earlier_inactive_drawing_keeps_active_drawing ... ok
+test cmd::exchange::tests::preview_applies_an_explicit_layout_scale ... ok
+test cmd::hatch::tests::pattern_choices_list_the_library_with_its_lines ... ok
+test cmd::constraints::tests::json_geometric_and_dimensional_constraints ... ok
+test cmd::hatch::tests::hatchedit_solid_replaces_gradient ... ok
+test cmd::hatch::tests::hatchedit_pattern_replaces_gradient ... ok
+test cmd::hatch::tests::json_hatch_refuses_an_undefined_pattern ... ok
+test cmd::hatch::tests::the_pattern_picker_is_offered_and_its_choice_sets_the_pattern ... ok
+test cmd::file::tests::script_command_reports_a_missing_file ... ok
+test cmd::layer::tests::rejected_layer_set_changes_nothing ... ok
+test cmd::file::tests::script_command_runs_a_scr_file ... ok
+test cmd::hatch::tests::repeated_picks_and_handles_in_one_region_do_not_produce_duplicate_loops ... ok
+test cmd::layer::tests::delete_and_purge_keep_layers_used_by_block_definitions ... ok
+test cmd::layer::tests::layer_states_save_list_restore_delete ... ok
+test cmd::layer::tests::rename_repoints_paper_space_and_block_entities ... ok
+test cmd::layout::tests::hostile_layout_params ... ok
+test cmd::exchange::tests::export_writes_the_chosen_format_and_is_not_save_as ... ok
+test cmd::layout::tests::mspace_edits_model_through_viewport ... ok
+test cmd::layout::tests::mview_arrangements_and_interactive ... ok
+test cmd::layout::tests::new_layout_from_the_menu_asks_for_a_name ... ok
+test cmd::file::tests::typed_script_prompts_for_the_file_then_runs_or_reports_it ... ok
+test cmd::layout::tests::new_layout_gets_viewport_zoomed_to_extents ... ok
+test cmd::layout::tests::pagesetup_paper_table ... ok
+test cmd::layout::tests::rename_copy_delete ... ok
+test cmd::mleader_edit::tests::collect_blocks_into_one_multileader ... ok
+test cmd::machines::tests::pick_box_at_object_selection_prompts ... ok
+test cmd::draw2::tests::revcloud_json ... ok
+test cmd::mleader_edit::tests::edit_adds_and_removes_leaders ... ok
+test cmd::mleader_edit::tests::align_distribute_parallel_and_spacing ... ok
+test cmd::machines::tests::prompts_remember_last_options ... ok
+test cmd::layout::tests::viewport_scale_lock_and_layers ... ok
+test cmd::machines::tests::selection_commands_pickfirst_and_json_unchanged ... ok
+test cmd::machines::tests::selection_commands_prompt_without_pickfirst ... ok
+test cmd::mleader_edit::tests::hostile_mleader_edit_params_never_panic ... ok
+test cmd::modify2::tests::align_json_and_command_line ... ok
+test cmd::modify2::tests::chspace_json_and_command_line ... ok
+test cmd::modify2::tests::arraypath_json_and_command_line ... ok
+test cmd::modify2::tests::fillet_command_line_line_and_arc ... ok
+test cmd::modify2::tests::flatten_json_and_command_line ... ok
+test cmd::modify2::tests::fillet_polyline_json_and_command_line ... ok
+test cmd::modify2::tests::join_keeps_selected_objects_outside_the_chain ... ok
+test cmd::modify2::tests::explode_polyline3d_keeps_elevations ... ok
+test cmd::modify2::tests::lengthen_command_line ... ok
+test cmd::modify2::tests::blend_json_and_command_line ... ok
+test cmd::modify2::tests::fillet_line_arc_and_arcs ... ok
+test cmd::modify2::tests::offset_polyline_arc_bulge_follows_joined_endpoints ... ok
+test cmd::modify2::tests::lengthen_json ... ok
+test cmd::modify2::tests::pedit_preselected_line_asks_to_convert ... ok
+test cmd::modify2::tests::pedit_command_line ... ok
+test cmd::modify2::tests::editing_commands_leave_locked_layer_objects_alone ... ok
+test cmd::modify2::tests::pedit_json_options ... ok
+test cmd::file::tests::a_script_cannot_start_a_script ... ok
+test cmd::constraints::tests::hostile_constraint_params_never_panic ... ok
+test cmd::modify2::tests::reverse_json_and_command_line ... ok
+test cmd::modify2::tests::textedit_json_and_command_line ... ok
+test cmd::options::tests::every_profile_var_round_trips_through_restore ... ok
+test cmd::props::tests::properties_set_rejects_unloaded_linetype ... ok
+test cmd::exchange::tests::pdfbook_collects_frames_into_one_pdf_per_row ... ok
+test cmd::modify2::tests::ncopy_json_and_command_line ... ok
+test cmd::qselect::tests::wildcards ... ok
+test cmd::table::formula::tests::names ... ok
+test cmd::table::formula::tests::shifting_references ... ok
+test cmd::utility::calc::tests::points_and_vectors ... ok
+test cmd::table::breaks::tests::csv_parsing ... ok
+test cmd::table::formula::tests::syntax ... ok
+test cmd::utility::calc::tests::number_text ... ok
+test cmd::utility::tests::find_and_replace ... ok
+test cmd::qselect::tests::modes_append_exclude_and_scope ... ok
+test finite::tests::finds_nan_and_infinity_anywhere ... ok
+test grip_dims::tests::a_line_end_measures_from_the_other_end ... ok
+test grip_dims::tests::locks_hold_and_pin_the_grip ... ok
+test cmd::utility::tests::calculator ... ok
+test cmd::modify2::tests::trim_and_extend_ellipse_and_spline ... ok
+test grips::tests::arc_and_ellipse_grips ... ok
+test cmd::modify2::tests::new_modify_commands_survive_garbage_input ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (33088) panicked at crates\engine\src\guard.rs:137:13:
+factory panicked
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test grips::tests::line_and_circle_grips ... ok
+test grips::tests::grip_modes ... ok
+test grips::tests::other_entity_grips ... ok
+test cmd::qselect::tests::hostile_params_are_errors_not_panics ... ok
+test grips::tests::polyline_grips ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (33088) panicked at crates\engine\src\guard.rs:125:13:
+assertion `left != right` failed: begin panicked
+  left: "begin"
+ right: "begin"
+test lisp::read::tests::reads_forms_atoms_and_comments ... ok
+test cmd::exchange::tests::publish_plots_every_sheet ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (33088) panicked at crates\engine\src\guard.rs:115:13:
+assertion `left != right` failed: prompt panicked
+  left: "prompt"
+ right: "prompt"
+test cmd::layout::tests::plot_goes_through_the_hook ... ok
+
+thread 'lisp::tests::a_panic_inside_a_routine_ends_it_with_an_error' (7424) panicked at crates\engine\src\lisp\builtins.rs:1474:5:
+test panic
+test lisp::tests::a_leading_newline_ends_the_command_line_instead_of_adding_an_empty_one ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (33088) panicked at crates\engine\src\guard.rs:129:13:
+assertion `left != right` failed: preview panicked
+  left: "preview"
+ right: "preview"
+test grips::tests::grips_on_locked_layers_and_hostile_values ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (33088) panicked at crates\engine\src\guard.rs:120:13:
+assertion `left != right` failed: input panicked
+test cmd::modify2::tests::splinedit_json_and_command_line ... ok
+  left: "input"
+ right: "input"
+test lisp::tests::arithmetic_follows_autolisp ... ok
+test lisp::tests::a_waiting_routine_is_a_prompt_with_a_rubber_band ... ok
+test guard::tests::panics_in_a_command_machine_end_the_command_not_the_app ... ok
+test cmd::qselect::tests::type_and_property_filters ... ok
+test grips::tests::spline_text_insert_and_dimension_grips ... ok
+test lisp::tests::geometry ... ok
+test lisp::tests::appload_and_load ... ok
+test lisp::tests::functions_scope_and_control ... ok
+test lisp::tests::input_functions_take_supplied_answers ... ok
+test lisp::tests::command_draws_and_one_routine_is_one_undo_step ... ok
+test lisp::tests::hostile_lisp_never_panics ... ok
+test lisp::tests::errors_unwind_bindings_and_reach_the_handler ... ok
+test lisp::tests::printing ... ok
+test lisp::tests::interactive_routine_waits_for_the_user ... ok
+test lisp::tests::entity_lists_round_trip ... ok
+test lisp::tests::lists_and_strings ... ok
+test lisp::read::tests::malformed_and_hostile_input_is_an_error_not_a_crash ... ok
+test lisp::tests::selection_sets_and_filters ... ok
+test lisp::value::tests::printing_and_equality ... ok
+test lisp::value::tests::reals_print_with_six_significant_digits ... ok
+test lisp::tests::tables_and_variables ... ok
+test mtext_edit::tests::round_trips_formats_and_atoms ... ok
+test mtext_edit::tests::ruler_and_lists ... ok
+test mtext_edit::tests::toggles_and_typing_keep_formats ... ok
+test pointmod::tests::snap_words ... ok
+test pointmod::tests::filters ... ok
+test prompt::tests::keywords ... ok
+test prompt::tests::points ... ok
+test select::hatch_pattern_pick_tests::pattern_hatch_is_picked_on_a_visible_stroke ... ok
+test select::hatch_pattern_pick_tests::pattern_hatch_island_stays_empty ... ok
+test select::solid_interior_tests::crossing_window_inside_solid_and_trace_selects_fill ... ok
+test select::hatch_pattern_pick_tests::solid_hatch_is_picked_inside_its_fill_not_its_bounding_rectangle ... ok
+test select::solid_interior_tests::crossing_window_in_triangular_bbox_but_outside_fill_does_not_select ... ok
+test select::solid_interior_tests::pick_in_triangular_bbox_but_outside_fill_does_not_select ... ok
+test select::hatch_pattern_pick_tests::solid_hatch_island_follows_the_island_style ... ok
+test select::tests::fence_selects_crossed_xline_and_ray ... ok
+test snap::curves::tests::ellipse_perpendiculars_are_normals ... ok
+test mtext_edit::tests::hostile_input_never_panics ... ok
+test snap::curves::tests::ellipse_tangents_touch_and_stay_on_the_arc ... ok
+test snap::iso::tests::grid_lines_bounded ... ok
+test snap::iso::tests::lattice_points_are_spacing_apart_along_each_axis ... ok
+test snap::tests::center_quadrant_tangent ... ok
+test snap::tests::deferred_tangent_without_base ... ok
+test snap::tests::intersection ... ok
+test snap::tests::endpoint_and_mid ... ok
+test snap::tests::ortho_and_polar ... ok
+test snap::tests::off_bit_disables ... ok
+test snap::curves::tests::ellipse_mid_halves_the_length ... ok
+test snap::tests::resolve_belt_tangent_between_circles ... ok
+test snap::tests::perpendicular_from_base ... ok
+test snap::tests::resolve_degenerate_input_is_none_not_panic ... ok
+test snap::tests::resolve_perpendicular_cases ... ok
+test snap::tests::resolve_tangent_to_free_point ... ok
+test snap::curves::tests::spline_snaps ... ok
+test spatial::tests::index_follows_layer_visibility_inside_blocks ... ok
+test spatial::tests::small_spaces_are_scanned ... ok
+test spatial::tests::cached_index_follows_edits ... ok
+test sysvars::table::tests::table_names_are_upper_case_and_unique ... ok
+test tests::arc_refuses_zero_radius ... ok
+test spatial::tests::hostile_queries_match_scan ... ok
+test tests::bare_variable_name_runs_setvar ... ok
+test tests::area_of_hatch_excludes_island ... ok
+test tests::block_insert_with_attributes ... ok
+test tests::block_rotation_property_turns_attribute_text ... ok
+test tests::cancel_keeps_partial_line_as_one_undo ... ok
+test lisp::tests::startup_files_load_from_the_support_folder ... ok
+test tests::circle_variants ... ok
+test tests::boundary_pick_point_keeps_island_of_separate_lines ... ok
+test tests::copy_rotate_scale_mirror ... ok
+test tests::copy_and_rotate_drag_as_a_transform_of_the_selection ... ok
+test tests::deferred_pick_elsewhere_is_a_plain_point ... ok
+test tests::count_from_the_menu_shows_its_result ... ok
+test tests::dynamic_input_pointer_settings ... ok
+test tests::dim_auto_vertical_and_radius ... ok
+test tests::dimlinear_interactive_and_continue ... ok
+test tests::edits_while_a_command_runs_redraw ... ok
+test tests::enter_repeats_last_command ... ok
+test tests::erase_all_and_selection_keywords ... ok
+test tests::extend_line_to_boundary ... ok
+test tests::fillet_two_lines ... ok
+test tests::gradient_pick_point_keeps_island_of_separate_lines ... ok
+test tests::hatch_by_pick_point_with_island ... ok
+test tests::hatch_from_overlapping_lines ... ok
+test tests::hatch_pick_point_keeps_island_of_separate_lines ... ok
+test tests::every_variable_name_starts_setvar_unless_it_is_a_command ... ok
+test tests::hostile_params_never_panic ... ok
+test tests::json_execute_and_errors ... ok
+test tests::layers_and_properties ... ok
+test tests::line_belt_tangent_to_tangent ... ok
+test cmd::exchange::tests::preview_draws_the_sheet_as_it_plots ... ok
+test tests::line_deferred_tangent_with_typed_polar ... ok
+test tests::line_deferred_tangent_without_solution_reprompts ... ok
+test tests::line_first_point_deferred_tangent ... ok
+test tests::line_undo_option_and_aliases ... ok
+test tests::line_via_command_line ... ok
+test tests::every_interactive_command_starts_and_cancels ... ok
+test tests::offset_circle_and_polyline ... ok
+test tests::move_with_pickfirst_and_window_selection ... ok
+test tests::mleader_and_qdim ... ok
+test tests::osnap_toggle ... ok
+test tests::pickadd_controls_idle_picks ... ok
+test tests::polar_and_direct_distance ... ok
+test tests::pline_halfwidth_is_centre_to_edge ... ok
+test tests::press_and_drag_selection_window ... ok
+test tests::pline_width_answers_taper_the_next_segment ... ok
+test tests::programmatic_undo_during_a_command_ends_it_first ... ok
+test tests::properties_palette_current_property_commands ... ok
+test tests::properties_set_transparency ... ok
+test tests::properties_set_circle_size_and_dim_style ... ok
+test tests::rectangle_polygon_and_pline ... ok
+test tests::scale_reference_typed_and_picked ... ok
+test tests::script_runs_commands ... ok
+test tests::sample_drawing_builds ... ok
+test tests::script_splits_line_at_keyword_prompt ... ok
+test tests::setvar_clayer_keeps_numeric_layer_name ... ok
+test tests::setvar_keeps_header_types ... ok
+test tests::sysvars_roundtrip ... ok
+test tests::setvar_point_variables_take_point_objects ... ok
+test tests::trim_line_between_edges ... ok
+test tests::undo_during_a_command_without_undo_keyword_ends_it_and_undoes ... ok
+test tests::undo_during_line_removes_the_last_segment_and_keeps_line_running ... ok
+test tests::zoom_extents_fits_drawing ... ok
+test tests::setvar_at_command_line ... ok
+test units::tests::angles ... ok
+test units::tests::decimal_and_arch ... ok
+test units::tests::dms_display_precision ... ok
+test units::tests::dms_rounding_carries ... ok
+test units::tests::parse_distances ... ok
+test tests::hostile_variable_like_input_never_panics ... ok
+test tests::boundary_point_batch_is_capped ... ok
+test spatial::tests::osnap_parity_with_scan ... ok
+test cmd::annotate::tests::text_style_commands ... ok
+test spatial::tests::window_and_fence_parity_with_scan ... ok
+
+thread 'lisp::tests::a_panic_inside_a_routine_ends_it_with_an_error' (7424) panicked at crates\engine\src\lisp\builtins.rs:1474:5:
+test panic
+test lisp::tests::a_panic_inside_a_routine_ends_it_with_an_error ... ok
+test spatial::tests::pick_parity_with_scan ... ok
+test spatial::tests::incremental_index_matches_fresh_build ... ok
+test lisp::tests::deeply_nested_lists_drop_without_overflowing_the_stack ... ok
+test lisp::tests::strings_are_capped ... ok
+test lisp::tests::too_many_list_cells_stop_the_routine ... ok
+test lisp::value::tests::a_long_list_drops_without_overflowing_the_stack ... ok
+test lisp::tests::runaway_routines_are_errors_not_crashes ... ok
+
+test result: ok. 295 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.50s
+
+     Running tests\aliases.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\aliases-a011c5de848a7b13.exe)
+
+running 3 tests
+test an_alias_file_adds_and_overrides_aliases ... ok
+test reinit_reads_the_alias_file_again ... ok
+test hostile_alias_files_never_panic ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests\angle_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\angle_prompts-23c84d2a0b09c07b.exe)
+
+running 4 tests
+test hatch_angle_is_a_rotation_in_aunits ... ok
+test rotate_angle_is_a_rotation_in_aunits ... ok
+test chamfer_and_mleader_angles_are_amounts_in_aunits ... ok
+test dimension_line_and_text_angles_are_directions ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\angle_settings.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\angle_settings-5c2bfc9d8f0318e4.exe)
+
+running 4 tests
+test json_and_default_parsing_keep_degrees_from_east ... ok
+test rotate_reference_angles_follow_angbase_and_angdir ... ok
+test polar_angles_measure_from_angbase_in_angdir ... ok
+test bare_numbers_are_in_aunits_and_suffixes_override ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\annotate_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\annotate_options-2348a0980697f5b1.exe)
+
+running 8 tests
+test mleader_landing_first_and_content_first ... ok
+test dimradius_text_options ... ok
+test mleader_options_take_effect ... ok
+test dimangular_quadrant_locks_the_measured_angle ... ok
+test dimordinate_datum_and_text_options ... ok
+test dimlinear_vertical_forces_the_orientation ... ok
+test dimlinear_angle_rotates_the_text_and_text_replaces_it ... ok
+test dimarc_partial_measures_part_of_the_arc ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\annotative.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\annotative-32555c3b1567cc78.exe)
+
+running 14 tests
+test text_of_an_annotative_style_supports_the_current_scale ... ok
+test annoautoscale_adds_the_new_scale ... ok
+test annotative_mtext_columns_follow_the_scale ... ok
+test hostile_parameters_are_refused ... ok
+test add_and_delete_current_scale_keep_one_scale ... ok
+test objectscale_at_the_command_line ... ok
+test annoupdate_and_properties_follow_the_style ... ok
+test scalelistedit_at_the_command_line ... ok
+test annotative_text_draws_at_paper_height_times_the_scale ... ok
+test explode_gives_plain_objects_at_the_current_scale ... ok
+test unsupported_scale_hides_unless_annoallvisible ... ok
+test scale_list_add_delete_reset ... ok
+test annotative_multileader_and_hatch ... ok
+test annotative_dimension_scales_its_text_and_arrows ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\array_commands.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\array_commands-e3354b9e3a4cf7bb.exe)
+
+running 4 tests
+test arrayrect_edits_the_array_in_a_loop_until_exit ... ok
+test arraypolar_asks_for_the_center_then_edits_items_and_angles ... ok
+test array_asks_for_the_type_and_continues_as_that_array ... ok
+test arrays_over_maxarray_are_refused_not_shrunk ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\assoc_array.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\assoc_array-524469465a11b18e.exe)
+
+running 10 tests
+test json_arrays_follow_arrayassociativity ... ok
+test arrays_of_arrays_and_limits ... ok
+test explode_gives_plain_objects_and_edits_move_the_array ... ok
+test json_arrays_are_associative_by_default ... ok
+test pasted_arrays_get_their_own_blocks ... ok
+test arrayedit_base_replace_and_reset ... ok
+test arrayedit_source_then_arrayclose ... ok
+test arrayedit_changes_parameters_of_one_array ... ok
+test typed_levels_and_polar_rows ... ok
+test typed_arrayedit ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\attdisp_attsync.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attdisp_attsync-d4e2e25e0eb0acdd.exe)
+
+running 2 tests
+test attdisp_sets_attmode_and_the_display_follows_it ... ok
+test attsync_brings_references_in_line_with_the_definitions ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\attedit_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attedit_prompts-7f42e820516e36d0.exe)
+
+running 4 tests
+test attribute_tags_match_in_any_case_and_unknown_tags_are_reported ... ok
+test dash_attedit_one_at_a_time_edits_the_selected_attributes ... ok
+test dash_attedit_global_replaces_a_string_in_matching_attributes ... ok
+test attedit_asks_for_a_block_then_each_value ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\attrib_modes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attrib_modes-d71d46835543ff55.exe)
+
+running 1 test
+test references_take_lock_position_from_the_definition ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\attrib_props.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attrib_props-d2a646dcdfb63d2f.exe)
+
+running 2 tests
+test hostile_answers_do_not_panic ... ok
+test dash_attedit_sets_layer_and_colour_of_one_attribute ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\attribute_tools.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attribute_tools-441e552f53171cde.exe)
+
+running 8 tests
+test battman_lists_definitions_and_references ... ok
+test battman_edit_renames_a_tag_and_references_keep_their_values ... ok
+test battman_starts_from_a_selected_reference ... ok
+test battman_at_the_command_line_edits_removes_and_moves ... ok
+test battman_without_sync_leaves_references_alone ... ok
+test battman_constant_definitions_leave_references ... ok
+test battman_removes_and_reorders_definitions ... ok
+test battman_refuses_bad_edits_without_changing_anything ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\audit.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\audit-4f74ec62ffc7f1c7.exe)
+
+running 6 tests
+test missing_standard_entries_and_layer_zero_are_recreated ... ok
+test audit_reports_without_changing_and_fixes_when_asked ... ok
+test audit_at_the_command_line_asks_before_fixing ... ok
+test a_clean_drawing_is_left_alone ... ok
+test recover_opens_the_file_with_the_fixes_applied ... ok
+test a_long_block_cycle_is_broken_without_deep_recursion ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running tests\autosave.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\autosave-8c460bb0abd17598.exe)
+
+running 8 tests
+test file_names_round_trip ... ok
+test a_changed_drawing_is_written_savetime_minutes_after_the_change ... ok
+test closing_deletes_and_savetime_zero_or_no_folder_writes_nothing ... ok
+test recover_as_copy_opens_an_unsaved_untitled_drawing ... ok
+test files_of_other_programs_in_the_autosave_folder_are_never_deleted ... ok
+test recovery_offers_files_of_apps_that_stopped ... ok
+test autosave_files_are_written_in_the_background_and_removed_on_exit ... ok
+test a_failed_autosave_is_tried_again_without_another_change ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.53s
+
+     Running tests\block_editor.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\block_editor-de1717ddeb95b536.exe)
+
+running 12 tests
+test the_current_drawing_opens_in_the_block_editor ... ok
+test unchanged_objects_keep_their_exact_coordinates ... ok
+test a_dynamic_reference_with_its_own_values_opens_its_dynamic_block ... ok
+test hostile_params_never_panic ... ok
+test what_the_block_editor_refuses ... ok
+test saving_the_block_updates_every_reference ... ok
+test bedit_can_start_a_new_block ... ok
+test closing_without_saving_leaves_the_drawing_as_it_was ... ok
+test bsaveas_makes_a_new_block_and_keeps_the_old_one ... ok
+test a_dynamic_block_from_another_program_says_its_parameters_are_kept ... ok
+test a_selected_reference_opens_its_block_and_bclose_asks_to_save ... ok
+test a_file_save_writes_the_drawing_outside_the_editor ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\block_redefine.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\block_redefine-c3f6b59338194caa.exe)
+
+running 2 tests
+test redefining_with_a_different_case_replaces_the_block ... ok
+test a_block_cannot_be_redefined_to_reference_itself ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\break_join_locked_layers.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\break_join_locked_layers-841a7176ff240246.exe)
+
+running 5 tests
+test break_refuses_a_locked_arc_and_circle ... ok
+test join_refuses_when_any_line_is_locked ... ok
+test break_and_breakatpoint_refuse_a_locked_line ... ok
+test interactive_break_and_join_refuse_locked_lines ... ok
+test join_keeps_a_locked_original_in_a_mixed_layer_pair ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\clipboard.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\clipboard-a32a1bb7b32ef52a.exe)
+
+running 4 tests
+test pasteblock_makes_a_block_of_the_clipboard ... ok
+test paste_into_another_drawing_brings_layers_and_blocks ... ok
+test pasteorig_pastes_only_into_another_drawing ... ok
+test clipboard_travels_as_text ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\compare.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\compare-adebebcb71d3a78a.exe)
+
+running 6 tests
+test derived_dimension_fields_are_not_differences ... ok
+test navigates_areas_and_closes ... ok
+test finds_added_removed_and_changed_objects ... ok
+test hostile_inputs_are_errors ... ok
+test matches_objects_by_geometry_when_handles_differ ... ok
+test compares_a_file_read_through_the_io_hooks ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\constraint_geometry.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\constraint_geometry-2d1c6a53b0d8d32a.exe)
+
+running 4 tests
+test block_reference_insertion_and_rigid_points ... ok
+test ellipse_points_and_tangent_line_from_json ... ok
+test spline_smooth_to_arc_is_g2_and_reports_dof ... ok
+test dof_of_unconstrained_selection_and_hostile_params ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\constraint_infer.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\constraint_infer-4a490e896017bb5e.exe)
+
+running 4 tests
+test off_by_default_and_settable_by_setvar ... ok
+test line_segments_join_and_ortho_directions_are_kept ... ok
+test editing_with_snaps_infers_and_constraint_commands_do_not ... ok
+test snapped_points_become_coincident_and_tangent ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\count.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\count-48d61f9e4977e8db.exe)
+
+running 7 tests
+test counts_nested_references_in_the_current_space ... ok
+test counts_layouts_and_all_spaces ... ok
+test counts_objects_like_a_picked_one_and_highlights_them ... ok
+test counts_minsert_copies_and_selections ... ok
+test count_at_the_command_line ... ok
+test counttable_inserts_a_table ... ok
+test hostile_nesting_is_bounded ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dash_block.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dash_block-c0ebe20d2464fcec.exe)
+
+running 2 tests
+test dash_block_erases_the_selection_and_asks_before_redefining ... ok
+test block_and_the_json_forms_keep_their_defaults ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\data_extraction.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\data_extraction-b317f12d1afc0b38.exe)
+
+running 8 tests
+test uncombined_rows_list_each_reference ... ok
+test dataextraction_at_the_command_line_inserts_a_table ... ok
+test inserts_a_table_with_a_header_row ... ok
+test rows_are_counted_by_block_and_values ... ok
+test constant_attributes_come_from_the_definition ... ok
+test eattext_at_the_command_line_writes_a_file ... ok
+test writes_csv_and_tab_separated_files ... ok
+test too_many_rows_for_a_table_are_refused_before_anything_changes ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+
+     Running tests\dim_baseline_spacing.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_baseline_spacing-21dac469c45e7e39.exe)
+
+running 1 test
+test baseline_spacing_follows_overrides_and_dimscale ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dim_chain.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_chain-5e9bbc36e79453f7.exe)
+
+running 1 test
+test chains_attach_like_dimreassociate_and_long_chains_are_capped ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\dim_commands.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_commands-7fcb35ed263fa7eb.exe)
+
+running 7 tests
+test marks_follow_move_and_rotate_and_hostile_values_do_not_panic ... ok
+test dimedit_modes ... ok
+test jogged_linear ... ok
+test dimedit_prompts ... ok
+test breaks ... ok
+test inspection_dimensions ... ok
+test jogged_radius ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dim_explode_text.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_explode_text-ee9960e808f515c3.exe)
+
+running 1 test
+test exploded_dimension_text_matches_the_drawn_text ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dim_radial_inside.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_radial_inside-68731ec6135be574.exe)
+
+running 1 test
+test radial_text_goes_inside_when_the_location_is_inside ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dim_vars.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_vars-c59f59a7676863b8.exe)
+
+running 7 tests
+test leaders_use_the_leader_arrow ... ok
+test text_move_settings ... ok
+test linetypes_and_lineweights_of_dimension_and_extension_lines ... ok
+test suppressed_halves_fixed_extension_lines_and_vertical_position ... ok
+test fit_moves_text_or_arrows_outside ... ok
+test new_variables_are_style_overrides_and_read_back ... ok
+test tolerance_justification_angular_zeros_and_arc_symbol ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\dimtedit_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dimtedit_prompts-0f0a1b08fb38360d.exe)
+
+running 2 tests
+test align_text_angle_menu_entry_asks_for_the_angle ... ok
+test dimtedit_moves_justifies_rotates_and_homes_typed_text ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\drafting_spacing.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\drafting_spacing-6bf4e8e9de916792.exe)
+
+running 4 tests
+test invalid_spacing_is_refused_without_changing_the_drawing ... ok
+test drafting_settings_edits_are_drawing_changes_with_undo_and_redo ... ok
+test spacing_stays_with_each_drawing_and_new_drawings_use_defaults ... ok
+test loaded_spacing_is_used_by_getvar_settings_snapshots_and_grid_snap ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\draw_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\draw_prompts-d7aaad4d1d48903b.exe)
+
+running 7 tests
+test circle_center_prompt_rejects_garbage ... ok
+test polygon_edge_endpoints_must_differ ... ok
+test circle_radius_point_on_the_centre_is_refused ... ok
+test polygon_typed_radius_has_a_horizontal_bottom_edge ... ok
+test spline_close_makes_a_smooth_periodic_curve ... ok
+test spline_rejects_text_and_switches_method ... ok
+test polygon_radius_must_be_positive ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\drawing_recovery_command.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\drawing_recovery_command-781c6a5f16d74cd0.exe)
+
+running 1 test
+test lists_and_discards_only_recoverable_autosave_files ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\draworder.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\draworder-8d40ef5a5c66ceeb.exe)
+
+running 3 tests
+test draworder_typed_options_and_undo ... ok
+test draworder_json_keeps_relative_order ... ok
+test texttofront_and_hatchtoback ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dyn_input.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dyn_input-6b41477e16c068f0.exe)
+
+running 2 tests
+test dynprompt_is_a_setting_on_by_default ... ok
+test an_option_picked_at_the_cursor_answers_the_prompt ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dynamic_block_data.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dynamic_block_data-c454741153bbd8fc.exe)
+
+running 4 tests
+test dynamic_block_data_is_reported ... ok
+test blocks_without_dynamic_data_and_bad_names ... ok
+test a_reference_to_a_dynamic_block_reports_its_custom_properties ... ok
+test a_visibility_state_is_changed_in_one_undo_step ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dynamic_grips.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dynamic_grips-8cf7300290320976.exe)
+
+running 2 tests
+test grips_are_listed_and_dragged_in_one_undo_step ... ok
+test a_grip_drag_previews_the_reference_and_takes_a_point_or_a_distance ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\fillet_chamfer.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\fillet_chamfer-3c4cee364d7a2961.exe)
+
+running 6 tests
+test chamfer_polyline ... ok
+test json_chamfer_angle_and_trim ... ok
+test fillet_multiple_and_undo ... ok
+test chamfer_no_trim_and_multiple ... ok
+test fillet_no_trim_keeps_the_lines ... ok
+test chamfer_angle_and_method ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\followups_626.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\followups_626-b4a66c2788623fa3.exe)
+
+running 3 tests
+test isometric_snap_gives_way_to_polarsnap ... ok
+test mview_restore_ignores_unusable_tiles_from_files ... ok
+test mview_restore_puts_a_saved_configuration_on_a_layout ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\grip_dim_input.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\grip_dim_input-c1718d8c519944f9.exe)
+
+running 4 tests
+test dyndigrip_and_dyndivis_are_checked_settings ... ok
+test only_a_single_stretched_grip_has_dimensions ... ok
+test typed_length_and_angle_place_a_line_end ... ok
+test circle_radius_and_polyline_segments ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\grip_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\grip_options-2f6fdd4d4ffe62ff.exe)
+
+running 10 tests
+test enter_cycles_the_modes_and_typed_values_apply ... ok
+test grip_option_json_form ... ok
+test polyline_segment_converts_to_arc_and_back ... ok
+test line_and_arc_lengthen_and_radius ... ok
+test several_hot_grips_stretch_together ... ok
+test move_with_base_point_and_copy_on_the_selection ... ok
+test base_point_copy_and_undo_make_one_undo_step ... ok
+test polyline_vertex_options ... ok
+test reference_rotate_and_scale ... ok
+test bad_grips_are_errors_not_panics ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\grip_selection.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\grip_selection-5d2bec632bae9ccf.exe)
+
+running 1 test
+test grip_edits_act_on_the_selection ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\group_selection.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\group_selection-06f015e9e0fea7ef.exe)
+
+running 4 tests
+test dash_group_json ... ok
+test clicks_pick_whole_selectable_groups ... ok
+test select_objects_prompts_pick_groups ... ok
+test dash_group_options_typed ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\groups.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\groups-03ef1fa012a8dca9.exe)
+
+running 5 tests
+test group_json_named_and_unnamed ... ok
+test group_typed_name_description_and_undo ... ok
+test erased_members_leave_groups ... ok
+test groupedit_add_remove_rename ... ok
+test ungroup_by_pick_name_and_json ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\hatch_assoc.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\hatch_assoc-c5d6acf7994bb68d.exe)
+
+running 9 tests
+test hatch_of_selected_polyline_follows_move_and_scale ... ok
+test non_associative_hatch_keeps_no_sources ... ok
+test opening_the_boundary_ends_the_link ... ok
+test moving_hatch_with_its_boundary_keeps_the_link ... ok
+test moving_or_copying_the_hatch_alone_ends_the_link ... ok
+test interactive_stretch_at_the_command_line_refills ... ok
+test pick_point_hatch_follows_stretched_lines ... ok
+test erased_island_is_filled_erased_boundary_ends_the_link ... ok
+test hostile_sources_never_panic ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\hatch_dialog_helpers.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\hatch_dialog_helpers-f995f46ded42248a.exe)
+
+running 10 tests
+test hpdlgmode_defaults_to_1_and_takes_0_or_1 ... ok
+test hatchpick_keeps_closed_objects_only ... ok
+test hatchpick_keeps_points_inside_boundaries_and_changes_nothing ... ok
+test hatchpick_typed_mode_and_escape_keeps_nothing ... ok
+test hatchpick_origin_and_hatch_modes ... ok
+test hatchedit_refuses_a_bad_gradient_and_changes_nothing ... ok
+test gradient_takes_a_name_and_centred ... ok
+test hatchpick_json_form_validates_like_the_prompts ... ok
+test hatchedit_turns_a_pattern_into_a_gradient_and_back ... ok
+test hatch_takes_points_and_objects_in_one_call ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\hatch_numeric_validation.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\hatch_numeric_validation-c3dac78144668a4f.exe)
+
+running 2 tests
+test valid_omitted_and_null_values_still_edit ... ok
+test bad_scale_or_angle_is_refused_and_changes_nothing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\hatch_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\hatch_options-ed3c3c3ae94085ea.exe)
+
+running 8 tests
+test hatchedit_needs_a_hatch ... ok
+test gap_tolerance_closes_small_gaps ... ok
+test hatch_origin_and_separate_keywords_at_the_command_line ... ok
+test dash_hatchedit_options_at_the_command_line ... ok
+test hatchedit_refuses_unknown_patterns_and_region_boundaries ... ok
+test hatchedit_unlinks_relinks_and_recreates_boundaries ... ok
+test pattern_origin_options ... ok
+test separate_hatches_and_island_style ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\helix.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\helix-544f2a251e276533.exe)
+
+running 3 tests
+test helix_is_an_object_on_its_points ... ok
+test helix_edits_grips_snaps_and_explode ... ok
+test helix_command_line_preview_and_hostile_values ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+     Running tests\inquiry_keywords.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\inquiry_keywords-2f210d12bea53c14.exe)
+
+running 4 tests
+test dist_multiple_points_sums_the_segments ... ok
+test area_unsupported_keywords_say_so_and_length_extends_the_last_segment ... ok
+test area_of_an_open_elliptical_arc_is_refused_and_a_full_ellipse_is_measured ... ok
+test area_object_add_and_subtract_keep_a_running_total ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\insert_file.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\insert_file-9a195847319ee2b0.exe)
+
+running 3 tests
+test star_name_inserts_the_blocks_objects_with_one_scale_factor ... ok
+test exploded_json_insert_is_one_undo_step ... ok
+
+thread 'a_drawing_file_becomes_a_block_with_its_insbase_and_tables' (24572) panicked at crates\engine\tests\insert_file.rs:114:5:
+INSERT finished: INSERT Enter block name or [?]:
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test a_drawing_file_becomes_a_block_with_its_insbase_and_tables ... FAILED
+
+failures:
+
+failures:
+    a_drawing_file_becomes_a_block_with_its_insbase_and_tables
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p cadcraft-engine --test insert_file`
+     Running tests\insert_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\insert_prompts-cff8167983cd1c75.exe)
+
+running 1 test
+test script_insert_reads_x_and_y_scale_then_rotation_and_honours_its_options ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\isometric.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\isometric-3e3c2cffae5dd616.exe)
+
+running 6 tests
+test isodraft_and_isoplane_set_snapstyl_and_snapisopair ... ok
+test isodraft_and_isoplane_at_the_command_line ... ok
+test hostile_isometric_inputs_never_panic ... ok
+test isometric_snap_follows_the_lattice ... ok
+test ortho_follows_the_isometric_plane_axes ... ok
+test ellipse_isocircle_in_each_plane ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\json_param_validation.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\json_param_validation-4b41736ec4a22b87.exe)
+
+running 4 tests
+test repeated_line_points_make_no_zero_length_line ... ok
+test dimension_style_sizes_out_of_range_are_ignored ... ok
+test invalid_sizes_and_points_are_refused ... ok
+test valid_values_still_work ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\layer_cmdline.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\layer_cmdline-bfc97e363051893e.exe)
+
+running 3 tests
+test layer_commands_reject_unloaded_linetypes_and_duplicate_renames ... ok
+test make_and_color_then_the_next_command_runs ... ok
+test options_reach_every_layer_property ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\layer_merge_delete.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\layer_merge_delete-1e526c12b36184c0.exe)
+
+running 4 tests
+test layer_delete_clears_viewport_overrides_for_the_layer ... ok
+test laymrg_typed_moves_everything_and_deletes_the_source ... ok
+test laydel_deletes_the_layer_and_its_objects ... ok
+test laymrg_refusals ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\layout_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\layout_prompts-fa3b84fc2e9d64e4.exe)
+
+running 1 test
+test typed_layout_options_prompt_for_names ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\lin_pat_files.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\lin_pat_files-7c51429bd6abb6d5.exe)
+
+running 7 tests
+test a_pat_file_cannot_replace_a_library_pattern ... ok
+test linetype_json_loads_named_linetypes_from_file_text ... ok
+test hatch_uses_a_pattern_from_a_pat_file_and_keeps_its_definition ... ok
+test hostile_support_files_never_panic ... ok
+test hatch_pattern_prompt_takes_a_pat_file_name ... ok
+test linetype_json_reads_a_lin_file_by_path ... ok
+test dash_linetype_loads_from_a_file_and_the_library_at_the_command_line ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\lisp_corpus.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\lisp_corpus-9be3589742bee516.exe)
+
+running 1 test
+CADCRAFT_LISP_CORPUS is not set: the AutoLISP corpus is skipped
+test autolisp_corpus ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\malformed_handles.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\malformed_handles-1589a7b42fdde550.exe)
+
+running 1 test
+test malformed_handles_are_rejected_instead_of_using_the_selection ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\matchprop.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\matchprop-ba4f140d710c10dd.exe)
+
+running 4 tests
+test matchprop_copies_object_specific_properties ... ok
+test matchprop_skips_locked_layers ... ok
+test matchprop_json_with_property_list ... ok
+test matchprop_typed_picker_and_settings ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\measure_distance_snapping.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\measure_distance_snapping-2b3e84eef84de6cf.exe)
+
+running 14 tests
+test paper_space_snaps_to_visible_model_endpoints_and_intersections ... ok
+test clipped_deferred_curves_do_not_hide_a_visible_candidate ... ok
+test deferred_curves_are_projected_into_paper_coordinates ... ok
+test off_viewport_borders_keep_contents_but_frozen_or_hidden_viewports_do_not ... ok
+test model_space_running_snaps_and_disabled_snaps_keep_their_behavior ... ok
+test viewport_frozen_layers_do_not_hide_paper_space_geometry ... ok
+test clipped_endpoints_do_not_hide_a_visible_candidate ... ok
+test viewport_frozen_layers_apply_inside_nested_block_references ... ok
+test malformed_and_paper_space_viewports_are_not_snap_sources ... ok
+test explicit_endpoint_and_intersection_overrides_work_from_the_command_line ... ok
+test points_from_different_viewports_use_paper_units ... ok
+test multiple_points_length_and_undo_keep_the_measurement_units ... ok
+test distance_uses_model_units_for_two_snaps_in_the_same_viewport ... ok
+test typed_and_programmatic_points_are_measured_in_paper_units ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\metric_linetypes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\metric_linetypes-cecba198968ce6bb.exe)
+
+running 3 tests
+test embedded_text_scales_with_the_pattern ... ok
+test centerline_loads_the_metric_center_linetype ... ok
+test metric_drawings_load_millimetre_patterns ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mleader_content.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mleader_content-d035fc030cef17dd.exe)
+
+running 5 tests
+test no_leader_places_only_the_content ... ok
+test spline_leader_curves_through_its_points ... ok
+test json_form_takes_leader_type_and_block ... ok
+test block_content_inserts_the_block_at_the_landing ... ok
+test block_content_keeps_the_block_alive ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mleader_remember.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mleader_remember-3a5a05226a4333be.exe)
+
+running 1 test
+test mleader_remembers_order_and_options ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mline.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mline-9ac0232a5e0e1a19.exe)
+
+running 9 tests
+test mline_command_line_style_option ... ok
+test mline_is_one_object_with_the_standard_style ... ok
+test snaps_selection_extents_and_render ... ok
+test mledit_vertices_cuts_and_welds ... ok
+test mlstyle_defines_elements_caps_and_fill ... ok
+test mledit_tees_and_corner ... ok
+test hostile_mline_params_never_panic ... ok
+test mledit_crosses ... ok
+test transforms_grips_explode ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\modify_curves.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\modify_curves-0f6c708fc2d19be3.exe)
+
+running 22 tests
+test extend_refuses_closed_splines ... ok
+test join_refuses_unconnected_curves ... ok
+test fillet_radius_zero_extends_an_elliptical_arc_to_a_line ... ok
+test join_names_an_elliptical_arc_twice_without_losing_it ... ok
+test lengthen_at_the_command_line_on_an_elliptical_arc ... ok
+test fillet_and_chamfer_a_line_into_a_polyline ... ok
+test fillet_line_and_elliptical_arc ... ok
+test join_at_the_command_line_names_the_result ... ok
+test fillet_and_chamfer_two_segments_of_one_polyline ... ok
+test fillet_at_the_command_line_with_no_trim ... ok
+test join_merges_elliptical_arcs_on_one_ellipse ... ok
+test polyline_fillet_refusals_leave_it_alone ... ok
+test polyline_fillets_at_the_command_line_and_with_no_trim ... ok
+test fillet_failures_leave_the_drawing_alone ... ok
+test lengthen_elliptical_arcs_along_the_ellipse ... ok
+test fillet_spline_and_line ... ok
+test trimming_a_closed_spline_leaves_one_open_spline ... ok
+test lengthen_open_splines ... ok
+test shortening_a_tightly_bent_spline_reaches_the_requested_length ... ok
+test extend_runs_a_spline_on_along_its_end_tangent ... ok
+test join_makes_one_spline_from_lines_arcs_polylines_and_splines ... ok
+test hostile_curve_edits_do_not_panic ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests\mtext_columns.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mtext_columns-042cfba6b0fd0c33.exe)
+
+running 5 tests
+test json_columns_and_lists ... ok
+test static_columns_from_the_command_line ... ok
+test dynamic_columns_and_defaults ... ok
+test scale_scales_multileader_text_width_and_columns ... ok
+test columns_shape_the_drawn_text_and_its_extents ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mtext_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mtext_options-36a823260e2b026c.exe)
+
+running 6 tests
+test json_form_takes_justify_style_and_spacing ... ok
+test rotation_turns_the_box ... ok
+test style_and_columns ... ok
+test line_spacing_type_and_factor_or_distance ... ok
+test width_replaces_the_opposite_corner ... ok
+test height_justify_and_corners ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\multiline_attributes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\multiline_attributes-b8a2f54711dd0f66.exe)
+
+running 2 tests
+test a_value_given_on_insert_replaces_the_definition_text ... ok
+test references_get_the_multiline_text_and_carry_it ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\named_views.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\named_views-6221d45308b668f8.exe)
+
+running 7 tests
+test paper_space_view_switches_to_its_layout ... ok
+test zoom_realtime_drags_and_enter_ends ... ok
+test zoomfactor_scales_the_wheel ... ok
+test zoom_dynamic_places_and_sizes_the_view_box ... ok
+test layer_snapshot_restores_layers_and_the_setting_turns_it_off ... ok
+test window_option_and_json_forms ... ok
+test typed_save_restore_list_delete ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\new_open_end_command.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\new_open_end_command-23be10f26ea0202b.exe)
+
+running 3 tests
+test new_without_a_command_keeps_the_selection_of_the_previous_drawing ... ok
+test new_ends_the_command_of_the_previous_drawing ... ok
+test open_ends_the_command_of_the_previous_drawing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\non_finite_edits.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\non_finite_edits-2a637e71a7d447df.exe)
+
+running 2 tests
+test typed_move_that_overflows_is_refused ... ok
+test json_transforms_that_overflow_are_refused ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\offset_closed_spline.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\offset_closed_spline-3d3ca6aec2b2c0f6.exe)
+
+running 1 test
+test offset_of_closed_spline_is_closed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\offset_ellipse_side.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\offset_ellipse_side-ebddfeeecfb62a15.exe)
+
+running 1 test
+test full_ellipse_offset_follows_side_point ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\offset_move.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\offset_move-16e0ab23baf3e9df.exe)
+
+running 6 tests
+test copy_displacement ... ok
+test offset_json_erase_and_layer ... ok
+test offset_multiple_and_undo ... ok
+test offset_layer_current ... ok
+test offset_erase_source ... ok
+test move_displacement ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\open_svg.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\open_svg-a05bee164edad599.exe)
+
+running 1 test
+test an_opened_svg_is_not_saved_over ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\options_profile.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\options_profile-f1491fb8171b4f44.exe)
+
+running 8 tests
+test grips_show_up_to_the_object_limit ... ok
+test selection_preview_follows_its_bits ... ok
+test typed_options_without_a_dialog_reports_how_to_change_settings ... ok
+test options_json_reports_sets_and_resets_the_profile ... ok
+test selection_tab_variables_have_autocads_defaults_ranges_and_are_saved ... ok
+test selection_highlight_variables ... ok
+test saved_profile_restores_and_hostile_entries_are_skipped ... ok
+test preview_filter_excludes_each_kind_it_names ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\overkill.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\overkill-200e88c6ee0fb095.exe)
+
+running 8 tests
+test polyline_segments ... ok
+test hostile_params_are_refused ... ok
+test typed_options ... ok
+test arcs_on_one_circle ... ok
+test duplicates_tolerance_and_ignored_properties ... ok
+test collinear_lines_overlap_and_end_to_end ... ok
+test associated_objects_stay ... ok
+test many_objects_stay_fast ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.10s
+
+     Running tests\parallel_display_list.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\parallel_display_list-9bd7db4772c3fa5b.exe)
+
+running 1 test
+test parallel_model_space_matches_one_thread ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\pedit_splinedit.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\pedit_splinedit-433df4568a14f1e1.exe)
+
+running 11 tests
+test break_json_opens_a_closed_polyline_and_refuses_the_ends ... ok
+test edit_vertex_break_splits_an_open_polyline_and_undo_joins_it ... ok
+test closed_splines_honour_the_fit_tolerance ... ok
+test edit_vertex_move_weight_and_delete ... ok
+test edit_vertex_straighten_removes_the_vertices_between_the_markers ... ok
+test edit_vertex_tangent_steers_fit ... ok
+test fit_data_options_at_the_command_line ... ok
+test join_adds_connected_curves_and_undo_brings_them_back ... ok
+test control_edits_drop_fit_data_and_keep_closed_splines_closed ... ok
+test fit_data_json_options ... ok
+test edit_vertex_add_and_elevate_order_keep_the_shape ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\pick_text.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\pick_text-1e11e872f317977d.exe)
+
+running 3 tests
+test a_dimension_drawn_from_its_block_is_picked_on_the_block_text ... ok
+test slanted_dimension_text_is_picked_inside_its_turned_box_only ... ok
+test dimension_and_multileader_text_is_picked_anywhere_on_its_words ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\pline_arc_xline_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\pline_arc_xline_options-a95a8a7ebb92306f.exe)
+
+running 7 tests
+test included_angle_follows_angdir ... ok
+test bad_arc_answers_reprompt ... ok
+test center_then_endpoint_angle_or_length ... ok
+test line_back_and_length ... ok
+test angle_then_endpoint_center_or_radius ... ok
+test direction_radius_and_second_point ... ok
+test xline_options ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\plot_sheets.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plot_sheets-f3418465cbf9aabd.exe)
+
+running 2 tests
+test layouts_name_the_sheets_of_one_pdf ... ok
+test bad_sheet_lists_are_errors ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\plot_styles.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plot_styles-9ddc87c20e25d7fe.exe)
+
+running 3 tests
+test pagesetup_sets_table_and_display_flag ... ok
+test plotstyle_sets_objects_and_the_current_style ... ok
+test stylesmanager_creates_edits_saves_and_loads_tables ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\plot_transparency.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plot_transparency-14585e7e2df48557.exe)
+
+running 3 tests
+test page_setup_stores_plot_transparency ... ok
+test the_override_decides_what_the_plotter_is_told ... ok
+test preview_follows_the_plot_setting ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\plotters.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plotters-0db658413a9fe856.exe)
+
+running 6 tests
+test plotwindow_keeps_the_picked_window_for_the_plot_dialog ... ok
+test typed_plotter_manager ... ok
+test plot_uses_the_device ... ok
+test hostile_names_and_values_are_refused ... ok
+test manage_devices ... ok
+test page_setup_takes_a_device_and_its_papers ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\point_modifiers.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\point_modifiers-ec2d640170d05769.exe)
+
+running 7 tests
+test enter_drops_the_modifiers_and_text_is_not_a_point ... ok
+test star_prefix_reads_world_coordinates ... ok
+test point_filters_take_coordinates_from_two_points ... ok
+test m2p_and_mtp_give_the_midpoint_between_two_points ... ok
+test angle_override_locks_the_direction_of_the_next_point ... ok
+test modifiers_nest_and_work_in_scripts ... ok
+test from_takes_a_base_point_and_an_offset ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\post_command_passes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\post_command_passes-2d246b435ff208b5.exe)
+
+running 2 tests
+test erase_runs_every_pass_on_both_paths ... ok
+test move_runs_every_pass_on_both_paths ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\prompt_keywords.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\prompt_keywords-a675adc594621fe4.exe)
+
+running 3 tests
+test elliptical_arc_parameter_values ... ok
+test ellipse_rotation_sets_the_axis_ratio ... ok
+test break_first_point_option ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\props_bad_lineweight.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\props_bad_lineweight-b0e2aa8f7a114968.exe)
+
+running 1 test
+test malformed_lineweight_is_rejected_and_keeps_previous_value ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\props_insert_scale_attribs.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\props_insert_scale_attribs-119f67cd0052e9e7.exe)
+
+running 2 tests
+test scale_property_is_absolute_about_the_insertion_point ... ok
+test scale_property_moves_and_resizes_attribute ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\purge_mlinestyles.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\purge_mlinestyles-35bcd9be7596f340.exe)
+
+running 3 tests
+test purge_mlinestyles_keeps_used_standard_and_current ... ok
+test purge_mlinestyles_at_the_command_line ... ok
+test purge_all_frees_styles_of_purged_blocks ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\purge_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\purge_prompts-0733e052f017d341.exe)
+
+running 4 tests
+test all_without_verify_purges_every_named_type ... ok
+test layers_only_then_the_next_command_runs ... ok
+test verify_asks_for_each_name_and_absent_types_take_their_tokens ... ok
+test json_type_and_names_and_kept_linetypes ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\qdim.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\qdim-b42a47716a15b906.exe)
+
+running 1 test
+test qdim_attaches_like_dimreassociate_and_large_input_is_capped ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.95s
+
+     Running tests\qdim_modes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\qdim_modes-a78d3594c4d6e134.exe)
+
+running 3 tests
+test qdim_prompts ... ok
+test linear_modes ... ok
+test ordinate_radius_diameter_and_edit ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\query_entities.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\query_entities-79dcb20f2f01870a.exe)
+
+running 1 test
+test malformed_filters_are_errors ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\quickcalc.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\quickcalc-29ed46edcf274a0a.exe)
+
+running 5 tests
+test hostile_expressions_never_panic ... ok
+test picks_read_values_from_points ... ok
+test cal_evaluates_points_and_vector_functions ... ok
+test cal_converts_units ... ok
+test cal_and_picks_at_the_command_line ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\recent_commands.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\recent_commands-d96bf10826d5b1e6.exe)
+
+running 1 test
+test recent_commands_newest_first_without_repeats ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\refedit.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\refedit-f6c8c95cecf7d966.exe)
+
+running 12 tests
+test xrefs_are_refused_with_a_message ... ok
+test discard_leaves_everything_as_it_was ... ok
+test hostile_requests_never_panic ... ok
+test refset_adds_and_removes_objects ... ok
+test a_block_that_would_contain_itself_is_refused_and_the_edit_survives ... ok
+test undo_takes_the_edit_back_with_its_state ... ok
+test interactive_refedit_refset_and_refclose ... ok
+test objects_outside_the_working_set_cannot_be_edited ... ok
+test erasing_a_working_object_removes_it_from_the_block ... ok
+test a_block_that_references_itself_in_a_file_does_not_hang ... ok
+test edit_and_save_updates_every_reference ... ok
+test files_never_hold_half_an_edit ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\region.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\region-818ad2886685f626.exe)
+
+running 5 tests
+test region_from_closed_objects_measures ... ok
+test hostile_region_params_never_panic ... ok
+test subtract_on_the_command_line ... ok
+test regions_move_grip_explode_and_snap ... ok
+test booleans_on_separate_and_nested_regions ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\rename_cmdline.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\rename_cmdline-282771da68babb19.exe)
+
+running 2 tests
+test json_block_rename_repoints_every_insert ... ok
+test rename_prompts_type_old_and_new_name ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\rotate_reference.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\rotate_reference-e1e3ac40ea8587ef.exe)
+
+running 2 tests
+test rotate_reference_typed_angles ... ok
+test rotate_reference_by_points ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\save_as_export.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\save_as_export-ada2891c8920b922.exe)
+
+running 1 test
+test saveas_to_an_image_keeps_the_drawing_unsaved_under_its_name ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\save_reports_not_saved.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\save_reports_not_saved-10c28e87777cc26e.exe)
+
+running 3 tests
+test templates_report_what_dwg_does_not_keep ... ok
+test solids_whose_geometry_the_data_store_keeps_are_not_reported_from_2013 ... ok
+test save_lists_the_entities_the_file_does_not_keep ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\save_version.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\save_version-5dc43ac4966ddb02.exe)
+
+running 3 tests
+test bad_save_options_are_errors ... ok
+test opening_binary_dxf_keeps_it_binary ... ok
+test saveas_version_and_binary_reach_the_writer_and_stay_with_the_drawing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\select_keywords.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\select_keywords-6aeefdaf3f40d948.exe)
+
+running 5 tests
+test box_follows_the_direction_of_its_corners ... ok
+test group_selects_a_group_by_name ... ok
+test single_ends_the_prompt_with_the_first_selection ... ok
+test auto_and_multiple_keep_picking_until_enter ... ok
+test remove_add_and_undo ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\select_similar.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\select_similar-34f0c87d70f4d822.exe)
+
+running 4 tests
+test selectsimilar_matches_type_and_mode_properties ... ok
+test selectsimilar_typed_with_settings_keyword ... ok
+test isolate_typed_and_all_skips_hidden ... ok
+test isolate_hide_and_unisolate ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\selection_modes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\selection_modes-82f6d4d04d37df06.exe)
+
+running 4 tests
+test escape_during_a_mode_cancels_the_command ... ok
+test fence_selects_what_it_crosses ... ok
+test window_and_crossing_polygons ... ok
+test crossing_and_window_ignore_the_drag_direction ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\setvar_coverage.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\setvar_coverage-9db4c31ce2b2714b.exe)
+
+running 4 tests
+test metric_defaults ... ok
+test bad_values_and_unknown_names_are_refused ... ok
+test values_reach_the_commands ... ok
+test defaults_are_the_ones_the_commands_use ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\snap_annotations.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_annotations-b6f5f3e6088463c8.exe)
+
+running 4 tests
+test justified_text_snaps_and_grips_at_its_alignment_point ... ok
+test grid_snap_follows_snapbase_and_snapang ... ok
+test hatches_snap_only_with_osnaphatch ... ok
+test dimensions_snap_to_their_lines_and_definition_points ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\snap_blocks.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_blocks-3806b19a5a4678ce.exe)
+
+running 2 tests
+test snaps_inside_nested_and_arrayed_references_but_not_hidden_objects ... ok
+test snaps_inside_rotated_scaled_and_mirrored_references ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\snap_curves.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_curves-dd1df5aa6d1c6da2.exe)
+
+running 3 tests
+test elliptical_arc_midpoint_and_quadrants ... ok
+test elliptical_arc_perpendicular_and_tangent_from_a_base_point ... ok
+test spline_midpoint_perpendicular_and_tangent ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\snap_intersections_aperture.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_intersections_aperture-69ac1878dde86878.exe)
+
+running 11 tests
+test non_finite_query_inputs_return_no_hit ... ok
+test large_tessellated_chord_parameter_slack_is_not_pruned ... ok
+test finite_intersection_on_the_aperture_boundary_is_included ... ok
+test line_and_circle_intersections_remain_available ... ok
+test tessellated_ellipse_intersection_near_cursor_is_kept ... ok
+test finite_line_parameter_tolerance_is_preserved ... ok
+test real_intersection_keeps_precedence_when_app_is_also_enabled ... ok
+test apparent_intersection_keeps_segments_outside_the_finite_aperture ... ok
+test finite_intersection_just_outside_the_aperture_is_rejected ... ok
+test tessellated_line_parameter_tolerance_is_preserved ... ok
+test ellipse_bounds_covering_cursor_do_not_create_a_curve_hit ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\snap_nearest.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_nearest-c3858745170f5d70.exe)
+
+running 1 test
+test nearest_prefers_the_closer_object_in_any_drawing_order ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\snap_overrides.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_overrides-8643c43a4ec3388e.exe)
+
+running 6 tests
+test an_override_lasts_one_point_and_non_turns_snapping_off ... ok
+test nothing_to_snap_to_rejects_the_point ... ok
+test from_nests_with_a_snap_override ... ok
+test a_command_keyword_wins_over_a_snap_word ... ok
+test tab_cycling_candidates_start_with_the_running_snap ... ok
+test typed_overrides_snap_the_next_typed_point ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\snap_tracking.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snap_tracking-feec27593acffe67.exe)
+
+running 12 tests
+test sysvars_polarmode_polaraddang_autosnap ... ok
+test shift_to_acquire ... ok
+test polar_angles_increment_additional_and_tracking ... ok
+test a_tracking_path_snaps_where_it_crosses_an_object ... ok
+test resting_again_releases_and_seven_points_at_most ... ok
+test parallel_path_through_the_base_point ... ok
+test two_acquired_points_snap_where_their_paths_cross ... ok
+test default_cursor_tracking_acquires_nested_block_geometry ... ok
+test apparent_intersection_where_extensions_meet ... ok
+test extension_runs_on_from_a_line_end_and_round_an_arc ... ok
+test osnaphatch_geometry_is_not_used_for_tracking_extension ... ok
+test hostile_inputs_never_panic ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\snaps_more.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\snaps_more-a6967946faa17248.exe)
+
+running 4 tests
+test insertion_snaps_to_a_multileader_text ... ok
+test insertion_snaps_to_attribute_definitions ... ok
+test closed_curves_have_no_midpoint ... ok
+test geometric_center_of_a_closed_spline ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\space_is_enter.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\space_is_enter-3587ffc8b32bb8e4.exe)
+
+running 2 tests
+test leading_blanks_before_a_command_name_are_not_enter ... ok
+test trailing_and_double_spaces_are_enter ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\spline_degree.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\spline_degree-24e14697d42b178c.exe)
+
+running 2 tests
+test programmatic_spline_control_count_is_limited ... ok
+test programmatic_spline_degree_is_limited ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\spline_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\spline_options-dd919cd5add2a4b5.exe)
+
+running 5 tests
+test tangency_options_fix_the_end_directions ... ok
+test json_form_takes_the_fit_options ... ok
+test tolerance_option_approximates_the_fit_points ... ok
+test knots_option_sets_the_parametrisation_and_is_remembered ... ok
+test object_option_converts_polylines ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\stretch.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\stretch-b67f123776262420.exe)
+
+running 3 tests
+test stretch_keeps_selecting_until_enter ... ok
+test stretch_script_with_crossing_keyword ... ok
+test stretch_displacement_option ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\stretch_select.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\stretch_select-2312ac0923e2692e.exe)
+
+running 6 tests
+test window_polygon_takes_only_what_is_wholly_inside ... ok
+test fence_moves_what_it_crosses_whole ... ok
+test undo_takes_back_a_polygon_point_and_too_few_points_select_nothing ... ok
+test json_polygon_and_fence ... ok
+test crossing_polygon_moves_the_vertices_inside_it ... ok
+test hostile_polygon_and_fence_never_panic ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\table_breaks.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\table_breaks-0a728fea17d06655.exe)
+
+running 3 tests
+test breaking_draws_parts_with_repeated_labels ... ok
+test part_grips_move_parts ... ok
+test data_links_fill_and_update ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\table_formulas.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\table_formulas-c80011bf3e270362.exe)
+
+running 8 tests
+test insert_formula_options ... ok
+test tabledit_at_the_command_line ... ok
+test regen_recalculates ... ok
+test inserting_and_deleting_rows_moves_references ... ok
+test errors_show_as_text ... ok
+test sum_average_count_and_arithmetic ... ok
+test tableexport_writes_csv ... ok
+test hostile_formulas_never_panic ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.08s
+
+     Running tests\table_styles.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\table_styles-af74078ebf03181d.exe)
+
+running 4 tests
+test define_cell_styles_with_json ... ok
+test styles_are_drawn ... ok
+test typed_cell_style ... ok
+test rows_and_cells_take_cell_styles ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\temp_tracking.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\temp_tracking-84b6211e566338bd.exe)
+
+running 8 tests
+test tk_runs_orthogonal_tracking_points_until_enter ... ok
+test polar_angles_relative_to_the_last_segment ... ok
+test tt_acquires_a_point_that_tracks_until_the_next_point ... ok
+test enter_at_the_first_tracking_point_and_hostile_input_are_harmless ... ok
+test polarsnap_steps_along_polar_paths_by_polardist ... ok
+test tt_point_is_the_last_point_and_takes_snap_overrides ... ok
+test tk_takes_snaps_and_nests_under_from ... ok
+test extension_runs_around_an_elliptical_arc_and_off_a_spline_end ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\templates.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\templates-9e94c76e381775c6.exe)
+
+running 3 tests
+test saveas_dwt_then_new_from_the_template ... ok
+test qnewtemplate_is_the_default_for_new_and_qnew ... ok
+test a_template_that_cannot_be_read_makes_no_drawing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\text_commands.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\text_commands-eac53dcbd8c3701d.exe)
+
+running 2 tests
+test script_mtext_takes_lines_until_an_empty_line ... ok
+test textedit_prompt_mode_and_undo ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\text_left_justify.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\text_left_justify-89c113c6aeb8559a.exe)
+
+running 1 test
+test moving_top_left_text_through_properties_moves_it ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\tolerance.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\tolerance-afe1edba97eb009e.exe)
+
+running 6 tests
+test command_line_rejects_bad_symbols_and_empty_frames ... ok
+test json_form_composes_the_frame ... ok
+test command_line_prompts ... ok
+test transforms_and_grips ... ok
+test explode_gives_lines_symbols_and_text ... ok
+test hostile_params_are_refused_without_panicking ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\transparent.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\transparent-df2f0f3a72170740.exe)
+
+running 1 test
+test transparent_zoom_resumes_the_running_command ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\trim_closed_polyline.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\trim_closed_polyline-a2a8ca4dd94df0d6.exe)
+
+running 6 tests
+test undo_restores_the_closed_polyline ... ok
+test a_single_cut_still_opens_the_outline_there ... ok
+test a_closing_arc_is_dropped_with_the_picked_piece ... ok
+test a_pick_after_the_last_cutting_edge_keeps_only_the_complementary_run ... ok
+test picks_on_the_other_pieces_still_leave_the_other_run ... ok
+test the_stored_start_vertex_does_not_change_the_result ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\trim_extend_options.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\trim_extend_options-1f6eed49814133c0.exe)
+
+running 10 tests
+test fence_trims_every_crossed_object ... ok
+test fence_crossing_one_line_twice_trims_both_parts ... ok
+test cutting_edges_option_in_quick_mode ... ok
+test standard_mode_uses_the_selected_cutting_edges ... ok
+test quick_mode_trims_to_all_objects_and_erases_an_object_with_no_edge ... ok
+test extend_fence_and_crossing ... ok
+test crossing_window_trims_what_it_touches ... ok
+test edge_extend_trims_to_an_implied_edge ... ok
+test erase_undo_and_project ... ok
+test json_forms_take_fence_crossing_edge_mode_and_mode ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\undo_control.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\undo_control-d67f732cf5f8e929.exe)
+
+running 9 tests
+test auto_combine_and_layer_set_undoctl ... ok
+test begin_end_group_is_one_undo_step ... ok
+test redo_and_mredo_counts ... ok
+test back_at_the_command_line_and_marks_undone_away ... ok
+test group_from_a_script_and_nested_begin ... ok
+test mark_and_back_undo_to_the_mark ... ok
+test control_none_and_one ... ok
+test hostile_undo_params_never_panic ... ok
+test saving_closes_an_open_group ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\undo_count.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\undo_count-1c68ca57637fc0d8.exe)
+
+running 2 tests
+test undo_options_and_u ... ok
+test undo_takes_a_count ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\undo_layout_tab.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\undo_layout_tab-f4ad57dc15e2586d.exe)
+
+running 2 tests
+test undo_and_redo_of_a_rename_follow_the_current_layout ... ok
+test undoing_the_current_layouts_creation_returns_to_model ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\viewport_clip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\viewport_clip-26b4aa89f62b0360.exe)
+
+running 6 tests
+test polygonal_viewport_clips_model_space ... ok
+test polygonal_viewport_menu_item_asks_for_points ... ok
+test on_off_lock_restore_and_arrangements ... ok
+test typed_polygonal_with_arc_and_object ... ok
+test vpclip_clips_keeps_the_view_and_deletes ... ok
+test hostile_viewport_params_never_panic ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\vplayer_prompts.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\vplayer_prompts-50971750a30476e3.exe)
+
+running 1 test
+test typed_vplayer_changes_layers_in_chosen_viewports ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\vports.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\vports-e6be054a7dd5e832.exe)
+
+running 4 tests
+test split_activate_and_each_tile_keeps_its_view ... ok
+test typed_three_right_then_join_and_single ... ok
+test named_configurations_save_restore_list_delete ... ok
+test menu_viewports_in_the_model_tab_and_limits ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\wblock_base.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\wblock_base-443f0244eab77006.exe)
+
+running 1 test
+test wblock_honours_the_base_point ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\xdata_follows_entity.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\xdata_follows_entity-a92915263ff71139.exe)
+
+running 4 tests
+test reading_puts_xdata_on_the_entity ... ok
+test exploded_pieces_do_not_keep_the_xdata ... ok
+test copies_keep_the_xdata ... ok
+test a_copy_saves_its_xdata ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\xref.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\xref-2d2e7b3dbf4cbfc5.exe)
+
+running 9 tests
+test hostile_xref_input_never_panics ... ok
+test command_line_xref_and_xattach ... ok
+test missing_files_leave_the_host_intact ... ok
+test attach_loads_the_file_and_saving_keeps_only_the_reference ... ok
+test reload_unload_path_and_detach ... ok
+test bind_makes_the_xref_part_of_the_drawing ... ok
+test overlays_do_not_load_in_the_drawings_that_reference_their_host ... ok
+test xref_layer_overrides_survive_save_and_reopen_in_dxf_and_dwg ... ok
+test circular_and_deeply_nested_references_are_bounded ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\zoom_keywords.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\zoom_keywords-9d5c9256d541a6b9.exe)
+
+running 1 test
+test zoom_center_scale_dynamic_and_paper_space_all ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\zoom_viewport.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\zoom_viewport-138cc6bfa5cb0fe2.exe)
+
+running 3 tests
+test a_view_too_large_for_the_viewport_is_refused_and_keeps_the_viewport ... ok
+test zoom_inside_a_viewport_acts_on_the_viewport ... ok
+test zoom_in_a_locked_viewport_or_on_the_model_tab_is_unchanged ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\zoom_window_ortho.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\zoom_window_ortho-db74e48a1ce60593.exe)
+
+running 1 test
+test zoom_window_corner_ignores_ortho ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_geom-1ef0de61065fa5b2.exe)
+
+running 84 tests
+test bounds::tests::center_stays_finite_for_opposite_large_coordinates ... ok
+test fillet::tests::degenerate_input_gives_nothing ... ok
+test nurbs::tests::conic_arcs_are_exact ... ok
+test nurbs::tests::derivative_matches_finite_differences ... ok
+test nurbs::tests::elevation_keeps_the_curve ... ok
+test nurbs::tests::param_at_length_on_invalid_domain_does_not_panic ... ok
+test nurbs::tests::periodic_spline_clamps_to_the_same_curve ... ok
+test nurbs::tests::join_line_arc_and_spline ... ok
+test nurbs::tests::split_and_sub_keep_the_curve ... ok
+test nurbs::tests::extension_runs_on_along_the_tangent ... ok
+test fillet::tests::fillet_line_and_ellipse ... ok
+test property_tests::bounds_union_contains_both_boxes ... ok
+test nurbs::tests::ellipse_arc_length ... ok
+test property_tests::large_coordinate_known_answers_stay_accurate ... ok
+test property_tests::circle_circle_degenerate_and_hostile_never_panic ... ok
+test property_tests::arc_closest_is_on_the_circle_or_an_endpoint ... ok
+test property_tests::line_circle_hits_lie_on_both ... ok
+test property_tests::circle_circle_hits_lie_on_both_and_match_the_closed_form ... ok
+test property_tests::line_circle_hostile_inputs_stay_finite ... ok
+test nurbs::tests::spline_arc_length_and_inverse ... ok
+test property_tests::line_closest_is_a_fixed_point_and_perpendicular ... ok
+test property_tests::line_line_matches_infinite_parameters ... ok
+test property_tests::line_line_infinite_lies_on_both_and_is_symmetric ... ok
+test property_tests::arc_from_3_points_passes_through_the_inputs ... ok
+test region::tests::finds_square_around_point ... ok
+test region::tests::crossing_lines_make_faces ... ok
+test region::tests::boundaries_at_large_world_coordinates_keep_distinct_vertices ... ok
+test property_tests::vector_identities_hold_for_finite_inputs ... ok
+test region::tests::gap_tolerance_closes_small_gaps ... ok
+test property_tests::segment_extension_only_adds_hits ... ok
+test region::tests::innermost_of_nested ... ok
+test region::tests::island_from_separate_lines ... ok
+test region::tests::island_outline_ignores_dangling_ends_and_inner_edges ... ok
+test property_tests::arc_endpoints_and_sampling_are_consistent ... ok
+test region::tests::open_curves_and_attached_lines_are_not_islands ... ok
+test region::tests::nested_islands_and_outside_curves ... ok
+test region::tests::open_shape_has_no_boundary ... ok
+test region::tests::outer_sources_outline_and_interior_point ... ok
+test region::tests::overlapping_separate_lines ... ok
+test spline_fit::tests::default_options_match_the_plain_fit ... ok
+test spline_fit::tests::end_tangents_set_the_end_directions ... ok
+test spline_fit::tests::hostile_options_never_panic ... ok
+test spline_fit::tests::knot_parametrisations_differ_and_still_interpolate ... ok
+test spline_fit::tests::transform_turns_the_tangents ... ok
+test tests::angles_normalize ... ok
+test tests::arc_bounds_include_quadrants ... ok
+test tests::arc_segments_bounded ... ok
+test tests::bulge_quarter_arc ... ok
+test tests::bulge_semicircle ... ok
+test tests::arc_three_points_direction ... ok
+test tests::circle_circle_hits ... ok
+test tests::circle_three_points_accepts_small_valid_triangles ... ok
+test tests::circle_three_points_preserves_large_world_coordinates ... ok
+test tests::circle_through_three_points ... ok
+test tests::common_tangents_of_two_circles ... ok
+test tests::ellipse_bounds_find_analytic_extrema ... ok
+test spline_fit::tests::tolerance_approximates_with_fewer_control_points ... ok
+test tests::ellipse_points ... ok
+test tests::elliptical_arc_bounds_exclude_extrema_outside_the_sweep ... ok
+test fillet::tests::fillet_spline_with_line_and_circle ... ok
+test tests::huge_circle_secants_remain_finite ... ok
+test tests::line_circle_hits ... ok
+test tests::line_intersections ... ok
+test tests::long_secant_keeps_both_intersections ... ok
+test tests::mat_inverse_roundtrip ... ok
+test tests::near_tangent_long_line_does_not_invent_a_circle_hit ... ok
+test spline_fit::tests::too_many_fit_points_are_not_interpolated ... ok
+test spline_fit::tests::tolerance_approximates_closed_curves ... ok
+test tests::closed_spline_is_smooth_at_the_seam ... ok
+test tests::mirror_matrix ... ok
+test tests::ocs_identity_for_z ... ok
+test tests::polyline_area_and_length ... ok
+test tests::polyline_area_is_exact_for_bulge_segments ... ok
+test tests::polyline_area_is_stable_far_from_the_origin ... ok
+test tests::segment_offset ... ok
+test tests::shoelace_preserves_small_polygon_area_at_large_coordinates ... ok
+test tests::tiny_circle_secants_and_separated_circles ... ok
+test vec::tests::large_finite_vec3_has_finite_length_and_unit_direction ... ok
+test vec::tests::midpoint_handles_finite_coordinate_extremes ... ok
+test vec::tests::near_uses_finite_nonnegative_tolerance_without_squaring ... ok
+test tests::spline_interpolates_fit_points ... ok
+test spline_fit::tests::repeated_fit_points_make_kinks ... ok
+test nurbs::tests::spline_arc_length_on_a_tight_bend ... ok
+test region::tests::hostile_input_does_not_panic ... ok
+
+test result: ok. 84 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_io-f871536383795f4f.exe)
+
+running 82 tests
+test dxf_ext::tests::every_dimvar_has_a_code ... ok
+test dxf_ext::tests::arrow_names ... ok
+test dxf_table::tests::chunks_respect_byte_limit_and_characters ... ok
+test plotter::tests::invalid_and_unsupported_plot_offsets_are_reported ... ok
+test plotter::tests::model_plot_placement_preserves_centering_and_applies_mm_offsets ... ok
+test tests::dimension_text_rotation_roundtrips ... ok
+test tests::block_definition_properties_and_constant_attdefs_roundtrip ... ok
+test tests::dxf_roundtrip_preserves_entities ... ok
+test tests::attdef_prompt_survives_dxf_roundtrip ... ok
+test tests::constraints_and_parameters_roundtrip_exactly ... ok
+test tests::dxf_roundtrips_page_setup ... ok
+test tests::foreign_table_reads_cell_text_height_and_keeps_style_scale ... ok
+test tests::entity_transparency_roundtrips_as_group_440 ... ok
+test tests::dimension_associativity_roundtrips ... ok
+test tests::hostile_dxf_does_not_panic ... ok
+test tests::hatch_edges_keep_full_circles_splines_and_clockwise_ellipses ... ok
+test tests::hostile_export_window_is_an_error ... ok
+test tests::extension_sample_roundtrips_and_can_be_exported ... ok
+test tests::dimstyle_roundtrips_every_field ... ok
+test tests::dimension_overrides_roundtrip_as_dstyle_xdata ... ok
+test tests::gradient_falls_back_to_xdata_and_native_groups_win ... ok
+test tests::kept_xrecord_application_group_roundtrips_as_read ... ok
+test tests::layout_page_setup_plot_transparency_is_used ... ok
+test tests::autocad_header_dim_variables_are_not_overrides ... ok
+test tests::gradient_hatch_roundtrips_through_dxf ... ok
+test tests::mirrored_2d_polyline_extrusion_flips_x_and_bulge ... ok
+test tests::mirrored_ellipse_extrusion_reverses_parameters ... ok
+test tests::dwg_roundtrip_keeps_non_ascii_text ... ok
+test tests::layer_transparency_and_description_roundtrip ... ok
+test tests::mirrored_hatch_extrusion_flips_boundary ... ok
+test tests::mirrored_mtext_extrusion_keeps_its_footprint ... ok
+test tests::mirrored_text_extrusion_keeps_its_footprint ... ok
+test plotter::tests::plot_offsets_keep_default_bytes_and_match_across_pdf_and_png ... ok
+test tests::long_gradient_name_is_cut_only_in_xdata ... ok
+test tests::gradient_hatch_roundtrips_through_dwg ... ok
+test tests::dwg_roundtrip_keeps_extension_data ... ok
+test tests::mirrored_insert_extrusion_maps_to_negative_x_scale ... ok
+test tests::pdf_plots_transparency_only_when_asked ... ok
+test tests::mleader_is_written_as_multileader ... ok
+test tests::pdf_strokes_each_transparent_primitive_inside_a_block ... ok
+test tests::pdf_strokes_overlapping_transparent_objects_one_by_one ... ok
+test tests::non_ascii_text_is_escaped_for_r2000_and_roundtrips ... ok
+test tests::reads_r12_style_polyline_and_paper_flag ... ok
+test tests::reads_utf8_and_code_page_text ... ok
+test tests::second_roundtrip_is_stable ... ok
+test tests::layer_states_roundtrip_next_to_constraints ... ok
+test tests::svg_group_transforms_apply ... ok
+test tests::svg_hidden_and_defs_subtrees_are_skipped ... ok
+test tests::svg_inkscape_layers_are_kept ... ok
+test tests::svg_no_geometry_yields_an_empty_drawing ... ok
+test tests::svg_hostile_input_errors_without_panicking ... ok
+test tests::svg_path_lines_curves_and_arcs ... ok
+test tests::svg_read_dispatches_by_extension ... ok
+test tests::svg_shapes_become_entities_in_millimetres ... ok
+test tests::svg_viewbox_scaling_and_mm_units ... ok
+test tests::svgz_gunzips_to_the_same_drawing ... ok
+test tests::lwpolyline_elevation_roundtrips ... ok
+test tests::text_style_flags_roundtrip ... ok
+test tests::png_and_svg_plots_blend_transparency_when_asked ... ok
+test tests::user_block_arrowheads_are_referenced_not_regenerated ... ok
+test tests::tables_roundtrip_with_title_header_and_merges ... ok
+test tests::viewport_frozen_layers_roundtrip ... ok
+test tests::hostile_gradient_groups_never_panic ... ok
+test tests::viewport_frozen_layers_read_from_341_without_xdata ... ok
+test tests::viewport_frozen_layers_written_as_341_handles ... ok
+test tests::viewport_layer_colors_roundtrip ... ok
+test tests::wipeout_boundary_keeps_its_orientation ... ok
+test tests::viewport_frozen_xdata_wins_over_341 ... ok
+test tests::wipeout_survives_dxf_roundtrip ... ok
+test tests::viewport_frozen_layers_survive_dwg ... ok
+test tests::oversized_dwg_and_dxf_are_rejected_early ... ok
+test tests::view_exports_draw_transparency ... ok
+test tests::arc_length_dimension_keeps_its_kind_and_centre_on_roundtrip ... ok
+test tests::pdf_layout_one_to_one_with_viewport ... ok
+test tests::svg_and_png_export ... ok
+test tests::pdf_model_fitted_to_sheet ... ok
+test tests::hostile_extension_data_never_panics ... ok
+test tests::pdf_hostile_options_and_empty ... ok
+test tests::image_export_frames_window ... ok
+test plotter::tests::png_and_svg_devices ... ok
+test tests::damaged_dwg_opens_partially_and_says_what_it_left_out ... ok
+test tests::ac1024_dwg_with_many_entities_opens ... ok
+
+test result: ok. 82 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.97s
+
+     Running tests\acis_data_store.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\acis_data_store-fab87dfc82239d7b.exe)
+
+running 2 tests
+test dxf_keeps_the_data_store_and_drops_records_of_deleted_entities ... ok
+test dwg_keeps_the_solids_geometry ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\angle_header.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\angle_header-6298d41b27e86fd6.exe)
+
+running 1 test
+test angbase_angdir_aunits_round_trip_through_dxf ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\annotative_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\annotative_roundtrip-ed095153c0e7d675.exe)
+
+running 3 tests
+test annotative_scaling_round_trips ... ok
+test plain_drawings_write_no_annotation_record_and_keep_their_default_list ... ok
+test hostile_scales_and_records_are_ignored ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\assoc_array_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\assoc_array_roundtrip-80b64a3564107611.exe)
+
+running 3 tests
+test array_parameters_survive_a_dxf_round_trip ... ok
+test renamed_blocks_are_followed ... ok
+test damaged_array_xdata_is_ignored ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\attrib_modes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attrib_modes-116584db62d25445.exe)
+
+running 2 tests
+test a_280_before_the_tag_is_the_version_not_lock_position ... ok
+test modes_survive_dxf_and_dwg ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\attrib_props.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\attrib_props-f5dc16171b0b563b.exe)
+
+running 3 tests
+test hostile_attrib_groups_do_not_panic ... ok
+test attribute_properties_roundtrip ... ok
+test attributes_without_properties_stay_without ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\block_expansion.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\block_expansion-de0b47bdb5ee0e5f.exe)
+
+running 2 tests
+test ordinary_nested_and_arrayed_blocks_are_drawn_whole ... ok
+test block_expansion_bombs_are_bounded ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.46s
+
+     Running tests\closed_spline.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\closed_spline-e857815a47cd58ae.exe)
+
+running 1 test
+test closed_fit_spline_roundtrips_as_periodic ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\codepages.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\codepages-7db52fcacfc8d839.exe)
+
+running 8 tests
+test shift_jis_backslash_trail_byte_is_not_an_escape ... ok
+test utf8_wins_when_valid ... ok
+test binary_dxf_honours_the_code_page ... ok
+test unknown_code_page_falls_back_to_ansi_1252 ... ok
+test reads_text_in_its_code_page ... ok
+test hostile_multibyte_never_panics ... ok
+test code_page_text_survives_a_round_trip ... ok
+test pre_2007_dwg_text_decodes_through_the_bridge ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\dim_block_resave_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_block_resave_roundtrip-10417bd5b04d0464.exe)
+
+running 7 tests
+test stale_dimension_blocks_are_dropped_and_referenced_ones_kept ... ok
+test reopened_dimension_reuses_its_block_name_and_handles ... ok
+test hostile_handle_seed_does_not_panic ... ok
+test an_unedited_dimension_keeps_the_block_it_was_read_with ... ok
+test one_dimension_keeps_one_block_over_three_cycles ... ok
+test two_dimensions_and_a_user_block_keep_their_blocks ... ok
+test dwg_reopen_and_save_keeps_one_block_per_dimension ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\dim_block_text.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_block_text-61c38371f37a3986.exe)
+
+running 1 test
+test dimension_block_text_has_the_drawn_height ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dim_marks_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dim_marks_roundtrip-b44b91a0c4422443.exe)
+
+running 2 tests
+test damaged_marks_are_skipped ... ok
+test dimension_marks_roundtrip ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\dimstyle_vars_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dimstyle_vars_roundtrip-4f84e955c44a49e1.exe)
+
+running 3 tests
+test new_dimstyle_variables_roundtrip_in_the_table ... ok
+test new_variables_roundtrip_as_dimension_overrides ... ok
+test header_jog_angle_is_read_in_degrees_and_hostile_values_are_dropped ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\drafting_spacing.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\drafting_spacing-b53c4ee5794cad9f.exe)
+
+running 7 tests
+test reads_legacy_spacing_without_an_active_vport ... ok
+test first_active_vport_overrides_header_and_named_viewports ... ok
+test incomplete_or_invalid_active_spacing_preserves_legacy_values ... ok
+test missing_or_invalid_legacy_spacing_uses_the_default ... ok
+test zero_grid_components_roundtrip_as_follow_snap_spacing ... ok
+test invalid_in_memory_spacing_exports_safe_defaults ... ok
+test writes_spacing_to_header_and_active_vport_and_roundtrips ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\dwg_header_vars.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dwg_header_vars-c6cc228b488850d1.exe)
+
+running 2 tests
+test header_settings_round_trip_through_dxf ... ok
+test header_settings_round_trip_through_dwg ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\dwg_roundtrip_losses.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dwg_roundtrip_losses-7aa3ce914a5bfa03.exe)
+
+running 4 tests
+test dwg_keeps_true_colours_and_transparency ... ok
+test dwg_keeps_paper_space_entities_in_their_layout ... ok
+test dwg_keeps_table_styles ... ok
+test viewport_ids_survive_dwg_and_the_paper_viewport_stays_implicit ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\dwt_template.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dwt_template-22e3cb967f9f5f0c.exe)
+
+running 2 tests
+test a_dxf_template_reads_under_either_name ... ok
+test dwt_is_written_as_dwg_and_read_back ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\dxf_versions.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dxf_versions-31e904291c2a0a31.exe)
+
+running 6 tests
+test binary_is_for_dxf_only ... ok
+test r2000_ascii_is_unchanged ... ok
+test default_version_is_the_drawings_own ... ok
+test dwg_default_is_at_least_2004 ... ok
+test dxf_at_every_version_reads_back_the_same ... ok
+test dwg_at_every_version_reads_back ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\dynblock_read.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\dynblock_read-7ddd108cd1db9b3f.exe)
+
+running 14 tests
+test connections_are_read_in_either_group_order ... ok
+test a_dynamic_block_reads_its_parameters_and_actions ... ok
+test dynamic_block_references_show_their_values ... ok
+test dynamic_references_show_the_grips_of_their_state ... ok
+test a_lookup_value_sets_its_distance ... ok
+test dragging_a_distance_grip_changes_the_distance ... ok
+test damaged_dynamic_block_data_is_skipped_not_trusted ... ok
+test bad_values_are_refused_and_change_nothing ... ok
+test parameters_in_a_stretch_selection_are_carried_along ... ok
+test a_distance_stretches_the_block_and_snaps_to_its_values ... ok
+test dynamic_block_references_survive_a_save ... ok
+test a_change_is_recorded_in_the_references_history_and_data ... ok
+test changing_the_visibility_state_makes_a_new_anonymous_block ... ok
+test a_saved_drawing_keeps_the_dynamic_block_as_read ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\entity_props_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\entity_props_roundtrip-39d33494c53245da.exe)
+
+running 6 tests
+test polyface_and_polygon_mesh_polylines_become_faces_not_bogus_vertices ... ok
+test point_angle_roundtrips ... ok
+test thickness_roundtrips_on_every_entity_that_has_one ... ok
+test xref_block_flag_and_path_roundtrip ... ok
+test hatch_origin_background_and_elevation_roundtrip ... ok
+test builtin_font_name_roundtrips_and_other_readers_get_txt ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\followups_626.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\followups_626-a2f14b589d148425.exe)
+
+running 6 tests
+test multileader_before_2007_is_leader_and_mtext ... ok
+test multileader_from_2007_is_native ... ok
+test code_page_is_kept_before_2007 ... ok
+test newer_dimstyle_variables_are_table_groups_from_2004 ... ok
+test modelled_dictionaries_are_not_kept_twice ... ok
+test multileader_in_dwg_follows_the_dwg_version ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\groups_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\groups_roundtrip-75ed8b0269200d75.exe)
+
+running 1 test
+test groups_survive_dwg_round_trip ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\hatch_assoc_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\hatch_assoc_roundtrip-eb1ac753d3b1cb01.exe)
+
+running 3 tests
+test source_boundary_objects_roundtrip ... ok
+test sources_after_spline_fit_data_and_hostile_counts ... ok
+test a_hatch_in_a_block_keeps_its_boundary_and_the_boundary_its_reactor ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\hatch_pattern_def.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\hatch_pattern_def-5c73d8b97cdba79b.exe)
+
+running 4 tests
+test file_definition_is_drawn_instead_of_the_librarys ... ok
+test custom_pattern_lines_roundtrip_scaled_and_rotated ... ok
+test library_named_patterns_keep_the_files_definition ... ok
+test hostile_pattern_definitions_are_capped ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\helix_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\helix_roundtrip-1adae029d2116936.exe)
+
+running 4 tests
+test foreign_helix_reads ... ok
+test helix_survives_save_and_reopen ... ok
+test helix_survives_dwg_save_and_reopen ... ok
+test hostile_helix_does_not_panic ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.67s
+
+     Running tests\low_handseed.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\low_handseed-f5754897aa4d5655.exe)
+
+running 1 test
+test faces_made_while_reading_do_not_take_the_files_handles ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\mleader_content.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mleader_content-5874b5211feff265.exe)
+
+running 1 test
+test spline_leader_and_block_content_are_written ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mleader_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mleader_roundtrip-18e1f5db195d6bd1.exe)
+
+running 7 tests
+test foreign_multileader_with_two_landings ... ok
+test spline_leader_with_block_content_and_attributes ... ok
+test multileader_without_leader_lines ... ok
+test multileader_in_a_block_and_in_paper_space ... ok
+test text_multileader_survives_as_multileader ... ok
+test multileader_through_dwg ... ok
+test hostile_multileaders_do_not_panic ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\mline_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mline_roundtrip-d015f6b4fe3fa632.exe)
+
+running 5 tests
+test foreign_mline_reads_with_its_style ... ok
+test mline_without_its_style_keeps_its_offsets ... ok
+test mlines_and_styles_survive_save_and_reopen ... ok
+test mline_survives_dwg_save_and_reopen ... ok
+test hostile_mline_does_not_panic ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\model_layout_plot_type.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\model_layout_plot_type-5096fe8bb9f2a45a.exe)
+
+running 2 tests
+test model_layout_plots_extents_fitted_and_layouts_their_sheet ... ok
+test model_layout_plot_type_survives_the_dwg_bridge ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\mtext_columns_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mtext_columns_roundtrip-7294237358ca3925.exe)
+
+running 4 tests
+test static_columns_round_trip ... ok
+test dynamic_manual_heights_and_rotation_round_trip ... ok
+test paragraph_codes_tabs_and_carets_round_trip ... ok
+test hostile_column_groups_do_not_panic ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\mtext_embedded_object.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mtext_embedded_object-094f7f60389e742f.exe)
+
+running 2 tests
+test embedded_object_insertion_point_is_not_the_direction ... ok
+test rotated_mtext_keeps_its_rotation_with_an_embedded_object ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mtext_line_spacing.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\mtext_line_spacing-7af54498e29e3e04.exe)
+
+running 1 test
+test line_spacing_style_roundtrips ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\multiline_attributes.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\multiline_attributes-87c156057cbfcd67.exe)
+
+running 6 tests
+test multiline_attributes_are_read_with_their_text ... ok
+test a_multiline_attribute_is_drawn ... ok
+test multiline_attributes_survive_a_save ... ok
+test files_before_2007_get_single_line_attributes ... ok
+test an_edited_value_replaces_the_multiline_text ... ok
+test damaged_embedded_text_does_not_panic ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\paperview_marker.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\paperview_marker-64ddcce620c565a5.exe)
+
+running 1 test
+test viewport_with_a_layer_named_paperview_survives_dxf_roundtrip ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\passthrough_image_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\passthrough_image_roundtrip-e8393f418350e999.exe)
+
+running 4 tests
+test images_of_one_file_share_a_definition ... ok
+test image_without_definition_is_still_written ... ok
+test image_and_its_definition_survive_save_and_reopen ... ok
+test image_survives_dwg_save_and_reopen ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\pdf_followups.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\pdf_followups-832b5b05bf699325.exe)
+
+running 3 tests
+test model_space_pdf_uses_the_device_margins ... ok
+test pe_url_hyperlinks_become_link_annotations ... ok
+test png_and_svg_plots_draw_plot_style_ends ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\pdf_layers.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\pdf_layers-9427028522784b3d.exe)
+
+running 7 tests
+test bad_sheet_lists_are_errors ... ok
+test drawing_layers_become_pdf_layers ... ok
+test hyperlinks_become_link_annotations ... ok
+test viewport_contents_keep_their_layers ... ok
+test unusual_layer_names_and_titles_are_escaped ... ok
+test layers_that_are_off_are_included_hidden_on_request ... ok
+test several_sheets_in_one_file_with_page_labels ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\pdf_text.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\pdf_text-73288e6e6eeacc52.exe)
+
+running 6 tests
+test the_subset_is_a_valid_truetype_font ... ok
+test truetype_text_is_embedded_as_text ... ok
+test rotation_width_factor_and_obliquing_go_into_the_text_matrix ... ok
+test text_seen_through_a_viewport_and_on_layers ... ok
+test fonts_that_forbid_embedding_and_the_geometry_option_draw_outlines ... ok
+test hostile_text_never_panics ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\plot_layout_scale.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plot_layout_scale-8600b9c8164c4762.exe)
+
+running 1 test
+test layout_plot_honours_explicit_scale_without_fit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\plot_model_png_scale.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plot_model_png_scale-82f2650f898d5c78.exe)
+
+running 1 test
+test model_png_without_fit_or_scale_plots_one_to_one ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\plot_styles.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\plot_styles-0919f7f9fc21d7d0.exe)
+
+running 5 tests
+test layout_svg_follows_display_plot_styles ... ok
+test pdf_applies_a_named_table_from_the_drawing ... ok
+test pdf_uses_the_page_setup_table ... ok
+test named_plot_styles_round_trip_through_the_plot_style_dictionary ... ok
+test page_setup_table_and_display_flag_round_trip ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\region_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\region_roundtrip-10cdf38dc6392d72.exe)
+
+running 3 tests
+test foreign_region_stays_unknown ... ok
+test region_with_islands_survives_save_and_reopen ... ok
+test hostile_region_xdata_does_not_panic ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.73s
+
+     Running tests\roundtrip_audit.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\roundtrip_audit-c1066d570102df47.exe)
+
+running 17 tests
+test erased_entities_take_their_extension_data_with_them ... ok
+test a_new_colour_drops_the_colour_book_name ... ok
+test foreign_xdata_on_entities_tables_and_blocks_is_kept ... ok
+test true_colours_and_colour_books_are_kept ... ok
+test class_records_have_instance_counts_for_generated_and_preserved_records ... ok
+test transparency_is_kept ... ok
+test saving_twice_writes_the_same_records ... ok
+test extension_dictionaries_on_entities_and_table_records_are_kept ... ok
+test hyperlinks_are_kept ... ok
+test image_imagedef_and_reactor_are_kept ... ok
+test ucs_layer_states_and_block_descriptions_are_kept ... ok
+test unknown_entities_in_model_paper_and_blocks_are_kept ... ok
+test dictionary_variables_xrecords_and_persistent_reactors_are_kept ... ok
+test every_reference_names_a_written_object ... ok
+test unknown_objects_in_named_and_nested_dictionaries_are_kept ... ok
+test dwg_keeps_extension_dictionaries_xrecords_and_entity_xdata ... ok
+test hostile_raw_data_never_panics ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\skipped_records.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\skipped_records-9aeeb64c8b9cde50.exe)
+
+running 2 tests
+test records_the_reader_cannot_place_are_counted_by_section ... ok
+test a_file_cadcraft_wrote_skips_nothing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\sortents.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\sortents-45c04b3109db8b19.exe)
+
+running 2 tests
+test broken_sortentstables_are_ignored ... ok
+test sortentstable_sets_the_draw_order ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\spline_fit_data.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\spline_fit_data-8577785062bdcb12.exe)
+
+running 2 tests
+test fit_data_is_written_with_the_documented_groups ... ok
+test fit_options_roundtrip_through_dxf ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\split_entities_section.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\split_entities_section-33949e74574ee66a.exe)
+
+running 1 test
+test entities_of_every_entities_section_are_read ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\style_typeface.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\style_typeface-5060cacdb88f3897.exe)
+
+running 1 test
+test style_without_a_font_file_uses_the_xdata_typeface ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\table_cellstyle_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\table_cellstyle_roundtrip-ac327e9534af15cd.exe)
+
+running 5 tests
+test table_block_draws_fills_and_styles ... ok
+test hostile_table_xdata_is_ignored ... ok
+test breaks_and_data_links_roundtrip_and_the_block_draws_the_parts ... ok
+test documented_groups_carry_the_builtin_styles ... ok
+test cell_styles_rows_and_formulas_roundtrip ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\tables_objects_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\tables_objects_roundtrip-b849383d3a064f70.exe)
+
+running 5 tests
+test layout_page_setup_and_paper_view_round_trip ... ok
+test foreign_and_hostile_tables_objects ... ok
+test named_views_ucss_and_groups_round_trip ... ok
+test linetype_text_and_shape_elements_round_trip ... ok
+test multileader_styles_and_current_style_round_trip ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\text_left_justify.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\text_left_justify-8dcb34fb921af23a.exe)
+
+running 1 test
+test left_justified_text_is_placed_by_its_alignment_point ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\tolerance_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\tolerance_roundtrip-428668b8e0447295.exe)
+
+running 3 tests
+test missing_direction_defaults_to_x ... ok
+test tolerance_reads_draws_and_roundtrips ... ok
+test hostile_tolerance_does_not_panic ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\user_lin_pat_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\user_lin_pat_roundtrip-825dac2a85f66241.exe)
+
+running 1 test
+test user_linetypes_and_patterns_survive_dxf ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\view_tables_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\view_tables_roundtrip-b9aa70e1e9af0356.exe)
+
+running 4 tests
+test hostile_vport_records_are_skipped ... ok
+test model_and_paper_views_round_trip ... ok
+test foreign_paper_view_and_hostile_twist ... ok
+test tiled_viewports_and_saved_configurations_round_trip ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\viewport_clip_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\viewport_clip_roundtrip-72a6fc63d990b38e.exe)
+
+running 3 tests
+test clip_boundary_lock_and_off_roundtrip ... ok
+test clipped_viewport_plots_through_its_outline ... ok
+test hostile_clip_handles_do_not_panic ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\xref_roundtrip.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\xref_roundtrip-7ffde316a82100e0.exe)
+
+running 5 tests
+test the_written_block_records_carry_the_xref_flags ... ok
+test xrefs_are_saved_as_references_without_their_objects ... ok
+test xref_dependent_symbols_are_not_saved ... ok
+test xref_layers_are_saved_as_dependent_layer_records ... ok
+test objects_in_a_read_xref_block_are_ignored ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_mcp-2c6be6ae571cecfd.exe)
+
+running 10 tests
+test tests::lifecycle_and_tools ... ok
+test tests::errors_are_tool_errors_not_crashes ... ok
+
+thread 'backend::tests::lost_reply_to_a_mutation_is_not_resent' (34572) panicked at crates\mcp\src\backend.rs:377:49:
+called `Result::unwrap()` on an `Err` value: Os { code: 10013, kind: PermissionDenied, message: "Intento de acceso a un socket no permitido por sus permisos de acceso." }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test backend::tests::lost_reply_to_a_mutation_is_not_resent ... FAILED
+test tests::query_entities_pages_and_windows_by_geometry ... ok
+test tests::bad_tool_calls_are_invalid_params ... ok
+test tests::list_commands_filter_matches_names_not_docs ... ok
+test tests::agent_draws_a_plate_with_holes ... ok
+
+thread 'tests::a_lazy_bridge_starts_without_the_app_and_says_how_to_open_it' (24668) panicked at crates\mcp\src\tests.rs:210:5:
+assertion `left != right` failed: {"id":4,"jsonrpc":"2.0","result":{"content":[{"text":"CADCraft at 127.0.0.1:63445: CADCraft is not answering at 127.0.0.1:63445 (Intento de acceso a un socket no permitido por sus permisos de acceso. (os error 10013)). Open CADCraft with its control port (`--control PORT` or CADCRAFT_CONTROL_PORT), then try again","type":"text"}],"isError":true}}
+  left: Bool(true)
+ right: Bool(true)
+test tests::a_lazy_bridge_starts_without_the_app_and_says_how_to_open_it ... FAILED
+test tests::find_text_reads_texts_and_render_shows_one_area ... ok
+
+thread 'backend::tests::timeout_reply_says_whether_a_retry_is_safe' (24384) panicked at crates\mcp\src\backend.rs:396:53:
+called `Result::unwrap()` on an `Err` value: Os { code: 10013, kind: PermissionDenied, message: "Intento de acceso a un socket no permitido por sus permisos de acceso." }
+test backend::tests::timeout_reply_says_whether_a_retry_is_safe ... FAILED
+
+failures:
+
+failures:
+    backend::tests::lost_reply_to_a_mutation_is_not_resent
+    backend::tests::timeout_reply_says_whether_a_retry_is_safe
+    tests::a_lazy_bridge_starts_without_the_app_and_says_how_to_open_it
+
+test result: FAILED. 7 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+error: test failed, to rerun pass `-p cadcraft-mcp --lib`
+     Running tests\cmdline_key.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cmdline_key-2ab0269b772e4b3d.exe)
+
+running 2 tests
+test refused_enter_is_echoed_and_reported_in_error ... ok
+test accepted_keys_have_output_and_no_error ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\cmdline_parity.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cmdline_parity-31c1ebe01a2def63.exe)
+
+running 3 tests
+test open_without_a_path_is_refused_before_the_engine ... ok
+test accepted_input_has_no_error_and_reports_the_prompt ... ok
+test refused_input_is_echoed_to_output_and_reported_in_error ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\control_methods.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\control_methods-e0a58d6b37d7690d.exe)
+
+running 2 tests
+test ping_answers_and_unknown_method_points_to_control_methods ... ok
+test control_methods_lists_what_headless_answers ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests cadcraft_doc
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests cadcraft_engine
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests cadcraft_geom
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests cadcraft_io
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests cadcraft_mcp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: 2 targets failed:
+    `-p cadcraft-engine --test insert_file`
+    `-p cadcraft-mcp --lib`

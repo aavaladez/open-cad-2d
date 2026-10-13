@@ -1,0 +1,84 @@
+{
+  "types": {
+    "LINE": 1,
+    "CIRCLE": 1,
+    "INSERT": 1,
+    "TEXT": 1,
+    "LWPOLYLINE": 1
+  },
+  "lines": [
+    [
+      [
+        0.0,
+        0.0,
+        7.0
+      ],
+      [
+        3.0,
+        4.0,
+        9.0
+      ],
+      "SURVEY"
+    ]
+  ],
+  "circles": [
+    [
+      [
+        10.0,
+        10.0,
+        11.0
+      ],
+      2.0,
+      "SURVEY"
+    ]
+  ],
+  "layers": [
+    [
+      "SURVEY",
+      146,
+      1193046,
+      0
+    ]
+  ],
+  "texts": [
+    [
+      "ámbito XYZ",
+      [
+        5.0,
+        5.0,
+        4.0
+      ]
+    ]
+  ],
+  "inserts": [
+    [
+      "OwnBlock",
+      [
+        20.0,
+        20.0,
+        3.0
+      ]
+    ]
+  ],
+  "xdata": [
+    [
+      [
+        1000,
+        "own-audit"
+      ],
+      [
+        1040,
+        1.25
+      ]
+    ]
+  ],
+  "units": 4,
+  "clayer": "SURVEY",
+  "layouts": [
+    "Model",
+    "Layout1",
+    "OwnSheet"
+  ],
+  "audit_errors": 0,
+  "audit_fixes": 0
+}

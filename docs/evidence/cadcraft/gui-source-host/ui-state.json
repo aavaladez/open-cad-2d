@@ -1,0 +1,197 @@
+{
+  "animations": false,
+  "canvasRect": [
+    224.0,
+    82.0,
+    1008.0,
+    756.0
+  ],
+  "closePrompt": null,
+  "cursor": null,
+  "focus": {
+    "id": null,
+    "keyboardInput": false,
+    "label": null,
+    "role": null
+  },
+  "perf": {
+    "buildMs": 0.443115234375,
+    "building": false,
+    "drawMs": 0.005859375,
+    "frameMs": 0.585205078125,
+    "meshMs": 0.03857421875,
+    "prims": 495,
+    "renderer": "gpu"
+  },
+  "session": {
+    "documents": [
+      {
+        "active": true,
+        "blockEditor": null,
+        "dirty": true,
+        "entities": 47,
+        "index": 0,
+        "path": null,
+        "revision": 4,
+        "title": "Bracket"
+      }
+    ],
+    "prompt": "Command:",
+    "running": null,
+    "selection": [],
+    "settings": {
+      "acadlspasdoc": false,
+      "annoallvisible": true,
+      "annoautoscale": false,
+      "aperture": 10.0,
+      "crossingareacolor": 100,
+      "cursorsize": 5.0,
+      "dyndigrip": 31,
+      "dyndivis": 1,
+      "dynmode": true,
+      "dynpiAbsolute": false,
+      "dynpiCartesian": false,
+      "dynprompt": true,
+      "gridmajor": 5,
+      "gridmode": true,
+      "gridunit": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "gripobjlimit": 100,
+      "grips": 1,
+      "gripsize": 5.0,
+      "highlight": true,
+      "isodraft": false,
+      "isoplane": "left",
+      "lwdisplay": false,
+      "maxarray": 100000,
+      "orthomode": true,
+      "osmode": 4133,
+      "osnaphatch": false,
+      "otrack": true,
+      "pickadd": true,
+      "pickbox": 3.0,
+      "pickfirst": true,
+      "pickstyle": 1,
+      "plotTransparencyOverride": 1,
+      "polarFlags": 0,
+      "polaraddang": [],
+      "polarang": 1.5707963267948966,
+      "polardist": 0.0,
+      "polarmode": true,
+      "polarsnap": false,
+      "previeweffect": 2,
+      "previewfilter": 3,
+      "qpmode": false,
+      "selectionCycling": false,
+      "selectionarea": true,
+      "selectionareaopacity": 25,
+      "selectioneffect": 1,
+      "selectionpreview": 3,
+      "selectsimilarmode": 130,
+      "snapmode": false,
+      "snapunit": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "transparencyDisplay": true,
+      "viewLayerSnapshot": true,
+      "windowareacolor": 150,
+      "zoomfactor": 60
+    }
+  },
+  "snap": null,
+  "theme": "dark",
+  "ui": {
+    "animations": "system",
+    "collapsedGroups": [],
+    "dialog": null,
+    "docking": {
+      "hidden": [],
+      "layout": {
+        "floating": [],
+        "root": {
+          "Split": {
+            "axis": "Horizontal",
+            "first": {
+              "Tabs": {
+                "active": 0,
+                "panels": [
+                  "toolSets"
+                ]
+              }
+            },
+            "second": {
+              "Split": {
+                "axis": "Horizontal",
+                "first": {
+                  "Tabs": {
+                    "active": 0,
+                    "panels": [
+                      "canvas"
+                    ]
+                  }
+                },
+                "second": {
+                  "Stack": {
+                    "entries": [
+                      {
+                        "height": 280.0,
+                        "open": true,
+                        "panel": "layers"
+                      },
+                      {
+                        "height": null,
+                        "open": true,
+                        "panel": "properties"
+                      }
+                    ]
+                  }
+                },
+                "size": {
+                  "FixedSecond": 300.0
+                }
+              }
+            },
+            "size": {
+              "FixedFirst": 220.0
+            }
+          }
+        }
+      }
+    },
+    "hiddenTools": [],
+    "historyLines": 3,
+    "inWindowMenu": true,
+    "interfaceLanguage": "auto",
+    "propertiesAll": true,
+    "recentFiles": [],
+    "saveFormat": "dxf",
+    "saveVersion": "2018",
+    "showCommandLine": true,
+    "showFileTabs": true,
+    "showLayerList": false,
+    "showPalettes": true,
+    "showStatusBar": true,
+    "showToolbar": true,
+    "showToolsets": true,
+    "showUcsIcon": true,
+    "showViewcube": true,
+    "startTab": false,
+    "systemCursor": false,
+    "theme": "dark",
+    "toolsetTab": "Drafting"
+  },
+  "view": {
+    "center": [
+      8.75,
+      3.5
+    ],
+    "height": 14.568750000000001
+  },
+  "window": [
+    1536.0,
+    864.0
+  ]
+}

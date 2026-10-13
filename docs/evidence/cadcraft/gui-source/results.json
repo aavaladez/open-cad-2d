@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "runtime_error": "GUI control startup 30s"
+  },
+  "binary_sha256": "8c0a9efd92da6158fc238f6591f99481fd91dd99187e946180c1aab5e97c579f",
+  "startup": "hidden isolated Windows profile; DX12",
+  "port": 50206
+}

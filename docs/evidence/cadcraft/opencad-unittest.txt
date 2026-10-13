@@ -1,0 +1,118 @@
+test_blocking_findings_not_hidden_by_nonblocking_flag (test_audit_gate.AuditGate.test_blocking_findings_not_hidden_by_nonblocking_flag) ... ok
+test_cli_freeze_report_and_no_overwrite (test_audit_gate.AuditGate.test_cli_freeze_report_and_no_overwrite) ... ok
+test_freeze_is_exclusive_and_regression_never_restarts_features (test_audit_gate.AuditGate.test_freeze_is_exclusive_and_regression_never_restarts_features) ... ok
+test_internal_tests_or_flags_cannot_satisfy_entry (test_audit_gate.AuditGate.test_internal_tests_or_flags_cannot_satisfy_entry) ... ok
+test_missing_criterion_or_outside_evidence_rejected (test_audit_gate.AuditGate.test_missing_criterion_or_outside_evidence_rejected) ... ok
+test_portable_is_not_installation_and_same_engine_is_not_independent (test_audit_gate.AuditGate.test_portable_is_not_installation_and_same_engine_is_not_independent) ... ok
+test_resolved_blocker_requires_current_resolution_evidence (test_audit_gate.AuditGate.test_resolved_blocker_requires_current_resolution_evidence) ... ok
+test_six_cases_require_freeze_but_never_grant_approval (test_audit_gate.AuditGate.test_six_cases_require_freeze_but_never_grant_approval) ... ok
+test_stale_revision_and_changed_binary_invalidate_all (test_audit_gate.AuditGate.test_stale_revision_and_changed_binary_invalidate_all) ... ok
+test_tampered_observation_or_failed_checks_rejected (test_audit_gate.AuditGate.test_tampered_observation_or_failed_checks_rejected) ... ok
+test_all_rows_hash_notes_and_scope (test_catalog.Catalog.test_all_rows_hash_notes_and_scope) ... ok
+test_every_source_row_preserved_exactly (test_catalog.Catalog.test_every_source_row_preserved_exactly) ... ok
+test_alias_atomic_config (test_commands.Commands.test_alias_atomic_config) ... ok
+test_circle_invalid_and_valid (test_commands.Commands.test_circle_invalid_and_valid) ... ok
+test_dist_analytic (test_commands.Commands.test_dist_analytic) ... ok
+test_invalid_chain_atomic (test_commands.Commands.test_invalid_chain_atomic) ... ok
+test_layer_visibility_undo (test_commands.Commands.test_layer_visibility_undo) ... ok
+test_line_alias_chain_z_undo (test_commands.Commands.test_line_alias_chain_z_undo) ... ok
+test_move_erase_layer_lock (test_commands.Commands.test_move_erase_layer_lock) ... ok
+test_nonfinite_and_unknown (test_commands.Commands.test_nonfinite_and_unknown) ... ok
+test_interop (unittest.loader._FailedTest.test_interop) ... ERROR
+test_arithmetic_lists_and_condition (test_lisp.Lisp.test_arithmetic_lists_and_condition) ... ok
+test_blocked_capabilities (test_lisp.Lisp.test_blocked_capabilities) ... ok
+test_command_returns_nil_and_alias_cannot_expand_capabilities (test_lisp.Lisp.test_command_returns_nil_and_alias_cannot_expand_capabilities) ... ok
+test_malformed_depth_and_recursion (test_lisp.Lisp.test_malformed_depth_and_recursion) ... ok
+test_new_native_commands_not_announced_by_temporary_backend (test_lisp.Lisp.test_new_native_commands_not_announced_by_temporary_backend) ... ok
+test_original_rectangle_and_c_command (test_lisp.Lisp.test_original_rectangle_and_c_command) ... ok
+test_rollback_model_and_runtime (test_lisp.Lisp.test_rollback_model_and_runtime) ... ok
+test_size_limit (test_lisp.Lisp.test_size_limit) ... ok
+test_qcad_interop (unittest.loader._FailedTest.test_qcad_interop) ... ERROR
+test_recovery (unittest.loader._FailedTest.test_recovery) ... ERROR
+test_ui (unittest.loader._FailedTest.test_ui) ... ERROR
+test_comparison_tolerance_detects_real_difference (test_workflow.Workflow.test_comparison_tolerance_detects_real_difference) ... ok
+test_empty_regression_is_not_approved (test_workflow.Workflow.test_empty_regression_is_not_approved) ... No se ejecutaron pruebas; regresi�n no acreditada.
+ok
+test_existing_contract_not_overwritten (test_workflow.Workflow.test_existing_contract_not_overwritten) ... [Errno 17] File exists: 'C:\\Users\\Equipo 1\\Documents\\ChatGPT\\OPENCAD\\build\\test-temp\\tmp3d13neyf\\case.json'
+ok
+test_missing_fields_and_bool_numeric_difference (test_workflow.Workflow.test_missing_fields_and_bool_numeric_difference) ... ok
+test_no_self_generated_baseline_or_nonfinite (test_workflow.Workflow.test_no_self_generated_baseline_or_nonfinite) ... ok
+test_spec_real_row_unknown_and_excluded (test_workflow.Workflow.test_spec_real_row_unknown_and_excluded) ... ok
+test_specialized_helper_entrypoints (test_workflow.Workflow.test_specialized_helper_entrypoints) ... ok
+
+======================================================================
+ERROR: test_interop (unittest.loader._FailedTest.test_interop)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_interop
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python314\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\tests\test_interop.py", line 9, in <module>
+    import ezdxf
+ModuleNotFoundError: No module named 'ezdxf'
+
+
+======================================================================
+ERROR: test_qcad_interop (unittest.loader._FailedTest.test_qcad_interop)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_qcad_interop
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python314\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\tests\test_qcad_interop.py", line 8, in <module>
+    import ezdxf
+ModuleNotFoundError: No module named 'ezdxf'
+
+
+======================================================================
+ERROR: test_recovery (unittest.loader._FailedTest.test_recovery)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_recovery
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python314\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\tests\test_recovery.py", line 6, in <module>
+    from opencad.recovery import RecoveryStore
+  File "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\src\opencad\recovery.py", line 5, in <module>
+    from .qcad_interop import write_snapshot,inspect_dxf,native_inventory,equivalent
+  File "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\src\opencad\qcad_interop.py", line 11, in <module>
+    import ezdxf
+ModuleNotFoundError: No module named 'ezdxf'
+
+
+======================================================================
+ERROR: test_ui (unittest.loader._FailedTest.test_ui)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_ui
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python314\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\tests\test_ui.py", line 7, in <module>
+    from PySide6.QtCore import Qt,QPoint
+ModuleNotFoundError: No module named 'PySide6'
+
+
+----------------------------------------------------------------------
+Ran 39 tests in 3.376s
+
+FAILED (errors=4)
+A1: 6/6, audit_required; siguiente fase sin autorizaci�n
+No sobrescribir reportes existentes; elegir una nueva salida
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+NO TESTS RAN
+

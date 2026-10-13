@@ -1,0 +1,51 @@
+{
+  "types": {
+    "CIRCLE": 1,
+    "LINE": 1
+  },
+  "lines": [
+    [
+      [
+        0.0,
+        0.0,
+        7.0
+      ],
+      [
+        3.0,
+        4.0,
+        9.0
+      ],
+      "SURVEY"
+    ]
+  ],
+  "circles": [
+    [
+      [
+        10.0,
+        10.0,
+        11.0
+      ],
+      2.0,
+      "SURVEY"
+    ]
+  ],
+  "layers": [
+    [
+      "SURVEY",
+      7,
+      1193046,
+      0
+    ]
+  ],
+  "texts": [],
+  "inserts": [],
+  "xdata": [],
+  "units": 4,
+  "clayer": "SURVEY",
+  "layouts": [
+    "Model",
+    "Layout1"
+  ],
+  "audit_errors": 0,
+  "audit_fixes": 0
+}

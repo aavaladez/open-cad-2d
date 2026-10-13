@@ -1,0 +1,3063 @@
+{
+  "scalelistedit": {
+    "id": "scalelistedit",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 15
+  },
+  "-scalelistedit": {
+    "id": "scalelistedit",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 15
+  },
+  "objectscale": {
+    "id": "objectscale",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 22
+  },
+  "-objectscale": {
+    "id": "objectscale",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 22
+  },
+  "aiobjectscaleadd": {
+    "id": "aiobjectscaleadd",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 27
+  },
+  "aiobjectscaleremove": {
+    "id": "aiobjectscaleremove",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 31
+  },
+  "annoreset": {
+    "id": "annoreset",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 35
+  },
+  "annoupdate": {
+    "id": "annoupdate",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 39
+  },
+  "annovisible.current": {
+    "id": "annovisible.current",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 42
+  },
+  "annovisible.all": {
+    "id": "annovisible.all",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 45
+  },
+  "annovisible.toggle": {
+    "id": "annovisible.toggle",
+    "path": "crates/engine/src/cmd/annoscale.rs",
+    "line": 48
+  },
+  "dimlinear": {
+    "id": "dimlinear",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 17
+  },
+  "dli": {
+    "id": "dimlinear",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 17
+  },
+  "dimlin": {
+    "id": "dimlinear",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 17
+  },
+  "dimaligned": {
+    "id": "dimaligned",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 22
+  },
+  "dal": {
+    "id": "dimaligned",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 22
+  },
+  "dimali": {
+    "id": "dimaligned",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 22
+  },
+  "dimradius": {
+    "id": "dimradius",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 27
+  },
+  "dra": {
+    "id": "dimradius",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 27
+  },
+  "dimrad": {
+    "id": "dimradius",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 27
+  },
+  "dimdiameter": {
+    "id": "dimdiameter",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 32
+  },
+  "ddi": {
+    "id": "dimdiameter",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 32
+  },
+  "dimdia": {
+    "id": "dimdiameter",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 32
+  },
+  "dimangular": {
+    "id": "dimangular",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 37
+  },
+  "dan": {
+    "id": "dimangular",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 37
+  },
+  "dimang": {
+    "id": "dimangular",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 37
+  },
+  "dimarc": {
+    "id": "dimarc",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 42
+  },
+  "dar": {
+    "id": "dimarc",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 42
+  },
+  "dimordinate": {
+    "id": "dimordinate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 47
+  },
+  "dor": {
+    "id": "dimordinate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 47
+  },
+  "dimord": {
+    "id": "dimordinate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 47
+  },
+  "dimcontinue": {
+    "id": "dimcontinue",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 52
+  },
+  "dco": {
+    "id": "dimcontinue",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 52
+  },
+  "dimcont": {
+    "id": "dimcontinue",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 52
+  },
+  "dimbaseline": {
+    "id": "dimbaseline",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 57
+  },
+  "dba": {
+    "id": "dimbaseline",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 57
+  },
+  "dimbase": {
+    "id": "dimbaseline",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 57
+  },
+  "qdim": {
+    "id": "qdim",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 62
+  },
+  "dim": {
+    "id": "dim",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 66
+  },
+  "mleader": {
+    "id": "mleader",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 70
+  },
+  "mld": {
+    "id": "mleader",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 70
+  },
+  "leader": {
+    "id": "leader",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 75
+  },
+  "lead": {
+    "id": "leader",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 75
+  },
+  "dimstyle.update": {
+    "id": "dimstyle.update",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 76
+  },
+  "dimoverride": {
+    "id": "dimoverride",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 80
+  },
+  "dov": {
+    "id": "dimoverride",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 80
+  },
+  "dimover": {
+    "id": "dimoverride",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 80
+  },
+  "dimreassociate": {
+    "id": "dimreassociate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 85
+  },
+  "dre": {
+    "id": "dimreassociate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 85
+  },
+  "dimdisassociate": {
+    "id": "dimdisassociate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 90
+  },
+  "dda": {
+    "id": "dimdisassociate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 90
+  },
+  "dimtedit.home": {
+    "id": "dimtedit.home",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 94
+  },
+  "dimtedit.angle": {
+    "id": "dimtedit.angle",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 95
+  },
+  "dimtedit.left": {
+    "id": "dimtedit.left",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 99
+  },
+  "dimtedit.center": {
+    "id": "dimtedit.center",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 100
+  },
+  "dimtedit.right": {
+    "id": "dimtedit.right",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 103
+  },
+  "dimtedit": {
+    "id": "dimtedit",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 104
+  },
+  "dimted": {
+    "id": "dimtedit",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 104
+  },
+  "dimspace": {
+    "id": "dimspace",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 108
+  },
+  "dimedit": {
+    "id": "dimedit",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 18
+  },
+  "ded": {
+    "id": "dimedit",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 18
+  },
+  "dimed": {
+    "id": "dimedit",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 18
+  },
+  "dimedit.oblique": {
+    "id": "dimedit.oblique",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 22
+  },
+  "dimjogged": {
+    "id": "dimjogged",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 26
+  },
+  "djo": {
+    "id": "dimjogged",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 26
+  },
+  "jog": {
+    "id": "dimjogged",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 26
+  },
+  "dimjogline": {
+    "id": "dimjogline",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 31
+  },
+  "djl": {
+    "id": "dimjogline",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 31
+  },
+  "dimbreak": {
+    "id": "dimbreak",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 36
+  },
+  "diminspect": {
+    "id": "diminspect",
+    "path": "crates/engine/src/cmd/annotate_dimedit.rs",
+    "line": 40
+  },
+  "array": {
+    "id": "array",
+    "path": "crates/engine/src/cmd/array.rs",
+    "line": 34
+  },
+  "ar": {
+    "id": "array",
+    "path": "crates/engine/src/cmd/array.rs",
+    "line": 34
+  },
+  "arrayrect": {
+    "id": "arrayrect",
+    "path": "crates/engine/src/cmd/array.rs",
+    "line": 38
+  },
+  "arraypolar": {
+    "id": "arraypolar",
+    "path": "crates/engine/src/cmd/array.rs",
+    "line": 44
+  },
+  "audit": {
+    "id": "audit",
+    "path": "crates/engine/src/cmd/audit.rs",
+    "line": 13
+  },
+  "recover": {
+    "id": "recover",
+    "path": "crates/engine/src/cmd/audit.rs",
+    "line": 17
+  },
+  "drawingrecovery": {
+    "id": "drawingrecovery",
+    "path": "crates/engine/src/cmd/audit.rs",
+    "line": 23
+  },
+  "block": {
+    "id": "block",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 25
+  },
+  "b": {
+    "id": "block",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 25
+  },
+  "bmake": {
+    "id": "block",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 25
+  },
+  "-block": {
+    "id": "-block",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 31
+  },
+  "-b": {
+    "id": "-block",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 31
+  },
+  "insert": {
+    "id": "insert",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 35
+  },
+  "i": {
+    "id": "insert",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 35
+  },
+  "-insert": {
+    "id": "insert",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 35
+  },
+  "ddinsert": {
+    "id": "insert",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 35
+  },
+  "attdef": {
+    "id": "attdef",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 40
+  },
+  "att": {
+    "id": "attdef",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 40
+  },
+  "-attdef": {
+    "id": "attdef",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 40
+  },
+  "wblock": {
+    "id": "wblock",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 47
+  },
+  "w": {
+    "id": "wblock",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 47
+  },
+  "base": {
+    "id": "base",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 48
+  },
+  "blocks.dynamic": {
+    "id": "blocks.dynamic",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 49
+  },
+  "blocks.reference": {
+    "id": "blocks.reference",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 53
+  },
+  "blocks.reference.set": {
+    "id": "blocks.reference.set",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 57
+  },
+  "blocks.reference.grips": {
+    "id": "blocks.reference.grips",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 60
+  },
+  "blocks.reference.grip": {
+    "id": "blocks.reference.grip",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 64
+  },
+  "purge": {
+    "id": "purge",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 67
+  },
+  "pu": {
+    "id": "purge",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 67
+  },
+  "-purge": {
+    "id": "purge",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 67
+  },
+  "blocks.list": {
+    "id": "blocks.list",
+    "path": "crates/engine/src/cmd/blocks.rs",
+    "line": 71
+  },
+  "geomconstraint": {
+    "id": "geomconstraint",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 40
+  },
+  "gcon": {
+    "id": "geomconstraint",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 40
+  },
+  "autoconstrain": {
+    "id": "autoconstrain",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 56
+  },
+  "constraintbar": {
+    "id": "constraintbar",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 60
+  },
+  "constraintbar.showall": {
+    "id": "constraintbar.showall",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 64
+  },
+  "constraintbar.hideall": {
+    "id": "constraintbar.hideall",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 66
+  },
+  "dimconstraint": {
+    "id": "dimconstraint",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 68
+  },
+  "dcon": {
+    "id": "dimconstraint",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 68
+  },
+  "dclinear": {
+    "id": "dclinear",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 78
+  },
+  "dcdisplay": {
+    "id": "dcdisplay",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 81
+  },
+  "dcdisplay.showall": {
+    "id": "dcdisplay.showall",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 85
+  },
+  "dcdisplay.hideall": {
+    "id": "dcdisplay.hideall",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 87
+  },
+  "delconstraint": {
+    "id": "delconstraint",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 89
+  },
+  "parameters": {
+    "id": "parameters",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 93
+  },
+  "par": {
+    "id": "parameters",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 93
+  },
+  "parametersclose": {
+    "id": "parameters",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 93
+  },
+  "constraintsettings": {
+    "id": "constraintsettings",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 97
+  },
+  "csettings": {
+    "id": "constraintsettings",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 97
+  },
+  "constraintinfer": {
+    "id": "constraintinfer",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 101
+  },
+  "constraints.inspect": {
+    "id": "constraints.inspect",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 104
+  },
+  "constraints.dof": {
+    "id": "constraints.dof",
+    "path": "crates/engine/src/cmd/constraints.rs",
+    "line": 105
+  },
+  "line": {
+    "id": "line",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 16
+  },
+  "l": {
+    "id": "line",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 16
+  },
+  "pline": {
+    "id": "pline",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 21
+  },
+  "pl": {
+    "id": "pline",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 21
+  },
+  "circle": {
+    "id": "circle",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 26
+  },
+  "c": {
+    "id": "circle",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 26
+  },
+  "arc": {
+    "id": "arc",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 31
+  },
+  "a": {
+    "id": "arc",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 31
+  },
+  "rectang": {
+    "id": "rectang",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 36
+  },
+  "rec": {
+    "id": "rectang",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 36
+  },
+  "rectangle": {
+    "id": "rectang",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 36
+  },
+  "polygon": {
+    "id": "polygon",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 41
+  },
+  "pol": {
+    "id": "polygon",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 41
+  },
+  "ellipse": {
+    "id": "ellipse",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 46
+  },
+  "el": {
+    "id": "ellipse",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 46
+  },
+  "point": {
+    "id": "point",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 51
+  },
+  "po": {
+    "id": "point",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 51
+  },
+  "point.multiple": {
+    "id": "point.multiple",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 56
+  },
+  "xline": {
+    "id": "xline",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 60
+  },
+  "xl": {
+    "id": "xline",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 60
+  },
+  "ray": {
+    "id": "ray",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 65
+  },
+  "spline": {
+    "id": "spline",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 69
+  },
+  "spl": {
+    "id": "spline",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 69
+  },
+  "donut": {
+    "id": "donut",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 74
+  },
+  "do": {
+    "id": "donut",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 74
+  },
+  "doughnut": {
+    "id": "donut",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 74
+  },
+  "text": {
+    "id": "text",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 79
+  },
+  "dt": {
+    "id": "text",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 79
+  },
+  "dtext": {
+    "id": "text",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 79
+  },
+  "mtext": {
+    "id": "mtext",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 84
+  },
+  "t": {
+    "id": "mtext",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 84
+  },
+  "mt": {
+    "id": "mtext",
+    "path": "crates/engine/src/cmd/draw.rs",
+    "line": 84
+  },
+  "arc.sce": {
+    "id": "arc.sce",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 19
+  },
+  "arc.sca": {
+    "id": "arc.sca",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 23
+  },
+  "arc.scl": {
+    "id": "arc.scl",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 27
+  },
+  "arc.sea": {
+    "id": "arc.sea",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 31
+  },
+  "arc.sed": {
+    "id": "arc.sed",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 35
+  },
+  "arc.ser": {
+    "id": "arc.ser",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 39
+  },
+  "arc.cse": {
+    "id": "arc.cse",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 43
+  },
+  "arc.csa": {
+    "id": "arc.csa",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 47
+  },
+  "arc.csl": {
+    "id": "arc.csl",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 51
+  },
+  "arc.continue": {
+    "id": "arc.continue",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 55
+  },
+  "circle.cd": {
+    "id": "circle.cd",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 59
+  },
+  "circle.2p": {
+    "id": "circle.2p",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 63
+  },
+  "circle.3p": {
+    "id": "circle.3p",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 67
+  },
+  "circle.ttr": {
+    "id": "circle.ttr",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 71
+  },
+  "circle.ttt": {
+    "id": "circle.ttt",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 75
+  },
+  "ellipse.axis": {
+    "id": "ellipse.axis",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 79
+  },
+  "ellipse.arc": {
+    "id": "ellipse.arc",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 83
+  },
+  "divide": {
+    "id": "divide",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 87
+  },
+  "div": {
+    "id": "divide",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 87
+  },
+  "measure": {
+    "id": "measure",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 92
+  },
+  "me": {
+    "id": "measure",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 92
+  },
+  "revcloud": {
+    "id": "revcloud",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 97
+  },
+  "revcloud.polygonal": {
+    "id": "revcloud.polygonal",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 101
+  },
+  "revcloud.freehand": {
+    "id": "revcloud.freehand",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 105
+  },
+  "wipeout": {
+    "id": "wipeout",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 109
+  },
+  "3dpoly": {
+    "id": "3dpoly",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 113
+  },
+  "3p": {
+    "id": "3dpoly",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 113
+  },
+  "helix": {
+    "id": "helix",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 118
+  },
+  "spline.cv": {
+    "id": "spline.cv",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 122
+  },
+  "centermark": {
+    "id": "centermark",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 126
+  },
+  "centerline": {
+    "id": "centerline",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 130
+  },
+  "draworder": {
+    "id": "draworder",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 16
+  },
+  "dr": {
+    "id": "draworder",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 16
+  },
+  "draworder.front": {
+    "id": "draworder.front",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 20
+  },
+  "draworder.back": {
+    "id": "draworder.back",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 24
+  },
+  "draworder.above": {
+    "id": "draworder.above",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 28
+  },
+  "draworder.under": {
+    "id": "draworder.under",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 32
+  },
+  "texttofront": {
+    "id": "texttofront",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 36
+  },
+  "texttofront.text": {
+    "id": "texttofront.text",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 39
+  },
+  "texttofront.dimensions": {
+    "id": "texttofront.dimensions",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 42
+  },
+  "texttofront.leaders": {
+    "id": "texttofront.leaders",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 45
+  },
+  "texttofront.all": {
+    "id": "texttofront.all",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 48
+  },
+  "hatchtoback": {
+    "id": "hatchtoback",
+    "path": "crates/engine/src/cmd/draworder.rs",
+    "line": 51
+  },
+  "u": {
+    "id": "u",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 15
+  },
+  "undo": {
+    "id": "undo",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 16
+  },
+  "redo": {
+    "id": "redo",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 22
+  },
+  "mredo": {
+    "id": "mredo",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 23
+  },
+  "cutclip": {
+    "id": "cutclip",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 24
+  },
+  "copyclip": {
+    "id": "copyclip",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 29
+  },
+  "copybase": {
+    "id": "copybase",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 35
+  },
+  "pasteclip": {
+    "id": "pasteclip",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 41
+  },
+  "pasteblock": {
+    "id": "pasteblock",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 47
+  },
+  "pasteorig": {
+    "id": "pasteorig",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 53
+  },
+  "erase.selection": {
+    "id": "erase.selection",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 58
+  },
+  "selectall": {
+    "id": "selectall",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 59
+  },
+  "ai_selall": {
+    "id": "selectall",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 59
+  },
+  "ai_deselect": {
+    "id": "ai_deselect",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 60
+  },
+  "select": {
+    "id": "select",
+    "path": "crates/engine/src/cmd/edit.rs",
+    "line": 61
+  },
+  "import": {
+    "id": "import",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 34
+  },
+  "imp": {
+    "id": "import",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 34
+  },
+  "export": {
+    "id": "export",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 38
+  },
+  "exp": {
+    "id": "export",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 38
+  },
+  "preview": {
+    "id": "preview",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 43
+  },
+  "pre": {
+    "id": "preview",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 43
+  },
+  "publish": {
+    "id": "publish",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 48
+  },
+  "pdfbook": {
+    "id": "pdfbook",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 52
+  },
+  "printpdf": {
+    "id": "pdfbook",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 52
+  },
+  "pdfb": {
+    "id": "pdfbook",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 52
+  },
+  "attach": {
+    "id": "attach",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 57
+  },
+  "share": {
+    "id": "share",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 62
+  },
+  "3dorbit": {
+    "id": "3dorbit",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 67
+  },
+  "3do": {
+    "id": "3dorbit",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 67
+  },
+  "orbit": {
+    "id": "3dorbit",
+    "path": "crates/engine/src/cmd/exchange.rs",
+    "line": 67
+  },
+  "new": {
+    "id": "new",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 151
+  },
+  "qnew": {
+    "id": "new",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 151
+  },
+  "open": {
+    "id": "open",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 158
+  },
+  "close": {
+    "id": "close",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 164
+  },
+  "closeall": {
+    "id": "closeall",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 165
+  },
+  "qsave": {
+    "id": "qsave",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 166
+  },
+  "save": {
+    "id": "qsave",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 166
+  },
+  "saveas": {
+    "id": "saveas",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 167
+  },
+  "document.switch": {
+    "id": "document.switch",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 172
+  },
+  "document.bytes": {
+    "id": "document.bytes",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 173
+  },
+  "script": {
+    "id": "script",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 176
+  },
+  "scr": {
+    "id": "script",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 176
+  },
+  "grip.move": {
+    "id": "grip.move",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 14
+  },
+  "grip.stretch": {
+    "id": "grip.stretch",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 17
+  },
+  "grip.rotate": {
+    "id": "grip.rotate",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 20
+  },
+  "grip.scale": {
+    "id": "grip.scale",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 21
+  },
+  "grip.mirror": {
+    "id": "grip.mirror",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 22
+  },
+  "grip.option": {
+    "id": "grip.option",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 24
+  },
+  "grip": {
+    "id": "grip",
+    "path": "crates/engine/src/cmd/gripcmds.rs",
+    "line": 27
+  },
+  "group": {
+    "id": "group",
+    "path": "crates/engine/src/cmd/groups.rs",
+    "line": 27
+  },
+  "g": {
+    "id": "group",
+    "path": "crates/engine/src/cmd/groups.rs",
+    "line": 27
+  },
+  "ungroup": {
+    "id": "ungroup",
+    "path": "crates/engine/src/cmd/groups.rs",
+    "line": 32
+  },
+  "groupedit": {
+    "id": "groupedit",
+    "path": "crates/engine/src/cmd/groups.rs",
+    "line": 36
+  },
+  "groups.list": {
+    "id": "groups.list",
+    "path": "crates/engine/src/cmd/groups.rs",
+    "line": 39
+  },
+  "hatch": {
+    "id": "hatch",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 24
+  },
+  "h": {
+    "id": "hatch",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 24
+  },
+  "bh": {
+    "id": "hatch",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 24
+  },
+  "-hatch": {
+    "id": "hatch",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 24
+  },
+  "gradient": {
+    "id": "gradient",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 25
+  },
+  "gd": {
+    "id": "gradient",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 25
+  },
+  "boundary": {
+    "id": "boundary",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 26
+  },
+  "bo": {
+    "id": "boundary",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 26
+  },
+  "bpoly": {
+    "id": "boundary",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 26
+  },
+  "region": {
+    "id": "region",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 27
+  },
+  "reg": {
+    "id": "region",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 27
+  },
+  "hatchedit": {
+    "id": "hatchedit",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 28
+  },
+  "he": {
+    "id": "hatchedit",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 28
+  },
+  "-hatchedit": {
+    "id": "hatchedit",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 28
+  },
+  "hatchpick": {
+    "id": "hatchpick",
+    "path": "crates/engine/src/cmd/hatch.rs",
+    "line": 29
+  },
+  "dist": {
+    "id": "dist",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 15
+  },
+  "di": {
+    "id": "dist",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 15
+  },
+  "id": {
+    "id": "id",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 22
+  },
+  "list": {
+    "id": "list",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 28
+  },
+  "li": {
+    "id": "list",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 28
+  },
+  "ls": {
+    "id": "list",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 28
+  },
+  "area": {
+    "id": "area",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 34
+  },
+  "aa": {
+    "id": "area",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 34
+  },
+  "time": {
+    "id": "time",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 40
+  },
+  "status": {
+    "id": "status",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 41
+  },
+  "drawing.inspect": {
+    "id": "drawing.inspect",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 42
+  },
+  "entities": {
+    "id": "entities",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 43
+  },
+  "texts": {
+    "id": "texts",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 46
+  },
+  "countlist": {
+    "id": "countlist",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 49
+  },
+  "counttable": {
+    "id": "counttable",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 52
+  },
+  "count": {
+    "id": "count",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 55
+  },
+  "layer": {
+    "id": "layer",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 15
+  },
+  "la": {
+    "id": "layer",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 15
+  },
+  "layers": {
+    "id": "layer",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 15
+  },
+  "-layer": {
+    "id": "layer",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 15
+  },
+  "layer.new": {
+    "id": "layer.new",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 20
+  },
+  "layer.set": {
+    "id": "layer.set",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 21
+  },
+  "layer.current": {
+    "id": "layer.current",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 23
+  },
+  "clayer": {
+    "id": "layer.current",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 23
+  },
+  "layer.delete": {
+    "id": "layer.delete",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 27
+  },
+  "laymcur": {
+    "id": "laymcur",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 28
+  },
+  "laymch": {
+    "id": "laymch",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 29
+  },
+  "laycur": {
+    "id": "laycur",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 30
+  },
+  "layiso": {
+    "id": "layiso",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 34
+  },
+  "layuniso": {
+    "id": "layuniso",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 35
+  },
+  "layfrz": {
+    "id": "layfrz",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 36
+  },
+  "layoff": {
+    "id": "layoff",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 40
+  },
+  "laylck": {
+    "id": "laylck",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 44
+  },
+  "layulk": {
+    "id": "layulk",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 48
+  },
+  "layon": {
+    "id": "layon",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 52
+  },
+  "laythw": {
+    "id": "laythw",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 53
+  },
+  "layerp": {
+    "id": "layerp",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 54
+  },
+  "layerstate.save": {
+    "id": "layerstate.save",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 55
+  },
+  "layerstate.restore": {
+    "id": "layerstate.restore",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 56
+  },
+  "layerstate.list": {
+    "id": "layerstate.list",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 57
+  },
+  "layerstate.delete": {
+    "id": "layerstate.delete",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 58
+  },
+  "layerstate.rename": {
+    "id": "layerstate.rename",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 59
+  },
+  "laymrg": {
+    "id": "laymrg",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 60
+  },
+  "laydel": {
+    "id": "laydel",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 64
+  },
+  "layout": {
+    "id": "layout",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 22
+  },
+  "lo": {
+    "id": "layout",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 22
+  },
+  "layout.new": {
+    "id": "layout.new",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 26
+  },
+  "layout.delete": {
+    "id": "layout.delete",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 30
+  },
+  "layout.rename": {
+    "id": "layout.rename",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 31
+  },
+  "layout.copy": {
+    "id": "layout.copy",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 32
+  },
+  "layout.list": {
+    "id": "layout.list",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 33
+  },
+  "mview": {
+    "id": "mview",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 34
+  },
+  "mv": {
+    "id": "mview",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 34
+  },
+  "mview.polygonal": {
+    "id": "mview.polygonal",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 40
+  },
+  "vpclip": {
+    "id": "vpclip",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 44
+  },
+  "vports": {
+    "id": "vports",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 48
+  },
+  "vports.1": {
+    "id": "vports.1",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 52
+  },
+  "vports.2": {
+    "id": "vports.2",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 56
+  },
+  "vports.3": {
+    "id": "vports.3",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 60
+  },
+  "vports.4": {
+    "id": "vports.4",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 64
+  },
+  "viewport.set": {
+    "id": "viewport.set",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 68
+  },
+  "vplayer": {
+    "id": "vplayer",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 71
+  },
+  "pagesetup": {
+    "id": "pagesetup",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 74
+  },
+  "plot": {
+    "id": "plot",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 79
+  },
+  "print": {
+    "id": "plot",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 79
+  },
+  "exportpdf": {
+    "id": "exportpdf",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 85
+  },
+  "mspace": {
+    "id": "mspace",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 89
+  },
+  "ms": {
+    "id": "mspace",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 89
+  },
+  "pspace": {
+    "id": "pspace",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 93
+  },
+  "ps": {
+    "id": "pspace",
+    "path": "crates/engine/src/cmd/layout.rs",
+    "line": 93
+  },
+  "appload": {
+    "id": "appload",
+    "path": "crates/engine/src/cmd/lisp.rs",
+    "line": 12
+  },
+  "ap": {
+    "id": "appload",
+    "path": "crates/engine/src/cmd/lisp.rs",
+    "line": 12
+  },
+  "lisp": {
+    "id": "lisp",
+    "path": "crates/engine/src/cmd/lisp.rs",
+    "line": 18
+  },
+  "mleaderedit": {
+    "id": "mleaderedit",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 20
+  },
+  "mledit": {
+    "id": "mledit",
+    "path": "crates/engine/src/cmd/draw2/mline.rs",
+    "line": 29
+  },
+  "mleaderedit.add": {
+    "id": "mleaderedit.add",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 24
+  },
+  "mleaderedit.remove": {
+    "id": "mleaderedit.remove",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 28
+  },
+  "mleaderalign": {
+    "id": "mleaderalign",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 32
+  },
+  "mleadera": {
+    "id": "mleaderalign",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 32
+  },
+  "mleadercollect": {
+    "id": "mleadercollect",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 37
+  },
+  "mleaderc": {
+    "id": "mleadercollect",
+    "path": "crates/engine/src/cmd/mleader_edit.rs",
+    "line": 37
+  },
+  "erase": {
+    "id": "erase",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 19
+  },
+  "e": {
+    "id": "erase",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 19
+  },
+  "delete": {
+    "id": "erase",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 19
+  },
+  "move": {
+    "id": "move",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 24
+  },
+  "m": {
+    "id": "move",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 24
+  },
+  "copy": {
+    "id": "copy",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 29
+  },
+  "co": {
+    "id": "copy",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 29
+  },
+  "cp": {
+    "id": "copy",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 29
+  },
+  "rotate": {
+    "id": "rotate",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 34
+  },
+  "ro": {
+    "id": "rotate",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 34
+  },
+  "scale": {
+    "id": "scale",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 39
+  },
+  "sc": {
+    "id": "scale",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 39
+  },
+  "mirror": {
+    "id": "mirror",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 44
+  },
+  "mi": {
+    "id": "mirror",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 44
+  },
+  "stretch": {
+    "id": "stretch",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 49
+  },
+  "s": {
+    "id": "stretch",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 49
+  },
+  "offset": {
+    "id": "offset",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 54
+  },
+  "o": {
+    "id": "offset",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 54
+  },
+  "trim": {
+    "id": "trim",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 59
+  },
+  "tr": {
+    "id": "trim",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 59
+  },
+  "extend": {
+    "id": "extend",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 66
+  },
+  "ex": {
+    "id": "extend",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 66
+  },
+  "fillet": {
+    "id": "fillet",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 71
+  },
+  "f": {
+    "id": "fillet",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 71
+  },
+  "chamfer": {
+    "id": "chamfer",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 76
+  },
+  "cha": {
+    "id": "chamfer",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 76
+  },
+  "explode": {
+    "id": "explode",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 81
+  },
+  "x": {
+    "id": "explode",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 81
+  },
+  "break": {
+    "id": "break",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 86
+  },
+  "br": {
+    "id": "break",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 86
+  },
+  "breakatpoint": {
+    "id": "breakatpoint",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 91
+  },
+  "join": {
+    "id": "join",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 92
+  },
+  "j": {
+    "id": "join",
+    "path": "crates/engine/src/cmd/modify.rs",
+    "line": 92
+  },
+  "pedit": {
+    "id": "pedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 24
+  },
+  "pe": {
+    "id": "pedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 24
+  },
+  "splinedit": {
+    "id": "splinedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 33
+  },
+  "spe": {
+    "id": "splinedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 33
+  },
+  "lengthen": {
+    "id": "lengthen",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 42
+  },
+  "len": {
+    "id": "lengthen",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 42
+  },
+  "align": {
+    "id": "align",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 47
+  },
+  "al": {
+    "id": "align",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 47
+  },
+  "blend": {
+    "id": "blend",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 52
+  },
+  "blendcurves": {
+    "id": "blend",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 52
+  },
+  "reverse": {
+    "id": "reverse",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 57
+  },
+  "ncopy": {
+    "id": "ncopy",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 60
+  },
+  "chspace": {
+    "id": "chspace",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 64
+  },
+  "flatten": {
+    "id": "flatten",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 68
+  },
+  "arraypath": {
+    "id": "arraypath",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 72
+  },
+  "textedit": {
+    "id": "textedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 76
+  },
+  "ed": {
+    "id": "textedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 76
+  },
+  "ddedit": {
+    "id": "textedit",
+    "path": "crates/engine/src/cmd/modify2.rs",
+    "line": 76
+  },
+  "options": {
+    "id": "options",
+    "path": "crates/engine/src/cmd/options.rs",
+    "line": 61
+  },
+  "op": {
+    "id": "options",
+    "path": "crates/engine/src/cmd/options.rs",
+    "line": 61
+  },
+  "preferences": {
+    "id": "options",
+    "path": "crates/engine/src/cmd/options.rs",
+    "line": 61
+  },
+  "overkill": {
+    "id": "overkill",
+    "path": "crates/engine/src/cmd/overkill.rs",
+    "line": 21
+  },
+  "-overkill": {
+    "id": "overkill",
+    "path": "crates/engine/src/cmd/overkill.rs",
+    "line": 21
+  },
+  "plotwindow": {
+    "id": "plotwindow",
+    "path": "crates/engine/src/cmd/plotters.rs",
+    "line": 402
+  },
+  "plottermanager": {
+    "id": "plottermanager",
+    "path": "crates/engine/src/cmd/plotters.rs",
+    "line": 407
+  },
+  "-plottermanager": {
+    "id": "-plottermanager",
+    "path": "crates/engine/src/cmd/plotters.rs",
+    "line": 415
+  },
+  "properties": {
+    "id": "properties",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 18
+  },
+  "pr": {
+    "id": "properties",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 18
+  },
+  "props": {
+    "id": "properties",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 18
+  },
+  "ch": {
+    "id": "properties",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 18
+  },
+  "properties.set": {
+    "id": "properties.set",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 19
+  },
+  "matchprop": {
+    "id": "matchprop",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 20
+  },
+  "ma": {
+    "id": "matchprop",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 20
+  },
+  "painter": {
+    "id": "matchprop",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 20
+  },
+  "color": {
+    "id": "color",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 25
+  },
+  "col": {
+    "id": "color",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 25
+  },
+  "colour": {
+    "id": "color",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 25
+  },
+  "linetype": {
+    "id": "linetype",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 26
+  },
+  "lt": {
+    "id": "linetype",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 26
+  },
+  "ltype": {
+    "id": "linetype",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 26
+  },
+  "hatch.patterns": {
+    "id": "hatch.patterns",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 27
+  },
+  "-linetype": {
+    "id": "-linetype",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 31
+  },
+  "lweight": {
+    "id": "lweight",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 32
+  },
+  "lw": {
+    "id": "lweight",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 32
+  },
+  "lineweight": {
+    "id": "lweight",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 32
+  },
+  "ltscale": {
+    "id": "ltscale",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 33
+  },
+  "lts": {
+    "id": "ltscale",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 33
+  },
+  "units": {
+    "id": "units",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 34
+  },
+  "un": {
+    "id": "units",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 34
+  },
+  "limits": {
+    "id": "limits",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 35
+  },
+  "style": {
+    "id": "style",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 36
+  },
+  "st": {
+    "id": "style",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 36
+  },
+  "style.list": {
+    "id": "style.list",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 40
+  },
+  "style.rename": {
+    "id": "style.rename",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 41
+  },
+  "style.delete": {
+    "id": "style.delete",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 42
+  },
+  "style.current": {
+    "id": "style.current",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 43
+  },
+  "dimstyle": {
+    "id": "dimstyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 44
+  },
+  "d": {
+    "id": "dimstyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 44
+  },
+  "dst": {
+    "id": "dimstyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 44
+  },
+  "ddim": {
+    "id": "dimstyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 44
+  },
+  "dimstyle.dimension": {
+    "id": "dimstyle.dimension",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 48
+  },
+  "dimstyle.list": {
+    "id": "dimstyle.list",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 49
+  },
+  "dimstyle.rename": {
+    "id": "dimstyle.rename",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 50
+  },
+  "dimstyle.delete": {
+    "id": "dimstyle.delete",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 51
+  },
+  "dimstyle.current": {
+    "id": "dimstyle.current",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 52
+  },
+  "dimstyle.override": {
+    "id": "dimstyle.override",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 53
+  },
+  "tablestyle": {
+    "id": "tablestyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 55
+  },
+  "ts": {
+    "id": "tablestyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 55
+  },
+  "mleaderstyle": {
+    "id": "mleaderstyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 59
+  },
+  "mls": {
+    "id": "mleaderstyle",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 59
+  },
+  "ddptype": {
+    "id": "ddptype",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 63
+  },
+  "ptype": {
+    "id": "ddptype",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 63
+  },
+  "rename": {
+    "id": "rename",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 67
+  },
+  "ren": {
+    "id": "rename",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 67
+  },
+  "-rename": {
+    "id": "rename",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 67
+  },
+  "qselect": {
+    "id": "qselect",
+    "path": "crates/engine/src/cmd/qselect.rs",
+    "line": 13
+  },
+  "qs": {
+    "id": "qselect",
+    "path": "crates/engine/src/cmd/qselect.rs",
+    "line": 13
+  },
+  "qselect.info": {
+    "id": "qselect.info",
+    "path": "crates/engine/src/cmd/qselect.rs",
+    "line": 21
+  },
+  "selectsimilar": {
+    "id": "selectsimilar",
+    "path": "crates/engine/src/cmd/selecttools.rs",
+    "line": 20
+  },
+  "isolateobjects": {
+    "id": "isolateobjects",
+    "path": "crates/engine/src/cmd/selecttools.rs",
+    "line": 28
+  },
+  "hideobjects": {
+    "id": "hideobjects",
+    "path": "crates/engine/src/cmd/selecttools.rs",
+    "line": 32
+  },
+  "unisolateobjects": {
+    "id": "unisolateobjects",
+    "path": "crates/engine/src/cmd/selecttools.rs",
+    "line": 36
+  },
+  "ortho": {
+    "id": "ortho",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 20
+  },
+  "grid": {
+    "id": "grid",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 26
+  },
+  "snap": {
+    "id": "snap",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 32
+  },
+  "polar": {
+    "id": "polar",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 38
+  },
+  "otrack": {
+    "id": "otrack",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 44
+  },
+  "dynmode": {
+    "id": "dynmode",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 50
+  },
+  "lwdisplay": {
+    "id": "lwdisplay",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 56
+  },
+  "isodraft": {
+    "id": "isodraft",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 61
+  },
+  "isoplane": {
+    "id": "isoplane",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 67
+  },
+  "transparencydisplay": {
+    "id": "transparencydisplay",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 74
+  },
+  "qpmode": {
+    "id": "qpmode",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 78
+  },
+  "selectioncycling": {
+    "id": "selectioncycling",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 83
+  },
+  "osnap": {
+    "id": "osnap",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 87
+  },
+  "os": {
+    "id": "osnap",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 87
+  },
+  "ddosnap": {
+    "id": "osnap",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 87
+  },
+  "dsettings": {
+    "id": "dsettings",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 94
+  },
+  "ds": {
+    "id": "dsettings",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 94
+  },
+  "se": {
+    "id": "dsettings",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 94
+  },
+  "setvar": {
+    "id": "setvar",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 99
+  },
+  "set": {
+    "id": "setvar",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 99
+  },
+  "getvar": {
+    "id": "getvar",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 105
+  },
+  "sysvars": {
+    "id": "sysvars",
+    "path": "crates/engine/src/cmd/settings.rs",
+    "line": 106
+  },
+  "table": {
+    "id": "table",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 24
+  },
+  "tb": {
+    "id": "table",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 24
+  },
+  "table.set": {
+    "id": "table.set",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 29
+  },
+  "table.insertrow": {
+    "id": "table.insertrow",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 31
+  },
+  "table.deleterow": {
+    "id": "table.deleterow",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 32
+  },
+  "table.insertcol": {
+    "id": "table.insertcol",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 33
+  },
+  "table.deletecol": {
+    "id": "table.deletecol",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 34
+  },
+  "table.merge": {
+    "id": "table.merge",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 35
+  },
+  "table.unmerge": {
+    "id": "table.unmerge",
+    "path": "crates/engine/src/cmd/table.rs",
+    "line": 36
+  },
+  "tolerance": {
+    "id": "tolerance",
+    "path": "crates/engine/src/cmd/tolerance.rs",
+    "line": 13
+  },
+  "tol": {
+    "id": "tolerance",
+    "path": "crates/engine/src/cmd/tolerance.rs",
+    "line": 13
+  },
+  "cal": {
+    "id": "cal",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 12
+  },
+  "quickcalc": {
+    "id": "cal",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 12
+  },
+  "qc": {
+    "id": "cal",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 12
+  },
+  "quickcalc.pick": {
+    "id": "quickcalc.pick",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 24
+  },
+  "find": {
+    "id": "find",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 28
+  },
+  "measuregeom": {
+    "id": "measuregeom",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 29
+  },
+  "radius.measure": {
+    "id": "radius.measure",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 30
+  },
+  "angle.measure": {
+    "id": "angle.measure",
+    "path": "crates/engine/src/cmd/utility.rs",
+    "line": 31
+  },
+  "zoom": {
+    "id": "zoom",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 19
+  },
+  "z": {
+    "id": "zoom",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 19
+  },
+  "zoom.realtime": {
+    "id": "zoom.realtime",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 25
+  },
+  "zoom.dynamic": {
+    "id": "zoom.dynamic",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 31
+  },
+  "zoom.previous": {
+    "id": "zoom.previous",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 37
+  },
+  "zoom.window": {
+    "id": "zoom.window",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 41
+  },
+  "zoom.in": {
+    "id": "zoom.in",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 47
+  },
+  "zoom.out": {
+    "id": "zoom.out",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 48
+  },
+  "zoom.all": {
+    "id": "zoom.all",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 49
+  },
+  "zoom.extents": {
+    "id": "zoom.extents",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 50
+  },
+  "zoom.object": {
+    "id": "zoom.object",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 54
+  },
+  "pan": {
+    "id": "pan",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 62
+  },
+  "p": {
+    "id": "pan",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 62
+  },
+  "pan.left": {
+    "id": "pan.left",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 69
+  },
+  "pan.right": {
+    "id": "pan.right",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 70
+  },
+  "pan.up": {
+    "id": "pan.up",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 71
+  },
+  "pan.down": {
+    "id": "pan.down",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 72
+  },
+  "regen": {
+    "id": "regen",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 73
+  },
+  "re": {
+    "id": "regen",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 73
+  },
+  "regenall": {
+    "id": "regenall",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 82
+  },
+  "rea": {
+    "id": "regenall",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 82
+  },
+  "redraw": {
+    "id": "redraw",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 89
+  },
+  "r": {
+    "id": "redraw",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 89
+  },
+  "view.set": {
+    "id": "view.set",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 97
+  },
+  "view.get": {
+    "id": "view.get",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 98
+  },
+  "layout.set": {
+    "id": "layout.set",
+    "path": "crates/engine/src/cmd/view.rs",
+    "line": 103
+  },
+  "arrayedit": {
+    "id": "arrayedit",
+    "path": "crates/engine/src/cmd/array/edit.rs",
+    "line": 25
+  },
+  "arrayclose": {
+    "id": "arrayclose",
+    "path": "crates/engine/src/cmd/array/edit.rs",
+    "line": 31
+  },
+  "attedit": {
+    "id": "attedit",
+    "path": "crates/engine/src/cmd/blocks/attedit.rs",
+    "line": 19
+  },
+  "ate": {
+    "id": "attedit",
+    "path": "crates/engine/src/cmd/blocks/attedit.rs",
+    "line": 19
+  },
+  "eattedit": {
+    "id": "attedit",
+    "path": "crates/engine/src/cmd/blocks/attedit.rs",
+    "line": 19
+  },
+  "-attedit": {
+    "id": "-attedit",
+    "path": "crates/engine/src/cmd/blocks/attedit.rs",
+    "line": 27
+  },
+  "-ate": {
+    "id": "-attedit",
+    "path": "crates/engine/src/cmd/blocks/attedit.rs",
+    "line": 27
+  },
+  "atte": {
+    "id": "-attedit",
+    "path": "crates/engine/src/cmd/blocks/attedit.rs",
+    "line": 27
+  },
+  "attdisp": {
+    "id": "attdisp",
+    "path": "crates/engine/src/cmd/blocks/attribs.rs",
+    "line": 16
+  },
+  "attsync": {
+    "id": "attsync",
+    "path": "crates/engine/src/cmd/blocks/attribs.rs",
+    "line": 22
+  },
+  "battman": {
+    "id": "battman",
+    "path": "crates/engine/src/cmd/blocks/battman.rs",
+    "line": 16
+  },
+  "bedit": {
+    "id": "bedit",
+    "path": "crates/engine/src/cmd/blocks/bedit.rs",
+    "line": 16
+  },
+  "be": {
+    "id": "bedit",
+    "path": "crates/engine/src/cmd/blocks/bedit.rs",
+    "line": 16
+  },
+  "-bedit": {
+    "id": "bedit",
+    "path": "crates/engine/src/cmd/blocks/bedit.rs",
+    "line": 16
+  },
+  "bsave": {
+    "id": "bsave",
+    "path": "crates/engine/src/cmd/blocks/bedit.rs",
+    "line": 23
+  },
+  "bsaveas": {
+    "id": "bsaveas",
+    "path": "crates/engine/src/cmd/blocks/bedit.rs",
+    "line": 24
+  },
+  "bclose": {
+    "id": "bclose",
+    "path": "crates/engine/src/cmd/blocks/bedit.rs",
+    "line": 29
+  },
+  "dataextraction": {
+    "id": "dataextraction",
+    "path": "crates/engine/src/cmd/blocks/extract.rs",
+    "line": 26
+  },
+  "dx": {
+    "id": "dataextraction",
+    "path": "crates/engine/src/cmd/blocks/extract.rs",
+    "line": 26
+  },
+  "eattext": {
+    "id": "eattext",
+    "path": "crates/engine/src/cmd/blocks/extract.rs",
+    "line": 35
+  },
+  "refedit": {
+    "id": "refedit",
+    "path": "crates/engine/src/cmd/blocks/refedit.rs",
+    "line": 35
+  },
+  "refset": {
+    "id": "refset",
+    "path": "crates/engine/src/cmd/blocks/refedit.rs",
+    "line": 40
+  },
+  "refclose": {
+    "id": "refclose",
+    "path": "crates/engine/src/cmd/blocks/refedit.rs",
+    "line": 45
+  },
+  "xattach": {
+    "id": "xattach",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 25
+  },
+  "xa": {
+    "id": "xattach",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 25
+  },
+  "xref": {
+    "id": "xref",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 30
+  },
+  "xr": {
+    "id": "xref",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 30
+  },
+  "externalreferences": {
+    "id": "xref",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 30
+  },
+  "-xref": {
+    "id": "-xref",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 35
+  },
+  "-xr": {
+    "id": "-xref",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 35
+  },
+  "xbind": {
+    "id": "xbind",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 39
+  },
+  "-xbind": {
+    "id": "xbind",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 39
+  },
+  "xb": {
+    "id": "xbind",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 39
+  },
+  "-xb": {
+    "id": "xbind",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 39
+  },
+  "xopen": {
+    "id": "xopen",
+    "path": "crates/engine/src/cmd/blocks/xref.rs",
+    "line": 44
+  },
+  "mline": {
+    "id": "mline",
+    "path": "crates/engine/src/cmd/draw2/mline.rs",
+    "line": 19
+  },
+  "ml": {
+    "id": "mline",
+    "path": "crates/engine/src/cmd/draw2/mline.rs",
+    "line": 19
+  },
+  "mlstyle": {
+    "id": "mlstyle",
+    "path": "crates/engine/src/cmd/draw2/mline.rs",
+    "line": 24
+  },
+  "-mledit": {
+    "id": "mledit",
+    "path": "crates/engine/src/cmd/draw2/mline.rs",
+    "line": 29
+  },
+  "compare": {
+    "id": "compare",
+    "path": "crates/engine/src/cmd/file/compare.rs",
+    "line": 63
+  },
+  "compare.next": {
+    "id": "compare.next",
+    "path": "crates/engine/src/cmd/file/compare.rs",
+    "line": 71
+  },
+  "compare.previous": {
+    "id": "compare.previous",
+    "path": "crates/engine/src/cmd/file/compare.rs",
+    "line": 72
+  },
+  "compareclose": {
+    "id": "compareclose",
+    "path": "crates/engine/src/cmd/file/compare.rs",
+    "line": 73
+  },
+  "aliasedit": {
+    "id": "aliasedit",
+    "path": "crates/engine/src/cmd/file/pgp.rs",
+    "line": 195
+  },
+  "reinit": {
+    "id": "reinit",
+    "path": "crates/engine/src/cmd/file/pgp.rs",
+    "line": 199
+  },
+  "-group": {
+    "id": "-group",
+    "path": "crates/engine/src/cmd/groups/dash.rs",
+    "line": 16
+  },
+  "-g": {
+    "id": "-group",
+    "path": "crates/engine/src/cmd/groups/dash.rs",
+    "line": 16
+  },
+  "pickstyle": {
+    "id": "pickstyle",
+    "path": "crates/engine/src/cmd/groups/pick.rs",
+    "line": 15
+  },
+  "union": {
+    "id": "union",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 19
+  },
+  "uni": {
+    "id": "union",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 19
+  },
+  "subtract": {
+    "id": "subtract",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 24
+  },
+  "su": {
+    "id": "subtract",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 24
+  },
+  "intersect": {
+    "id": "intersect",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 29
+  },
+  "in": {
+    "id": "intersect",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 29
+  },
+  "massprop": {
+    "id": "massprop",
+    "path": "crates/engine/src/cmd/inquiry/regions.rs",
+    "line": 34
+  },
+  "plotstyle": {
+    "id": "plotstyle",
+    "path": "crates/engine/src/cmd/layout/plotstyle.rs",
+    "line": 15
+  },
+  "stylesmanager": {
+    "id": "stylesmanager",
+    "path": "crates/engine/src/cmd/layout/plotstyle.rs",
+    "line": 20
+  },
+  "table.break": {
+    "id": "table.break",
+    "path": "crates/engine/src/cmd/table/breaks.rs",
+    "line": 19
+  },
+  "datalink": {
+    "id": "datalink",
+    "path": "crates/engine/src/cmd/table/breaks.rs",
+    "line": 25
+  },
+  "datalinkupdate": {
+    "id": "datalinkupdate",
+    "path": "crates/engine/src/cmd/table/breaks.rs",
+    "line": 28
+  },
+  "tablestyle.cellstyle": {
+    "id": "tablestyle.cellstyle",
+    "path": "crates/engine/src/cmd/table/cells.rs",
+    "line": 20
+  },
+  "table.cellstyle": {
+    "id": "table.cellstyle",
+    "path": "crates/engine/src/cmd/table/cells.rs",
+    "line": 23
+  },
+  "table.formula": {
+    "id": "table.formula",
+    "path": "crates/engine/src/cmd/table/cells.rs",
+    "line": 25
+  },
+  "table.recalc": {
+    "id": "table.recalc",
+    "path": "crates/engine/src/cmd/table/cells.rs",
+    "line": 28
+  },
+  "tabledit": {
+    "id": "tabledit",
+    "path": "crates/engine/src/cmd/table/cells.rs",
+    "line": 29
+  },
+  "tableexport": {
+    "id": "tableexport",
+    "path": "crates/engine/src/cmd/table/cells.rs",
+    "line": 32
+  },
+  "view": {
+    "id": "view",
+    "path": "crates/engine/src/cmd/view/named_views.rs",
+    "line": 21
+  },
+  "v": {
+    "id": "view",
+    "path": "crates/engine/src/cmd/view/named_views.rs",
+    "line": 21
+  },
+  "-vports": {
+    "id": "-vports",
+    "path": "crates/engine/src/cmd/view/vports.rs",
+    "line": 33
+  },
+  "vports.activate": {
+    "id": "vports.activate",
+    "path": "crates/engine/src/cmd/view/vports.rs",
+    "line": 38
+  },
+  "chprop": {
+    "id": "properties.set",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 19,
+    "semantic_note": "Equivalente API properties.set; nombre/prompts originales no acreditados"
+  },
+  "change": {
+    "id": "properties.set",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 19,
+    "semantic_note": "Equivalente API properties.set; nombre/prompts originales no acreditados"
+  },
+  "laymatch": {
+    "id": "laymch",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 29,
+    "semantic_note": "Equivalente API laymch; nombre/prompts originales no acreditados"
+  },
+  "layerstate": {
+    "id": "layerstate.list",
+    "path": "crates/engine/src/cmd/layer.rs",
+    "line": 57,
+    "semantic_note": "Equivalente API layerstate.list; nombre/prompts originales no acreditados"
+  },
+  "dimcenter": {
+    "id": "centermark",
+    "path": "crates/engine/src/cmd/draw2.rs",
+    "line": 126,
+    "semantic_note": "Equivalente API centermark; nombre/prompts originales no acreditados"
+  },
+  "dimreassoc": {
+    "id": "dimreassociate",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 85,
+    "semantic_note": "Equivalente API dimreassociate; nombre/prompts originales no acreditados"
+  },
+  "dimupdate": {
+    "id": "dimstyle.update",
+    "path": "crates/engine/src/cmd/annotate.rs",
+    "line": 76,
+    "semantic_note": "Equivalente API dimstyle.update; nombre/prompts originales no acreditados"
+  },
+  "textstyle": {
+    "id": "style",
+    "path": "crates/engine/src/cmd/props.rs",
+    "line": 36,
+    "semantic_note": "Equivalente API style; nombre/prompts originales no acreditados"
+  },
+  "bcount": {
+    "id": "count",
+    "path": "crates/engine/src/cmd/inquiry.rs",
+    "line": 55,
+    "semantic_note": "Equivalente API count; nombre/prompts originales no acreditados"
+  },
+  "dxfout/dxfin": {
+    "id": "document.bytes",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 173,
+    "semantic_note": "Equivalente API document.bytes; nombre/prompts originales no acreditados"
+  },
+  "run / script": {
+    "id": "script",
+    "path": "crates/engine/src/cmd/file.rs",
+    "line": 176,
+    "semantic_note": "Equivalente API script; nombre/prompts originales no acreditados"
+  }
+}

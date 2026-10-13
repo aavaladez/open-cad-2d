@@ -1,0 +1,445 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.4.3
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+   Compiling cadcraft-geom v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\geom)
+   Compiling cadcraft-doc v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\doc)
+   Compiling cadcraft-io v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\io)
+   Compiling cadcraft-engine v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\engine)
+   Compiling cadcraft-mcp v0.6.2 (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\source\crates\mcp)
+    Finished `test` profile [optimized + debuginfo] target(s) in 3m 12s
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_doc-5223115968809c3a.exe)
+
+running 55 tests
+test array::tests::hostile_params_are_invalid ... ok
+test array::tests::rect_items_go_column_row_level ... ok
+test array::tests::polar_rows_go_outwards ... ok
+test gdt::tests::parses_symbols_compartments_and_lines ... ok
+test gdt::tests::compose_then_parse ... ok
+test gdt::tests::layout_boxes_each_compartment ... ok
+test extents::tests::right_justified_attdef_is_left_of_alignment_point ... ok
+test extents::tests::right_justified_text_is_left_of_alignment_point ... ok
+test extents::tests::centered_and_top_left_text_follow_placement ... ok
+test extents::tests::multileader_text_is_inside_its_bounds ... ok
+test plotstyle::tests::colour_transforms ... ok
+test library::tests::metric_drawings_draw_iso_scaled_patterns ... ok
+test plotstyle::tests::drawing_tables_shadow_builtins ... ok
+test plotstyle::tests::builtins_are_complete_color_dependent_tables ... ok
+test plotstyle::tests::named_builtins_and_sanitizing ... ok
+test store::tests::draw_order_moves ... ok
+test plotter::tests::round_trip_and_hostile_values ... ok
+test plotstyle::tests::json_round_trip_with_defaults ... ok
+test store::tests::move_next_to_and_sort ... ok
+test store::tests::snapshots_are_independent ... ok
+test tables::cellstyle::tests::hostile_values_are_sanitized ... ok
+test gdt::tests::hostile_strings_do_not_panic ... ok
+test tables::cellstyle::tests::implied_styles_follow_the_table_style ... ok
+test tables::cellstyle::tests::numbers_format ... ok
+test tables::cellstyle::tests::storing_an_implied_style_keeps_the_style_plain ... ok
+test tables::tablebreak::tests::breaks_repeat_labels_and_go_right ... ok
+test tables::tablebreak::tests::down_without_repeats_and_manual_heights ... ok
+test tables::tablebreak::tests::unbroken_is_one_part ... ok
+test tests::add_and_extents ... ok
+test tests::attdef_in_block_is_ignored_in_insert_extents ... ok
+test tests::entity_serde_roundtrip ... ok
+test tests::block_entity_on_layer_zero_counts_even_if_layer_zero_is_off_or_missing ... ok
+test tests::block_entity_on_off_or_frozen_layer_is_ignored ... ok
+test tests::block_entity_on_undefined_layer_counts ... ok
+test tests::blank_text_and_mtext_have_no_bounds ... ok
+test tests::block_entity_with_invisible_flag_is_ignored_in_insert_extents ... ok
+test tests::hidden_layers_excluded_from_extents ... ok
+test tests::insert_bounds_with_cyclic_block_terminate ... ok
+test tests::inserts_of_missing_or_empty_blocks_do_not_stretch_extents ... ok
+test tests::new_drawing_has_standard_tables ... ok
+test tests::non_blank_text_and_mtext_have_bounds ... ok
+test tests::paper_space_entities ... ok
+test tests::invisible_dimblock_entity_is_ignored_in_dimension_extents ... ok
+test tests::space_names_its_tab ... ok
+test tests::rays_and_xlines_do_not_stretch_extents ... ok
+test tests::transform_arc_mirror_keeps_shape ... ok
+test tables::tablebreak::tests::hostile_break_settings ... ok
+test tests::visible_attributes_of_a_missing_block_still_count ... ok
+test tests::deep_block_visit_does_not_hide_a_shallow_reference ... ok
+test tests::wide_polyline_extents_follow_the_band ... ok
+test plotstyle::tests::file_format_round_trip ... ok
+test store::tests::push_get_remove ... ok
+test store::tests::move_next_to_splits_big_chunks ... ok
+test tests::wide_arc_segment_extents_reach_the_outer_edge ... ok
+test dynblock::tests::hostile_counts_with_missing_groups_stay_linear ... ok
+
+test result: ok. 55 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\lin_pat_parse.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\lin_pat_parse-84bf40f8d2b539a6.exe)
+
+running 8 tests
+test hatch_patterns_are_read ... ok
+test simple_and_text_linetypes_are_read ... ok
+test broken_linetypes_are_skipped_with_warnings ... ok
+test broken_patterns_are_skipped_with_warnings ... ok
+test text_rotation_units_and_absolute_angles ... ok
+test lowercase_pattern_names_are_upper_cased ... ok
+test hostile_linetype_files_never_panic_and_stay_capped ... ok
+test hostile_pattern_files_never_panic_and_stay_capped ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\sub_segment_alias.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\sub_segment_alias-16b73c5005f5e55e.exe)
+
+running 1 test
+test short_segment_name_matches_the_documented_forms ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\lib.rs (C:\Users\Equipo 1\Documents\ChatGPT\OPENCAD\.cache\cadcraft-audit\target\debug\deps\cadcraft_engine-3360e1ec8b4164a4.exe)
+
+running 295 tests
+test cmd::annotate::tests::dimspace_prompts_for_its_inputs ... ok
+test cmd::annotate::tests::dimassoc_zero_makes_plain_dimensions ... ok
+test cmd::annotate::tests::dimstyle_rename_updates_block_dimensions ... ok
+test cmd::annotate::tests::erase_disassociate_and_reassociate ... ok
+test cmd::annotate::tests::dimension_override_text_with_variables ... ok
+test cmd::annotate::tests::interactive_dimlinear_select_object_is_associative ... ok
+test cmd::annotate::tests::interactive_angular_picks_circle ... ok
+test cmd::annotate::tests::linear_dimension_follows_line_endpoint ... ok
+test cmd::annotate::tests::linetype_rename_updates_references ... ok
+test cmd::annotate::tests::moving_the_line_keeps_a_free_continued_origin ... ok
+test cmd::annotate::tests::angular_between_lines_follows_rotation ... ok
+test cmd::annotate::tests::moving_the_object_carries_the_dimension ... ok
+test cmd::annotate::tests::mtext_rejects_nonpositive_height ... ok
+test cmd::annotate::tests::moving_the_object_keeps_the_ordinate_datum ... ok
+test cmd::annotate::tests::interactive_angular_picks_polyline_segments ... ok
+test cmd::annotate::tests::dimstyle_commands ... ok
+test cmd::annotate::tests::dimtedit_and_dimspace ... ok
+test cmd::annotate::tests::table_interactive ... ok
+test cmd::array::tests::polar_angles ... ok
+test cmd::annotate::tests::dimension_overrides ... ok
+test cmd::blocks::attribs::tests::attdisp_keywords_map_to_attmode ... ok
+test cmd::blocks::attedit::tests::replacement_is_bounded_and_specs_take_lists ... ok
+test cmd::blocks::extract::tests::csv_quotes_separators_quotes_and_line_breaks ... ok
+test cmd::annotate::tests::hostile_annotation_params_never_panic ... ok
+test cmd::annotate::tests::radius_and_diameter_follow_circle ... ok
+test cmd::blocks::insert_file::tests::file_names_become_block_names ... ok
+test cmd::blocks::xref::bind::tests::bound_names ... ok
+test cmd::blocks::xref::load::tests::paths_resolve_against_the_host_folder_then_by_name ... ok
+test cmd::blocks::xref::load::tests::prefixes_ignore_case ... ok
+test cmd::annotate::tests::table_create_edit_merge ... ok
+test cmd::annotate::tests::text_style_rename_follows_block_definition_text ... ok
+test cmd::curves::tests::arc_builders ... ok
+test cmd::curves::tests::reverse_polyline_vertices ... ok
+test cmd::curves::tests::tangent_circles ... ok
+test cmd::constraints::tests::bars_settings_and_autoconstrain_json ... ok
+test cmd::curves::tests::spline_split_and_reverse ... ok
+test cmd::constraints::tests::edits_are_resolved_and_erase_purges ... ok
+test cmd::draw2::tests::arc_continue_from_last_line ... ok
+test cmd::constraints::tests::delconstraint_rejects_referenced_dimension ... ok
+test cmd::draw2::tests::arc_variants_json ... ok
+test cmd::annotate::tests::setvar_dim_variables_apply_to_new_dimensions ... ok
+test cmd::draw2::tests::circle_ttr_json_and_command_line ... ok
+test cmd::draw2::tests::ellipse_arc_typed_angles_are_true_angles ... ok
+test cmd::draw2::tests::circle_variants_json_and_command_line ... ok
+test cmd::draw2::tests::divide_and_measure_command_line ... ok
+test cmd::draw2::tests::divide_and_measure_json ... ok
+test cmd::constraints::tests::interactive_prompts ... ok
+test cmd::draw2::tests::arc_variants_command_line ... ok
+test cmd::draw2::tests::circle_ttt_json_and_command_line ... ok
+test cmd::draw2::tests::poly3d_json_and_command_line ... ok
+test cmd::draw2::tests::centermark_and_centerline ... ok
+test cmd::draw2::tests::ellipse_axis_and_arc ... ok
+test cmd::constraints::tests::auto_types_spellings_are_stored_canonically ... ok
+test cmd::draw2::tests::arc_command_options ... ok
+test cmd::draw2::tests::mline_json_and_command_line ... ok
+test cmd::draw2::tests::rectang_options_json ... ok
+test cmd::draw2::tests::revcloud_command_line ... ok
+test cmd::draw2::tests::rectang_options_command_line ... ok
+test cmd::exchange::tests::attach_share_and_orbit_say_they_are_not_available_yet ... ok
+test cmd::draw2::tests::helix_json_and_command_line ... ok
+test cmd::draw2::tests::xline_options_json ... ok
+test cmd::draw2::tests::wipeout_json_and_command_line ... ok
+test cmd::draw2::tests::xline_options_command_line ... ok
+test cmd::draw2::tests::spline_cv_json_and_command_line ... ok
+test cmd::file::pr193_tests::failed_store_keeps_unsaved_changes_and_delivered_save_clears_them ... ok
+test cmd::exchange::tests::import_brings_objects_with_their_layers_and_blocks ... ok
+test cmd::draw2::tests::new_draw_commands_survive_garbage_input ... ok
+test cmd::file::tests::closing_later_inactive_drawing_keeps_active_drawing ... ok
+test cmd::file::tests::closing_earlier_inactive_drawing_keeps_active_drawing ... ok
+test cmd::exchange::tests::preview_applies_an_explicit_layout_scale ... ok
+test cmd::hatch::tests::pattern_choices_list_the_library_with_its_lines ... ok
+test cmd::constraints::tests::json_geometric_and_dimensional_constraints ... ok
+test cmd::hatch::tests::json_hatch_refuses_an_undefined_pattern ... ok
+test cmd::hatch::tests::hatchedit_solid_replaces_gradient ... ok
+test cmd::hatch::tests::hatchedit_pattern_replaces_gradient ... ok
+test cmd::file::tests::script_command_reports_a_missing_file ... ok
+test cmd::hatch::tests::the_pattern_picker_is_offered_and_its_choice_sets_the_pattern ... ok
+test cmd::layer::tests::layer_states_save_list_restore_delete ... ok
+test cmd::hatch::tests::repeated_picks_and_handles_in_one_region_do_not_produce_duplicate_loops ... ok
+test cmd::layer::tests::delete_and_purge_keep_layers_used_by_block_definitions ... ok
+test cmd::layer::tests::rename_repoints_paper_space_and_block_entities ... ok
+test cmd::layer::tests::rejected_layer_set_changes_nothing ... ok
+test cmd::layout::tests::hostile_layout_params ... ok
+test cmd::layout::tests::mspace_edits_model_through_viewport ... ok
+test cmd::layout::tests::new_layout_gets_viewport_zoomed_to_extents ... ok
+test cmd::layout::tests::pagesetup_paper_table ... ok
+test cmd::layout::tests::new_layout_from_the_menu_asks_for_a_name ... ok
+
+thread 'cmd::exchange::tests::export_writes_the_chosen_format_and_is_not_save_as' (34256) panicked at crates\engine\src\cmd\exchange.rs:592:61:
+called `Result::unwrap()` on an `Err` value: BadParams { cmd: "export", msg: "C:\\Users\\Equipo 1\\AppData\\Local\\Packages\\sandbox.{805d3b5c-c0fa-4910-a4a4-cc74dd72a08d}\\AC\\Temp\\cadcraft-exchange-29836-out.png: Acceso denegado. (os error 5)" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'cmd::exchange::tests::publish_plots_every_sheet' (11532) panicked at crates\engine\src\cmd\exchange.rs:751:115:
+called `Result::unwrap()` on an `Err` value: BadParams { cmd: "publish", msg: "Layout2: invalid parameters for `plot`: C:\\Users\\Equipo 1\\AppData\\Local\\Packages\\sandbox.{805d3b5c-c0fa-4910-a4a4-cc74dd72a08d}\\AC\\Temp\\cadcraft-exchange-29836-set-Layout2.pdf: Acceso denegado. (os error 5)" }
+test cmd::layout::tests::mview_arrangements_and_interactive ... ok
+
+thread 'cmd::exchange::tests::pdfbook_collects_frames_into_one_pdf_per_row' (29812) panicked at crates\engine\src\cmd\exchange.rs:724:19:
+called `Result::unwrap()` on an `Err` value: BadParams { cmd: "pdfbook", msg: "cadcraft-exchange-29836-a: invalid parameters for `plot`: C:\\Users\\Equipo 1\\AppData\\Local\\Packages\\sandbox.{805d3b5c-c0fa-4910-a4a4-cc74dd72a08d}\\AC\\Temp\\cadcraft-exchange-29836-a.pdf: Acceso denegado. (os error 5)" }
+test cmd::machines::tests::pick_box_at_object_selection_prompts ... ok
+test cmd::layout::tests::viewport_scale_lock_and_layers ... ok
+test cmd::layout::tests::rename_copy_delete ... ok
+test cmd::exchange::tests::export_writes_the_chosen_format_and_is_not_save_as ... FAILED
+test cmd::exchange::tests::pdfbook_collects_frames_into_one_pdf_per_row ... FAILED
+test cmd::exchange::tests::publish_plots_every_sheet ... FAILED
+test cmd::draw2::tests::revcloud_json ... ok
+test cmd::machines::tests::prompts_remember_last_options ... ok
+test cmd::machines::tests::selection_commands_pickfirst_and_json_unchanged ... ok
+test cmd::mleader_edit::tests::hostile_mleader_edit_params_never_panic ... ok
+test cmd::mleader_edit::tests::edit_adds_and_removes_leaders ... ok
+test cmd::modify2::tests::align_json_and_command_line ... ok
+test cmd::mleader_edit::tests::collect_blocks_into_one_multileader ... ok
+test cmd::modify2::tests::chspace_json_and_command_line ... ok
+test cmd::machines::tests::selection_commands_prompt_without_pickfirst ... ok
+test cmd::mleader_edit::tests::align_distribute_parallel_and_spacing ... ok
+test cmd::modify2::tests::arraypath_json_and_command_line ... ok
+test cmd::file::tests::a_script_cannot_start_a_script ... ok
+test cmd::modify2::tests::fillet_command_line_line_and_arc ... ok
+test cmd::file::tests::script_command_runs_a_scr_file ... ok
+test cmd::modify2::tests::fillet_polyline_json_and_command_line ... ok
+test cmd::modify2::tests::join_keeps_selected_objects_outside_the_chain ... ok
+test cmd::modify2::tests::explode_polyline3d_keeps_elevations ... ok
+test cmd::modify2::tests::blend_json_and_command_line ... ok
+test cmd::modify2::tests::fillet_line_arc_and_arcs ... ok
+
+thread 'cmd::layout::tests::plot_goes_through_the_hook' (10492) panicked at crates\engine\src\cmd\layout.rs:1111:61:
+called `Result::unwrap()` on an `Err` value: BadParams { cmd: "plot", msg: "C:\\Users\\Equipo 1\\AppData\\Local\\Packages\\sandbox.{805d3b5c-c0fa-4910-a4a4-cc74dd72a08d}\\AC\\Temp\\cadcraft-plot-test-29836.pdf: Acceso denegado. (os error 5)" }
+test cmd::modify2::tests::lengthen_command_line ... ok
+test cmd::modify2::tests::flatten_json_and_command_line ... ok
+test cmd::modify2::tests::offset_polyline_arc_bulge_follows_joined_endpoints ... ok
+test cmd::modify2::tests::lengthen_json ... ok
+test cmd::file::tests::typed_script_prompts_for_the_file_then_runs_or_reports_it ... ok
+test cmd::constraints::tests::hostile_constraint_params_never_panic ... ok
+test cmd::layout::tests::plot_goes_through_the_hook ... FAILED
+test cmd::modify2::tests::textedit_json_and_command_line ... ok
+test cmd::modify2::tests::pedit_preselected_line_asks_to_convert ... ok
+test cmd::modify2::tests::pedit_command_line ... ok
+test cmd::modify2::tests::editing_commands_leave_locked_layer_objects_alone ... ok
+test cmd::modify2::tests::reverse_json_and_command_line ... ok
+test cmd::modify2::tests::ncopy_json_and_command_line ... ok
+test cmd::props::tests::properties_set_rejects_unloaded_linetype ... ok
+test cmd::qselect::tests::wildcards ... ok
+test cmd::modify2::tests::pedit_json_options ... ok
+test cmd::options::tests::every_profile_var_round_trips_through_restore ... ok
+test cmd::table::formula::tests::names ... ok
+test cmd::table::formula::tests::shifting_references ... ok
+test cmd::table::formula::tests::syntax ... ok
+test cmd::utility::calc::tests::number_text ... ok
+test cmd::table::breaks::tests::csv_parsing ... ok
+test cmd::utility::tests::find_and_replace ... ok
+test finite::tests::finds_nan_and_infinity_anywhere ... ok
+test grip_dims::tests::a_line_end_measures_from_the_other_end ... ok
+test cmd::utility::calc::tests::points_and_vectors ... ok
+test grip_dims::tests::locks_hold_and_pin_the_grip ... ok
+test cmd::qselect::tests::modes_append_exclude_and_scope ... ok
+test cmd::utility::tests::calculator ... ok
+test cmd::modify2::tests::trim_and_extend_ellipse_and_spline ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (3352) panicked at crates\engine\src\guard.rs:137:13:
+factory panicked
+test grips::tests::arc_and_ellipse_grips ... ok
+test grips::tests::grip_modes ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (3352) panicked at crates\engine\src\guard.rs:125:13:
+assertion `left != right` failed: begin panicked
+  left: "begin"
+ right: "begin"
+test grips::tests::line_and_circle_grips ... ok
+test lisp::read::tests::reads_forms_atoms_and_comments ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (3352) panicked at crates\engine\src\guard.rs:115:13:
+assertion `left != right` failed: prompt panicked
+  left: "prompt"
+ right: "prompt"
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (3352) panicked at crates\engine\src\guard.rs:129:13:
+assertion `left != right` failed: preview panicked
+  left: "preview"
+ right: "preview"
+test grips::tests::other_entity_grips ... ok
+
+thread 'guard::tests::panics_in_a_command_machine_end_the_command_not_the_app' (3352) panicked at crates\engine\src\guard.rs:120:13:
+assertion `left != right` failed: input panicked
+  left: "input"
+ right: "input"
+test grips::tests::polyline_grips ... ok
+test cmd::qselect::tests::hostile_params_are_errors_not_panics ... ok
+test guard::tests::panics_in_a_command_machine_end_the_command_not_the_app ... ok
+test lisp::tests::a_leading_newline_ends_the_command_line_instead_of_adding_an_empty_one ... ok
+
+thread 'lisp::tests::a_panic_inside_a_routine_ends_it_with_an_error' (26264) panicked at crates\engine\src\lisp\builtins.rs:1474:5:
+test panic
+test lisp::tests::a_waiting_routine_is_a_prompt_with_a_rubber_band ... ok
+test lisp::tests::arithmetic_follows_autolisp ... ok
+test grips::tests::grips_on_locked_layers_and_hostile_values ... ok
+test cmd::qselect::tests::type_and_property_filters ... ok
+test lisp::tests::command_draws_and_one_routine_is_one_undo_step ... ok
+test lisp::tests::errors_unwind_bindings_and_reach_the_handler ... ok
+test cmd::modify2::tests::new_modify_commands_survive_garbage_input ... ok
+test grips::tests::spline_text_insert_and_dimension_grips ... ok
+test lisp::tests::geometry ... ok
+test cmd::modify2::tests::splinedit_json_and_command_line ... ok
+test lisp::tests::functions_scope_and_control ... ok
+test lisp::tests::appload_and_load ... ok
+test lisp::tests::hostile_lisp_never_panics ... ok
+test lisp::tests::entity_lists_round_trip ... ok
+test lisp::tests::input_functions_take_supplied_answers ... ok
+test lisp::tests::interactive_routine_waits_for_the_user ... ok
+test lisp::tests::printing ... ok
+test lisp::tests::lists_and_strings ... ok
+test lisp::read::tests::malformed_and_hostile_input_is_an_error_not_a_crash ... ok
+test lisp::value::tests::printing_and_equality ... ok
+test lisp::value::tests::reals_print_with_six_significant_digits ... ok
+test lisp::tests::selection_sets_and_filters ... ok
+test mtext_edit::tests::round_trips_formats_and_atoms ... ok
+test mtext_edit::tests::ruler_and_lists ... ok
+test lisp::tests::tables_and_variables ... ok
+test mtext_edit::tests::toggles_and_typing_keep_formats ... ok
+test pointmod::tests::filters ... ok
+test pointmod::tests::snap_words ... ok
+test prompt::tests::keywords ... ok
+test prompt::tests::points ... ok
+test select::hatch_pattern_pick_tests::pattern_hatch_is_picked_on_a_visible_stroke ... ok
+test select::hatch_pattern_pick_tests::pattern_hatch_island_stays_empty ... ok
+test select::hatch_pattern_pick_tests::solid_hatch_is_picked_inside_its_fill_not_its_bounding_rectangle ... ok
+test select::solid_interior_tests::crossing_window_in_triangular_bbox_but_outside_fill_does_not_select ... ok
+test select::solid_interior_tests::crossing_window_inside_solid_and_trace_selects_fill ... ok
+test select::solid_interior_tests::pick_in_triangular_bbox_but_outside_fill_does_not_select ... ok
+test select::hatch_pattern_pick_tests::solid_hatch_island_follows_the_island_style ... ok
+test snap::curves::tests::ellipse_tangents_touch_and_stay_on_the_arc ... ok
+test mtext_edit::tests::hostile_input_never_panics ... ok
+test snap::curves::tests::ellipse_perpendiculars_are_normals ... ok
+test select::tests::fence_selects_crossed_xline_and_ray ... ok
+test snap::iso::tests::grid_lines_bounded ... ok
+test snap::iso::tests::lattice_points_are_spacing_apart_along_each_axis ... ok
+test snap::tests::center_quadrant_tangent ... ok
+test snap::tests::deferred_tangent_without_base ... ok
+test snap::tests::endpoint_and_mid ... ok
+test snap::tests::intersection ... ok
+test snap::tests::off_bit_disables ... ok
+test snap::tests::ortho_and_polar ... ok
+test snap::tests::resolve_belt_tangent_between_circles ... ok
+test snap::tests::perpendicular_from_base ... ok
+test snap::tests::resolve_degenerate_input_is_none_not_panic ... ok
+test snap::tests::resolve_perpendicular_cases ... ok
+test snap::curves::tests::ellipse_mid_halves_the_length ... ok
+test snap::tests::resolve_tangent_to_free_point ... ok
+test snap::curves::tests::spline_snaps ... ok
+test spatial::tests::small_spaces_are_scanned ... ok
+test spatial::tests::index_follows_layer_visibility_inside_blocks ... ok
+test spatial::tests::cached_index_follows_edits ... ok
+test spatial::tests::hostile_queries_match_scan ... ok
+test sysvars::table::tests::table_names_are_upper_case_and_unique ... ok
+test tests::arc_refuses_zero_radius ... ok
+test tests::bare_variable_name_runs_setvar ... ok
+test tests::area_of_hatch_excludes_island ... ok
+test tests::block_insert_with_attributes ... ok
+test tests::block_rotation_property_turns_attribute_text ... ok
+test tests::cancel_keeps_partial_line_as_one_undo ... ok
+test tests::boundary_pick_point_keeps_island_of_separate_lines ... ok
+test tests::circle_variants ... ok
+test tests::copy_rotate_scale_mirror ... ok
+test tests::copy_and_rotate_drag_as_a_transform_of_the_selection ... ok
+test tests::deferred_pick_elsewhere_is_a_plain_point ... ok
+test tests::count_from_the_menu_shows_its_result ... ok
+test tests::dim_auto_vertical_and_radius ... ok
+test tests::dimlinear_interactive_and_continue ... ok
+test tests::dynamic_input_pointer_settings ... ok
+test tests::edits_while_a_command_runs_redraw ... ok
+test tests::enter_repeats_last_command ... ok
+test tests::erase_all_and_selection_keywords ... ok
+test lisp::tests::startup_files_load_from_the_support_folder ... ok
+test tests::extend_line_to_boundary ... ok
+test tests::fillet_two_lines ... ok
+test tests::gradient_pick_point_keeps_island_of_separate_lines ... ok
+test tests::hatch_by_pick_point_with_island ... ok
+test tests::hatch_from_overlapping_lines ... ok
+test cmd::exchange::tests::preview_draws_the_sheet_as_it_plots ... ok
+test tests::hatch_pick_point_keeps_island_of_separate_lines ... ok
+test tests::every_variable_name_starts_setvar_unless_it_is_a_command ... ok
+test tests::json_execute_and_errors ... ok
+test tests::layers_and_properties ... ok
+test tests::line_belt_tangent_to_tangent ... ok
+test tests::line_deferred_tangent_with_typed_polar ... ok
+test tests::line_deferred_tangent_without_solution_reprompts ... ok
+test tests::line_first_point_deferred_tangent ... ok
+test tests::line_undo_option_and_aliases ... ok
+test tests::line_via_command_line ... ok
+test tests::mleader_and_qdim ... ok
+test tests::move_with_pickfirst_and_window_selection ... ok
+test tests::offset_circle_and_polyline ... ok
+test tests::osnap_toggle ... ok
+test tests::pickadd_controls_idle_picks ... ok
+test tests::hostile_params_never_panic ... ok
+test tests::pline_halfwidth_is_centre_to_edge ... ok
+test tests::polar_and_direct_distance ... ok
+test tests::pline_width_answers_taper_the_next_segment ... ok
+test tests::every_interactive_command_starts_and_cancels ... ok
+test tests::press_and_drag_selection_window ... ok
+test tests::programmatic_undo_during_a_command_ends_it_first ... ok
+test tests::properties_palette_current_property_commands ... ok
+test tests::properties_set_transparency ... ok
+test tests::properties_set_circle_size_and_dim_style ... ok
+test tests::rectangle_polygon_and_pline ... ok
+test tests::sample_drawing_builds ... ok
+test tests::script_runs_commands ... ok
+test tests::script_splits_line_at_keyword_prompt ... ok
+test tests::scale_reference_typed_and_picked ... ok
+test tests::setvar_keeps_header_types ... ok
+test tests::setvar_point_variables_take_point_objects ... ok
+test tests::setvar_at_command_line ... ok
+test tests::setvar_clayer_keeps_numeric_layer_name ... ok
+test tests::sysvars_roundtrip ... ok
+test tests::trim_line_between_edges ... ok
+test tests::undo_during_a_command_without_undo_keyword_ends_it_and_undoes ... ok
+test tests::undo_during_line_removes_the_last_segment_and_keeps_line_running ... ok
+test units::tests::angles ... ok
+test tests::zoom_extents_fits_drawing ... ok
+test units::tests::decimal_and_arch ... ok
+test units::tests::dms_display_precision ... ok
+test units::tests::dms_rounding_carries ... ok
+test units::tests::parse_distances ... ok
+test tests::hostile_variable_like_input_never_panics ... ok
+test tests::boundary_point_batch_is_capped ... ok
+test spatial::tests::osnap_parity_with_scan ... ok
+test cmd::annotate::tests::text_style_commands ... ok
+test spatial::tests::window_and_fence_parity_with_scan ... ok
+
+thread 'lisp::tests::a_panic_inside_a_routine_ends_it_with_an_error' (26264) panicked at crates\engine\src\lisp\builtins.rs:1474:5:
+test panic
+test lisp::tests::a_panic_inside_a_routine_ends_it_with_an_error ... ok
+test spatial::tests::pick_parity_with_scan ... ok
+test spatial::tests::incremental_index_matches_fresh_build ... ok
+test lisp::tests::deeply_nested_lists_drop_without_overflowing_the_stack ... ok
+test lisp::tests::strings_are_capped ... ok
+test lisp::tests::too_many_list_cells_stop_the_routine ... ok
+test lisp::value::tests::a_long_list_drops_without_overflowing_the_stack ... ok
+test lisp::tests::runaway_routines_are_errors_not_crashes ... ok
+
+failures:
+
+failures:
+    cmd::exchange::tests::export_writes_the_chosen_format_and_is_not_save_as
+    cmd::exchange::tests::pdfbook_collects_frames_into_one_pdf_per_row
+    cmd::exchange::tests::publish_plots_every_sheet
+    cmd::layout::tests::plot_goes_through_the_hook
+
+test result: FAILED. 291 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.60s
+
+error: test failed, to rerun pass `-p cadcraft-engine --lib`

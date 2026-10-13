@@ -1,0 +1,39 @@
+{
+  "qcad": {
+    "passed": 16,
+    "failed": 1,
+    "error": 1
+  },
+  "cadcraft": {
+    "passed": 12,
+    "failed": 7
+  },
+  "rust_runner": {
+    "passed": 1400,
+    "failed": 4,
+    "suite_result_lines": 219,
+    "external_lisp_corpus": "skipped despite runner ok",
+    "mcp_host_lib": "10/10 passed; subset repeated to disambiguate sockets; do not add to unique totals"
+  },
+  "revisions": {
+    "cadcraft": "e707ab4d7cc10102e550ad4c5bcecef1084a9baa",
+    "opencad": "28480345290cd228f65e8339ec8b44a16ecd5882",
+    "qcad": "4c830eb4d80285ca64b1f2c2dc0987f729344126",
+    "portable_release": "00c7613f1af3c73f7157fa91d9fe2635c6f23c06"
+  },
+  "source_hashes": {
+    "Cargo.toml": "baebfb63da439e51883cecf66bdf49dbbdad1beb15fc38ed7dd48a2806b36f4f",
+    "Cargo.lock": "61214322a633c009e25230bd5a981df1b3505e9d75e605ada439e48fda19cfb2",
+    "NOTICE": "3bb5e41bed036378b6d3fc37936332eb9e21ad2e2d62b5e066dc633ddb419227",
+    "ATTRIBUTION.md": "5a94bb8c7f0d63d4c9b17ecb0bcac4cfe1809e5c1da655fe0a4dcf6393e23879",
+    "LICENSE-MIT": "84d49e47a7e1b163ce15df4d70e0300ba0af0babbef8c4dc16ffdb1034d603df",
+    "LICENSE-APACHE": "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549",
+    "docs/brand/LICENSE-brand.txt": "82c255813aea32d3ea673d4e79859decf9ae42c2b05c151fd434cae8fb9321cd"
+  },
+  "commands": {
+    "opencad": "QT_QPA_PLATFORM=offscreen; PYTHONPATH=src;.cache/python; python -m unittest discover -s tests -v; exit0",
+    "rust": "cargo test --locked --no-fail-fast -p cadcraft-geom -p cadcraft-doc -p cadcraft-engine -p cadcraft-io -p cadcraft-mcp -- --nocapture; exit101; TMP/TEMP inside workspace",
+    "gui": "cargo build --locked -p cadcraft -j4; exit0; GUI hidden profile/control check on host",
+    "a1": "python .agents/skills/cad-audit-gate/scripts/gate.py --report .cache/cadcraft-audit/a1-report.json --markdown .cache/cadcraft-audit/a1-report.md; exit1; 0/6 development"
+  }
+}

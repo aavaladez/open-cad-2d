@@ -1,0 +1,150 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "method": "fresh CLI info or QcadDocument constructor/open/entities; different validation costs; three trials; no peak memory or rendering",
+  "results": [
+    {
+      "n": 1000,
+      "engine": "cadcraft",
+      "bytes": 151886,
+      "fixture_sha256": "b9b81baf46d28ad2a1a8583fdadc02dea6c291c55a7c1126b5589f081145e528",
+      "trials": [
+        {
+          "seconds": 0.025836299999809853,
+          "outcome": "passed",
+          "count": 1000
+        },
+        {
+          "seconds": 0.015380000000277505,
+          "outcome": "passed",
+          "count": 1000
+        },
+        {
+          "seconds": 0.016404100000272592,
+          "outcome": "passed",
+          "count": 1000
+        }
+      ],
+      "median_seconds": 0.016404100000272592
+    },
+    {
+      "n": 1000,
+      "engine": "qcad",
+      "bytes": 151886,
+      "fixture_sha256": "b9b81baf46d28ad2a1a8583fdadc02dea6c291c55a7c1126b5589f081145e528",
+      "trials": [
+        {
+          "seconds": 1.9676273000000037,
+          "outcome": "passed",
+          "count": 1000
+        },
+        {
+          "seconds": 1.9841778999998496,
+          "outcome": "passed",
+          "count": 1000
+        },
+        {
+          "seconds": 1.9513844999996763,
+          "outcome": "passed",
+          "count": 1000
+        }
+      ],
+      "median_seconds": 1.9676273000000037
+    },
+    {
+      "n": 10000,
+      "engine": "cadcraft",
+      "bytes": 1381847,
+      "fixture_sha256": "7effb39f8fc77c42826c917e2175f2c3f72418f1a11c916e6e05fabc35335479",
+      "trials": [
+        {
+          "seconds": 0.08273660000031668,
+          "outcome": "passed",
+          "count": 10000
+        },
+        {
+          "seconds": 0.07185100000015154,
+          "outcome": "passed",
+          "count": 10000
+        },
+        {
+          "seconds": 0.07055589999981748,
+          "outcome": "passed",
+          "count": 10000
+        }
+      ],
+      "median_seconds": 0.07185100000015154
+    },
+    {
+      "n": 10000,
+      "engine": "qcad",
+      "bytes": 1381847,
+      "fixture_sha256": "7effb39f8fc77c42826c917e2175f2c3f72418f1a11c916e6e05fabc35335479",
+      "trials": [
+        {
+          "seconds": 6.58301019999999,
+          "outcome": "passed",
+          "count": 10000
+        },
+        {
+          "seconds": 5.944907200000216,
+          "outcome": "passed",
+          "count": 10000
+        },
+        {
+          "seconds": 6.227962399999797,
+          "outcome": "passed",
+          "count": 10000
+        }
+      ],
+      "median_seconds": 6.227962399999797
+    },
+    {
+      "n": 100000,
+      "engine": "cadcraft",
+      "bytes": 13926362,
+      "fixture_sha256": "875829520205f15ba42bbc3c0b33c506f122e6417584311f46971117b5ac2c46",
+      "trials": [
+        {
+          "seconds": 0.7626479999998992,
+          "outcome": "passed",
+          "count": 100000
+        },
+        {
+          "seconds": 0.7207057000000532,
+          "outcome": "passed",
+          "count": 100000
+        },
+        {
+          "seconds": 0.7064199999999801,
+          "outcome": "passed",
+          "count": 100000
+        }
+      ],
+      "median_seconds": 0.7207057000000532
+    },
+    {
+      "n": 100000,
+      "engine": "qcad",
+      "bytes": 13926362,
+      "fixture_sha256": "875829520205f15ba42bbc3c0b33c506f122e6417584311f46971117b5ac2c46",
+      "trials": [
+        {
+          "seconds": 18.541633700000148,
+          "outcome": "error",
+          "error": "Respuesta QCAD ausente o demasiado grande"
+        },
+        {
+          "seconds": 18.62932099999989,
+          "outcome": "error",
+          "error": "Respuesta QCAD ausente o demasiado grande"
+        },
+        {
+          "seconds": 18.602570600000035,
+          "outcome": "error",
+          "error": "Respuesta QCAD ausente o demasiado grande"
+        }
+      ],
+      "median_seconds": 18.602570600000035
+    }
+  ]
+}
