@@ -67,6 +67,10 @@
     "sha256": "8407506eb590bba97a181c5a18b78a7f8a204a904a375be471d64fbb9218dde5",
     "bytes": 356
   },
+  "gui-source-host/screenshot.png": {
+    "sha256": "a5e362826620cc8af30051504f708ef931b88045e29cb516df70fbe77dae46f3",
+    "bytes": 744580
+  },
   "gui-source-host/stderr.log": {
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "bytes": 0
